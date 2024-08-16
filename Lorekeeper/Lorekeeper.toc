@@ -1,0 +1,9 @@
+## Interface: 110000
+## Title: Lorekeeper
+## Notes: Lorekeeper Description Temp
+## Author: Keyboardturner
+## Version: 0.0.1
+## SavedVariables: LoreK_DB
+
+
+Lorekeeper.lua
