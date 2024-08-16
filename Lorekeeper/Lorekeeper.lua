@@ -1,5 +1,11 @@
 local _, LK = ...
 
+
+local function Print(...)
+	local prefix = string.format("|cFFFFF569".."[PH] Lorekeeper" .. "|r:");
+	DEFAULT_CHAT_FRAME:AddMessage(string.join(" ", prefix, ...));
+end
+
 local function NextPage()
 	RunNextFrame(function() ItemTextNextPage() end);
 end
@@ -90,7 +96,85 @@ Lorekeeper.Initialize = CreateFrame("Frame");
 
 function Lorekeeper.Initialize:Events(event, arg1, arg2)
 	if event == "ADDON_LOADED" and arg1 == "Lorekeeper" then
-		print("Lorekeeper loaded!")
+
+
+
+		Lorekeeper.commands = {
+			["show"] = function() -- ["PH"]
+				LK.LoreKGUI:Show();
+			end,
+
+			--[[
+			["test"] = function()
+				Print("Test.");
+			end,
+
+			["hello"] = function(subCommand)
+				if not subCommand or subCommand == "" then
+					Print("No Command");
+				elseif subCommand == "world" then
+					Print("Specified Command");
+				else
+					Print("Invalid Sub-Command");
+				end
+			end,
+			]]
+
+			["help"] = function() --because there's not a lot of commands, don't use this yet. -- ["PH"]
+				local concatenatedString
+				for k, v in pairs(Lorekeeper.commands) do
+					if concatenatedString == nil then
+						concatenatedString = "|cFF00D1FF"..k.."|r"
+					else
+						concatenatedString = concatenatedString .. ", ".. "|cFF00D1FF"..k.."|r"
+					end
+					
+				end
+				Print("List of Commands:" .. " " .. concatenatedString) -- ["PH"]
+			end
+		};
+
+		local function HandleSlashCommands(str)
+			if (#str == 0) then
+				Lorekeeper.commands["show"](); --["PH"]
+				return;
+				end
+
+				local args = {};
+				for _dummy, arg in ipairs({ string.split(' ', str) }) do
+				if (#arg > 0) then
+					table.insert(args, arg);
+					end
+					end
+
+					local path = Lorekeeper.commands; -- required for updating found table.
+
+					for id, arg in ipairs(args) do
+
+					if (#arg > 0) then --if string length is greater than 0
+					arg = arg:lower();          
+					if (path[arg]) then
+						if (type(path[arg]) == "function") then
+							-- all remaining args passed to our function!
+							path[arg](select(id + 1, unpack(args))); 
+							return;                 
+						elseif (type(path[arg]) == "table") then
+							path = path[arg]; -- another sub-table found!
+						end
+						else
+							Lorekeeper.commands["help"](); -- ["PH"]
+						return;
+					end
+				end
+			end
+		end
+
+
+		SLASH_LOREKEEPER1 = "/".. "lorekeeper" -- ["PH"]
+		SLASH_LOREKEEPER2 = "/".. "lorek" -- ["PH"]
+		SlashCmdList.LOREKEEPER = HandleSlashCommands;
+
+		Print("[PH] Loaded! Type /lorekeeper to open the journal.")
 	end
 
 	if event == "ITEM_TEXT_BEGIN" then
@@ -176,9 +260,9 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 				if tCompareDeez(LoreK_DB[key]["base"],activeContext) then
 					--print("Detected exact copy, no changes made")
 				else
-					print("Detected changes in text, a copy of the old has been made.")
 
 					LoreK_DB[key]["copy_"..( tablelength(LoreK_DB[key]) )] = CopyTable(LoreK_DB[key]["base"])
+					print("Detected changes in text, a copy of the old has been made.") -- ["PH"]
 				end
 			end
 		end
