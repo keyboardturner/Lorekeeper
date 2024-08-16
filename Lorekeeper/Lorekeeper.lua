@@ -24,6 +24,9 @@ local _context = {
 	pageCount = DEFAULT_PAGE_COUNT,
 	doneReading = false,
 	doneResetting = false,
+	material = ItemTextGetMaterial() or "default", 
+	creator = ItemTextGetCreator(),
+	hasRead = true,
 	IsDone = function(self) return self.doneReading and self.doneResetting; end
 };
 
@@ -32,6 +35,9 @@ local function CreateContext()
 	ctx.guid = UnitGUID("npc");
 	ctx.title = ItemTextGetItem();
 	ctx.singlePage = not ItemTextHasNextPage();
+	ctx.material = ItemTextGetMaterial() or "default";
+	ctx.creator = ItemTextGetCreator();
+	ctx.hasRead = true;
 	return ctx;
 end
 
@@ -59,28 +65,35 @@ local function tCompareDeez(t1, t2)
 		return false
 	end
 
-	-- Compare the size of the tables
+	-- Compare the size of the tables, ignoring mapData key
 	local t1size = 0
 	for k in pairs(t1) do
-		t1size = t1size + 1
+		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" then -- skip over mapData/material/hasRead if detected, these are not crucial
+			t1size = t1size + 1
+		end
 	end
 	local t2size = 0
 	for k in pairs(t2) do
-		t2size = t2size + 1
+		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" then
+			t2size = t2size + 1
+		end
 	end
 	if t1size ~= t2size then
 		return false
 	end
 
-	-- Compare keys and values recursively
+	-- Compare keys and values recursively, skipping mapData key
 	for k, v in pairs(t1) do
-		if t2[k] == nil or not tCompareDeez(v, t2[k]) then
-			return false
+		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" then
+			if t2[k] == nil or not tCompareDeez(v, t2[k]) then
+				return false
+			end
 		end
 	end
 
 	return true
 end
+
 
 function tablelength(T)
 	local count = 0
@@ -96,6 +109,17 @@ Lorekeeper.Initialize = CreateFrame("Frame");
 
 function Lorekeeper.Initialize:Events(event, arg1, arg2)
 	if event == "ADDON_LOADED" and arg1 == "Lorekeeper" then
+
+		if not LoreK_DB then
+			LoreK_DB = {
+				settings = {
+					overrideMaterials = false,
+					debug = false,
+				},
+				text = {},
+				questItems = {},
+			};
+		end
 
 
 
@@ -218,14 +242,23 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		local npcID = select(6, strsplit("-", activeContext.guid))
 		local GUIDType = select(1, strsplit("-", activeContext.guid))
 		local key = GUIDType .. "-" .. ( C_Item.GetItemIDByGUID(activeContext.guid) or npcID )
+		local map = C_Map.GetBestMapForUnit("player")
+		local position = C_Map.GetPlayerMapPosition(map, "player")
+		local coords = {position:GetXY()}
 		--[[
 		if key == "Item-8383" then
 			--PANIC
 		end
 		]]
 		--DATABASE:InsertItemText(activeContext); -- Save to storage?
-		if LoreK_DB == nil then
-			LoreK_DB = {}
+		if not LoreK_DB then
+			LoreK_DB = {
+				settings = {
+					overrideMaterials = false,
+				},
+				text = {},
+				questItems = {},
+			};
 		end
 
 		if activeContext.doneResetting ~= true then
@@ -236,13 +269,19 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		activeContext.IsDone = nil
 		activeContext.guid = nil
 		activeContext.doneResetting = nil
-
-		if not LoreK_DB[key] then
-			LoreK_DB[key] = {}
+		if GUIDType == "GameObject" then
+			activeContext.mapData = {
+				map = map,
+				coords = {coords},
+			}
 		end
-		--LoreK_DB["Item-139034"]["base"]["text"][1]
-		if LoreK_DB[key] then
-			if LoreK_DB[key]["base"] then
+
+		if not LoreK_DB["text"][key] then
+			LoreK_DB["text"][key] = {}
+		end
+		--LoreK_DB["text"]["Item-139034"]["base"]["text"][1]
+		if LoreK_DB["text"][key] then
+			if LoreK_DB["text"][key]["base"] then
 				--[[
 				for k, v in pairs(LoreK_DB[key]) do
 					for subk, subv in pairs(LoreK_DB[key]) do
@@ -257,17 +296,21 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					end
 				end
 					]]
-				if tCompareDeez(LoreK_DB[key]["base"],activeContext) then
-					--print("Detected exact copy, no changes made")
+				if tCompareDeez(LoreK_DB["text"][key]["base"],activeContext) then
+					if LoreK_DB.settings.debug then
+						print("Detected exact copy, no changes made")
+					end
 				else
 
-					LoreK_DB[key]["copy_"..( tablelength(LoreK_DB[key]) )] = CopyTable(LoreK_DB[key]["base"])
-					print("Detected changes in text, a copy of the old has been made.") -- ["PH"]
+					LoreK_DB["text"][key]["copy_"..( tablelength(LoreK_DB["text"][key]) )] = CopyTable(LoreK_DB["text"][key]["base"])
+					if LoreK_DB.settings.debug then
+						print("Detected changes in text, a copy of the old has been made.") -- ["PH"]
+					end
 				end
 			end
 		end
 
-		LoreK_DB[key]["base"] = CopyTable(activeContext)
+		LoreK_DB["text"][key]["base"] = CopyTable(activeContext)
 		--[[
 		activeContext structure
 			doneReading = boolean
@@ -280,6 +323,13 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			}
 			singlePage = boolean
 			doneResetting = boolean
+			material = string -- will be either "default" or "ParchmentLarge"
+			creator = string -- primarily used for mail items
+			size = {
+				x = number
+				y = number
+			}
+			hasRead = boolean
 
 
 
