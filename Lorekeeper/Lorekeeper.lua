@@ -1,3 +1,5 @@
+local _, LK = ...
+
 local function NextPage()
 	RunNextFrame(function() ItemTextNextPage() end);
 end
