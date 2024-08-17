@@ -42,13 +42,14 @@ ItemScrollChild:SetSize(ItemScrollFrame:GetWidth(), 1) -- Height will adjust bas
 ItemScrollFrame:SetScrollChild(ItemScrollChild)
 
 -- Display frame on the right
-LoreKGUI.DisplayFrame = CreateFrame("Frame", "LoreKDisplayFrame", LoreKGUI)
+LoreKGUI.DisplayFrame = CreateFrame("Frame", "LoreKDisplayFrame", LoreKGUI, "InsetFrameTemplate4")
 local DisplayFrame = LoreKGUI.DisplayFrame
-DisplayFrame:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "TOPLEFT", 220,0)
-DisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI, "BOTTOMRIGHT",0,5)
+DisplayFrame:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "BOTTOMLEFT", 230,0)
+DisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI, "BOTTOMRIGHT",-5,55)
 DisplayFrame.bg = DisplayFrame:CreateTexture(nil, "BACKGROUND")
 DisplayFrame.bg:SetAllPoints(true)
 DisplayFrame.bg:SetColorTexture(0.1, 0.1, 0.1, 0.8)
+
 
 
 -- Scroll frame
@@ -106,143 +107,153 @@ LoreKGUI.Events = CreateFrame("Frame")
 LoreKGUI.Events:RegisterEvent("ADDON_LOADED")
 
 function LoreKGUI.Initialize(self, event, arg1)
-	if event == "ADDON_LOADED" and arg1 == "Lorekeeper" then
+    if event == "ADDON_LOADED" and arg1 == "Lorekeeper" then
 
-		-- Function to update the scroll frame content
-		function LoreKGUI.UpdateItemScrollFrame(searchText)
-			if not LoreK_DB or not LoreK_DB["text"] then
-				return
-			end
-			-- Clear existing buttons
-			for i, button in ipairs(ItemScrollChild.buttons or {}) do
-				button:Hide()
-			end
+        -- Function to update the scroll frame content
+        function LoreKGUI.UpdateItemScrollFrame(searchText)
+            if not LoreK_DB or not LoreK_DB["text"] then
+                return
+            end
 
-			-- Create new buttons based on the search filter
-			local filteredItems = {}
-			for itemID, itemData in pairs(LoreK_DB["text"]) do
-				local title = LoreK_DB["text"][itemID]["base"]["title"]
-				if title:lower():find(searchText) then
-					table.insert(filteredItems, itemID)
-				end
-			end
+            -- Clear existing buttons
+            for i, button in ipairs(ItemScrollChild.buttons or {}) do
+                button:Hide()
+            end
 
-			-- Sort filtered items alphabetically by their title
-			table.sort(filteredItems, function(a, b)
-				local titleA = LoreK_DB["text"][a]["base"]["title"]:lower()
-				local titleB = LoreK_DB["text"][b]["base"]["title"]:lower()
-				return titleA < titleB
-			end)
+            -- Create new buttons based on the search filter
+            local filteredItems = {}
 
-			ItemScrollChild.buttons = ItemScrollChild.buttons or {}
-			for i, itemID in ipairs(filteredItems) do
-				local button = ItemScrollChild.buttons[i] or CreateFrame("Button", nil, ItemScrollChild, "UIPanelButtonTemplate")
-				button:SetSize(180, 20)
-				button:SetPoint("TOPLEFT", ItemScrollChild, "TOPLEFT", 10, -((i - 1) * 22))
-				button:SetText(LoreK_DB["text"][itemID]["base"]["title"], 1,1,1,1,true) -- color option later
-				button:SetScript("OnClick", function()
-					local maxPages = 1
-					local pageNum = 1
-					local textBody = LoreK_DB["text"][itemID]["base"]["text"]
-					local textTitle = LoreK_DB["text"][itemID]["base"]["title"]
-					local isHTML = string.lower(textBody[pageNum]):find("<html>")
-					local singlePage = LoreK_DB["text"][itemID]["base"]["singlePage"]
-					DisplayFrame.PrevPageButton:Disable()
-					DisplayFrame.NextPageButton:Disable()
-					DisplayFrame.PageNumber:SetText("")
-					if not singlePage then
-						maxPages = #LoreK_DB["text"][itemID]["base"]["text"]
-						local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages)
-						DisplayFrame.PageNumber:SetText(pageText) -- color option later
-						DisplayFrame.NextPageButton:Enable()
-						DisplayFrame.PrevPageButton:SetScript("OnClick", function()
-							if pageNum ~= 1 then
-								pageNum = pageNum-1
-							end
-							if pageNum == 1 then
-								DisplayFrame.PrevPageButton:Disable()
-							end
-							DisplayFrame.NextPageButton:Enable()
+            -- Function to insert items into filteredItems
+            local function insertItems(dataSource)
+                for itemID, itemData in pairs(dataSource) do
+                	if not dataSource[itemID]["base"]["title"] then
+                		return
+                	end
+                    local title = dataSource[itemID]["base"]["title"]
+                    if title:lower():find(searchText) then
+                        table.insert(filteredItems, {itemID = itemID, source = dataSource})
+                    end
+                end
+            end
 
-							local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages)
-							local textBody = LoreK_DB["text"][itemID]["base"]["text"]
-							local textTitle = LoreK_DB["text"][itemID]["base"]["title"]
-							local isHTML = string.lower(textBody[pageNum]):find("<html>")
-							local singlePage = LoreK_DB["text"][itemID]["base"]["singlePage"]
+            -- Insert items from both LoreK_DB and LK["LocalData"]
+            insertItems(LoreK_DB["text"])
+            insertItems(LK["LocalData"]["text"])
 
-							DisplayFrame.PageNumber:SetText(pageText) -- color option later
-							TextScrollChild.textTitle:SetText(textTitle,1,1,1,1,true) -- color option later
-							if isHTML then
-								TextScrollChild.textHTML:SetText(textBody[pageNum]) -- color option later
-								--TextScrollChild.textHTML:SetText("")
-							else
-								TextScrollChild.textHTML:SetText(textBody[pageNum],1,1,1,1,true) -- color option later
-								--TextScrollChild.textHTML:SetText("") -- color option later
-							end
-						end)
-						DisplayFrame.NextPageButton:SetScript("OnClick", function()
-							if pageNum ~= maxPages then
-								pageNum = pageNum+1
-							end
-							if pageNum == maxPages then
-								DisplayFrame.NextPageButton:Disable()
-							end
-							DisplayFrame.PrevPageButton:Enable()
+            -- Sort filtered items alphabetically by their title
+            table.sort(filteredItems, function(a, b)
+                local titleA = a.source[a.itemID]["base"]["title"]:lower()
+                local titleB = b.source[b.itemID]["base"]["title"]:lower()
+                return titleA < titleB
+            end)
 
-							local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages)
-							local textBody = LoreK_DB["text"][itemID]["base"]["text"]
-							local textTitle = LoreK_DB["text"][itemID]["base"]["title"]
-							local isHTML = string.lower(textBody[pageNum]):find("<html>")
-							local singlePage = LoreK_DB["text"][itemID]["base"]["singlePage"]
+            ItemScrollChild.buttons = ItemScrollChild.buttons or {}
+            for i, entry in ipairs(filteredItems) do
+                local itemID = entry.itemID
+                local source = entry.source
 
-							DisplayFrame.PageNumber:SetText(pageText)
-							TextScrollChild.textTitle:SetText(textTitle,1,1,1,1,true) -- color option later
-							if isHTML then
-								TextScrollChild.textHTML:SetText(textBody[pageNum]) -- color option later
-								--TextScrollChild.textBody:SetText("")
-							else
-								TextScrollChild.textHTML:SetText(textBody[pageNum],1,1,1,1,true) -- color option later
-								--TextScrollChild.textHTML:SetText("") -- color option later
-							end
-						end)
+                local button = ItemScrollChild.buttons[i] or CreateFrame("Button", nil, ItemScrollChild, "UIPanelButtonTemplate")
+                button:SetSize(180, 20)
+                button:SetPoint("TOPLEFT", ItemScrollChild, "TOPLEFT", 10, -((i - 1) * 22))
+                button:SetText(source[itemID]["base"]["title"], 1, 1, 1, 1, true)
+                button:SetScript("OnClick", function()
+                    local maxPages = 1
+                    local pageNum = 1
+                    local textBody = source[itemID]["base"]["text"]
+                    local textTitle = source[itemID]["base"]["title"]
+                    local isHTML = string.lower(textBody[pageNum]):find("<html>")
+                    local singlePage = source[itemID]["base"]["singlePage"]
+                    DisplayFrame.PrevPageButton:Disable()
+                    DisplayFrame.NextPageButton:Disable()
+                    DisplayFrame.PageNumber:SetText("")
+                    if not singlePage then
+                        maxPages = #source[itemID]["base"]["text"]
+                        local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages)
+                        DisplayFrame.PageNumber:SetText(pageText)
+                        DisplayFrame.NextPageButton:Enable()
+                        DisplayFrame.PrevPageButton:SetScript("OnClick", function()
+                            if pageNum ~= 1 then
+                                pageNum = pageNum - 1
+                            end
+                            if pageNum == 1 then
+                                DisplayFrame.PrevPageButton:Disable()
+                            end
+                            DisplayFrame.NextPageButton:Enable()
 
-					end
-					TextScrollChild.textTitle:SetText(textTitle,1,1,1,1,true) -- color option later
-					if isHTML then
-						TextScrollChild.textHTML:SetText(textBody[pageNum]) -- color option later
-						--TextScrollChild.textBody:SetText("")
-					else
-						TextScrollChild.textHTML:SetText(textBody[pageNum],1,1,1,1,true) -- color option later
-						--TextScrollChild.textHTML:SetText("")
-					end
-				end)
-				button:Show()
-				ItemScrollChild.buttons[i] = button
-			end
+                            local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages)
+                            local textBody = source[itemID]["base"]["text"]
+                            local textTitle = source[itemID]["base"]["title"]
+                            local isHTML = string.lower(textBody[pageNum]):find("<html>")
+                            local singlePage = source[itemID]["base"]["singlePage"]
 
-			ItemScrollChild:SetHeight(#filteredItems * 22)
-		end
+                            DisplayFrame.PageNumber:SetText(pageText)
+                            TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true)
+                            if isHTML then
+                                TextScrollChild.textHTML:SetText(textBody[pageNum])
+                            else
+                                TextScrollChild.textHTML:SetText(textBody[pageNum], 1, 1, 1, 1, true)
+                            end
+                        end)
+                        DisplayFrame.NextPageButton:SetScript("OnClick", function()
+                            if pageNum ~= maxPages then
+                                pageNum = pageNum + 1
+                            end
+                            if pageNum == maxPages then
+                                DisplayFrame.NextPageButton:Disable()
+                            end
+                            DisplayFrame.PrevPageButton:Enable()
 
-		-- Search box
-		local SearchBox = CreateFrame("EditBox", "LoreKSearchBox", LoreKGUI, "SearchBoxTemplate")
-		SearchBox:SetSize(200, 20)
-		SearchBox:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "TOPLEFT", 10, -35)
-		SearchBox:SetScript("OnTextChanged", function(self)
-			local searchText = self:GetText():lower()
-			-- Filter and update scroll frame content based on search text
-			LoreKGUI.UpdateItemScrollFrame(searchText)
-			if SearchBox:HasText() then
-				SearchBox.Instructions:Hide()
-			else
-				SearchBox.Instructions:Show()
-			end
-		end)
+                            local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages)
+                            local textBody = source[itemID]["base"]["text"]
+                            local textTitle = source[itemID]["base"]["title"]
+                            local isHTML = string.lower(textBody[pageNum]):find("<html>")
+                            local singlePage = source[itemID]["base"]["singlePage"]
 
-		-- Initialize the scroll frame with no filter
-		LoreKGUI.UpdateItemScrollFrame("")
+                            DisplayFrame.PageNumber:SetText(pageText)
+                            TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true)
+                            if isHTML then
+                                TextScrollChild.textHTML:SetText(textBody[pageNum])
+                            else
+                                TextScrollChild.textHTML:SetText(textBody[pageNum], 1, 1, 1, 1, true)
+                            end
+                        end)
 
-	end
+                    end
+                    TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true)
+                    if isHTML then
+                        TextScrollChild.textHTML:SetText(textBody[pageNum])
+                    else
+                        TextScrollChild.textHTML:SetText(textBody[pageNum], 1, 1, 1, 1, true)
+                    end
+                end)
+                button:Show()
+                ItemScrollChild.buttons[i] = button
+            end
+
+            ItemScrollChild:SetHeight(#filteredItems * 22)
+        end
+
+        -- Search box
+        local SearchBox = CreateFrame("EditBox", "LoreKSearchBox", LoreKGUI, "SearchBoxTemplate")
+        SearchBox:SetSize(200, 20)
+        SearchBox:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "TOPLEFT", 10, -35)
+        SearchBox:SetScript("OnTextChanged", function(self)
+            local searchText = self:GetText():lower()
+            -- Filter and update scroll frame content based on search text
+            LoreKGUI.UpdateItemScrollFrame(searchText)
+            if SearchBox:HasText() then
+                SearchBox.Instructions:Hide()
+            else
+                SearchBox.Instructions:Show()
+            end
+        end)
+
+        -- Initialize the scroll frame with no filter
+        LoreKGUI.UpdateItemScrollFrame("")
+
+    end
 end
+
 
 LoreKGUI.Events:SetScript("OnEvent", LoreKGUI.Initialize)
 

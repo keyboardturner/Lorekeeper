@@ -114,35 +114,17 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			LoreK_DB = {
 				settings = {
 					overrideMaterials = false,
-					debug = false,
+					debug = true,
 				},
 				text = {},
 				questItems = {},
 			};
 		end
 
-
-
 		Lorekeeper.commands = {
 			["show"] = function() -- ["PH"]
 				LK.LoreKGUI:Show();
 			end,
-
-			--[[
-			["test"] = function()
-				Print("Test.");
-			end,
-
-			["hello"] = function(subCommand)
-				if not subCommand or subCommand == "" then
-					Print("No Command");
-				elseif subCommand == "world" then
-					Print("Specified Command");
-				else
-					Print("Invalid Sub-Command");
-				end
-			end,
-			]]
 
 			["help"] = function() --because there's not a lot of commands, don't use this yet. -- ["PH"]
 				local concatenatedString
@@ -152,7 +134,6 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					else
 						concatenatedString = concatenatedString .. ", ".. "|cFF00D1FF"..k.."|r"
 					end
-					
 				end
 				Print("List of Commands:" .. " " .. concatenatedString) -- ["PH"]
 			end
@@ -162,20 +143,19 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			if (#str == 0) then
 				Lorekeeper.commands["show"](); --["PH"]
 				return;
-				end
+			end
 
-				local args = {};
-				for _dummy, arg in ipairs({ string.split(' ', str) }) do
+			local args = {};
+			for _dummy, arg in ipairs({ string.split(' ', str) }) do
 				if (#arg > 0) then
 					table.insert(args, arg);
-					end
-					end
+				end
+			end
 
-					local path = Lorekeeper.commands; -- required for updating found table.
+			local path = Lorekeeper.commands; -- required for updating found table.
 
-					for id, arg in ipairs(args) do
-
-					if (#arg > 0) then --if string length is greater than 0
+			for id, arg in ipairs(args) do
+				if (#arg > 0) then -- if string length is greater than 0
 					arg = arg:lower();          
 					if (path[arg]) then
 						if (type(path[arg]) == "function") then
@@ -185,14 +165,13 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 						elseif (type(path[arg]) == "table") then
 							path = path[arg]; -- another sub-table found!
 						end
-						else
-							Lorekeeper.commands["help"](); -- ["PH"]
+					else
+						Lorekeeper.commands["help"](); -- ["PH"]
 						return;
 					end
 				end
 			end
 		end
-
 
 		SLASH_LOREKEEPER1 = "/".. "lorekeeper" -- ["PH"]
 		SLASH_LOREKEEPER2 = "/".. "lorek" -- ["PH"]
@@ -242,19 +221,21 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		local npcID = select(6, strsplit("-", activeContext.guid))
 		local GUIDType = select(1, strsplit("-", activeContext.guid))
 		local key = GUIDType .. "-" .. ( C_Item.GetItemIDByGUID(activeContext.guid) or npcID )
+		if key == "Item-8383" then -- this will be handled by the Mail plugin.
+			if C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
+				LoreKeeper_API_Mail()
+			end
+			return;
+		end
 		local map = C_Map.GetBestMapForUnit("player")
 		local position = C_Map.GetPlayerMapPosition(map, "player")
 		local coords = {position:GetXY()}
-		--[[
-		if key == "Item-8383" then
-			--PANIC
-		end
-		]]
-		--DATABASE:InsertItemText(activeContext); -- Save to storage?
+
 		if not LoreK_DB then
 			LoreK_DB = {
 				settings = {
 					overrideMaterials = false,
+					debug = true,
 				},
 				text = {},
 				questItems = {},
@@ -269,88 +250,79 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		activeContext.IsDone = nil
 		activeContext.guid = nil
 		activeContext.doneResetting = nil
-		if GUIDType == "GameObject" then
-			activeContext.mapData = {
-				map = map,
-				coords = {coords},
-			}
-		end
 
 		if not LoreK_DB["text"][key] then
-			LoreK_DB["text"][key] = {}
+			LoreK_DB["text"][key] = {
+				base = {
+					hasRead = true,
+				},
+			};
 		end
-		--LoreK_DB["text"]["Item-139034"]["base"]["text"][1]
-		if LoreK_DB["text"][key] then
-			if LoreK_DB["text"][key]["base"] then
-				--[[
-				for k, v in pairs(LoreK_DB[key]) do
-					for subk, subv in pairs(LoreK_DB[key]) do
-						print("subkv",subk,subv)
-						if k ~= subk and tCompareDeez(v,subv) then
-							print(v["text"][1], subv["text"][1])
-							print(tCompareDeez(v,subv))
-							print(k, subk)
-							print("Duplicate copy found, deleting entry: " .. subk)
-							LoreK_DB[key][subk] = nil
+		if GUIDType == "GameObject" then
+			activeContext.mapData = {
+				[map] = coords,
+			};
+			if LK["LocalData"]["text"][key]["base"]["mapData"] then
+				if not LK["LocalData"]["text"][key]["base"]["mapData"][map] then
+					LoreK_DB["text"][key]["base"]["mapData"] = {
+						[map] = coords,
+					};
+					if LoreK_DB.settings.debug then
+						Print("Adding MapID data to SVs")
+					end
+				else
+					if LoreK_DB["text"][key]["base"]["mapData"] and LoreK_DB["text"][key]["base"]["mapData"][map] then
+						LoreK_DB["text"][key]["base"]["mapData"][map] = nil
+						if LoreK_DB.settings.debug then
+							Print("Cleaning up duplicate Map ID data found in LocalData.")
 						end
 					end
 				end
-					]]
-				if tCompareDeez(LoreK_DB["text"][key]["base"],activeContext) then
+			else
+				LoreK_DB["text"][key]["base"]["mapData"] = {
+					[map] = coords,
+				};
+			end
+		end
+
+		if LoreK_DB["text"][key] then
+			if LoreK_DB["text"][key]["base"] then
+				if tCompareDeez(LK["LocalData"]["text"][key]["base"], activeContext) then -- compare LocalData to Active
 					if LoreK_DB.settings.debug then
-						print("Detected exact copy, no changes made")
+						Print("Detected exact copy in LocalData, no changes made: "..activeContext.title)
 					end
 				else
-
-					LoreK_DB["text"][key]["copy_"..( tablelength(LoreK_DB["text"][key]) )] = CopyTable(LoreK_DB["text"][key]["base"])
-					if LoreK_DB.settings.debug then
-						print("Detected changes in text, a copy of the old has been made.") -- ["PH"]
+					-- Not found in LocalData
+					if LoreK_DB["text"][key]["base"] then -- does entry exist in SVs
+						if tCompareDeez(LoreK_DB["text"][key]["base"], activeContext) then -- is it an exact match
+							if LoreK_DB.settings.debug then
+								Print("Detected exact copy in SVs, no changes made: "..activeContext.title)
+							end
+						else
+							LoreK_DB["text"][key]["copy_"..( tablelength(LoreK_DB["text"][key]) )] = CopyTable(activeContext) -- produce a copy
+							if LoreK_DB.settings.debug then
+								Print("Detected changes in text, a copy of the old has been made: "..activeContext.title) -- ["PH"]
+							end
+						end
+						if tCompareDeez(LoreK_DB["text"][key]["base"], LK["LocalData"]["text"][key]["base"]) then -- entry exists, but it's a copy of the LocalData, local data probably got updated, so clean SV bloat.
+							LoreK_DB["text"][key]["base"] = nil
+							if LoreK_DB.settings.debug then
+								Print("Detected exact copy between SVs and LocalData, deleting SV entry: "..activeContext.title)
+							end
+						end
+					else
+						-- entry does NOT exist in SVs or LocalData, proceed to save.
+						LoreK_DB["text"][key]["base"] = CopyTable(activeContext)
+						Print("Saved base version into SVs: "..activeContext.title)
 					end
 				end
 			end
 		end
 
-		LoreK_DB["text"][key]["base"] = CopyTable(activeContext)
-		--[[
-		activeContext structure
-			doneReading = boolean
-			title = string
-			pageCount = number
-			IsDone = function
-			guid = string
-			text = {
-				["pageNum"] = string -- the page number itself is a string because SVs delete numbers
-			}
-			singlePage = boolean
-			doneResetting = boolean
-			material = string -- will be either "default" or "ParchmentLarge"
-			creator = string -- primarily used for mail items
-			size = {
-				x = number
-				y = number
-			}
-			hasRead = boolean
-
-
-
-
-
-		print(activeContext.guid)
-		for k, v in pairs(activeContext) do
-			if k == "text" then
-				print("text has multiple pages")
-				print("process pages")
-				local tempText = MakeReadingGreatAgain(activeContext.text)
-				for subk, subv in ipairs(tempText) do
-					print("value " .. subk)
-					print(subk, subv)
-				end
-			end
-		end
-		]]
 		activeContext = nil;
 	end
 end
+
 
 Lorekeeper.Initialize:RegisterEvent("ADDON_LOADED")
 Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_BEGIN")
