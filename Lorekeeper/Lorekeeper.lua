@@ -68,13 +68,13 @@ local function tCompareDeez(t1, t2)
 	-- Compare the size of the tables, ignoring mapData key
 	local t1size = 0
 	for k in pairs(t1) do
-		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" then -- skip over mapData/material/hasRead if detected, these are not crucial
+		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" and k ~= "texture" then -- skip over mapData/material/hasRead if detected, these are not crucial
 			t1size = t1size + 1
 		end
 	end
 	local t2size = 0
 	for k in pairs(t2) do
-		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" then
+		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" and k ~= "texture" then
 			t2size = t2size + 1
 		end
 	end
@@ -84,7 +84,7 @@ local function tCompareDeez(t1, t2)
 
 	-- Compare keys and values recursively, skipping mapData key
 	for k, v in pairs(t1) do
-		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" then
+		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" and k ~= "texture" then
 			if t2[k] == nil or not tCompareDeez(v, t2[k]) then
 				return false
 			end
@@ -229,7 +229,10 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		end
 		local map = C_Map.GetBestMapForUnit("player")
 		local position = C_Map.GetPlayerMapPosition(map, "player")
-		local coords = {position:GetXY()}
+		local coords = {0,0} -- instanced content doesn't always allow proper pos
+		if position then
+			coords = {position:GetXY()}
+		end
 
 		if not LoreK_DB then
 			LoreK_DB = {
