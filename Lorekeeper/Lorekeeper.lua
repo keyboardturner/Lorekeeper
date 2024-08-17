@@ -27,6 +27,7 @@ local _context = {
 	material = ItemTextGetMaterial() or "default", 
 	creator = ItemTextGetCreator(),
 	hasRead = true,
+	isFavorite = false,
 	IsDone = function(self) return self.doneReading and self.doneResetting; end
 };
 
@@ -38,6 +39,7 @@ local function CreateContext()
 	ctx.material = ItemTextGetMaterial() or "default";
 	ctx.creator = ItemTextGetCreator();
 	ctx.hasRead = true;
+	ctx.isFavorite = false;
 	return ctx;
 end
 
@@ -68,13 +70,13 @@ local function tCompareDeez(t1, t2)
 	-- Compare the size of the tables, ignoring mapData key
 	local t1size = 0
 	for k in pairs(t1) do
-		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" and k ~= "texture" then -- skip over mapData/material/hasRead if detected, these are not crucial
+		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" and k ~= "texture" and k ~= "isFavorite" then -- skip over mapData/material/hasRead if detected, these are not crucial
 			t1size = t1size + 1
 		end
 	end
 	local t2size = 0
 	for k in pairs(t2) do
-		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" and k ~= "texture" then
+		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" and k ~= "texture" and k ~= "isFavorite" then
 			t2size = t2size + 1
 		end
 	end
@@ -84,7 +86,7 @@ local function tCompareDeez(t1, t2)
 
 	-- Compare keys and values recursively, skipping mapData key
 	for k, v in pairs(t1) do
-		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" and k ~= "texture" then
+		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" and k ~= "texture" and k ~= "isFavorite" then
 			if t2[k] == nil or not tCompareDeez(v, t2[k]) then
 				return false
 			end

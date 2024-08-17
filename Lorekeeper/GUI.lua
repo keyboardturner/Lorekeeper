@@ -29,12 +29,18 @@ LoreKGUI:SetTitle("[PH] Lorekeeper")
 
 LoreKGUI:Hide()
 
+LoreKGUI.ItemDisplayFrame = CreateFrame("Frame", "LoreKDisplayFrame", LoreKGUI, "InsetFrameTemplate3")
+local ItemDisplayFrame = LoreKGUI.ItemDisplayFrame
+ItemDisplayFrame:SetWidth(210)
+ItemDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "BOTTOMLEFT", 5, 0)
+ItemDisplayFrame:SetPoint("BOTTOMLEFT", LoreKGUI, "BOTTOMLEFT", 5, 25)
+
 -- Scroll frame
 LoreKGUI.ItemScrollFrame = CreateFrame("ScrollFrame", "LoreKItemScrollFrame", LoreKGUI, "ScrollFrameTemplate")
 local ItemScrollFrame = LoreKGUI.ItemScrollFrame
-ItemScrollFrame:SetWidth(200)
-ItemScrollFrame:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "TOPLEFT", 10, -60)
-ItemScrollFrame:SetPoint("BOTTOMLEFT", LoreKGUI, "BOTTOMLEFT", 10, 5)
+--ItemScrollFrame:SetWidth(207)
+ItemScrollFrame:SetPoint("TOPLEFT", ItemDisplayFrame, "TOPLEFT", 0, -25)
+ItemScrollFrame:SetPoint("BOTTOMRIGHT", ItemDisplayFrame, "BOTTOMRIGHT", -3, 3)
 
 LoreKGUI.ItemScrollChild = CreateFrame("Frame", "LoreKItemScrollChild", ItemScrollFrame)
 local ItemScrollChild = LoreKGUI.ItemScrollChild
@@ -42,31 +48,31 @@ ItemScrollChild:SetSize(ItemScrollFrame:GetWidth(), 1) -- Height will adjust bas
 ItemScrollFrame:SetScrollChild(ItemScrollChild)
 
 -- Display frame on the right
-LoreKGUI.DisplayFrame = CreateFrame("Frame", "LoreKDisplayFrame", LoreKGUI, "InsetFrameTemplate4")
-local DisplayFrame = LoreKGUI.DisplayFrame
-DisplayFrame:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "BOTTOMLEFT", 230,0)
-DisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI, "BOTTOMRIGHT",-5,55)
-DisplayFrame.bg = DisplayFrame:CreateTexture(nil, "BACKGROUND")
-DisplayFrame.bg:SetAllPoints(true)
-DisplayFrame.bg:SetColorTexture(0.1, 0.1, 0.1, 0.8)
+LoreKGUI.TextDisplayFrame = CreateFrame("Frame", "LoreKTextDisplayFrame", LoreKGUI, "InsetFrameTemplate4")
+local TextDisplayFrame = LoreKGUI.TextDisplayFrame
+TextDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "BOTTOMLEFT", 230, 0)
+TextDisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI, "BOTTOMRIGHT",-5,25)
+TextDisplayFrame.bg = TextDisplayFrame:CreateTexture(nil, "BACKGROUND")
+TextDisplayFrame.bg:SetAllPoints(true)
+TextDisplayFrame.bg:SetColorTexture(0.1, 0.1, 0.1, 0.8)
 
 
 
 -- Scroll frame
-DisplayFrame.TextScrollFrame = CreateFrame("ScrollFrame", "LoreKTextScrollFrame", DisplayFrame, "ScrollFrameTemplate")
-local TextScrollFrame = DisplayFrame.TextScrollFrame
-TextScrollFrame:SetPoint("TOPLEFT", DisplayFrame, "TOPLEFT", 25,-90)
-TextScrollFrame:SetPoint("BOTTOMRIGHT", DisplayFrame, "BOTTOMRIGHT", -25,40)
+TextDisplayFrame.TextScrollFrame = CreateFrame("ScrollFrame", "LoreKTextScrollFrame", TextDisplayFrame, "ScrollFrameTemplate")
+local TextScrollFrame = TextDisplayFrame.TextScrollFrame
+TextScrollFrame:SetPoint("TOPLEFT", TextDisplayFrame, "TOPLEFT", 25,-50)
+TextScrollFrame:SetPoint("BOTTOMRIGHT", TextDisplayFrame, "BOTTOMRIGHT", -25,40)
 
-DisplayFrame.TextScrollChild = CreateFrame("Frame", "LoreKTextScrollChild", TextScrollFrame)
-local TextScrollChild = DisplayFrame.TextScrollChild
+TextDisplayFrame.TextScrollChild = CreateFrame("Frame", "LoreKTextScrollChild", TextScrollFrame)
+local TextScrollChild = TextDisplayFrame.TextScrollChild
 TextScrollChild:SetSize(TextScrollFrame:GetWidth(), 1) -- Height will adjust based on content
 TextScrollFrame:SetScrollChild(TextScrollChild)
 
-DisplayFrame.TitleArea = CreateFrame("Frame", nil, DisplayFrame)
-DisplayFrame.TitleArea:SetPoint("TOP", TextScrollFrame, "TOP", 0,25)
-DisplayFrame.TitleArea:SetWidth(TextScrollFrame:GetWidth())
-DisplayFrame.TitleArea:SetHeight(20)
+TextDisplayFrame.TitleArea = CreateFrame("Frame", nil, TextDisplayFrame)
+TextDisplayFrame.TitleArea:SetPoint("TOP", TextScrollFrame, "TOP", 0,25)
+TextDisplayFrame.TitleArea:SetWidth(TextScrollFrame:GetWidth())
+TextDisplayFrame.TitleArea:SetHeight(20)
 
 TextScrollChild.textBody = TextScrollChild:CreateFontString(nil, "OVERLAY")
 TextScrollChild.textBody:SetFontObject("GameFontHighlightLarge") -- make into option later
@@ -75,11 +81,11 @@ TextScrollChild.textBody:SetPoint("BOTTOM", TextScrollChild, "BOTTOM", 0, 0)
 TextScrollChild.textBody:SetJustifyH("LEFT")
 TextScrollChild.textBody:SetJustifyV("TOP")
 TextScrollChild.textBody:SetWidth(TextScrollChild:GetWidth())
-TextScrollChild.textTitle = DisplayFrame.TitleArea:CreateFontString(nil, "OVERLAY")
+TextScrollChild.textTitle = TextDisplayFrame.TitleArea:CreateFontString(nil, "OVERLAY")
 TextScrollChild.textTitle:SetFontObject("GameFontHighlightLarge") -- make into option later
-TextScrollChild.textTitle:SetAllPoints(DisplayFrame.TitleArea)
+TextScrollChild.textTitle:SetAllPoints(TextDisplayFrame.TitleArea)
 
-TextScrollChild.textHTML = CreateFrame("SimpleHTML", nil, DisplayFrame.TextScrollChild)
+TextScrollChild.textHTML = CreateFrame("SimpleHTML", nil, TextDisplayFrame.TextScrollChild)
 TextScrollChild.textHTML:SetPoint("TOP", TextScrollChild.textBody, "TOP", 0, 0)
 TextScrollChild.textHTML:SetPoint("BOTTOM", TextScrollChild.textBody, "BOTTOM", 0, 0)
 TextScrollChild.textHTML:SetWidth(TextScrollChild.textBody:GetWidth())
@@ -91,17 +97,17 @@ TextScrollChild.textHTML:SetFont("h3", ITEM_TEXT_FONTS["default"]["H3"]:GetFont(
 TextScrollChild.textHTML:SetFont("p", ITEM_TEXT_FONTS["default"]["P"]:GetFont())
 TextScrollChild.textHTML:SetJustifyH("p","LEFT")
 
-DisplayFrame.PrevPageButton = CreateFrame("Button", nil, DisplayFrame, "PagingControlsPrevPageButtonTemplate")
-DisplayFrame.NextPageButton = CreateFrame("Button", nil, DisplayFrame, "PagingControlsNextPageButtonTemplate")
-DisplayFrame.PrevPageButton:SetPoint("BOTTOM", DisplayFrame, "BOTTOM", -20,10)
-DisplayFrame.NextPageButton:SetPoint("BOTTOM", DisplayFrame, "BOTTOM", 20,10)
-DisplayFrame.PageNumber = DisplayFrame:CreateFontString(nil, "OVERLAY")
-DisplayFrame.PageNumber:SetFontObject("GameFontHighlightLarge") -- make into option later
-DisplayFrame.PageNumber:SetPoint("RIGHT", DisplayFrame.PrevPageButton, "LEFT", -15, 0)
---DisplayFrame.PageNumber:SetText("[PH]") -- Test 
-DisplayFrame.PageNumber:SetJustifyH("RIGHT")
-DisplayFrame.PrevPageButton:Disable()
-DisplayFrame.NextPageButton:Disable()
+TextDisplayFrame.PrevPageButton = CreateFrame("Button", nil, TextDisplayFrame, "PagingControlsPrevPageButtonTemplate")
+TextDisplayFrame.NextPageButton = CreateFrame("Button", nil, TextDisplayFrame, "PagingControlsNextPageButtonTemplate")
+TextDisplayFrame.PrevPageButton:SetPoint("BOTTOM", TextDisplayFrame, "BOTTOM", -20,10)
+TextDisplayFrame.NextPageButton:SetPoint("BOTTOM", TextDisplayFrame, "BOTTOM", 20,10)
+TextDisplayFrame.PageNumber = TextDisplayFrame:CreateFontString(nil, "OVERLAY")
+TextDisplayFrame.PageNumber:SetFontObject("GameFontHighlightLarge") -- make into option later
+TextDisplayFrame.PageNumber:SetPoint("RIGHT", TextDisplayFrame.PrevPageButton, "LEFT", -15, 0)
+--TextDisplayFrame.PageNumber:SetText("[PH]") -- Test 
+TextDisplayFrame.PageNumber:SetJustifyH("RIGHT")
+TextDisplayFrame.PrevPageButton:Disable()
+TextDisplayFrame.NextPageButton:Disable()
 
 LoreKGUI.Events = CreateFrame("Frame")
 LoreKGUI.Events:RegisterEvent("ADDON_LOADED")
@@ -152,11 +158,45 @@ function LoreKGUI.Initialize(self, event, arg1)
 				local itemID = entry.itemID
 				local source = entry.source
 
-				local button = ItemScrollChild.buttons[i] or CreateFrame("Button", nil, ItemScrollChild, "UIPanelButtonTemplate")
-				button:SetSize(180, 20)
-				button:SetPoint("TOPLEFT", ItemScrollChild, "TOPLEFT", 10, -((i - 1) * 22))
-				button:SetText(source[itemID]["base"]["title"], 1, 1, 1, 1, true)
+				local button = ItemScrollChild.buttons[i] or CreateFrame("Button", nil, ItemScrollChild)
+				button:SetSize(170, 35)
+				button:SetPoint("TOP", ItemScrollChild, "TOP", 20, -((i - 1) * 37))
+				button.tex = button.tex or button:CreateTexture(nil, "OVERLAY", nil, 0)
+				button.tex:SetAllPoints(true)
+				button.tex:SetAtlas("PetList-ButtonBackground")
+				button.icon = button.icon or button:CreateTexture(nil, "OVERLAY", nil, 0)
+				button.icon:SetPoint("TOPRIGHT", button, "TOPLEFT", -1,0)
+				button.icon:SetPoint("BOTTOMRIGHT", button, "BOTTOMLEFT", -1,0)
+				button.icon:SetWidth(button:GetHeight())
+				button.icon:SetTexture("Interface/AddOns/Lorekeeper/Assets/Textures/TEMP")
+				button.texHL = button.texHL or button:CreateTexture(nil, "OVERLAY", nil, 2)
+				button.texHL:SetAllPoints(true)
+				button.texHL:SetAtlas("PetList-ButtonHighlight")
+				button.texHL:Hide()
+				button.texSel = button.texSel or button:CreateTexture(nil, "OVERLAY", nil, 1)
+				button.texSel:SetAllPoints(true)
+				button.texSel:SetAtlas("PetList-ButtonSelect")
+				button.texSel:Hide()
+				button.textFont = button.textFont or button:CreateFontString(nil, "OVERLAY")
+				button.textFont:SetFontObject("GameTooltipTextSmall")
+				--button.textFont:SetFont(select(1,GameTooltipTextSmall:GetFont()), 12)
+				button.textFont:SetPoint("TOPLEFT", button, "TOPLEFT", 5,-3)
+				button.textFont:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -5,2)
+				button.textFont:SetJustifyH("LEFT")
+				button.textFont:SetJustifyV("TOP")
+				button.textFont:SetText(source[itemID]["base"]["title"], 1, 1, 1, 1, true)
+				button:SetScript("OnEnter", function()
+					button.texHL:Show()
+				end)
+				button:SetScript("OnLeave", function()
+					button.texHL:Hide()
+				end)
 				button:SetScript("OnClick", function()
+					for k, v in pairs(ItemScrollChild.buttons) do
+						v["texSel"]:Hide()
+					end
+					button.texSel:Show()
+
 					local maxPages = 1
 					local pageNum = 1
 					local textBody = source[itemID]["base"]["text"]
@@ -175,22 +215,22 @@ function LoreKGUI.Initialize(self, event, arg1)
 						TextScrollChild.textHTML:SetFont("h3", ITEM_TEXT_FONTS["default"]["H3"]:GetFont())
 						TextScrollChild.textHTML:SetFont("p", ITEM_TEXT_FONTS["default"]["P"]:GetFont())
 					end
-					DisplayFrame.PrevPageButton:Disable()
-					DisplayFrame.NextPageButton:Disable()
-					DisplayFrame.PageNumber:SetText("")
+					TextDisplayFrame.PrevPageButton:Disable()
+					TextDisplayFrame.NextPageButton:Disable()
+					TextDisplayFrame.PageNumber:SetText("")
 					if not singlePage then
 						maxPages = #source[itemID]["base"]["text"]
 						local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages)
-						DisplayFrame.PageNumber:SetText(pageText)
-						DisplayFrame.NextPageButton:Enable()
-						DisplayFrame.PrevPageButton:SetScript("OnClick", function()
+						TextDisplayFrame.PageNumber:SetText(pageText)
+						TextDisplayFrame.NextPageButton:Enable()
+						TextDisplayFrame.PrevPageButton:SetScript("OnClick", function()
 							if pageNum ~= 1 then
 								pageNum = pageNum - 1
 							end
 							if pageNum == 1 then
-								DisplayFrame.PrevPageButton:Disable()
+								TextDisplayFrame.PrevPageButton:Disable()
 							end
-							DisplayFrame.NextPageButton:Enable()
+							TextDisplayFrame.NextPageButton:Enable()
 
 							local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages)
 							local textBody = source[itemID]["base"]["text"]
@@ -198,7 +238,7 @@ function LoreKGUI.Initialize(self, event, arg1)
 							local isHTML = string.lower(textBody[pageNum]):find("<html>")
 							local singlePage = source[itemID]["base"]["singlePage"]
 
-							DisplayFrame.PageNumber:SetText(pageText)
+							TextDisplayFrame.PageNumber:SetText(pageText)
 							TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true)
 							if isHTML then
 								TextScrollChild.textHTML:SetText(textBody[pageNum])
@@ -206,14 +246,14 @@ function LoreKGUI.Initialize(self, event, arg1)
 								TextScrollChild.textHTML:SetText(textBody[pageNum], 1, 1, 1, 1, true)
 							end
 						end)
-						DisplayFrame.NextPageButton:SetScript("OnClick", function()
+						TextDisplayFrame.NextPageButton:SetScript("OnClick", function()
 							if pageNum ~= maxPages then
 								pageNum = pageNum + 1
 							end
 							if pageNum == maxPages then
-								DisplayFrame.NextPageButton:Disable()
+								TextDisplayFrame.NextPageButton:Disable()
 							end
-							DisplayFrame.PrevPageButton:Enable()
+							TextDisplayFrame.PrevPageButton:Enable()
 
 							local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages)
 							local textBody = source[itemID]["base"]["text"]
@@ -221,7 +261,7 @@ function LoreKGUI.Initialize(self, event, arg1)
 							local isHTML = string.lower(textBody[pageNum]):find("<html>")
 							local singlePage = source[itemID]["base"]["singlePage"]
 
-							DisplayFrame.PageNumber:SetText(pageText)
+							TextDisplayFrame.PageNumber:SetText(pageText)
 							TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true)
 							if isHTML then
 								TextScrollChild.textHTML:SetText(textBody[pageNum])
@@ -247,8 +287,8 @@ function LoreKGUI.Initialize(self, event, arg1)
 
 		-- Search box
 		local SearchBox = CreateFrame("EditBox", "LoreKSearchBox", LoreKGUI, "SearchBoxTemplate")
-		SearchBox:SetSize(200, 20)
-		SearchBox:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "TOPLEFT", 10, -35)
+		SearchBox:SetSize(190, 20)
+		SearchBox:SetPoint("TOP", ItemDisplayFrame, "TOP", 0, -5)
 		SearchBox:SetScript("OnTextChanged", function(self)
 			local searchText = self:GetText():lower()
 			-- Filter and update scroll frame content based on search text
