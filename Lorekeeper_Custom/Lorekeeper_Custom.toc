@@ -1,9 +1,9 @@
 ## Interface: 110002
-## Title: Lorekeeper_Mail
+## Title: Lorekeeper_Custom
 ## Notes: Lorekeeper Description Temp
 ## Author: Keyboardturner
 ## Version: 0.0.1
 ## Dependencies: Lorekeeper
-## SavedVariables: LoreKMail_DB
+## SavedVariables: LoreKCustom_DB
 
 Lorekeeper_Mail.lua

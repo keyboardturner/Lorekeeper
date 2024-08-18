@@ -1,4 +1,4 @@
-## Interface: 110000
+## Interface: 110002
 ## Title: Lorekeeper
 ## Notes: Lorekeeper Description Temp
 ## Author: Keyboardturner
