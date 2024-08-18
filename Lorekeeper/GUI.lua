@@ -29,45 +29,65 @@ LoreKGUI:SetTitle("[PH] Lorekeeper")
 
 LoreKGUI:Hide()
 
+-- Left Side
 LoreKGUI.ItemDisplayFrame = CreateFrame("Frame", "LoreKDisplayFrame", LoreKGUI, "InsetFrameTemplate3")
 local ItemDisplayFrame = LoreKGUI.ItemDisplayFrame
 ItemDisplayFrame:SetWidth(210)
-ItemDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "BOTTOMLEFT", 5, 0)
+ItemDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "BOTTOMLEFT", 0, 0)
 ItemDisplayFrame:SetPoint("BOTTOMLEFT", LoreKGUI, "BOTTOMLEFT", 5, 25)
 
--- Scroll frame
+-- Scroll frame for Items (Left)
 LoreKGUI.ItemScrollFrame = CreateFrame("ScrollFrame", "LoreKItemScrollFrame", LoreKGUI, "ScrollFrameTemplate")
 local ItemScrollFrame = LoreKGUI.ItemScrollFrame
 --ItemScrollFrame:SetWidth(207)
-ItemScrollFrame:SetPoint("TOPLEFT", ItemDisplayFrame, "TOPLEFT", 0, -25)
-ItemScrollFrame:SetPoint("BOTTOMRIGHT", ItemDisplayFrame, "BOTTOMRIGHT", -3, 3)
+ItemScrollFrame:SetPoint("TOPLEFT", ItemDisplayFrame, "TOPLEFT", 2, -25)
+ItemScrollFrame:SetPoint("BOTTOMRIGHT", ItemDisplayFrame, "BOTTOMRIGHT", 0, 3)
 
 LoreKGUI.ItemScrollChild = CreateFrame("Frame", "LoreKItemScrollChild", ItemScrollFrame)
 local ItemScrollChild = LoreKGUI.ItemScrollChild
-ItemScrollChild:SetSize(ItemScrollFrame:GetWidth(), 1) -- Height will adjust based on content
+ItemScrollChild:SetSize(ItemScrollFrame:GetWidth()-8, 1) -- Height will adjust based on content
 ItemScrollFrame:SetScrollChild(ItemScrollChild)
+ItemScrollChild:SetPoint("TOP", ItemScrollFrame, "TOP", 0, -50)
 
--- Display frame on the right
+
+--------------------------------------------------------------------------
+
+-- Right Side
 LoreKGUI.TextDisplayFrame = CreateFrame("Frame", "LoreKTextDisplayFrame", LoreKGUI, "InsetFrameTemplate4")
 local TextDisplayFrame = LoreKGUI.TextDisplayFrame
 TextDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "BOTTOMLEFT", 230, 0)
-TextDisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI, "BOTTOMRIGHT",-5,25)
+TextDisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI, "BOTTOMRIGHT",-20,25)
 TextDisplayFrame.bg = TextDisplayFrame:CreateTexture(nil, "BACKGROUND")
 TextDisplayFrame.bg:SetAllPoints(true)
 TextDisplayFrame.bg:SetColorTexture(0.1, 0.1, 0.1, 0.8)
 
-
-
--- Scroll frame
+-- Scroll frame for Text Preview (Right)
 TextDisplayFrame.TextScrollFrame = CreateFrame("ScrollFrame", "LoreKTextScrollFrame", TextDisplayFrame, "ScrollFrameTemplate")
 local TextScrollFrame = TextDisplayFrame.TextScrollFrame
 TextScrollFrame:SetPoint("TOPLEFT", TextDisplayFrame, "TOPLEFT", 25,-50)
-TextScrollFrame:SetPoint("BOTTOMRIGHT", TextDisplayFrame, "BOTTOMRIGHT", -25,40)
+TextScrollFrame:SetPoint("BOTTOMRIGHT", TextDisplayFrame, "BOTTOMRIGHT", -2,40)
 
 TextDisplayFrame.TextScrollChild = CreateFrame("Frame", "LoreKTextScrollChild", TextScrollFrame)
 local TextScrollChild = TextDisplayFrame.TextScrollChild
-TextScrollChild:SetSize(TextScrollFrame:GetWidth(), 1) -- Height will adjust based on content
+TextScrollChild:SetSize(TextScrollFrame:GetWidth()-10, 1) -- Height will adjust based on content
 TextScrollFrame:SetScrollChild(TextScrollChild)
+
+--[[-- mess with later, this isn't the proper way to hide scrollbar when nothing can be scrolled
+local anchorsWithScrollBar = {
+	CreateAnchor("TOPLEFT", 8, -20);
+	CreateAnchor("BOTTOMRIGHT", TextDisplayFrame.TextScrollFrame.ScrollBar, -8, 4),
+};
+
+local anchorsWithoutScrollBar = {
+	anchorsWithScrollBar[1],
+	CreateAnchor("BOTTOMRIGHT", -4, 4);
+};
+
+ScrollUtil.InitScrollBoxListWithScrollBar(TextScrollFrame, TextScrollFrame.ScrollBar, TextScrollChild)
+ScrollUtil.AddManagedScrollBarVisibilityBehavior(TextScrollFrame, TextScrollFrame.ScrollBar, anchorsWithScrollBar, anchorsWithoutScrollBar);
+]]
+
+--------------------------------------------------------------------------
 
 TextDisplayFrame.TitleArea = CreateFrame("Frame", nil, TextDisplayFrame)
 TextDisplayFrame.TitleArea:SetPoint("TOP", TextScrollFrame, "TOP", 0,25)
@@ -84,7 +104,9 @@ TextScrollChild.textBody:SetWidth(TextScrollChild:GetWidth())
 TextScrollChild.textTitle = TextDisplayFrame.TitleArea:CreateFontString(nil, "OVERLAY")
 TextScrollChild.textTitle:SetFontObject("GameFontHighlightLarge") -- make into option later
 TextScrollChild.textTitle:SetAllPoints(TextDisplayFrame.TitleArea)
-
+TextScrollChild.Type_ID = TextDisplayFrame.TitleArea:CreateFontString(nil, "OVERLAY")
+TextScrollChild.Type_ID:SetFontObject("GameFontHighlightLarge") -- make into option later
+TextScrollChild.Type_ID:SetPoint("BOTTOM", TextDisplayFrame.TitleArea, "TOP", 0, 0)
 TextScrollChild.textHTML = CreateFrame("SimpleHTML", nil, TextDisplayFrame.TextScrollChild)
 TextScrollChild.textHTML:SetPoint("TOP", TextScrollChild.textBody, "TOP", 0, 0)
 TextScrollChild.textHTML:SetPoint("BOTTOM", TextScrollChild.textBody, "BOTTOM", 0, 0)
@@ -112,6 +134,52 @@ TextDisplayFrame.NextPageButton:Disable()
 LoreKGUI.Events = CreateFrame("Frame")
 LoreKGUI.Events:RegisterEvent("ADDON_LOADED")
 
+-- Create the filteredItems table outside the function
+local filteredItems = {}
+
+-- Create the insertItems function outside the function
+local function insertItems(dataSource, searchText)
+	for itemID, itemData in pairs(dataSource) do
+		if dataSource[itemID]["base"] and dataSource[itemID]["base"]["title"] then
+			local title = dataSource[itemID]["base"]["title"]
+			if title:lower():find(searchText) then
+				table.insert(filteredItems, {itemID = itemID, title = title})
+			end
+		end
+	end
+end
+
+local function parseFunc(path, itemID)
+	-- Function to get nested table value based on a path
+	local function getNestedValue(t, path, itemID)
+		local result = t
+		for part in path:gmatch("%[(.-)%]") do
+			part = part:match('^"(.-)"$') or tonumber(part) or part
+			result = result[part]
+			if not result then return nil end
+		end
+		return result
+	end
+
+	-- Attempt to find the data in LK["LocalData"]
+	local localData = getNestedValue(LK["LocalData"], path:gsub("itemID", "\""..itemID.."\""))
+
+	if localData then
+		return localData
+	end
+
+	-- If not found in LK["LocalData"], attempt to find it in LoreK_DB
+	local savedData = getNestedValue(LoreK_DB, path:gsub("itemID", "\""..itemID.."\""))
+
+	if savedData then
+		return savedData
+	end
+
+	-- If not found in either table, return nil or an appropriate message
+	return nil -- or return "Data not found" if you prefer a message
+end
+
+
 function LoreKGUI.Initialize(self, event, arg1)
 	if event == "ADDON_LOADED" and arg1 == "Lorekeeper" then
 
@@ -125,42 +193,32 @@ function LoreKGUI.Initialize(self, event, arg1)
 			for i, button in ipairs(ItemScrollChild.buttons or {}) do
 				button:Hide()
 			end
-
-			-- Create new buttons based on the search filter
-			local filteredItems = {}
-
-			-- Function to insert items into filteredItems
-			local function insertItems(dataSource)
-				for itemID, itemData in pairs(dataSource) do
-					if not dataSource[itemID]["base"]["title"] then
-						return
-					end
-					local title = dataSource[itemID]["base"]["title"]
-					if title:lower():find(searchText) then
-						table.insert(filteredItems, {itemID = itemID, source = dataSource})
-					end
-				end
+			
+			-- Clear the filteredItems table
+			for i = #filteredItems, 1, -1 do
+				table.remove(filteredItems, i)
 			end
 
+
 			-- Insert items from both LoreK_DB and LK["LocalData"]
-			insertItems(LoreK_DB["text"])
-			insertItems(LK["LocalData"]["text"])
+			insertItems(LoreK_DB["text"], searchText)
+			insertItems(LK["LocalData"]["text"], searchText)
 
 			-- Sort filtered items alphabetically by their title
 			table.sort(filteredItems, function(a, b)
-				local titleA = a.source[a.itemID]["base"]["title"]:lower()
-				local titleB = b.source[b.itemID]["base"]["title"]:lower()
+				local titleA = a.title:lower()
+				local titleB = b.title:lower()
 				return titleA < titleB
 			end)
 
 			ItemScrollChild.buttons = ItemScrollChild.buttons or {}
 			for i, entry in ipairs(filteredItems) do
 				local itemID = entry.itemID
-				local source = entry.source
+				local title = entry.title
 
 				local button = ItemScrollChild.buttons[i] or CreateFrame("Button", nil, ItemScrollChild)
-				button:SetSize(170, 35)
-				button:SetPoint("TOP", ItemScrollChild, "TOP", 20, -((i - 1) * 37))
+				button:SetSize(168, 35)
+				button:SetPoint("TOP", ItemScrollChild, "TOP", 22, -((i - 1) * 37))
 				button.tex = button.tex or button:CreateTexture(nil, "OVERLAY", nil, 0)
 				button.tex:SetAllPoints(true)
 				button.tex:SetAtlas("PetList-ButtonBackground")
@@ -169,6 +227,16 @@ function LoreKGUI.Initialize(self, event, arg1)
 				button.icon:SetPoint("BOTTOMRIGHT", button, "BOTTOMLEFT", -1,0)
 				button.icon:SetWidth(button:GetHeight())
 				button.icon:SetTexture("Interface/AddOns/Lorekeeper/Assets/Textures/TEMP")
+				button.unreadIcon = button.unreadIcon or button:CreateTexture(nil, "OVERLAY", nil, 1)
+				button.unreadIcon:SetPoint("TOPRIGHT", button, "TOPLEFT", -1,0)
+				button.unreadIcon:SetPoint("BOTTOMRIGHT", button, "BOTTOMLEFT", -1,0)
+				button.unreadIcon:SetWidth(button:GetHeight())
+				button.unreadIcon:SetAtlas("UI-LFG-PendingMark")
+				if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"]["hasRead"] then
+					button.unreadIcon:Hide()
+				else
+					button.unreadIcon:Show()
+				end
 				button.texHL = button.texHL or button:CreateTexture(nil, "OVERLAY", nil, 2)
 				button.texHL:SetAllPoints(true)
 				button.texHL:SetAtlas("PetList-ButtonHighlight")
@@ -184,7 +252,7 @@ function LoreKGUI.Initialize(self, event, arg1)
 				button.textFont:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -5,2)
 				button.textFont:SetJustifyH("LEFT")
 				button.textFont:SetJustifyV("TOP")
-				button.textFont:SetText(source[itemID]["base"]["title"], 1, 1, 1, 1, true)
+				button.textFont:SetText(parseFunc('["text"][itemID]["base"]["title"]', itemID), 1, 1, 1, 1, true)
 				button:SetScript("OnEnter", function()
 					button.texHL:Show()
 				end)
@@ -199,11 +267,11 @@ function LoreKGUI.Initialize(self, event, arg1)
 
 					local maxPages = 1
 					local pageNum = 1
-					local textBody = source[itemID]["base"]["text"]
-					local textTitle = source[itemID]["base"]["title"]
+					local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID)
+					local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID)
 					local isHTML = string.lower(textBody[pageNum]):find("<html>")
-					local singlePage = source[itemID]["base"]["singlePage"]
-					local material = source[itemID]["base"]["material"] or "default"
+					local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID)
+					local material = parseFunc('["text"][itemID]["base"]["material"]', itemID) or "default"
 					if material == "ParchmentLarge" then
 						TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["ParchmentLarge"]["H1"]:GetFont())
 						TextScrollChild.textHTML:SetFont("h2", ITEM_TEXT_FONTS["ParchmentLarge"]["H2"]:GetFont())
@@ -219,7 +287,7 @@ function LoreKGUI.Initialize(self, event, arg1)
 					TextDisplayFrame.NextPageButton:Disable()
 					TextDisplayFrame.PageNumber:SetText("")
 					if not singlePage then
-						maxPages = #source[itemID]["base"]["text"]
+						maxPages = #parseFunc('["text"][itemID]["base"]["text"]', itemID)
 						local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages)
 						TextDisplayFrame.PageNumber:SetText(pageText)
 						TextDisplayFrame.NextPageButton:Enable()
@@ -233,10 +301,10 @@ function LoreKGUI.Initialize(self, event, arg1)
 							TextDisplayFrame.NextPageButton:Enable()
 
 							local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages)
-							local textBody = source[itemID]["base"]["text"]
-							local textTitle = source[itemID]["base"]["title"]
+							local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID)
+							local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID)
 							local isHTML = string.lower(textBody[pageNum]):find("<html>")
-							local singlePage = source[itemID]["base"]["singlePage"]
+							local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID)
 
 							TextDisplayFrame.PageNumber:SetText(pageText)
 							TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true)
@@ -256,10 +324,10 @@ function LoreKGUI.Initialize(self, event, arg1)
 							TextDisplayFrame.PrevPageButton:Enable()
 
 							local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages)
-							local textBody = source[itemID]["base"]["text"]
-							local textTitle = source[itemID]["base"]["title"]
+							local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID)
+							local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID)
 							local isHTML = string.lower(textBody[pageNum]):find("<html>")
-							local singlePage = source[itemID]["base"]["singlePage"]
+							local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID)
 
 							TextDisplayFrame.PageNumber:SetText(pageText)
 							TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true)
@@ -272,6 +340,9 @@ function LoreKGUI.Initialize(self, event, arg1)
 
 					end
 					TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true)
+					if LoreK_DB.settings.debug then
+						TextScrollChild.Type_ID:SetText(itemID, 1, 1, 1, 1, true)
+					end
 					if isHTML then
 						TextScrollChild.textHTML:SetText(textBody[pageNum])
 					else

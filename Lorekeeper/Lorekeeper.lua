@@ -256,13 +256,6 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		activeContext.guid = nil
 		activeContext.doneResetting = nil
 
-		if not LoreK_DB["text"][key] then
-			LoreK_DB["text"][key] = {
-				base = {
-					hasRead = true,
-				},
-			};
-		end
 		if GUIDType == "GameObject" then
 			activeContext.mapData = {
 				[map] = coords,
@@ -289,16 +282,10 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 				};
 			end
 		end
-
 		if LoreK_DB["text"][key] then
 			if LoreK_DB["text"][key]["base"] then
-				if tCompareDeez(LK["LocalData"]["text"][key]["base"], activeContext) then -- compare LocalData to Active
-					if LoreK_DB.settings.debug then
-						Print("Detected exact copy in LocalData, no changes made: "..activeContext.title)
-					end
-				else
-					-- Not found in LocalData
-					if LoreK_DB["text"][key]["base"] then -- does entry exist in SVs
+				if not LK["LocalData"]["text"][key] or not LK["LocalData"]["text"][key]["base"] then
+					if LoreK_DB["text"][key]["base"]["text"] then -- does entry exist in SVs (with text)
 						if tCompareDeez(LoreK_DB["text"][key]["base"], activeContext) then -- is it an exact match
 							if LoreK_DB.settings.debug then
 								Print("Detected exact copy in SVs, no changes made: "..activeContext.title)
@@ -309,17 +296,27 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 								Print("Detected changes in text, a copy of the old has been made: "..activeContext.title) -- ["PH"]
 							end
 						end
+					else
+						-- entry does NOT exist in SVs or LocalData, proceed to save.
+						LoreK_DB["text"][key]["base"] = CopyTable(activeContext)
+						Print("Saved base version into SVs: "..activeContext.title)
+					end
+				else
+					tCompareDeez(LK["LocalData"]["text"][key]["base"], activeContext) -- compare LocalData to Active
+					if LoreK_DB.settings.debug then
+						Print("Detected exact copy in LocalData, no changes made: "..activeContext.title)
+					end
+					if LoreK_DB["text"][key]["base"] then
 						if tCompareDeez(LoreK_DB["text"][key]["base"], LK["LocalData"]["text"][key]["base"]) then -- entry exists, but it's a copy of the LocalData, local data probably got updated, so clean SV bloat.
 							LoreK_DB["text"][key]["base"] = nil
 							if LoreK_DB.settings.debug then
 								Print("Detected exact copy between SVs and LocalData, deleting SV entry: "..activeContext.title)
 							end
 						end
-					else
-						-- entry does NOT exist in SVs or LocalData, proceed to save.
-						LoreK_DB["text"][key]["base"] = CopyTable(activeContext)
-						Print("Saved base version into SVs: "..activeContext.title)
 					end
+				end
+				if not LoreK_DB["text"][key]["base"]["hasRead"] then
+					LoreK_DB["text"][key]["base"]["hasRead"] = true;
 				end
 			end
 		end
