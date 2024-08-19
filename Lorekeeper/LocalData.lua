@@ -1,6 +1,56 @@
 local _, LK = ...
 
 -- This is typicaly where exported SVs data will go, purged of extranneous other data such as hasRead and so on.
+-- Adding options to switch locale would honestly just be more hassle than it's worth for this project.
+
+-- Data should follow this structure:
+
+--[[
+LoreK_DB = {
+	["text"] = {
+		["Item-208416"] = {
+			["base"] = {
+				["title"] = "Thunderspine Nest Shopping List",
+				["text"] = { -- text key *should* always be in order. SVs automatically delete the page num keys, such as [1], [2], etc.
+					"Text from Page 1",
+					"Text from Page 2",
+				},
+				["material"] = "Parchment", -- the vast majority of text is Parchment, but not always.
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["isObtainable"] = true, -- this must be manually verified. There will never be a deterministic way of setting this key.
+				["isClassSpecific"] = false, -- same as above.
+			},
+			["copy_1"] = { -- the copy number should be incremental. These do not get displayed but will still be stored because they're a variant.
+				["title"] = "Thunderspine Nest Shopping List",
+				["text"] = {
+					"Text from Page 1, but different",
+					"Text from Page 2, but different",
+				},
+				["material"] = "Parchment",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+	},
+	["questItems"] = {
+		... -- same structure as "text" key, but for quest items
+	},
+};
+
+-- Keys which are *NOT* included: "isFavorite", "hasRead", and maybe future additions.
+-- Data from Mail and Custom modules should never make it in here.
+
+]]
+
+
+
+local LOCALE = GetLocale()
+
+
+if LOCALE == "enUS" then
 
 LK["LocalData"] = {
 	["text"] = {
@@ -322,3 +372,52 @@ LK["LocalData"] = {
 	}
 
 };
+
+end
+
+if LOCALE == "esES" or LOCALE == "esMX" then
+	-- Spanish text data goes here
+
+return end
+
+if LOCALE == "deDE" then
+	-- German text data go here
+
+return end
+
+if LOCALE == "frFR" then
+	-- French text data go here
+
+return end
+
+if LOCALE == "itIT" then
+	-- French text data go here
+
+return end
+
+if LOCALE == "ptBR" then
+	-- Brazilian Portuguese text data go here
+
+-- Note that the EU Portuguese WoW client also
+-- uses the Brazilian Portuguese locale code.
+return end
+
+if LOCALE == "ruRU" then
+	-- Russian text data go here
+
+return end
+
+if LOCALE == "koKR" then
+	-- Korean text data go here
+
+return end
+
+if LOCALE == "zhCN" then
+	-- Simplified Chinese text data go here
+
+return end
+
+if LOCALE == "zhTW" then
+	-- Traditional Chinese text data go here
+
+return end

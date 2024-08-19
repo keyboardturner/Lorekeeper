@@ -6,4 +6,4 @@
 ## Dependencies: Lorekeeper
 ## SavedVariables: LoreKCustom_DB
 
-Lorekeeper_Mail.lua
+Lorekeeper_Custom.lua

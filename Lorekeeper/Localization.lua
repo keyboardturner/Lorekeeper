@@ -13,7 +13,8 @@ local LOCALE = GetLocale()
 if LOCALE == "enUS" then
 	-- The EU English game client also
 	-- uses the US English locale code.
-	LK["PH_TestLocale"] = "Placeholder Test Localization"
+	LK["Lorekeeper"] = "Lorekeeper"
+	LK["HideTitle"] = "Fog of Lore"
 
 return end
 

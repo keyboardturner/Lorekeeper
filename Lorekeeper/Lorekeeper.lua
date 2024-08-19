@@ -51,6 +51,21 @@ local function MakeReadingGreatAgain(bookText)
 	return tbl;
 end
 
+local ignoredKeys = {
+	mapData = true,
+	material = true,
+	hasRead = true,
+	texture = true,
+	isFavorite = true,
+	isObtainable = true,
+	isClassSpecific = true,
+};
+
+-- Helper function to check if a key is in the ignored list
+local function isIgnoredKey(key)
+	return ignoredKeys[key] ~= nil
+end
+
 local function tCompareDeez(t1, t2)
 	-- If both tables are the same reference, they are equal
 	if t1 == t2 then
@@ -67,16 +82,16 @@ local function tCompareDeez(t1, t2)
 		return false
 	end
 
-	-- Compare the size of the tables, ignoring mapData key
+	-- Compare the size of the tables
 	local t1size = 0
 	for k in pairs(t1) do
-		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" and k ~= "texture" and k ~= "isFavorite" then -- skip over mapData/material/hasRead if detected, these are not crucial
+		if not isIgnoredKey(k) then
 			t1size = t1size + 1
 		end
 	end
 	local t2size = 0
 	for k in pairs(t2) do
-		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" and k ~= "texture" and k ~= "isFavorite" then
+		if not isIgnoredKey(k) then
 			t2size = t2size + 1
 		end
 	end
@@ -84,9 +99,9 @@ local function tCompareDeez(t1, t2)
 		return false
 	end
 
-	-- Compare keys and values recursively, skipping mapData key
+	-- Compare keys and values recursively
 	for k, v in pairs(t1) do
-		if k ~= "mapData" and k ~= "material" and k ~= "hasRead" and k ~= "texture" and k ~= "isFavorite" then
+		if not isIgnoredKey(k) then
 			if t2[k] == nil or not tCompareDeez(v, t2[k]) then
 				return false
 			end
@@ -116,6 +131,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			LoreK_DB = {
 				settings = {
 					overrideMaterials = false,
+					hideUnread = true,
 					debug = true,
 				},
 				text = {},
