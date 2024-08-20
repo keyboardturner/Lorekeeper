@@ -6,7 +6,7 @@ local _, LK = ...
 -- Data should follow this structure:
 
 --[[
-LoreK_DB = {
+LK["LocalData"] = {
 	["text"] = {
 		["Item-208416"] = {
 			["base"] = {
