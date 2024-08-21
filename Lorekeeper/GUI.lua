@@ -65,7 +65,7 @@ local function parseFunc(path, itemID)
 	return nil -- or return "Data not found" if you prefer a message
 end
 
-
+--------------------------------------------------------------------------
 
 --------------------------------------------------------------------------
 
@@ -87,8 +87,117 @@ LoreKGUI:SetTitle(LK["Lorekeeper"]);
 LoreKGUI:Hide();
 
 
+-- Function to handle tab clicks
+local function Tab_OnClick(self)
+	PanelTemplates_SetTab(self:GetParent(), self:GetID());
+	for _, content in pairs(LoreKGUI.contents) do
+		content:Hide();
+	end
+	self.content:Show();
+	PlaySound(841);
+end
+
+-- Function to set up tabs and their associated content frames
+local function SetTabs(frame, numTabs, ...)
+	frame.numTabs = numTabs;
+	frame.contents = {};
+
+	local frameName = frame:GetName();
+	local contents = {};
+	local previousTab = nil;
+	local firstTab = nil;
+
+	for i = 1, numTabs do
+		local tab = CreateFrame("Button", frameName.."Tab"..i, frame, "PanelTabButtonTemplate");
+		tab:SetID(i);
+		tab:SetText(select(i, ...));
+		tab:SetScript("OnClick", Tab_OnClick);
+
+		tab.content = CreateFrame("Frame", nil, LoreKGUI);
+		tab.content:SetPoint("TOPLEFT", LoreKGUI, "TOPLEFT", 0, 0);
+		tab.content:SetPoint("BOTTOMRIGHT", LoreKGUI, "BOTTOMRIGHT", 0, 0);
+		tab.content:Hide();
+		--tab.content.bg = tab.content:CreateTexture(nil, "BACKGROUND"); -- just to visually identify the panels
+		--tab.content.bg:SetAllPoints(true);
+		--tab.content.bg:SetColorTexture(math.random(), math.random(), math.random(), 0.6);
+
+		table.insert(contents, tab.content);
+		table.insert(frame.contents, tab.content);
+
+		-- Sort the tab spacing and placement. The first is set, then the rest SetPoint to the previous
+		if i == 1 then
+			tab:SetPoint("TOPLEFT", LoreKGUI, "BOTTOMLEFT", 11, 2);
+			firstTab = tab -- Store the first tab reference
+
+			LoreKGUI.LibraryPanel = CreateFrame("Frame", nil, tab.content);
+			LoreKGUI.LibraryPanel:SetPoint("TOPLEFT", tab.content, "TOPLEFT", 0, 0);
+			LoreKGUI.LibraryPanel:SetPoint("BOTTOMRIGHT", tab.content, "BOTTOMRIGHT", 0, 0);
+		elseif i == 2 then
+			LoreKGUI.MailPanel = CreateFrame("Frame", nil, tab.content);
+			LoreKGUI.MailPanel:SetPoint("TOPLEFT", tab.content, "TOPLEFT", 0, 0);
+			LoreKGUI.MailPanel:SetPoint("BOTTOMRIGHT", tab.content, "BOTTOMRIGHT", 0, 0);
+
+			tab:SetPoint("TOPLEFT", previousTab, "TOPRIGHT", 3, 0);
+		elseif i == 3 then
+
+			LoreKGUI.SettingsPanel = CreateFrame("Frame", nil, tab.content);
+			LoreKGUI.SettingsPanel:SetPoint("TOPLEFT", tab.content, "TOPLEFT", 0, 0);
+			LoreKGUI.SettingsPanel:SetPoint("BOTTOMRIGHT", tab.content, "BOTTOMRIGHT", 0, 0);
+
+			tab:SetPoint("TOPLEFT", previousTab, "TOPRIGHT", 3, 0);
+		else
+			tab:SetPoint("TOPLEFT", previousTab, "TOPRIGHT", 3, 0);
+		end
+		previousTab = tab -- Store the current tab to reference in the next iteration
+	end
+
+	if firstTab then
+		Tab_OnClick(firstTab);
+	end
+
+	return unpack(contents);
+end
+
+-- Set up the tabs and content frames
+local content1, content2, content3 = SetTabs(LoreKGUI, 3, "[PH] Library", "[PH] Mail", "[PH] Settings");
+
+
+--LoreKMainframeTab2:SetEnabled(false)
+--LoreKMainframeTab3:SetEnabled(false)
+
+--LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
+--LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5)
+
+LoreKMainframeTab1:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(self, "ANCHOR_TOP");
+	GameTooltip:AddLine("[PH] Library!", 1, 1, 1);
+	GameTooltip:Show();
+end);
+LoreKMainframeTab1:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
+
+LoreKMainframeTab2:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(self, "ANCHOR_TOP");
+	GameTooltip:AddLine("[PH] Mail!", 1, 1, 1);
+	GameTooltip:Show();
+end);
+LoreKMainframeTab2:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
+
+LoreKMainframeTab3:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(self, "ANCHOR_TOP");
+	GameTooltip:AddLine("[PH] Settings", 1, 1, 1);
+	GameTooltip:Show();
+end);
+LoreKMainframeTab3:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
+
+
 StaticPopupDialogs["LOREK_DELETE_ENTRIES"] = {
-	text = "Are you sure you want to delete all versions for this entry? This cannot be undone.",
+	text = "Are you sure you want to delete all saved versions for this entry? This cannot be undone.",
 	button1 = YES,
 	button2 = NO,
 	OnAccept = function()
@@ -96,49 +205,36 @@ StaticPopupDialogs["LOREK_DELETE_ENTRIES"] = {
 			print(ERR_NOT_IN_COMBAT);
 			return
 		else
-			print("get wrecked");
+			print("[PH] get wrecked, this function is not yet implemented");
 		end
- 	end,
+	end,
 	timeout = 0,
 	whileDead = false,
 	hideOnEscape = true,
 };
 
 --------------------------------------------------------------------------
+--------------------------------------------------------------------------
+ -- Library Panel
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 
 -- Left Side
-LoreKGUI.ItemDisplayFrame = CreateFrame("Frame", "LoreKDisplayFrame", LoreKGUI, "InsetFrameTemplate3");
+LoreKGUI.ItemDisplayFrame = CreateFrame("Frame", "LoreKDisplayFrame", LoreKGUI.LibraryPanel, "InsetFrameTemplate3");
 local ItemDisplayFrame = LoreKGUI.ItemDisplayFrame;
 ItemDisplayFrame:SetWidth(210);
-ItemDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "BOTTOMLEFT", 0, 0);
-ItemDisplayFrame:SetPoint("BOTTOMLEFT", LoreKGUI, "BOTTOMLEFT", 5, 30);
-
--- Scroll frame for Items (Left)
-LoreKGUI.ItemScrollFrame = CreateFrame("ScrollFrame", "LoreKItemScrollFrame", LoreKGUI, "ScrollFrameTemplate");
-local ItemScrollFrame = LoreKGUI.ItemScrollFrame;
---ItemScrollFrame:SetWidth(207)
-ItemScrollFrame:SetPoint("TOPLEFT", ItemDisplayFrame, "TOPLEFT", 2, -25);
-ItemScrollFrame:SetPoint("BOTTOMRIGHT", ItemDisplayFrame, "BOTTOMRIGHT", 0, 3);
-moveFrameXY(ItemScrollFrame.ScrollBar, "TOPLEFT", "TOPRIGHT", 0, 20);
-moveFrameXY(ItemScrollFrame.ScrollBar, "BOTTOMLEFT", "BOTTOMRIGHT", 0, -23);
-
-LoreKGUI.ItemScrollChild = CreateFrame("Frame", "LoreKItemScrollChild", ItemScrollFrame);
-local ItemScrollChild = LoreKGUI.ItemScrollChild;
-ItemScrollChild:SetSize(ItemScrollFrame:GetWidth()-8, 1); -- Height will adjust based on content
-ItemScrollFrame:SetScrollChild(ItemScrollChild);
-ItemScrollChild:SetPoint("TOP", ItemScrollFrame, "TOP", 0, 0);
-
-ItemScrollFrame:Hide();
+ItemDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.LibraryPanel, "TOPLEFT", 0, -65);
+ItemDisplayFrame:SetPoint("BOTTOMLEFT", LoreKGUI.LibraryPanel, "BOTTOMLEFT", 0, 30);
 
 --------------------------------------------------------------------------
 
 -- Right Side
-LoreKGUI.TextDisplayFrame = CreateFrame("Frame", "LoreKTextDisplayFrame", LoreKGUI, "InsetFrameTemplate4");
+LoreKGUI.TextDisplayFrame = CreateFrame("Frame", "LoreKTextDisplayFrame", LoreKGUI.LibraryPanel, "InsetFrameTemplate4");
 local TextDisplayFrame = LoreKGUI.TextDisplayFrame;
-TextDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.TopTileStreaks, "BOTTOMLEFT", 230, 0);
-TextDisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI, "BOTTOMRIGHT",-20,30);
+TextDisplayFrame:SetPoint("TOPLEFT", ItemDisplayFrame, "TOPRIGHT", 19, 0);
+TextDisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI.LibraryPanel, "BOTTOMRIGHT",-20,30);
 TextDisplayFrame.bg = TextDisplayFrame:CreateTexture(nil, "BACKGROUND");
-TextDisplayFrame.bg:SetPoint("TOPLEFT", TextDisplayFrame, "TOPLEFT", 3, -50);
+TextDisplayFrame.bg:SetPoint("TOPLEFT", TextDisplayFrame, "TOPLEFT", 3, -40);
 TextDisplayFrame.bg:SetPoint("BOTTOMRIGHT", TextDisplayFrame, "BOTTOMRIGHT", -4, 5);
 TextDisplayFrame.bg:SetAtlas("spellbook-background-evergreen-right")
 --TextDisplayFrame.bg:SetColorTexture(0.1, 0.1, 0.1, 0.8);
@@ -189,27 +285,23 @@ DeleteEntry:SetSize(25,25);
 DeleteEntry:SetNormalAtlas("128-RedButton-Delete");
 DeleteEntry:SetPushedAtlas("128-RedButton-Delete-Pressed");
 DeleteEntry:SetDisabledAtlas("128-RedButton-Delete-Disabled");
+DeleteEntry:SetHighlightAtlas("128-RedButton-Delete-Highlight");
 DeleteEntry:SetEnabled(false);
+DeleteEntry:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(self, "ANCHOR_TOP");
+	GameTooltip:AddLine("[PH] Delete all copies", 1, 1, 1);
+	GameTooltip:Show();
+end);
+DeleteEntry:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
 DeleteEntry:SetScript("OnClick", function()
 	StaticPopup_Show("LOREK_DELETE_ENTRIES");
 end)
 
-TextDisplayFrame.HideUnread_Check = CreateFrame("CheckButton", nil, TextDisplayFrame, "UICheckButtonTemplate");
-local HideUnread_Check = TextDisplayFrame.HideUnread_Check;
-HideUnread_Check:SetPoint("BOTTOMRIGHT", TextDisplayFrame, "TOPRIGHT", -35, 3);
-HideUnread_Check:SetSize(25,25);
-HideUnread_Check:SetScript("OnClick", function(self)
-	if HideUnread_Check:GetChecked() then
-		LoreK_DB["settings"]["hideUnread"] = true;
-	else
-		LoreK_DB["settings"]["hideUnread"] = false;
-	end
-end)
-
-
 TextScrollChild.textTitle = TitleBackdrop:CreateFontString(nil, "OVERLAY");
 TextScrollChild.textTitle:SetFontObject("GameFontHighlightLarge"); -- make into option later
-TextScrollChild.textTitle:SetPoint("TOPLEFT", TitleBackdrop, "TOPLEFT", 7,-5);
+TextScrollChild.textTitle:SetPoint("TOPLEFT", TitleBackdrop, "TOPLEFT", 7,-8);
 TextScrollChild.textTitle:SetPoint("BOTTOMRIGHT", TitleBackdrop, "BOTTOMRIGHT", -7, 5);
 TextScrollChild.textTitle:SetJustifyH("CENTER");
 TextScrollChild.textTitle:SetJustifyV("TOP");
@@ -245,7 +337,6 @@ TextDisplayFrame.Type_ID:SetPoint("LEFT", TextDisplayFrame.NextPageButton, "RIGH
 
 
 --------------------------------------------------------------------------
-
 -- scrollBOX rework
 
 LoreKGUI.ItemScrollBox = CreateFrame("Frame", nil, ItemDisplayFrame, "WowScrollBoxList");
@@ -384,13 +475,11 @@ local function ItemInitializer(button, data)
 						if isFavorite then
 							rootDescription:CreateButton(TRANSMOG_ITEM_UNSET_FAVORITE, function()
 								LoreK_DB["text"][itemID]["base"]["isFavorite"] = false;
-								LoreKGUI.updateSearchBox(LoreKGUI.SearchBox);
 							end)
 						else
 							if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] then
 								rootDescription:CreateButton(TRANSMOG_ITEM_SET_FAVORITE, function()
 									LoreK_DB["text"][itemID]["base"]["isFavorite"] = true;
-									LoreKGUI.updateSearchBox(LoreKGUI.SearchBox);
 								end)
 							else
 								local lockedBtn = rootDescription:CreateButton(LOCKED .. " - " .. NOT_COLLECTED);
@@ -405,13 +494,14 @@ local function ItemInitializer(button, data)
 					end)
 				end
 			else
-
-				DeleteEntry:SetEnabled(true)
+				PlaySound(170567, "SFX", true);
+				DeleteEntry:SetEnabled(true);
 				--selectionBehavior:SelectElementData(self:GetData())
 
 				local maxPages = 1;
 				local pageNum = 1;
 				local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
+				local HTMLbody
 				local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID);
 				local isHTML = string.lower(textBody[pageNum]):find("<html>");
 				local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
@@ -449,6 +539,7 @@ local function ItemInitializer(button, data)
 				TextDisplayFrame.PrevPageButton:Disable();
 				TextDisplayFrame.NextPageButton:Disable();
 				TextDisplayFrame.PageNumber:SetText("");
+
 				if not singlePage then
 					maxPages = #parseFunc('["text"][itemID]["base"]["text"]', itemID);
 					local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
@@ -465,19 +556,23 @@ local function ItemInitializer(button, data)
 							TextDisplayFrame.PrevPageButton:Disable();
 						end
 						TextDisplayFrame.NextPageButton:Enable();
+						PlaySound(836, "SFX", false);
 
 						local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
 						local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
 						local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID);
 						local isHTML = string.lower(textBody[pageNum]):find("<html>");
 						local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
+						if isHTML then
+							HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />");
+						end
 
 						TextDisplayFrame.PageNumber:SetText(pageText);
 						TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
 						if isHTML then
-							TextScrollChild.textHTML:SetText(textBody[pageNum], false);
+							TextScrollChild.textHTML:SetText(HTMLbody or textBody[pageNum], false);
 						else
-							TextScrollChild.textHTML:SetText(textBody[pageNum], false);
+							TextScrollChild.textHTML:SetText("\n"..textBody[pageNum], false);
 						end
 					end)
 					TextDisplayFrame.NextPageButton:SetScript("OnClick", function()
@@ -488,19 +583,23 @@ local function ItemInitializer(button, data)
 							TextDisplayFrame.NextPageButton:Disable();
 						end
 						TextDisplayFrame.PrevPageButton:Enable();
+						PlaySound(836, "SFX", false);
 
 						local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
 						local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
 						local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID);
 						local isHTML = string.lower(textBody[pageNum]):find("<html>");
 						local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
+						if isHTML then
+							HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />");
+						end
 
 						TextDisplayFrame.PageNumber:SetText(pageText);
 						TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
 						if isHTML then
-							TextScrollChild.textHTML:SetText(textBody[pageNum], false);
+							TextScrollChild.textHTML:SetText(HTMLbody or textBody[pageNum], false);
 						else
-							TextScrollChild.textHTML:SetText(textBody[pageNum], false);
+							TextScrollChild.textHTML:SetText("\n"..textBody[pageNum], false);
 						end
 					end)
 				end
@@ -518,9 +617,12 @@ local function ItemInitializer(button, data)
 				TextDisplayFrame.Type_ID:SetText(itemID, 1, 1, 1, 1, true);
 			end
 			if isHTML then
-				TextScrollChild.textHTML:SetText(textBody[pageNum], false);
+				HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />")
+			end
+			if isHTML then
+				TextScrollChild.textHTML:SetText(HTMLbody or textBody[pageNum], false);
 			else
-				TextScrollChild.textHTML:SetText(textBody[pageNum], false);
+				TextScrollChild.textHTML:SetText("\n"..textBody[pageNum], false);
 			end
 		end
 	end);
@@ -531,81 +633,202 @@ ItemScrollView:SetElementExtent(36);
 
 --------------------------------------------------------------------------
 
+--sort by favorite, then alphabetically
+function LoreKGUI.sortFunc(a, b)
+	if a.base.isFavorite ~= b.base.isFavorite then
+		return a.base.isFavorite;
+	else
+		return strcmputf8i(a.base.title, b.base.title) < 0;
+	end
+end
+
+function LoreKGUI.PopulateList()
+	if not LoreK_DB or not LoreK_DB["text"] then
+		return;
+	end
+
+	allData = CopyTable(LK["LocalData"]["text"]);
+	for id, data in pairs(LoreK_DB["text"]) do
+		if allData[id] then
+			Mixin(allData[id].base, data.base);
+		else
+			allData[id] = CopyTable(data);
+		end
+	end
+
+	ItemScrollView:SetElementInitializer("Button", ItemInitializer);
+	-- Insert each entry into the DataProvider
+	for id, data in pairs(allData) do
+		data.id = id;
+		ItemDataProvider:Insert(data);
+	end
+
+	ItemDataProvider:SetSortComparator(LoreKGUI.sortFunc);
+	ItemDataProvider:Sort();
+end
+
+-- Search box
+LoreKGUI.SearchBox = CreateFrame("EditBox", "LoreKSearchBox", ItemDisplayFrame, "SearchBoxTemplate");
+LoreKGUI.SearchBox:SetSize(190, 20);
+LoreKGUI.SearchBox:SetPoint("TOP", ItemDisplayFrame, "TOP", 0, -5);
+LoreKGUI.SearchBox:SetAutoFocus(false);
+
+	-- This function will clear the ScrollView and repopulate it with the given search results
+local function PopulateNewDataProvider(newData)
+	ItemDataProvider = CreateDataProvider(newData)
+	ItemScrollView:SetDataProvider(ItemDataProvider)
+end
+
+local function OnTextChanged(editBox)
+	local query = editBox:GetText();
+
+	local matches = {}
+
+	for _, element in pairs(allData) do
+		if string.find(element["base"]["title"]:lower(), query:lower()) then
+			tinsert(matches, element)
+		end
+	end
+
+	table.sort(matches, LoreKGUI.sortFunc)
+	PopulateNewDataProvider(matches)
+end
+
+-- Generally safer to use HookScript on EditBoxes inheriting a template as they likely already have OnTextChanged callbacks defined
+-- As a side note, it may be worth debouncing this callback if your search method is particularly performance intensive
+LoreKGUI.SearchBox:HookScript("OnTextChanged", OnTextChanged)
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+ -- Settings Panel
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+
+--[[
+LoreK_DB = {
+	settings = {
+		overrideMaterials = false,
+		hideUnread = true,
+		slashRead = false,
+		debug = true,
+	},
+};
+]]
+
+LoreKGUI.SettingsDisplayFrame = CreateFrame("Frame", "LoreKSettingsDisplayFrame", LoreKGUI.SettingsPanel, "InsetFrameTemplate4");
+local SettingsDisplayFrame = LoreKGUI.SettingsDisplayFrame;
+SettingsDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.SettingsPanel, "TOPLEFT", 0, -65);
+SettingsDisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI.SettingsPanel, "BOTTOMRIGHT",-20, 30);
+SettingsDisplayFrame.tex = SettingsDisplayFrame:CreateTexture()
+SettingsDisplayFrame.tex:SetPoint("TOPLEFT", SettingsDisplayFrame, "TOPLEFT", 2, -2);
+SettingsDisplayFrame.tex:SetPoint("BOTTOMRIGHT", SettingsDisplayFrame, "BOTTOMRIGHT", -2, 2);
+SettingsDisplayFrame.tex:SetColorTexture(0, 0, 0, 0.5)
+
+LoreKGUI.SettingsScrollFrame = CreateFrame("ScrollFrame", nil, LoreKGUI.SettingsPanel, "ScrollFrameTemplate");
+local SettingsScrollFrame = LoreKGUI.SettingsScrollFrame;
+SettingsScrollFrame:SetPoint("TOPLEFT", SettingsDisplayFrame, "TOPLEFT", 2, -25);
+SettingsScrollFrame:SetPoint("BOTTOMRIGHT", SettingsDisplayFrame, "BOTTOMRIGHT", -2, 3);
+moveFrameXY(SettingsScrollFrame.ScrollBar, "TOPLEFT", "TOPRIGHT", 0, 15);
+moveFrameXY(SettingsScrollFrame.ScrollBar, "BOTTOMLEFT", "BOTTOMRIGHT", 0, -17);
+
+LoreKGUI.SettingsScrollChild = CreateFrame("Frame", nil, SettingsScrollFrame);
+local SettingsScrollChild = LoreKGUI.SettingsScrollChild;
+SettingsScrollChild:SetSize(SettingsScrollFrame:GetWidth()-8, 1); -- Height will adjust based on content
+SettingsScrollFrame:SetScrollChild(SettingsScrollChild);
+SettingsScrollChild:SetPoint("TOP", SettingsScrollFrame, "TOP", 0, 0);
+
+
+SettingsDisplayFrame.overrideMats_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
+SettingsDisplayFrame.overrideMats_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, -15);
+SettingsDisplayFrame.overrideMats_Checkbox:SetScript("OnClick", function(self)
+	if self:GetChecked() then
+		PlaySound(856);
+	else
+		PlaySound(857);
+	end
+end);
+SettingsDisplayFrame.overrideMats_Checkbox.text = SettingsDisplayFrame.overrideMats_Checkbox:CreateFontString()
+SettingsDisplayFrame.overrideMats_Checkbox.text:SetFont(STANDARD_TEXT_FONT, 11)
+SettingsDisplayFrame.overrideMats_Checkbox.text:SetPoint("LEFT", SettingsDisplayFrame.overrideMats_Checkbox, "RIGHT", 0, 0)
+SettingsDisplayFrame.overrideMats_Checkbox.text:SetText("[PH] Override Materials")
+SettingsDisplayFrame.overrideMats_Checkbox.text:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.overrideMats_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine("[PH] The background material will be overwritten, providing a cleaner and more neutral background color than the default parchment.", 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.overrideMats_Checkbox.text:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+SettingsDisplayFrame.overrideMats_Checkbox:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.overrideMats_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine("[PH] The background material will be overwritten, providing a cleaner and more neutral background color than the default parchment.", 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.overrideMats_Checkbox:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+
+--[[
+SettingsDisplayFrame.HideUnread_Check = CreateFrame("CheckButton", nil, SettingsDisplayFrame);
+local HideUnread_Check = SettingsDisplayFrame.HideUnread_Check;
+HideUnread_Check:SetPoint("BOTTOMRIGHT", SettingsDisplayFrame, "TOPRIGHT", -35, 3);
+HideUnread_Check:SetSize(25,25);
+HideUnread_Check.backTex = HideUnread_Check:CreateTexture(nil, "OVERLAY", nil, 1);
+HideUnread_Check.backTex:SetAllPoints(true);
+HideUnread_Check.backTex:SetAtlas("transmog-frame-blackcover")
+HideUnread_Check.bordTex = HideUnread_Check:CreateTexture(nil, "OVERLAY", nil, 2);
+HideUnread_Check.bordTex:SetAllPoints(true);
+HideUnread_Check.bordTex:SetAtlas("transmog-frame-small-selected");
+HideUnread_Check.hideTex = HideUnread_Check:CreateTexture(nil, "OVERLAY", nil, 3);
+HideUnread_Check.hideTex:SetAllPoints(true);
+HideUnread_Check.hideTex:SetAtlas("transmog-icon-hidden");
+HideUnread_Check.HLTex = HideUnread_Check:CreateTexture(nil, "OVERLAY", nil, 4);
+HideUnread_Check.HLTex:SetAllPoints(true);
+HideUnread_Check.HLTex:SetAtlas("transmog-wardrobe-border-selected-smoke");
+HideUnread_Check.HLTex:SetVertexColor(1,1,1,0.5)
+HideUnread_Check.HLTex:Hide();
+HideUnread_Check:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(self, "ANCHOR_TOP");
+	GameTooltip:AddLine("[PH] Hide/Show Unread Text", 1, 1, 1);
+	GameTooltip:Show();
+	HideUnread_Check.HLTex:Show();
+end);
+HideUnread_Check:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+	HideUnread_Check.HLTex:Hide();
+end);
+HideUnread_Check:SetScript("OnClick", function(self)
+	if HideUnread_Check:GetChecked() then
+		LoreK_DB["settings"]["hideUnread"] = true;
+		HideUnread_Check.hideTex:Show();
+	else
+		LoreK_DB["settings"]["hideUnread"] = false;
+		HideUnread_Check.hideTex:Hide();
+	end
+end)
+]]
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+ -- Addon Load
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 
 LoreKGUI.Events = CreateFrame("Frame")
 LoreKGUI.Events:RegisterEvent("ADDON_LOADED")
 
-function LoreKGUI.updateSearchBox(frame)
-	if frame:HasText() then
-		LoreKGUI.UpdateItemScrollFrame(frame:GetText());
-	else
-		LoreKGUI.UpdateItemScrollFrame("");
-	end
-end
-
 
 function LoreKGUI.Initialize(self, event, arg1)
 	if event == "ADDON_LOADED" and arg1 == "Lorekeeper" then
-
-		allData = CopyTable(LK["LocalData"]["text"]);
-		for id, data in pairs(LoreK_DB["text"]) do
-			if allData[id] then
-				Mixin(allData[id].base, data.base);
-			else
-				allData[id] = CopyTable(data);
-			end
-		end
-
-		function LoreKGUI.PopulateList()
-			if not LoreK_DB or not LoreK_DB["text"] then
-				return;
-			end
-
-			--sort by favorite, then alphabetically
-			local function sortFunc(a, b)
-				if a.base.isFavorite ~= b.base.isFavorite then
-					return a.base.isFavorite;
-				else
-					return strcmputf8i(a.base.title, b.base.title) < 0;
-				end
-			end
-			ItemScrollView:SetElementInitializer("Button", ItemInitializer);
-			-- Insert each entry into the DataProvider
-			for id, data in pairs(allData) do
-				data.id = id;
-				ItemDataProvider:Insert(data);
-			end
-
-			ItemDataProvider:SetSortComparator(sortFunc);
-			ItemDataProvider:Sort();
-		end
 		LoreKGUI.PopulateList()
 
-		-- Function to update the scroll frame content
-		function LoreKGUI.UpdateItemScrollFrame(searchText)
-			if not LoreK_DB or not LoreK_DB["text"] then
-				return;
-			end
+		if LoreK_DB["settings"]["hideUnread"] then
+			--HideUnread_Check:SetChecked(true)
+			--HideUnread_Check.hideTex:Show();
+		else
+			--HideUnread_Check:SetChecked(false)
+			--HideUnread_Check.hideTex:Hide();
 		end
-
-		-- Search box
-		LoreKGUI.SearchBox = CreateFrame("EditBox", "LoreKSearchBox", LoreKGUI, "SearchBoxTemplate");
-		LoreKGUI.SearchBox:SetSize(190, 20);
-		LoreKGUI.SearchBox:SetPoint("TOP", ItemDisplayFrame, "TOP", 0, -5);
-		LoreKGUI.SearchBox:SetScript("OnTextChanged", function(self)
-			local searchText = self:GetText():lower();
-			-- Filter and update scroll frame content based on search text
-			LoreKGUI.UpdateItemScrollFrame(searchText);
-			if LoreKGUI.SearchBox:HasText() then
-				LoreKGUI.SearchBox.Instructions:Hide();
-			else
-				LoreKGUI.SearchBox.Instructions:Show();
-			end
-		end)
-
-		-- Initialize the scroll frame with no filter
-		LoreKGUI.updateSearchBox(LoreKGUI.SearchBox);
-
 	end
 end
 
@@ -613,11 +836,16 @@ end
 LoreKGUI.Events:SetScript("OnEvent", LoreKGUI.Initialize);
 
 function LoreKGUI.Script_OnShow()
-	LoreKGUI.UpdateItemScrollFrame("");
-	PlaySound(74421);
+	PlaySound(74421, "SFX");
+	if LoreK_DB["settings"]["slashRead"] then
+		DoEmote("READ", nil, true);
+	end
 end
 function LoreKGUI.Script_OnHide()
-	PlaySound(74423);
+	PlaySound(74423, "SFX");
+	if LoreK_DB["settings"]["slashRead"] then
+		CancelEmote();
+	end
 end
 
 LoreKGUI:SetScript("OnShow", LoreKGUI.Script_OnShow);

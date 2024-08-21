@@ -2,7 +2,7 @@ local _, LK = ...
 
 
 local function Print(...)
-	local prefix = string.format("|cFFFFF569".."[PH] Lorekeeper" .. "|r:");
+	local prefix = string.format("|cFFFFF569"..LK["Lorekeeper"] .. "|r:");
 	DEFAULT_CHAT_FRAME:AddMessage(string.join(" ", prefix, ...));
 end
 
@@ -132,6 +132,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 				settings = {
 					overrideMaterials = false,
 					hideUnread = true,
+					slashRead = false,
 					debug = true,
 				},
 				text = {},
@@ -241,7 +242,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		local key = GUIDType .. "-" .. ( C_Item.GetItemIDByGUID(activeContext.guid) or npcID )
 		if key == "Item-8383" then -- this will be handled by the Mail plugin.
 			if C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
-				LoreKeeper_API_Mail()
+				Lorekeeper_API.MailDetected(activeContext)
 			end
 			return;
 		end

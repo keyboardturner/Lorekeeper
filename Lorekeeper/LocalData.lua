@@ -99,7 +99,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "The Old Gods and the Ordering of Azeroth (Annotated)",
-			}
+			},
 		},
 		["Item-225430"] = {
 			["base"] = {
@@ -109,7 +109,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Green Hills of Stranglethorn - Page 14",
-			}
+			},
 		},
 		["Item-225417"] = {
 			["base"] = {
@@ -119,7 +119,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Green Hills of Stranglethorn - Page 6",
-			}
+			},
 		},
 		["Item-225416"] = {
 			["base"] = {
@@ -129,7 +129,7 @@ LK["LocalData"] = {
 				},
 				["title"] = "Green Hills of Stranglethorn - Page 26",
 				["singlePage"] = true
-			}
+			},
 		},
 		["Item-225426"] = {
 			["base"] = {
@@ -139,7 +139,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Green Hills of Stranglethorn - Page 25",
-			}
+			},
 		},
 		["Item-139034"] = {
 			["base"] = {
@@ -149,7 +149,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Letter from Gul'dan",
-			}
+			},
 		},
 		["Item-95412"] = {
 			["base"] = {
@@ -160,7 +160,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Frayed Zandalari Journal",
-			}
+			},
 		},
 		["Item-225422"] = {
 			["base"] = {
@@ -170,7 +170,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Green Hills of Stranglethorn - Page 10",
-			}
+			},
 		},
 		["Item-225429"] = {
 			["base"] = {
@@ -180,7 +180,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Green Hills of Stranglethorn - Page 24",
-			}
+			},
 		},
 		["GameObject-201518"] = {
 			["base"] = {
@@ -190,7 +190,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Alliance Military Ranks",
-			}
+			},
 		},
 		["GameObject-408060"] = {
 			["base"] = {
@@ -266,7 +266,7 @@ LK["LocalData"] = {
 				["title"] = "Tome of Blighted Implements",
 				["material"] = "ParchmentLarge",
 				["texture"] = "",
-			}
+			},
 		},
 		["GameObject-385586"] = {
 			["base"] = {
@@ -276,7 +276,7 @@ LK["LocalData"] = {
 				},
 				["singlePage"] = true,
 				["pageCount"] = 0,
-			}
+			},
 		},
 		["Item-206033"] = {
 			["base"] = {
@@ -286,7 +286,7 @@ LK["LocalData"] = {
 				},
 				["title"] = "Untranslated Obsidian Tome",
 				["singlePage"] = true,
-			}
+			},
 		},
 		["Item-200295"] = {
 			["base"] = {
@@ -301,7 +301,7 @@ LK["LocalData"] = {
 				},
 				["title"] = "Makko's Complete Journal",
 				["singlePage"] = false
-			}
+			},
 		},
 		["Item-225427"] = {
 			["base"] = {
@@ -311,7 +311,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Green Hills of Stranglethorn - Page 20",
-			}
+			},
 		},
 		["Item-225423"] = {
 			["base"] = {
@@ -321,7 +321,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Green Hills of Stranglethorn - Page 4",
-			}
+			},
 		},
 		["Item-225418"] = {
 			["base"] = {
@@ -331,7 +331,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Green Hills of Stranglethorn - Page 8",
-			}
+			},
 		},
 		["Item-83078"] = {
 			["base"] = {
@@ -347,7 +347,7 @@ LK["LocalData"] = {
 				},
 				["title"] = "Legacy of the Masters (Part 1)",
 				["singlePage"] = false,
-			}
+			},
 		},
 		["Item-225424"] = {
 			["base"] = {
@@ -357,7 +357,7 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Green Hills of Stranglethorn - Page 21",
-			}
+			},
 		},
 		["Item-225425"] = {
 			["base"] = {
@@ -367,9 +367,9 @@ LK["LocalData"] = {
 				},
 				["pageCount"] = 0,
 				["title"] = "Green Hills of Stranglethorn - Page 18",
-			}
-		}
-	}
+			},
+		},
+	},
 
 };
 

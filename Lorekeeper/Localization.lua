@@ -1,4 +1,8 @@
-local _, LK = ...; -- Let's use the private table passed to every .lua 
+local _, LK = ...; -- Let's use the private table passed to every .lua
+
+--Purposeful global variable so plugins and other addons can access
+Lorekeeper_API = {}
+Lorekeeper_API.LK = LK
 
 local function defaultFunc(L, key)
  -- If this function was called, we have no localization for this key.
