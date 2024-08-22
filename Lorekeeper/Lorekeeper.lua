@@ -192,11 +192,11 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			end
 		end
 
-		SLASH_LOREKEEPER1 = "/".. "lorekeeper" -- ["PH"]
-		SLASH_LOREKEEPER2 = "/".. "lorek" -- ["PH"]
+		SLASH_LOREKEEPER1 = "/".. LK["SlashLoreK1"]
+		SLASH_LOREKEEPER2 = "/".. LK["SlashLoreK2"]
 		SlashCmdList.LOREKEEPER = HandleSlashCommands;
 
-		Print("[PH] Loaded! Type /lorekeeper to open the journal.")
+		Print(LK["LoreKIntro"])
 	end
 
 	if event == "ITEM_TEXT_BEGIN" then
@@ -275,6 +275,12 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		activeContext.guid = nil
 		activeContext.doneResetting = nil
 
+		if not LoreK_DB["text"][key] then
+			LoreK_DB["text"][key] = {
+				["base"] = {};
+			};
+		end
+
 		if GUIDType == "GameObject" then
 			activeContext.mapData = {
 				[map] = coords,
@@ -312,7 +318,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 						else
 							LoreK_DB["text"][key]["copy_"..( tablelength(LoreK_DB["text"][key]) )] = CopyTable(activeContext) -- produce a copy
 							if LoreK_DB.settings.debug then
-								Print("Detected changes in text, a copy of the old has been made: "..activeContext.title) -- ["PH"]
+								Print("Detected changes in text, a copy of the old has been made: "..activeContext.title)
 							end
 						end
 					else
@@ -341,7 +347,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		end
 
 		activeContext = nil;
-		LoreKGUI.PopulateList()
+		LK["LoreKGUI"].PopulateList()
 	end
 end
 

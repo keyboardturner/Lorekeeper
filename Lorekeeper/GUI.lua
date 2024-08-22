@@ -71,6 +71,7 @@ end
 
 -- Create the main frame
 local LoreKGUI = CreateFrame("Frame", "LoreKMainframe", UIParent, "PortraitFrameTemplateMinimizable");
+LK["LoreKGUI"] = LoreKGUI
 tinsert(UISpecialFrames, LoreKGUI:GetName());
 LK.LoreKGUI = LoreKGUI;
 LoreKGUI:SetPortraitTextureRaw("Interface\\ICONS\\inv_misc_book_16");
@@ -86,6 +87,91 @@ LoreKGUI:SetTitle(LK["Lorekeeper"]);
 
 LoreKGUI:Hide();
 
+local MeowFrameMixin = {};
+
+MeowFrameMixin.SoundFileList = {
+	3598607, 3598611, 3598615, 3598605,
+	3598609, 3598613, 3598617, 3598619,
+	3598621, 3598623, 3598625, 3598641,
+	3598639, 3598635, 3598637, 3598611,
+}
+
+function MeowFrameMixin:OnLoad()
+	self.clickCount = 0
+	self.clickThreshold = 20
+	self.timeFrame = .2
+	self.lastClickTime = 0
+
+	self:RegisterForClicks("AnyDown", "AnyUp")
+end
+
+function MeowFrameMixin:OnClick(_, down)
+	local portrait = LoreKGUI.PortraitContainer.portrait
+	local currentTime = GetTime()
+
+	if not down then
+		portrait:SetTexCoord(0, 1, 0, 1)
+	else
+		portrait:SetTexCoord(.01, .99, .01, .99)
+	end
+
+	if currentTime - self.lastClickTime > self.timeFrame then
+		self:ResetClicks()
+	end
+
+	self.clickCount = self.clickCount + 1
+	self.lastClickTime = currentTime
+
+	if self.clickCount >= self.clickThreshold then
+		self:ResetClicks()
+		self:Mrow()
+	end
+end
+
+function MeowFrameMixin:ResetClicks()
+	self.clickCount = 0
+end
+
+function MeowFrameMixin:Mrow()
+	local sound = self.SoundFileList[fastrandom(1, #self.SoundFileList)]
+	PlaySoundFile(sound, "SFX")
+end
+
+LoreKGUI.PortraitContainer.portrait.MeowFrame = CreateFrame("Button", nil, LoreKGUI)
+FrameUtil.SpecializeFrameWithMixins(LoreKGUI.PortraitContainer.portrait.MeowFrame, MeowFrameMixin)
+LoreKGUI.PortraitContainer.portrait.MeowFrame:SetAllPoints(LoreKGUI.PortraitContainer.portrait)
+
+
+-- here, we just pass in the table containing our saved color config
+local function ShowColorPicker(configTable)
+	local r, g, b, a = configTable.r, configTable.g, configTable.b, configTable.a;
+
+	local function OnColorChanged()
+		local newR, newG, newB = ColorPickerFrame:GetColorRGB();
+		local newA = ColorPickerFrame:GetColorAlpha();
+		configTable.r, configTable.g, configTable.b, configTable.a = newR, newG, newB, newA;
+		LoreKGUI.SetColors()
+	end
+
+	local function OnCancel()
+		configTable.r, configTable.g, configTable.b, configTable.a = r, g, b, a;
+		LoreKGUI.SetColors()
+	end
+
+	local options = {
+		swatchFunc = OnColorChanged,
+		opacityFunc = OnColorChanged,
+		cancelFunc = OnCancel,
+		hasOpacity = a ~= nil,
+		opacity = a,
+		r = r,
+		g = g,
+		b = b,
+	};
+
+	ColorPickerFrame:SetupColorPickerAndShow(options);
+end
+
 
 -- Function to handle tab clicks
 local function Tab_OnClick(self)
@@ -95,6 +181,11 @@ local function Tab_OnClick(self)
 	end
 	self.content:Show();
 	PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB, "SFX");
+	LoreKMainframeTab2:SetEnabled(false) -- until it's implemented
+
+	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
+		LoreKMainframeTab2:SetEnabled(false) -- until it's implemented
+	end
 end
 
 -- Function to set up tabs and their associated content frames
@@ -159,18 +250,18 @@ local function SetTabs(frame, numTabs, ...)
 end
 
 -- Set up the tabs and content frames
-local content1, content2, content3 = SetTabs(LoreKGUI, 3, "[PH] Library", "[PH] Mail", "[PH] Settings");
+local content1, content2, content3 = SetTabs(LoreKGUI, 3, LK["Library"], LK["Mail"], LK["Settings"]);
 
 
---LoreKMainframeTab2:SetEnabled(false)
+LoreKMainframeTab2:SetEnabled(false)
 --LoreKMainframeTab3:SetEnabled(false)
 
---LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
+LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5) -- until it's implemented
 --LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5)
 
 LoreKMainframeTab1:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine("[PH] Library!", 1, 1, 1);
+	GameTooltip:AddLine(LK["Library"], 1, 1, 1);
 	GameTooltip:Show();
 end);
 LoreKMainframeTab1:SetScript("OnLeave", function()
@@ -179,7 +270,11 @@ end);
 
 LoreKMainframeTab2:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine("[PH] Mail!", 1, 1, 1);
+	GameTooltip:AddLine(LK["Mail"], 1, 1, 1);
+	GameTooltip:AddLine(LK["NotYetAvailable"], 1, 0, 0)
+	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
+		GameTooltip:AddLine(LK["AddonDisabled"], 1, 0, 0)
+	end
 	GameTooltip:Show();
 end);
 LoreKMainframeTab2:SetScript("OnLeave", function()
@@ -188,7 +283,7 @@ end);
 
 LoreKMainframeTab3:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine("[PH] Settings", 1, 1, 1);
+	GameTooltip:AddLine(LK["Settings"], 1, 1, 1);
 	GameTooltip:Show();
 end);
 LoreKMainframeTab3:SetScript("OnLeave", function()
@@ -197,16 +292,11 @@ end);
 
 
 StaticPopupDialogs["LOREK_DELETE_ENTRIES"] = {
-	text = "Are you sure you want to delete all saved versions for this entry? This cannot be undone.",
+	text = LK["DeleteAllConfirm"],
 	button1 = YES,
 	button2 = NO,
 	OnAccept = function()
-		if UnitAffectingCombat("player") == true then
-			print(ERR_NOT_IN_COMBAT);
-			return
-		else
-			print("[PH] get wrecked, this function is not yet implemented");
-		end
+		print("[PH] get wrecked, this function is not yet implemented");
 	end,
 	timeout = 0,
 	whileDead = false,
@@ -289,7 +379,7 @@ DeleteEntry:SetHighlightAtlas("128-RedButton-Delete-Highlight");
 DeleteEntry:SetEnabled(false);
 DeleteEntry:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine("[PH] Delete all copies", 1, 1, 1);
+	GameTooltip:AddLine(LK["DeleteAll"], 1, 1, 1);
 	GameTooltip:Show();
 end);
 DeleteEntry:SetScript("OnLeave", function()
@@ -310,7 +400,7 @@ TextScrollChild.textTitle:SetJustifyV("TOP");
 TextScrollChild.textHTML = CreateFrame("SimpleHTML", nil, TextDisplayFrame.TextScrollChild);
 TextScrollChild.textHTML:SetPoint("TOP", TextScrollChild, "TOP", 0, 0);
 TextScrollChild.textHTML:SetPoint("BOTTOM", TextScrollChild, "BOTTOM", 0, 0);
-TextScrollChild.textHTML:SetWidth(TextScrollChild:GetWidth());
+TextScrollChild.textHTML:SetWidth(TextScrollChild:GetWidth()-50);
 
 -- Set the font for different HTML tags
 TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["default"]["H1"]:GetFont());
@@ -475,11 +565,15 @@ local function ItemInitializer(button, data)
 						if isFavorite then
 							rootDescription:CreateButton(TRANSMOG_ITEM_UNSET_FAVORITE, function()
 								LoreK_DB["text"][itemID]["base"]["isFavorite"] = false;
+								LoreKMainframe.PopulateList();
+								PlaySound(SOUNDKIT.UI_70_ARTIFACT_FORGE_APPEARANCE_LOCKED, "SFX");
 							end)
 						else
 							if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] then
 								rootDescription:CreateButton(TRANSMOG_ITEM_SET_FAVORITE, function()
 									LoreK_DB["text"][itemID]["base"]["isFavorite"] = true;
+									LoreKMainframe.PopulateList();
+									PlaySound(SOUNDKIT.UI_70_ARTIFACT_FORGE_APPEARANCE_APPEARANCE_CHANGE, "SFX");
 								end)
 							else
 								local lockedBtn = rootDescription:CreateButton(LOCKED .. " - " .. NOT_COLLECTED);
@@ -523,6 +617,7 @@ local function ItemInitializer(button, data)
 					TextScrollChild.textHTML:SetTextColor("h2", 0, 0, 0, 1);
 					TextScrollChild.textHTML:SetTextColor("h3", 0, 0, 0, 1);
 					TextScrollChild.textHTML:SetTextColor("p", 0, 0, 0, 1);
+					LoreKGUI.SetFontSizeP();
 				else
 					TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["default"]["H1"]:GetFont());
 					TextScrollChild.textHTML:SetFont("h2", ITEM_TEXT_FONTS["default"]["H2"]:GetFont());
@@ -532,6 +627,7 @@ local function ItemInitializer(button, data)
 					TextScrollChild.textHTML:SetTextColor("h2", 0, 0, 0, 1);
 					TextScrollChild.textHTML:SetTextColor("h3", 0, 0, 0, 1);
 					TextScrollChild.textHTML:SetTextColor("p", 0, 0, 0, 1);
+					LoreKGUI.SetFontSizeP();
 				end
 
 				TextDisplayFrame.PrevPageButton:Hide();
@@ -539,6 +635,8 @@ local function ItemInitializer(button, data)
 				TextDisplayFrame.PrevPageButton:Disable();
 				TextDisplayFrame.NextPageButton:Disable();
 				TextDisplayFrame.PageNumber:SetText("");
+
+				LoreKGUI.SetColors()
 
 				if not singlePage then
 					maxPages = #parseFunc('["text"][itemID]["base"]["text"]', itemID);
@@ -637,7 +735,9 @@ ItemScrollView:SetElementExtent(36);
 
 --sort by favorite, then alphabetically
 function LoreKGUI.sortFunc(a, b)
-	if a.base.isFavorite ~= b.base.isFavorite then
+	--print("a",a.base.title, a.base.isFavorite)
+	--print("b",b.base.title, b.base.isFavorite)
+	if (not not a.base.isFavorite) ~= (not not b.base.isFavorite) then
 		return a.base.isFavorite;
 	else
 		return strcmputf8i(a.base.title, b.base.title) < 0;
@@ -665,6 +765,7 @@ function LoreKGUI.PopulateList()
 		ItemDataProvider:Insert(data);
 	end
 
+	LoreKGUI.OnTextChanged(LoreKGUI.SearchBox)
 	ItemDataProvider:SetSortComparator(LoreKGUI.sortFunc);
 	ItemDataProvider:Sort();
 end
@@ -681,7 +782,7 @@ local function PopulateNewDataProvider(newData)
 	ItemScrollView:SetDataProvider(ItemDataProvider)
 end
 
-local function OnTextChanged(editBox)
+function LoreKGUI.OnTextChanged(editBox)
 	local query = editBox:GetText();
 
 	local matches = {}
@@ -698,7 +799,7 @@ end
 
 -- Generally safer to use HookScript on EditBoxes inheriting a template as they likely already have OnTextChanged callbacks defined
 -- As a side note, it may be worth debouncing this callback if your search method is particularly performance intensive
-LoreKGUI.SearchBox:HookScript("OnTextChanged", OnTextChanged)
+LoreKGUI.SearchBox:HookScript("OnTextChanged", LoreKGUI.OnTextChanged)
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -899,7 +1000,7 @@ SettingsDisplayFrame.ParchmentTypes = {
 		"shop-card-bundle",
 		"store-card-splash1-nobanner",
 		"store-card-transmog",
-		
+
 	},
 
 };
@@ -913,7 +1014,7 @@ SettingsDisplayFrame.ParchmentPreview.tex:SetAllPoints(true);
 
 
 SettingsDisplayFrame.ParchmentDropdown = CreateFrame("DropdownButton", nil, SettingsScrollChild, "WowStyle1DropdownTemplate");
-SettingsDisplayFrame.ParchmentDropdown:SetDefaultText(TEXTURES_SUBHEADER);
+SettingsDisplayFrame.ParchmentDropdown:SetDefaultText(LK["Textures"]);
 SettingsDisplayFrame.ParchmentDropdown:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*4);
 SettingsDisplayFrame.ParchmentDropdown:SetSize(220, 26);
 SettingsDisplayFrame.ParchmentDropdown:SetupMenu(function(dropdown, rootDescription)
@@ -921,7 +1022,7 @@ SettingsDisplayFrame.ParchmentDropdown:SetupMenu(function(dropdown, rootDescript
 	local optionHeight = 20; -- 20 is default
 	local maxElements = 8; -- amount of elements to show before scroll
 	local maxScrollExtent = optionHeight * maxElements;
-	local elementDescription = rootDescription:CreateButton(QUESTS_LABEL)
+	local elementDescription = rootDescription:CreateButton(LK["Quests"])
 	for k, v in ipairs(SettingsDisplayFrame.ParchmentTypes["questBG"]) do
 		local submenumenu = elementDescription:CreateButton(SettingsDisplayFrame.ParchmentTypes["questBG"][k], function()
 			LoreK_DB["settings"]["material"] = SettingsDisplayFrame.ParchmentTypes["questBG"][k];
@@ -929,7 +1030,7 @@ SettingsDisplayFrame.ParchmentDropdown:SetupMenu(function(dropdown, rootDescript
 		end)
 	end
 	elementDescription:SetScrollMode(maxScrollExtent);
-	local elementDescription = rootDescription:CreateButton(QUEST_CLASSIFICATION_CAMPAIGN)
+	local elementDescription = rootDescription:CreateButton(LK["Campaign"])
 	for k, v in ipairs(SettingsDisplayFrame.ParchmentTypes["questZone"]) do
 		local submenumenu = elementDescription:CreateButton(SettingsDisplayFrame.ParchmentTypes["questZone"][k], function()
 			LoreK_DB["settings"]["material"] = SettingsDisplayFrame.ParchmentTypes["questZone"][k];
@@ -937,7 +1038,7 @@ SettingsDisplayFrame.ParchmentDropdown:SetupMenu(function(dropdown, rootDescript
 		end)
 	end
 	elementDescription:SetScrollMode(maxScrollExtent);
-	local elementDescription = rootDescription:CreateButton(TRADE_SKILLS)
+	local elementDescription = rootDescription:CreateButton(LK["Professions"])
 	for k, v in ipairs(SettingsDisplayFrame.ParchmentTypes["professionBG"]) do
 		local submenumenu = elementDescription:CreateButton(SettingsDisplayFrame.ParchmentTypes["professionBG"][k], function()
 			LoreK_DB["settings"]["material"] = SettingsDisplayFrame.ParchmentTypes["professionBG"][k];
@@ -945,7 +1046,7 @@ SettingsDisplayFrame.ParchmentDropdown:SetupMenu(function(dropdown, rootDescript
 		end)
 	end
 	elementDescription:SetScrollMode(maxScrollExtent);
-	local elementDescription = rootDescription:CreateButton(MISCELLANEOUS)
+	local elementDescription = rootDescription:CreateButton(LK["Misc"])
 	for k, v in ipairs(SettingsDisplayFrame.ParchmentTypes["misc"]) do
 		local submenumenu = elementDescription:CreateButton(SettingsDisplayFrame.ParchmentTypes["misc"][k], function()
 			LoreK_DB["settings"]["material"] = SettingsDisplayFrame.ParchmentTypes["misc"][k];
@@ -956,11 +1057,117 @@ SettingsDisplayFrame.ParchmentDropdown:SetupMenu(function(dropdown, rootDescript
 end)
 SettingsDisplayFrame.ParchmentDropdown:SetEnabled(false);
 
+SettingsDisplayFrame.textHTML = CreateFrame("SimpleHTML", nil, SettingsDisplayFrame.ParchmentPreview);
+SettingsDisplayFrame.textHTML:SetPoint("TOP", SettingsDisplayFrame.ParchmentPreview, "TOP", 5, -10);
+SettingsDisplayFrame.textHTML:SetPoint("BOTTOM", SettingsDisplayFrame.ParchmentPreview, "BOTTOM", -5, 0);
+SettingsDisplayFrame.textHTML:SetWidth(SettingsDisplayFrame.ParchmentPreview:GetWidth()-33);
+
+SettingsDisplayFrame.textHTML:SetFont("h1", ITEM_TEXT_FONTS["default"]["H1"]:GetFont());
+SettingsDisplayFrame.textHTML:SetFont("h2", ITEM_TEXT_FONTS["default"]["H2"]:GetFont());
+SettingsDisplayFrame.textHTML:SetFont("h3", ITEM_TEXT_FONTS["default"]["H3"]:GetFont());
+SettingsDisplayFrame.textHTML:SetFont("p", ITEM_TEXT_FONTS["default"]["P"]:GetFont());
+SettingsDisplayFrame.textHTML:SetJustifyH("p","LEFT");
+SettingsDisplayFrame.textHTML:SetText(LK["SampleText"])
+
+SettingsDisplayFrame.textHTMLLarge = CreateFrame("SimpleHTML", nil, SettingsDisplayFrame.ParchmentPreview);
+SettingsDisplayFrame.textHTMLLarge:SetPoint("TOP", SettingsDisplayFrame.ParchmentPreview, "TOP", 5, -130);
+SettingsDisplayFrame.textHTMLLarge:SetPoint("BOTTOM", SettingsDisplayFrame.ParchmentPreview, "BOTTOM", -5, 0);
+SettingsDisplayFrame.textHTMLLarge:SetWidth(SettingsDisplayFrame.ParchmentPreview:GetWidth()-33);
+
+SettingsDisplayFrame.textHTMLLarge:SetFont("h1", ITEM_TEXT_FONTS["ParchmentLarge"]["H1"]:GetFont());
+SettingsDisplayFrame.textHTMLLarge:SetFont("h2", ITEM_TEXT_FONTS["ParchmentLarge"]["H2"]:GetFont());
+SettingsDisplayFrame.textHTMLLarge:SetFont("h3", ITEM_TEXT_FONTS["ParchmentLarge"]["H3"]:GetFont());
+SettingsDisplayFrame.textHTMLLarge:SetFont("p", ITEM_TEXT_FONTS["ParchmentLarge"]["P"]:GetFont());
+SettingsDisplayFrame.textHTMLLarge:SetJustifyH("p","LEFT");
+SettingsDisplayFrame.textHTMLLarge:SetText(LK["SampleText"])
+
+
+SettingsDisplayFrame.materialColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
+SettingsDisplayFrame.materialColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*5);
+SettingsDisplayFrame.materialColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.materialColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["TextMaterial"]);
+SettingsDisplayFrame.materialColorPicker:SetScript("OnClick", function()
+	ShowColorPicker(LoreK_DB["settings"]["colors"]["parchment"]);
+end);
+
+SettingsDisplayFrame.titleColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
+SettingsDisplayFrame.titleColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*6);
+SettingsDisplayFrame.titleColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.titleColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["Title"]);
+SettingsDisplayFrame.titleColorPicker:SetScript("OnClick", function()
+	ShowColorPicker(LoreK_DB["settings"]["colors"]["title"]);
+end);
+
+SettingsDisplayFrame.titleTextColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
+SettingsDisplayFrame.titleTextColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*7);
+SettingsDisplayFrame.titleTextColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.titleTextColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["TitleText"]);
+SettingsDisplayFrame.titleTextColorPicker:SetScript("OnClick", function()
+	ShowColorPicker(LoreK_DB["settings"]["colors"]["titleText"]);
+end);
+
+SettingsDisplayFrame.Head1ColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
+SettingsDisplayFrame.Head1ColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*8);
+SettingsDisplayFrame.Head1ColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.Head1ColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["Header1"]);
+SettingsDisplayFrame.Head1ColorPicker:SetScript("OnClick", function()
+	ShowColorPicker(LoreK_DB["settings"]["colors"]["h1"]);
+end);
+
+SettingsDisplayFrame.Head2ColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
+SettingsDisplayFrame.Head2ColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*9);
+SettingsDisplayFrame.Head2ColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.Head2ColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["Header2"]);
+SettingsDisplayFrame.Head2ColorPicker:SetScript("OnClick", function()
+	ShowColorPicker(LoreK_DB["settings"]["colors"]["h2"]);
+end);
+
+SettingsDisplayFrame.Head3ColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
+SettingsDisplayFrame.Head3ColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*10);
+SettingsDisplayFrame.Head3ColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.Head3ColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["Header3"]);
+SettingsDisplayFrame.Head3ColorPicker:SetScript("OnClick", function()
+	ShowColorPicker(LoreK_DB["settings"]["colors"]["h3"]);
+end);
+
+SettingsDisplayFrame.ParaColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
+SettingsDisplayFrame.ParaColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*11);
+SettingsDisplayFrame.ParaColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.ParaColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["Paragraph"]);
+SettingsDisplayFrame.ParaColorPicker:SetScript("OnClick", function()
+	ShowColorPicker(LoreK_DB["settings"]["colors"]["p"]);
+end);
+
+SettingsDisplayFrame.TextSizeDropdown = CreateFrame("DropdownButton", nil, SettingsScrollChild, "WowStyle1DropdownTemplate");
+SettingsDisplayFrame.TextSizeDropdown:SetDefaultText(LK["FontSize"]);
+SettingsDisplayFrame.TextSizeDropdown:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*12);
+SettingsDisplayFrame.TextSizeDropdown:SetSize(220, 26);
+SettingsDisplayFrame.TextSizeDropdown:SetupMenu(function(dropdown, rootDescription)
+
+
+	local elementDescription = rootDescription:CreateButton(format(FONT_SIZE_TEMPLATE,"13"),  function()
+		LoreK_DB["settings"]["fontSizeP"]["height"] = 13;
+		LoreKGUI.SetFontSizeP();
+	end);
+	local elementDescription = rootDescription:CreateButton(format(FONT_SIZE_TEMPLATE,"16"),  function()
+		LoreK_DB["settings"]["fontSizeP"]["height"] = 16;
+		LoreKGUI.SetFontSizeP();
+	end);
+	local elementDescription = rootDescription:CreateButton(format(FONT_SIZE_TEMPLATE,"19"),  function()
+		LoreK_DB["settings"]["fontSizeP"]["height"] = 19;
+		LoreKGUI.SetFontSizeP();
+	end);
+	local elementDescription = rootDescription:CreateButton(format(FONT_SIZE_TEMPLATE,"22"),  function()
+		LoreK_DB["settings"]["fontSizeP"]["height"] = 22
+		LoreKGUI.SetFontSizeP();
+	end);
+end);
+
 
 --------------------------------------------------------------------------
 --Somewhere way below
 SettingsDisplayFrame.debug_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
-SettingsDisplayFrame.debug_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*10);
+SettingsDisplayFrame.debug_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*15);
 SettingsDisplayFrame.debug_Checkbox:SetScript("OnClick", function(self)
 	if self:GetChecked() then
 		LoreK_DB["settings"]["debug"] = true;
@@ -1006,19 +1213,106 @@ function LoreKGUI.SetParchmentTexture()
 	end
 end
 
-LoreKGUI.Events = CreateFrame("Frame")
-LoreKGUI.Events:RegisterEvent("ADDON_LOADED")
+function LoreKGUI.SetColors()
+	if not LoreK_DB["settings"]["colors"] then
+		LoreK_DB["settings"]["colors"] = {
+			["parchment"] = {
+				r = 1,
+				g = 1,
+				b = 1,
+				a = 1,
+			},
+			["title"] = {
+				r = 1,
+				g = 1,
+				b = 1,
+				a = 1,
+			},
+			["titleText"] = {
+				r = .18,
+				g = .12,
+				b = .05,
+				a = 1,
+			},
+			["h1"] = {
+				r = .18,
+				g = .12,
+				b = .05,
+				a = 1,
+			},
+			["h2"] = {
+				r = .18,
+				g = .12,
+				b = .05,
+				a = 1,
+			},
+			["h3"] = {
+				r = .18,
+				g = .12,
+				b = .05,
+				a = 1,
+			},
+			["p"] = {
+				r = .18,
+				g = .12,
+				b = .05,
+				a = 1,
+			},
+		};
+	end;
+
+
+	SettingsDisplayFrame.ParchmentPreview.tex:SetVertexColor(ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["parchment"])); -- dummy frame
+	TextDisplayFrame.bg:SetVertexColor(ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["parchment"])); -- actual frame
+
+	SettingsDisplayFrame.textHTML:SetTextColor("h1", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h1"])); -- dummy text
+	SettingsDisplayFrame.textHTML:SetTextColor("h2", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h2"]));
+	SettingsDisplayFrame.textHTML:SetTextColor("h3", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h3"]));
+	SettingsDisplayFrame.textHTML:SetTextColor("p", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["p"]));
+
+	SettingsDisplayFrame.textHTMLLarge:SetTextColor("h1", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h1"])); -- dummy text
+	SettingsDisplayFrame.textHTMLLarge:SetTextColor("h2", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h2"]));
+	SettingsDisplayFrame.textHTMLLarge:SetTextColor("h3", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h3"]));
+	SettingsDisplayFrame.textHTMLLarge:SetTextColor("p", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["p"]));
+
+
+	TextScrollChild.textHTML:SetTextColor("h1", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h1"])); --actual text colors
+	TextScrollChild.textHTML:SetTextColor("h2", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h2"]));
+	TextScrollChild.textHTML:SetTextColor("h3", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h3"]));
+	TextScrollChild.textHTML:SetTextColor("p", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["p"]));
+
+end;
+
+function LoreKGUI.SetFontSizeP()
+	local fontFile, height, flags = ITEM_TEXT_FONTS["ParchmentLarge"]["P"]:GetFont()
+	if not LoreK_DB["settings"]["fontSizeP"] then
+		LoreK_DB["settings"]["fontSizeP"] = {
+			fontFile, height, flags,
+		};
+	end;
+
+	SettingsDisplayFrame.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"], flags);  -- dummy text
+	SettingsDisplayFrame.textHTMLLarge:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"], flags); -- dummy text
+	TextScrollChild.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"], flags);
+	TextScrollChild.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"], flags);
+end;
+
+
+LoreKGUI.Events = CreateFrame("Frame");
+LoreKGUI.Events:RegisterEvent("ADDON_LOADED");
 
 
 function LoreKGUI.Initialize(self, event, arg1)
 	if event == "ADDON_LOADED" and arg1 == "Lorekeeper" then
-		LoreKGUI.PopulateList()
+		LoreKGUI.PopulateList();
 		SettingsDisplayFrame.overrideMats_Checkbox:SetChecked(LoreK_DB["settings"]["overrideMaterials"]);
 		SettingsDisplayFrame.hideUnread_Checkbox:SetChecked(LoreK_DB["settings"]["hideUnread"]);
 		SettingsDisplayFrame.slashRead_Checkbox:SetChecked(LoreK_DB["settings"]["slashRead"]);
 		SettingsDisplayFrame.debug_Checkbox:SetChecked(LoreK_DB["settings"]["debug"]);
 		
 		LoreKGUI.SetParchmentTexture()
+		LoreKGUI.SetColors()
+		LoreKGUI.SetFontSizeP();
 	end
 end
 
@@ -1030,6 +1324,7 @@ function LoreKGUI.Script_OnShow()
 	if LoreK_DB["settings"]["slashRead"] then
 		DoEmote("READ", nil, true);
 	end
+	LoreKMainframe.PopulateList();
 end
 function LoreKGUI.Script_OnHide()
 	PlaySound(SOUNDKIT.IG_SPELLBOOK_CLOSE, "SFX");
