@@ -18,7 +18,14 @@ if LOCALE == "enUS" then
 	-- The EU English game client also
 	-- uses the US English locale code.
 	LK["Lorekeeper"] = "Lorekeeper"
-	LK["HideTitle"] = "Fog of Lore"
+	LK["ReplaceMats"] = "Replace Materials"
+	LK["ReplaceMatsTT"] = "The background material will be replaced, providing a cleaner and more neutral background than the default parchment."
+	LK["FogOfLore"] = "Fog of Lore"
+	LK["FogOfLoreTT"] = "Reveal document text only after having read the item."
+	LK["SlashRead"] = "Play '/Read' Emote"
+	LK["SlashReadTT"] = "Upon opening Lorekeeper, have your character play the /read emote."
+	LK["Debug"] = "Debug Mode"
+	LK["DebugTT"] = "Include extra debug information (this may be spammy)."
 
 return end
 

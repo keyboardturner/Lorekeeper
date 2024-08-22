@@ -1,9 +1,0 @@
-## Interface: 110002
-## Title: Lorekeeper_Custom
-## Notes: Lorekeeper Description Temp
-## Author: Keyboardturner
-## Version: 0.0.1
-## Dependencies: Lorekeeper
-## SavedVariables: LoreKCustom_DB
-
-Lorekeeper_Custom.lua

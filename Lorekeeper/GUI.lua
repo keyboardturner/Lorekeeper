@@ -94,7 +94,7 @@ local function Tab_OnClick(self)
 		content:Hide();
 	end
 	self.content:Show();
-	PlaySound(841);
+	PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB, "SFX");
 end
 
 -- Function to set up tabs and their associated content frames
@@ -236,7 +236,7 @@ TextDisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI.LibraryPanel, "BOTTOMRIGHT",-2
 TextDisplayFrame.bg = TextDisplayFrame:CreateTexture(nil, "BACKGROUND");
 TextDisplayFrame.bg:SetPoint("TOPLEFT", TextDisplayFrame, "TOPLEFT", 3, -40);
 TextDisplayFrame.bg:SetPoint("BOTTOMRIGHT", TextDisplayFrame, "BOTTOMRIGHT", -4, 5);
-TextDisplayFrame.bg:SetAtlas("spellbook-background-evergreen-right")
+TextDisplayFrame.bg:SetAtlas("QuestBG-Parchment");
 --TextDisplayFrame.bg:SetColorTexture(0.1, 0.1, 0.1, 0.8);
 
 -- Scroll frame for Text Preview (Right)
@@ -494,7 +494,7 @@ local function ItemInitializer(button, data)
 					end)
 				end
 			else
-				PlaySound(170567, "SFX", true);
+				PlaySound(SOUNDKIT.UI_JOURNEYS_OPEN_LORE_BOOK, "SFX", true);
 				DeleteEntry:SetEnabled(true);
 				--selectionBehavior:SelectElementData(self:GetData())
 
@@ -556,7 +556,7 @@ local function ItemInitializer(button, data)
 							TextDisplayFrame.PrevPageButton:Disable();
 						end
 						TextDisplayFrame.NextPageButton:Enable();
-						PlaySound(836, "SFX", false);
+						PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
 
 						local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
 						local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
@@ -583,7 +583,7 @@ local function ItemInitializer(button, data)
 							TextDisplayFrame.NextPageButton:Disable();
 						end
 						TextDisplayFrame.PrevPageButton:Enable();
-						PlaySound(836, "SFX", false);
+						PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
 
 						local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
 						local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
@@ -615,6 +615,8 @@ local function ItemInitializer(button, data)
 			TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
 			if LoreK_DB.settings.debug then
 				TextDisplayFrame.Type_ID:SetText(itemID, 1, 1, 1, 1, true);
+			else
+				TextDisplayFrame.Type_ID:SetText("", 1, 1, 1, 1, true);
 			end
 			if isHTML then
 				HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />")
@@ -704,17 +706,6 @@ LoreKGUI.SearchBox:HookScript("OnTextChanged", OnTextChanged)
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 
---[[
-LoreK_DB = {
-	settings = {
-		overrideMaterials = false,
-		hideUnread = true,
-		slashRead = false,
-		debug = true,
-	},
-};
-]]
-
 LoreKGUI.SettingsDisplayFrame = CreateFrame("Frame", "LoreKSettingsDisplayFrame", LoreKGUI.SettingsPanel, "InsetFrameTemplate4");
 local SettingsDisplayFrame = LoreKGUI.SettingsDisplayFrame;
 SettingsDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.SettingsPanel, "TOPLEFT", 0, -65);
@@ -737,82 +728,283 @@ SettingsScrollChild:SetSize(SettingsScrollFrame:GetWidth()-8, 1); -- Height will
 SettingsScrollFrame:SetScrollChild(SettingsScrollChild);
 SettingsScrollChild:SetPoint("TOP", SettingsScrollFrame, "TOP", 0, 0);
 
+local settingsPanelPlacer = -27
 
-SettingsDisplayFrame.overrideMats_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
-SettingsDisplayFrame.overrideMats_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, -15);
-SettingsDisplayFrame.overrideMats_Checkbox:SetScript("OnClick", function(self)
+SettingsDisplayFrame.hideUnread_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
+SettingsDisplayFrame.hideUnread_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*1);
+SettingsDisplayFrame.hideUnread_Checkbox:SetScript("OnClick", function(self)
 	if self:GetChecked() then
-		PlaySound(856);
+		LoreK_DB["settings"]["hideUnread"] = true;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON, "SFX");
 	else
-		PlaySound(857);
+		LoreK_DB["settings"]["hideUnread"] = false;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF, "SFX");
 	end
 end);
-SettingsDisplayFrame.overrideMats_Checkbox.text = SettingsDisplayFrame.overrideMats_Checkbox:CreateFontString()
-SettingsDisplayFrame.overrideMats_Checkbox.text:SetFont(STANDARD_TEXT_FONT, 11)
-SettingsDisplayFrame.overrideMats_Checkbox.text:SetPoint("LEFT", SettingsDisplayFrame.overrideMats_Checkbox, "RIGHT", 0, 0)
-SettingsDisplayFrame.overrideMats_Checkbox.text:SetText("[PH] Override Materials")
-SettingsDisplayFrame.overrideMats_Checkbox.text:SetScript("OnEnter", function(self)
-	GameTooltip:SetOwner(SettingsDisplayFrame.overrideMats_Checkbox, "ANCHOR_TOPLEFT");
-	GameTooltip:AddLine("[PH] The background material will be overwritten, providing a cleaner and more neutral background color than the default parchment.", 1, 1, 1, true);
+SettingsDisplayFrame.hideUnread_Checkbox.Text:SetText(LK["FogOfLore"])
+SettingsDisplayFrame.hideUnread_Checkbox.Text:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.hideUnread_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["FogOfLoreTT"], 1, 1, 1, true);
 	GameTooltip:Show();
 end);
-SettingsDisplayFrame.overrideMats_Checkbox.text:SetScript("OnLeave", function(self)
+SettingsDisplayFrame.hideUnread_Checkbox.Text:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+SettingsDisplayFrame.hideUnread_Checkbox:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.hideUnread_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["FogOfLoreTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.hideUnread_Checkbox:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+
+SettingsDisplayFrame.slashRead_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
+SettingsDisplayFrame.slashRead_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*2);
+SettingsDisplayFrame.slashRead_Checkbox:SetScript("OnClick", function(self)
+	if self:GetChecked() then
+		LoreK_DB["settings"]["slashRead"] = true;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON, "SFX");
+	else
+		LoreK_DB["settings"]["slashRead"] = false;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF, "SFX");
+	end
+end);
+SettingsDisplayFrame.slashRead_Checkbox.Text:SetText(LK["SlashRead"])
+SettingsDisplayFrame.slashRead_Checkbox.Text:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.slashRead_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["SlashReadTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.slashRead_Checkbox.Text:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+SettingsDisplayFrame.slashRead_Checkbox:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.slashRead_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["SlashReadTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.slashRead_Checkbox:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+
+SettingsDisplayFrame.overrideMats_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
+SettingsDisplayFrame.overrideMats_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*3);
+SettingsDisplayFrame.overrideMats_Checkbox:SetScript("OnClick", function(self)
+	if self:GetChecked() then
+		LoreK_DB["settings"]["overrideMaterials"] = true;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON, "SFX");
+	else
+		LoreK_DB["settings"]["overrideMaterials"] = false;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF, "SFX");
+	end
+	LoreKGUI.SetParchmentTexture()
+end);
+SettingsDisplayFrame.overrideMats_Checkbox.Text:SetText(LK["ReplaceMats"])
+SettingsDisplayFrame.overrideMats_Checkbox.Text:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.overrideMats_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["ReplaceMatsTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.overrideMats_Checkbox.Text:SetScript("OnLeave", function(self)
 	GameTooltip:Hide();
 end);
 SettingsDisplayFrame.overrideMats_Checkbox:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(SettingsDisplayFrame.overrideMats_Checkbox, "ANCHOR_TOPLEFT");
-	GameTooltip:AddLine("[PH] The background material will be overwritten, providing a cleaner and more neutral background color than the default parchment.", 1, 1, 1, true);
+	GameTooltip:AddLine(LK["ReplaceMatsTT"], 1, 1, 1, true);
 	GameTooltip:Show();
 end);
 SettingsDisplayFrame.overrideMats_Checkbox:SetScript("OnLeave", function(self)
 	GameTooltip:Hide();
 end);
 
---[[
-SettingsDisplayFrame.HideUnread_Check = CreateFrame("CheckButton", nil, SettingsDisplayFrame);
-local HideUnread_Check = SettingsDisplayFrame.HideUnread_Check;
-HideUnread_Check:SetPoint("BOTTOMRIGHT", SettingsDisplayFrame, "TOPRIGHT", -35, 3);
-HideUnread_Check:SetSize(25,25);
-HideUnread_Check.backTex = HideUnread_Check:CreateTexture(nil, "OVERLAY", nil, 1);
-HideUnread_Check.backTex:SetAllPoints(true);
-HideUnread_Check.backTex:SetAtlas("transmog-frame-blackcover")
-HideUnread_Check.bordTex = HideUnread_Check:CreateTexture(nil, "OVERLAY", nil, 2);
-HideUnread_Check.bordTex:SetAllPoints(true);
-HideUnread_Check.bordTex:SetAtlas("transmog-frame-small-selected");
-HideUnread_Check.hideTex = HideUnread_Check:CreateTexture(nil, "OVERLAY", nil, 3);
-HideUnread_Check.hideTex:SetAllPoints(true);
-HideUnread_Check.hideTex:SetAtlas("transmog-icon-hidden");
-HideUnread_Check.HLTex = HideUnread_Check:CreateTexture(nil, "OVERLAY", nil, 4);
-HideUnread_Check.HLTex:SetAllPoints(true);
-HideUnread_Check.HLTex:SetAtlas("transmog-wardrobe-border-selected-smoke");
-HideUnread_Check.HLTex:SetVertexColor(1,1,1,0.5)
-HideUnread_Check.HLTex:Hide();
-HideUnread_Check:SetScript("OnEnter", function(self)
-	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine("[PH] Hide/Show Unread Text", 1, 1, 1);
-	GameTooltip:Show();
-	HideUnread_Check.HLTex:Show();
-end);
-HideUnread_Check:SetScript("OnLeave", function()
-	GameTooltip:Hide();
-	HideUnread_Check.HLTex:Hide();
-end);
-HideUnread_Check:SetScript("OnClick", function(self)
-	if HideUnread_Check:GetChecked() then
-		LoreK_DB["settings"]["hideUnread"] = true;
-		HideUnread_Check.hideTex:Show();
-	else
-		LoreK_DB["settings"]["hideUnread"] = false;
-		HideUnread_Check.hideTex:Hide();
+SettingsDisplayFrame.ParchmentTypes = {
+	["questBG"] = {
+		"QuestBG-Parchment",
+		"QuestBG-Parchment-Accessibility",
+		"QuestBG-Parchment-Accessibility2",
+		"QuestBG-Parchment-Accessibility3",
+		"QuestBG-Parchment-Accessibility4",
+	},
+	["questZone"] = {
+		"QuestBG-1027",
+		"QuestBG-Azurespan",
+		"QuestBG-Dracthyrawaken",
+		"QuestBG-Dragonflight",
+		"QuestBG-EmeraldDream",
+		"QuestBG-Ohnplains",
+		"QuestBG-Thaldraszus",
+		"QuestBG-Walkingshore",
+		"QuestBG-ZaralekCavern",
+		"QuestBG-ExilesReach",
+		"QuestBG-Alliance",
+		"QuestBG-Horde",
+		"QuestBG-Legionfall",
+		"QuestBG-TheHandofFate",
+		"QuestBG-Pandaria",
+		"QuestBG-Shadowlands",
+		"QuestBG-Ardenweald",
+		"QuestBG-Bastion",
+		"QuestBG-Kyrian",
+		"QuestBG-Necrolord",
+		"QuestBG-Fey",
+		"QuestBG-Venthyr",
+		"QuestBG-Maldraxxus",
+		"QuestBG-Oribos",
+		"QuestBG-Revendreth",
+		"QuestBG-secretsofthefirstones",
+		"QuestBG-Candle",
+		"QuestBG-Flame",
+		"QuestBG-Storm",
+		"QuestBG-Web",
+		"QuestBG-Trading-Post",
+	},
+	["professionBG"] = {
+		"QuestBG-alchemy",
+		"QuestBG-blacksmithing",
+		"QuestBG-cooking",
+		"QuestBG-enchanting",
+		"QuestBG-engineering",
+		"QuestBG-fishing",
+		"QuestBG-herbalism",
+		"QuestBG-inscription",
+		"QuestBG-jewelcrafting",
+		"QuestBG-leatherworking",
+		"QuestBG-mining",
+		"QuestBG-skinning",
+		"QuestBG-tailoring",
+	},
+	["misc"] = {
+		"spellbook-background-evergreen-right",
+		"spellbook-background-evergreen-left",
+		"newplayerchat-signup-background",
+		"warboard-parchment",
+		"ChromieTime-Parchment",
+		"QuestLog-empty-quest-background",
+		"QuestLog-main-background",
+		"Campaign-QuestLog-LoreBackground",
+		"GarrLanding-FollowerFrame",
+		"UI-Frame-Alliance-CardParchmentWider",
+		"UI-Frame-Horde-CardParchmentWider",
+		"UI-Frame-Neutral-CardParchmentWider",
+		"UI-Frame-Dragonflight-CardParchmentWider",
+		"UI-Frame-Kyrian-CardParchmentWider",
+		"UI-Frame-Necrolord-CardParchmentWider",
+		"UI-Frame-NightFae-CardParchmentWider",
+		"UI-Frame-Venthyr-CardParchmentWider",
+		"UI-Frame-Marine-CardParchmentWider",
+		"UI-Frame-Mechagon-CardParchmentWider",
+		"ui-frame-thewarwithin-cardparchmentwider",
+		"shop-card-full-15thAnniversary",
+		"shop-card-bundle",
+		"store-card-splash1-nobanner",
+		"store-card-transmog",
+		
+	},
+
+};
+
+SettingsDisplayFrame.ParchmentPreview = CreateFrame("Frame", nil, SettingsScrollChild);
+SettingsDisplayFrame.ParchmentPreview:SetPoint("TOPRIGHT", SettingsScrollChild, "TOPRIGHT", -55, settingsPanelPlacer);
+SettingsDisplayFrame.ParchmentPreview:SetSize(454/1.5,511/1.5);
+SettingsDisplayFrame.ParchmentPreview.tex = SettingsDisplayFrame.ParchmentPreview:CreateTexture();
+SettingsDisplayFrame.ParchmentPreview.tex:SetAllPoints(true);
+
+
+
+SettingsDisplayFrame.ParchmentDropdown = CreateFrame("DropdownButton", nil, SettingsScrollChild, "WowStyle1DropdownTemplate");
+SettingsDisplayFrame.ParchmentDropdown:SetDefaultText(TEXTURES_SUBHEADER);
+SettingsDisplayFrame.ParchmentDropdown:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*4);
+SettingsDisplayFrame.ParchmentDropdown:SetSize(220, 26);
+SettingsDisplayFrame.ParchmentDropdown:SetupMenu(function(dropdown, rootDescription)
+
+	local optionHeight = 20; -- 20 is default
+	local maxElements = 8; -- amount of elements to show before scroll
+	local maxScrollExtent = optionHeight * maxElements;
+	local elementDescription = rootDescription:CreateButton(QUESTS_LABEL)
+	for k, v in ipairs(SettingsDisplayFrame.ParchmentTypes["questBG"]) do
+		local submenumenu = elementDescription:CreateButton(SettingsDisplayFrame.ParchmentTypes["questBG"][k], function()
+			LoreK_DB["settings"]["material"] = SettingsDisplayFrame.ParchmentTypes["questBG"][k];
+			LoreKGUI.SetParchmentTexture();
+		end)
 	end
+	elementDescription:SetScrollMode(maxScrollExtent);
+	local elementDescription = rootDescription:CreateButton(QUEST_CLASSIFICATION_CAMPAIGN)
+	for k, v in ipairs(SettingsDisplayFrame.ParchmentTypes["questZone"]) do
+		local submenumenu = elementDescription:CreateButton(SettingsDisplayFrame.ParchmentTypes["questZone"][k], function()
+			LoreK_DB["settings"]["material"] = SettingsDisplayFrame.ParchmentTypes["questZone"][k];
+			LoreKGUI.SetParchmentTexture();
+		end)
+	end
+	elementDescription:SetScrollMode(maxScrollExtent);
+	local elementDescription = rootDescription:CreateButton(TRADE_SKILLS)
+	for k, v in ipairs(SettingsDisplayFrame.ParchmentTypes["professionBG"]) do
+		local submenumenu = elementDescription:CreateButton(SettingsDisplayFrame.ParchmentTypes["professionBG"][k], function()
+			LoreK_DB["settings"]["material"] = SettingsDisplayFrame.ParchmentTypes["professionBG"][k];
+			LoreKGUI.SetParchmentTexture();
+		end)
+	end
+	elementDescription:SetScrollMode(maxScrollExtent);
+	local elementDescription = rootDescription:CreateButton(MISCELLANEOUS)
+	for k, v in ipairs(SettingsDisplayFrame.ParchmentTypes["misc"]) do
+		local submenumenu = elementDescription:CreateButton(SettingsDisplayFrame.ParchmentTypes["misc"][k], function()
+			LoreK_DB["settings"]["material"] = SettingsDisplayFrame.ParchmentTypes["misc"][k];
+			LoreKGUI.SetParchmentTexture();
+		end)
+	end
+	elementDescription:SetScrollMode(maxScrollExtent);
 end)
-]]
+SettingsDisplayFrame.ParchmentDropdown:SetEnabled(false);
+
+
+--------------------------------------------------------------------------
+--Somewhere way below
+SettingsDisplayFrame.debug_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
+SettingsDisplayFrame.debug_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*10);
+SettingsDisplayFrame.debug_Checkbox:SetScript("OnClick", function(self)
+	if self:GetChecked() then
+		LoreK_DB["settings"]["debug"] = true;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON, "SFX");
+	else
+		LoreK_DB["settings"]["debug"] = false;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF, "SFX");
+	end
+end);
+SettingsDisplayFrame.debug_Checkbox.Text:SetText(LK["Debug"])
+SettingsDisplayFrame.debug_Checkbox.Text:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.debug_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["DebugTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.debug_Checkbox.Text:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+SettingsDisplayFrame.debug_Checkbox:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.debug_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["DebugTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.debug_Checkbox:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
  -- Addon Load
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+
+function LoreKGUI.SetParchmentTexture()
+	if LoreK_DB["settings"]["overrideMaterials"] and LoreK_DB["settings"]["material"] then
+		SettingsDisplayFrame.ParchmentDropdown:SetEnabled(true);
+		SettingsDisplayFrame.ParchmentPreview.tex:SetAtlas(LoreK_DB["settings"]["material"]); -- dummy frame
+		TextDisplayFrame.bg:SetAtlas(LoreK_DB["settings"]["material"]); -- actual frame
+	else
+		SettingsDisplayFrame.ParchmentDropdown:SetEnabled(false);
+		SettingsDisplayFrame.ParchmentPreview.tex:SetAtlas("QuestBG-Parchment"); -- dummy frame
+		TextDisplayFrame.bg:SetAtlas("QuestBG-Parchment"); -- actual frame
+	end
+end
 
 LoreKGUI.Events = CreateFrame("Frame")
 LoreKGUI.Events:RegisterEvent("ADDON_LOADED")
@@ -821,14 +1013,12 @@ LoreKGUI.Events:RegisterEvent("ADDON_LOADED")
 function LoreKGUI.Initialize(self, event, arg1)
 	if event == "ADDON_LOADED" and arg1 == "Lorekeeper" then
 		LoreKGUI.PopulateList()
-
-		if LoreK_DB["settings"]["hideUnread"] then
-			--HideUnread_Check:SetChecked(true)
-			--HideUnread_Check.hideTex:Show();
-		else
-			--HideUnread_Check:SetChecked(false)
-			--HideUnread_Check.hideTex:Hide();
-		end
+		SettingsDisplayFrame.overrideMats_Checkbox:SetChecked(LoreK_DB["settings"]["overrideMaterials"]);
+		SettingsDisplayFrame.hideUnread_Checkbox:SetChecked(LoreK_DB["settings"]["hideUnread"]);
+		SettingsDisplayFrame.slashRead_Checkbox:SetChecked(LoreK_DB["settings"]["slashRead"]);
+		SettingsDisplayFrame.debug_Checkbox:SetChecked(LoreK_DB["settings"]["debug"]);
+		
+		LoreKGUI.SetParchmentTexture()
 	end
 end
 
@@ -836,13 +1026,13 @@ end
 LoreKGUI.Events:SetScript("OnEvent", LoreKGUI.Initialize);
 
 function LoreKGUI.Script_OnShow()
-	PlaySound(74421, "SFX");
+	PlaySound(SOUNDKIT.IG_SPELLBOOK_OPEN, "SFX");
 	if LoreK_DB["settings"]["slashRead"] then
 		DoEmote("READ", nil, true);
 	end
 end
 function LoreKGUI.Script_OnHide()
-	PlaySound(74423, "SFX");
+	PlaySound(SOUNDKIT.IG_SPELLBOOK_CLOSE, "SFX");
 	if LoreK_DB["settings"]["slashRead"] then
 		CancelEmote();
 	end

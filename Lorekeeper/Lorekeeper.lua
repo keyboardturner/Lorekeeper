@@ -257,7 +257,9 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			LoreK_DB = {
 				settings = {
 					overrideMaterials = false,
-					debug = true,
+					hideUnread = true,
+					slashRead = false,
+					debug = false,
 				},
 				text = {},
 				questItems = {},
@@ -339,6 +341,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		end
 
 		activeContext = nil;
+		LoreKGUI.PopulateList()
 	end
 end
 
