@@ -244,6 +244,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			if C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
 				Lorekeeper_API.MailDetected(activeContext)
 			end
+			activeContext = nil;
 			return;
 		end
 		local map = C_Map.GetBestMapForUnit("player")
@@ -285,7 +286,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			activeContext.mapData = {
 				[map] = coords,
 			};
-			if LK["LocalData"]["text"][key]["base"]["mapData"] then
+			if LK["LocalData"]["text"][key] and LK["LocalData"]["text"][key]["base"] and LK["LocalData"]["text"][key]["base"]["mapData"] then
 				if not LK["LocalData"]["text"][key]["base"]["mapData"][map] then
 					LoreK_DB["text"][key]["base"]["mapData"] = {
 						[map] = coords,
@@ -324,6 +325,8 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					else
 						-- entry does NOT exist in SVs or LocalData, proceed to save.
 						LoreK_DB["text"][key]["base"] = CopyTable(activeContext)
+						PlaySound(SOUNDKIT.TRADING_POST_UI_COMPLETED_ACTIVITY_TOAST, "SFX", true);
+						PlaySound(SOUNDKIT.CONTENT_TRACKING_ITEM_ACQUIRED_TOAST, "SFX", true);
 						Print("Saved base version into SVs: "..activeContext.title)
 					end
 				else
@@ -341,6 +344,8 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					end
 				end
 				if not LoreK_DB["text"][key]["base"]["hasRead"] then
+					PlaySound(SOUNDKIT.TRADING_POST_UI_COMPLETED_ACTIVITY_TOAST, "SFX", true);
+					PlaySound(SOUNDKIT.CONTENT_TRACKING_ITEM_ACQUIRED_TOAST, "SFX", true);
 					LoreK_DB["text"][key]["base"]["hasRead"] = true;
 				end
 			end

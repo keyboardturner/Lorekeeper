@@ -40,6 +40,7 @@ if LOCALE == "enUS" then
 	LK["SampleText"] = [[
 <html>
 <body>
+<br />
 <h1 align="center">Header 1</h1>
 <p>This is a paragraph under header 1.</p>
 <h2 align="right">Header 2</h2>
@@ -50,6 +51,7 @@ if LOCALE == "enUS" then
 </body>
 </html>
 ]]
+	LK["SampleTitle"] = "Placeholder Title"
 	LK["TextMaterial"] = "Material"
 	LK["Title"] = "Title"
 	LK["TitleText"] = "Title Text"

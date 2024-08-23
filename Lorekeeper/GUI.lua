@@ -359,7 +359,7 @@ ScrollUtil.AddManagedScrollBarVisibilityBehavior(TextScrollFrame, TextScrollFram
 
 --------------------------------------------------------------------------
 
-TextDisplayFrame.TitleBackdrop = CreateFrame("Frame", nil, TextDisplayFrame); -- possibly change to generic frame using "StoryHeader-BG" atlas or "QuestLog-reward-top-frame"
+TextDisplayFrame.TitleBackdrop = CreateFrame("Frame", nil, TextDisplayFrame);
 local TitleBackdrop = TextDisplayFrame.TitleBackdrop;
 TitleBackdrop:SetPoint("BOTTOM", TextScrollFrame, "TOP", -11.5,3);
 TitleBackdrop:SetWidth(TextScrollFrame:GetWidth()+20);
@@ -394,7 +394,7 @@ TextScrollChild.textTitle:SetFontObject("GameFontHighlightLarge"); -- make into 
 TextScrollChild.textTitle:SetPoint("TOPLEFT", TitleBackdrop, "TOPLEFT", 7,-8);
 TextScrollChild.textTitle:SetPoint("BOTTOMRIGHT", TitleBackdrop, "BOTTOMRIGHT", -7, 5);
 TextScrollChild.textTitle:SetJustifyH("CENTER");
-TextScrollChild.textTitle:SetJustifyV("TOP");
+TextScrollChild.textTitle:SetJustifyV("MIDDLE");
 
 -- The Text Body on the right
 TextScrollChild.textHTML = CreateFrame("SimpleHTML", nil, TextDisplayFrame.TextScrollChild);
@@ -807,7 +807,13 @@ LoreKGUI.SearchBox:HookScript("OnTextChanged", LoreKGUI.OnTextChanged)
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 
-LoreKGUI.SettingsDisplayFrame = CreateFrame("Frame", "LoreKSettingsDisplayFrame", LoreKGUI.SettingsPanel, "InsetFrameTemplate4");
+
+LoreKGUI.OptionsDisplayFrame = CreateFrame("Frame", nil, LoreKGUI.SettingsPanel, "InsetFrameTemplate3");
+LoreKGUI.OptionsDisplayFrame:SetWidth(230);
+LoreKGUI.OptionsDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.SettingsPanel, "TOPLEFT", 0, -65);
+LoreKGUI.OptionsDisplayFrame:SetPoint("BOTTOMLEFT", LoreKGUI.SettingsPanel, "BOTTOMLEFT", 0, 30);
+
+LoreKGUI.SettingsDisplayFrame = CreateFrame("Frame", nil, LoreKGUI.SettingsPanel, "InsetFrameTemplate4");
 local SettingsDisplayFrame = LoreKGUI.SettingsDisplayFrame;
 SettingsDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.SettingsPanel, "TOPLEFT", 0, -65);
 SettingsDisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI.SettingsPanel, "BOTTOMRIGHT",-20, 30);
@@ -818,10 +824,10 @@ SettingsDisplayFrame.tex:SetColorTexture(0, 0, 0, 0.5)
 
 LoreKGUI.SettingsScrollFrame = CreateFrame("ScrollFrame", nil, LoreKGUI.SettingsPanel, "ScrollFrameTemplate");
 local SettingsScrollFrame = LoreKGUI.SettingsScrollFrame;
-SettingsScrollFrame:SetPoint("TOPLEFT", SettingsDisplayFrame, "TOPLEFT", 2, -25);
+SettingsScrollFrame:SetPoint("TOPLEFT", SettingsDisplayFrame, "TOPLEFT", 2, -5);
 SettingsScrollFrame:SetPoint("BOTTOMRIGHT", SettingsDisplayFrame, "BOTTOMRIGHT", -2, 3);
-moveFrameXY(SettingsScrollFrame.ScrollBar, "TOPLEFT", "TOPRIGHT", 0, 15);
-moveFrameXY(SettingsScrollFrame.ScrollBar, "BOTTOMLEFT", "BOTTOMRIGHT", 0, -17);
+moveFrameXY(SettingsScrollFrame.ScrollBar, "TOPLEFT", "TOPRIGHT", 0, -5);
+moveFrameXY(SettingsScrollFrame.ScrollBar, "BOTTOMLEFT", "BOTTOMRIGHT", 0, 3);
 
 LoreKGUI.SettingsScrollChild = CreateFrame("Frame", nil, SettingsScrollFrame);
 local SettingsScrollChild = LoreKGUI.SettingsScrollChild;
@@ -829,10 +835,11 @@ SettingsScrollChild:SetSize(SettingsScrollFrame:GetWidth()-8, 1); -- Height will
 SettingsScrollFrame:SetScrollChild(SettingsScrollChild);
 SettingsScrollChild:SetPoint("TOP", SettingsScrollFrame, "TOP", 0, 0);
 
-local settingsPanelPlacer = -27
+local settingsPanelXPlacer = -27
+local settingsPanelYPlacer = 20
 
 SettingsDisplayFrame.hideUnread_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
-SettingsDisplayFrame.hideUnread_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*1);
+SettingsDisplayFrame.hideUnread_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*1);
 SettingsDisplayFrame.hideUnread_Checkbox:SetScript("OnClick", function(self)
 	if self:GetChecked() then
 		LoreK_DB["settings"]["hideUnread"] = true;
@@ -861,7 +868,7 @@ SettingsDisplayFrame.hideUnread_Checkbox:SetScript("OnLeave", function(self)
 end);
 
 SettingsDisplayFrame.slashRead_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
-SettingsDisplayFrame.slashRead_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*2);
+SettingsDisplayFrame.slashRead_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*2);
 SettingsDisplayFrame.slashRead_Checkbox:SetScript("OnClick", function(self)
 	if self:GetChecked() then
 		LoreK_DB["settings"]["slashRead"] = true;
@@ -890,7 +897,7 @@ SettingsDisplayFrame.slashRead_Checkbox:SetScript("OnLeave", function(self)
 end);
 
 SettingsDisplayFrame.overrideMats_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
-SettingsDisplayFrame.overrideMats_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*3);
+SettingsDisplayFrame.overrideMats_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*3);
 SettingsDisplayFrame.overrideMats_Checkbox:SetScript("OnClick", function(self)
 	if self:GetChecked() then
 		LoreK_DB["settings"]["overrideMaterials"] = true;
@@ -1006,17 +1013,33 @@ SettingsDisplayFrame.ParchmentTypes = {
 };
 
 SettingsDisplayFrame.ParchmentPreview = CreateFrame("Frame", nil, SettingsScrollChild);
-SettingsDisplayFrame.ParchmentPreview:SetPoint("TOPRIGHT", SettingsScrollChild, "TOPRIGHT", -55, settingsPanelPlacer);
-SettingsDisplayFrame.ParchmentPreview:SetSize(454/1.5,511/1.5);
-SettingsDisplayFrame.ParchmentPreview.tex = SettingsDisplayFrame.ParchmentPreview:CreateTexture();
+SettingsDisplayFrame.ParchmentPreview:SetPoint("TOPRIGHT", SettingsScrollChild, "TOPRIGHT", 5, -35);
+SettingsDisplayFrame.ParchmentPreview:SetSize(TextDisplayFrame:GetWidth()-8,511-45);
+SettingsDisplayFrame.ParchmentPreview.tex = SettingsDisplayFrame.ParchmentPreview:CreateTexture(nil, "OVERLAY", nil, 1);
 SettingsDisplayFrame.ParchmentPreview.tex:SetAllPoints(true);
+
+SettingsDisplayFrame.TitlePreview = CreateFrame("Frame", nil, SettingsDisplayFrame.ParchmentPreview);
+SettingsDisplayFrame.TitlePreview:SetPoint("TOP", SettingsDisplayFrame.ParchmentPreview, "TOP", 0,36);
+SettingsDisplayFrame.TitlePreview:SetWidth(SettingsDisplayFrame.ParchmentPreview:GetWidth());
+SettingsDisplayFrame.TitlePreview:SetHeight(48);
+SettingsDisplayFrame.TitlePreview.tex = SettingsDisplayFrame.TitlePreview:CreateTexture(nil, "OVERLAY", nil, 2)
+SettingsDisplayFrame.TitlePreview.tex:SetAllPoints(true)
+SettingsDisplayFrame.TitlePreview.tex:SetAtlas("StoryHeader-BG")
+
+SettingsDisplayFrame.textTitlePreview = SettingsDisplayFrame.TitlePreview:CreateFontString(nil, "OVERLAY");
+SettingsDisplayFrame.textTitlePreview:SetFontObject("GameFontHighlightLarge"); -- make into option later
+SettingsDisplayFrame.textTitlePreview:SetPoint("TOPLEFT", SettingsDisplayFrame.TitlePreview, "TOPLEFT", 7,-8);
+SettingsDisplayFrame.textTitlePreview:SetPoint("BOTTOMRIGHT", SettingsDisplayFrame.TitlePreview, "BOTTOMRIGHT", -7, 5);
+SettingsDisplayFrame.textTitlePreview:SetJustifyH("CENTER");
+SettingsDisplayFrame.textTitlePreview:SetJustifyV("MIDDLE");
+SettingsDisplayFrame.textTitlePreview:SetText(LK["SampleTitle"])
 
 
 
 SettingsDisplayFrame.ParchmentDropdown = CreateFrame("DropdownButton", nil, SettingsScrollChild, "WowStyle1DropdownTemplate");
 SettingsDisplayFrame.ParchmentDropdown:SetDefaultText(LK["Textures"]);
-SettingsDisplayFrame.ParchmentDropdown:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*4);
-SettingsDisplayFrame.ParchmentDropdown:SetSize(220, 26);
+SettingsDisplayFrame.ParchmentDropdown:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*4);
+SettingsDisplayFrame.ParchmentDropdown:SetSize(190, 26);
 SettingsDisplayFrame.ParchmentDropdown:SetupMenu(function(dropdown, rootDescription)
 
 	local optionHeight = 20; -- 20 is default
@@ -1070,7 +1093,7 @@ SettingsDisplayFrame.textHTML:SetJustifyH("p","LEFT");
 SettingsDisplayFrame.textHTML:SetText(LK["SampleText"])
 
 SettingsDisplayFrame.textHTMLLarge = CreateFrame("SimpleHTML", nil, SettingsDisplayFrame.ParchmentPreview);
-SettingsDisplayFrame.textHTMLLarge:SetPoint("TOP", SettingsDisplayFrame.ParchmentPreview, "TOP", 5, -130);
+SettingsDisplayFrame.textHTMLLarge:SetPoint("TOP", SettingsDisplayFrame.ParchmentPreview, "TOP", 5, -160);
 SettingsDisplayFrame.textHTMLLarge:SetPoint("BOTTOM", SettingsDisplayFrame.ParchmentPreview, "BOTTOM", -5, 0);
 SettingsDisplayFrame.textHTMLLarge:SetWidth(SettingsDisplayFrame.ParchmentPreview:GetWidth()-33);
 
@@ -1083,56 +1106,56 @@ SettingsDisplayFrame.textHTMLLarge:SetText(LK["SampleText"])
 
 
 SettingsDisplayFrame.materialColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
-SettingsDisplayFrame.materialColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*5);
-SettingsDisplayFrame.materialColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.materialColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*5);
+SettingsDisplayFrame.materialColorPicker:SetSize(190, 26);
 SettingsDisplayFrame.materialColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["TextMaterial"]);
 SettingsDisplayFrame.materialColorPicker:SetScript("OnClick", function()
 	ShowColorPicker(LoreK_DB["settings"]["colors"]["parchment"]);
 end);
 
 SettingsDisplayFrame.titleColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
-SettingsDisplayFrame.titleColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*6);
-SettingsDisplayFrame.titleColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.titleColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*6);
+SettingsDisplayFrame.titleColorPicker:SetSize(190, 26);
 SettingsDisplayFrame.titleColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["Title"]);
 SettingsDisplayFrame.titleColorPicker:SetScript("OnClick", function()
 	ShowColorPicker(LoreK_DB["settings"]["colors"]["title"]);
 end);
 
 SettingsDisplayFrame.titleTextColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
-SettingsDisplayFrame.titleTextColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*7);
-SettingsDisplayFrame.titleTextColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.titleTextColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*7);
+SettingsDisplayFrame.titleTextColorPicker:SetSize(190, 26);
 SettingsDisplayFrame.titleTextColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["TitleText"]);
 SettingsDisplayFrame.titleTextColorPicker:SetScript("OnClick", function()
 	ShowColorPicker(LoreK_DB["settings"]["colors"]["titleText"]);
 end);
 
 SettingsDisplayFrame.Head1ColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
-SettingsDisplayFrame.Head1ColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*8);
-SettingsDisplayFrame.Head1ColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.Head1ColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*8);
+SettingsDisplayFrame.Head1ColorPicker:SetSize(190, 26);
 SettingsDisplayFrame.Head1ColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["Header1"]);
 SettingsDisplayFrame.Head1ColorPicker:SetScript("OnClick", function()
 	ShowColorPicker(LoreK_DB["settings"]["colors"]["h1"]);
 end);
 
 SettingsDisplayFrame.Head2ColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
-SettingsDisplayFrame.Head2ColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*9);
-SettingsDisplayFrame.Head2ColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.Head2ColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*9);
+SettingsDisplayFrame.Head2ColorPicker:SetSize(190, 26);
 SettingsDisplayFrame.Head2ColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["Header2"]);
 SettingsDisplayFrame.Head2ColorPicker:SetScript("OnClick", function()
 	ShowColorPicker(LoreK_DB["settings"]["colors"]["h2"]);
 end);
 
 SettingsDisplayFrame.Head3ColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
-SettingsDisplayFrame.Head3ColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*10);
-SettingsDisplayFrame.Head3ColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.Head3ColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*10);
+SettingsDisplayFrame.Head3ColorPicker:SetSize(190, 26);
 SettingsDisplayFrame.Head3ColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["Header3"]);
 SettingsDisplayFrame.Head3ColorPicker:SetScript("OnClick", function()
 	ShowColorPicker(LoreK_DB["settings"]["colors"]["h3"]);
 end);
 
 SettingsDisplayFrame.ParaColorPicker = CreateFrame("Button", nil, SettingsScrollChild, "SharedButtonTemplate");
-SettingsDisplayFrame.ParaColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*11);
-SettingsDisplayFrame.ParaColorPicker:SetSize(220, 26);
+SettingsDisplayFrame.ParaColorPicker:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*11);
+SettingsDisplayFrame.ParaColorPicker:SetSize(190, 26);
 SettingsDisplayFrame.ParaColorPicker:SetText(LK["ColorPicker"] .. ": "..LK["Paragraph"]);
 SettingsDisplayFrame.ParaColorPicker:SetScript("OnClick", function()
 	ShowColorPicker(LoreK_DB["settings"]["colors"]["p"]);
@@ -1140,8 +1163,8 @@ end);
 
 SettingsDisplayFrame.TextSizeDropdown = CreateFrame("DropdownButton", nil, SettingsScrollChild, "WowStyle1DropdownTemplate");
 SettingsDisplayFrame.TextSizeDropdown:SetDefaultText(LK["FontSize"]);
-SettingsDisplayFrame.TextSizeDropdown:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*12);
-SettingsDisplayFrame.TextSizeDropdown:SetSize(220, 26);
+SettingsDisplayFrame.TextSizeDropdown:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*12);
+SettingsDisplayFrame.TextSizeDropdown:SetSize(190, 26);
 SettingsDisplayFrame.TextSizeDropdown:SetupMenu(function(dropdown, rootDescription)
 
 
@@ -1167,7 +1190,7 @@ end);
 --------------------------------------------------------------------------
 --Somewhere way below
 SettingsDisplayFrame.debug_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
-SettingsDisplayFrame.debug_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", 55, settingsPanelPlacer*15);
+SettingsDisplayFrame.debug_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*15);
 SettingsDisplayFrame.debug_Checkbox:SetScript("OnClick", function(self)
 	if self:GetChecked() then
 		LoreK_DB["settings"]["debug"] = true;
@@ -1261,10 +1284,13 @@ function LoreKGUI.SetColors()
 		};
 	end;
 
-
+	SettingsDisplayFrame.TitlePreview.tex:SetVertexColor(ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["title"])); -- dummy frame
+	TitleBackdrop.tex:SetVertexColor(ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["title"])); -- actual frame
 	SettingsDisplayFrame.ParchmentPreview.tex:SetVertexColor(ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["parchment"])); -- dummy frame
 	TextDisplayFrame.bg:SetVertexColor(ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["parchment"])); -- actual frame
 
+	SettingsDisplayFrame.textTitlePreview:SetTextColor(ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["titleText"]));  -- dummy text
+	TextScrollChild.textTitle:SetTextColor(ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["titleText"])); -- actual text
 	SettingsDisplayFrame.textHTML:SetTextColor("h1", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h1"])); -- dummy text
 	SettingsDisplayFrame.textHTML:SetTextColor("h2", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h2"]));
 	SettingsDisplayFrame.textHTML:SetTextColor("h3", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h3"]));
@@ -1274,7 +1300,6 @@ function LoreKGUI.SetColors()
 	SettingsDisplayFrame.textHTMLLarge:SetTextColor("h2", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h2"]));
 	SettingsDisplayFrame.textHTMLLarge:SetTextColor("h3", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h3"]));
 	SettingsDisplayFrame.textHTMLLarge:SetTextColor("p", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["p"]));
-
 
 	TextScrollChild.textHTML:SetTextColor("h1", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h1"])); --actual text colors
 	TextScrollChild.textHTML:SetTextColor("h2", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h2"]));

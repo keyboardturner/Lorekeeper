@@ -42,6 +42,9 @@ LK["LocalData"] = {
 
 -- Keys which are *NOT* included: "isFavorite", "hasRead", and maybe future additions.
 -- Data from Mail and Custom modules should never make it in here.
+-- If you're looking to submit, you can post your SavedVariables at one of the following links:
+-- Discord: https://discord.gg/vUMTdzPxqg
+-- Github: https://github.com/keyboardturner/Lorekeeper/issues/new/choose
 
 ]]
 
