@@ -1,7 +1,7 @@
 ---
 name: Data Submission
 about: " Submission for SavedVariables to be merged into LocalData"
-title: "[DATA]"
+title: SavedVariables to LocalData Submission
 labels: data submission
 assignees: keyboardturner
 
