@@ -329,6 +329,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = 9, -- Warlock
+				["isFinalVersion"] = false,
 			},
 		},
 		["GameObject-385586"] = {
@@ -729,6 +730,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["isFinalVersion"] = false,
 			},
 		},
 		["GameObject-421361"] = {
@@ -1064,6 +1066,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["isFinalVersion"] = false,
 			},
 		},
 		["GameObject-453729"] = {

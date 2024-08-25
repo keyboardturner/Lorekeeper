@@ -46,17 +46,18 @@ local function insertItems(dataSource, searchText)
 	end
 end
 
-local function parseFunc(path, itemID)
-	-- Function to get nested table value based on a path
-	local function getNestedValue(t, path, itemID)
-		local result = t;
-		for part in path:gmatch("%[(.-)%]") do
-			part = part:match('^"(.-)"$') or tonumber(part) or part;
-			result = result[part];
-			if not result then return nil end;
-		end
-		return result;
+-- Function to get nested table value based on a path
+local function getNestedValue(t, path, itemID)
+	local result = t;
+	for part in path:gmatch("%[(.-)%]") do
+		part = part:match('^"(.-)"$') or tonumber(part) or part;
+		result = result[part];
+		if not result then return nil end;
 	end
+	return result;
+end
+
+local function parseFunc(path, itemID)
 
 	-- Attempt to find the data in LK["LocalData"]
 	local localData = getNestedValue(LK["LocalData"], path:gsub("itemID", "\""..itemID.."\""));
@@ -547,7 +548,7 @@ local function ItemInitializer(button, data)
 	button.textFont:SetPoint("BOTTOMRIGHT", button.tex, "BOTTOMRIGHT", -5,2);
 	button.textFont:SetJustifyH("LEFT");
 	button.textFont:SetJustifyV("TOP");
-	button.textFont:SetText(parseFunc('["text"][itemID]["base"]["title"]', itemID), 1, 1, 1, 1, true);
+	button.textFont:SetText(allData[itemID]["base"]["title"], 1, 1, 1, 1, true); --parseFunc('["text"][itemID]["base"]["title"]', itemID), 1, 1, 1, 1, true);
 	button:SetScript("OnEnter", function()
 		button.texHL:Show();
 	end);
@@ -608,12 +609,12 @@ local function ItemInitializer(button, data)
 
 			local maxPages = 1;
 			local pageNum = 1;
-			local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
+			local textBody = allData[itemID]["base"]["text"]--parseFunc('["text"][itemID]["base"]["text"]', itemID);
 			local HTMLbody
-			local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID);
+			local textTitle = allData[itemID]["base"]["title"]; --parseFunc('["text"][itemID]["base"]["title"]', itemID);
 			local isHTML = string.lower(textBody[pageNum]):find("<html>");
-			local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
-			local material = parseFunc('["text"][itemID]["base"]["material"]', itemID) or "default";
+			local singlePage = allData[itemID]["base"]["singlePage"]; --parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
+			local material = allData[itemID]["base"]["material"] or "default"; --parseFunc('["text"][itemID]["base"]["material"]', itemID) or "default";
 			local isHidden = LoreK_DB["settings"]["hideUnread"];
 			local hasRead = false;
 			if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] and LoreK_DB["text"][itemID]["base"]["hasRead"] then
@@ -666,7 +667,7 @@ local function ItemInitializer(button, data)
 			LoreKGUI.SetColors()
 
 			if not singlePage then
-				maxPages = #parseFunc('["text"][itemID]["base"]["text"]', itemID);
+				maxPages = #allData[itemID]["base"]["text"]; --#parseFunc('["text"][itemID]["base"]["text"]', itemID);
 				local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
 
 				TextDisplayFrame.PrevPageButton:Show();
@@ -684,10 +685,10 @@ local function ItemInitializer(button, data)
 					PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
 
 					local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
-					local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
-					local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID) or UNKNOWN;
+					local textBody = allData[itemID]["base"]["text"]; --parseFunc('["text"][itemID]["base"]["text"]', itemID);
+					local textTitle = allData[itemID]["base"]["title"] or UNKNOWN; --parseFunc('["text"][itemID]["base"]["title"]', itemID) or UNKNOWN;
 					local isHTML = string.lower(textBody[pageNum]):find("<html>");
-					local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
+					local singlePage = allData[itemID]["base"]["singlePage"]; --parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
 					if isHTML then
 						HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />");
 					end
@@ -711,10 +712,10 @@ local function ItemInitializer(button, data)
 					PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
 
 					local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
-					local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
-					local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID);
+					local textBody = allData[itemID]["base"]["text"]; --parseFunc('["text"][itemID]["base"]["text"]', itemID);
+					local textTitle = allData[itemID]["base"]["title"]; --parseFunc('["text"][itemID]["base"]["title"]', itemID);
 					local isHTML = string.lower(textBody[pageNum]):find("<html>");
-					local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
+					local singlePage = allData[itemID]["base"]["singlePage"]; --parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
 					if isHTML then
 						HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />");
 					end

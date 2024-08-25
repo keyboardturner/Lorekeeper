@@ -2,12 +2,15 @@
 ## Title: Lorekeeper
 ## Notes: Collect and store ingame text items in an adaptive library.
 ## Author: Keyboardturner
-## Version: 0.0.1
+## Version: @project-version@
 ## IconTexture: Interface/Icons/inv_misc_book_16
 ## SavedVariables: LoreK_DB
 ## AddonCompartmentFunc: Lorekeeper_OnAddonCompartmentClick
 ## AddonCompartmentFuncOnEnter: Lorekeeper_OnAddonCompartmentEnter
 ## AddonCompartmentFuncOnLeave: Lorekeeper_OnAddonCompartmentLeave
+## X-Curse-Project-ID: 1084783
+## X-WoWI-ID: 26811
+## X-Wago-ID: bGoM8J60
 
 ## Title-enUS: Lorekeeper
 ## Notes-enUS: Collect and store ingame text items in an adaptive library.

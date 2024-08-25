@@ -64,6 +64,7 @@ local ignoredKeys = {
 	isFavorite = true,
 	isObtainable = true,
 	isClassSpecific = true,
+	isFinalVersion = true,
 };
 
 -- Helper function to check if a key is in the ignored list
@@ -447,6 +448,17 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 						if LoreK_DB.settings.debug then
 							Print("Detected exact copy in LocalData, no changes made: "..activeContext.title)
 						end
+					else
+						if LK.tCompareDeez(LoreK_DB["text"][key]["base"], activeContext) then
+							if LoreK_DB.settings.debug then
+								Print("Detected exact copy in SVs, no changes made: "..activeContext.title)
+							end
+						else
+							LoreK_DB["text"][key]["base"] = CopyTable(activeContext);
+							if LoreK_DB.settings.debug then
+								Print("Detected changes in text, creating base version: "..activeContext.title);
+							end
+						end
 					end
 					if LoreK_DB["text"][key]["base"] and LK["LocalData"]["text"][itemID] then
 						if LK.tCompareDeez(LoreK_DB["text"][key]["base"], LK["LocalData"]["text"][key]["base"]) then -- entry exists, but it's a copy of the LocalData, local data probably got updated, so clean SV bloat but preserve hasRead/isFavorite/mapData
@@ -470,16 +482,16 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		end
 
 		activeContext = nil;
-		LK["LoreKGUI"].PopulateList()
+		LK["LoreKGUI"].PopulateList();
 	end
 end
 
 
-Lorekeeper.Initialize:RegisterEvent("ADDON_LOADED")
-Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_BEGIN")
-Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_READY")
-Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_CLOSED")
-Lorekeeper.Initialize:SetScript("OnEvent", Lorekeeper.Initialize.Events)
+Lorekeeper.Initialize:RegisterEvent("ADDON_LOADED");
+Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_BEGIN");
+Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_READY");
+Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_CLOSED");
+Lorekeeper.Initialize:SetScript("OnEvent", Lorekeeper.Initialize.Events);
 
 
 --------------------------------------------------------------------------
@@ -488,15 +500,15 @@ Lorekeeper.Initialize:SetScript("OnEvent", Lorekeeper.Initialize.Events)
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 
-local LJ = CreateFrame("Frame")
-LJ:RegisterEvent("CHAT_MSG_LOOT")
+local LJ = CreateFrame("Frame");
+LJ:RegisterEvent("CHAT_MSG_LOOT");
 
 function LJ:OnEvent(event, arg1)
 	if event == "CHAT_MSG_LOOT" then
-		local itemID = arg1:match("item:(%d+):")
-		itemID = tonumber(itemID)
-		local itemIDQ, itemType, itemSubType, itemEquipLoc, icon, classID, subClassID = C_Item.GetItemInfoInstant(itemID)
-		local itemType, itemSubType, _, _, _, _, classID, subclassID = select(6, C_Item.GetItemInfo(itemID))
+		local itemID = arg1:match("item:(%d+):");
+		itemID = tonumber(itemID);
+		local itemIDQ, itemType, itemSubType, itemEquipLoc, icon, classID, subClassID = C_Item.GetItemInfoInstant(itemID);
+		local itemType, itemSubType, _, _, _, _, classID, subclassID = select(6, C_Item.GetItemInfo(itemID));
 
 		if classID == 12 then -- quest item detected
 			if not LoreK_DB["questItems"] then
