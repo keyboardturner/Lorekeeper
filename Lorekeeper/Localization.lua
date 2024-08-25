@@ -18,6 +18,7 @@ if LOCALE == "enUS" then
 	-- The EU English game client also
 	-- uses the US English locale code.
 	LK["Lorekeeper"] = "Lorekeeper"
+	LK["LoreKeeperMinMap"] = "Click to toggle Lorekeeper journal."
 	LK["LoreKIntro"] = "Type /lorekeeper to open the journal."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"

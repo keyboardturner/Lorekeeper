@@ -1,0 +1,30 @@
+package-as: Lorekeeper
+enable-nolib-creation: yes
+
+license-output: LICENSE
+
+externals:
+  Libs/Ace3: https://repos.curseforge.com/wow/ace3/trunk
+  Libs/LibDBIcon-1.0: https://repos.curseforge.com/wow/libdbicon-1-0/trunk
+
+ignore:
+  - Libs/*/*.rockspec
+  - Libs/*/*.toc
+  - Libs/*/changelog.*
+  - Libs/*/CHANGELOG.*
+  - Libs/*/docs
+  - Libs/*/examples
+  - Libs/*/README.*
+  - Libs/*/tests
+  - Libs/*/.pkgmeta
+  - CHANGELOG.md
+  - README.md
+
+move-folders:
+  Lorekeeper/Lorekeeper_Mail: Lorekeeper_Mail
+  Lorekeeper/Lorekeeper: Lorekeeper
+
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown

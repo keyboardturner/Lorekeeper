@@ -3,7 +3,21 @@
 ## Notes: Lorekeeper Description Temp
 ## Author: Keyboardturner
 ## Version: 0.0.1
+## IconTexture: Interface/Icons/inv_misc_book_16
 ## SavedVariables: LoreK_DB
+## AddonCompartmentFunc: Lorekeeper_OnAddonCompartmentClick
+## AddonCompartmentFuncOnEnter: Lorekeeper_OnAddonCompartmentEnter
+## AddonCompartmentFuncOnLeave: Lorekeeper_OnAddonCompartmentLeave
+
+
+
+Libs\Ace3\AceAddon-3.0\AceAddon-3.0.lua
+Libs\Ace3\AceConsole-3.0\AceConsole-3.0.lua
+Libs\Ace3\AceDB-3.0\AceDB-3.0.lua
+Libs\LibDBIcon-1.0\LibStub\LibStub.lua
+Libs\LibDBIcon-1.0\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\LibDBIcon-1.0\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Libs\LibDBIcon-1.0\LibDBIcon-1.0\lib.xml
 
 Localization.lua
 LocalData.lua

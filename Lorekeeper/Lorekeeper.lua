@@ -457,3 +457,106 @@ Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_BEGIN")
 Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_READY")
 Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_CLOSED")
 Lorekeeper.Initialize:SetScript("OnEvent", Lorekeeper.Initialize.Events)
+
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+ -- Quest Item Collector
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+
+local LJ = CreateFrame("Frame")
+LJ:RegisterEvent("CHAT_MSG_LOOT")
+
+function LJ:OnEvent(event, arg1)
+	if event == "CHAT_MSG_LOOT" then
+		local itemID = arg1:match("item:(%d+):")
+		itemID = tonumber(itemID)
+		local itemIDQ, itemType, itemSubType, itemEquipLoc, icon, classID, subClassID = C_Item.GetItemInfoInstant(itemID)
+		local itemType, itemSubType, _, _, _, _, classID, subclassID = select(6, C_Item.GetItemInfo(itemID))
+
+		if classID == 12 then -- quest item detected
+			if not LoreK_DB["questItems"] then
+				LoreK_DB["questItems"] = {};
+			end
+			LoreK_DB["questItems"][itemID] = {
+				isQuestItem = true,
+				isDiscovered = true,
+			};
+			if LoreK_DB.settings.debug then
+				Print("Quest item stored: " .. itemID)
+			end
+		end
+	end
+end
+
+LJ:SetScript("OnEvent", LJ.OnEvent)
+
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+ -- Minimap & Addon Comparment Frame
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+
+
+function Lorekeeper_OnAddonCompartmentClick(addonName, buttonName, menuButtonFrame)
+	if LK["LoreKGUI"]:IsShown() then
+		LK["LoreKGUI"]:Hide();
+	else
+		LK["LoreKGUI"]:Show();
+	end
+end
+
+function Lorekeeper_OnAddonCompartmentEnter(addonName, menuButtonFrame)
+	local tooltipData = {
+		[1] = "|cFFFFF569"..LK["Lorekeeper"].."|r",
+		[2] = "|cFFFFFFFF"..LK["LoreKeeperMinMap"].."|r",
+	};
+	local concatenatedString
+	for k, v in ipairs(tooltipData) do
+		if concatenatedString == nil then
+			concatenatedString = v;
+		else
+			concatenatedString = concatenatedString .. "\n".. v;
+		end
+	end
+	GameTooltip:SetOwner(menuButtonFrame, "ANCHOR_LEFT");
+	GameTooltip:AddLine(concatenatedString, 1, 1, 1);
+	GameTooltip:Show();
+end
+
+function Lorekeeper_OnAddonCompartmentLeave(addonName, menuButtonFrame)
+	GameTooltip:Hide();
+end
+
+local addon = LibStub("AceAddon-3.0"):NewAddon("Lorekeeper");
+local LoreK_DB = LibStub("LibDataBroker-1.1"):NewDataObject("Lorekeeper", {
+	type = "data source",
+	text = LK["Lorekeeper"],
+	icon = "Interface\\Icons\\inv_misc_book_16",
+	OnClick = function()
+		if LK["LoreKGUI"]:IsShown() then
+			LK["LoreKGUI"]:Hide();
+		else
+			LK["LoreKGUI"]:Show();
+		end
+	end, 
+	OnTooltipShow = function(tt)
+		tt:SetText("|cFFFFF569"..LK["Lorekeeper"].."|r")
+		tt:AddLine("|cFFFFFFFF"..LK["LoreKeeperMinMap"].."|r");
+	end,
+})  
+local icon = LibStub("LibDBIcon-1.0");
+
+function addon:OnInitialize()
+	self.db = LibStub("AceDB-3.0"):New("LoreK_DB", {
+		profile = {
+			minimap = {
+				hide = false,
+			},
+		},
+	})
+	icon:Register("Lorekeeper", LoreK_DB, self.db.profile.minimap);
+end
+

@@ -36,7 +36,7 @@ LK["LocalData"] = {
 		},
 	},
 	["questItems"] = {
-		... -- same structure as "text" key, but for quest items
+		... -- Quest items only really need their ID stored, but we can maybe categorize them a bit more to hide/show them later on.
 	},
 };
 
