@@ -2,7 +2,7 @@
 ## Title: Lorekeeper_Mail
 ## Notes: Lorekeeper plugin to save mail items and keep them stored separately from the library.
 ## Author: Keyboardturner
-## Version: 0.0.1
+## Version: @project-version@
 ## IconTexture: Interface/Icons/inv_letter_09
 ## SavedVariables: LoreKMail_DB
 ## Dependencies: Lorekeeper
