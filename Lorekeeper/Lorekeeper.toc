@@ -1,6 +1,6 @@
 ## Interface: 110002
 ## Title: Lorekeeper
-## Notes: Lorekeeper Description Temp
+## Notes: Collect and store ingame text items in an adaptive library.
 ## Author: Keyboardturner
 ## Version: 0.0.1
 ## IconTexture: Interface/Icons/inv_misc_book_16
@@ -8,6 +8,29 @@
 ## AddonCompartmentFunc: Lorekeeper_OnAddonCompartmentClick
 ## AddonCompartmentFuncOnEnter: Lorekeeper_OnAddonCompartmentEnter
 ## AddonCompartmentFuncOnLeave: Lorekeeper_OnAddonCompartmentLeave
+
+## Title-enUS: Lorekeeper
+## Notes-enUS: Collect and store ingame text items in an adaptive library.
+## Title-frFR: Lorekeeper
+## Notes-frFR: Collectez et stockez des éléments textuels en jeu dans une bibliothèque adaptative.
+## Title-esES: Lorekeeper
+## Notes-esES: Recoge y almacena objetos de texto del juego en una biblioteca adaptable.
+## Title-esMX: Lorekeeper
+## Notes-esMX: Recoge y almacena objetos de texto del juego en una biblioteca adaptable.
+## Title-deDE: Lorekeeper
+## Notes-deDE: Sammle und speichere ingame-Textobjekte in einer adaptiven Bibliothek.
+## Title-itIT: Lorekeeper
+## Notes-itIT: Raccogli e conserva elementi testuali di gioco in una biblioteca adattativa.
+## Title-ptBR: Lorekeeper
+## Notes-ptBR: Colete e armazene itens de texto do jogo em uma biblioteca adaptável.
+## Title-ruRU: Хранитель Знаний
+## Notes-ruRU: Собирать и хранить текстовые предметы в игре в адаптивной библиотеке.
+## Title-koKR: 지식의 수호자
+## Notes-koKR: 게임 내 텍스트 아이템을 적응형 도서관에 수집하고 저장합니다.
+## Title-zhCN: 知识守护者
+## Notes-zhCN: 在自适应图书馆中收集和存储游戏内文本项目。
+## Title-zhTW: 知識守護者
+## Notes-zhTW: 在自適應圖書館中收集和儲存遊戲內文本項目。
 
 
 

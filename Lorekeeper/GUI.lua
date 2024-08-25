@@ -18,6 +18,17 @@ local function moveFrameXY(frame, point, relativePoint, newxOfs, newyOfs)
 	frame:SetPoint(point, relativeTo, relativePoint, xOfs, yOfs);
 end
 
+local function Print(...)
+	if not ... then
+		if LoreK_DB["settings"]["debug"] then
+			Print("Something failed spectacularly, the data in Print was nil");
+		end
+		return
+	end
+	local prefix = string.format("|cFFFFF569".. Lorekeeper_API.LK["Lorekeeper"] .. "|r:");
+	DEFAULT_CHAT_FRAME:AddMessage(string.join(" ", prefix, ...));
+end
+
 -- Sort items in a list
 local filteredItems = {};
 
@@ -590,6 +601,7 @@ local function ItemInitializer(button, data)
 				end)
 			end
 		else
+
 			PlaySound(SOUNDKIT.UI_JOURNEYS_OPEN_LORE_BOOK, "SFX", true);
 			DeleteEntry:SetEnabled(true);
 			--selectionBehavior:SelectElementData(self:GetData())
@@ -607,6 +619,19 @@ local function ItemInitializer(button, data)
 			if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] and LoreK_DB["text"][itemID]["base"]["hasRead"] then
 				if LoreK_DB["text"][itemID]["base"]["hasRead"] then
 					hasRead = true;
+				end
+			end
+
+			if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] and LK["LocalData"]["text"][itemID] then
+				if LK.tCompareDeez(LoreK_DB["text"][itemID]["base"], LK["LocalData"]["text"][itemID]["base"]) then -- entry exists, but it's a copy of the LocalData, local data probably got updated, so clean SV bloat but preserve hasRead/isFavorite/mapData
+					LoreK_DB["text"][itemID]["base"]["text"] = nil;
+					LoreK_DB["text"][itemID]["base"]["title"] = nil;
+					LoreK_DB["text"][itemID]["base"]["singlePage"] = nil;
+					LoreK_DB["text"][itemID]["base"]["pageCount"] = nil;
+					LoreK_DB["text"][itemID]["base"]["material"] = nil;
+					if LoreK_DB.settings.debug then
+						Print("Detected exact copy between SVs and LocalData, deleting extra SV data: "..textTitle)
+					end
 				end
 			end
 
@@ -742,7 +767,9 @@ function LoreKGUI.sortFunc(a, b)
 	if (not not a.base.isFavorite) ~= (not not b.base.isFavorite) then
 		return a.base.isFavorite;
 	else
-		return strcmputf8i(a.base.title, b.base.title) < 0;
+		if a.base.title and b.base.title then
+			return strcmputf8i(a.base.title, b.base.title) < 0;
+		end
 	end
 end
 
@@ -790,7 +817,7 @@ function LoreKGUI.OnTextChanged(editBox)
 	local matches = {}
 
 	for _, element in pairs(allData) do
-		if string.find(element["base"]["title"]:lower(), query:lower()) then
+		if element["base"]["title"] and string.find(element["base"]["title"]:lower(), query:lower()) then
 			tinsert(matches, element)
 		end
 	end
@@ -1257,9 +1284,9 @@ function LoreKGUI.SetColors()
 				a = 1,
 			},
 			["titleText"] = {
-				r = .18,
-				g = .12,
-				b = .05,
+				r = .85,
+				g = .70,
+				b = .45,
 				a = 1,
 			},
 			["h1"] = {
@@ -1334,6 +1361,14 @@ LoreKGUI.Events:RegisterEvent("ADDON_LOADED");
 
 function LoreKGUI.Initialize(self, event, arg1)
 	if event == "ADDON_LOADED" and arg1 == "Lorekeeper" then
+		if not LoreK_DB["settings"] then
+			LoreK_DB["settings"] = {
+				overrideMaterials = false,
+				hideUnread = true,
+				slashRead = false,
+				debug = true,
+			};
+		end
 		LoreKGUI.PopulateList();
 		SettingsDisplayFrame.overrideMats_Checkbox:SetChecked(LoreK_DB["settings"]["overrideMaterials"]);
 		SettingsDisplayFrame.hideUnread_Checkbox:SetChecked(LoreK_DB["settings"]["hideUnread"]);

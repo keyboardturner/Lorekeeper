@@ -49,7 +49,6 @@ LK["LocalData"] = {
 ]]
 
 
-
 local LOCALE = GetLocale()
 
 
@@ -1404,25 +1403,906 @@ end
 if LOCALE == "esES" or LOCALE == "esMX" then
 	-- Spanish text data goes here
 
+LK["LocalData"] = {
+	["text"] = {
+		["Item-225429"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 24",
+				["text"] = {
+					"Nuestros disparos, que dirigimos apresuradamente, fueron suficientes para comprar la huida de Barnil. Barnil lanzó un clamor colina abajo y se volvió a unir al grupo. Corrimos a refugiarnos en la jungla; una manada de feroces raptores colazote acechaba todos nuestros movimientos.\r\n\r\nLos cazadores eran, ahora, los cazados.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225418"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 8",
+				["text"] = {
+					"Durante semejante tropiezo, Erlgadin posó su mano pesadamente sobre el hombro de Barnil. Ajeck y yo apenas advertimos la escena, suponiendo que el hombre solo estaba dando una merecida reprimenda a Barnil por su descuido. No obstante, Erlgadin hizo un gesto lento con la cabeza en dirección a un árbol caído. Desde allí nos acechaban dos ojos negros penetrantes justo encima de un par de afilados colmillos.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225427"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 20",
+				["text"] = {
+					"Nos pusimos en camino con las primeras luces, en dirección al sur, más allá de las ruinas de Tkashi. Barnil expresó su preocupación por el hecho de que pudiéramos encontrarnos con miembros de la tribu Sangrapellejo. Recordé a Barnil que los Sangrapellejo estaban más preocupados por destruir a su enemigo tribal, los Machacacráneos. No hace falta decir que eso no consoló a Barnil lo más mínimo. Sin embargo, yo tenía un rifle cargado, una cartera llena de pólvora y tres cazadores letales conmigo para aliviar cualquier preocupación de un emboscada poco amistosa.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225425"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 18",
+				["text"] = {
+					"El arma dio una violenta sacudida. El cañón rodó lateralmente y cayó bajo el rifle de Ajeck. Ajeck había elegido ese preciso momento para apretar el gatillo. El rifle, con la mira orientada torpemente hacia la fila de árboles, se disparó con un estruendo inconfundible. Una bandada de pájaros chilló desde la copa de un árbol, dispersándose por todas partes. Una columna de humo emergió del árbol. Sobrecogidos, vimos cómo una tremenda rama caía sobre la pantera que intentaba escapar, partiéndole el lomo.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225419"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 27",
+				["text"] = {
+					"Ajeck y Sir Erlgadin dispusieron sus armas, flanqueándome a cada lado, de espaldas al mar. Barnil dejó escapar un suspiro derrotado y blandió su hacha. Los colazotes estaban casi sobre nosotros. Su firme zancada se había hecho más lenta. Ahora acechaban a su presa, pues sabían que nos tenían atrapados.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225430"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 14",
+				["text"] = {
+					"Ese día nos aventuramos al sur, siguiendo algunos rastros recientes de pantera. Pronto llegamos a un barranco que se cruzaba por un enorme puente colgante. No pude evitar pensar en la descriptiva obra de Brann sobre aquella región cuando vi aquella maravilla de la ingeniería. Se suponía tan a menudo que los trols nativos eran una raza primitiva e inculta, pero, mientras observaba fijamente la artesanía maestra del puente, pude reconocer la habilidad con la que los albañiles trols superaron la hazaña, aparentemente imposible.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225420"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 11",
+				["text"] = {
+					"En un rocoso precipicio en lo alto, perfilado por el sol poniente, podía distinguir el felino depredador más grande que he visto jamás. Pude liberar una descarga con mi rifle, pero el felino siguió su camino. Rugió una vez más, en esta ocasión vez con más fuerza que la anterior, y desapareció.\r\n\r\nRecogimos nuestras pertenencias y nos dirigimos solemnemente de vuelta al campamento.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225417"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 6",
+				["text"] = {
+					"Justo cuando estaba a punto de cuestionar la falta de interés de Ajeck en la estrategia de caza del día, alargó la mano hacia su arco, lo tensó con una flecha y la soltó justo hacia el pobre Barnil. Pero no era a Barnil a quien Ajeck disparaba, pues, cuando Barnil se echó a un lado boquiabierto, un gran crocolisco de río flotó a la superficie con la flecha de Ajeck perfectamente colocada entre sus grandes ojos.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225416"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 26",
+				["text"] = {
+					"Avancé lentamente con el arma levantada. Había conducido a estos valientes cazadores a su fin. Tenía que morir defendiéndolos. Los raptores colazote son particularmente feroces, conocidos por ser unos sanguinarios implacables. Eran muchos más que nosotros. Pero si hubiera dejado que nos mataran a mis camaradas y a mí, sin antes derramar parte de su propia sangre, no me lo habría perdonado.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225426"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 25",
+				["text"] = {
+					"Conduje a la expedición hasta el mar, con el fin de que la costa nos protegiera de los raptores. Con nuestro apresuramiento, nos habíamos desviado demasiado al norte, a una altitud peligrosamente elevada. Nos habíamos equivocado. Fue culpa mía. Nos detuvimos delante de un escarpado acantilado, con los raptores justo detrás de nosotros.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225423"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 4",
+				["text"] = {
+					"En los años que siguieron, después de que Ventormenta traicionara a la hermandad de los albañiles, Sir Erlgadin se fue volviendo más rencoroso sobre el papel de los nobles en el Reino. Ya no deseaba defender la posición que la estirpe de su padre había ganado para él en la Casa de Nobles.\r\n\r\nPero me estoy yendo por las ramas. El propósito de esta historia no es que sirva como tratado político o biografía. Este es el relato de mis experiencias en busca de caza mayor por las verdes colinas de Tuercespina...",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225428"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 1",
+				["text"] = {
+					"Las verdes colinas de Tuercespina\r\n\r\nNuestro primer día fue todo lo bien que se puede esperar que vayan los primeros días. La mayor parte del tiempo nos preocupamos de realizar los preparativos necesarios para establecer un campamento base. Encontré un lugar ideal, junto a la ensenada de un río de agua dulce. A juzgar por los viejos y abandonados muelles que hay cerca, este emplazamiento estuvo habitado hace algún tiempo. Por lo que respecta a los habitantes primitivos, solo el tiempo puede contar esa historia.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225424"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 21",
+				["text"] = {
+					"Me he encontrado ante un infernal enorme en el campo de batalla, mientras el ejército de la Legión Ardiente avanzaba desde todas direcciones. Un grupo rebelde de trols me parece tan inofensivo como una liebre en las colinas de Dun Morogh.\r\n\r\nPasamos ante las ruinas de Tkashi sin suceso alguno, para alivio de Barnil. El grupo procedió a dirigirse hacia el oeste, hacia el Mare Magnum, bordeando las ruinas de Zul'Kunda justo al sur. Mientras ascendíamos los altos riscos del mar, vimos a nuestro primer raptor.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225421"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 16",
+				["text"] = {
+					"Tanto Ajeck como Sir Erlgadin se mantuvieron erguidos, con las armas al nivel de la hirsuta maleza que había bajo unos árboles que se mecían de un lado a otro. El sol del mediodía ardía con fuerza sobre nosotros. Una lenta gota de sudor rodó por la sien de Erlgadin, al tiempo que retiraba el gatillo. Tras el chasquido, las hojas exuberantes se dividieron y una pantera negra, espécimen hermoso, saltó veloz sobre la llanura.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225422"] = {
+			["base"] = {
+				["title"] = "Las verdes colinas de Tuercespina - Página 10",
+				["text"] = {
+					"La matanza provocó un ánimo festivo en la expedición. Barnil sirvió aguamiel para disfrute de todos. Pero nuestros festejos fueron efímeros. Mientras preparábamos el cadáver para transportarlo de vuelta al campamento base, un rugido espantoso nos cogió desprevenidos a todos. En todos mis años nunca he oído nada que helara la sangre de tal modo.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+	},
+};
+
+
 return end
 
 if LOCALE == "deDE" then
 	-- German text data go here
+
+LK["LocalData"] = {
+	["text"] = {
+		["Item-225429"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 24",
+				["material"] = "default",
+				["text"] = {
+					"Unsere hastig abgefeuerten Schüsse ermöglichten Barnil die Flucht. Barnil stolperte den Hügel wieder hinunter und schloss sich uns erneut an. Wir schlugen uns in den Urwald, wobei das Rudel Schmetterschwanzraptoren jede unserer Bewegungen genau verfolgte.\r\n\r\nAus Jägern waren Gejagte geworden.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225418"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 8",
+				["material"] = "default",
+				["text"] = {
+					"Nach einem solchen Fehltritt legte Erlgadin Barnil die Hand schwer auf die Schulter. Ajeck und ich schauten beiläufig. Wir dachten, Erlgadin würde Barnil ob seiner Unvorsichtigkeit endlich einmal die Leviten lesen. Aber Erlgadin wies mit einer langsamen Kopfbewegung in Richtung eines umgestürzten Baumes ganz in der Nähe. Zwei stechend schwarze Augen über einem Maul voller rasiermesserscharfer Zähne starrten uns an.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225427"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 20",
+				["material"] = "default",
+				["text"] = {
+					"Wir machten uns beim ersten Tageslicht in Richtung Süden zu den Tkashi-Ruinen auf. Barnil äußerte sich besorgt, dass wir auf Mitglieder des Blutskalpstamms treffen könnten. Ich erinnerte ihn daran, dass die Blutskalpe mehr mit der Vernichtung des verfeindeten Schädelspalterstamms beschäftigt waren. Ich brauche wohl nicht zu betonen, dass Barnil alles andere als beruhigt war. Ich für meinen Teil vertraute jedoch auf meine geladene Flinte, einen Ranzen Schießpulver und die drei versierten Jäger neben mir und machte mir keine Gedanken über einen möglichen Hinterhalt.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225424"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 21",
+				["material"] = "default",
+				["text"] = {
+					"Ich stand vor einer riesigen Höllenbestie auf dem Schlachtfeld und die Armee der Brennenden Legion näherte sich von allen Seiten. Dagegen wirkt eine Bande Trolle so harmlos wie ein Kaninchen in den Hügeln von Dun Morogh.\r\n\r\nWir passierten die Tkashi-Ruinen ohne Zwischenfall, worüber insbesondere Barnil sehr erleichtert war. Die Gruppe ging weiter westwärts Richtung Großes Meer und streifte die Ruinen von Zul'Kunda im Süden. Als wir die Steilküste erklommen, sahen wir ihn: unseren ersten Raptor.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225422"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 10",
+				["material"] = "default",
+				["text"] = {
+					"Danach waren wir alle in Hochstimmung. Barnin gab eine Runde Met für alle aus. Aber die Freude sollte nicht lange währen. Denn als wir den Kadaver für den Rücktransport zum Stützpunkt fertig machten, hörten wir unvermittelt ein fürchterliches Heulen. In all den Jahren habe ich noch nie etwas so Schreckliches gehört.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225430"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 14",
+				["material"] = "default",
+				["text"] = {
+					"Wir hielten uns nach Süden und folgten einigen frischen Pantherspuren. Kurz darauf kamen wir an eine Klamm, die von einer phantastischen Hängebrücke überspannt wurde. Ich musste sofort an Branns eindrucksvolle Beschreibungen des Gebiets denken, als ich dieses technische Wunderwerk sah. Es wurde oft behauptet, die einheimischen Trolle seien primitiv und ungebildet, doch als ich auf dieses handwerkliche Meisterwerk blickte, erkannte ich mit einem Mal das außerordentliche Können, mit dem die Erbauer der Trolle das schier unüberwindliche Hindernis überwunden hatten.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225423"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 4",
+				["material"] = "default",
+				["text"] = {
+					"In den Jahren nach dem Verrat Sturmwinds an der Steinmetzgilde erfüllte die Rolle, die der Adel im Königreich spielte, Sire Erlgadin zunehmend mit Gram. Er wollte die Stellung, die er von seinem Vater im Oberhaus geerbt hatte, nicht länger wahrnehmen.\r\n\r\nAber ich schweife ab. Dies hier soll ja keine politische Abhandlung oder Biografie werden. Vielmehr geht es hier um meine Erfahrungen mit der Großwildjagd in den grünen Hügeln des Schlingendorntals.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225417"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 6",
+				["material"] = "default",
+				["text"] = {
+					"Gerade als ich fragen wollte, ob Ajeck denn nicht an der heutigen Jagdstrategie interessiert sei, griff sie nach ihrem Köcher, zog einen Pfeil heraus und schoss ihn just auf unseren armen Barnil ab. Aber der Schuss galt gar nicht Barnil. Denn als der offenen Mundes einen Schritt zur Seite machte, trieb ein großer Flusskrokilisk an die Oberfläche. Ajecks Pfeil steckte genau zwischen seinen großen Augen.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225416"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 26",
+				["material"] = "default",
+				["text"] = {
+					"Ich trat langsam mit erhobener Flinte vor. Ich hatte diese mutigen Jäger ins Verderben geführt. Also wollte ich auch bei ihrer Verteidigung sterben. Schmetterschwanzraptoren sind besonders angriffslustig und bekannt für ihren unstillbaren Blutdurst. Zudem waren sie uns zahlenmäßig weit überlegen. Doch ich wollte verdammt sein, wenn sie mich und meine Kameraden töten könnten, ohne dabei selbst Verluste zu erleiden.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225426"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 25",
+				["material"] = "default",
+				["text"] = {
+					"Ich führte die Gruppe in Richtung Meer und hoffte, dass wir an der Küste Schutz vor den Raptoren finden würden. Doch in unserer Hast waren wir zu weit nach Norden abgekommen und befanden uns auf einer gefährlich hohen Erhebung. Das war ein Fehler. Und ich war schuld. Plötzlich standen wir vor steil abfallenden Klippen, die Raptoren nur noch ein paar Schritte hinter uns.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225421"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 16",
+				["material"] = "default",
+				["text"] = {
+					"Ajeck und Sire Erlgadin standen unbeweglich und hielten ihre Flinten auf das dichte Buschwerk unter den sanft schwingenden Bäumen gerichtet. Die Mittagssonne brannte auf uns nieder. Ein kleiner Schweißtropfen rann an Erlgadins Schläfe herab, als er den Hahn spannte. In dem Moment, als der Hahn einrastete, teilte sich mit einem Mal das Dickicht und ein großer schwarzer Panther - ein schönes Exemplar - preschte hervor.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225428"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 1",
+				["material"] = "default",
+				["text"] = {
+					"Die Grünen Hügel des Schlingendorntals\r\n\r\nDafür, dass es unser erster Tag war, lief es heute eigentlich erstaunlich gut. Wir verbrachten einen Großteil der Zeit mit den Vorbereitungen für den Bau eines Stützpunkts. Ich hatte den idealen Ort dafür am Frischwasserzulauf eines Flusses ausgemacht. Den alten verlassenen Docks nach zu urteilen war dieser Ort sogar einmal bewohnt gewesen. Doch die ursprünglichen Bewohner sind längst Geschichte.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225420"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 11",
+				["material"] = "default",
+				["text"] = {
+					"Auf einer felsigen Anhöhe über uns hob sich gegen das Licht der untergehenden Sonne die Silhouette der größten Raubkatze ab, die ich je gesehen habe. Ich gab einen eher unbeholfenen Schuss in Richtung des Tiers ab, das sich davon aber unbeeindruckt zeigte. Die Raubkatze ließ erneut ein Knurren ertönen, lauter noch als beim ersten Mal, und verschwand.\r\n\r\nWir packten unsere Sachen und kehrten gut gelaunt ins Lager zurück.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225419"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 27",
+				["material"] = "default",
+				["text"] = {
+					"Ajeck und Sire Erlgadin machten ihre Waffen bereit und gaben mir seitlich Deckung, während wir mit dem Rücken zum Wasser standen. Barnil seufzte ergeben und zog seine Axt. Die Schmetterschwanzraptoren waren schon ganz nah. Sie wurden langsamer. Sie pirschten sich an ihre Beute heran, wussten sie doch, dass wir ihnen nicht mehr entkommen konnten.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225425"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Die Grünen Hügel des Schlingendorntals - Seite 18",
+				["material"] = "default",
+				["text"] = {
+					"Die Büchse ruckte heftig zurück. Er verriss den Schuss seitwärts und geriet mit dem Lauf just unter Ajecks Flinte. Ajeck ihrerseits hatte genau diesen Moment abgepasst, um abzudrücken. Der Schuss verirrte sich irgendwo in die Bäume. Ein Schwarm Vögel flog kreischend aus dem Blätterdach auf und flatterte aufgeregt in alle Himmelsrichtungen davon. Eine Wolke Pulverdampf stieg über einem Baum auf. Fassungslos sahen wir mit an, wie ein gewaltiger Ast geradewegs auf den flüchtenden Panther fiel und ihm das Rückgrat brach.",
+				},
+				["singlePage"] = true,
+			},
+		},
+	},
+};
 
 return end
 
 if LOCALE == "frFR" then
 	-- French text data go here
 
+LK["LocalData"] = {
+	["text"] = {
+		["Item-225429"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 24",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"I nostri colpi alla cieca erano bastati a coprire la fuga di Barnil e a farlo scendere dalla collina per riunirsi al resto del gruppo. Ci dirigemmo nella giungla, dove un gruppo di Raptor Codafrusta seguiva ogni nostra mossa. Ora i cacciatori erano diventati prede."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225418"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 8",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"Dopo un altro di questi passi falsi, Erlgadin posò la mano sulla spalla di Barnil. Ajeck e io ci scambiammo una rapida occhiata, pensando che l'uomo volesse semplicemente sgridare Barnil per la sua imprudenza. Erlgadin, invece, fece un cenno lento con la testa verso un albero caduto nelle vicinanze. C'erano due occhi neri che ci fissavano, posti appena sopra una serie di zanne affilate come rasoi."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225427"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 20",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"Ci mettemmo in marcia alle prime luci dell'alba, diretti a sud, oltre le Rovine di Tkashi. Barnil temeva che ci saremmo imbattuti nei membri della Tribù Scalporosso. Gli spiegai che gli Scalporosso erano impegnati a distruggere la loro tribù rivale, quella dei Fendicranio. Inutile dire che le mie parole non gli furono di alcun sollievo. Tuttavia pensavo che con un archibugio carico, una sacca piena di polvere da sparo e tre cacciatori letali al mio fianco non ci fosse da temere alcuna imboscata nemica."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225424"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 21",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"Avevo affrontato un Infernale gigante in battaglia, con l'armata della Legione Infuocata che avanzava da tutte le direzioni. Un gruppo di Troll turbolenti per me era innocuo quanto un coniglio sulle colline di Dun Morogh.\r\n\r\nSuperammo le Rovine di Tkashi senza problemi, con grande sollievo di Barnil. Il gruppo poi proseguì verso ovest, in direzione del Grande Mare, girando intorno alle Rovine di Zul'Kunda a sud. Mentre stavamo per arrampicarci sugli alti promontori a picco sul mare, scoprimmo il nostro primo raptor."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225422"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 10",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"L'uccisione servì a tirare su il morale della spedizione. Barnil versò a tutti dell'idromele per festeggiare. Ma la nostra euforia era destinata a durare poco. Mentre stavamo preparando la carcassa per trasportarla al campo base, fummo sorpresi da un orrendo ruggito che ci fece gelare il sangue nelle vene. Non avevo mai sentito niente di simile in tutta la mia vita."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225430"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 14",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"Quel giorno ci dirigemmo a sud, seguendo alcune orme fresche di pantera. Ben presto raggiungemmo un burrone attraversato da un ponte di corda. Non appena lo vidi, il pensiero corse subito agli scritti di Brann su questa regione. Avevo considerato spesso i Troll nativi una razza primitiva e ignorante, ma dopo aver ammirato questa meraviglia dell'ingegneria, non potei fare a meno di riconoscere l'abilità con la quale i costruttori Troll avevano realizzato un'impresa praticamente impossibile."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225423"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 4",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"Negli anni successivi al tradimento di Roccavento nei confronti della Gilda dei Tagliapietre, Ser Erlgadin divenne sempre più insofferente riguardo il ruolo dei nobili all'interno del Regno. Egli non voleva più mantenere la posizione che la discendenza di suo padre aveva conquistato per lui all'interno della Casata dei Nobili.\r\n\r\nMa sto divagando. Questo racconto non vuole essere un trattato politico, né una biografia. È solo un resoconto delle mie esperienze di caccia nelle colline verdi di Rovotorto."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225417"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 6",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"Proprio quando stavo per criticare la mancanza d'interesse di Ajeck per la strategia di caccia, lei mise mano alla sua faretra, tirò fuori una freccia e la scoccò verso il povero Barnil. Ma non era Barnil il bersaglio di Ajeck. Alle sue spalle infatti giaceva un grosso crocolisco di fiume venuto in superficie, con le fauci spalancate e la freccia di Ajeck conficcata in mezzo ai suoi due grandi occhi."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225416"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 26",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"Io feci un passo in avanti, lentamente, con l'arma spianata. Avevo condotto alla morte questi coraggiosi cacciatori e avrei dato la mia vita per difenderli. I Raptor Codafrusta sono creature particolarmente feroci e sanguinarie. Erano molto più numerosi di noi, ma non avrei mai permesso che uccidessero me e i miei compagni senza prima versare un po' del loro stesso sangue."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225426"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 25",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"Avevo condotto il gruppo verso il mare, nella speranza che la spiaggia fosse un rifugio sicuro dai raptor. Nella fretta ci eravamo spinti troppo a nord, in posizione elevata e precaria, ma ormai il danno era stato fatto ed era tutta colpa mia. Ci fermammo poco prima di un promontorio a picco, con i raptor che ci inseguivano da vicino."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225421"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 16",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"Sia Ajeck che Ser Erlgadin rimasero calmi, con le armi spianate verso la densa vegetazione alla base degli alberi ondeggianti. Il sole di mezzogiorno picchiava forte sulle nostre teste. Una goccia di sudore scese lentamente sulla tempia di Erlgadin quando tirò indietro il grilletto. Al suono del clic, la fitta vegetazione si diradò e un meraviglioso esemplare di pantera nera si fece avanti."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225428"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 1",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"Verdi Colline di Rovotorto\r\n\r\nIl nostro primo giorno andò secondo le previsioni. Avevamo trascorso la maggior parte del tempo prendendo gli accorgimenti necessari per stabilire un campo base. Avevo trovato un posto ideale vicino all'insenatura di un fiume. A giudicare dalle vecchie banchine abbandonate, questo posto doveva essere abitato tempo fa. Ma da chi? Solo il tempo può dirlo."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225420"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 11",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"Su un precipizio roccioso in alto, definita dalla luce del sole al tramonto, riconobbi la sagoma del predatore felino più grande che avessi mai visto. Riuscii a sparare un colpo con l'archibugio senza mirare, ma il felino non si scompose e ruggì di nuovo, più forte della prima volta, quindi sparì.\r\n\r\nRaccogliemmo le nostre cose e facemmo ritorno al campo."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225419"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 27",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"Ajeck e Ser Erlgadin imbracciarono le loro armi e si posizionarono ai miei fianchi, con il mare alle spalle. Barnil emise un sospiro di rassegnazione e tirò fuori la sua ascia. I Codafrusta ci erano quasi addosso. Avevano rallentato la falcata. Stavano studiando la loro preda perché sapevano che eravamo in trappola."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		},
+		["Item-225425"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 18",
+				["material"] = "default",
+				["hasRead"] = true,
+				["text"] = {
+					"L'arma rinculò con violenza tra le sue braccia, andando a sbattere contro l'archibugio di Ajeck, che aveva scelto proprio quel momento per fare fuoco. Partì un colpo maldestro, diretto verso la linea degli alberi. Uno stormo di uccelli si alzò dalle fronde e volò via in ogni direzione, mentre una cortina di fumo si levava dall'albero. Rimanemmo terrorizzati a guardare mentre un enorme ramo si abbatteva sulla pantera in fuga, spezzandole la schiena."
+				},
+				["singlePage"] = true,
+				["isFavorite"] = false
+			}
+		}
+	},
+};
+
 return end
 
 if LOCALE == "itIT" then
 	-- French text data go here
 
+LK["LocalData"] = {
+	["text"] = {
+		["Item-225429"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 24",
+				["material"] = "default",
+				["text"] = {
+					"I nostri colpi alla cieca erano bastati a coprire la fuga di Barnil e a farlo scendere dalla collina per riunirsi al resto del gruppo. Ci dirigemmo nella giungla, dove un gruppo di Raptor Codafrusta seguiva ogni nostra mossa. Ora i cacciatori erano diventati prede.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225418"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 8",
+				["material"] = "default",
+				["text"] = {
+					"Dopo un altro di questi passi falsi, Erlgadin posò la mano sulla spalla di Barnil. Ajeck e io ci scambiammo una rapida occhiata, pensando che l'uomo volesse semplicemente sgridare Barnil per la sua imprudenza. Erlgadin, invece, fece un cenno lento con la testa verso un albero caduto nelle vicinanze. C'erano due occhi neri che ci fissavano, posti appena sopra una serie di zanne affilate come rasoi.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225427"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 20",
+				["material"] = "default",
+				["text"] = {
+					"Ci mettemmo in marcia alle prime luci dell'alba, diretti a sud, oltre le Rovine di Tkashi. Barnil temeva che ci saremmo imbattuti nei membri della Tribù Scalporosso. Gli spiegai che gli Scalporosso erano impegnati a distruggere la loro tribù rivale, quella dei Fendicranio. Inutile dire che le mie parole non gli furono di alcun sollievo. Tuttavia pensavo che con un archibugio carico, una sacca piena di polvere da sparo e tre cacciatori letali al mio fianco non ci fosse da temere alcuna imboscata nemica.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225424"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 21",
+				["material"] = "default",
+				["text"] = {
+					"Avevo affrontato un Infernale gigante in battaglia, con l'armata della Legione Infuocata che avanzava da tutte le direzioni. Un gruppo di Troll turbolenti per me era innocuo quanto un coniglio sulle colline di Dun Morogh.\r\n\r\nSuperammo le Rovine di Tkashi senza problemi, con grande sollievo di Barnil. Il gruppo poi proseguì verso ovest, in direzione del Grande Mare, girando intorno alle Rovine di Zul'Kunda a sud. Mentre stavamo per arrampicarci sugli alti promontori a picco sul mare, scoprimmo il nostro primo raptor.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225422"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 10",
+				["material"] = "default",
+				["text"] = {
+					"L'uccisione servì a tirare su il morale della spedizione. Barnil versò a tutti dell'idromele per festeggiare. Ma la nostra euforia era destinata a durare poco. Mentre stavamo preparando la carcassa per trasportarla al campo base, fummo sorpresi da un orrendo ruggito che ci fece gelare il sangue nelle vene. Non avevo mai sentito niente di simile in tutta la mia vita.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225430"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 14",
+				["material"] = "default",
+				["text"] = {
+					"Quel giorno ci dirigemmo a sud, seguendo alcune orme fresche di pantera. Ben presto raggiungemmo un burrone attraversato da un ponte di corda. Non appena lo vidi, il pensiero corse subito agli scritti di Brann su questa regione. Avevo considerato spesso i Troll nativi una razza primitiva e ignorante, ma dopo aver ammirato questa meraviglia dell'ingegneria, non potei fare a meno di riconoscere l'abilità con la quale i costruttori Troll avevano realizzato un'impresa praticamente impossibile.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225423"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 4",
+				["material"] = "default",
+				["text"] = {
+					"Negli anni successivi al tradimento di Roccavento nei confronti della Gilda dei Tagliapietre, Ser Erlgadin divenne sempre più insofferente riguardo il ruolo dei nobili all'interno del Regno. Egli non voleva più mantenere la posizione che la discendenza di suo padre aveva conquistato per lui all'interno della Casata dei Nobili.\r\n\r\nMa sto divagando. Questo racconto non vuole essere un trattato politico, né una biografia. È solo un resoconto delle mie esperienze di caccia nelle colline verdi di Rovotorto.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225417"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 6",
+				["material"] = "default",
+				["text"] = {
+					"Proprio quando stavo per criticare la mancanza d'interesse di Ajeck per la strategia di caccia, lei mise mano alla sua faretra, tirò fuori una freccia e la scoccò verso il povero Barnil. Ma non era Barnil il bersaglio di Ajeck. Alle sue spalle infatti giaceva un grosso crocolisco di fiume venuto in superficie, con le fauci spalancate e la freccia di Ajeck conficcata in mezzo ai suoi due grandi occhi."
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225416"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 26",
+				["material"] = "default",
+				["text"] = {
+					"Io feci un passo in avanti, lentamente, con l'arma spianata. Avevo condotto alla morte questi coraggiosi cacciatori e avrei dato la mia vita per difenderli. I Raptor Codafrusta sono creature particolarmente feroci e sanguinarie. Erano molto più numerosi di noi, ma non avrei mai permesso che uccidessero me e i miei compagni senza prima versare un po' del loro stesso sangue.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225426"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 25",
+				["material"] = "default",
+				["text"] = {
+					"Avevo condotto il gruppo verso il mare, nella speranza che la spiaggia fosse un rifugio sicuro dai raptor. Nella fretta ci eravamo spinti troppo a nord, in posizione elevata e precaria, ma ormai il danno era stato fatto ed era tutta colpa mia. Ci fermammo poco prima di un promontorio a picco, con i raptor che ci inseguivano da vicino.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225421"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 16",
+				["material"] = "default",
+				["text"] = {
+					"Sia Ajeck che Ser Erlgadin rimasero calmi, con le armi spianate verso la densa vegetazione alla base degli alberi ondeggianti. Il sole di mezzogiorno picchiava forte sulle nostre teste. Una goccia di sudore scese lentamente sulla tempia di Erlgadin quando tirò indietro il grilletto. Al suono del clic, la fitta vegetazione si diradò e un meraviglioso esemplare di pantera nera si fece avanti.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225428"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 1",
+				["material"] = "default",
+				["text"] = {
+					"Verdi Colline di Rovotorto\r\n\r\nIl nostro primo giorno andò secondo le previsioni. Avevamo trascorso la maggior parte del tempo prendendo gli accorgimenti necessari per stabilire un campo base. Avevo trovato un posto ideale vicino all'insenatura di un fiume. A giudicare dalle vecchie banchine abbandonate, questo posto doveva essere abitato tempo fa. Ma da chi? Solo il tempo può dirlo.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225420"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 11",
+				["material"] = "default",
+				["text"] = {
+					"Su un precipizio roccioso in alto, definita dalla luce del sole al tramonto, riconobbi la sagoma del predatore felino più grande che avessi mai visto. Riuscii a sparare un colpo con l'archibugio senza mirare, ma il felino non si scompose e ruggì di nuovo, più forte della prima volta, quindi sparì.\r\n\r\nRaccogliemmo le nostre cose e facemmo ritorno al campo.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225419"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 27",
+				["material"] = "default",
+				["text"] = {
+					"Ajeck e Ser Erlgadin imbracciarono le loro armi e si posizionarono ai miei fianchi, con il mare alle spalle. Barnil emise un sospiro di rassegnazione e tirò fuori la sua ascia. I Codafrusta ci erano quasi addosso. Avevano rallentato la falcata. Stavano studiando la loro preda perché sapevano che eravamo in trappola.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225425"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Verdi Colline di Rovotorto - Pagina 18",
+				["material"] = "default",
+				["text"] = {
+					"L'arma rinculò con violenza tra le sue braccia, andando a sbattere contro l'archibugio di Ajeck, che aveva scelto proprio quel momento per fare fuoco. Partì un colpo maldestro, diretto verso la linea degli alberi. Uno stormo di uccelli si alzò dalle fronde e volò via in ogni direzione, mentre una cortina di fumo si levava dall'albero. Rimanemmo terrorizzati a guardare mentre un enorme ramo si abbatteva sulla pantera in fuga, spezzandole la schiena.",
+				},
+				["singlePage"] = true,
+			},
+		},
+	},
+};
+
 return end
 
 if LOCALE == "ptBR" then
 	-- Brazilian Portuguese text data go here
+
+LK["LocalData"] = {
+	["text"] = {
+		["Item-225429"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 24",
+				["material"] = "default",
+				["text"] = {
+					"E no que rebentava aquela onda de flecha e pólvora, o Eucunha botou asa no pé e desceu corrido a ladeira pra longe dos bicharocos e foi no passo mesmo que desembestamos selva afora em fuga, que no nosso encosto vinham lenhando uns quantos batecaudas.\r\n\r\nA gente era a caça da caça.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225418"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 8",
+				["material"] = "default",
+				["text"] = {
+					"Depois de ato tão erroso, Gramos botou mão com peso no ombro de Eucunha. Merília mais eu olhamos assim na esguelha, sem atenção prestada, como que presumindo que o dito apenas ralhava com besteira d'outro. O Gramos, tanta via, incitando o olhar de tudo com meneio da caveira para árvore ali caída. Espiando de volta com maldade nas vistas, tinha dois olho de piche encarapitados em fieira de dentes como que espinho de pau-marfim.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225427"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 20",
+				["material"] = "default",
+				["text"] = {
+					"A gente alevantou e deslizandou aquela selva junto do sol e lá no meio daqueles matos o Eucunha veio dizer que amedrontava uma topada com os Sanguescalpo. Pois não lembrava ele que Sanguescalpo e Rachacrânio viviam a quebrar-se a pau, rachando os cocos uns dos outros? E isso acalmou o coió? Nonada! Tremitremia que nem vara verde. Já eu tinha pra mim que de emboscada não tinha medo, pois que viesse e eu ia responder no berrante com olho d'águia, isso pra não falar que ali era todo mundo caçador, gente que não atira pr'errar.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225424"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 21",
+				["material"] = "default",
+				["text"] = {
+					"Emboscada eu já vi muito, fiquei no olho do fogo, tiroteando canhoto diabo, e numa dessas derrubei à bala o Corpulento, um Infernal da Legião que fez tremer a encruzilhada. Não conheço anão de Dun Morogh que fuja de embate.\r\n\r\nJá o frouxo do Eucunha estremecia por passo dado e só destremecia no intervalo duma ruína e outra, intervalo curto, pois até o Grande Mar, pr'onde se olhava era carcaça daquelas civilizações. Depois despencava pro céu e pro mar, onde a gente avistou o desamigo: naqueles dois azuis havia um raptor vermelistrado.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225422"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 10",
+				["material"] = "default",
+				["text"] = {
+					"A expedição toda tirou alegria da caçada e beberam o mulso que o Eucunha serviu a um-por-um. Enquanto a gente preparava o corpo do bichano pra levar arrastando pro capoeirão, um rugido fundo ecoou trincando numa zagaia. Em toda a minha vida, nunca senti o sangue ferver tão gelado no peito.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225430"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 14",
+				["material"] = "default",
+				["text"] = {
+					"Nesse dia nos desembrenhamos pro sul, seguindo rastro de onça. De pronto topamos com uma pirambeira funda que atravessava debaixo duma pinguela. E tudo o que o Brann falava em escrito vinha na minha cabeça quando eu vi tamanho engenho. Não admira terem julgado os trolls uma gente bugra rude e cascuda, mas a pontezinha era bem feitinha que só, feita por algum batuta dessa raça.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225423"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 4",
+				["material"] = "default",
+				["text"] = {
+					'Sucedeu que, no passa e corre dos anos, a Guilda dos Alvanéis caiu nos engodos de Ventobravo. Raciliano Gramos, homem de boa cepa, desacreditou-se dos brasões e coroas daquelas cercanias: "Carregação de nome afamilhado é bestagem grande de homem sem estofos. Pesa na canga e nos espíritos". E assim o fez, deixando na rabeira prenome de dom.\r\n\r\nMas voltemos ao causo sem cair em esparrelas de politiqueiras e contos de mim-mesmo: esta história é prosa de caçada pelas veredas da minha selva.',
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225417"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 6",
+				["material"] = "default",
+				["text"] = {
+					"Sucedeu que na hora mesma d'eu estranhar a Merília por falta de prestar cuidado na maquinação da caçada do dia, a cuja puxou uma flecha e disparou diretinho no desinfeliz do Eucunha. Só que não foi o Eucunha que ela atentou. Por conta que, depois que ele bandeou bocaberto, um crocolisco abitelado do rio veio boiando com a flecha da Merília justinha no meio dos olharrões.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225416"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 26",
+				["material"] = "default",
+				["text"] = {
+					"Lentamente me adiantei com a clavina erguida, pronto pra berrar fogo. Eu havia conduzido meus caçadores à morte, mas meu nome ainda era Rosarães Guima, e de mim pra mim firmei que morreria defendendo-os. O batecauda é um bicho cruel e violento, trasmontante de ruim, e ali eles estavam com a vantagem numérica, mas eu não iria entregar o couro sem antes derramar sangue muito.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225426"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 25",
+				["material"] = "default",
+				["text"] = {
+					"Levei o grupo em tropel desabalante até o mar, engenhando encontrar resguardo encantoado contra os Raptores na costa. Mas no medonho que é o tempo que falta pra gente pensar, derramamos pro norte em demasia, erramos mira e fomos dar em elevação precária e instável, de vertigem. Erro muito e culpa minha só. Estacamos diante do despenhadeiro, com os raptores seguindo junto a palmo e palmo, rilhando dentes.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225421"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 16",
+				["material"] = "default",
+				["text"] = {
+					"Merília e Dom Raciliano, os dois bem postados, de arma apontada pra relvinha de pé de árvore. O sol rachando nosso coco a pino. Uma gota suada lambeu o rosto de Raciliano e ele engatilhou o trabuco. Depois do barulhinho, o mato fendeu e uma onça-preta – bitela, formosa – pulou pra planura num trovejo.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225428"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 1",
+				["material"] = "default",
+				["text"] = {
+					"Grande Espinhaço: Veredas\r\n\r\nNonada! De tragédia nenhuma, que chegamos bem, ou tão bem quanto se espera de uma chegada. A preocupação que nos tomou maior do tempo foi montar tudo que era barraca, pra não passar noite escurifria ao relento. Encontrei um lugar ideal, borda dum fio d'água que desdescia pra costa. Havia de ter vida aqui, pois docas há que envelhecem sozinhas e pr'onde foi essa tal vida só o tempo sabe.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225420"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 11",
+				["material"] = "default",
+				["text"] = {
+					"Num penedo mais pra cima, peneirado pelo sol baixo de quase noite, vi o gato dentudo mais avantajado que qualquer outro que vi em pelo. Dei uma cusparada de chumbo com a espingarda, mas o gato ficou firme. Ele rugiu de novo – mais alto que em-antes – e escafedeu.\r\n\r\nJuntamos os teréns e marchamos de volta pro acampamento.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225419"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 27",
+				["material"] = "default",
+				["text"] = {
+					"Merília e Raciliano aprontaram as armas, me resguardando de cada lado, as costas pro mar. Eucunha suspirou triste-sombrio e puxou o machado. Os batecaudas já bafejavam na nossa cara, sanguissedentos, trincando dentes, chegando com tempo sobrante e calma sinistra. Pois decerto sabiam que a presa estava segura no papo, questão simples de abate. E eu pensei num carro-de-trem, que apanhando e moendo um tauren, na passagem de um corte.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225425"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Grande Espinhaço: Veredas – Página 18",
+				["material"] = "default",
+				["text"] = {
+					"No que cambaleou o homem, Merília se apreparou pra espingardear a besta-fera e foi na minúcia do segundo que ela gatilhou a máquina: claquebum! Mas não mirava gata que nada, mirava era na reta d'árvore que corria do lado da bicha, assustando os bichos-ave que voejavam corridos de seus ninhos, berrando todos os cantos em protesto, tapando o resto do céu em colorido. E teve uma pluma esfumaçada que subiu foi de pássaro nenhum, mas d'árvore almejada. No exato metro em que corria a onça-preta caiu-se um galho que partiu a mioleira da criatura num estalo.",
+				},
+				["singlePage"] = true,
+			},
+		},
+	},
+};
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -1431,19 +2311,699 @@ return end
 if LOCALE == "ruRU" then
 	-- Russian text data go here
 
+LK["LocalData"] = {
+	["text"] = {
+		["Item-225429"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 24",
+				["material"] = "default",
+				["text"] = {
+					"Наших суматошных выстрелов оказалось достаточно, чтобы дать Барнилу время убежать. Барнил скатился с холма и присоединился к нашей группе. Мы побежали в джунгли, преследуемые стаей свирепых ящеров-кнутохвостов.\r\n\r\nОхотники превратились в добычу.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225418"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 8",
+				["material"] = "default",
+				["text"] = {
+					"После очередного неверного шага Барнила Эрлджедин положил свою тяжелую руку ему на плечо. Мы с Аджек переглянулись, уверенные, что он решил-таки напомнить Барнилу о необходимости соблюдать осторожность. Но вместо этого Эрлджедин кивнул головой в сторону лежащего неподалеку дерева. Оттуда на нас пристально смотрели два черных глаза, а под ними была пасть, полная острых зубов.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225427"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 20",
+				["material"] = "default",
+				["text"] = {
+					"С первыми лучами солнца мы отправились на охоту на юг, за руины Ткаши. Барнил беспокоился, что мы можем наткнуться на троллей племени Кровавого Скальпа. Мои слова о том, что это племя сейчас занято войной со своими заклятыми врагами из племени Дробителей Черепов, конечно же, ничуть не успокоили его. Меня же возможность засады беспокоила гораздо меньше: в моих руках была заряженная винтовка, на поясе – полная сумка пороха, а рядом – трое отличных охотников.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225422"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 10",
+				["material"] = "default",
+				["text"] = {
+					"Первое убийство взбодрило нашу команду. Барнил налил всем меда, чтобы отметить его. Но нашему празднованию не суждено было продолжаться долго. Когда мы подготавливали тушу к транспортировке в лагерь, внезапно раздался ужасный рев. Я в жизни не слышал такого леденящего кровь звука.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225423"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 4",
+				["material"] = "default",
+				["text"] = {
+					"В последующие годы, после того как Штормград обманул братство Каменщиков, сэр Эрлджедин разочаровался в аристократии Королевства. Он больше не хотел принадлежать к Благородным Домам, хотя право это унаследовал от отца.\r\n\r\nНо не будем отвлекаться. Мое повествование не политический трактат и не биография. Я всего лишь делюсь опытом участия в большой охоте среди зеленых холмов Тернистой долины.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225430"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 14",
+				["material"] = "default",
+				["text"] = {
+					"В тот день мы пошли на юг, двигаясь по свежим следам пантеры. Вскоре мы пришли к ущелью, через которое был перекинут длинный веревочный мостик. При виде этого чуда инженерной мысли мне сразу вспомнилось, как описывал этот район Бранн. Тролли, коренные жители этих мест, всегда считались примитивной расой, но мастерство, с которым они сконструировали этот мост через непреодолимую пропасть, было неоспоримо.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225424"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 21",
+				["material"] = "default",
+				["text"] = {
+					"Я помню битву с армией Пылающего Легиона: враги надвигались со всех направлений, а прямо передо мной возвышался огромный инфернал. Толпа злобных троллей по сравнению с этим кажется безобидной, как заяц в горах Дун Морога.\r\n\r\nК величайшей радости Барнила, мы миновали руины Ткаши без всяких приключений. Мы продолжали двигаться на запад к Великому морю, обходя руины Зул'Кунды. Взобравшись на высокий утес над морем, мы увидели нашего первого ящера.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225417"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 6",
+				["material"] = "default",
+				["text"] = {
+					"Когда я уже собирался спросить, почему Аджек не участвует в обсуждении плана сегодняшней охоты, она выхватила стрелу из колчана, натянула тетиву и выстрелила в бедного Барнила. Однако стрела пролетела мимо. Разинув рот, Барнил наблюдал за тем, как возле него на поверхность реки всплыл огромный кроколиск, а между глаз у него торчала стрела Аджек.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225416"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 26",
+				["material"] = "default",
+				["text"] = {
+					"Я медленно шагнул вперед, держа ружье наготове. Я привел этих отважных охотников к гибели. И готов был погибнуть сам, защищая их. Ящеры-кнутохвосты известны своей свирепостью и неумолимой жаждой крови. Их было намного больше нас. Но я бы себе не простил, если бы позволил расправиться с собой и моими товарищами, не прикончив сначала несколько этих тварей!",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225426"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 25",
+				["material"] = "default",
+				["text"] = {
+					"Я вел отряд по направлению к морю в надежде, что вода остановит ящеров. Но в спешке мы зашли слишком далеко на север, на возвышенность. Исправлять ошибку было уже поздно. И вина была в этом моя. Мы остановились на краю отвесной скалы, а ящеры были уже в нескольких шагах от нас.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225421"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 16",
+				["material"] = "default",
+				["text"] = {
+					"Аджек и сэр Эрлджедин стояли наготове, направив ружья в сторону колючего кустарника у подножия раскачивающихся деревьев. Полуденное солнце нещадно палило. Капля пота медленно скатилась по виску Эрлджедина, когда он взводил курок. В момент щелчка из кустов на поляну выпрыгнула огромная черная пантера – невероятно грациозное животное.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225428"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 1",
+				["material"] = "default",
+				["text"] = {
+					"Зеленые холмы Тернистой долины\r\n\r\nНаш первый день прошел, как обычно проходят первые дни. Большую часть времени мы обустраивали лагерь. Мне удалось найти идеальное место у небольшой чистой заводи. Старые обветшавшие мостки указывали на то, что в этом месте когда-то жили. Кто именно там жил, мы пока не знали.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225420"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 11",
+				["material"] = "default",
+				["text"] = {
+					"На скалистом склоне, возвышавшемся над нами, в лучах заходящего солнца вырисовывался силуэт самой большой кошки, которую я когда-либо видел. Мне удалось сделать неловкий выстрел из ружья, но кошка не двинулась с места. Она издала еще один ужасный рык, громче прошлого, и исчезла.\r\n\r\nМы собрали вещи и мрачно двинулись в лагерь.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225419"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 27",
+				["material"] = "default",
+				["text"] = {
+					"Аджек и сэр Эрлджедин вскинули свое оружие, прикрывая меня с боков, спиной к морю. Барнил обреченно вздохнул и обнажил свой топор. Кнутохвосты были практически рядом с нами. Их уверенные шаги замедлились. Они крадучись подбирались к своим жертвам, зная, что загнали нас в ловушку.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225425"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "Зеленые холмы Тернистой долины: стр. 18",
+				["material"] = "default",
+				["text"] = {
+					"Ружье резко подалось назад в его руках. Дуло ушло в сторону и попало под ствол ружья Аджек. И именно в этот момент Аджек спустила курок. Неуклюже вздернувшееся к кронам деревьев ружье отчетливо и громко выстрелило. Стая птиц, крича, вспорхнула в небо, разлетаясь во все стороны. Струйка дыма вилась из дерева. Мы в оцепенении смотрели, как гигантская ветка рухнула прямо на убегающую пантеру и сломала ей хребет.",
+				},
+				["singlePage"] = true,
+			},
+		},
+	},
+};
+
 return end
 
 if LOCALE == "koKR" then
 	-- Korean text data go here
+
+LK["LocalData"] = {
+	["text"] = {
+		["Item-225429"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 24쪽",
+				["material"] = "default",
+				["text"] = {
+					"우리의 재빠른 조준 사격으로 바닐은 도망칠 수 있었다. 그는 언덕 아래로 도망쳐서 우리와 다시 합류했다. 우리는 밀림 속으로 도망쳤다. 그러나 포악한 채찍꼬리랩터 무리가 계속 우리를 쫓아왔다.\r\n\r\n사냥꾼들이 오히려 사냥감이 되어 버린 셈이었다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225418"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 8쪽",
+				["material"] = "default",
+				["text"] = {
+					"바닐이 한 발짝 발을 헛디디자 얼가딘 경은 그 큰 손으로 바닐의 어깨를 잡았다. 아제크와 나는 그가 다만 부주의한 바닐에게 꼭 필요한 따끔한 질책을 하는 거라고 생각하며 별생각 없이 쳐다보았다. 하지만 얼가딘 경은 머리로 천천히 근처에 쓰러져 있는 나무를 가리켰다. 거기엔 면도날같이 날카로운 송곳니 바로 위로 두 개의 검은 눈이 뚫어질 듯 무섭게 우릴 쏘아보고 있었다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225427"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 20쪽",
+				["material"] = "default",
+				["text"] = {
+					"우리는 해가 뜨자마자 트카시 폐허를 지나 남쪽을 향해 출발했다. 바닐은 붉은머리 부족과 마주치게 되지 않을까 걱정했다. 나는 바닐에게 붉은머리 부족은 그들 일족의 숙적인 백골가루 부족을 처치하는 데 여념이 없을 거라고 상기시켜 주었다. 물론 바닐은 전혀 안심하지 않았지만, 나는 장전된 총, 화약을 가득 담은 가방, 그리고 세 명의 뛰어난 사냥꾼이 있어 어떤 적이 습격해 온다 해도 걱정이 없었다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225424"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 21쪽",
+				["material"] = "default",
+				["text"] = {
+					"나는 전장에서 수없이 지옥을 드나들었다. 바로 사방에서 공격해 오는 불타는 군단이라는 지옥의 군대를... 그들에 비하면 난폭한 트롤 무리는 던 모로의 언덕을 뛰어다니는 토끼만큼이나 안전하다고 할 수 있다.\r\n\r\n우리는 아무 문제 없이 트카시 폐허를 지나왔고 이로써 바닐도 많이 안심하게 되었다. 대해를 향해 서쪽으로 계속 가면서 바로 남쪽에 보이는 줄쿤다의 폐허의 가장자리를 지나쳤다. 높은 해안 절벽을 올라가던 도중에 첫 랩터 사냥감을 발견했다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225422"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 10쪽",
+				["material"] = "default",
+				["text"] = {
+					"놈의 죽음으로 원정대는 축제 분위기에 휩싸였다. 모두 즐길 수 있도록 바닐이 벌꿀술을 따라 주었으나 축제는 오래가지 못했다. 시체를 다시 기지로 보내기 위해 준비하느라 모두 방심하고 있던 중에 끔찍한 으르렁거리는 소리가 들려 온 것이었다. 내 생애에서 피가 얼어 붙는 것처럼 그렇게 섬뜩한 소리는 다시 들어 보지 못했다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225430"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 14쪽",
+				["material"] = "default",
+				["text"] = {
+					"오늘은 새로운 퓨마 흔적을 쫓아 남쪽으로 사냥을 나갔다. 출발한 지 얼마되지 않아 우리는 밧줄로 만들어진 멋진 다리가 놓인 계곡에 이르렀다. 기술이 낳은 이 경이로운 다리를 보는 순간 나는 이 지역을 묘사한 브란의 글을 떠올리지 않을 수 없었다. 종종 트롤 원주민은 원시적이고 교육 받지 못한 종족이라 생각했지만, 뛰어난 기술로 만들어진 다리를 올려다 보면서 나는 이 불가능해 보이는 일을 이뤄낸 트롤 건축가들의 솜씨를 인정하게 되었다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225423"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 4쪽",
+				["material"] = "default",
+				["text"] = {
+					"스톰윈드가 석공 길드를 배반한 이후 여러 해 동안 얼가딘 경은 왕국 내에서 귀족의 역할에 대해 비판을 가해왔다. 그리고 그는 아버지의 혈통으로 이어받은 귀족 평의회의 지위를 지킬 마음이 더는 없었다.\r\n\r\n여기서 다른 화제로 넘어가도록 하겠다. 이런 이야기를 하는 것은 정치 논문이나 전기 같은 것을 쓰기 위해서가 아니다. 이 책은 가시덤불 골짜기의 푸른 언덕에서 대단한 사냥을 하던 시절의 내 경험을 이야기하려는 것이다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225417"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 6쪽",
+				["material"] = "default",
+				["text"] = {
+					"내가 아제크에게 오늘 있을 사냥에 집중하지 않는 것에 대한 우려를 표하려는 순간, 그녀가 화살통에서 화살을 하나 꺼내더니 불쌍한 바닐을 향해 쏘는 것이었다. 하지만 아제크가 맞히려 했던 건 바닐이 아니었다. 바닐이 놀라 입을 벌린 채로 옆으로 비켜서자 아제크의 화살이 정확하게 미간 한가운데에 박힌 거대한 민물악어가 수면으로 떠올랐다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225416"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 26쪽",
+				["material"] = "default",
+				["text"] = {
+					"난 천천히 총을 들고 앞으로 나아갔다. 난 이 용감한 사냥꾼들을 죽음의 위기에 몰아넣고 말았다. 따라서 그들을 보호하기 위해서라면 목숨이라도 내놓고 싶은 심정이었다. 채찍꼬리랩터들은 특히 사나울 뿐 아니라 피에 대한 그칠 줄 모르는 굶주림으로 알려져 있다. 놈들은 수적으로도 우리보다 훨씬 우위였다. 나와 내 동료들이 희생되기 전에 놈들을 처치하지 못하면 나는 저주를 받아 마땅하다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225426"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 25쪽",
+				["material"] = "default",
+				["text"] = {
+					"나는 해안가에 랩터로부터 숨을 곳이 있기를 바라면서 동료들을 바다 쪽으로 안내했다. 그런데 서둘러 도망쳐 오는 바람에 북쪽으로 너무 멀리 도망쳐 와 위태로운 고지까지 오고 말았다. 이미 실수는 저질러졌고 그건 모두 내 잘못이었다. 우리는 깎아지른 절벽 끝에 멈춰 섰고, 랩터들은 겨우 몇 발자국 뒤에 있었다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225421"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 16쪽",
+				["material"] = "default",
+				["text"] = {
+					"아제크와 얼가딘 경은 균형을 잡고 서서 흔들리는 나무 밑에서 털을 곤두세우고 있는 거대한 놈에게 총을 겨누었다. 한낮의 태양은 따갑게 내리쬐고 있었다. 핀을 뒤로 당기는 얼가딘의 관자놀이에서 땀 한 방울이 천천히 흘러내렸다. 방아쇠를 당기는 소리와 함께 두꺼운 식물이 갈라지고 너무나도 아름다운 거대한 검은 표범이 곧 평원 위에 쓰러졌다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225428"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 1쪽",
+				["material"] = "default",
+				["text"] = {
+					"가시덤불 골짜기의 푸른 언덕\r\n\r\n첫째 날은 보통 그렇듯이 순조롭게 지나갔다. 우리는 기지 구축을 위해 필요한 준비를 하는 데 대부분의 시간을 보냈다. 나는 담수가 흘러드는 강어귀 가에서 이상적인 장소를 찾아냈다. 근처에 낡고 버려진 부두가 있는 걸로 보아 이곳은 예전에 어떤 종족이 거주하던 곳인 것 같다. 그러나 원래 누가 살던 땅이었는지는 시간이 흘러야만 알 수 있을 것이다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225420"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 11쪽",
+				["material"] = "default",
+				["text"] = {
+					"석양빛에 윤곽이 빛나는 바위 절벽 위에서 지금까지 본 것 중 가장 큰 고양잇과 사냥감을 발견했다. 나는 내 라이플 총으로 서투르게 한 발 쐈지만 놈은 꿈쩍도 하지 않았다. 놈은 처음보다 더 큰 소리로 한 번 더 으르렁거리고는 사라져 버렸다.\r\n\r\n우리는 소지품을 챙겨 무거운 마음으로 야영지로 돌아왔다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225419"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 27쪽",
+				["material"] = "default",
+				["text"] = {
+					"아제크와 얼가딘 경은 무기를 든 채 내 양옆에 서 있었고 우리의 등 뒤는 바다였다. 바닐은 한숨을 내쉬며 도끼를 꺼내 들었다. 채찍꼬리랩터들은 우리 바로 앞에까지 와 있었다. 그러고는 속도를 줄여 천천히 움직이기 시작했다. 놈들은 우리가 꼼짝없이 갇혀 버렸다는 사실을 알고 있었기 때문에 서두르지 않고 먹잇감에게 다가오고 있었던 것이다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225425"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "가시덤불 골짜기의 푸른 언덕 - 18쪽",
+				["material"] = "default",
+				["text"] = {
+					"그의 총이 반동으로 그의 팔 안에서 심하게 흔들렸다. 그리고 얼가딘의 총구가 옆으로 흔들렸다가 아제크의 총구 아래서 올라왔다. 아제크는 바로 그 순간 방아쇠를 당겼다. 갑자기 날아든 총구로 조준이 흐트러져 총알은 뚜렷한 소리를 내며 나무 꼭대기로 발사되고 말았다. 새 떼가 울부짖으며 하늘로 날아올라 사방으로 흩어졌다. 나무에선 연기가 나고 있었다. 우리는 거대한 나뭇가지가 똑바로 떨어져 달아나는 표범의 등을 부러뜨리는 광경을 놀라워하며 지켜보았다.",
+				},
+				["singlePage"] = true,
+			},
+		},
+	},
+};
 
 return end
 
 if LOCALE == "zhCN" then
 	-- Simplified Chinese text data go here
 
+LK["LocalData"] = {
+	["text"] = {
+		["Item-225429"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第24页",
+				["material"] = "default",
+				["text"] = {
+					"我们匆忙射出的子弹为巴尼尔赢得了足够的逃跑时间。他大声叫嚷着跑下山丘，重新回到队伍之中。我们急忙离开了丛林，因为有一群凶残的鞭尾迅猛龙正在追寻着我们的足迹。\r\n\r\n现在攻守易位，猎手变成了猎物。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225418"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第8页",
+				["material"] = "default",
+				["text"] = {
+					"埃尔加丁爵士似乎被绊了一下，将手重重地拍在巴尼尔的肩膀上。我和阿杰克瞥了一眼，以为他会责备粗心大意的巴尼尔。然而埃尔加丁爵士却摆了摆头，示意我们观察旁边的一棵倒下的大树。那里正有一双炯炯有神的黑眼睛瞪着我们，眼睛下面还有一口如剃刀般锋利的牙齿。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225427"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第20页",
+				["material"] = "default",
+				["text"] = {
+					"我们在黎明时动身向南出发，一路穿过了伽什废墟。巴尼尔说他担心会遇到血顶部族的巨魔。我告诉巴尼尔，比起生吃我们这些冒险者来，血顶部族更关心的是如何摧毁他们的敌人，劈颅部族。不过巴尼尔显然没有因此而感到一丝的宽慰。但是，我有一把上好膛的火枪、满袋的黑火药，还有三个本领高强的猎人做伴，所以我一点也不担心会遭遇敌人的埋伏。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225424"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第21页",
+				["material"] = "default",
+				["text"] = {
+					"我曾经在战场上面对过巨大的地狱火，还有从四面八方冲过来的燃烧军团。如今对我而言，一群蛮横的巨魔就跟丹莫罗的长耳大野兔一样不值一提。\r\n\r\n我们平静地穿过伽什废墟，巴尼尔总算是放下了他那颗惴惴不安的心。我们继续向西边的无尽之海前进，并绕了南边的祖昆达废墟。当我们攀上海边的悬崖之后，第一只迅猛龙出现在我们面前。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225422"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第10页",
+				["material"] = "default",
+				["text"] = {
+					"这次成功的猎杀给探险队带来了一些愉快的心情，巴尼尔给大家倒了些蜜酒，但是这种喜悦只是暂时的。当我们准备把尸体运回营地时，丛林里传来了一阵可怕的嚎叫声。在我的一生中，我从来都没有听到过如此可怕的、几乎让人全身血液都凝固的声音。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225430"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第14页",
+				["material"] = "default",
+				["text"] = {
+					"这一天，我们沿着一些新的黑豹足迹向南进发。很快我们就来到了一座架着巨大索桥的峡谷。看到这个工程奇迹的时候，我忍不住想起了布莱恩对这一带的描写。我们常常认为巨魔是原始而无知的族类，然而当我认识到这座索桥所体现的精湛技术时，我开始认为巨魔的建造技术已经达到令人难以想象的地步。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225423"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第4页",
+				["material"] = "default",
+				["text"] = {
+					"接下来的几年，在暴风城背叛了石工协会后，埃尔加丁爵士开始厌恶他的贵族身份。他不愿因继承了他父亲的高贵血统而在贵族中获得崇高的地位。不过我跑题了。这个故事的主题不是政治文章或者人物传记，而是要叙述我在荆棘谷的青山中猎捕的经历。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225417"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第6页",
+				["material"] = "default",
+				["text"] = {
+					"正在我准备问阿杰克为什么一整天都无精打采的时候，她突然从箭囊中抽出一支箭，向可怜的巴尼尔射去——当然她的目标并非巴尼尔。瞠目结舌的巴尼尔向后退了几步，看着自己身后的一只巨大的鳄鱼浮出水面，阿杰克的箭正好射在了它的两只眼睛的中间。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225416"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第26页",
+				["material"] = "default",
+				["text"] = {
+					"我举着枪缓缓地前进。是我将这些勇敢的猎人带向了死亡的边缘，我至死都要保护他们！鞭尾迅猛龙异常凶残，它们一向都以残酷嗜血而闻名，而且现在它们的数量远远多于我们。但是，我决不能就让这些野兽轻易地杀了我和我的同伴。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225426"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第25页",
+				["material"] = "default",
+				["text"] = {
+					"我带着队伍继续往海边走去，希望在那里的海岸线旁找到某个可以避开迅猛龙的地方。但是在匆忙之中，我们跑到了一处危险的高地，这是个可怕的错误，全都是我的错。我们停在了一个陡峭的悬崖边，而那些迅猛龙距离我们仅有几步之遥。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225421"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第16页",
+				["material"] = "default",
+				["text"] = {
+					"阿杰克和埃尔加丁爵士悄无声息地用枪瞄准着正在晃动的树丛。正午的强烈阳光照在我们身上，当埃尔加丁爵士终于扣动扳机的时候，他的额头流下了一丝汗水。一声枪响过后，浓密的树叶被打得乱飞，一头非常漂亮的大黑豹像离弦的箭一般冲向了平原。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225428"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第1页",
+				["material"] = "default",
+				["text"] = {
+					"荆棘谷的青山\r\n\r\n第一天和我们预想中的完全一样。我们大部分时间都忙于为建立营地做一些必要的准备。我在一条淡水河的入口处找到了理想的驻扎点。根据旁边被废弃的古老码头判断，这个地方曾经有人住过，不过只有时间才能说明这里究竟住过些什么人。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225420"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第11页",
+				["material"] = "default",
+				["text"] = {
+					"在遍布岩石的悬崖上，一头迄今为止我见过的最巨大的豹子在晚霞的映衬中冒了出来。我笨拙地开了枪，但是那头豹子丝毫未动。它又咆哮了一声，比第一次的声音更大，然后就消失了。\r\n\r\n我们把东西收好，然后神色黯然地返回了营地。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225419"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第27页",
+				["material"] = "default",
+				["text"] = {
+					"阿杰克和埃尔加丁爵士拿起他们的武器，守在我的两侧，我们的背后就是大海。巴尼尔沮丧地叹了一口长气，然后拿起了他的斧子。迅猛龙在慢慢地逼近，它们高傲地注视着我们，因为它们知道我们已经无路可逃了。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225425"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荆棘谷的青山 - 第18页",
+				["material"] = "default",
+				["text"] = {
+					"他的枪重重地击在他的肩膀上，枪管歪向一边，正好落在在阿杰克的枪下面。阿杰克瞄准树冠适时地扣动了扳机，一声清晰的枪响过后，树冠上的一群鸟尖叫着四处飞散，树上冒出了一阵烟，我们惊异地看到一根巨大的树枝掉落下来，正好砸中了疾驰的黑豹。",
+				},
+				["singlePage"] = true,
+			},
+		},
+	},
+};
+
 return end
 
 if LOCALE == "zhTW" then
 	-- Traditional Chinese text data go here
+
+LK["LocalData"] = {
+	["text"] = {
+		["Item-225429"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第24頁",
+				["material"] = "default",
+				["text"] = {
+					"我們匆忙射出的子彈為巴尼爾贏得了足夠的逃跑時間。他大聲叫嚷著跑下山丘，重新回到隊伍之中。我們急忙離開了叢林，因為有一群兇殘的鞭尾迅猛龍正在追尋著我們的足跡。\r\n\r\n現在攻守易位，獵手變成了獵物。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225418"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第8頁",
+				["material"] = "default",
+				["text"] = {
+					"艾爾加丁爵士似乎被絆了一下，將手重重地拍在巴尼爾的肩膀上。我和艾耶克瞥了一眼，以為他會責備粗心大意的巴尼爾。然而艾爾加丁爵士卻擺了擺頭，示意我們觀察旁邊的一棵倒下的大樹。那裡正有一雙炯炯有神的黑眼睛瞪著我們，眼睛下面還有一口如剃刀般鋒利的牙齒。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225427"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第20頁",
+				["material"] = "default",
+				["text"] = {
+					"我們在黎明時動身向南出發，一路穿過了伽什廢墟。巴尼爾說他擔心會遇到血頂部族的食人妖。我告訴巴尼爾，比起生吃我們這些冒險者來，血頂部族更關心的是如何摧毀他們的敵人，劈顱部族。不過巴尼爾顯然沒有因此而感到一絲的寬慰。但是，我有一把上好膛的火槍、滿袋的黑火藥，還有三個本領高強的獵人做伴，所以我一點也不擔心會遭遇敵人的埋伏。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225424"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第21頁",
+				["material"] = "default",
+				["text"] = {
+					"我曾經在戰場上面對過巨大的煉獄火，還有從四面八方衝過來的燃燒軍團。如今對我而言，一群蠻橫的食人妖就跟丹莫洛的長耳大野兔一樣不值一提。\r\n\r\n我們平靜地穿過伽什廢墟，巴尼爾總算是放下了他那顆惴惴不安的心。我們繼續向西邊的無盡之海前進，並繞了南邊的祖昆達廢墟。當我們攀上海邊的懸崖之後，第一隻迅猛龍出現在我們面前。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225422"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第10頁",
+				["material"] = "default",
+				["text"] = {
+					"這次成功的獵殺給探險隊帶來了一些愉快的心情，巴尼爾給大家倒了些蜜酒，但是這種喜悅只是暫時的。當我們準備把屍體運回營地時，叢林裡傳來了一陣可怕的嚎叫聲。在我的一生中，我從來都沒有聽到過如此可怕的、幾乎讓人全身血液都凝固的聲音。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225430"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第14頁",
+				["material"] = "default",
+				["text"] = {
+					"這一天，我們沿著一些新的黑豹足跡向南進發。很快我們就來到了一座架著巨大索橋的峽谷。看到這個工程奇蹟的時候，我忍不住想起了布萊恩對這一帶的描寫。我們常常認為食人妖是原始而無知的族類，然而當我認識到這座索橋所體現的精湛技術時，我開始認為食人妖的建造技術已經達到令人難以想像的地步。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225423"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第4頁",
+				["material"] = "default",
+				["text"] = {
+					"接下來的幾年，在暴風城背叛了石匠公會後，艾爾加丁爵士開始厭惡他的貴族身分。他顯然對繼承他父親的高貴血統，而獲得崇高地位的這件事感到厭惡。\r\n\r\n不過我離題了。這個故事的主題不是政治文章或者人物傳記，而是要敘述我在荊棘谷的青山中獵捕的經歷。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225417"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第6頁",
+				["material"] = "default",
+				["text"] = {
+					"正在我準備問艾耶克為什麼一整天都無精打采的時候，她突然從箭囊中抽出一支箭，向可憐的巴尼爾射去─當然她的目標並非巴尼爾。瞠目結舌的巴尼爾向後退了幾步，看著自己身後的一隻巨大的鱷魚浮出水面，艾耶克的箭正好射在了它的兩隻眼睛的中間。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225416"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第26頁",
+				["material"] = "default",
+				["text"] = {
+					"我舉著槍緩緩地前進。是我將這些勇敢的獵人帶向了死亡的邊緣，我至死都要保護他們！鞭尾迅猛龍異常兇殘，它們一向都以殘酷嗜血而聞名，而且現在它們的數量遠遠多於我們。但是，我絕不能就讓這些野獸輕易地殺了我和我的同伴。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225426"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第25頁",
+				["material"] = "default",
+				["text"] = {
+					"我帶著隊伍繼續往海邊走去，希望在那裡的海岸線旁找到某個可以避開迅猛龍的地方。但是在匆忙之中，我們跑到了一處危險的高地，這是個可怕的錯誤，全都是我的錯。我們停在了一個陡峭的懸崖邊，而那些迅猛龍距離我們僅有幾步之遙。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225421"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第16頁",
+				["material"] = "default",
+				["text"] = {
+					"艾耶克和艾爾加丁爵士悄無聲息地用槍瞄準著正在晃動的樹叢。正午的強烈陽光照在我們身上，艾爾加丁爵士的額頭流下了一絲汗水，然後拉動槍機準備射擊，發出喀的一聲。這時，濃密的樹叢忽然分開，一隻非常漂亮的大黑豹像離弦的箭一般衝了出來。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225428"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第1頁",
+				["material"] = "default",
+				["text"] = {
+					"荊棘谷的青山\r\n\r\n第一天和我們預想中的完全一樣。我們大部分時間都忙於為建立營地，做一些必要的準備。我在一條河流的匯流處找到了理想的駐紮點。根據旁邊被廢棄的古老碼頭判斷，這個地方曾經有人住過，不過只有時間才知道，這裡究竟住過些什麼人。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225420"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第11頁",
+				["material"] = "default",
+				["text"] = {
+					"在遍佈岩石的懸崖上，一隻迄今為止我見過的最巨大的獵豹在晚霞的映襯中冒了出來。我笨拙地開了槍，但是那隻豹絲毫未動。它又咆哮了一聲，比第一次的聲音更大，然後就消失了。\r\n\r\n我們把東西收好，然後神色黯然地返回了營地。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225419"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第27頁",
+				["material"] = "default",
+				["text"] = {
+					"艾耶克和艾爾加丁爵士拿起他們的武器，守在我的兩側，我們的背後就是大海。巴尼爾沮喪地歎了一口長氣，然後拿起了他的斧頭。迅猛龍在慢慢地逼近，它們高傲地注視著我們，因為它們知道我們已經無路可逃了。",
+				},
+				["singlePage"] = true,
+			},
+		},
+		["Item-225425"] = {
+			["base"] = {
+				["pageCount"] = 0,
+				["title"] = "荊棘谷的青山 - 第18頁",
+				["material"] = "default",
+				["text"] = {
+					"他的槍猛然一震，槍管歪向一邊，撞到艾耶克的槍下面，打得她的槍往上揚起。好巧不巧，艾耶克正好在這時扣下扳機，砰的一聲只打中了樹頂。樹冠上的一群鳥尖叫著四處飛散，樹上冒出了一陣煙，然後我們驚異地看到一根巨大的樹枝掉落下來，正好砸中了疾馳的黑豹。",
+				},
+				["singlePage"] = true,
+			},
+		},
+	},
+};
 
 return end

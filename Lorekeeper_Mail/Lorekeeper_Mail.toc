@@ -1,9 +1,33 @@
 ## Interface: 110002
 ## Title: Lorekeeper_Mail
-## Notes: Lorekeeper Description Temp
+## Notes: Lorekeeper plugin to save mail items and keep them stored separately from the library.
 ## Author: Keyboardturner
 ## Version: 0.0.1
-## Dependencies: Lorekeeper
+## IconTexture: Interface/Icons/inv_letter_09
 ## SavedVariables: LoreKMail_DB
+## Dependencies: Lorekeeper
+
+## Title-enUS: Lorekeeper_Mail
+## Notes-enUS: Lorekeeper plugin to save mail items and keep them stored separately from the library.
+## Title-frFR: Lorekeeper_Mail
+## Notes-frFR: Plugin Lorekeeper pour sauvegarder les objets de courrier et les conserver séparément de la bibliothèque.
+## Title-esES: Lorekeeper_Mail
+## Notes-esES: Plugin de Lorekeeper para guardar objetos de correo y mantenerlos almacenados por separado de la biblioteca.
+## Title-esMX: Lorekeeper_Mail
+## Notes-esMX: Plugin de Lorekeeper para guardar objetos de correo y mantenerlos almacenados por separado de la biblioteca.
+## Title-deDE: Lorekeeper_Mail
+## Notes-deDE: Lorekeeper-Plugin zum Speichern von Postgegenständen, die separat von der Bibliothek aufbewahrt werden.
+## Title-itIT: Lorekeeper_Mail
+## Notes-itIT: Plugin di Lorekeeper per salvare gli oggetti di posta e conservarli separatamente dalla biblioteca.
+## Title-ptBR: Lorekeeper_Mail
+## Notes-ptBR: Plugin Lorekeeper para salvar itens de correio e mantê-los armazenados separadamente da biblioteca.
+## Title-ruRU: Хранитель Знаний_Почта
+## Notes-ruRU: Плагин Lorekeeper для сохранения почтовых предметов и их хранения отдельно от библиотеки.
+## Title-koKR: 지식의 수호자_우편
+## Notes-koKR: 우편물을 저장하고 라이브러리와 별도로 보관하는 Lorekeeper 플러그인입니다.
+## Title-zhCN: 知识守护者_邮件
+## Notes-zhCN: Lorekeeper插件，用于保存邮件并将其与图书馆分开存储。
+## Title-zhTW: 知識守護者_郵件
+## Notes-zhTW: Lorekeeper插件，用於保存郵件並將其與圖書館分開存儲。
 
 Lorekeeper_Mail.lua

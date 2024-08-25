@@ -2,7 +2,13 @@ local _, LK = ...
 
 
 local function Print(...)
-	local prefix = string.format("|cFFFFF569"..LK["Lorekeeper"] .. "|r:");
+	if not ... then
+		if LoreK_DB["settings"]["debug"] then
+			Print("Something failed spectacularly, the data in Print was nil");
+		end
+		return
+	end
+	local prefix = string.format("|cFFFFF569".. Lorekeeper_API.LK["Lorekeeper"] .. "|r:");
 	DEFAULT_CHAT_FRAME:AddMessage(string.join(" ", prefix, ...));
 end
 
@@ -55,7 +61,6 @@ local ignoredKeys = {
 	mapData = true,
 	material = true,
 	hasRead = true,
-	texture = true,
 	isFavorite = true,
 	isObtainable = true,
 	isClassSpecific = true,
@@ -66,7 +71,7 @@ local function isIgnoredKey(key)
 	return ignoredKeys[key] ~= nil
 end
 
-local function tCompareDeez(t1, t2)
+function LK.tCompareDeez(t1, t2)
 	-- If both tables are the same reference, they are equal
 	if t1 == t2 then
 		return true
@@ -102,7 +107,7 @@ local function tCompareDeez(t1, t2)
 	-- Compare keys and values recursively
 	for k, v in pairs(t1) do
 		if not isIgnoredKey(k) then
-			if t2[k] == nil or not tCompareDeez(v, t2[k]) then
+			if t2[k] == nil or not LK.tCompareDeez(v, t2[k]) then
 				return false
 			end
 		end
@@ -217,7 +222,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					overrideMaterials = false,
 					hideUnread = true,
 					slashRead = false,
-					debug = true,
+					debug = false,
 				},
 				text = {},
 				questItems = {},
@@ -244,7 +249,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 
 		local function HandleSlashCommands(str)
 			if (#str == 0) then
-				Lorekeeper.commands["show"](); --["PH"]
+				Lorekeeper.commands[LK["show"]](); --["PH"]
 				return;
 			end
 
@@ -371,6 +376,10 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		activeContext.guid = nil;
 		activeContext.doneResetting = nil;
 
+		if not LoreK_DB["text"] then
+			LoreK_DB["text"] = {}
+		end
+
 		if not LoreK_DB["text"][key] then
 			LoreK_DB["text"][key] = {
 				["base"] = {};
@@ -407,14 +416,23 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			if LoreK_DB["text"][key]["base"] then
 				if not LK["LocalData"]["text"][key] or not LK["LocalData"]["text"][key]["base"] then
 					if LoreK_DB["text"][key]["base"]["text"] then -- does entry exist in SVs (with text)
-						if tCompareDeez(LoreK_DB["text"][key]["base"], activeContext) then -- is it an exact match
+						if LK.tCompareDeez(LoreK_DB["text"][key]["base"], activeContext) then -- is it an exact match
 							if LoreK_DB.settings.debug then
 								Print("Detected exact copy in SVs, no changes made: "..activeContext.title)
 							end
 						else
-							LoreK_DB["text"][key]["copy_"..( tablelength(LoreK_DB["text"][key]) )] = CopyTable(activeContext) -- produce a copy
-							if LoreK_DB.settings.debug then
-								Print("Detected changes in text, a copy of the old has been made: "..activeContext.title)
+							for k, v in pairs(LoreK_DB["text"][key]) do
+								if LK.tCompareDeez(v, activeContext) then
+									if LoreK_DB.settings.debug then
+										Print("Detected exact copy between SVs and LocalData, deleting extra SV data: ".."("..k..")"..activeContext.title)
+									end
+									LoreK_DB["text"][key][k] = nil;
+								else
+									LoreK_DB["text"][key]["copy_"..( tablelength(LoreK_DB["text"][key]) )] = CopyTable(activeContext) -- produce a copy
+									if LoreK_DB.settings.debug then
+										Print("Detected changes in text, a copy of the old has been made: "..activeContext.title)
+									end
+								end
 							end
 						end
 					else
@@ -425,15 +443,20 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 						Print("Saved base version into SVs: "..activeContext.title)
 					end
 				else
-					tCompareDeez(LK["LocalData"]["text"][key]["base"], activeContext) -- compare LocalData to Active
-					if LoreK_DB.settings.debug then
-						Print("Detected exact copy in LocalData, no changes made: "..activeContext.title)
+					if LK.tCompareDeez(LK["LocalData"]["text"][key]["base"], activeContext) then -- compare LocalData to Active
+						if LoreK_DB.settings.debug then
+							Print("Detected exact copy in LocalData, no changes made: "..activeContext.title)
+						end
 					end
-					if LoreK_DB["text"][key]["base"] then
-						if tCompareDeez(LoreK_DB["text"][key]["base"], LK["LocalData"]["text"][key]["base"]) then -- entry exists, but it's a copy of the LocalData, local data probably got updated, so clean SV bloat.
-							LoreK_DB["text"][key]["base"] = nil
+					if LoreK_DB["text"][key]["base"] and LK["LocalData"]["text"][itemID] then
+						if LK.tCompareDeez(LoreK_DB["text"][key]["base"], LK["LocalData"]["text"][key]["base"]) then -- entry exists, but it's a copy of the LocalData, local data probably got updated, so clean SV bloat but preserve hasRead/isFavorite/mapData
+							LoreK_DB["text"][key]["base"]["text"] = nil;
+							LoreK_DB["text"][key]["base"]["title"] = nil;
+							LoreK_DB["text"][key]["base"]["singlePage"] = nil;
+							LoreK_DB["text"][key]["base"]["pageCount"] = nil;
+							LoreK_DB["text"][key]["base"]["material"] = nil;
 							if LoreK_DB.settings.debug then
-								Print("Detected exact copy between SVs and LocalData, deleting SV entry: "..activeContext.title)
+								Print("Detected exact copy between SVs and LocalData, deleting extra SV data: "..activeContext.title)
 							end
 						end
 					end
