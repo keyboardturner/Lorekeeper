@@ -11,12 +11,6 @@ LoreKMail_DB["mail"] = {
 };
 ]]
 
---MAIL_INBOX_UPDATE
---CanComplainInboxItem
---GetInboxHeaderInfo
---GetInboxText
---GetInboxNumItems
-
 
 if not C_AddOns.IsAddOnLoaded("Lorekeeper") then
 	return;
@@ -31,6 +25,12 @@ local function IsNameWithoutRealm(nameRealm)
 end
 
 local function Print(...)
+	if not ... then
+		if LoreK_DB["settings"]["debug"] then
+			Print("Something failed spectacularly, the data in Print was nil");
+		end
+		return
+	end
 	local prefix = string.format("|cFFFFF569".. Lorekeeper_API.LK["Lorekeeper"] .. "|r:");
 	DEFAULT_CHAT_FRAME:AddMessage(string.join(" ", prefix, ...));
 end
@@ -67,8 +67,8 @@ function Lorekeeper_API.MailDetected(activeContext)
 		};
 	end
 
-	if LoreKMail_DB["mail"][creator] then
-		for k, v in ipairs(LoreKMail_DB["mail"][creator]) do
+	if LoreKMail_DB["mail"][creator] and LoreKMail_DB["mail"][creator]["text"] then
+		for k, v in ipairs(LoreKMail_DB["mail"][creator]["text"]) do
 			if v == text then
 				isDuplicateFound = true;
 				if LoreK_DB["settings"]["debug"] then
@@ -78,14 +78,15 @@ function Lorekeeper_API.MailDetected(activeContext)
 			end
 		end
 		if not isDuplicateFound then
-			table.insert(LoreKMail_DB["mail"][creator], text);
+			table.insert(LoreKMail_DB["mail"][creator]["text"], text);
 			if LoreK_DB["settings"]["debug"] then
 				Print("No duplicate found, adding entry under creator name: " .. creator);
 			end
 		end
 	else
 		LoreKMail_DB["mail"][creator] = {
-			text;
+			["nameRealm"] = creator,
+			["text"] = {text},
 		};
 		if LoreK_DB["settings"]["debug"] then
 			Print("Mail found! Saving entry under creator name: " .. creator);
@@ -126,4 +127,3 @@ end)
  -- Mail Panel
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-

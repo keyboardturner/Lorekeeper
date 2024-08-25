@@ -181,11 +181,11 @@ local function Tab_OnClick(self)
 	end
 	self.content:Show();
 	PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB, "SFX");
-	--LoreKMainframeTab2:SetEnabled(false) -- until it's implemented
+	LoreKMainframeTab2:SetEnabled(false) -- until the GUI implemented
 
 	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
 		LoreKMainframeTab2:SetEnabled(false);
-		--LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5);
+		LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5);
 	end
 end
 
@@ -254,10 +254,10 @@ end
 local content1, content2, content3 = SetTabs(LoreKGUI, 3, LK["Library"], LK["Mail"], LK["Settings"]);
 
 
---LoreKMainframeTab2:SetEnabled(false)
+LoreKMainframeTab2:SetEnabled(false)
 --LoreKMainframeTab3:SetEnabled(false)
 
---LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
+LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
 --LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5)
 
 LoreKMainframeTab1:SetScript("OnEnter", function(self)
@@ -272,7 +272,7 @@ end);
 LoreKMainframeTab2:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
 	GameTooltip:AddLine(LK["Mail"], 1, 1, 1);
-	--GameTooltip:AddLine(LK["NotYetAvailable"], 1, 0, 0)
+	GameTooltip:AddLine(LK["NotYetAvailable"], 1, 0, 0) -- until GUI is implemented
 	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
 		GameTooltip:AddLine(LK["AddonDisabled"], 1, 0, 0)
 	end
@@ -559,150 +559,150 @@ local function ItemInitializer(button, data)
 	button.icon:SetScript("OnLeave", function()
 		GameTooltip:Hide();
 	end);
-		button:SetScript("OnClick", function(self, BINGLEBUTTON, down)
-			if BINGLEBUTTON == "RightButton" then
-				if down == false then
-					MenuUtil.CreateContextMenu(button, function(ownerRegion, rootDescription)
-						rootDescription:CreateTitle(title)
-						if isFavorite then
-							rootDescription:CreateButton(TRANSMOG_ITEM_UNSET_FAVORITE, function()
-								LoreK_DB["text"][itemID]["base"]["isFavorite"] = false;
+	button:SetScript("OnClick", function(self, BINGLEBUTTON, down)
+		if BINGLEBUTTON == "RightButton" then
+			if down == false then
+				MenuUtil.CreateContextMenu(button, function(ownerRegion, rootDescription)
+					rootDescription:CreateTitle(title)
+					if isFavorite then
+						rootDescription:CreateButton(TRANSMOG_ITEM_UNSET_FAVORITE, function()
+							LoreK_DB["text"][itemID]["base"]["isFavorite"] = false;
+							LoreKMainframe.PopulateList();
+							PlaySound(SOUNDKIT.UI_70_ARTIFACT_FORGE_APPEARANCE_LOCKED, "SFX");
+						end)
+					else
+						if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] then
+							rootDescription:CreateButton(TRANSMOG_ITEM_SET_FAVORITE, function()
+								LoreK_DB["text"][itemID]["base"]["isFavorite"] = true;
 								LoreKMainframe.PopulateList();
-								PlaySound(SOUNDKIT.UI_70_ARTIFACT_FORGE_APPEARANCE_LOCKED, "SFX");
+								PlaySound(SOUNDKIT.UI_70_ARTIFACT_FORGE_APPEARANCE_APPEARANCE_CHANGE, "SFX");
 							end)
 						else
-							if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] then
-								rootDescription:CreateButton(TRANSMOG_ITEM_SET_FAVORITE, function()
-									LoreK_DB["text"][itemID]["base"]["isFavorite"] = true;
-									LoreKMainframe.PopulateList();
-									PlaySound(SOUNDKIT.UI_70_ARTIFACT_FORGE_APPEARANCE_APPEARANCE_CHANGE, "SFX");
-								end)
-							else
-								local lockedBtn = rootDescription:CreateButton(LOCKED .. " - " .. NOT_COLLECTED);
-								lockedBtn:SetEnabled(false);
+							local lockedBtn = rootDescription:CreateButton(LOCKED .. " - " .. NOT_COLLECTED);
+							lockedBtn:SetEnabled(false);
 
-								lockedBtn:SetTooltip(function(tooltip, elementDescription)
-									GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription));
-									GameTooltip_AddErrorLine(tooltip, string.format(BARBERSHOP_CUSTOMIZATION_SOURCE_FORMAT, UNKNOWN));
-								end);
-							end
+							lockedBtn:SetTooltip(function(tooltip, elementDescription)
+								GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription));
+								GameTooltip_AddErrorLine(tooltip, string.format(BARBERSHOP_CUSTOMIZATION_SOURCE_FORMAT, UNKNOWN));
+							end);
 						end
-					end)
-				end
-			else
-				PlaySound(SOUNDKIT.UI_JOURNEYS_OPEN_LORE_BOOK, "SFX", true);
-				DeleteEntry:SetEnabled(true);
-				--selectionBehavior:SelectElementData(self:GetData())
-
-				local maxPages = 1;
-				local pageNum = 1;
-				local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
-				local HTMLbody
-				local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID);
-				local isHTML = string.lower(textBody[pageNum]):find("<html>");
-				local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
-				local material = parseFunc('["text"][itemID]["base"]["material"]', itemID) or "default";
-				local isHidden = LoreK_DB["settings"]["hideUnread"];
-				local hasRead = false;
-				if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] and LoreK_DB["text"][itemID]["base"]["hasRead"] then
-					if LoreK_DB["text"][itemID]["base"]["hasRead"] then
-						hasRead = true;
 					end
+				end)
+			end
+		else
+			PlaySound(SOUNDKIT.UI_JOURNEYS_OPEN_LORE_BOOK, "SFX", true);
+			DeleteEntry:SetEnabled(true);
+			--selectionBehavior:SelectElementData(self:GetData())
+
+			local maxPages = 1;
+			local pageNum = 1;
+			local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
+			local HTMLbody
+			local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID);
+			local isHTML = string.lower(textBody[pageNum]):find("<html>");
+			local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
+			local material = parseFunc('["text"][itemID]["base"]["material"]', itemID) or "default";
+			local isHidden = LoreK_DB["settings"]["hideUnread"];
+			local hasRead = false;
+			if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] and LoreK_DB["text"][itemID]["base"]["hasRead"] then
+				if LoreK_DB["text"][itemID]["base"]["hasRead"] then
+					hasRead = true;
 				end
+			end
 
-				if material == "ParchmentLarge" then
-					TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["ParchmentLarge"]["H1"]:GetFont());
-					TextScrollChild.textHTML:SetFont("h2", ITEM_TEXT_FONTS["ParchmentLarge"]["H2"]:GetFont());
-					TextScrollChild.textHTML:SetFont("h3", ITEM_TEXT_FONTS["ParchmentLarge"]["H3"]:GetFont());
-					TextScrollChild.textHTML:SetFont("p", ITEM_TEXT_FONTS["ParchmentLarge"]["P"]:GetFont());
-					TextScrollChild.textHTML:SetTextColor("h1", 0, 0, 0, 1);
-					TextScrollChild.textHTML:SetTextColor("h2", 0, 0, 0, 1);
-					TextScrollChild.textHTML:SetTextColor("h3", 0, 0, 0, 1);
-					TextScrollChild.textHTML:SetTextColor("p", 0, 0, 0, 1);
-					LoreKGUI.SetFontSizeP();
-				else
-					TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["default"]["H1"]:GetFont());
-					TextScrollChild.textHTML:SetFont("h2", ITEM_TEXT_FONTS["default"]["H2"]:GetFont());
-					TextScrollChild.textHTML:SetFont("h3", ITEM_TEXT_FONTS["default"]["H3"]:GetFont());
-					TextScrollChild.textHTML:SetFont("p", ITEM_TEXT_FONTS["default"]["P"]:GetFont());
-					TextScrollChild.textHTML:SetTextColor("h1", 0, 0, 0, 1);
-					TextScrollChild.textHTML:SetTextColor("h2", 0, 0, 0, 1);
-					TextScrollChild.textHTML:SetTextColor("h3", 0, 0, 0, 1);
-					TextScrollChild.textHTML:SetTextColor("p", 0, 0, 0, 1);
-					LoreKGUI.SetFontSizeP();
-				end
+			if material == "ParchmentLarge" then
+				TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["ParchmentLarge"]["H1"]:GetFont());
+				TextScrollChild.textHTML:SetFont("h2", ITEM_TEXT_FONTS["ParchmentLarge"]["H2"]:GetFont());
+				TextScrollChild.textHTML:SetFont("h3", ITEM_TEXT_FONTS["ParchmentLarge"]["H3"]:GetFont());
+				TextScrollChild.textHTML:SetFont("p", ITEM_TEXT_FONTS["ParchmentLarge"]["P"]:GetFont());
+				TextScrollChild.textHTML:SetTextColor("h1", 0, 0, 0, 1);
+				TextScrollChild.textHTML:SetTextColor("h2", 0, 0, 0, 1);
+				TextScrollChild.textHTML:SetTextColor("h3", 0, 0, 0, 1);
+				TextScrollChild.textHTML:SetTextColor("p", 0, 0, 0, 1);
+				LoreKGUI.SetFontSizeP();
+			else
+				TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["default"]["H1"]:GetFont());
+				TextScrollChild.textHTML:SetFont("h2", ITEM_TEXT_FONTS["default"]["H2"]:GetFont());
+				TextScrollChild.textHTML:SetFont("h3", ITEM_TEXT_FONTS["default"]["H3"]:GetFont());
+				TextScrollChild.textHTML:SetFont("p", ITEM_TEXT_FONTS["default"]["P"]:GetFont());
+				TextScrollChild.textHTML:SetTextColor("h1", 0, 0, 0, 1);
+				TextScrollChild.textHTML:SetTextColor("h2", 0, 0, 0, 1);
+				TextScrollChild.textHTML:SetTextColor("h3", 0, 0, 0, 1);
+				TextScrollChild.textHTML:SetTextColor("p", 0, 0, 0, 1);
+				LoreKGUI.SetFontSizeP();
+			end
 
-				TextDisplayFrame.PrevPageButton:Hide();
-				TextDisplayFrame.NextPageButton:Hide();
-				TextDisplayFrame.PrevPageButton:Disable();
-				TextDisplayFrame.NextPageButton:Disable();
-				TextDisplayFrame.PageNumber:SetText("");
+			TextDisplayFrame.PrevPageButton:Hide();
+			TextDisplayFrame.NextPageButton:Hide();
+			TextDisplayFrame.PrevPageButton:Disable();
+			TextDisplayFrame.NextPageButton:Disable();
+			TextDisplayFrame.PageNumber:SetText("");
 
-				LoreKGUI.SetColors()
+			LoreKGUI.SetColors()
 
-				if not singlePage then
-					maxPages = #parseFunc('["text"][itemID]["base"]["text"]', itemID);
-					local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
+			if not singlePage then
+				maxPages = #parseFunc('["text"][itemID]["base"]["text"]', itemID);
+				local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
 
-					TextDisplayFrame.PrevPageButton:Show();
-					TextDisplayFrame.NextPageButton:Show();
-					TextDisplayFrame.PageNumber:SetText(pageText);
+				TextDisplayFrame.PrevPageButton:Show();
+				TextDisplayFrame.NextPageButton:Show();
+				TextDisplayFrame.PageNumber:SetText(pageText);
+				TextDisplayFrame.NextPageButton:Enable();
+				TextDisplayFrame.PrevPageButton:SetScript("OnClick", function()
+					if pageNum ~= 1 then
+						pageNum = pageNum - 1;
+					end
+					if pageNum == 1 then
+						TextDisplayFrame.PrevPageButton:Disable();
+					end
 					TextDisplayFrame.NextPageButton:Enable();
-					TextDisplayFrame.PrevPageButton:SetScript("OnClick", function()
-						if pageNum ~= 1 then
-							pageNum = pageNum - 1;
-						end
-						if pageNum == 1 then
-							TextDisplayFrame.PrevPageButton:Disable();
-						end
-						TextDisplayFrame.NextPageButton:Enable();
-						PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
+					PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
 
-						local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
-						local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
-						local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID) or UNKNOWN;
-						local isHTML = string.lower(textBody[pageNum]):find("<html>");
-						local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
-						if isHTML then
-							HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />");
-						end
+					local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
+					local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
+					local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID) or UNKNOWN;
+					local isHTML = string.lower(textBody[pageNum]):find("<html>");
+					local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
+					if isHTML then
+						HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />");
+					end
 
-						TextDisplayFrame.PageNumber:SetText(pageText);
-						TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
-						if isHTML then
-							TextScrollChild.textHTML:SetText(HTMLbody or textBody[pageNum], false);
-						else
-							TextScrollChild.textHTML:SetText("\n"..textBody[pageNum], false);
-						end
-					end)
-					TextDisplayFrame.NextPageButton:SetScript("OnClick", function()
-						if pageNum ~= maxPages then
-							pageNum = pageNum + 1;
-						end
-						if pageNum == maxPages then
-							TextDisplayFrame.NextPageButton:Disable();
-						end
-						TextDisplayFrame.PrevPageButton:Enable();
-						PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
+					TextDisplayFrame.PageNumber:SetText(pageText);
+					TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
+					if isHTML then
+						TextScrollChild.textHTML:SetText(HTMLbody or textBody[pageNum], false);
+					else
+						TextScrollChild.textHTML:SetText("\n"..textBody[pageNum], false);
+					end
+				end)
+				TextDisplayFrame.NextPageButton:SetScript("OnClick", function()
+					if pageNum ~= maxPages then
+						pageNum = pageNum + 1;
+					end
+					if pageNum == maxPages then
+						TextDisplayFrame.NextPageButton:Disable();
+					end
+					TextDisplayFrame.PrevPageButton:Enable();
+					PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
 
-						local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
-						local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
-						local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID);
-						local isHTML = string.lower(textBody[pageNum]):find("<html>");
-						local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
-						if isHTML then
-							HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />");
-						end
+					local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
+					local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
+					local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID);
+					local isHTML = string.lower(textBody[pageNum]):find("<html>");
+					local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
+					if isHTML then
+						HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />");
+					end
 
-						TextDisplayFrame.PageNumber:SetText(pageText);
-						TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
-						if isHTML then
-							TextScrollChild.textHTML:SetText(HTMLbody or textBody[pageNum], false);
-						else
-							TextScrollChild.textHTML:SetText("\n"..textBody[pageNum], false);
-						end
-					end)
-				end
+					TextDisplayFrame.PageNumber:SetText(pageText);
+					TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
+					if isHTML then
+						TextScrollChild.textHTML:SetText(HTMLbody or textBody[pageNum], false);
+					else
+						TextScrollChild.textHTML:SetText("\n"..textBody[pageNum], false);
+					end
+				end)
+			end
 
 			if isHidden and not hasRead then
 				TextScrollChild.textHTML:Hide();
@@ -1356,8 +1356,8 @@ function LoreKGUI.Script_OnShow()
 	end
 	LoreKMainframe.PopulateList();
 	if C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
-		LoreKMainframeTab2:SetEnabled(true);
-	else
+		--LoreKMainframeTab2:SetEnabled(true); -- Mail GUI not ready
+	--else
 		LoreKMainframeTab2:SetEnabled(false);
 		LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
 	end
