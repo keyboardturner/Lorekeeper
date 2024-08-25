@@ -1387,14 +1387,12 @@ LK["LocalData"] = {
 	},
 };
 
-
-LK["LocalData"] = {
-	["questItems"] = {
-		[136785] = {
-			["isQuestItem"] = true,
-			["isObtainable"] = true,
-			["isClassSpecific"] = false,
-		},
+-- we could just join at the top, but this marks it very clearly where it's separate
+LK["LocalData"]["questItems"] = {
+	[136785] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
 	},
 };
 
