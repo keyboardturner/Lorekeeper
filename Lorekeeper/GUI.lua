@@ -181,10 +181,11 @@ local function Tab_OnClick(self)
 	end
 	self.content:Show();
 	PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB, "SFX");
-	LoreKMainframeTab2:SetEnabled(false) -- until it's implemented
+	--LoreKMainframeTab2:SetEnabled(false) -- until it's implemented
 
 	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
-		LoreKMainframeTab2:SetEnabled(false) -- until it's implemented
+		LoreKMainframeTab2:SetEnabled(false);
+		--LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5);
 	end
 end
 
@@ -253,10 +254,10 @@ end
 local content1, content2, content3 = SetTabs(LoreKGUI, 3, LK["Library"], LK["Mail"], LK["Settings"]);
 
 
-LoreKMainframeTab2:SetEnabled(false)
+--LoreKMainframeTab2:SetEnabled(false)
 --LoreKMainframeTab3:SetEnabled(false)
 
-LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5) -- until it's implemented
+--LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
 --LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5)
 
 LoreKMainframeTab1:SetScript("OnEnter", function(self)
@@ -271,7 +272,7 @@ end);
 LoreKMainframeTab2:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
 	GameTooltip:AddLine(LK["Mail"], 1, 1, 1);
-	GameTooltip:AddLine(LK["NotYetAvailable"], 1, 0, 0)
+	--GameTooltip:AddLine(LK["NotYetAvailable"], 1, 0, 0)
 	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
 		GameTooltip:AddLine(LK["AddonDisabled"], 1, 0, 0)
 	end
@@ -388,6 +389,7 @@ end);
 DeleteEntry:SetScript("OnClick", function()
 	StaticPopup_Show("LOREK_DELETE_ENTRIES");
 end)
+TextDisplayFrame.DeleteEntry:Hide() -- Not Yet Implemented, probably should have a multitude of options for delete all vs. delete copy
 
 TextScrollChild.textTitle = TitleBackdrop:CreateFontString(nil, "OVERLAY");
 TextScrollChild.textTitle:SetFontObject("GameFontHighlightLarge"); -- make into option later
@@ -658,7 +660,7 @@ local function ItemInitializer(button, data)
 
 						local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
 						local textBody = parseFunc('["text"][itemID]["base"]["text"]', itemID);
-						local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID);
+						local textTitle = parseFunc('["text"][itemID]["base"]["title"]', itemID) or UNKNOWN;
 						local isHTML = string.lower(textBody[pageNum]):find("<html>");
 						local singlePage = parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
 						if isHTML then
@@ -1234,6 +1236,9 @@ function LoreKGUI.SetParchmentTexture()
 		SettingsDisplayFrame.ParchmentPreview.tex:SetAtlas("QuestBG-Parchment"); -- dummy frame
 		TextDisplayFrame.bg:SetAtlas("QuestBG-Parchment"); -- actual frame
 	end
+	if LoreK_DB["settings"]["overrideMaterials"] then
+		SettingsDisplayFrame.ParchmentDropdown:SetEnabled(true);
+	end
 end
 
 function LoreKGUI.SetColors()
@@ -1316,10 +1321,10 @@ function LoreKGUI.SetFontSizeP()
 		};
 	end;
 
-	SettingsDisplayFrame.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"], flags);  -- dummy text
-	SettingsDisplayFrame.textHTMLLarge:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"], flags); -- dummy text
-	TextScrollChild.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"], flags);
-	TextScrollChild.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"], flags);
+	SettingsDisplayFrame.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"] or 13, flags);  -- dummy text
+	SettingsDisplayFrame.textHTMLLarge:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"] or 13, flags); -- dummy text
+	TextScrollChild.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"] or 13, flags);
+	TextScrollChild.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"] or 13, flags);
 end;
 
 
@@ -1350,6 +1355,12 @@ function LoreKGUI.Script_OnShow()
 		DoEmote("READ", nil, true);
 	end
 	LoreKMainframe.PopulateList();
+	if C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
+		LoreKMainframeTab2:SetEnabled(true);
+	else
+		LoreKMainframeTab2:SetEnabled(false);
+		LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
+	end
 end
 function LoreKGUI.Script_OnHide()
 	PlaySound(SOUNDKIT.IG_SPELLBOOK_CLOSE, "SFX");

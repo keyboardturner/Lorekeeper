@@ -65,6 +65,9 @@ if LOCALE == "enUS" then
 	LK["Campaign"] = QUEST_CLASSIFICATION_CAMPAIGN
 	LK["Professions"] = TRADE_SKILLS
 	LK["Misc"] = MISCELLANEOUS
+	LK["ListOfCmds"] = "List of Commands: "
+	LK["help"] = "help"
+	LK["show"] = "show"
 
 return end
 

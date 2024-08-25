@@ -112,10 +112,94 @@ local function tCompareDeez(t1, t2)
 end
 
 
-function tablelength(T)
+local function tablelength(T)
 	local count = 0
 	for _ in pairs(T) do count = count + 1 end
 	return count
+end
+
+local simpleTypes = {
+	itemID = 1,
+	enchantID = 2,
+	suffixID = 7,
+	uniqueID = 8,
+	linkLevel = 9,
+	specializationID = 10,
+	modifiersMask = 11,
+	itemContext = 12,
+}
+
+local function ProcessItemLink(itemLink)
+	local _, linkOptions = LinkUtil.ExtractLink(itemLink)
+	local item = {strsplit(":", linkOptions)}
+	local t = {}
+
+	for k, v in pairs(simpleTypes) do
+		t[k] = tonumber(item[v])
+	end
+
+	for i = 1, 4 do
+		local gem = tonumber(item[i+2])
+		if gem then
+			t.gems = t.gems or {}
+			t.gems[i] = gem
+		end
+	end
+
+	local idx = 13
+	local numBonusIDs = tonumber(item[idx])
+	if numBonusIDs then
+		t.bonusIDs = {}
+		for i = 1, numBonusIDs do
+			t.bonusIDs[i] = tonumber(item[idx+i])
+		end
+	end
+	idx = idx + (numBonusIDs or 0) + 1
+
+	local numModifiers = tonumber(item[idx])
+	if numModifiers then
+		t.modifiers = {}
+		for i = 1, numModifiers do
+			local offset = i*2
+			t.modifiers[i] = {
+				tonumber(item[idx+offset-1]),
+				tonumber(item[idx+offset])
+			}
+		end
+		idx = idx + numModifiers*2 + 1
+	else
+		idx = idx + 1
+	end
+
+	for i = 1, 3 do
+		local relicNumBonusIDs = tonumber(item[idx])
+		if relicNumBonusIDs then
+			t.relicBonusIDs = t.relicBonusIDs or {}
+			t.relicBonusIDs[i] = {}
+			for j = 1, relicNumBonusIDs do
+				t.relicBonusIDs[i][j] = tonumber(item[idx+j])
+			end
+		end
+		idx = idx + (relicNumBonusIDs or 0) + 1
+	end
+
+	local crafterGUID = item[idx]
+	if #crafterGUID > 0 then
+		t.crafterGUID = crafterGUID
+	end
+	idx = idx + 1
+
+	t.extraEnchantID = tonumber(item[idx])
+
+	return t.crafterGUID
+end
+
+local function PlayerGUIDInfo(guid)
+	local localizedClass, englishClass, localizedRace, englishRace, sex, name, realmName = GetPlayerInfoByGUID(guid)
+	if name == "" or name == nil then -- the GUID is borked, blanked, or flawed. Don't return dummy default info.
+		return
+	end
+	return localizedClass, englishClass, localizedRace, englishRace, sex, name, realmName
 end
 
 
@@ -141,11 +225,11 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		end
 
 		Lorekeeper.commands = {
-			["show"] = function() -- ["PH"]
+			[LK["show"]] = function()
 				LK.LoreKGUI:Show();
 			end,
 
-			["help"] = function() --because there's not a lot of commands, don't use this yet. -- ["PH"]
+			[LK["help"]] = function() --because there's not a lot of commands, don't use this yet.
 				local concatenatedString
 				for k, v in pairs(Lorekeeper.commands) do
 					if concatenatedString == nil then
@@ -154,7 +238,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 						concatenatedString = concatenatedString .. ", ".. "|cFF00D1FF"..k.."|r"
 					end
 				end
-				Print("List of Commands:" .. " " .. concatenatedString) -- ["PH"]
+				Print(LK["ListOfCmds"] .. concatenatedString)
 			end
 		};
 
@@ -185,7 +269,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 							path = path[arg]; -- another sub-table found!
 						end
 					else
-						Lorekeeper.commands["help"](); -- ["PH"]
+						Lorekeeper.commands[LK["help"]]();
 						return;
 					end
 				end
@@ -237,21 +321,32 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		if not activeContext then
 			return;
 		end
-		local npcID = select(6, strsplit("-", activeContext.guid))
-		local GUIDType = select(1, strsplit("-", activeContext.guid))
-		local key = GUIDType .. "-" .. ( C_Item.GetItemIDByGUID(activeContext.guid) or npcID )
+		local npcID = select(6, strsplit("-", activeContext.guid));
+		local GUIDType = select(1, strsplit("-", activeContext.guid));
+		local key = GUIDType .. "-" .. ( C_Item.GetItemIDByGUID(activeContext.guid) or npcID );
 		if key == "Item-8383" then -- this will be handled by the Mail plugin.
 			if C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
-				Lorekeeper_API.MailDetected(activeContext)
+				local itemLink = C_Item.GetItemLinkByGUID(activeContext.guid);
+				local PlayerGUID = ProcessItemLink(itemLink);
+				if PlayerGUIDInfo(PlayerGUID) then
+					activeContext.playerGUID = PlayerGUID;
+					Lorekeeper_API.MailDetected(activeContext);
+				else
+					activeContext = nil;
+					if LoreK_DB.settings.debug then
+						Print("Can't find GUID for item, it's probably been transferred cross realm.")
+					end
+					return
+				end
 			end
 			activeContext = nil;
 			return;
 		end
-		local map = C_Map.GetBestMapForUnit("player")
-		local position = C_Map.GetPlayerMapPosition(map, "player")
+		local map = C_Map.GetBestMapForUnit("player");
+		local position = C_Map.GetPlayerMapPosition(map, "player");
 		local coords = {0,0} -- instanced content doesn't always allow proper pos
 		if position then
-			coords = {position:GetXY()}
+			coords = {position:GetXY()};
 		end
 
 		if not LoreK_DB then
@@ -271,10 +366,10 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			activeContext = nil;
 			return
 		end
-		activeContext.doneReading = nil
-		activeContext.IsDone = nil
-		activeContext.guid = nil
-		activeContext.doneResetting = nil
+		activeContext.doneReading = nil;
+		activeContext.IsDone = nil;
+		activeContext.guid = nil;
+		activeContext.doneResetting = nil;
 
 		if not LoreK_DB["text"][key] then
 			LoreK_DB["text"][key] = {
