@@ -1,3 +1,7 @@
+# 0.0.4
+
+yeet bad mails with no crafter name
+
 # 0.0.3
 
 Remove Name/Class from text, remove "debug" being on by default for some reason

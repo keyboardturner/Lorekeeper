@@ -214,8 +214,11 @@ local function ProcessItemLink(itemLink)
 end
 
 local function PlayerGUIDInfo(guid)
+	if not guid then
+		return
+	end
 	local localizedClass, englishClass, localizedRace, englishRace, sex, name, realmName = GetPlayerInfoByGUID(guid)
-	if name == "" or name == nil then -- the GUID is borked, blanked, or flawed. Don't return dummy default info.
+	if not GetPlayerInfoByGUID(guid) or name == "" or name == nil then -- the GUID is borked, blanked, or flawed. Don't return dummy default info.
 		return
 	end
 	return localizedClass, englishClass, localizedRace, englishRace, sex, name, realmName
@@ -348,7 +351,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			if C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
 				local itemLink = C_Item.GetItemLinkByGUID(activeContext.guid);
 				local PlayerGUID = ProcessItemLink(itemLink);
-				if PlayerGUIDInfo(PlayerGUID) then
+				if PlayerGUID and PlayerGUIDInfo(PlayerGUID) then
 					activeContext.playerGUID = PlayerGUID;
 					Lorekeeper_API.MailDetected(activeContext);
 				else
