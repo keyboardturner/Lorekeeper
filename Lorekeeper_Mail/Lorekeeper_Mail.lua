@@ -26,7 +26,7 @@ end
 
 local function Print(...)
 	if not ... then
-		if LoreK_DB["settings"]["debug"] then
+		if LoreK_DB["settings"]["debugAdvanced"] then
 			Print("Something failed spectacularly, the data in Print was nil");
 		end
 		return
@@ -71,7 +71,7 @@ function Lorekeeper_API.MailDetected(activeContext)
 		for k, v in ipairs(LoreKMail_DB["mail"][creator]["text"]) do
 			if v == text then
 				isDuplicateFound = true;
-				if LoreK_DB["settings"]["debug"] then
+				if LoreK_DB["settings"]["debugAdvanced"] then
 					Print("Duplicate mail found, no action taken.");
 				end
 				return;
@@ -79,7 +79,7 @@ function Lorekeeper_API.MailDetected(activeContext)
 		end
 		if not isDuplicateFound then
 			table.insert(LoreKMail_DB["mail"][creator]["text"], text);
-			if LoreK_DB["settings"]["debug"] then
+			if LoreK_DB["settings"]["debugAdvanced"] then
 				Print("No duplicate found, adding entry under creator name: " .. creator);
 			end
 		end
@@ -88,7 +88,7 @@ function Lorekeeper_API.MailDetected(activeContext)
 			["nameRealm"] = creator,
 			["text"] = {text},
 		};
-		if LoreK_DB["settings"]["debug"] then
+		if LoreK_DB["settings"]["debugAdvanced"] then
 			Print("Mail found! Saving entry under creator name: " .. creator);
 		end
 	end

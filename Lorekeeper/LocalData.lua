@@ -898,9 +898,9 @@ LK["LocalData"] = {
 		["Item-212605"] = {
 			["base"] = {
 				["title"] = "The Vizier's Invitation",
-				["text"] = {
-					'Greetings, Eliabell.\r\n\r\nI\'ve received word of your exploits in this fair land of ours, as well as your recent treaties with the individuals known as "The Weaver" and "The General".\r\n\r\nI believe that it is now my turn.\r\n\r\nCome to the Burrows in the City of Threads. I understand that you\'ve acquired Pheromones from Anub\'azal? Those should be adequate enough to provide you umbrage in said Burrows, but no where else. I\'ll provide you something more substantial than that should we come to a pact during our conference.\r\n\r\nOh. If you\'re still uncertain of our meeting, then just know that I\'ve got information on your lost lordling of Stormwind. You\'re not likely to learn of it elsewhere.',
-				},
+                ["text"] = {
+                    'Greetings, $PLAYER_NAME$.\r\n\r\nI\'ve received word of your exploits in this fair land of ours, as well as your recent treaties with the individuals known as "The Weaver" and "The General".\r\n\r\nI believe that it is now my turn.\r\n\r\nCome to the Burrows in the City of Threads. I understand that you\'ve acquired Pheromones from Anub\'azal? Those should be adequate enough to provide you umbrage in said Burrows, but no where else. I\'ll provide you something more substantial than that should we come to a pact during our conference.\r\n\r\nOh. If you\'re still uncertain of our meeting, then just know that I\'ve got information on your lost lordling of Stormwind. You\'re not likely to learn of it elsewhere.'
+                },
 				["singlePage"] = true,
 				["pageCount"] = 0,
 				["material"] = "default",

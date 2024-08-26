@@ -20,13 +20,24 @@ end
 
 local function Print(...)
 	if not ... then
-		if LoreK_DB["settings"]["debug"] then
+		if LoreK_DB["settings"]["debugAdvanced"] then
 			Print("Something failed spectacularly, the data in Print was nil");
 		end
 		return
 	end
 	local prefix = string.format("|cFFFFF569".. Lorekeeper_API.LK["Lorekeeper"] .. "|r:");
 	DEFAULT_CHAT_FRAME:AddMessage(string.join(" ", prefix, ...));
+end
+
+local PH_PLAYER_NAME = "$PLAYER_NAME$";
+local PH_PLAYER_CLASS = "$PLAYER_CLASS$";
+
+local function ReverseNameAndClass(pageText)
+	local name = UnitName("player");
+	local class = UnitClass("player");
+	pageText = pageText:gsub("%$PLAYER_NAME%$", name);
+	pageText = pageText:gsub("%$PLAYER_CLASS%$", class);
+	return pageText;
 end
 
 -- Sort items in a list
@@ -74,7 +85,7 @@ local function parseFunc(path, itemID)
 	end
 
 	-- If not found in either table, return nil or an appropriate message
-	return nil -- or return "Data not found" if you prefer a message
+	return nil; -- or return "Data not found" if you prefer a message
 end
 
 --------------------------------------------------------------------------
@@ -109,34 +120,34 @@ MeowFrameMixin.SoundFileList = {
 }
 
 function MeowFrameMixin:OnLoad()
-	self.clickCount = 0
-	self.clickThreshold = 20
-	self.timeFrame = .2
-	self.lastClickTime = 0
+	self.clickCount = 0;
+	self.clickThreshold = 20;
+	self.timeFrame = .2;
+	self.lastClickTime = 0;
 
-	self:RegisterForClicks("AnyDown", "AnyUp")
+	self:RegisterForClicks("AnyDown", "AnyUp");
 end
 
 function MeowFrameMixin:OnClick(_, down)
-	local portrait = LoreKGUI.PortraitContainer.portrait
-	local currentTime = GetTime()
+	local portrait = LoreKGUI.PortraitContainer.portrait;
+	local currentTime = GetTime();
 
 	if not down then
-		portrait:SetTexCoord(0, 1, 0, 1)
+		portrait:SetTexCoord(0, 1, 0, 1);
 	else
-		portrait:SetTexCoord(.01, .99, .01, .99)
+		portrait:SetTexCoord(.01, .99, .01, .99);
 	end
 
 	if currentTime - self.lastClickTime > self.timeFrame then
-		self:ResetClicks()
+		self:ResetClicks();
 	end
 
-	self.clickCount = self.clickCount + 1
-	self.lastClickTime = currentTime
+	self.clickCount = self.clickCount + 1;
+	self.lastClickTime = currentTime;
 
 	if self.clickCount >= self.clickThreshold then
-		self:ResetClicks()
-		self:Mrow()
+		self:ResetClicks();
+		self:Mrow();
 	end
 end
 
@@ -609,10 +620,11 @@ local function ItemInitializer(button, data)
 
 			local maxPages = 1;
 			local pageNum = 1;
-			local textBody = allData[itemID]["base"]["text"]--parseFunc('["text"][itemID]["base"]["text"]', itemID);
+			local textTable = allData[itemID]["base"]["text"]--parseFunc('["text"][itemID]["base"]["text"]', itemID);
+			local pageText = textTable[pageNum]
 			local HTMLbody
 			local textTitle = allData[itemID]["base"]["title"]; --parseFunc('["text"][itemID]["base"]["title"]', itemID);
-			local isHTML = string.lower(textBody[pageNum]):find("<html>");
+			local isHTML = string.lower(ReverseNameAndClass(pageText)):find("<html>");
 			local singlePage = allData[itemID]["base"]["singlePage"]; --parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
 			local material = allData[itemID]["base"]["material"] or "default"; --parseFunc('["text"][itemID]["base"]["material"]', itemID) or "default";
 			local isHidden = LoreK_DB["settings"]["hideUnread"];
@@ -630,7 +642,7 @@ local function ItemInitializer(button, data)
 					LoreK_DB["text"][itemID]["base"]["singlePage"] = nil;
 					LoreK_DB["text"][itemID]["base"]["pageCount"] = nil;
 					LoreK_DB["text"][itemID]["base"]["material"] = nil;
-					if LoreK_DB.settings.debug then
+					if LoreK_DB.settings.debugAdvanced then
 						Print("Detected exact copy between SVs and LocalData, deleting extra SV data: "..textTitle)
 					end
 				end
@@ -667,12 +679,12 @@ local function ItemInitializer(button, data)
 			LoreKGUI.SetColors()
 
 			if not singlePage then
-				maxPages = #allData[itemID]["base"]["text"]; --#parseFunc('["text"][itemID]["base"]["text"]', itemID);
-				local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
+				maxPages = #allData[itemID]["base"]["text"];
+				local pageNumberText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
 
 				TextDisplayFrame.PrevPageButton:Show();
 				TextDisplayFrame.NextPageButton:Show();
-				TextDisplayFrame.PageNumber:SetText(pageText);
+				TextDisplayFrame.PageNumber:SetText(pageNumberText);
 				TextDisplayFrame.NextPageButton:Enable();
 				TextDisplayFrame.PrevPageButton:SetScript("OnClick", function()
 					if pageNum ~= 1 then
@@ -684,21 +696,22 @@ local function ItemInitializer(button, data)
 					TextDisplayFrame.NextPageButton:Enable();
 					PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
 
-					local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
-					local textBody = allData[itemID]["base"]["text"]; --parseFunc('["text"][itemID]["base"]["text"]', itemID);
-					local textTitle = allData[itemID]["base"]["title"] or UNKNOWN; --parseFunc('["text"][itemID]["base"]["title"]', itemID) or UNKNOWN;
-					local isHTML = string.lower(textBody[pageNum]):find("<html>");
-					local singlePage = allData[itemID]["base"]["singlePage"]; --parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
+					local pageNumberText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
+					local textTable = allData[itemID]["base"]["text"];
+					local pageText = textTable[pageNum]
+					local textTitle = allData[itemID]["base"]["title"] or UNKNOWN;
+					local isHTML = string.lower(ReverseNameAndClass(pageText)):find("<html>");
+					local singlePage = allData[itemID]["base"]["singlePage"];
 					if isHTML then
-						HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />");
+						HTMLbody = string.gsub(ReverseNameAndClass(pageText),"<BODY>","<BODY>".."<br />");
 					end
 
-					TextDisplayFrame.PageNumber:SetText(pageText);
+					TextDisplayFrame.PageNumber:SetText(pageNumberText);
 					TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
 					if isHTML then
-						TextScrollChild.textHTML:SetText(HTMLbody or textBody[pageNum], false);
+						TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(pageText), false);
 					else
-						TextScrollChild.textHTML:SetText("\n"..textBody[pageNum], false);
+						TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(pageText), false);
 					end
 				end)
 				TextDisplayFrame.NextPageButton:SetScript("OnClick", function()
@@ -711,21 +724,22 @@ local function ItemInitializer(button, data)
 					TextDisplayFrame.PrevPageButton:Enable();
 					PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
 
-					local pageText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
-					local textBody = allData[itemID]["base"]["text"]; --parseFunc('["text"][itemID]["base"]["text"]', itemID);
-					local textTitle = allData[itemID]["base"]["title"]; --parseFunc('["text"][itemID]["base"]["title"]', itemID);
-					local isHTML = string.lower(textBody[pageNum]):find("<html>");
-					local singlePage = allData[itemID]["base"]["singlePage"]; --parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
+					local pageNumberText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
+					local textTable = allData[itemID]["base"]["text"];
+					local pageText = textTable[pageNum]
+					local textTitle = allData[itemID]["base"]["title"];
+					local isHTML = string.lower(ReverseNameAndClass(pageText)):find("<html>");
+					local singlePage = allData[itemID]["base"]["singlePage"];
 					if isHTML then
-						HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />");
+						HTMLbody = string.gsub(ReverseNameAndClass(textTable[pageNum]),"<BODY>","<BODY>".."<br />");
 					end
 
-					TextDisplayFrame.PageNumber:SetText(pageText);
+					TextDisplayFrame.PageNumber:SetText(pageNumberText);
 					TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
 					if isHTML then
-						TextScrollChild.textHTML:SetText(HTMLbody or textBody[pageNum], false);
+						TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(textTable[pageNum]), false);
 					else
-						TextScrollChild.textHTML:SetText("\n"..textBody[pageNum], false);
+						TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(textTable[pageNum]), false);
 					end
 				end)
 			end
@@ -739,18 +753,18 @@ local function ItemInitializer(button, data)
 			end
 
 			TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
-			if LoreK_DB.settings.debug then
+			if LoreK_DB.settings.debugAdvanced then
 				TextDisplayFrame.Type_ID:SetText(itemID, 1, 1, 1, 1, true);
 			else
 				TextDisplayFrame.Type_ID:SetText("", 1, 1, 1, 1, true);
 			end
 			if isHTML then
-				HTMLbody = string.gsub(textBody[pageNum],"<BODY>","<BODY>".."<br />")
+				HTMLbody = string.gsub(ReverseNameAndClass(textTable[pageNum]),"<BODY>","<BODY>".."<br />")
 			end
 			if isHTML then
-				TextScrollChild.textHTML:SetText(HTMLbody or textBody[pageNum], false);
+				TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(textTable[pageNum]), false);
 			else
-				TextScrollChild.textHTML:SetText("\n"..textBody[pageNum], false);
+				TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(textTable[pageNum]), false);
 			end
 		end
 	end);
@@ -764,7 +778,6 @@ ItemScrollView:SetElementExtent(36);
 --sort by favorite, then alphabetically
 function LoreKGUI.sortFunc(a, b)
 	--print("a",a.base.title, a.base.isFavorite)
-	--print("b",b.base.title, b.base.isFavorite)
 	if (not not a.base.isFavorite) ~= (not not b.base.isFavorite) then
 		return a.base.isFavorite;
 	else
@@ -1223,10 +1236,10 @@ SettingsDisplayFrame.debug_Checkbox = CreateFrame("CheckButton", nil, SettingsSc
 SettingsDisplayFrame.debug_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*15);
 SettingsDisplayFrame.debug_Checkbox:SetScript("OnClick", function(self)
 	if self:GetChecked() then
-		LoreK_DB["settings"]["debug"] = true;
+		LoreK_DB["settings"]["debugAdvanced"] = true;
 		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON, "SFX");
 	else
-		LoreK_DB["settings"]["debug"] = false;
+		LoreK_DB["settings"]["debugAdvanced"] = false;
 		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF, "SFX");
 	end
 end);
@@ -1367,14 +1380,14 @@ function LoreKGUI.Initialize(self, event, arg1)
 				overrideMaterials = false,
 				hideUnread = true,
 				slashRead = false,
-				debug = true,
+				debugAdvanced = false,
 			};
 		end
 		LoreKGUI.PopulateList();
 		SettingsDisplayFrame.overrideMats_Checkbox:SetChecked(LoreK_DB["settings"]["overrideMaterials"]);
 		SettingsDisplayFrame.hideUnread_Checkbox:SetChecked(LoreK_DB["settings"]["hideUnread"]);
 		SettingsDisplayFrame.slashRead_Checkbox:SetChecked(LoreK_DB["settings"]["slashRead"]);
-		SettingsDisplayFrame.debug_Checkbox:SetChecked(LoreK_DB["settings"]["debug"]);
+		SettingsDisplayFrame.debug_Checkbox:SetChecked(LoreK_DB["settings"]["debugAdvanced"]);
 		
 		LoreKGUI.SetParchmentTexture()
 		LoreKGUI.SetColors()

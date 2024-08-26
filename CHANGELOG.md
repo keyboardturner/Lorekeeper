@@ -1,3 +1,7 @@
+# 0.0.3
+
+Remove Name/Class from text, remove "debug" being on by default for some reason
+
 # 0.0.2
 
 Migrate from parseFunc to allData, prefer SVs over Local Data.

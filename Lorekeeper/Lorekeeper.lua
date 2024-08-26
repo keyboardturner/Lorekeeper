@@ -3,7 +3,7 @@ local _, LK = ...
 
 local function Print(...)
 	if not ... then
-		if LoreK_DB["settings"]["debug"] then
+		if LoreK_DB["settings"]["debugAdvanced"] then
 			Print("Something failed spectacularly, the data in Print was nil");
 		end
 		return
@@ -18,6 +18,19 @@ end
 
 local function PrevPage()
 	RunNextFrame(function() ItemTextPrevPage() end);
+end
+
+local PH_PLAYER_NAME = "$PLAYER_NAME$";
+local PH_PLAYER_CLASS = "$PLAYER_CLASS$";
+
+-- replace player name and class with generic identifiers
+local function ReplaceNameAndClass(word)
+	if word == GetUnitName("player", false) or word == GetUnitName("player", true) then
+		return PH_PLAYER_NAME;
+	end
+	if word == UnitClass("player") then
+		return PH_PLAYER_CLASS;
+	end
 end
 
 local DEFAULT_PAGE_COUNT = 0; -- since books are not zero-indexed
@@ -223,7 +236,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					overrideMaterials = false,
 					hideUnread = true,
 					slashRead = false,
-					debug = false,
+					debugAdvanced = false,
 				},
 				text = {},
 				questItems = {},
@@ -301,7 +314,8 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 
 		if not ctx.doneReading then
 			local pageNum = ItemTextGetPage();
-			ctx.text[pageNum] = ItemTextGetText();
+			local text = ItemTextGetText();
+			ctx.text[pageNum] = text:gsub("(%w+-?%w*)", ReplaceNameAndClass);
 			if ItemTextHasNextPage() then
 				ctx.pageCount = ctx.pageCount + 1;
 				NextPage();
@@ -339,7 +353,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					Lorekeeper_API.MailDetected(activeContext);
 				else
 					activeContext = nil;
-					if LoreK_DB.settings.debug then
+					if LoreK_DB.settings.debugAdvanced then
 						Print("Can't find GUID for item, it's probably been transferred cross realm.")
 					end
 					return
@@ -361,7 +375,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					overrideMaterials = false,
 					hideUnread = true,
 					slashRead = false,
-					debug = false,
+					debugAdvanced = false,
 				},
 				text = {},
 				questItems = {},
@@ -396,13 +410,13 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					LoreK_DB["text"][key]["base"]["mapData"] = {
 						[map] = coords,
 					};
-					if LoreK_DB.settings.debug then
+					if LoreK_DB.settings.debugAdvanced then
 						Print("Adding MapID data to SVs")
 					end
 				else
 					if LoreK_DB["text"][key]["base"]["mapData"] and LoreK_DB["text"][key]["base"]["mapData"][map] then
 						LoreK_DB["text"][key]["base"]["mapData"][map] = nil
-						if LoreK_DB.settings.debug then
+						if LoreK_DB.settings.debugAdvanced then
 							Print("Cleaning up duplicate Map ID data found in LocalData.")
 						end
 					end
@@ -418,19 +432,19 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 				if not LK["LocalData"]["text"][key] or not LK["LocalData"]["text"][key]["base"] then
 					if LoreK_DB["text"][key]["base"]["text"] then -- does entry exist in SVs (with text)
 						if LK.tCompareDeez(LoreK_DB["text"][key]["base"], activeContext) then -- is it an exact match
-							if LoreK_DB.settings.debug then
+							if LoreK_DB.settings.debugAdvanced then
 								Print("Detected exact copy in SVs, no changes made: "..activeContext.title)
 							end
 						else
 							for k, v in pairs(LoreK_DB["text"][key]) do
 								if LK.tCompareDeez(v, activeContext) then
-									if LoreK_DB.settings.debug then
+									if LoreK_DB.settings.debugAdvanced then
 										Print("Detected exact copy between SVs and LocalData, deleting extra SV data: ".."("..k..")"..activeContext.title)
 									end
 									LoreK_DB["text"][key][k] = nil;
 								else
 									LoreK_DB["text"][key]["copy_"..( tablelength(LoreK_DB["text"][key]) )] = CopyTable(activeContext) -- produce a copy
-									if LoreK_DB.settings.debug then
+									if LoreK_DB.settings.debugAdvanced then
 										Print("Detected changes in text, a copy of the old has been made: "..activeContext.title)
 									end
 								end
@@ -445,17 +459,17 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					end
 				else
 					if LK.tCompareDeez(LK["LocalData"]["text"][key]["base"], activeContext) then -- compare LocalData to Active
-						if LoreK_DB.settings.debug then
+						if LoreK_DB.settings.debugAdvanced then
 							Print("Detected exact copy in LocalData, no changes made: "..activeContext.title)
 						end
 					else
 						if LK.tCompareDeez(LoreK_DB["text"][key]["base"], activeContext) then
-							if LoreK_DB.settings.debug then
+							if LoreK_DB.settings.debugAdvanced then
 								Print("Detected exact copy in SVs, no changes made: "..activeContext.title)
 							end
 						else
 							LoreK_DB["text"][key]["base"] = CopyTable(activeContext);
-							if LoreK_DB.settings.debug then
+							if LoreK_DB.settings.debugAdvanced then
 								Print("Detected changes in text, creating base version: "..activeContext.title);
 							end
 						end
@@ -467,7 +481,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 							LoreK_DB["text"][key]["base"]["singlePage"] = nil;
 							LoreK_DB["text"][key]["base"]["pageCount"] = nil;
 							LoreK_DB["text"][key]["base"]["material"] = nil;
-							if LoreK_DB.settings.debug then
+							if LoreK_DB.settings.debugAdvanced then
 								Print("Detected exact copy between SVs and LocalData, deleting extra SV data: "..activeContext.title)
 							end
 						end
@@ -518,7 +532,7 @@ function LJ:OnEvent(event, arg1)
 				isQuestItem = true,
 				isDiscovered = true,
 			};
-			if LoreK_DB.settings.debug then
+			if LoreK_DB.settings.debugAdvanced then
 				Print("Quest item stored: " .. itemID)
 			end
 		end
