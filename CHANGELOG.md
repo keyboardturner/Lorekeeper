@@ -1,3 +1,7 @@
+# 0.0.5
+
+TOC lib load order fix
+
 # 0.0.4
 
 yeet bad mails with no crafter name
