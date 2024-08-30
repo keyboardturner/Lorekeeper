@@ -1529,8 +1529,8 @@ function LoreKGUI.Initialize(self, event, arg1)
 						shadowlands = true,
 						dragonflight = true,
 						warwithin = true,
-						--midnight = true,
-						--lasttitan = true,
+						midnight = true,
+						lasttitan = true,
 					},
 				},
 			};
@@ -1554,8 +1554,8 @@ function LoreKGUI.Initialize(self, event, arg1)
 					shadowlands = true,
 					dragonflight = true,
 					warwithin = true,
-					--midnight = true,
-					--lasttitan = true,
+					midnight = true,
+					lasttitan = true,
 				},
 			};
 		end
