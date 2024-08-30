@@ -69,6 +69,16 @@ if LOCALE == "enUS" then
 	LK["ListOfCmds"] = "List of Commands: "
 	LK["help"] = "help"
 	LK["show"] = "show"
+	LK["filter"] = FILTER
+	LK["SetFavorite"] = TRANSMOG_ITEM_SET_FAVORITE
+	LK["UnsetFavorite"] = TRANSMOG_ITEM_UNSET_FAVORITE
+	LK["Hide"] = HIDE
+	LK["Show"] = SHOW
+	LK["Collected"] = COLLECTED
+	LK["NotCollected"] = NOT_COLLECTED
+	LK["Hidden"] = "Hidden"
+	LK["ClassRestricted"] = "Class Restricted"
+	LK["Unobtainable"] = "Unobtainable"
 
 return end
 
@@ -126,6 +136,16 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["ListOfCmds"] = "Lista de Comandos: "
 	LK["help"] = "ayuda"
 	LK["show"] = "mostrar"
+	LK["filter"] = FILTER
+	LK["SetFavorite"] = TRANSMOG_ITEM_SET_FAVORITE
+	LK["UnsetFavorite"] = TRANSMOG_ITEM_UNSET_FAVORITE
+	LK["Hide"] = HIDE
+	LK["Show"] = SHOW
+	LK["Collected"] = COLLECTED
+	LK["NotCollected"] = NOT_COLLECTED
+	LK["Hidden"] = "Oculto"
+	LK["ClassRestricted"] = "Restringido por Clase"
+	LK["Unobtainable"] = "Inalcanzable"
 
 return end
 
@@ -183,6 +203,16 @@ if LOCALE == "deDE" then
 	LK["ListOfCmds"] = "Befehlsliste: "
 	LK["help"] = "hilfe"
 	LK["show"] = "anzeigen"
+	LK["filter"] = FILTER
+	LK["SetFavorite"] = TRANSMOG_ITEM_SET_FAVORITE
+	LK["UnsetFavorite"] = TRANSMOG_ITEM_UNSET_FAVORITE
+	LK["Hide"] = HIDE
+	LK["Show"] = SHOW
+	LK["Collected"] = COLLECTED
+	LK["NotCollected"] = NOT_COLLECTED
+	LK["Hidden"] = "Versteckt"
+	LK["ClassRestricted"] = "Klassenbeschränkt"
+	LK["Unobtainable"] = "Unerreichbar"
 
 return end
 
@@ -240,6 +270,16 @@ if LOCALE == "frFR" then
 	LK["ListOfCmds"] = "Liste des Commandes : "
 	LK["help"] = "aide"
 	LK["show"] = "montrer"
+	LK["filter"] = FILTER
+	LK["SetFavorite"] = TRANSMOG_ITEM_SET_FAVORITE
+	LK["UnsetFavorite"] = TRANSMOG_ITEM_UNSET_FAVORITE
+	LK["Hide"] = HIDE
+	LK["Show"] = SHOW
+	LK["Collected"] = COLLECTED
+	LK["NotCollected"] = NOT_COLLECTED
+	LK["Hidden"] = "Caché"
+	LK["ClassRestricted"] = "Restreint à la classe"
+	LK["Unobtainable"] = "Inaccessible"
 
 return end
 
@@ -297,6 +337,16 @@ if LOCALE == "itIT" then
 	LK["ListOfCmds"] = "Elenco dei Comandi: "
 	LK["help"] = "aiuto"
 	LK["show"] = "mostra"
+	LK["filter"] = FILTER
+	LK["SetFavorite"] = TRANSMOG_ITEM_SET_FAVORITE
+	LK["UnsetFavorite"] = TRANSMOG_ITEM_UNSET_FAVORITE
+	LK["Hide"] = HIDE
+	LK["Show"] = SHOW
+	LK["Collected"] = COLLECTED
+	LK["NotCollected"] = NOT_COLLECTED
+	LK["Hidden"] = "Nascosto"
+	LK["ClassRestricted"] = "Limitato alla Classe"
+	LK["Unobtainable"] = "Irreperibile"
 
 return end
 
@@ -354,7 +404,16 @@ if LOCALE == "ptBR" then
 	LK["ListOfCmds"] = "Lista de Comandos: "
 	LK["help"] = "ajuda"
 	LK["show"] = "mostrar"
-
+	LK["filter"] = FILTER
+	LK["SetFavorite"] = TRANSMOG_ITEM_SET_FAVORITE
+	LK["UnsetFavorite"] = TRANSMOG_ITEM_UNSET_FAVORITE
+	LK["Hide"] = HIDE
+	LK["Show"] = SHOW
+	LK["Collected"] = COLLECTED
+	LK["NotCollected"] = NOT_COLLECTED
+	LK["Hidden"] = "Oculto"
+	LK["ClassRestricted"] = "Restrito à Classe"
+	LK["Unobtainable"] = "Inalcançável"
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -414,6 +473,16 @@ if LOCALE == "ruRU" then
 	LK["ListOfCmds"] = "Список Команд: "
 	LK["help"] = "помощь"
 	LK["show"] = "показать"
+	LK["filter"] = FILTER
+	LK["SetFavorite"] = TRANSMOG_ITEM_SET_FAVORITE
+	LK["UnsetFavorite"] = TRANSMOG_ITEM_UNSET_FAVORITE
+	LK["Hide"] = HIDE
+	LK["Show"] = SHOW
+	LK["Collected"] = COLLECTED
+	LK["NotCollected"] = NOT_COLLECTED
+	LK["Hidden"] = "Скрыто"
+	LK["ClassRestricted"] = "Ограничено классом"
+	LK["Unobtainable"] = "Недоступно"
 
 return end
 
@@ -471,6 +540,16 @@ if LOCALE == "koKR" then
 	LK["ListOfCmds"] = "명령어 목록: "
 	LK["help"] = "도움말"
 	LK["show"] = "보이기"
+	LK["filter"] = FILTER
+	LK["SetFavorite"] = TRANSMOG_ITEM_SET_FAVORITE
+	LK["UnsetFavorite"] = TRANSMOG_ITEM_UNSET_FAVORITE
+	LK["Hide"] = HIDE
+	LK["Show"] = SHOW
+	LK["Collected"] = COLLECTED
+	LK["NotCollected"] = NOT_COLLECTED
+	LK["Hidden"] = "숨김"
+	LK["ClassRestricted"] = "직업 제한"
+	LK["Unobtainable"] = "획득 불가"
 
 return end
 
@@ -528,6 +607,16 @@ if LOCALE == "zhCN" then
 	LK["ListOfCmds"] = "命令列表: "
 	LK["help"] = "帮助"
 	LK["show"] = "显示"
+	LK["filter"] = FILTER
+	LK["SetFavorite"] = TRANSMOG_ITEM_SET_FAVORITE
+	LK["UnsetFavorite"] = TRANSMOG_ITEM_UNSET_FAVORITE
+	LK["Hide"] = HIDE
+	LK["Show"] = SHOW
+	LK["Collected"] = COLLECTED
+	LK["NotCollected"] = NOT_COLLECTED
+	LK["Hidden"] = "隐藏"
+	LK["ClassRestricted"] = "职业限制"
+	LK["Unobtainable"] = "无法获得"
 
 return end
 
@@ -585,5 +674,15 @@ if LOCALE == "zhTW" then
 	LK["ListOfCmds"] = "命令列表: "
 	LK["help"] = "幫助"
 	LK["show"] = "顯示"
+	LK["filter"] = FILTER
+	LK["SetFavorite"] = TRANSMOG_ITEM_SET_FAVORITE
+	LK["UnsetFavorite"] = TRANSMOG_ITEM_UNSET_FAVORITE
+	LK["Hide"] = HIDE
+	LK["Show"] = SHOW
+	LK["Collected"] = COLLECTED
+	LK["NotCollected"] = NOT_COLLECTED
+	LK["Hidden"] = "隱藏"
+	LK["ClassRestricted"] = "職業限制"
+	LK["Unobtainable"] = "無法取得"
 
 return end

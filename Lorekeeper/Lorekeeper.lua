@@ -78,6 +78,7 @@ local ignoredKeys = {
 	isObtainable = true,
 	isClassSpecific = true,
 	isFinalVersion = true,
+	isHidden = true,
 };
 
 -- Helper function to check if a key is in the ignored list
@@ -240,9 +241,56 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					hideUnread = true,
 					slashRead = false,
 					debugAdvanced = false,
+					searchMenu = {
+						showUnobtainable = false,
+						showClassrestricted = true,
+						showHidden = false,
+					showCollected = true,
+					showUnread = true,
+						expansion = {
+							classic = true,
+							tbc = true,
+							wrath = true,
+							cata = true,
+							mop = true,
+							wod = true,
+							legion = true,
+							bfa = true,
+							shadowlands = true,
+							dragonflight = true,
+							warwithin = true,
+							--midnight = true,
+							--lasttitan = true,
+						},
+					},
 				},
 				text = {},
 				questItems = {},
+			};
+		end
+
+		if LoreK_DB["settings"] and not LoreK_DB["settings"]["searchMenu"] then
+			LoreK_DB["settings"]["searchMenu"] = {
+				showUnobtainable = false,
+				showClassrestricted = true,
+				showHidden = false,
+				showCollected = true,
+				showUnread = true,
+				expansion = {
+					classic = true,
+					tbc = true,
+					wrath = true,
+					cata = true,
+					mop = true,
+					wod = true,
+					legion = true,
+					bfa = true,
+					shadowlands = true,
+					dragonflight = true,
+					warwithin = true,
+					--midnight = true,
+					--lasttitan = true,
+				},
 			};
 		end
 
@@ -379,6 +427,27 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					hideUnread = true,
 					slashRead = false,
 					debugAdvanced = false,
+					searchMenu = {
+						showUnobtainable = false,
+						showClassrestricted = true,
+						showHidden = false,
+						showUnread = false,
+						expansion = {
+							classic = true,
+							tbc = true,
+							wrath = true,
+							cata = true,
+							mop = true,
+							wod = true,
+							legion = true,
+							bfa = true,
+							shadowlands = true,
+							dragonflight = true,
+							warwithin = true,
+							--midnight = true,
+							--lasttitan = true,
+						},
+					},
 				},
 				text = {},
 				questItems = {},

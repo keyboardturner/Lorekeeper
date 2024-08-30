@@ -1,3 +1,7 @@
+# 0.0.6
+
+Selection Texture (will tend to disappear when learning new items / choosing filters), Filter Dropdown functionality, Sort unreads to bottom, fix up french having extra data, adjust frame level feature to be "always on top" when clicked, manually hide entries right click menu option
+
 # 0.0.5
 
 TOC lib load order fix

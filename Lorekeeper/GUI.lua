@@ -107,8 +107,9 @@ LoreKGUI:RegisterForDrag("LeftButton");
 LoreKGUI:SetScript("OnDragStart", LoreKGUI.StartMoving);
 LoreKGUI:SetScript("OnDragStop", LoreKGUI.StopMovingOrSizing);
 LoreKGUI:SetTitle(LK["Lorekeeper"]);
-
+LoreKGUI:SetFrameStrata("MEDIUM");
 LoreKGUI:Hide();
+LoreKGUI:SetScript("OnMouseDown", function(self) self:SetToplevel(true); end)
 
 local MeowFrameMixin = {};
 
@@ -468,18 +469,6 @@ local ItemDataProvider = CreateDataProvider();
 local ItemScrollView = CreateScrollBoxListLinearView();
 ItemScrollView:SetDataProvider(ItemDataProvider);
 
-local function Button_OnSelect(elementData, selected)
-	--print("begin selection")
-	--print(elementData,selected)
-	--for k, v in pairs(selected) do
-		--print(k,v)
-	--end
-	--print("HAHA BINGLE")
-end
-
-local selectionBehavior = ScrollUtil.AddSelectionBehavior(ItemScrollBox);
-selectionBehavior:RegisterCallback("OnSelectionChanged", Button_OnSelect);
-
 ScrollUtil.InitScrollBoxListWithScrollBar(ItemScrollBox, ItemScrollBar, ItemScrollView);
 
 -- The 'button' argument is the frame that our data will inhabit in our list
@@ -505,6 +494,7 @@ local function ItemInitializer(button, data)
 	local favorite = data.base.isFavorite;
 
 	local isFavorite = LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"]["isFavorite"];
+	local isManuallyHidden = LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"]["isHidden"];
 	if ItemEntryID then
 		icon_Q = select(5,C_Item.GetItemInfoInstant(ItemEntryID));
 	else
@@ -529,8 +519,10 @@ local function ItemInitializer(button, data)
 	button.icon.unreadIcon:SetAtlas("UI-LFG-PendingMark"); -- possibly change to "Campaign-QuestLog-LoreBook"
 	if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"]["hasRead"] then
 		button.icon.unreadIcon:Hide();
+		button.icon.tex:SetDesaturated(false);
 	else
 		button.icon.unreadIcon:Show();
+		button.icon.tex:SetDesaturated(true);
 	end
 	button.icon.favoritesIcon = button.icon.favoritesIcon or button.icon:CreateTexture(nil, "OVERLAY", nil, 2);
 	button.icon.favoritesIcon:SetPoint("TOPLEFT", button.icon.unreadIcon, "TOPLEFT", -5,2);
@@ -541,25 +533,24 @@ local function ItemInitializer(button, data)
 	else
 		button.icon.favoritesIcon:Hide();
 	end
-	button.isSel = button.isSel or false;
-	local isSelected = button.isSel;
 	button.texHL = button.texHL or button:CreateTexture(nil, "OVERLAY", nil, 3);
 	button.texHL:SetAllPoints(button.tex);
 	button.texHL:SetAtlas("PetList-ButtonHighlight");
 	button.texHL:Hide();
-	button.texSel = button.texSel or button:CreateTexture(nil, "OVERLAY", nil, 1);
+	button.texSel = button.texSel or button:CreateTexture(nil, "OVERLAY", nil, 3);
 	button.texSel:SetAllPoints(button.tex);
 	button.texSel:SetAtlas("PetList-ButtonSelect");
-	if not isSelected then
-		button.texSel:Hide();
-	end
 	button.textFont = button.textFont or button:CreateFontString(nil, "OVERLAY");
 	button.textFont:SetFontObject("GameTooltipTextSmall");
 	button.textFont:SetPoint("TOPLEFT", button.tex, "TOPLEFT", 5,-3);
 	button.textFont:SetPoint("BOTTOMRIGHT", button.tex, "BOTTOMRIGHT", -5,2);
 	button.textFont:SetJustifyH("LEFT");
 	button.textFont:SetJustifyV("TOP");
-	button.textFont:SetText(allData[itemID]["base"]["title"], 1, 1, 1, 1, true); --parseFunc('["text"][itemID]["base"]["title"]', itemID), 1, 1, 1, 1, true);
+	button.textFont:SetText(title);
+	button.textFont:SetTextColor(1, 1, 1, 1);
+	if not LoreK_DB["text"][itemID] or not LoreK_DB["text"][itemID]["base"]["hasRead"] then
+		button.textFont:SetTextColor(.5, .5, .5, 1);
+	end
 	button:SetScript("OnEnter", function()
 		button.texHL:Show();
 	end);
@@ -588,14 +579,14 @@ local function ItemInitializer(button, data)
 				MenuUtil.CreateContextMenu(button, function(ownerRegion, rootDescription)
 					rootDescription:CreateTitle(title)
 					if isFavorite then
-						rootDescription:CreateButton(TRANSMOG_ITEM_UNSET_FAVORITE, function()
+						rootDescription:CreateButton(LK["UnsetFavorite"], function()
 							LoreK_DB["text"][itemID]["base"]["isFavorite"] = false;
 							LoreKMainframe.PopulateList();
 							PlaySound(SOUNDKIT.UI_70_ARTIFACT_FORGE_APPEARANCE_LOCKED, "SFX");
 						end)
 					else
 						if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] then
-							rootDescription:CreateButton(TRANSMOG_ITEM_SET_FAVORITE, function()
+							rootDescription:CreateButton(LK["SetFavorite"], function()
 								LoreK_DB["text"][itemID]["base"]["isFavorite"] = true;
 								LoreKMainframe.PopulateList();
 								PlaySound(SOUNDKIT.UI_70_ARTIFACT_FORGE_APPEARANCE_APPEARANCE_CHANGE, "SFX");
@@ -610,9 +601,23 @@ local function ItemInitializer(button, data)
 							end);
 						end
 					end
+					if isManuallyHidden then
+						rootDescription:CreateButton(LK["Show"], function()
+							LoreK_DB["text"][itemID]["base"]["isHidden"] = false;
+							LoreKMainframe.PopulateList();
+						end)
+					else
+						if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] then
+							rootDescription:CreateButton(LK["Hide"], function()
+								LoreK_DB["text"][itemID]["base"]["isHidden"] = true;
+								LoreKMainframe.PopulateList();
+							end)
+						end
+					end
 				end)
 			end
 		else
+			LoreKGUI.SelectionBehavior:Select(self);
 
 			PlaySound(SOUNDKIT.UI_JOURNEYS_OPEN_LORE_BOOK, "SFX", true);
 			DeleteEntry:SetEnabled(true);
@@ -773,17 +778,37 @@ end
 ItemScrollView:SetElementExtent(36);
 
 
+function LoreKGUI:OnSelectionChanged(data, isSelected)
+	local f = self.ItemScrollBox:FindFrame(data);
+	if not f then
+		return;
+	end
+
+	f.texSel:SetShown(isSelected);
+end
+
+function LoreKGUI:OnFrameInitialized(frame, data)
+	local isSelected = self.SelectionBehavior:IsElementDataSelected(data);
+	frame.texSel:SetShown(isSelected);
+end
+
+LoreKGUI.SelectionBehavior = ScrollUtil.AddSelectionBehavior(ItemScrollBox, SelectionBehaviorFlags.Intrusive);
+LoreKGUI.SelectionBehavior:RegisterCallback("OnSelectionChanged", LoreKGUI.OnSelectionChanged, LoreKGUI);
+
+ScrollUtil.AddInitializedFrameCallback(ItemScrollBox, LoreKGUI.OnFrameInitialized, LoreKGUI);
+
+
 --------------------------------------------------------------------------
 
---sort by favorite, then alphabetically
+--sort by favorite, then books that have been read, then alphabetize each category by title
 function LoreKGUI.sortFunc(a, b)
 	--print("a",a.base.title, a.base.isFavorite)
 	if (not not a.base.isFavorite) ~= (not not b.base.isFavorite) then
 		return a.base.isFavorite;
-	else
-		if a.base.title and b.base.title then
-			return strcmputf8i(a.base.title, b.base.title) < 0;
-		end
+	elseif (not not a.base.hasRead)  ~=  (not not b.base.hasRead) then
+		return a.base.hasRead;
+	elseif a.base.title and b.base.title then
+		return strcmputf8i(a.base.title, b.base.title) < 0;
 	end
 end
 
@@ -808,41 +833,146 @@ function LoreKGUI.PopulateList()
 		ItemDataProvider:Insert(data);
 	end
 
-	LoreKGUI.OnTextChanged(LoreKGUI.SearchBox)
+	LoreKGUI.OnTextChanged(LoreKGUI.SearchBox);
 	ItemDataProvider:SetSortComparator(LoreKGUI.sortFunc);
 	ItemDataProvider:Sort();
 end
 
 -- Search box
 LoreKGUI.SearchBox = CreateFrame("EditBox", "LoreKSearchBox", ItemDisplayFrame, "SearchBoxTemplate");
-LoreKGUI.SearchBox:SetSize(190, 20);
-LoreKGUI.SearchBox:SetPoint("TOP", ItemDisplayFrame, "TOP", 0, -5);
+LoreKGUI.SearchBox:SetSize(105, 20);
+LoreKGUI.SearchBox:SetPoint("TOPLEFT", ItemDisplayFrame, "TOPLEFT", 10, -5);
 LoreKGUI.SearchBox:SetAutoFocus(false);
 
 	-- This function will clear the ScrollView and repopulate it with the given search results
 local function PopulateNewDataProvider(newData)
-	ItemDataProvider = CreateDataProvider(newData)
-	ItemScrollView:SetDataProvider(ItemDataProvider)
+	ItemDataProvider = CreateDataProvider(newData);
+	ItemScrollView:SetDataProvider(ItemDataProvider);
+end
+
+local function escapePattern(text)
+	-- Escape all special characters in the user's input
+	return text:gsub("([%(%)%.%%%+%-%*%?%[%]%^%$])", "%%%1")
 end
 
 function LoreKGUI.OnTextChanged(editBox)
+	local SVSettings = LoreK_DB["settings"]["searchMenu"]
 	local query = editBox:GetText();
+	query = escapePattern(query)
 
-	local matches = {}
+	local matches = {};
 
 	for _, element in pairs(allData) do
+		local match = false;
+
 		if element["base"]["title"] and string.find(element["base"]["title"]:lower(), query:lower()) then
-			tinsert(matches, element)
+			if SVSettings.showCollected and element["base"]["hasRead"] and not element["base"]["isHidden"] and not (element["base"]["isObtainable"] == false) and not element["base"]["isClassSpecific"] then
+				match = true;
+			elseif SVSettings.showUnread and (not element["base"]["hasRead"]) and not (element["base"]["isObtainable"] == false) and not element["base"]["isClassSpecific"] then
+				match = true;
+			elseif SVSettings.showHidden and element["base"]["isHidden"] then
+				match = true;
+			elseif SVSettings.showClassrestricted and element["base"]["isClassSpecific"] and (element["base"]["hasRead"]) then
+				local currentClass = select(3,  UnitClass("player"))
+				if element["base"]["isClassSpecific"] ~= currentClass then
+					match = true;
+				end
+			elseif SVSettings.showUnobtainable and ( element["base"]["isObtainable"] == false) and (not element["base"]["hasRead"]) then
+				match = true;
+			end
+		end
+
+		-- Add to matches only if exactly one filter condition is met
+		if match then
+			tinsert(matches, element);
 		end
 	end
 
-	table.sort(matches, LoreKGUI.sortFunc)
-	PopulateNewDataProvider(matches)
+	table.sort(matches, LoreKGUI.sortFunc);
+	PopulateNewDataProvider(matches);
 end
+
 
 -- Generally safer to use HookScript on EditBoxes inheriting a template as they likely already have OnTextChanged callbacks defined
 -- As a side note, it may be worth debouncing this callback if your search method is particularly performance intensive
-LoreKGUI.SearchBox:HookScript("OnTextChanged", LoreKGUI.OnTextChanged)
+LoreKGUI.SearchBox:HookScript("OnTextChanged", LoreKGUI.OnTextChanged);
+
+LoreKGUI.FilterDropdown = CreateFrame("DropdownButton", nil, ItemDisplayFrame, "WowStyle1FilterDropdownTemplate");
+LoreKGUI.FilterDropdown.Text:SetText(LK["filter"]);
+LoreKGUI.FilterDropdown:SetPoint("LEFT", LoreKGUI.SearchBox, "RIGHT", 3, 0);
+LoreKGUI.FilterDropdown:SetSize(80, 20);
+
+local function FilterHandler(owner, rootDescription)
+	local SVSettings = LoreK_DB["settings"]["searchMenu"]
+	--rootDescription:CreateTitle("Filter Options");
+
+	local checkbox1 = rootDescription:CreateCheckbox(LK["Collected"], function()
+		return SVSettings.showCollected;
+	end,
+	function(selected)
+		if SVSettings.showCollected then
+			SVSettings.showCollected = false;
+		else
+			SVSettings.showCollected = true;
+		end
+		LoreKGUI.PopulateList();
+	end);
+
+	local checkbox1 = rootDescription:CreateCheckbox(LK["NotCollected"], function()
+		return SVSettings.showUnread;
+	end,
+	function(selected)
+		if SVSettings.showUnread then
+			SVSettings.showUnread = false;
+		else
+			SVSettings.showUnread = true;
+		end
+		LoreKGUI.PopulateList();
+	end);
+
+	local checkbox2 = rootDescription:CreateCheckbox(LK["Hidden"], function()
+		return SVSettings.showHidden;
+	end,
+	function(selected)
+		if SVSettings.showHidden then
+			SVSettings.showHidden = false;
+		else
+			SVSettings.showHidden = true;
+		end
+		LoreKGUI.PopulateList();
+	end);
+	local checkbox3 = rootDescription:CreateCheckbox(LK["ClassRestricted"], function()
+		return SVSettings.showClassrestricted;
+	end,
+	function(selected)
+		if SVSettings.showClassrestricted then
+			SVSettings.showClassrestricted = false;
+		else
+			SVSettings.showClassrestricted = true;
+		end;
+		LoreKGUI.PopulateList();
+	end);
+	local checkbox4 = rootDescription:CreateCheckbox(LK["Unobtainable"], function()
+		return SVSettings.showUnobtainable;
+	end,
+	function(selected)
+		if SVSettings.showUnobtainable then
+			SVSettings.showUnobtainable = false;
+		else
+			SVSettings.showUnobtainable = true;
+		end;
+		LoreKGUI.PopulateList();
+	end);
+
+	-- Optionally, set selection ignored so it doesn't affect dropdown selection text
+	checkbox1:SetSelectionIgnored();
+	checkbox2:SetSelectionIgnored();
+	checkbox3:SetSelectionIgnored();
+	checkbox4:SetSelectionIgnored();
+
+end
+
+
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -1381,8 +1511,57 @@ function LoreKGUI.Initialize(self, event, arg1)
 				hideUnread = true,
 				slashRead = false,
 				debugAdvanced = false,
+				searchMenu = {
+					showUnobtainable = false,
+					showClassrestricted = true,
+					showHidden = false,
+					showCollected = true,
+					showUnread = true,
+					expansion = {
+						classic = true,
+						tbc = true,
+						wrath = true,
+						cata = true,
+						mop = true,
+						wod = true,
+						legion = true,
+						bfa = true,
+						shadowlands = true,
+						dragonflight = true,
+						warwithin = true,
+						--midnight = true,
+						--lasttitan = true,
+					},
+				},
 			};
 		end
+		if not LoreK_DB["settings"]["searchMenu"] then
+			LoreK_DB["settings"]["searchMenu"] = {
+				showUnobtainable = false,
+				showClassrestricted = true,
+				showHidden = false,
+				showCollected = true,
+				showUnread = true,
+				expansion = {
+					classic = true,
+					tbc = true,
+					wrath = true,
+					cata = true,
+					mop = true,
+					wod = true,
+					legion = true,
+					bfa = true,
+					shadowlands = true,
+					dragonflight = true,
+					warwithin = true,
+					--midnight = true,
+					--lasttitan = true,
+				},
+			};
+		end
+
+		LoreKGUI.FilterDropdown:SetupMenu(FilterHandler);
+
 		LoreKGUI.PopulateList();
 		SettingsDisplayFrame.overrideMats_Checkbox:SetChecked(LoreK_DB["settings"]["overrideMaterials"]);
 		SettingsDisplayFrame.hideUnread_Checkbox:SetChecked(LoreK_DB["settings"]["hideUnread"]);
@@ -1403,7 +1582,7 @@ function LoreKGUI.Script_OnShow()
 	if LoreK_DB["settings"]["slashRead"] then
 		DoEmote("READ", nil, true);
 	end
-	LoreKMainframe.PopulateList();
+	--LoreKMainframe.PopulateList(); -- doesn't seem necessary i think?
 	if C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
 		--LoreKMainframeTab2:SetEnabled(true); -- Mail GUI not ready
 	--else
