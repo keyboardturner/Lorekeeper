@@ -877,7 +877,7 @@ function LoreKGUI.OnTextChanged(editBox)
 				if element["base"]["isClassSpecific"] ~= currentClass then
 					match = true;
 				end
-			elseif SVSettings.showUnobtainable and ( element["base"]["isObtainable"] == false) and (not element["base"]["hasRead"]) then
+			elseif SVSettings.showUnobtainable and (element["base"]["isObtainable"] == false) then
 				match = true;
 			end
 		end
