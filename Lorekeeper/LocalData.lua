@@ -226,6 +226,12 @@ LK["LocalData"] = {
 				["singlePage"] = true,
 				["pageCount"] = 0,
 				["material"] = "default",
+				["mapData"] = {
+					[84] = {
+						0.7594419121742249,
+						0.6598405838012695
+					}
+				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 			},
