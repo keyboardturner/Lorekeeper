@@ -592,20 +592,31 @@ LJ:RegisterEvent("CHAT_MSG_LOOT");
 function LJ:OnEvent(event, arg1)
 	if event == "CHAT_MSG_LOOT" then
 		local itemID = arg1:match("item:(%d+):");
+		if not itemID then return end -- Blizzard, why do you loot spells when you gain anima powers?
 		itemID = tonumber(itemID);
-		local itemIDQ, itemType, itemSubType, itemEquipLoc, icon, classID, subClassID = C_Item.GetItemInfoInstant(itemID);
-		local itemType, itemSubType, _, _, _, _, classID, subclassID = select(6, C_Item.GetItemInfo(itemID));
-
-		if classID == 12 then -- quest item detected
-			if not LoreK_DB["questItems"] then
-				LoreK_DB["questItems"] = {};
+		if select(7, C_Item.GetItemInfoInstant(itemID)) then
+			local itemIDQ, itemType, itemSubType, itemEquipLoc, icon, classID, subClassID = C_Item.GetItemInfoInstant(itemID);
+			-- Check if subClassID is valid (not nil)
+			if not subClassID then
+				-- It's not a valid item, might be a spell or something else, handle accordingly
+				return -- Exit the function or handle the spell case as needed
 			end
-			LoreK_DB["questItems"][itemID] = {
-				isQuestItem = true,
-				isDiscovered = true,
-			};
-			if LoreK_DB.settings.debugAdvanced then
-				Print("Quest item stored: " .. itemID)
+
+			-- If subClassID is valid, proceed with the rest of your code
+			local itemType, itemSubType, _, _, _, _, classID, subclassID = select(6, C_Item.GetItemInfo(itemID));
+
+
+			if classID == 12 then -- quest item detected
+				if not LoreK_DB["questItems"] then
+					LoreK_DB["questItems"] = {};
+				end
+				LoreK_DB["questItems"][itemID] = {
+					isQuestItem = true,
+					isDiscovered = true,
+				};
+				if LoreK_DB.settings.debugAdvanced then
+					Print("Quest item stored: " .. itemID)
+				end
 			end
 		end
 	end

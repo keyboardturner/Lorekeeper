@@ -1,3 +1,7 @@
+# 0.0.8
+
+Fixed error that happens when looting anima powers, because apparently I guess we're looting spells now
+
 # 0.0.7
 
 Quick fix to "Unobtainable" filter
