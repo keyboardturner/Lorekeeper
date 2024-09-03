@@ -2,6 +2,10 @@
 
 Fixed error that happens when looting anima powers, because apparently I guess we're looting spells now
 
+adjustment to "Class Restricted" filter
+
+Weekly LocalData Update 1 - 03/09/24
+
 # 0.0.7
 
 Quick fix to "Unobtainable" filter

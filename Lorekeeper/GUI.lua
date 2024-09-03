@@ -872,11 +872,8 @@ function LoreKGUI.OnTextChanged(editBox)
 				match = true;
 			elseif SVSettings.showHidden and element["base"]["isHidden"] then
 				match = true;
-			elseif SVSettings.showClassrestricted and element["base"]["isClassSpecific"] and (element["base"]["hasRead"]) then
-				local currentClass = select(3,  UnitClass("player"))
-				if element["base"]["isClassSpecific"] ~= currentClass then
-					match = true;
-				end
+			elseif SVSettings.showClassrestricted and element["base"]["isClassSpecific"] then
+				match = true;
 			elseif SVSettings.showUnobtainable and (element["base"]["isObtainable"] == false) then
 				match = true;
 			end
