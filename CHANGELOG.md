@@ -1,3 +1,7 @@
+# 0.0.9
+
+Avoid map-related taint issue with frame fader (where it said something about "protected function SetPassThroughButtons" etc.)
+
 # 0.0.8
 
 Fixed error that happens when looting anima powers, because apparently I guess we're looting spells now
