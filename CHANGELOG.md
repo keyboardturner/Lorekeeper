@@ -1,3 +1,7 @@
+# 0.1.0
+
+Weekly LocalData Update 2 - 10/09/24 (17 new entries)
+
 # 0.0.9
 
 Avoid map-related taint issue with frame fader (where it said something about "protected function SetPassThroughButtons" etc.)

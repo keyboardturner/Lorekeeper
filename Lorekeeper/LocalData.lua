@@ -229,8 +229,8 @@ LK["LocalData"] = {
 				["mapData"] = {
 					[84] = {
 						0.7594419121742249,
-						0.6598405838012695
-					}
+						0.6598405838012695,
+					},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -2491,6 +2491,287 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-466230"] = {
+			["base"] = {
+				["title"] = "Navigations of the Soul",
+				["text"] = {
+					"PERSONAL LOG ONE\r\n\r\nDornogal. It feels like I know this place, but I'm experiencing it for the first time. I don't quite understand it. \r\n\r\nI've talked to many of my kin, and they've explained as much as they could, but it hasn't helped at all. \r\n\r\nThis is my home, but it doesn't feel that way. \r\n\r\nI wonder if it ever will.",
+					"PERSONAL LOG TWO\r\n\r\nAs the days go by, attitudes seem to be changing. My kin can be rigid and stubborn, but there's a warmth to them.\r\n\r\nI've learned about what led to my day of awakening. Tribulations that lasted millennia.  \r\n\r\nI've awoken during a shifting age. I wonder what this means for me. Where is my place?",
+					"PERSONAL LOG THREE\r\n\r\nSpeaker Brinthe insists I come up with a name for myself. I've toyed with different names. \r\n\r\nAurora? It doesn't quite fit, but it's what I saw before I woke.  I will never forget that beautiful light, the warmth of that voice.  \r\n\r\nMaybe something vibrant like Coral?\r\n\r\nNo, that doesn't quite fit either. I'll keep thinking.",
+					"PERSONAL LOG SIX\r\n\r\nI feel less hesitant now. Adjusting to our society and all the rules has proven difficult. \r\n\r\nAs much as I love my kin, I still can't quite understand their adherence to tradition. They say it's what you're supposed to do. \r\n\r\nWhy? \r\n\r\nWhen I asked Brinthe, she had a different answer. At one point we served the Titans. \r\n\r\nBut now? \r\n\r\nNow we choose to serve one another. This has inspired me.",
+					"PERSONAL LOG NINE \r\n\r\nMy name is Dawn. \r\n\r\nI had to write this down. It came to me after watching the sun rise over Dornogal.\r\n\r\nDawn, the start of a new day, of a new age. The end of darkness, the beginning of something more. \r\n\r\nThis I feel represents who I wish to be.",
+					"PERSONAL LOG TEN\r\n\r\nI've been helping the Foreman quite a bit. He has been teaching about the rigid processes that my kin used to experience. \r\n\r\nThe machines doesn't seem to do well with we Awakened. \r\n\r\nAnd the Foreman's language at times can be harsh. I know he doesn't mean it in that way. \r\n\r\nThank the cogs that Caretaker's exist. They seem to be a bit more prepared. \r\n\r\nIt takes time to change your ways--but I hope the Foreman adjusts sooner rather than later.",
+					"PERSONAL LOG TWELVE\r\n\r\nNext week I start implementing my improvements to the Awakening Protocol.\r\n\r\nI hope that they go well. Our awakening shouldn't be frightening. It should feel the same as the song's warm embrace. \r\n\r\nNo matter what happens, I do know this is a step into a new age. \r\n\r\nOne day earthen will travel beyond the shores of Khaz Algar. But for now, the first step.  \r\n\r\nOur society is changing. But there's no reason it must all be at once.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2322] = {
+						0.08876144886016846,
+						0.4571340680122376,
+					},
+				},
+			},
+		},
+		["GameObject-351956"] = {
+			["base"] = {
+				["title"] = "Sinstone of Revendreth",
+				["text"] = {
+					"Here now we name the burdens of a soul that Revendreth shall forever be responsible for the exsanguination and education of.\r\n\r\nLet these names contextualize and manifest the burdens they identify. \r\n\r\nSo then may we control these burdens, \r\nso then may we harvest these burdens, \r\nso then may we drain these burdens.\r\n\r\nTo seize these burdens, the Master has forged the Medallions of the Harvesters. \r\n\r\nLet them be the conduits of his will, providing power and the machinations of Death to those servants deemed most fitting. May they be instruments of his ever vigilant force. May they be the fangs by which he feeds upon the sin of the dead.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1699] = {
+						0.5387635231018066,
+						0.3670961856842041,
+					},
+				},
+			},
+		},
+		["GameObject-355478"] = {
+			["base"] = {
+				["title"] = "Renathal's Notes",
+				["text"] = {
+					'In my ignorance, I attempted to use this medallion, MY medallion, in the first failed rebellion.\r\n\r\nThe medallions are powerful, and in the hands of a Harvester they can be used to warp the very fabric of Revendreth to one\'s will, if they have enough anima.\r\n\r\nBut they are also carriers of the Master\'s will. What they do, he knows. And so I lost my attempt to stop Denathrius the first time, my well thought out schemes lay bare for his examination and elimination at every step.\r\n\r\nThe Medallion of Dominion was taken from me the day I was flung into the Maw. \r\n\r\nIt was last seen being returned to the Master by the cursed hands of the Lord Chamberlain. The medallion had been used to crush the Accuser and take the Medallion of Pride for the would-be Harvester. \r\n\r\nDenathrius mentioned that it was promised to another. We must learn who this "other" is.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1699] = {
+						0.5689959526062012,
+						0.390055775642395,
+					},
+				},
+			},
+		},
+		["GameObject-355484"] = {
+			["base"] = {
+				["title"] = "Pride",
+				["text"] = {
+					"Pride.\r\n\r\nOf all the sins a soul can be burdened with, Pride is the most... delicious.\r\n\r\nIt presents the greatest challenge when trying to exsanguinate this burden from the souls that are sent to us. It takes time, ceremony, dedication.\r\n\r\nTo this end may the Medallion of Pride be forever upon the neck of only our most skillful and patient venthyr. \r\n\r\nMay it grant them authority over the Ceremony Ward so that they can use its vast power as an instrument to strip these souls of their burdens and fulfill our noble purpose.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1699] = {
+						0.5737051367759705,
+						0.3049479126930237,
+					},
+				},
+			},
+		},
+		["Item-228457"] = {
+			["base"] = {
+				["title"] = "Lightspark Grade Book",
+				["text"] = {
+					"Sophietta Lynflayme\r\n\r\nFlying: 91\r\nEngineering: 93\r\nDiligence: 86\r\nLeadership: 85\r\nResilience: 93\r\n\r\nSophietta is truly a rare student. An excellent pilot, with a strong grasp on the limits and capabilities of her craft. She works hard, and gets along with students and instructors alike.",
+					"Jenae Sacredpyke\r\n\r\nFlying: 87\r\nEngineering: 83\r\nDiligence: 72\r\nLeadership: 86\r\nResilience: 88\r\n\r\nJenae's only shortcoming is lack of ambition. Flying, engineering, and influencing others all come naturally to her. This gives her an excellent foundation if she were selected as captain, but her relaxed approach may cost her that opportunity.",
+					"Edwyn Wyndsmithe\r\n\r\nFlying: 94\r\nEngineering: 86\r\nDiligence: 90\r\nLeadership: 82\r\nResilience: 78\r\n\r\nEdwyn is extremely confident in his abilities, but not without reason. He's a superb flyer, with a strong mind, and gets along well with others. Oddly, Edwyn is personally quite certain he will be chosen as captain.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-225208"] = {
+			["base"] = {
+				["title"] = "From the Depths They Come",
+				["text"] = {
+					"<Many of the pages in this notebook are damp, and the ink has run beyond legibility. You flip to the pages you can read.>\r\n\r\nThey say it was the Day of Darkness, but that's because they didn't live by the water. It wasn't the day of darkness, it was afterwards, on the second shift. \r\n\r\nI remember because I was outside with my partner looking at Beledar, thinking we were safe.",
+					"Then they came, from the ocean, from a place that, up until then, had been ours. The place I made my trade, the place that provided me food. \r\n\r\nThey came, and they slaughtered. \r\n\r\nKobyss they are called. I call them Death.",
+					"For years we had lived in relative safety, skirmishes with the nerubians happened, but not like it is now. Not this state of total war. \r\n\r\nBut after the kobyss first arrived, they kept coming. Always with the shifting of Beledar. Every time the void came, the kobyss came with it.\r\n\r\nIt wasn't that many, at the start. Deadly, fast, but not that many. \r\n\r\nNot like it is now.",
+					"They have been hitting us for so long, that I can't really put a time on when the rate of attack increased. Maybe it was slowly over time, as the pull of the void drew them to Beledar.\r\n\r\nAll I know is that I can't stay here, not anymore. To stay here is to die. \r\n\r\nAfter Beledar shifts back to the light, I plan to leave this place, and never return.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["GameObject-355487"] = {
+			["base"] = {
+				["title"] = "Desire",
+				["text"] = {
+					"Desire.\r\n\r\nVenthyr are mostly loyal servants but they function best when properly motivated. Why choose this eternity if it does not come with appropriate rewards?\r\n\r\nAnd so I name the Medallion of Desire to grant authority to a venthyr to manage my court and their needs. \r\n\r\nAs well as collect a savory number of special souls that my most elite and trusted of children might enjoy. May this medallion allow this Harvester to grow the Castle Ward and the aspirations of its venthyr ever higher.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1699] = {
+						0.5338095426559448,
+						0.3192274570465088,
+					},
+				},
+			},
+		},
+		["GameObject-455277"] = {
+			["base"] = {
+				["title"] = "Notes On The Machine Speakers: Fragment V",
+				["text"] = {
+					'A Machine Speaker who has delayed their sync in the Awakening Machine risks non-compliant behavior. After three to five thousand years, the longer they delay, the greater the chance of non-compliance.\r\n\r\nThis may include unacceptable displays of emotion and decreased productivity. Outright rejection of work schedules, assigned duties, and basic titan-issued directives is described as "deviance". Such behavior merits immediate correction in the Awakening Machine or exile.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2214] = {
+						0.636680006980896,
+						0.587612509727478,
+					},
+				},
+			},
+		},
+		["GameObject-355462"] = {
+			["base"] = {
+				["title"] = "Avarice",
+				["text"] = {
+					'Avarice.\r\n\r\nThis medallion bestows the wielder authority over the Catacombs Ward. There let those afflicted with this burden be sealed away until long after the time they believed they would be remembered. \r\n\r\nLet them fade away to be forgotten, the memory of their "great deeds" be measured against the unending weight of eternity.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1699] = {
+						0.5509898662567139,
+						0.3032235503196716,
+					},
+				},
+			},
+		},
+		["GameObject-355486"] = {
+			["base"] = {
+				["title"] = "Renathal's Notes",
+				["text"] = {
+					"Stolen by that upstart bootlicking backstabber, the Lord Chamberlain, the Medallion of Pride is one of the most powerful of the seven.\r\n\r\nWe will not use subtlety here. I will see if the Maw Walker would like a bit of revenge on that unkempt creature who fancies himself a venthyr. \r\n\r\nThey will probably need some allies if they plan to assault the Halls of Atonement.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1699] = {
+						0.5737051367759705,
+						0.3049479126930237,
+					},
+				},
+			},
+		},
+		["GameObject-355465"] = {
+			["base"] = {
+				["title"] = "Renathal's Notes",
+				["text"] = {
+					"This medallion was recovered by the Maw Walker and the Accuser while I was still trapped within the Maw. \r\n\r\nHow they overcame the might of the Fearstalker is a story worth hearing. Just do not have the Accuser tell it.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1699] = {
+						0.5870189666748047,
+						0.3647162318229675,
+					},
+				},
+			},
+		},
+		["GameObject-355476"] = {
+			["base"] = {
+				["title"] = "Dominion",
+				["text"] = {
+					"Dominion.\r\n\r\nIt is a truth that for every one of those raised to venthyr, every soul that has expunged their past deeds and faced their burdens, there is a chance of remission. \r\n\r\nTo watch the watchers, to grant dominion over the dominating, there is the Medallion of Dominion. \r\n\r\nMay this medallion grant authority over venthyr who have succumbed to the very corruption they serve to exsanguinate.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1699] = {
+						0.5689959526062012,
+						0.390055775642395,
+					},
+				},
+			},
+		},
+		["GameObject-355464"] = {
+			["base"] = {
+				["title"] = "Dread",
+				["text"] = {
+					"Dread.\r\n\r\nThis medallion bestows upon the wielder authority over the hunting grounds of the Forest Ward.\r\n\r\nMay those who afflicted others with this burden be subjected to their own taste of true fear.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1699] = {
+						0.5870189666748047,
+						0.3647162318229675,
+					},
+				},
+			},
+		},
+		["GameObject-355489"] = {
+			["base"] = {
+				["title"] = "Wrath",
+				["text"] = {
+					"Wrath.\r\n\r\nThere is an energy to those souls fraught with wrath, rage, anger, and hate. This power goes beyond just the intensity of the anima that we cultivate, but gives a will to that power.\r\n\r\nAnd so shall be the Medallion of Wrath. Let this artifact grant authority over my Military Ward, where stone is made flesh and trained for battle. Where weapons might be forged to contain the ingenuity and anger of the souls that shall power them. \r\n\r\nLet us harness this sin so that it might allow us to carry out our noble purpose elsewhere.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1699] = {
+						0.5457959175109863,
+						0.3862932920455933,
+					},
+				},
+			},
+		},
+		["Item-225204"] = {
+			["base"] = {
+				["title"] = "Shadow Curfew Guidelines",
+				["text"] = {
+					"Since the Day of Darkness, Beledar has periodically radiated a corrupting shadow energy. Due to this persistent threat, General Steelstrike declared a general curfew during these times of shadow. Please observe the following guidelines:",
+					"When the star shifts, seek shelter.\r\n\r\nWhen you hear the warning bell and see Beledar shifting to shadow, do not delay. Have a plan for every location you are in. Take the quickest and most direct path towards a place of shelter. Abandon all non-essential items not needed for survival. Ensure that you are prepared to travel before assisting others. Leave for shelter immediately if danger appears.",
+					"Walk in the light.\r\n\r\nThe Arathi are strongest with the Sacred Flame at their back. Let Great Kyron's Lamplighters patrol the dark. Use the light of the Sacred Flame as your main defense against the darkness. If you must go out, stay within the dawntowers illumination, or prepare some means of taking the Sacred Flame with you.",
+					"Beware the shadows.\r\n\r\nThe wildlife of Khaz Algar is hostile and dangerous, more so during Beledar's Shadow. The light of Beledar does not reach beneath waterways, the Undersea, or caves which thus contain the most dangerous of wildlife and enemy combatants. Do not put others at risk by antagonizing these creatures or falling into their traps.",
+					"The Darkness comes, we are prepared.\r\n\r\nThings will go wrong, so make contingency plans. Make more than one. If your home is breached or surrounded, have an escape route. Prepare hiding places around the farm and towns. Maintain caches of supplies and weapons in each location. Work with your neighbors to practice and coordinate enacting these contingencies.",
+					"Find joy in the Flame's light.\r\n\r\nA person can only shoulder so much hardship. When time and safety permits, remember to make time for the pleasures of life. Find comfort with your spouse, joy with your family, and fellowship with your community. This is a holy land under the light of Beledar, a revelation of the Sacred Flame. We fight to protect this land. Take comfort in its blessings.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["GameObject-355482"] = {
+			["base"] = {
+				["title"] = "Envy",
+				["text"] = {
+					"Envy.\r\n\r\nGreed, the festering need for what others possess. Such souls burdened with this must be forced to confront their needs and overcome it. May they exist in squalor and desperation until their need is shattered.\r\n\r\nSo shall there be the Village Ward. May the Medallion of Envy grant its Harvester authority over this dark Ward, forever in the shadow of Castle Nathria, forever within view of something greater that can never be achieved.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1699] = {
+						0.5909287929534912,
+						0.3335340619087219,
+					},
+				},
+			},
+		},
+		["Item-223901"] = {
+			["base"] = {
+				["title"] = "Violet Silk Scrap",
+				["text"] = {
+					"<On close inspection, you can decipher an encoded message expertly woven into the patterns of the silk.\r\n\r\nIt tells of a private room in the palace with curtains of the finest violet silk, where Queen Neferess would have exclusive talks with her dearest confidante. It has fallen into disrepair since Ansurek took the crown.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
 			},
 		},
 
