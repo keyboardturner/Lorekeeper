@@ -730,6 +730,19 @@ local function ItemInitializer(button, data)
 			end
 
 			if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] and LK["LocalData"]["text"][itemID] then
+				if LoreK_DB["text"][itemID]["base"]["mapData"] and LK["LocalData"]["text"][itemID]["base"]["mapData"] then
+					for zingle, dingle in pairs(LoreK_DB["text"][itemID]["base"]["mapData"]) do -- find and delete duplicate mapData
+						if LK["LocalData"]["text"][itemID]["base"]["mapData"][zingle] then
+							LoreK_DB["text"][itemID]["base"]["mapData"][zingle] = nil;
+						end
+					end
+					if next(LoreK_DB["text"][itemID]["base"]["mapData"]) == nil then
+						LoreK_DB["text"][itemID]["base"]["mapData"] = nil
+						if LoreK_DB.settings.debugAdvanced then
+							Print("Cleaning up leftover duplicate mapData: "..textTitle)
+						end
+					end
+				end
 				if LK.tCompareDeez(LoreK_DB["text"][itemID]["base"], LK["LocalData"]["text"][itemID]["base"]) then -- entry exists, but it's a copy of the LocalData, local data probably got updated, so clean SV bloat but preserve hasRead/isFavorite/mapData
 					LoreK_DB["text"][itemID]["base"]["text"] = nil;
 					LoreK_DB["text"][itemID]["base"]["title"] = nil;

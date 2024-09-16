@@ -1428,6 +1428,10 @@ LK["LocalData"] = {
 						0.8531426787376404,
 						0.2358438968658447,
 					},
+					[303] = {
+						0,
+						0,
+					},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -1672,6 +1676,14 @@ LK["LocalData"] = {
 					[84] = {
 						0.860514760017395,
 						0.2543485760688782,
+					},
+					[51] = {
+						0.4925289750099182,
+						0.5543064475059509,
+					},
+					[199] = {
+						0.6550169587135315,
+						0.4671338796615601,
 					},
 				},
 				["isObtainable"] = true,
@@ -1977,6 +1989,14 @@ LK["LocalData"] = {
 						0.8531426787376404,
 						0.2358438968658447,
 					},
+					[89] = {
+						0.54847252368927,
+						0.2477995753288269,
+					},
+					[303] = {
+						0,
+						0,
+					},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -2021,6 +2041,14 @@ LK["LocalData"] = {
 					[84] = {
 						0.5180999040603638,
 						0.7459894418716431,
+					},
+					[47] = {
+						0.736607551574707,
+						0.4451769590377808,
+					},
+					[10] = {
+						0.6683762073516846,
+						0.7462884783744812,
 					},
 				},
 				["isObtainable"] = true,
@@ -2081,6 +2109,18 @@ LK["LocalData"] = {
 					[84] = {
 						0.8511185646057129,
 						0.2606050372123718,
+					},
+					[89] = {
+						0.542594313621521,
+						0.3107328414916992,
+					},
+					[17] = {
+						0.6014890670776367,
+						0.134509801864624,
+					},
+					[303] = {
+						0,
+						0,
 					},
 				},
 				["isObtainable"] = true,
@@ -2369,6 +2409,14 @@ LK["LocalData"] = {
 						0.4977885484695435,
 						0.3322972655296326,
 					},
+					[14] = {
+						0.6923669576644897,
+						0.3316650986671448,
+					},
+					[307] = {
+						0,
+						0,
+					},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -2399,9 +2447,29 @@ LK["LocalData"] = {
 				["pageCount"] = 0,
 				["material"] = "default",
 				["mapData"] = {
+					[27] = {
+						0.5474374294281006,
+						0.5031035542488098,
+					},
+					[87] = {
+						0.7703157663345337,
+						0.1238082051277161,
+					},
+					[110] = {
+						0.6689162254333496,
+						0.73872971534729,
+					},
 					[84] = {
 						0.8523939847946167,
 						0.2619211077690125,
+					},
+					[47] = {
+						0.7214081883430481,
+						0.4801622629165649,
+					},
+					[25] = {
+						0.571865975856781,
+						0.4543938636779785,
 					},
 				},
 				["isObtainable"] = true,
@@ -3515,6 +3583,1944 @@ LK["LocalData"] = {
 					},
 				},
 				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175761"] = {
+			["base"] = {
+				["title"] = "Civil War in the Plaguelands",
+				["text"] = {
+					"Ner'zhul, the Lich King, knew that his time was short. Imprisoned within the Frozen Throne, he suspected that Kil'jaeden would send his agents to destroy him. The damage caused by Illidan's spell had ruptured the Frozen Throne; thus, the Lich King was losing his power daily. Desperate to save himself, he called his greatest mortal servant to his side: the death knight Prince Arthas.",
+					"Though his powers were drained by the Lich King's weakness, Arthas had been involved in a civil war in Lordaeron. Half of the standing undead forces, led by the banshee Sylvanas Windrunner, staged a coup for control over the undead empire. Arthas, called by the Lich King, was forced to leave the Scourge in the hands of his lieutenant, Kel'Thuzad, as the war escalated throughout the Plaguelands.",
+					"Ultimately, Sylvanas and her rebel undead (known as the Forsaken) claimed the ruined capital city of Lordaeron as their own. Constructing their own bastion beneath the wrecked city, the Forsaken vowed to defeat the Scourge and drive Kel'Thuzad and his minions from the land.",
+					"Weakened, but determined to save his master, Arthas reached Northrend only to find Illidan's naga and blood elves waiting for him. He and his nerubian allies raced against Illidan's forces to reach the Icecrown Glacier and defend the Frozen Throne.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[87] = {
+						0.7685750722885132,
+						0.1276026368141174,
+					},
+					[425] = {
+						0.3843908905982971,
+						0.4421734809875488,
+					},
+					[84] = {
+						0.8488677740097046,
+						0.2357714176177979,
+					},
+					[317] = {
+						0,
+						0,
+					},
+					[90] = {
+						0.6762285232543945,
+						0.3731723427772522,
+					},
+					[303] = {
+						0,
+						0,
+					},
+					[25] = {
+						0.5740228891372681,
+						0.4537755250930786,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["Item-19484"] = {
+			["base"] = {
+				["title"] = "The Frostwolf Artichoke",
+				["text"] = {
+					"The Frostwolf Artichoke: Tales of Stormpike Glory\r\n-By Vanndar Stormpike\r\n\r\nWhat is Frostwolf? The answer is simple: The Frostwolf are savages trying to halt our sovereign imperialistic imperative.\r\n\r\nMuch like an artichoke, the Frostwolf have a prickly, shielded set of defenses and much like an artichoke, once the outer layer is peeled away, the heart is exposed, ready to be eaten with a fine garlic dip.\r\n\r\nDelicious!\r\n",
+					"Chapter 1 - The Front Line\r\n\r\nThe front lines of the Frostwolf defenses are comprised of Frostwolf Warriors. The warriors are deployed to the front lines from Captain Galvangar's fortress: Iceblood Garrison. The most efficient manner in which to take out this layer of the defenses is to destroy Iceblood Garrison.\r\n\r\nLay siege to the fortress and destroy Captain Galvangar. Once this is done, the front lines will crumble.\r\n",
+					"Chapter 2 - Iceblood and Tower Point\r\n\r\nOnce the first layer is down, the second layer of the 'artichoke' will be exposed. Destroying the Frostwolf towers that sit near the front lines will cripple the Legionnaire and patrols that swarm the rear flank.\r\n\r\nThe towers are heavily fortified, each housing one of Drek'Thar's elite Commanders. They must be killed. This will expedite the dismantling of the Frostwolf defenses.",
+					"Chapter 3 - The Four Commanders\r\n \r\nIf you have been following the wisdom of this guide, then by now, two of Drek'Thar's Commanders are dead. Good work, soldier! Their resolve is already weakening. You must now complete the dissemination of the chain of command by slaying the remaining two commanders.\r\n\r\nWith all four of the Commanders slain, the Frostwolf Legionnaires that guard Frostwolf Keep will be scattered - left without command. Ripe for the picking!\r\n",
+					"Chapter 4 - The East and West Frostwolf Towers\r\n\r\nThere is now only one layer standing between you and victory; Drek'Thar's most trusted and powerful guard units: The Frostwolf Guardians.\r\n\r\nThe Frostwolf Guardians are sent out from the platoons held in reserve at the east and west Frostwolf towers. Destroy those towers and watch the remaining Frostwolf Guardians flee in shame.",
+					'Epilogue\r\n\r\n"Smother the heart of the artichoke with garlic butter and mayonnaise. Compliment the meal with an aged, heady ale."\r\n\r\nDrek\'Thar now stands alone, his two mutts at his side. Capture the Frostwolf Relief Hut to aid in your battle and destroy Drek\'Thar. When the General falls, this land will finally turn over to its rightful owner: The Stormpike.\r\n',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175762"] = {
+			["base"] = {
+				["title"] = "The Lich King Triumphant",
+				["text"] = {
+					"Even weakened as he was, Arthas ultimately outmaneuvered Illidan and reached the Frozen Throne first. Using his runeblade, Frostmourne, Arthas shattered the Lich King's icy prison and thereby released Ner'zhul's enchanted helm and breastplate.",
+					"Arthas placed the unimaginably powerful helm on his head and became the new Lich King. Ner'zhul and Arthas' spirits fused into a single mighty being, just as Ner'zhul had always planned. Illidan and his troops were forced to flee back to Outland in disgrace, while Arthas became one of the most powerful entities the world had ever known.",
+					"Currently Arthas, the new and immortal Lich King, resides in Northrend; he is rumored to be rebuilding the citadel of Icecrown. His trusted lieutenant, Kel'Thuzad, commands the Scourge in the Plaguelands. Sylvanas and her rebel Forsaken hold only the Tirisfal Glades, a small portion of the war-torn kingdom.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[317] = {
+						0,
+						0,
+					},
+					[306] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-210490"] = {
+			["base"] = {
+				["title"] = "Holia Sunshield",
+				["text"] = {
+					"Holia Sunshield\r\nDefender of the Scarlet Crusade\r\nKilled while slaying the Dreadlord Beltheris",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[432] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175745"] = {
+			["base"] = {
+				["title"] = "The Dark Portal and the Fall of Stormwind",
+				["text"] = {
+					"As Kil'jaeden prepared the Horde for its invasion of Azeroth, Medivh continued to fight for his soul against Sargeras. King Llane, the noble monarch of Stormwind, grew wary of the darkness which seemed to taint the spirit of his former friend.",
+					"King Llane shared his concerns with Anduin Lothar, the last descendent of the Arathi bloodline, whom he named his lieutenant-at-arms. Even so, neither man could have imagined that Medivh's slow descent into madness would bring about the horrors that were to come.",
+					"As a final incentive, Sargeras promised to bestow great power upon Gul'dan if he agreed to lead the Horde to Azeroth. Through Medivh, Sargeras told the warlock that he could become a living god if he found the undersea tomb where the Guardian Aegwynn had placed Sargeras' crippled body nearly a thousand years before.",
+					" Gul'dan agreed and decided that once the denizens of Azeroth were beaten, he would find the legendary tomb and claim his reward. Assured that the Horde would serve his purposes, Sargeras ordered the invasion to begin.",
+					"Through a joint effort, Medivh and the warlocks of the Shadow Council opened the dimensional gateway known as the Dark Portal. This portal bridged the distance between Azeroth and Draenor, and it was large enough that armies might pass through it. Gul'dan dispatched orc scouts through the portal to survey the lands which they would conquer. The returning scouts assured the Shadow Council that the world of Azeroth was ripe for the taking.",
+					"Still convinced that Gul'dan's corruption would destroy his people, Durotan spoke out against the warlocks once more. The brave warrior claimed that warlocks were destroying the purity of the orcish spirit and that this reckless invasion would be their doom. Gul'dan, unable to risk killing such a popular hero, was forced to exile Durotan and his Frostwolf Clan into the far reaches of this new world.",
+					"After the exiled Frostwolves charged through the portal, only a few orc clans followed. These orcs quickly set up a base of operations within the Black Morass, a dark and swampy area far to the east of the kingdom of Stormwind. As the orcs began to branch out and explore the new lands, they came into immediate conflict with the human defenders of Stormwind. \r\n",
+					"Though these skirmishes usually ended quickly, they did much to illustrate the weaknesses and strengths of both rival species. Llane and Lothar were never able to gather accurate data of the orcs' numbers and could only guess at how great a force they would have to contend with. ",
+					"After a few years the majority of the orcish Horde had crossed into Azeroth, and Gul'dan deemed that the time for the primary strike against humanity had come. The Horde launched its full might against the unsuspecting kingdom of Stormwind. ",
+					"As the forces of Azeroth and the Horde clashed across the kingdom, internal conflicts began to take their toll on both armies. King Llane, who believed the bestial orcs to be incapable of conquering Azeroth, contemptuously held his position at his capital of Stormwind. However, Sir Lothar became convinced that the battle should be taken directly to the enemy, and he was forced to choose between his convictions and his loyalty to the king. ",
+					"Choosing to follow his instincts, Lothar stormed Medivh's tower-fortress of Karazhan with the help of the wizard's young apprentice, Khadgar. Khadgar and Lothar succeeded in vanquishing the possessed Guardian, whom they confirmed to be the source of the conflict. ",
+					"By killing Medivh's body, Lothar and the young apprentice inadvertently banished the spirit of Sargeras to the abyss. As a consequence, the pure, virtuous spirit of Medivh was also allowed to live on... and wander the astral plane for many years to come.",
+					"Although Medivh had been defeated, the Horde continued to dominate the defenders of Stormwind. As the Horde's victory drew nearer, Orgrim Doomhammer, one of the greatest orc chieftains, began to see the depraved corruption that had spread throughout the clans since their time in Draenor.",
+					"His old comrade, Durotan, returned from exile and warned him yet again of Gul'dan's treachery. In speedy retribution, Gul'dan's assassins murdered Durotan and his family, leaving only his infant son alive. Unknown to Doomhammer was the fact that Durotan's infant son was found by the human officer, Aedelas Blackmoore, and taken as a slave. \r\n\r\nThat infant orc would one day rise to become the greatest leader his people would ever know. ",
+					"Incensed by Durotan's death, Orgrim set out to free the Horde from demonic corruption and ultimately assumed the role of warchief of the Horde by killing Gul'dan's corrupt puppet, Blackhand. Under his decisive leadership the relentless Horde finally laid siege to Stormwind Keep. ",
+					"King Llane had severely underestimated the might of the Horde, and he watched helplessly as his kingdom fell to the green-skinned invaders. Ultimately King Llane was assassinated by one of the Shadow Council's finest killers: the half-orc, Garona.",
+					"Lothar and his warriors, returning home from Karazhan, hoped to stem the loss of life and save their once-glorious homeland. Instead, they returned too late and found their beloved kingdom in smoking ruins. The orcish Horde continued to ravage the countryside and claimed the surrounding lands for its own. Forced into hiding, Lothar and his companions swore a grim oath to reclaim their homeland at any cost.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[51] = {
+						0.4925664663314819,
+						0.5540093183517456,
+					},
+					[306] = {
+						0,
+						0,
+					},
+					[84] = {
+						0.8698631525039673,
+						0.3599026203155518,
+					},
+					[49] = {
+						0.2622141242027283,
+						0.422667384147644,
+					},
+					[17] = {
+						0.6240061521530151,
+						0.1606178879737854,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175750"] = {
+			["base"] = {
+				["title"] = "The Battle of Grim Batol",
+				["text"] = {
+					"Meanwhile, in the war-torn lands of the south, the scattered remnants of the Horde fought for their very survival. Though Grom Hellscream and his Warsong clan managed to evade capture, Deadeye and his Bleeding Hollow clan were rounded up and placed in the internment camps in Lordaeron. Notwithstanding these costly uprisings, the camps' wardens soon re-established control over their brutish charges.",
+					"However, unknown to the Alliance, a large force of orcs still roamed free in the northern wastes of Khaz Modan. The Dragonmaw clan, led by the infamous warlock Nekros, was using an ancient artifact known as the Demon Soul to control the Dragonqueen, Alexstrasza, and her dragonflight. With the Dragonqueen as his hostage, Nekros built up a secret army within the abandoned - some say cursed - Wildhammer stronghold of Grim Batol. ",
+					"Planning to unleash his forces and the mighty red dragons on the Alliance, Nekros hoped to reunite the Horde and continue its conquest of Azeroth. His vision did not come to pass: a small group of resistance fighters, led by the human mage Rhonin managed to destroy the Demon Soul and free the Dragonqueen from Nekros' command.",
+					"In their fury, Alexstrasza's dragons tore Grim Batol apart and incinerated the greater bulk of the Dragonmaw clan. Nekros' grand schemes of reunification came crashing down as the Alliance troops rounded up the remaining orc survivors and threw them into the waiting internment camps. The Dragonmaw clan's defeat signaled the end of the Horde, and the end of the orcs' furious bloodlust. ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[87] = {
+						0.7575070858001709,
+						0.108686089515686,
+					},
+					[7] = {
+						0.326091468334198,
+						0.4949138760566711,
+					},
+					[84] = {
+						0.8662464618682861,
+						0.3604362607002258,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175731"] = {
+			["base"] = {
+				["title"] = "Exile of the High Elves",
+				["text"] = {
+					"As the centuries passed, the night elves' new society grew strong and expanded throughout the budding forest that they came to call Ashenvale. Many of the creatures and species that were abundant before the Great Sundering, such as furbolgs and quilboars, reappeared and flourished in the land. Under the druids' benevolent leadership, the night elves enjoyed an era of unprecedented peace and tranquility under the stars.",
+					"However, many of the original Highborne survivors grew restless. Like Illidan before them, they fell victim to the withdrawal that came from the loss of their coveted magics. They were tempted to tap the energies of the Well of Eternity and exult in their magical practices. Dath'Remar, the brash, outspoken leader of the Highborne, began to mock the druids publicly, calling them cowards for refusing to wield the magic that he said was theirs by right. ",
+					"Malfurion and the druids dismissed Dath'Remar's arguments and warned the Highborne that any use of magic would be punishable by death. In an insolent and ill-fated attempt to convince the druids to rescind their law, Dath'Remar and his followers unleashed a terrible magical storm upon Ashenvale.",
+					"The druids could not bring themselves to put so many of their kin to death, so they decided to exile the reckless Highborne from their lands. Dath'Remar and his followers, glad to be rid of their conservative cousins at last, boarded a number of specially crafted ships and set sail upon the seas. Though none of them knew what awaited them beyond the waters of the raging Maelstrom, they were eager to establish their own homeland, where they could practice their coveted magics with impunity. ",
+					"The Highborne, or Quel'dorei, as Azshara had named them in ages past, would eventually set shore upon the eastern land men would call Lordaeron. They planned to build their own magical kingdom, Quel'Thalas, and reject the night elves' precepts of moon worship and nocturnal activity. Forever after, they would embrace the sun and be known only as the high elves. ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[89] = {
+						0.3967637419700623,
+						0.3981067538261414,
+					},
+					[90] = {
+						0.6185382008552551,
+						0.5789093375205994,
+					},
+					[10] = {
+						0.671137809753418,
+						0.7335357666015625,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175680"] = {
+			["base"] = {
+				["title"] = "Fossilized Egg",
+				["text"] = {
+					"Found in the sweltering wastes of the Tanaris desert, this peculiar egg remains a mystery to modern ecologists. Dating tests suggest the egg could be up to a thousand years old. Though certain elements denote insectoid structure, its true origins cannot be discerned.  The species that lays such distinct eggs still remains to be discovered.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[87] = {
+						0.758941650390625,
+						0.2438442707061768,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175681"] = {
+			["base"] = {
+				["title"] = "Roc Talon",
+				["text"] = {
+					"This petrified talon was found off of the southern coasts of Stranglethorn. Ecologists believe this talon to be that of an ancient sun roc. Though the creatures feature prominently in primitive tauren mythological cycles, the existence of this talon suggests the creatures truly existed at some point.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[87] = {
+						0.7644049525260925,
+						0.2389614582061768,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-21004"] = {
+			["base"] = {
+				["title"] = "Monument to Grom Hellscream",
+				["text"] = {
+					"Here lies Grommash Hellscream, Chieftain of the Warsong Clan\r\n\r\nIn many ways, the curse of our people began and ended with Grom.\r\nHis name meant 'giant's heart' in our ancient tongue. He earned that \r\nname a hundred-fold as he stood alone before the demon Mannoroth \r\n- and won our freedom with his blood. \r\n\r\nLok'Tar ogar, big brother. May the Warsong never fade. \r\n\r\n-Thrall, Warchief of the Horde \r\n",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[63] = {
+						0.8284787535667419,
+						0.7900363206863403,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175739"] = {
+			["base"] = {
+				["title"] = "War of the Three Hammers",
+				["text"] = {
+					"The dwarves of Ironforge Mountain lived in peace for many long centuries. However, their society grew too large within the confines of their mountain cities. Though the mighty High King, Modimus Anvilmar, ruled over all dwarves with justice and wisdom, three powerful factions had arisen amongst the dwarven society. ",
+					"The Bronzebeard clan, ruled by Thane Madoran Bronzebeard, held close ties to the High King and stood as the traditional defenders of Ironforge Mountain. The Wildhammer clan, ruled by Thane Khardros Wildhammer, inhabited the foothills and crags around the base of the mountain and sought to gain more control within the city. ",
+					"The third faction, the Dark Iron clan, was ruled by the sorcerer-thane Thaurissan. The Dark Irons hid within the deepest shadows under the mountain and plotted against both their Bronzebeard and the Wildhammer cousins.",
+					"For a time the three factions kept a tenuous peace, but tensions erupted when High King Anvilmar passed away from old age. The three ruling clans went to war for control of Ironforge itself. The dwarf civil war raged under the earth for many years. Eventually the Bronzebeards, who had the largest standing army, banished the Dark Irons and Wildhammers from under the mountain. ",
+					"Khardros and his Wildhammer warriors traveled north through the barrier gates of Dun Algaz, and they founded their own kingdom within the distant peak of Grim Batol. There, the Wildhammers thrived and rebuilt their stores of treasure. Thaurissan and his Dark Irons did not fare as well. Humiliated and enraged by their defeat, they vowed revenge against Ironforge. Leading his people far to the south, Thaurissan founded a city (which he named after himself) within the beautiful Redridge Mountains.",
+					"Prosperity and the passing of years did little to ease the Dark Iron's rancor toward their cousins. Thaurissan and his sorceress wife, Modgud, launched a two-pronged assault against both Ironforge and Grim Batol. The Dark Irons were intent on claiming all of Khaz Modan for their own. ",
+					"The Dark Iron armies smashed against their cousins' strongholds and very nearly took both kingdoms. However, Madoran Bronzebeard ultimately led his clan to a decisive victory over Thaurissan's sorcerous army. Thaurissan and his servants fled back to the safety of their city, unaware of the events transpiring at Grim Batol, where Modgud's army would fare no better against Khardros and his Wildhammer warriors. ",
+					"As she confronted the enemy warriors, Modgud used her powers to strike fear into their hearts. Shadows moved at her command, and dark things crawled up from the depths of the earth to stalk the Wildhammers in their own halls. Eventually Modgud broke through the gates and laid siege to the fortress itself. The Wildhammers fought desperately, Khardros himself wading through the roiling masses to slay the sorceress queen. ",
+					"With their queen lost, the Dark Irons fled before the fury of the Wildhammers. They raced south toward their king's stronghold, only to meet the armies of Ironforge, which had come to aid Grim Batol. Crushed between two armies, the remaining Dark Iron forces were utterly destroyed. ",
+					"The combined armies of Ironforge and Grim Batol then turned south, intent on destroying Thaurissan and his Dark Irons once and for all. They had not gone far when Thaurissan's fury resulted in a spell of cataclysmic proportions. Seeking to summon a supernatural minion that would ensure his victory, Thaurissan called upon the ancient powers sleeping beneath the world. To his shock, and ultimately his doom, the creature that emerged was more terrible than any nightmare he could have imagined.",
+					"Ragnaros the Firelord, immortal lord of all fire elementals, had been banished by the Titans when the world was young. Now, freed by Thaurissan's call, Ragnaros erupted into being once again. Ragnaros' apocalyptic rebirth into Azeroth shattered the Redridge Mountains and created a raging volcano at the center of the devastation. ",
+					"The volcano, known as Blackrock Mountain, was bordered by the Searing Gorge to the north and the Burning Steppes to the south. Though Thaurissan was killed by the forces he had unleashed, his surviving brethren were ultimately enslaved by Ragnaros and his elementals. They remain within the depths of Blackrock to this day. ",
+					"Witnessing the horrific devastation and the fires spreading across the southern mountains, King Madoran and King Khardros halted their armies and hastily turned back towards their kingdoms, unwilling to face the awesome wrath of Ragnaros. ",
+					"The Bronzebeards returned to Ironforge and rebuilt their glorious city. The Wildhammers also returned home to Grim Batol. However, the death of the Modgud had left an evil stain on the mountain fortress, and the Wildhammers found it uninhabitable.",
+					" They were bitter in their hearts over the loss of their beloved home. King Bronzebeard offered the Wildhammers a place to live within the borders of Ironforge, but the Wildhammers steadfastly refused. Khardros took his people north towards the lands of Lordaeron. Settling within the lush forests of the Hinterlands, the Wildhammers crafted the city of Aerie Peak, where the Wildhammers grew closer to nature and even bonded with the mighty gryphons of the area.",
+					"Seeking to retain relations and trade with their cousins, the dwarves of Ironforge constructed two massive arches, the Thandol Span, to bridge the gap between Khaz Modan and Lordaeron. Bolstered by mutual trade, the two kingdoms prospered. After the deaths of Madoran and Khardros, their sons jointly commissioned two great statues in honor of their fathers. ",
+					"The two statues would stand guard over the pass into the southlands, which had become volcanic in the wake of Ragnaros' scorching presence. They served as both a warning to all who would attack the dwarven kingdoms, and as a reminder of what price the Dark Irons paid for their crimes. ",
+					"The two kingdoms retained close ties for some years, but the Wildhammers were much changed by the horrors they witnessed at Grim Batol. They took to living above ground on the slopes of Aerie Peak, instead of carving a vast kingdom within the mountain. The ideological differences between the two remaining dwarven clans eventually led to their parting of ways. ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[49] = {
+						0.2891451120376587,
+						0.4129098653793335,
+					},
+					[87] = {
+						0.7499884366989136,
+						0.08970469236373901,
+					},
+					[7] = {
+						0.326091468334198,
+						0.4949138760566711,
+					},
+					[243] = {
+						0,
+						0,
+					},
+					[199] = {
+						0.5005448460578918,
+						0.8654175996780396,
+					},
+					[26] = {
+						0.1413901448249817,
+						0.441289484500885,
+					},
+					[303] = {
+						0,
+						0,
+					},
+					[84] = {
+						0.6648570895195007,
+						0.4343588948249817,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175748"] = {
+			["base"] = {
+				["title"] = "The Birth of the Lich King",
+				["text"] = {
+					"Ner'zhul and his followers entered the Twisting Nether, the ethereal plane that connects all of the worlds scattered throughout the Great Dark Beyond. Unfortunately Kil'jaeden and his demonic minions were waiting for them. Kil'jaeden, who had sworn to take vengeance on Ner'zhul for his prideful defiance, slowly tore the old shaman's body apart, piece by piece. ",
+					"Kil'jaeden kept the shaman's spirit alive and intact, thus leaving Ner'zhul painfully aware of his body's gross dismemberment. Though Ner'zhul pleaded with the demon to release his spirit and grant him death, the demon grimly replied that the Blood Pact they had made long ago was still binding, and that Ner'zhul still had a purpose to serve.",
+					"The orcs' failure to conquer the world for the Burning Legion forced Kil'jaeden to create a new army to sow chaos throughout the kingdoms of Azeroth. This new army could not be allowed to fall prey to the same petty rivalries and infighting that had plagued the Horde. It would have to be merciless and single-minded in its mission. This time, Kil'jaeden could not afford to fail. ",
+					"Holding Ner'zhul's spirit helpless in stasis, Kil'jaeden gave him one last chance to serve the Legion or suffer eternal torment. Once again, Ner'zhul recklessly agreed to the demon's pact. Ner'zhul's spirit was placed within a specially crafted block of diamond-hard ice gathered from the far reaches of the Twisting Nether. ",
+					"Encased within the frozen cask, Ner'zhul felt his consciousness expand ten thousand-fold. Warped by the demon's chaotic powers, Ner'zhul became a spectral being of unfathomable power. At that moment, the orc known as Ner'zhul was shattered forever, and the Lich King was born.",
+					"Ner'zhul's loyal death knights and Shadowmoon followers were also transformed by the demon's chaotic energies. The wicked spellcasters were ripped apart and remade as skeletal liches. The demons had ensured that even in death, Ner'zhul's followers would serve him unquestioningly.",
+					"When the time was right, Kil'jaeden explained the mission for which he had created the Lich King. Ner'zhul was to spread a plague of death and terror across Azeroth that would snuff out human civilization forever. All those who died from the dreaded plague would arise as the undead, and their spirits would be bound to Ner'zhul's iron will forever.",
+					" Kil'jaeden promised that if Ner'zhul accomplished his dark mission of scouring humanity from the world, he would be freed from his curse and granted a new, healthy body to inhabit.",
+					"Though Ner'zhul was agreeable and seemingly anxious to play his part, Kil'jaeden remained skeptical of his pawn's loyalties. Keeping the Lich King bodiless and trapped within the crystal cask assured his good conduct for the short term, but the demon knew that he would need to keep a watchful eye on him. To this end, Kil'jaeden called upon his elite demon guard, the vampiric dreadlords, to police Ner'zhul and ensure that he accomplished his dread task. ",
+					"Tichondrius, the most powerful and cunning of the dreadlords, warmed to the challenge; he was fascinated by the plague's severity and the Lich King's unbridled potential for genocide.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[317] = {
+						0,
+						0,
+					},
+					[25] = {
+						0.5799304246902466,
+						0.4606656432151794,
+					},
+					[47] = {
+						0.7208842039108276,
+						0.4638816118240356,
+					},
+					[306] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175684"] = {
+			["base"] = {
+				["title"] = "Saurial Egg",
+				["text"] = {
+					"Found in the remote rainforest of the Un'Goro Crater, this egg once held an embryonic Devilsaur. The saurial's genetic material has proven invaluable to League ecologists who are closer than ever to devising a serum for the devilsaurs' debilitating venom.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[87] = {
+						0.7829499244689941,
+						0.223034143447876,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175736"] = {
+			["base"] = {
+				["title"] = "Ironforge - the Awakening of the Dwarves",
+				["text"] = {
+					"In the ancient times, after the Titans departed Azeroth, their children, known as the earthen, continued to shape and guard the deep recesses of the world. The earthen were largely unconcerned with the affairs of the surface-dwelling races and longed only to plumb the dark depths of the earth. ",
+					"When the world was sundered by the Well of Eternity's implosion, the earthen were deeply affected. Reeling with the pain of the earth itself, the earthen lost much of their identity and sealed themselves within the stone chambers where they were first created. Uldaman, Uldum, Ulduar... these were the names of the ancient Titan cities where the earthen first took shape and form. Buried deep beneath the world, the earthen rested in peace for nearly eight thousand years. ",
+					"Though it is unclear what awakened them, the earthen sealed within Uldaman eventually arose from their self-imposed slumber. These earthen found that they had changed significantly during their hibernation. Their rocky hides had softened and become smooth skin, and their powers over stone and earth had waned. They had become mortal creatures.",
+					"Calling themselves dwarves, the last of the earthen left the halls of Uldaman and ventured out into the waking world. Still lulled by the safety and wonders of the deep places, they founded a vast kingdom under the highest mountain in the land. ",
+					'They named their land Khaz Modan, or "Mountain of Khaz", in honor of the Titan shaper, Khaz\'goroth. Constructing an altar for their Titan father, the dwarves crafted a mighty forge within the heart of the mountain. Thus, the city that grew around the forge would be called Ironforge ever after.',
+					"The dwarves, by nature fascinated with shaping gems and stone, set out to mine the surrounding mountains for riches and precious minerals. Content with their labors under the world, the dwarves remained isolated from the affairs of their surface-dwelling neighbors.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[71] = {
+						0.3998520374298096,
+						0.7686346769332886,
+					},
+					[7] = {
+						0.3262726068496704,
+						0.4949900507926941,
+					},
+					[243] = {
+						0,
+						0,
+					},
+					[48] = {
+						0.3546865582466126,
+						0.4897652268409729,
+					},
+					[199] = {
+						0.5050626993179321,
+						0.8688799142837524,
+					},
+					[87] = {
+						0.7485063672065735,
+						0.09084397554397583,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175683"] = {
+			["base"] = {
+				["title"] = "Toothgnasher's Skeleton",
+				["text"] = {
+					"This is a scale replica of Toothgnasher's skeleton. The legendary ram was a wonder of Khaz Modan and the subject of many tales of dwarven folklore. To this day, ecologists have been unable to account for the ram's freakish size or physical stamina.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[87] = {
+						0.7427963018417358,
+						0.2103515267372131,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175688"] = {
+			["base"] = {
+				["title"] = "Horde Catapult",
+				["text"] = {
+					"This remnant from the Second War serves as a stirring reminder of just how perilously close the Horde came to conquering Ironforge Mountain.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[87] = {
+						0.6597829461097717,
+						0.06491047143936157,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175738"] = {
+			["base"] = {
+				["title"] = "Aegwynn and the Dragon Hunt",
+				["text"] = {
+					"As the politics and rivalries of the seven human nations waxed and waned, the line of Guardians kept its constant vigil against chaos. There were many Guardians over the years, but only one ever held the magical powers of Tirisfal at any given time. One of the last Guardians of the age distinguished herself as a mighty warrior against the shadow. ",
+					"Aegwynn, a fiery human girl, won the approbation of the Order and was given the mantle of Guardianship. Aegwynn vigorously worked to hunt down and eradicate demons wherever she found them, but she often questioned the authority of the male-dominated Council of Tirisfal.",
+					"She believed that the ancient elves and the elderly men who presided over the council were too rigid in their thinking and not farsighted enough to put a decisive end to the conflict against chaos. Impatient with lengthy discussion and debate, she yearned to prove herself worthy to her peers and superiors, and as a result frequently chose valor over wisdom in crucial situations.",
+					"As her mastery over the cosmic power of Tirisfal grew, Aegwynn became aware of a number of powerful demons that stalked the icy northern continent of Northrend. Traveling to the distant north, Aegwynn tracked the demons into the mountains. There, she found that the demons were hunting one of the last surviving dragonflights and draining the ancient creatures of their innate magic. ",
+					"The mighty dragons, who had fled from the ever-advancing march of mortal societies, found themselves too evenly matched against the dark magics of the Legion. Aegwynn confronted the demons, and with help from the noble dragons, eradicated them. Yet, as the last demon was banished from the mortal world, a great storm erupted throughout the north.",
+					" An enormous dark visage appeared in the sky above Northrend. Sargeras, the demon king and lord of the Burning Legion, appeared before Aegwynn and bristled with hellish energy. He informed the young Guardian that the time of Tirisfal was about to come to an end and that the world would soon bow before the onslaught of the Legion. ",
+					"The proud Aegwynn, believing herself to be a match for the menacing god, unleashed her powers against Sargeras' avatar. With disconcerting ease, Aegwynn battered the demonlord with her powers and succeeded in killing his physical shell. Fearing that Sargeras' spirit would linger on, Aegwynn locked the ruined husk of his body within one of the ancient halls of Kalimdor that had been blasted to the bottom of the sea when the Well of Eternity collapsed. ",
+					"Aegwynn would never know that she had done exactly as Sargeras had planned. She had inadvertently sealed the fate of the mortal world, for Sargeras, at the time of his corporeal death, had transferred his spirit into Aegwynn's weakened body. Unbeknownst to the young Guardian, Sargeras would remain cloaked within the darkest recesses of her soul for many long years.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[18] = {
+						0.6086695194244385,
+						0.5209200382232666,
+					},
+					[303] = {
+						0,
+						0,
+					},
+					[84] = {
+						0.8576149940490723,
+						0.2367932200431824,
+					},
+					[52] = {
+						0.5644708275794983,
+						0.3019936084747315,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-268164"] = {
+			["base"] = {
+				["title"] = "Uther the Lightbringer",
+				["text"] = {
+					"Here lies Uther the Lightbringer\r\nFirst Paladin - Founder of the Order of the Silver Hand\r\n\r\nUther lived and died to defend the kingdom of Lordaeron. Though he was betrayed by his most beloved student, we believe that his spirit lives on. He continues to watch over us, even as the shadows close in around our ruined land. His light is the light of all humanity - and so long as we honor his example, it shall never fade.\r\n\r\n- Anonymous",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[22] = {
+						0.521347165107727,
+						0.8352710008621216,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-210491"] = {
+			["base"] = {
+				["title"] = "Invar One-Arm",
+				["text"] = {
+					"Invar One-Arm\r\nThe first Chief Assassin of the Scarlet Crusade \r\nCitizen of Dalaran\r\nLast seen on the shores of Northrend",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[432] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["Item-20009"] = {
+			["base"] = {
+				["title"] = "For the Light!",
+				["text"] = {
+					"His name brought Light to darkest Azeroth.\n\nHis valor tore the walls of mis'ry down.\n\nThe Silver Hand would ne'er do better more\n\nthan give the world the knight who'd give himself.",
+					"His fame was not that which he sought to grow,\n\nnor was the lordship over his own kind.\n\nInstead he chose to fight for Lordaeron\n\nto hope his kin would have to fight no more.",
+					"The tragic tale of this most holy knight\n\nwill never end with his unholy death.\n\nWe honor him, and we shall give him thanks!\n\nUther always shall know glory and Light!",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175742"] = {
+			["base"] = {
+				["title"] = "Rise of the Horde",
+				["text"] = {
+					"The orcs became increasingly aggressive under the secret control of Gul'dan and his Shadow Council. They constructed massive arenas where the orcs honed their warrior skills in trials of combat and death. During this period, a few clan chieftains spoke out against the growing depravity in their race. ",
+					"One such chieftain, Durotan of the Frostwolf clan, warned against the orcs' losing themselves to hate and fury. His words fell on deaf ears, however, as stronger chieftains such as Grom Hellscream of the Warsong clan stepped forward to champion the new age of warfare and dominance.",
+					"Kil'jaeden knew that the orc clans were almost ready, but he needed to be certain of their ultimate loyalty. In secret, he had the Shadow Council summon Mannoroth the Destructor, the living vessel of destruction and rage. Gul'dan called the clan chieftains together and convinced them that drinking Mannoroth's raging blood would make them utterly invincible.\r\n",
+					" Led by Grom Hellscream, all the clan chiefs except Durotan drank and thereby sealed their fates as slaves to the Burning Legion. Empowered by Mannoroth's rage, the chieftains unwittingly extended this subjugation to their unsuspecting brethren. ",
+					"Consumed with the curse of this new bloodlust, the orcs sought to unleash their fury on any who stood before them. Sensing that the time had come, Gul'dan united the warring clans into a single unstoppable Horde. ",
+					"However, knowing that the various chieftains like Hellscream and Orgrim Doomhammer would vie for overall supremacy, Gul'dan set up a puppet warchief to rule over this new Horde. Blackhand the Destroyer, a particularly depraved and vicious orc warlord, was chosen to be Gul'dan's puppet. Under Blackhand's command, the Horde set out to test itself against the simple draenei.",
+					"Over the course of a few months, the Horde eradicated nearly every draenei living on Draenor. Only a scattered handful of survivors managed to evade the orcs' awesome wrath. Flushed with victory, Gul'dan reveled in the Horde's power and might. Still, he knew that without any enemies to fight, the Horde would consume itself with endless infighting in its unstoppable appetite for glorious slaughter.",
+					"Kil'jaeden knew that the Horde was finally prepared. The orcs had become the Burning Legion's greatest weapon. The cunning demon shared his knowledge with his waiting master, and Sargeras agreed that the time of his revenge had finally come. ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[51] = {
+						0.493681788444519,
+						0.5514822006225586,
+					},
+					[87] = {
+						0.7702448964118958,
+						0.1277025938034058,
+					},
+					[4] = {
+						0.4968437552452087,
+						0.4575161337852478,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175774"] = {
+			["base"] = {
+				["title"] = "Fellari Swiftarrow",
+				["text"] = {
+					"Fellari Swiftarrow\r\nRanger Captain of the Scarlet Crusade \r\nCitizen of Quel'Thalas \r\nLost in the forests of Silverpine",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[304] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-177222"] = {
+			["base"] = {
+				["title"] = "Pteradon Skeleton",
+				["text"] = {
+					"This intact pteradon skeleton was recovered from the remote Un'Goro Crater. Based on the skeletal structure, it is clear that this specific genus has not yet been encountered. This skeleton could have been preserved for any number of centuries beneath the region's rich soil. \r\n",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[87] = {
+						0.7274354696273804,
+						0.1241941452026367,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175779"] = {
+			["base"] = {
+				["title"] = "Orman of Stromgarde",
+				["text"] = {
+					"Orman of Stromgarde\r\nThe first Captain General of the Scarlet Crusade \r\nCitizen of Stromgarde\r\nLost at the mouth of Icecrown Glacier",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[304] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-408646"] = {
+			["base"] = {
+				["title"] = "Clue Scrap",
+				["text"] = {
+					'"...Thunder..."\r\n\r\nFind two more clues where caves scream and razors kraul.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[199] = {
+						0.5012854933738708,
+						0.866545557975769,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175741"] = {
+			["base"] = {
+				["title"] = "Kil'jaeden and the Shadow Pact",
+				["text"] = {
+					"Around the time of Medivh's birth on Azeroth, Kil'jaeden the Deceiver sat and brooded amongst his followers within the Twisting Nether. The cunning demonlord, under orders of his master, Sargeras, was plotting the Burning Legion's second invasion of Azeroth. ",
+					"This time he would not allow any mistakes. Kil'jaeden surmised that he needed a new force to weaken Azeroth's defenses before the Legion even set foot upon the world. If the mortal races, such as the night elves and dragons, were forced to contend with a new threat, they would be too weak to pose any real resistance when the Legion's true invasion arrived.",
+					"It was at this time that Kil'jaeden discovered the lush world of Draenor floating peacefully within the Great Dark Beyond. Home to the shamanistic, clan-based orcs and the peaceful draenei, Draenor was as idyllic as it was vast. ",
+					"The noble orc clans roamed the open prairies and hunted for sport, while the inquisitive draenei built crude cities within the world's towering cliffs and peaks. Kil'jaeden knew that Draenor's denizens had great potential to serve the Burning Legion if they could be cultivated properly. ",
+					"Of the two races, Kil'jaeden saw that the warrior orcs were more susceptible to the Legion's corruption. He enthralled the elder orc shaman, Ner'zhul, in much the same way that Sargeras brought Queen Azshara under his control in ages past. Using the cunning shaman as his conduit, the demon spread battle lust and savagery throughout the orc clans. ",
+					"Before long, the spiritual race was transformed into a bloodthirsty people. Kil'jaeden then urged Ner'zhul and his people to take the last step: to give themselves over entirely to the pursuit of death and war. Yet the old shaman, sensing that his people would be enslaved to hatred forever, somehow resisted the demon's command. ",
+					"Frustrated by Ner'zhul's resistance, Kil'jaeden searched for another orc who would deliver his people into the Legion's hands. The clever demonlord finally found the willing disciple he sought - Ner'zhul's ambitious apprentice, Gul'dan. Kil'jaeden promised Gul'dan untold power in exchange for his utter obedience. ",
+					"The young orc became an avid student of demonic magic and developed into the most powerful mortal warlock in history. He taught other young orcs the arcane arts and strove to eradicate the orcs' shamanistic traditions. Gul'dan showed a new brand of magic to his brethren, a terrible new power that reeked of doom.",
+					"Kil'jaeden, seeking to tighten his hold over the orcs, helped Gul'dan found the Shadow Council, a secretive sect that manipulated the clans and spread the use of warlock magics throughout Draenor. As more and more orcs began to wield warlock magics, the gentle fields and streams of Draenor began to blacken and fade. Over time, the vast prairies the orcs had called home for generations withered away, leaving only red barren soil. The demon energies were slowly killing the world.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[317] = {
+						0,
+						0,
+					},
+					[307] = {
+						0,
+						0,
+					},
+					[47] = {
+						0.7412028312683105,
+						0.4538248181343079,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175740"] = {
+			["base"] = {
+				["title"] = "The Last Guardian",
+				["text"] = {
+					"The Guardian Aegwynn grew powerful over the years and used the Tirisfal energies to greatly extend her life. Foolishly believing that she had defeated Sargeras for good, she continued to safeguard the world from the demon king's minions for nearly nine hundred years. However, the Council of Tirisfal finally decreed that her stewardship had come to an end. ",
+					"The Council ordered Aegwynn to return to Dalaran so that they could choose a new successor for the Guardian power. Yet Aegwynn, ever distrustful of the Council, decided to choose a successor on her own.",
+					"The proud Aegwynn planned to give birth to a son whom she would divest her power to. She had no intention of allowing the Order of Tirisfal to manipulate her successor as they had tried to manipulate her. Traveling to the southern nation of Azeroth, Aegwynn found the perfect man to father her son: a skilled human magician known as Nielas Aran. ",
+					"Aran was the court conjuror and advisor for Azeroth's king. Aegwynn seduced the magician and conceived a son by him. Nielas' natural affinity for magic would run deep within the unborn child and define the tragic steps the child would later take. The power of Tirisfal was also implanted in the child, yet it wasn't to awaken until he reached physical maturity.",
+					'Time passed, and Aegwynn gave birth to her son in a secluded grove. Naming the boy Medivh, which means "keeper of secrets" in the high elven tongue, Aegwynn believed that the boy would mature to become the next Guardian. Unfortunately the malignant spirit of Sargeras, which had been hiding inside her, had possessed the defenseless child while it was still in her womb. Aegwynn had no idea that the world\'s newest Guardian was already possessed by its greatest nemesis.',
+					"Certain that her baby was healthy and sound, Aegwynn delivered young Medivh to the court of Azeroth and left him there to be raised by his mortal father and his people. She then wandered into the wilderness and prepared to pass into whatever afterlife awaited her. Medivh grew to become a strong boy and had no idea of the potential power of his Tirisfalin birthright.",
+					"Sargeras bided his time until the youth's power manifested itself. By the time Medivh had reached his teenage years, he had become very popular in Azeroth for his magical prowess and often went off on adventures with his two friends: Llane, the prince of Azeroth, and Anduin Lothar, one of the last descendents of the Arathi bloodline. The three boys constantly caused mischief around the kingdom, but they were well liked by the general citizenry.",
+					"When Medivh reached the age of fourteen, the cosmic power inside him awakened and clashed with the pervasive spirit of Sargeras that lurked within his soul. Medivh fell into a catatonic state which lasted for many years. \r\n",
+					"When he awakened from his coma, he found that he had grown to adulthood, and his friends Llane and Anduin had become the regents of Azeroth. Though he wished to use his incredible newfound powers to protect the land he called home, the dark spirit of Sargeras twisted his thoughts and emotions towards an insidious end. ",
+					"Sargeras reveled within the darkening heart of Medivh, for he knew that his plans for the second invasion of the world were nearing completion, and that the world's last Guardian would bring them all to fruition. ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[48] = {
+						0.3720350861549377,
+						0.4694242477416992,
+					},
+					[52] = {
+						0.5259979963302612,
+						0.5309373140335083,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175659"] = {
+			["base"] = {
+				["title"] = "Here Lies King Terenas Menethil II",
+				["text"] = {
+					'Here lies King Terenas Menethil II -- Last True King of Lordaeron.\r\n\r\nGreat were his deeds -- long was his reign -- unthinkable was his death. \r\n\r\n         "May the Father lie blameless for the deeds of the son. \r\n          May the bloodied crown stay lost and forgotten."\r\n',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[90] = {
+						0.660089373588562,
+						0.4379124641418457,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-210488"] = {
+			["base"] = {
+				["title"] = "Ferren Marcus",
+				["text"] = {
+					"Ferren Marcus\r\nHigh Abbot of the Scarlet Monastery \r\nCitizen of Stratholme \r\nKilled defending the Scarlet Monastery at the First Summertide Assault",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[432] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175775"] = {
+			["base"] = {
+				["title"] = "Ferren Marcus",
+				["text"] = {
+					"Ferren Marcus\r\nHigh Abbot of the Scarlet Monastery \r\nCitizen of Stratholme \r\nKilled defending the Scarlet Monastery at the First Summertide Assault",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["mapData"] = {
+					[304] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-210486"] = {
+			["base"] = {
+				["title"] = "Dorgar Stoenbrow",
+				["text"] = {
+					"Dorgar Stoenbrow\r\nWarrior of the Scarlet Crusade \r\nLord of the Red Caverns \r\nLast seen in the Mountains of Alterac",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[432] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175771"] = {
+			["base"] = {
+				["title"] = "Arellas Fireleaf",
+				["text"] = {
+					"Arellas Fireleaf\r\nHigh Wizard of the Scarlet Crusade \r\nCitizen of Quel'Thalas  \r\nLocked in eternal combat with the Necromancer Diesalven",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[304] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175732"] = {
+			["base"] = {
+				["title"] = "The Sentinels and the Long Vigil",
+				["text"] = {
+					"With the departure of their wayward cousins, the night elves turned their attention back to the safekeeping of their enchanted homeland. The druids, sensing that their time of hibernation was drawing near, prepared to sleep and leave their loved ones and families behind. ",
+					"Tyrande, who had become the High Priestess of Elune, asked her love, Malfurion, not to leave her for Ysera's Emerald Dream. But Malfurion, honor bound to enter the changing Dreamways, bid the priestess farewell and swore that they would never be apart so long as they held true to their love. ",
+					"Left alone to protect Kalimdor from the dangers of the new world, Tyrande assembled a powerful fighting force from amongst her night elf sisters. The fearless, highly trained warrior women who pledged themselves to Kalimdor's defense became known as the Sentinels. Though they preferred to patrol the shadowy forests of Ashenvale on their own, they had many allies upon which they could call in times of urgency. ",
+					"The demigod Cenarius remained nearby in the Moonglades of Mount Hyjal. His sons, known as the Keepers of the Grove, kept close watch on the night elves and regularly helped the Sentinels maintain peace in the land. Even Cenarius' shy daughters, the dryads, appeared in the open with increasing frequency.",
+					"The task of policing Ashenvale kept Tyrande busy, but without Malfurion at her side, she knew little joy. As the long centuries passed while the druids slept, her fears of a second demonic invasion grew. She could not shake the unnerving feeling that the Burning Legion might still be out there, beyond the Great Dark of the sky, plotting its revenge upon the night elves and the world of Azeroth.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[69] = {
+						0.3090211153030396,
+						0.428196132183075,
+					},
+					[210] = {
+						0.4219188690185547,
+						0.7364071607589722,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175763"] = {
+			["base"] = {
+				["title"] = "Old Hatreds - The Colonization of Kalimdor",
+				["text"] = {
+					"Though victory was theirs, the mortal races found themselves in a world shattered by war. The Scourge and the Burning Legion had all but destroyed the civilizations of Lordaeron, and had almost finished the job in Kalimdor. There were forests to heal, grudges to bury, and homelands to settle. The war had wounded each race deeply, but they had selflessly banded together to attempt a new beginning, starting with the uneasy truce between the Alliance and Horde.",
+					"Thrall led the orcs to the continent of Kalimdor, where they founded a new homeland with the help of their tauren brethren. Naming their new land Durotar after Thrall's murdered father, the orcs settled down to rebuild their once-glorious society.",
+					"Now that the demon curse was ended, the Horde changed from a warlike juggernaut into more of a loose coalition, dedicated to survival and prosperity rather than conquest. Aided by the noble tauren and the cunning trolls of the Darkspear tribe, Thrall and his orcs looked forward to a new era of peace in their own land.",
+					"The remaining Alliance forces under Jaina Proudmoore settled in southern Kalimdor. Off the eastern coast of Dustwallow Marsh, they built the rugged port city of Theramore. There, the humans and their dwarven allies worked to survive in a land that would always be hostile to them. Though the defenders of Durotar and Theramore kept the tentative truce with one another, the fragile colonial serenity was not meant to last.",
+					"The peace between the orcs and humans was shattered by the arrival of a massive Alliance fleet in Kalimdor. The mighty fleet, under the command of Grand Admiral Daelin Proudmoore (Jaina's father), had left Lordaeron before Arthas had destroyed the kingdom. Having sailed for many grueling months, Admiral Proudmoore was searching for any Alliance survivors he could find.",
+					"Proudmoore's armada posed a serious threat to the stability of the region. As a renowned hero of the Second War, Jaina's father was a staunch enemy of the Horde, and he was determined to destroy Durotar before the orcs could gain a foothold in the land.",
+					"The Grand Admiral forced Jaina to make a terrible decision: support him in battle against the orcs and betray her newfound allies, or fight her own father to maintain the fragile peace that the Alliance and the Horde had finally attained. After much soul-searching, Jaina chose the latter and helped Thrall defeat her crazed father. ",
+					"Unfortunately Admiral Proudmoore died in battle before Jaina could reconcile with him or prove that orcs were no longer bloodthirsty monsters. For her loyalty, the orcs allowed Jaina's forces to return home safely to Theramore.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[71] = {
+						0.5097527503967285,
+						0.3028380274772644,
+					},
+					[307] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175682"] = {
+			["base"] = {
+				["title"] = "Geru Strider",
+				["text"] = {
+					"The largest of the plainstrider birds, the Geru are few in number and rarely encountered.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[87] = {
+						0.7696630954742432,
+						0.2160977721214294,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175756"] = {
+			["base"] = {
+				["title"] = "The Scourge of Lordaeron",
+				["text"] = {
+					"After preparing for many long months, Kel'Thuzad and his Cult of the Damned finally struck the first blow by releasing the plague of undeath upon Lordaeron. Uther and his fellow paladins investigated the infected regions in the hope of finding a way to stop the plague. Despite their efforts, the plague continued to spread and threatened to tear the Alliance apart.",
+					"As the ranks of the undead swept across Lordaeron, Terenas' only son, Prince Arthas, took up the fight against the Scourge. Arthas succeeded in killing Kel'Thuzad, but even so, the undead ranks swelled with every soldier that fell defending the land. Frustrated and stymied by the seemingly unstoppable enemy, Arthas took increasingly extreme steps to conquer them. Finally Arthas' comrades warned him that he was losing his hold on his humanity.",
+					"Arthas' fear and resolve proved to be his ultimate undoing. He tracked the plague's source to Northrend, intending to end its threat forever. Instead, Prince Arthas eventually fell prey to the Lich King's tremendous power. Believing that it would save his people, Arthas took up the cursed runeblade, Frostmourne. ",
+					"Though the sword did grant him unfathomable power, it also stole his soul and transformed him into the greatest of the Lich King's death knights. With his soul cast aside and his sanity shattered, Arthas led the Scourge against his own kingdom. Ultimately, Arthas murdered his own father, King Terenas, and crushed Lordaeron under the Lich King's iron heel.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[210] = {
+						0.4189066290855408,
+						0.7346208691596985,
+					},
+					[306] = {
+						0,
+						0,
+					},
+					[317] = {
+						0,
+						0,
+					},
+					[63] = {
+						0.3483307957649231,
+						0.4981065392494202,
+					},
+					[303] = {
+						0,
+						0,
+					},
+					[52] = {
+						0.5690475702285767,
+						0.474770188331604,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175753"] = {
+			["base"] = {
+				["title"] = "War of the Spider",
+				["text"] = {
+					"While Thrall was liberating his brethren in Lordaeron, Ner'zhul continued to build up his power base in Northrend. A great citadel was erected above the Icecrown Glacier and manned by the growing legions of the dead. Yet as the Lich King extended his influence over the land, one shadowy empire stood against his power. ",
+					"The ancient subterranean kingdom of Azjol-Nerub, which had been founded by a race of sinister humanoid spiders, sent their elite warrior-guard to attack Icecrown and end the Lich King's mad bid for dominance. Much to his frustration, Ner'zhul found that the evil nerubians were immune not only to the plague, but to his telepathic domination as well.",
+					"The nerubian spider-lords commanded vast forces and had an underground network that stretched nearly half the breadth of Northrend. Their hit-and-run tactics on the Lich King's strongholds stymied his efforts to root them out time after time. Ultimately Ner'zhul's war against the nerubians was won by attrition. With the aid of the sinister dreadlords and innumerable undead warriors, the Lich King invaded Azjol-Nerub and brought its subterranean temples crashing down upon the spider lords' heads.",
+					"Though the nerubians were immune to his plague, Ner'zhul's growing necromantic powers allowed him to raise the spider-warriors' corpses and bend them to his will. As a testament to their tenacity and fearlessness, Ner'zhul adopted the nerubians' distinctive architectural style for his own fortresses and structures. ",
+					"Left to rule his kingdom unopposed, the Lich King began preparing for his true mission in the world. Reaching out into the human lands with his vast consciousness, the Lich King called out to any dark soul that would listen.... ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[317] = {
+						0,
+						0,
+					},
+					[306] = {
+						0,
+						0,
+					},
+					[84] = {
+						0.8682129979133606,
+						0.3587459325790405,
+					},
+					[303] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175773"] = {
+			["base"] = {
+				["text"] = {
+					"Dorgar Stoenbrow\r\nWarrior of the Scarlet Crusade \r\nLord of the Red Caverns \r\nLast seen in the Mountains of Alterac",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["title"] = "Dorgar Stoenbrow",
+				["mapData"] = {
+					[304] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-210494"] = {
+			["base"] = {
+				["title"] = "Yana Bloodspear",
+				["text"] = {
+					"Yana Bloodspear\r\nThe Second Chief Assassin of the Scarlet Crusade \r\nCitizen of Dalaran  \r\nLost in the Tirisfal Glades",
+				},
+				["singlePage"] = true,
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["mapData"] = {
+					[432] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175679"] = {
+			["base"] = {
+				["title"] = "The Skull of Tyrannistrasz",
+				["text"] = {
+					"The remains of the gargantuan red dragon were found in the Wetlands shortly after the Battle of Grim Batol. Tyrannistrasz was rumored to have been the elder consort of the Dragonqueen, Alexstrasza.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[87] = {
+						0.7755205035209656,
+						0.2763707637786865,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175855"] = {
+			["base"] = {
+				["title"] = "Empires' Fall",
+				["text"] = {
+					"Aside from their shadowy origins, it is clear that the night elves came to power soon after their discovery of the Well of Eternity. Despite the trolls' attempts to keep them from expanding their territories, the night elves built up a mighty empire that expanded rapidly across primordial Kalimdor. Wielding fierce magics never before imagined by the superstitious trolls, the night elves had little trouble doing what the evil aqir could never do: topple the two greatest empires in the world.",
+					"The night elves systematically dismantled the trolls' defenses and supply chains. The trolls, unable to counter the elves' destructive magics, buckled under the onslaught. The night elves proved to be every bit as cunning and bloodthirsty as the savage trolls -- incurring the latter race's eternal hatred and disdain. The Gurubashi and Amani empires fragmented within only a few short years.",
+					"Eventually, the night elves were burned by the arcane fires they had sought to control. Their reckless use of magic had lured the demonic Burning Legion to the world. The demons crushed much of the night elves' civilization. Though there are no records to indicate that the Legion attacked either troll civilization, it is likely that battles took place across the breadth of the continent. ",
+					"At the end of this terrible conflict -- known as the War of the Ancients -- the Well of Eternity imploded. The resulting shockwave shattered the greater landmass of Kalimdor. The center of the continent was blasted beneath the sea, leaving only a small group of broken, single continents.",
+					"Thus, great chunks of both the Amani and Gurubashi Empires still exist in the present day lands of Quel'Thalas and Stranglethorn (respectively). The Azj'Aqir kingdoms of Azjol-Nerub and Ahn'Qiraj have also survived in present day Northrend and Tanaris (respectively).   \r\n\r\nBoth troll civilizations recoiled from the vast destruction of the primordial world they had known. The dauntless trolls rebuilt their ravaged cities and set out to reclaim some of their former power.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[71] = {
+						0.5247606635093689,
+						0.2689054608345032,
+					},
+					[210] = {
+						0.4207189679145813,
+						0.7375640869140625,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-210485"] = {
+			["base"] = {
+				["title"] = "Admiral Barean Westwind",
+				["text"] = {
+					"Admiral Barean Westwind\r\nGrand Admiral of the Scarlet Fleet \r\nCitizen of Kul'Tiras\r\nLost off the Frozen Coast of Northrend",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[432] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175757"] = {
+			["base"] = {
+				["title"] = "Sunwell - The Fall of Quel'Thalas",
+				["text"] = {
+					"Though he had defeated all of the people he now saw as his enemies, Arthas was still haunted by the ghost of Kel'Thuzad. The ghost told Arthas that he needed to be revived for the next phase of the Lich King's plan. To revive him, Arthas needed to bring Kel'Thuzad's remains to the mystical Sunwell, hidden within the high elves' eternal kingdom of Quel'Thalas.",
+					"Arthas and his Scourge invaded Quel'Thalas and laid siege to the elves' crumbling defenses. Sylvanas Windrunner, the Ranger-General of Silvermoon, put up a valiant fight, but Arthas eventually eradicated the high elf army and battled through to the Sunwell. In a cruel gesture of his dominance, he even raised Sylvanas' defeated body as a banshee, cursed to endless undeath in the service of Quel'Thalas' conqueror.",
+					"Ultimately, Arthas submerged Kel'Thuzad's remains within the holy waters of the Sunwell. Although the potent waters of Eternity were fouled by this act, Kel'Thuzad was reborn as a sorcerous lich. Resurrected as a far more powerful being, Kel'Thuzad explained the next phase of the Lich King's plan. ",
+					"By the time Arthas and his army of the dead turned southward, not one living elf remained in Quel'Thalas. The glorious homeland of the high elves, which had stood for more than nine thousand years, was no more.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[63] = {
+						0.3447532057762146,
+						0.4999142289161682,
+					},
+					[210] = {
+						0.4103931784629822,
+						0.7444580793380737,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-210484"] = {
+			["base"] = {
+				["title"] = "Arellas Fireleaf",
+				["text"] = {
+					"Arellas Fireleaf\r\nHigh Wizard of the Scarlet Crusade \r\nCitizen of Quel'Thalas  \r\nLocked in eternal combat with the Necromancer Diesalven",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[432] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175687"] = {
+			["base"] = {
+				["title"] = "Uldaman Relics",
+				["text"] = {
+					"These ancient pieces of earthenware were recovered from the Uldaman excavation. Though they hold little in the way of suggestive runes or hieroglyphs, they do provide a telling look at the craftsmanship and day to day accessories of the ancient dwarven race.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[87] = {
+						0.6876207590103149,
+						0.05086928606033325,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175777"] = {
+			["base"] = {
+				["title"] = "Holia Sunshield",
+				["text"] = {
+					"Holia Sunshield\r\nDefender of the Scarlet Crusade\r\nKilled while slaying the Dreadlord Beltheris",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[304] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175725"] = {
+			["base"] = {
+				["title"] = "The Old Gods and the Ordering of Azeroth",
+				["text"] = {
+					"Unaware of Sargeras' mission to undo their countless works, the Titans continued to move from world to world, shaping and ordering each planet as they saw fit. Along their journey they happened upon a small world that its inhabitants would later name Azeroth. ",
+					"As the Titans made their way across the primordial landscape, they encountered a number of hostile elemental beings. These elementals, who worshipped a race of unfathomably evil beings known only as the Old Gods, vowed to drive the Titans back and keep their world inviolate from the invaders' metallic touch. ",
+					"The Pantheon, disturbed by the Old Gods' penchant for evil, waged war upon the elementals and their dark masters. The Old Gods' armies were led by the most powerful elemental lieutenants: Ragnaros the Firelord, Therazane the Stonemother, Al'Akir the Windlord, and Neptulon the Tidehunter. ",
+					"Their chaotic forces raged across the face of the world and clashed with the colossal Titans. Though the elementals were powerful beyond mortal comprehension, their combined forces could not stop the mighty Titans. One by one, the elemental lords fell, and their forces dispersed. ",
+					"The Pantheon shattered the Old Gods' citadels and chained the five evil gods far beneath the surface of the world. Without the Old Gods' power to keep their raging spirits bound to the physical world, the elementals were banished to an abyssal plane, where they would contend with one another for all eternity. With the elementals' departure, nature calmed, and the world settled into a peaceful harmony. The Titans saw that the threat was contained and set to work.",
+					"The Titans empowered a number of races to help them fashion the world. To help them carve out the fathomless caverns beneath the earth, the Titans created the dwarf-like earthen from magical, living stone. To help them dredge out the seas and lift the land from the sea floor, the Titans created the immense but gentle sea giants. For many ages the Titans moved and shaped the earth, until at last there remained one perfect continent. ",
+					"At the continent's center, the Titans crafted a lake of scintillating energies. The lake, which they named the Well of Eternity, was to be the fount of life for the world. Its potent energies would nurture the bones of the world and empower life to take root in the land's rich soil. Over time, plants, trees, monsters, and creatures of every kind began to thrive on the primordial continent. ",
+					'As twilight fell on the final day of their labors, the Titans named the continent Kalimdor: "land of eternal starlight". ',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[87] = {
+						0.7606963515281677,
+						0.1074459552764893,
+					},
+					[89] = {
+						0.5427836179733276,
+						0.3871191740036011,
+					},
+					[307] = {
+						0,
+						0,
+					},
+					[90] = {
+						0.5601401329040527,
+						0.5065101385116577,
+					},
+					[243] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175780"] = {
+			["base"] = {
+				["title"] = "Valea Twinblades",
+				["text"] = {
+					"Valea Twinblades  \r\nWarrior of the Scarlet Crusade\r\nCitizen of Alterac  \r\nLast seen deep in the Eastern Plaguelands",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["mapData"] = {
+					[304] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-175751"] = {
+			["base"] = {
+				["title"] = "Lethargy of the Orcs",
+				["text"] = {
+					"Months passed, and more orc prisoners were rounded up and placed within the internment camps. As the camps began to overflow, the Alliance was forced to construct new camps in the plains south of the Alterac Mountains. To properly maintain and supply the growing number of camps, King Terenas levied a new tax on the Alliance nations. ",
+					"This tax, along with increased political tensions over border disputes, created widespread unrest. It seemed that the fragile pact that had forged the human nations together in their darkest hour would break at any given moment.",
+					"Amidst the political turmoil, many of the camp wardens began to notice an unsettling change come over their orc captives. The orcs' efforts to escape from the camps or even fight amongst themselves had greatly decreased in frequency over time. The orcs were becoming increasingly aloof and lethargic.",
+					" Though it was difficult to believe, the orcs - once held as the most aggressive race ever seen on Azeroth - had completely lost their will to fight. The strange lethargy confounded the Alliance leaders and continued to take its toll on the rapidly weakening orcs. ",
+					"Some speculated that some strange disease, contractible only by orcs, brought about the baffling lethargy. But Archmage Antonidas of Dalaran posed a different hypothesis. Researching what little he could find of orcish history, Antonidas learned that the orcs had been under the crippling influence of demonic power for generations.",
+					" He speculated that the orcs had been corrupted by these powers even before their first invasion of Azeroth. Clearly, demons had spiked the orcs' blood, and in turn the brutes had been granted unnaturally heightened strength, endurance, and aggression.",
+					"Antonidas theorized that the orcs' communal lethargy was not actually a disease, but a consequence of racial withdrawal from the volatile warlock magics that had made them fearsome, bloodlusted warriors. ",
+					"Though the symptoms were clear, Antonidas was unable to find a cure for the orcs' present condition. Then too, many of his fellow mages, as well as a few notable Alliance leaders, argued that finding a cure for the orcs would be an imprudent venture. Left to ponder the orcs' mysterious condition, Antonidas' conclusion was that the orcs' cure would have to be a spiritual one.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[199] = {
+						0.6552367210388184,
+						0.4670403003692627,
+					},
+					[37] = {
+						0.8530023694038391,
+						0.6974332332611084,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-210492"] = {
+			["base"] = {
+				["title"] = "Orman of Stromgarde",
+				["text"] = {
+					"Orman of Stromgarde\r\nThe first Captain General of the Scarlet Crusade \r\nCitizen of Stromgarde\r\nLost at the mouth of Icecrown Glacier",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[432] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175772"] = {
+			["base"] = {
+				["title"] = "Admiral Barean Westwind",
+				["text"] = {
+					"Admiral Barean Westwind\r\nGrand Admiral of the Scarlet Fleet \r\nCitizen of Kul'Tiras\r\nLost off the Frozen Coast of Northrend",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[304] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175726"] = {
+			["base"] = {
+				["title"] = "Charge of the Dragonflights",
+				["text"] = {
+					"Satisfied that the small world had been ordered and that their work was done, the Titans prepared to leave Azeroth. However, before they departed, they charged the greatest species of the world with the task of watching over Kalimdor, lest any force should threaten its perfect tranquility. In that age, there were many dragonflights. ",
+					"Yet there were five flights that held dominion over their brethren. It was these five flights that the Titans chose to shepherd the budding world. The greatest members of the Pantheon imbued a portion of their power upon each of the flights' leaders. These majestic dragons (as listed below) became known as the Great Aspects, or the Dragon Aspects. ",
+					"Aman'Thul, the Highfather of the Pantheon, bestowed a portion of his cosmic power upon the massive bronze dragon, Nozdormu. The Highfather empowered Nozdormu to guard time itself and police the ever-spinning pathways of fate and destiny. The stoic, honorable Nozdormu became known as the Timeless One.",
+					"Eonar, the Titan patron of all life, gave a portion of her power to the red leviathan, Alexstrasza. Ever after, Alexstrasza would be known as the Life-Binder, and she would work to safeguard all living creatures within the world. Due to her supreme wisdom and limitless compassion for all living things, Alexstrasza was crowned the Dragonqueen and given dominion over her kind.",
+					"Eonar also blessed Alexstrasza's younger sister, the lithe green dragon Ysera, with a portion of nature's influence. Ysera fell into an eternal trance, bound to the waking Dream of Creation. Known as the Dreamer, she would watch over the growing wilds of the world from her verdant realm, the Emerald Dream. ",
+					"Norgannon, the Titan lore keeper and master-magician, granted the blue dragon, Malygos, a portion of his vast power. From then on, Malygos would be known as the Spell-Weaver, the guardian of magic and hidden arcanum.",
+					"Khaz'goroth, the Titan shaper and forger of the world, bestowed some of his vast power upon the mighty black wyrm, Neltharion. The great-hearted Neltharion, known afterwards as the Earth-Warder, was given dominion over the earth and the deep places of the world. He embodied the strength of the world and served as Alexstrasza's greatest supporter.",
+					"Thus empowered, the Five Aspects were charged with the world's defense in the Titans' absence. With the dragons prepared to safeguard their creation, the Titans left Azeroth behind forever. Unfortunately it was only a matter of time before Sargeras learned of the newborn world's existence.... ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[18] = {
+						0.6082239151000977,
+						0.5054997205734253,
+					},
+					[63] = {
+						0.3483860492706299,
+						0.4971296787261963,
+					},
+					[87] = {
+						0.761116623878479,
+						0.1050601005554199,
+					},
+					[10] = {
+						0.6837257146835327,
+						0.691175103187561,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-210489"] = {
+			["base"] = {
+				["title"] = "Harthal Truesight",
+				["text"] = {
+					"Harthal Truesight\r\nLord Paladin of the Scarlet Crusade \r\nCitizen of Azeroth - Knight of the Silver Hand\r\nLast seen entering the cursed city of Stratholme",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[432] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-21582"] = {
+			["base"] = {
+				["title"] = "Beyond the Dark Portal",
+				["text"] = {
+					"Only a few months after Nethergarde's completion, the energies of the dark portal coalesced and opened up a new gateway to Draenor. The remaining orc clans, under the leadership of the elder shaman, Ner'zhul, charged forth into Azeroth once again. Intent on stealing a number of magical artifacts that would increase Ner'zhul's power, the orcs planned to open up new portals in Draenor that would allow them to escape their doomed red world forever.",
+					"Convinced that Ner'zhul was planning a new offensive against the Alliance, King Terenas of Lordaeron sent his armies into Draenor to end the orcish threat once and for all. Led by Khadgar and General Turalyon, the Alliance forces clashed with the orcs across the burning landscape. Even with the aid of the elven Ranger Alleria, the dwarf Kurdran and the veteran soldier Danath, Khadgar was unable to prevent Ner'zhul from opening his portals to other worlds.",
+					"The tremendous magical storms caused by the portals' converging energies began to tear the ravaged world apart. Ner'zhul, followed only by his most trusted servants, managed to escape through one of the portals as Khadgar fought desperately to return his comrades to Azeroth. Realizing that they would be trapped on the dying world, Khadgar and his companions selflessly decided to destroy the dark portal so that Azeroth would not be harmed by Draenor's violent destruction.",
+					"By all accounts, the heroes were successful in destroying the portal and saving Azeroth - but whether or not they escaped the death throes of Draenor remains to be seen.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[210] = {
+						0.4061480760574341,
+						0.7379088401794434,
+					},
+					[303] = {
+						0,
+						0,
+					},
+					[17] = {
+						0.6092249155044556,
+						0.2022876739501953,
+					},
+					[84] = {
+						0.8468506336212158,
+						0.2441827654838562,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175685"] = {
+			["base"] = {
+				["title"] = "Pteradon Skeleton",
+				["text"] = {
+					"This intact pteradon skeleton was recovered from the remote Un'Goro Crater. Based on the skeletal structure, it is clear that this specific genus has not yet been encountered. This skeleton could have been preserved for any number of centuries beneath the region's rich soil.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[87] = {
+						0.7172001600265503,
+						0.1774955987930298,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175734"] = {
+			["base"] = {
+				["title"] = "Arathor and the Troll Wars",
+				["text"] = {
+					"As the high elves fought for their lives against the trolls' fierce onslaught, the scattered, nomadic humans of Lordaeron fought to consolidate their own tribal lands. The tribes of early humanity raided each other's settlements with little heed for racial unification or honor. ",
+					"Yet one tribe, known as the Arathi, saw that the trolls were becoming too great a threat to ignore. The Arathi wished to bring all of the tribes under its rule so that they could provide a unified front against the troll warbands.",
+					"Over the course of six years, the cunning Arathi outmaneuvered and outfought the rival tribes. After every victory, the Arathi offered peace and equality to the conquered people; thus, they won the loyalty of those they had beaten. Eventually the Arathi tribe came to include many disparate tribes, and the ranks of its army grew vast. ",
+					"Confident that they could hold their own against the troll warbands or even the reclusive elves if need be, the Arathi warlords decided to construct a mighty fortress city in the southern regions of Lordaeron. The city-state, named Strom, became the capital of the Arathi nation, Arathor. As Arathor prospered, humans from all over the vast continent traveled south to the protection and safety of Strom.",
+					"United under one banner, the human tribes developed a strong, optimistic culture. Thoradin, the king of Arathor, knew that the mysterious elves in the northlands were under constant siege by the trolls, but refused to risk the safety of his people in defense of reclusive strangers. Many months passed as rumors of the elves' supposed defeat trickled down from the north. It was only when weary ambassadors from Quel'Thalas reached Strom that Thoradin realized how great the troll threat truly was.",
+					"The elves informed Thoradin that the troll armies were vast and that once the trolls had destroyed Quel'Thalas, they would move on to attack the southlands. The desperate elves, in dire need of military aid, hastily agreed to teach certain select humans to wield magic in exchange for their help against the warbands. ",
+					"Thoradin, distrustful of any magic, agreed to aid the elves out of necessity. Almost immediately, elven sorcerers arrived in Arathor and began to instruct a group of humans in the ways of magic.",
+					"The elves found that although humans were innately clumsy in their handling of magic, they possessed a startling natural affinity for it. One hundred men were taught the very basics of the elves' magical secrets: no more than was absolutely necessary to combat the trolls. Convinced that their human students were ready to aid in the struggle, the elves left Strom and traveled north alongside the mighty armies of King Thoradin. ",
+					"The united elf and human armies clashed against the overwhelming troll warbands at the foot of the Alterac Mountains. The battle lasted for many days, but the unflagging armies of Arathor never tired or gave an inch of ground before the troll onslaught. The elven lords deemed that the time had come to release the powers of their magic upon the enemy. ",
+					"The hundred human magi and a multitude of elven sorcerers called down the fury of the heavens and set the troll armies ablaze. The elemental fires prevented the trolls from regenerating their wounds and burned their tortured forms from the inside out.",
+					"As the troll armies broke and attempted to flee, Thoradin's armies ran them down and slaughtered every last one of their soldiers. The trolls would never fully recover from their defeat, and history would never see the trolls rise as one nation again. Assured that Quel'Thalas was saved from destruction, the elves made a pledge of loyalty and friendship to the nation of Arathor and to the bloodline of its king, Thoradin. Humans and elves would nurture peaceful relations for ages to come. \r\n",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[25] = {
+						0.5670716762542725,
+						0.4754979014396668,
+					},
+					[87] = {
+						0.7705944776535034,
+						0.09119564294815063,
+					},
+					[303] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175689"] = {
+			["base"] = {
+				["title"] = "Uldaman Reliefs",
+				["text"] = {
+					"These etched relief runners were perhaps the most significant find within the first chambers of Uldaman. The etchings clearly suggest a tie between the golem-like earthen and the dwarven race. Should further evidence arise, the theories of our supposed creation by the mythic titans could prove to be true.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[87] = {
+						0.6449915170669556,
+						0.03037387132644653,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175778"] = {
+			["base"] = {
+				["title"] = "Invar One-Arm",
+				["text"] = {
+					"Invar One-Arm\r\nThe first Chief Assassin of the Scarlet Crusade \r\nCitizen of Dalaran\r\nLast seen on the shores of Northrend",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[304] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175759"] = {
+			["base"] = {
+				["title"] = "The Betrayer Ascendant",
+				["text"] = {
+					"During the Legion's invasion of Ashenvale, Illidan was released from his barrow prison after ten thousand years of captivity. Though he sought to appease his comrades, he soon reverted to true form and consumed the energies of a powerful warlock artifact known as the Skull of Gul'dan. ",
+					"By doing so, Illidan developed demonic features and vastly magnified power. He also gained some of Gul'dan's old memories - especially those of the Tomb of Sargeras, the island dungeon rumored to hold the remains of the Dark Titan, Sargeras.",
+					"Bristling with power and free to roam the world once more, Illidan set out to find his own place in the great scheme of things. However, Kil'jaeden confronted Illidan and made him an offer he could not refuse. Kil'jaeden was angered by Archimonde's defeat at Mount Hyjal, but he had greater concerns than vengeance. ",
+					"Sensing that his creation, the Lich King, was growing too powerful to control, Kil'jaeden ordered Illidan to destroy Ner'zhul and put an end to the undead Scourge once and for all. In exchange, Illidan would receive untold power and a true place amongst the remaining lords of the Burning Legion.",
+					"Illidan agreed and immediately set out to destroy the Frozen Throne, the icy crystal cask in which the Lich King's spirit resided. Illidan knew that he would need a mighty artifact to destroy the Frozen Throne. Using the knowledge he had gained from Gul'dan's memories, Illidan decided to seek out the Tomb of Sargeras and claim the Dark Titan's remains. ",
+					"He called in some old Highborne debts and lured the serpentine naga from their dark undersea lairs. Led by the cunning witch Lady Vashj the naga helped Illidan reach the Broken Isles, where Sargeras' Tomb was rumored to be located.",
+					"As Illidan set out with the naga, Warden Maiev Shadowsong began to hunt him. Maiev had been Illidan's jailor for ten thousand years and relished the prospect of recapturing him. However, Illidan outsmarted Maiev and her Watchers and succeeded in claiming the Eye of Sargeras despite their efforts. With the powerful Eye in his possession, Illidan traveled to the former wizard-city of Dalaran.",
+					"Strengthened by the city's ley power lines, Illidan used the Eye to cast a destructive spell against the Lich King's citadel of Icecrown in distant Northrend. Illidan's attack shattered the Lich King's defenses and ruptured the very roof of the world. At the final moment, Illidan's destructive spell was stopped when his brother Malfurion and the Priestess Tyrande arrived to aid Maiev.",
+					"Knowing that Kil'jaeden would not be pleased with his failure to destroy the Frozen Throne, Illidan fled to the barren dimension known as Outland: the last remnants of Draenor, the orcs' former homeworld. There he planned to evade Kil'jaeden's wrath and plan his next moves.",
+					"After they succeeded in stopping Illidan, Malfurion and Tyrande returned home to Ashenvale Forest to watch over their people. Maiev, however, would not quit so easily, and followed Illidan to Outland, determined to bring him to justice.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[89] = {
+						0.6188814640045166,
+						0.7461276054382324,
+					},
+					[110] = {
+						0.6861861944198608,
+						0.641454815864563,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175724"] = {
+			["base"] = {
+				["title"] = "Sargeras and the Betrayal",
+				["text"] = {
+					"Over time, demonic entities made their way into the Titans' worlds from the Twisting Nether, and the Pantheon elected its greatest warrior, Sargeras, to act as its first line of defense. A noble giant of molten bronze, Sargeras carried out his duties for countless millennia, seeking out and destroying these demons wherever he could find them.",
+					"Although Sargeras' nearly limitless powers made short work of the shambling demons he found throughout the Great Dark, he was greatly troubled by the creatures' corruption and all-consuming evil. Incapable of fathoming such depravity, the great Titan began to slip into a brooding depression. Despite his growing unease, Sargeras rid the universe of demonic entities by trapping them within a corner of the Twisting Nether.",
+					"While his confusion and misery deepened, Sargeras was forced to contend with a particularly insidious group intent on disrupting the Titans' order: the Nathrezim. This dark race of vampiric demons (also known as dreadlords) conquered a number of populated worlds by possessing their inhabitants and turning them to the shadow.",
+					"The nefarious, scheming dreadlords turned whole nations against one another by manipulating them into unthinking hatred and mistrust. Sargeras defeated the Nathrezim easily, but their corruption affected him deeply.",
+					"As doubt and despair overwhelmed Sargeras' senses, he lost all faith not only in his mission, but also in the Titans' vision of an ordered universe. Eventually he came to believe that the concept of order itself was folly, and that chaos and depravity were the only absolutes within the dark, lonely universe. ",
+					"His fellow Titans tried to persuade him of his error and calm his raging emotions, but he disregarded their more optimistic beliefs as self-serving delusions. Storming from their ranks forever, Sargeras set out to find his own place in the universe. Although the Pantheon was sorrowful at his departure, the Titans could never have predicted just how far their lost brother would go.",
+					"By the time Sargeras' madness had consumed the last vestiges of his valiant spirit, he believed that the Titans themselves were responsible for creation's failure. Deciding, at last, to undo their works throughout the universe, he resolved to form an unstoppable army that would set the physical universe aflame.",
+					"Even Sargeras' titanic form became distorted from the corruption that plagued his once-noble heart. His eyes, hair, and beard erupted in fire, and his metallic bronze skin split open to reveal an endless furnace of blistering hate.",
+					"In his fury, Sargeras shattered the prisons he'd created and set the loathsome demons free. These cunning creatures bowed before the dark Titan's vast rage and offered to serve him in whatever malicious ways they could. Seeking a way to lead and control his vast demonic army, Sargeras recruited (and subsequently corrupted) the ancient and intelligent race of the Eredar. From within their ranks, Sargeras picked two champions to command his demonic army of destruction.",
+					"Kil'jaeden the Deceiver was chosen to seek out the darkest races in the universe and recruit them into Sargeras' ranks. The second champion, Archimonde the Defiler, was chosen to lead Sargeras' vast armies into battle against any who might resist the Titan's will. ",
+					"Kil'jaeden's first move was to enslave the vampiric dreadlords under his terrible power. The dreadlords served as his personal agents throughout the universe, and they took pleasure in locating primitive races for their master to corrupt and bring into the fold. First amongst the dreadlords was Tichondrius the Darkener. Tichondrius served Kil'jaeden as the perfect soldier and agreed to bring Sargeras' burning will to all the dark corners of the universe.",
+					"The mighty Archimonde also empowered agents of his own. Calling upon the malefic pit lords and their barbarous leader, Mannoroth the Destructor, Archimonde hoped to establish a fighting elite that would scour creation of all life.",
+					"Once Sargeras saw that his armies were amassed and ready to follow his every command, he launched his raging forces into the vastness of the Great Dark. He referred to his growing army as the Burning Legion. To this date, it is still unclear how many worlds they consumed and burned on their unholy Burning Crusade across the universe.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[14] = {
+						0.6932400465011597,
+						0.3288376331329346,
+					},
+					[63] = {
+						0.3453162312507629,
+						0.4946420192718506,
+					},
+					[10] = {
+						0.6702777743339539,
+						0.7499347925186157,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175854"] = {
+			["base"] = {
+				["title"] = "The Twin Empires",
+				["text"] = {
+					"About 16,000 years ago (long before the night elves foolishly called down the wrath of the Burning Legion), trolls lorded over much of Kalimdor (then a single continent). There were twin troll empires -- the Gurubashi Empire of the southeastern jungles -- and the Amani Empire of the middle forestlands.",
+					"There were smaller tribes that lived far to the north (in the region now known as Northrend). These tribes founded a small nation known as Gundrak, but never achieved the size or prosperity of the southern empires.",
+					"The Gurubashi and Amani empires had little love for one another, but rarely warred against each other. At the time, their greatest common enemy was a third empire -- the civilization of Azj'Aqir. The aqir were intelligent insectoids who ruled the lands of the far west. These clever insectoids were greatly expansionistic and incredibly evil. The aqir were obsessed with eradicating all non-insect life from the fields of Kalimdor. ",
+					"The trolls fought them for many thousands of years, but never succeeded in winning a true victory over the aqir. Eventually, due to the troll's persistence, the aqiri kingdom split in half as its citizens fled to separate colonies in the far northern and southern regions of the continent. ",
+					"Two aqiri city-states emerged -- Azjol-Nerub in the northern wastes, and Ahn'Qiraj in the southern desert. Though the trolls suspected that there were other aqiri colonies beneath Kalimdor, their existence was never verified.",
+					"With the insectoids driven into exile, the twin troll empires returned to business as usual. Despite their great victory, neither civilization expanded much farther than their original boundaries. However, ancient texts speak of a small faction of trolls that broke off from the Amani Empire and founded their own colony in the heart of the dark continent. ",
+					"There, these brave pioneers discovered the cosmic Well of Eternity which transformed them into beings of immense power. Some legends suggest that these adventurous trolls were the first night elves, though this theory has never been proven.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[71] = {
+						0.525020956993103,
+						0.2689074277877808,
+					},
+					[210] = {
+						0.4207189679145813,
+						0.7375640869140625,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-210487"] = {
+			["base"] = {
+				["title"] = "Fellari Swiftarrow",
+				["text"] = {
+					"Fellari Swiftarrow\r\nRanger Captain of the Scarlet Crusade \r\nCitizen of Quel'Thalas \r\nLost in the forests of Silverpine",
+				},
+				["singlePage"] = true,
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["mapData"] = {
+					[432] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175754"] = {
+			["base"] = {
+				["title"] = "Kel'Thuzad and the Forming of the Scourge",
+				["text"] = {
+					"There were a handful of powerful individuals scattered throughout the world who heard the Lich King's mental summons from Northrend. Most notable of them was the archmage of Dalaran, Kel'Thuzad, who was one of senior members of the Kirin Tor, Dalaran's ruling council. He had been considered a maverick for years due to his insistence on studying the forbidden arts of necromancy. ",
+					"Driven to learn all he could of the magical world and its shadowy wonders, he was frustrated by what he saw as his peers' outmoded and unimaginative precepts. Upon hearing the powerful summons from Northrend, the archmage bent all of his considerable will to communing with the mysterious voice. Convinced that the Kirin Tor was too squeamish to seize the power and knowledge inherent in the dark arts, he resigned himself to learn what he could from the immensely powerful Lich King.",
+					"Leaving behind his fortune and prestigious political standing, Kel'Thuzad abandoned the ways of the Kirin Tor and left Dalaran forever. Prodded by the Lich King's persistent voice in his mind, he sold his vast holdings and stored away his fortunes. Traveling alone over many leagues of both land and sea, he finally reached the frozen shores of Northrend.",
+					"Intent on reaching Icecrown and offering his services to the Lich King, the archmage passed through the ravaged, war-torn ruins of Azjol-Nerub. Kel'Thuzad saw firsthand the scope and ferocity of Ner'zhul's power. He began to realize that allying himself with the mysterious Lich King might be both wise and potentially fruitful.",
+					"After long months of trekking through the harsh arctic wastelands, Kel'Thuzad finally reached the dark glacier of Icecrown. He boldly approached Ner'zhul's dark citadel and was shocked when the undead guardsmen silently let him pass as though he was expected. ",
+					"Kel'Thuzad descended deep into the cold earth and found his way down to the bottom of the glacier. There, in the endless cavern of ice and shadows, he prostrated himself before the Frozen Throne and offered his soul to the dark lord of the dead.",
+					"The Lich King was pleased with his latest conscript. He promised Kel'Thuzad immortality and great power in exchange for his loyalty and obedience. Eager for dark knowledge and power, Kel'Thuzad accepted his first great mission: to go into the world of men and found a new religion that would worship the Lich King as a god.",
+					"To help the archmage accomplish his mission, Ner'zhul left Kel'Thuzad's humanity intact. The aged yet still charismatic wizard was charged with using his powers of illusion and persuasion to lull the downtrodden, disenfranchised masses of Lordaeron into a state of trust and belief. Then, once he had their attention, he would offer them a new vision of what society could be - and a new figurehead to call their king.",
+					"Kel'Thuzad returned to Lordaeron in disguise, and over the span of three years, he used his fortune and intellect to gather a clandestine brotherhood of like-minded men and women. The brotherhood, which he called the Cult of the Damned, promised its acolytes social equality and eternal life on Azeroth in exchange for their service and obedience to Ner'zhul. ",
+					"As the months passed, Kel'Thuzad found many eager volunteers for his new cult amongst the tired, overburdened laborers of Lordaeron. It was surprisingly easy for Kel'Thuzad to achieve his goal: namely, to transfer the citizens' faith in the Holy Light into belief in Ner'zhul's dark shadow. As the Cult of the Damned grew in size and influence, Kel'Thuzad made sure to hide its workings from the authorities of Lordaeron.",
+					"With Kel'Thuzad's success in Lordaeron, the Lich King made the final preparations for his assault against human civilization. Placing his plague-energies into a number of portable artifacts called plague-cauldrons, Ner'zhul ordered Kel'Thuzad to transport the cauldrons to Lordaeron, where they would be hidden within various cult-controlled villages. ",
+					"The cauldrons, protected by the loyal cultists, would then act as plague-generators, sending the plague seeping out across the unsuspecting farmlands and cities of northern Lordaeron.",
+					"The Lich King's plan worked perfectly. Many of Lordaeron's northern villages were contaminated almost immediately. Just as in Northrend, the citizens who contracted the plague died and arose as the Lich King's willing slaves. ",
+					"The cultists under Kel'Thuzad were eager to die and be raised again in their dark lord's service. They exulted in the prospect of immortality through undeath. As the plague spread, more and more feral zombies arose in the northlands. Kel'Thuzad looked upon the Lich King's growing army and named it the Scourge, for soon it would march upon the gates of Lordaeron and scour humanity from the face of the world. ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[306] = {
+						0,
+						0,
+					},
+					[25] = {
+						0.566129207611084,
+						0.4754205346107483,
+					},
+					[317] = {
+						0,
+						0,
+					},
+					[303] = {
+						0,
+						0,
+					},
+					[90] = {
+						0.5621077418327332,
+						0.5095947980880737,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175747"] = {
+			["base"] = {
+				["title"] = "The Invasion of Draenor",
+				["text"] = {
+					"As the fires of the Second War died down, the Alliance took aggressive steps to contain the orcish threat. A number of large internment camps, meant to house the captive orcs, were constructed in southern Lordaeron. Guarded by both the paladins and the veteran soldiers of the Alliance, the camps proved to be a great success. ",
+					"Though the captive orcs were tense and anxious to do battle once more, the various camp wardens, based at the old prison-fortress of Durnholde, kept the peace and maintained a strong semblance of order.",
+					"However, on the hellish world of Draenor, a new orcish army prepared to strike at the unsuspecting Alliance. Ner'zhul, the former mentor of Gul'dan, rallied the remaining orc clans under his dark banner. Aided by the Shadowmoon clan, the old shaman planned to open a number of portals on Draenor that would lead the Horde to new, unspoiled worlds. ",
+					"To power his new portals, he needed a number of enchanted artifacts from Azeroth. To procure them, Ner'zhul reopened the Dark Portal and sent his ravenous servants charging through it.",
+					"The new Horde, led by veteran chieftains such as Grom Hellscream and Kilrogg Deadeye (of the Bleeding Hollow clan), surprised the Alliance defense forces and rampaged through the countryside. Under Ner'zhul's surgical command, the orcs quickly rounded up the artifacts that they needed and fled back to the safety of Draenor.",
+					"King Terenas of Lordaeron, convinced that the orcs were preparing a new invasion of Azeroth, assembled his most trusted lieutenants. He ordered General Turalyon and the archmage, Khadgar, to lead an expedition through the Dark Portal to put an end to the orcish threat once and for all. Turalyon and Khadgar's forces marched into Draenor and repeatedly clashed with Ner'zhul's clans upon the ravaged Hellfire Peninsula. ",
+					"Even with the aid of the high elf Alleria Windrunner, the dwarf Kurdran Wildhammer, and the veteran soldier Danath Trollbane, Khadgar was unable to prevent Ner'zhul from opening his portals to other worlds.",
+					"Ner'zhul finally opened his portals to other worlds, but he did not foresee the terrible price he would pay. The portals' tremendous energies began to tear the very fabric of Draenor apart. As Turalyon's forces fought desperately to return home to Azeroth, the world of Draenor began to buckle in upon itself. Grom Hellscream and Kilrogg Deadeye, realizing that Ner'zhul's mad plans would doom their entire race, rallied the remaining orcs and escaped back to the relative safety of Azeroth.",
+					"On Draenor, Turalyon and Khadgar agreed to make the ultimate sacrifice by destroying the Dark Portal from their side. Though it would cost their lives, and the lives of their companions, they knew that it was the only way to ensure Azeroth's survival. Even as Hellscream and Deadeye hacked their way through the human ranks in a desperate bid for freedom, the Dark Portal exploded behind them. For them, and the remaining orcs on Azeroth, there would be no going back.",
+					"Ner'zhul and his loyal Shadowmoon clan passed through the largest of the newly created portals, as massive volcanic eruptions began to break Draenor's continents apart. The burning seas rose up and roiled the shattered landscape as the tortured world was finally consumed in a massive, apocalyptic explosion.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[477] = {
+						0,
+						0,
+					},
+					[307] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-210493"] = {
+			["base"] = {
+				["title"] = "Valea Twinblades",
+				["text"] = {
+					"Valea Twinblades  \r\nWarrior of the Scarlet Crusade\r\nCitizen of Alterac  \r\nLast seen deep in the Eastern Plaguelands",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[432] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-21583"] = {
+			["base"] = {
+				["title"] = "The Kaldorei and the Well of Eternity",
+				["text"] = {
+					"Ten thousand years before the orcs and humans clashed in their First War, the world of Azeroth cradled only one massive continent surrounded by the infinite, raging seas. That land mass, known as Kalimdor, was home to a number of disparate races and creatures, all vying for survival amongst the savage elements of the waking world. At the dark continent's center was a mysterious lake of incandescent energies.",
+					"The lake, which would later be called the Well of Eternity, was the true heart of the world's magic and natural power. Drawing its energies from the infinite Great Dark beyond the world, the Well acted as a mystical fount, sending its potent energies out across the world to nourish life in all its wondrous forms.\r\n\r\nIn time, a primitive tribe of nocturnal humanoids cautiously made their way to the edges of the mesmerizing, enchanted lake.",
+					"The feral, nomadic humanoids, drawn by the Well's strange energies, built crude homes upon its tranquil shores. Over time, the Well's cosmic power affected the strange tribe, making them strong, wise and virtually immortal. The tribe adopted the name Kaldorei, which meant -children of the stars- in their native tongue. To celebrate their budding society, they constructed great structures and temples around the lake's periphery.",
+					"The Kaldorei, or night elves as they would later be known, worshipped the moon goddess, Elune, and believed that she slept within the Well's shimmering depths during the daylight hours. The early night elf priests and seers studied the Well with an insatiable curiosity, driven to plumb its untold secrets and power. As their society grew, the night elves explored the\r\nbreadth of Kalimdor and encountered its myriad denizens.",
+					"The only creatures that gave them pause were the ancient and powerful dragons. Though\r\nthe great serpentine beasts were often reclusive, they did much to safeguard the known lands from potential threats. The night elves believed that the dragons held themselves to be the protectors of the world, and that they and their secrets were best left alone.",
+					"In time, the night elves' curiosity led them to meet and befriend a number of powerful entities, not the least of which was Cenarius, a mighty demi-god of the primordial forestlands. The great-hearted Cenarius grew fond of the inquisitive night elves and spent a great deal of time teaching them about the natural world. The tranquil Kaldorei developed a strong empathy for the living forests of Kalimdor and reveled in the harmonious balance of nature.",
+					"Yet, as the seemingly endless ages passed, the night elves' civilization expanded both territorially and culturally. Their temples, roads, and dwelling places stretched across the breadth of the dark continent. Azshara, the night elves' beautiful and gifted Queen, built an immense, wondrous palace on the Well's shore that housed her favored servitors within its bejeweled halls. ",
+					"Her servitors, whom she called the Quel'dorei or -high-borne,- doted on her every command and believed themselves to be greater than the rest of their lower-caste brethren. Though Queen Azshara was loved equally by all of her people, the high-borne were secretly hated by the jealous masses.\r\n\r\nSharing the priests' curiosity towards the Well of Eternity, Azshara ordered the educated high-borne to plumb its secrets and reveal its true purpose in the world. ",
+					"The high-borne buried themselves in their work and studied the Well ceaselessly. In time they developed the ability to manipulate and control the Well's cosmic energies. As their reckless experiments progressed, the high-borne found that they could use their newfound powers to either create or destroy at their leisure. The hapless high-borne had stumbled upon primitive magic and were now resolved to devote themselves to its mastery.",
+					"Although they agreed that magic was inherently dangerous if handled irresponsibly, Azshara and her highborne began to practice their spellcraft with reckless abandon. Cenarius and many of the wizened night elf scholars warned that only calamity would result from toying with the clearly volatile arts of magic. But, Azshara and her followers stubbornly continued to expand their burgeoning powers.",
+					"As their powers grew, a distinct change came over Azshara and the high-borne. The haughty, aloof upper class became increasingly callous and cruel towards their fellow night elves. A dark, brooding pall veiled Azshara's once entrancing beauty. She began to withdraw from her loving subjects and refused to interact with any but her trusted high-borne priests.",
+					"A young, brazen scholar named Furion Stormrage, who had spent much of his time studying the Well's effects, began to suspect that a terrible power was corrupting the high-borne and his beloved Queen. Though he could not conceive the evil that was to come, he knew that the night elves' lives would soon be changed forever....",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[75] = {
+						0.8836578130722046,
+						0.1478617787361145,
+					},
+					[84] = {
+						0.8468419313430786,
+						0.2598657011985779,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175776"] = {
+			["base"] = {
+				["title"] = "Harthal Truesight",
+				["text"] = {
+					"Harthal Truesight\r\nLord Paladin of the Scarlet Crusade \r\nCitizen of Azeroth - Knight of the Silver Hand\r\nLast seen entering the cursed city of Stratholme",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[304] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175737"] = {
+			["base"] = {
+				["title"] = "The Seven Kingdoms",
+				["text"] = {
+					"Strom continued to act as the central hub of Arathor, but as with Dalaran, many new city-states arose across the continent of Lordaeron. Gilneas, Alterac, and Kul Tiras were the first city-states to arise, and although they each had their own customs and commercial workings, they all held to the unifying authority of Strom. ",
+					"Under the vigilant watch of the Order of Tirisfal, Dalaran became the chief center of learning for magicians throughout the land. The Magocrats who ruled Dalaran founded the Kirin Tor, a specialized sect that was charged with cataloguing and researching every spell, artifact, and magic item known to mankind at the time. ",
+					"Gilneas and Alterac became strong supporters of Strom and developed mighty armies that explored the mountainous southern lands of Khaz Modan. It was during this period that humans first met the ancient race of dwarves and traveled to their cavernous subterranean city of Ironforge. The humans and dwarves shared many secrets of metal-smithing and engineering and discovered a common love for battle and storytelling.",
+					"The city-state of Kul Tiras, founded upon a large island south of Lordaeron, developed a prosperous economy based on fishing and shipping. Over time, Kul Tiras built up a mighty fleet of merchant vessels that sailed throughout the known lands in search of exotic goods to trade and sell. Yet even as the economy of Arathor flourished, its strongest elements began to disintegrate.",
+					"In time, the lords of Strom sought to move their estates to the lush northlands of Lordaeron and leave the arid lands of the south. The heirs of King Thoradin, the last descendants of the Arathi bloodline, argued that Strom should not be abandoned and thus incurred the displeasure of the greater citizenry, who were likewise eager to leave. ",
+					"The lords of Strom, seeking to find purity and enlightenment in the untamed north, decided to leave their ancient city behind. Far to the north of Dalaran, the lords of Strom built a new city-state which they named Lordaeron. The entire continent would take its name from this city-state. Lordaeron became a mecca for religious travelers and all those who sought inner peace and security. ",
+					"The descendents of the Arathi, left within the crumbling walls of ancient Strom, decided to travel south past the rocky mountains of Khaz Modan. Their journey finally ended after many long seasons, and they settled in the northern region of the continent they would name Azeroth. In a fertile valley they founded the kingdom of Stormwind, which quickly became a self-sufficient power in its own right. ",
+					"The few warriors still left in Strom decided to remain and guard the ancient walls of their city. Strom was no longer the center of the empire, but it developed into a new nation known as Stromgarde. Though each of the city-states became prosperous in its own right, the empire of Arathor had effectively disintegrated. As each nation developed its own customs and beliefs, they became increasingly segregated from one another. King Thoradin's vision of a unified humanity had faded at last.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[317] = {
+						0,
+						0,
+					},
+					[306] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175733"] = {
+			["base"] = {
+				["title"] = "The Founding of Quel'Thalas",
+				["text"] = {
+					'The high elves, led by Dath\'Remar, left Kalimdor behind them and challenged the storms of the Maelstrom. Their fleets wandered the wreckage of the world for many long years, and they discovered mysteries and lost kingdoms along their sojourn. Dath\'Remar, who had taken the name Sunstrider (or "he who walks the day"), sought out places of considerable ley power upon which to build a new homeland for his people.',
+					"His fleet finally landed on the beaches of the kingdom men would later call Lordaeron. Forging inland, the high elves founded a settlement within the tranquil Tirisfal Glades. After a few years, many of them began to go mad. It was theorized that something evil slept beneath that particular part of the world, but the rumors were never proven to be true. The high elves packed up their encampment and moved northward towards another land rich with ley energies.",
+					"As the high elves crossed the rugged, mountainous lands of Lordaeron, their journey became more perilous. Since they were effectively cut off from the life-giving energies of the Well of Eternity, many of them fell ill from the frigid climate or died from starvation. The most disconcerting change, however, was the fact that they were no longer immortal or immune to the elements. ",
+					"They also shrank somewhat in height, and their skin lost its characteristic violet hue. Despite their hardships, they encountered many wondrous creatures that had never been seen in Kalimdor. They also found tribes of primitive humans who hunted throughout the ancient forestlands. However, the direst threat they encountered were the voracious and cunning forest trolls of Zul'Aman.",
+					"These moss-skinned trolls could regenerate lost limbs and heal grievous physical injuries, but they proved to be a barbaric, evil race. The Amani empire stretched across most of northern Lordaeron, and the trolls fought hard to keep unwanted strangers from their borders. The elves developed a deep loathing for the vicious trolls and killed them on sight whenever they were encountered.",
+					"After many long years, the high elves finally found a land which was reminiscent of Kalimdor. Deep within the northern forests of the continent, they founded the kingdom of Quel'Thalas and vowed to create a mighty empire which would dwarf that of their Kaldorei cousins. Unfortunately they soon learned that Quel'Thalas was founded upon an ancient troll city that the trolls still held to be sacred. Almost immediately, the trolls began to attack the elven settlements en masse. ",
+					"The stubborn elves, unwilling to give up their new land, utilized the magics which they had gleaned from the Well of Eternity and kept the savage trolls at bay. Under Dath'Remar's leadership, they were able to defeat the Amani warbands that outnumbered them ten to one. Some elves, wary of the Kaldorei's ancient warnings, felt that their use of magic might possibly draw the attention of the banished Burning Legion. ",
+					"Therefore, they decided to mask their lands within a protective barrier which would still allow them to work their enchantments. They constructed a series of monolithic Runestones at various points around Quel'Thalas which marked the boundaries of the magic barrier. The Runestones not only masked the elves' magic from extra-dimensional threats, but helped to frighten away the superstitious troll warbands as well.",
+					"As time wore on, Quel'Thalas became a shining monument to the high elves' efforts and magical prowess. Its beauteous palaces were crafted in the same architectural style as the ancient halls of Kalimdor, yet they were interwoven with the natural topography of the land. Quel'Thalas had become the shining jewel that the elves had longed to create. ",
+					"The Convocation of Silvermoon was founded as the ruling power over Quel'Thalas, though the Sunstrider Dynasty maintained a modicum of political power. Comprised of seven of the greatest high elf lords, the Convocation worked to secure the safety of the elven lands and people. Surrounded by their protective barrier, the high elves remained unmoved by the old warnings of the Kaldorei and continued to use magic flagrantly in almost all aspects of their lives. ",
+					"For nearly four thousand years the high elves lived peacefully within the secluded safety of their kingdom. Nevertheless, the vindictive trolls were not so easily defeated. They plotted and schemed in the depths of the forests and waited for the numbers of their warbands to grow. Finally, a mighty troll army charged out from the shadowy forests and once again laid siege to the shining spires of Quel'Thalas. ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[307] = {
+						0,
+						0,
+					},
+					[47] = {
+						0.7364236116409302,
+						0.4505859613418579,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175749"] = {
+			["base"] = {
+				["title"] = "Icecrown and the Frozen Throne",
+				["text"] = {
+					"Kil'jaeden cast Ner'zhul's icy cask back into the world of Azeroth. The hardened crystal streaked across the night sky and smashed into the desolate arctic continent of Northrend, burying itself deep within the Icecrown glacier. The frozen crystal, warped and scarred by its violent descent, came to resemble a throne, and Ner'zhul's vengeful spirit soon stirred within it.",
+					"From the confines of the Frozen Throne, Ner'zhul began to reach out his vast consciousness and touch the minds of Northrend's native inhabitants. With little effort, he enslaved the minds of many indigenous creatures, including ice trolls and fierce wendigo, and he drew their evil brethren into his growing shadow. His psychic powers proved to be almost limitless, and he used them to create a small army that he housed within Icecrown's twisting labyrinths. ",
+					"As the Lich King mastered his growing abilities under the dreadlords' persistent vigil, he discovered a remote human settlement on the fringe of the vast Dragonblight. On a whim, Ner'zhul decided to test his powers on the unsuspecting humans. ",
+					"Ner'zhul cast a plague of undeath - which had originated from deep within the Frozen Throne, out into the arctic wasteland. Controlling the plague with his will alone, he drove it straight into the human village. Within three days, everyone in the settlement was dead, but shortly thereafter, the dead villagers began to rise as zombified corpses. Ner'zhul could feel their individual spirits and thoughts as if they were his own. ",
+					"The raging cacophony in his mind caused Ner'zhul to grow even more powerful, as if their spirits provided him with much-needed nourishment. He found it was child's play to control the zombies' actions and steer them to whatever end he wished.",
+					"Over the following months, Ner'zhul continued to experiment with his plague of undeath by subjugating every human inhabitant of Northrend. With his army of undead growing daily, he knew that the time for his true test was nearing.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[37] = {
+						0.4377593994140625,
+						0.6575559377670288,
+					},
+					[306] = {
+						0,
+						0,
+					},
+					[317] = {
+						0,
+						0,
+					},
+					[303] = {
+						0,
+						0,
+					},
+					[90] = {
+						0.5610300898551941,
+						0.5079053640365601,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175781"] = {
+			["base"] = {
+				["title"] = "Yana Bloodspear",
+				["text"] = {
+					"Yana Bloodspear\r\nThe Second Chief Assassin of the Scarlet Crusade \r\nCitizen of Dalaran  \r\nLost in the Tirisfal Glades",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[304] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175686"] = {
+			["base"] = {
+				["title"] = "Highborne Astrolabe",
+				["text"] = {
+					"Recovered from the undersea ruins of Suramar, this functional astrolabe was crafted by the highborne night elves nearly twelve thousand years ago. The highborne, obsessed with magic, the occult and astronomy, developed a series of ingenious apparatuses. This device provides invaluable insights into the ancient night elves' level of scientific understanding.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[87] = {
+						0.6943889260292053,
+						0.1089720726013184,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-175856"] = {
+			["base"] = {
+				["title"] = "Wrath of Soulflayer",
+				["text"] = {
+					"The long centuries following the Great Sundering of the world were difficult ones for the troll race. Famine and terror were commonplace within the broken kingdoms. The Gurubashi trolls, driven to desperate ends, sought aid from ancient, mystical forces. Though both of the troll kingdoms shared a central belief in a great pantheon of primitive gods, the Gurubashi fell under the sway of the darkest one.",
+					"Hakkar the Soulflayer, a vile, bloodthirsty spirit, heard the trolls' call and decided to aid them. Hakkar gave his secrets of blood to the Gurubashi and helped them extend their civilization across most of Stranglethorn Vale and certain islands of the South Seas. Though he brought them great power, Hakkar wanted more and more for his efforts.",
+					"The bloodthirsty god demanded souls be sacrificed to him daily. He dreamed of gaining access to the physical world so he could devour the blood of all mortal creatures. In time the Gurubashi realized what kind of creature they had courted with -- and turned against him. The strongest tribes rose up against Hakkar and his loyal priests -- the Atal'ai.",
+					"The terrible war that ensued between Hakkar's followers and the rest of the Gurubashi tribes is spoken of only in whispers. The budding empire was shattered by the magic unleashed between the angry god and his rebel children. Just as the battle seemed most hopeless, the trolls succeeded in destroying Hakkar's avatar and banishing him from the world. ",
+					"Even his Atal'ai priests were eventually driven from the capital of Zul'Gurub and forced to survive in the uncharted swamplands to the north. Within those shadowy fens they built a great temple to their fallen god -- Atal'Hakkar -- where they could continue to do their master's work...",
+					"The rest of the Gurubashi tribes went their separate ways after the great civil war had left their lands in ruins. The Skullsplitter, Bloodscalp and Darkspear tribes set off to claim their own lands within the vast jungles of Stranglethorn. Though a fragile peace had settled over the broken empire, some spoke of a prophecy that Hakkar would one day be reborn into the world -- and on that day -- he would consume it whole.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[71] = {
+						0.5247606635093689,
+						0.2689054608345032,
+					},
+					[210] = {
+						0.4207189679145813,
+						0.7375640869140625,
+					},
+				},
+				["isObtainable"] = false,
 				["isClassSpecific"] = false,
 			},
 		},
@@ -5991,3 +7997,4 @@ LK["LocalData"] = {
 };
 
 return end
+
