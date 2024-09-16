@@ -760,28 +760,8 @@ LK["LocalData"] = {
 				["singlePage"] = false,
 				["pageCount"] = 0,
 				["material"] = "default",
-			},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
-		},
-		["GameObject-454348"] = {
-			["base"] = {
-				["title"] = "Ethos of War, Part 3",
-				["text"] = {
-					'The "writing" of this book is a series of burns, slashes, punctures and strange scents that you lack the sensory organs to fully comprehend the meaning of.',
-				},
-				["singlePage"] = true,
-				["pageCount"] = 0,
-				["material"] = "Parchment",
-				["mapData"] = {
-					[2255] = {
-						0.4886096715927124,
-						0.2395924925804138,
-					},
-				},
-				["isObtainable"] = true,
-				["isClassSpecific"] = false,
-				["isFinalVersion"] = false,
 			},
 		},
 		["GameObject-421361"] = {
@@ -1098,26 +1078,6 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
-			},
-		},
-		["GameObject-454350"] = {
-			["base"] = {
-				["title"] = "Ethos of War, Part 4",
-				["text"] = {
-					'The "writing" of this book is a series of burns, slashes, punctures and strange scents that you lack the sensory organs to fully comprehend the meaning of.',
-				},
-				["singlePage"] = true,
-				["pageCount"] = 0,
-				["material"] = "Parchment",
-				["mapData"] = {
-					[2255] = {
-						0.4328629374504089,
-						0.2551416754722595,
-					},
-				},
-				["isObtainable"] = true,
-				["isClassSpecific"] = false,
-				["isFinalVersion"] = false,
 			},
 		},
 		["GameObject-453729"] = {
@@ -2514,6 +2474,8 @@ LK["LocalData"] = {
 						0.4571340680122376,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["GameObject-351956"] = {
@@ -2531,6 +2493,8 @@ LK["LocalData"] = {
 						0.3670961856842041,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["GameObject-355478"] = {
@@ -2548,6 +2512,8 @@ LK["LocalData"] = {
 						0.390055775642395,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["GameObject-355484"] = {
@@ -2565,6 +2531,8 @@ LK["LocalData"] = {
 						0.3049479126930237,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["Item-228457"] = {
@@ -2578,6 +2546,8 @@ LK["LocalData"] = {
 				["singlePage"] = false,
 				["pageCount"] = 0,
 				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["Item-225208"] = {
@@ -2592,6 +2562,8 @@ LK["LocalData"] = {
 				["singlePage"] = false,
 				["pageCount"] = 0,
 				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["GameObject-355487"] = {
@@ -2609,6 +2581,8 @@ LK["LocalData"] = {
 						0.3192274570465088,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["GameObject-455277"] = {
@@ -2626,6 +2600,8 @@ LK["LocalData"] = {
 						0.587612509727478,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["GameObject-355462"] = {
@@ -2643,6 +2619,8 @@ LK["LocalData"] = {
 						0.3032235503196716,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["GameObject-355486"] = {
@@ -2660,6 +2638,8 @@ LK["LocalData"] = {
 						0.3049479126930237,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["GameObject-355465"] = {
@@ -2677,6 +2657,8 @@ LK["LocalData"] = {
 						0.3647162318229675,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["GameObject-355476"] = {
@@ -2694,6 +2676,8 @@ LK["LocalData"] = {
 						0.390055775642395,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["GameObject-355464"] = {
@@ -2711,6 +2695,8 @@ LK["LocalData"] = {
 						0.3647162318229675,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["GameObject-355489"] = {
@@ -2728,6 +2714,8 @@ LK["LocalData"] = {
 						0.3862932920455933,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["Item-225204"] = {
@@ -2744,6 +2732,8 @@ LK["LocalData"] = {
 				["singlePage"] = false,
 				["pageCount"] = 0,
 				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["GameObject-355482"] = {
@@ -2761,6 +2751,8 @@ LK["LocalData"] = {
 						0.3335340619087219,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 		["Item-223901"] = {
@@ -2772,6 +2764,758 @@ LK["LocalData"] = {
 				["singlePage"] = true,
 				["pageCount"] = 0,
 				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-455276"] = {
+			["base"] = {
+				["title"] = "Notes On The Machine Speakers: Fragment IV",
+				["text"] = {
+					'A Machine Speaker empowered by the Awakening Machine can work for three to five thousand years before requiring revivification. If the Machine Speaker is unable to do this, they will continue to work until their life force is exhausted, at which point they enter a non-functional state called "stasis lock".\r\n\r\nAs long as the Awakening Machine is in operation, that individual can eventually be returned to the machine, revivified, and reawakened. \r\n\r\nA Machine Speaker who has suffered catastrophic damage may lack the remaining materials and components necessary to function. Such individuals cannot be restored in the Awakening Machine. They have been rendered non-functional.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2214] = {
+						0.3989240527153015,
+						0.2098237872123718,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454328"] = {
+			["base"] = {
+				["title"] = "Strands of Memory",
+				["text"] = {
+					"One lifetime is not enough to master the arts of magic, alchemy, and the many etiquettes and disciplines required to run the Last Kingdom.\n\nThus we use strands to pass memory from one nerubian to the next. With a strand comes the legacy of our people.\n\nOnly our sages and queens may pass strands from one generation to the next, their forms refined to be able to weave and incorporate even the most the impossibly small elements of memory.\n\nThis is not a natural process, but a project that requires time, dedication, resources, and intention. In this way only chosen strands are passed to the next generation.\n\nKnowledge of how to create strands for other forms of our people was lost with the fall of the Black Empire.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2213] = {
+						0.2777159810066223,
+						0.5456355810165405,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454412"] = {
+			["base"] = {
+				["title"] = "Merunth's Plaque",
+				["text"] = {
+					"<A silver plaque has been bolted to the pipe before this inert earthen.>\r\n\r\nHail Merunth, keeper of the pipes of Gundargaz and beyond. She never found a burst seam that she could not mend.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2214] = {
+						0.5919100642204285,
+						0.9369302988052368,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454404"] = {
+			["base"] = {
+				["title"] = "Hathlaz's Plaque",
+				["text"] = {
+					"<A weathered plaque is imbedded in the rock at the foot of this inert earthen.>\r\n\r\nHere stands Hathlaz, noble foreman of the Earthenworks. He would gladly walk through lava were his machines in need of repair.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2214] = {
+						0.4432734251022339,
+						0.1356471180915833,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["Item-225215"] = {
+			["base"] = {
+				["title"] = "The Song of Renilash",
+				["text"] = {
+					"The Song of Renilash\r\nChapter 11\r\n\r\n15. The Arathi, guardians of the Sacred Flame, formed the Aegis shield, a constellation of courage against the encroaching darkness. Their resolve, a beacon in the night, as stars began to fade into shadow.",
+					"16. The Harbinger's forces, nightmares of legs and claws, spun from the loom of oblivion, skittered across the battlefield. Their movements, a grotesque dance, echoed the discordant rhythm of a world teetering on the brink.",
+					"17. The wall, built with the living rock of titans, bore the weight of the conflict. Each stone, a silent witness to the struggle, whispering tales of valor to the wind, stirring the spirits of warriors long gone.",
+					"18. The remains of gods, scattered across the battlefield, pulsed with an unseen light. Their echoes, a clarion call, stirred the Arathi, compelling them to fight, to kill for the world's dawn.",
+					'19. Amidst the chaos, the forgotten one cried, "When the last star fades, the emperor\'s crown will weigh heavy with the sins of a thousand years." The stalwart soldiers threw down their spears and wept tears of blood and burning anger.',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-456927"] = {
+			["base"] = {
+				["title"] = "Treatise on Forms: Lords",
+				["text"] = {
+					"We are nerubians, not the mindless qiraji or the swarming mantid. Yet there comes a time when our individualism will not win wars.\r\n\r\nThus came the Lord. Masters of war and swarm commanders of trained insects, the lords dominate a battlefield. Only those with the greatest skills in leadership and command will be transformed into a lord, and of those, specializations emerge. \r\n\r\nScarab lords, warshells, and hulks of various types have all risen to command and crush our foes in times of war, and manage our endless swarms of minion insects in times of peace.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2213] = {
+						0.2361662983894348,
+						0.5119690299034119,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454408"] = {
+			["base"] = {
+				["title"] = "Venedaz's Plaque",
+				["text"] = {
+					"<A weathered plaque has been bolted to the pipe before this inert earthen.>\r\n\r\nThis is Venedaz, master cogsmith and maker of sturdy tools. Loyal to the Machine until his last moment. May his wrenches never break and his cogs spin smoothly.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2214] = {
+						0.4858930706977844,
+						0.3174393773078919,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454338"] = {
+			["base"] = {
+				["title"] = "Entomological Essay on Grubs, Volume 3",
+				["text"] = {
+					"Entomological Essay on Grubs, Vol. 3\r\nBy Wormcaller Iz'tikrine\r\n\r\nWhen singing to those of the endless maw, it is important to remember they are beings of pure hunger.\r\n\r\nAlways be ready with a song tuned to shoo them away in fear, lest they eat a leg or two when you are not paying attention.\r\n\r\nIt is also important to have compassion when dealing with these all consuming slitherers. They do not understand, or care, what or whom they consume. Their beauty is in their indifference.\r\n\r\nRespect that. Embrace it. Admire it.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2255] = {
+						0.3914247155189514,
+						0.4260631203651428,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454407"] = {
+			["base"] = {
+				["title"] = "Uisgaz's Plaque",
+				["text"] = {
+					"<A shiny bronze plaque has been bolted to the rock near the foot of this inert earthen.>\r\n\r\nLet it be known that Uisgaz was the best at carving metals throughout all of the Ringing Deeps. No other could match his steady hand.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2214] = {
+						0.5506372451782227,
+						0.3021596670150757,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454405"] = {
+			["base"] = {
+				["title"] = "Attwogaz's Plaque",
+				["text"] = {
+					"<A silver-hued plaque has been placed at the foot of this inert earthen.>\r\n\r\nAttwogaz knew his time was coming, and had this plaque carved so that he might not be forgotten. Uisgaz carved these words.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2214] = {
+						0.6284451484680176,
+						0.3635792136192322,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454414"] = {
+			["base"] = {
+				["mapData"] = {
+					[2214] = {
+						0.4934879541397095,
+						0.4903172850608826,
+					},
+				},
+				["pageCount"] = 0,
+				["text"] = {
+					"<A battered bronze plaque has been hammered into the rock near this inert earthen.>\r\n\r\nVarerko stands here, proud and true to the Machine. She never turned away a mug of cinderbrew, and she was always first to assist others if her duties completed early. May we dance together again, my friend.",
+				},
+				["material"] = "Bronze",
+				["singlePage"] = true,
+				["title"] = "Varerko's Plaque",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454313"] = {
+			["base"] = {
+				["mapData"] = {
+					[2213] = {
+						0.382533609867096,
+						0.3549173474311829,
+					},
+				},
+				["pageCount"] = 0,
+				["text"] = {
+					"",
+					"The strand of Queen Xekatha is the tale of the Reign of Blue.\n\nIn her time was born the shimmer worms, named so for the light they emit. These worms began as a pest infesting crops until they were transformed by the Grand Splicer Kizriith as a gift to his beloved queen.\n\nBefore the swing of the seventy-fifth pendulum, the pestilence of the Last Kingdom had become its most glorious form of art.\n\nThe trend of the dynasty was to encourage glimmer worms to grow across entire strands of webs, trapped in place for all to see, their blue light a new form of expression.\n\nFor the love of our queen, the Last Kingdom bathed in the blue light of her favorite art, and all was good.",
+				},
+				["material"] = "ParchmentLarge",
+				["singlePage"] = false,
+				["title"] = "Queen Xekatha",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454316"] = {
+			["base"] = {
+				["mapData"] = {
+					[2213] = {
+						0.3847172260284424,
+						0.3242721557617188,
+					},
+				},
+				["pageCount"] = 0,
+				["text"] = {
+					"The queen of cobwebs.\n\n\r\nZaltra, may her name never be spoken with grace but as a lesson in hubris.\n\n\r\nIn her arrogance, she strove to conquer the children of stone. Her mandibles of greed broke upon their carapace of metal. Against the will of her people, she drove the nerubians to war. \n\n\r\nSo began the first recorded civil war in nerubian history. The queen attempted dominance over her subjects, wielding the scents of power. \n\n\r\nThe lords and sages refused. The dream of conquest was not theirs, and so they turned against Queen Zaltra.\n\nUnwilling to slay her for fear of losing the knowledge of her strand, Zaltra was sent into exile until she would part with the knowledge held within her body.\n\nMany claim Zaltra still walks the depths of the earth, lording over the cobwebs of old, waiting for a day when her dreams of conquest might come to fruition.\n\n\n\nAddendum by Izvan the High Sage:\n\nWhile Zaltra's body was never found, the knowledge of her strand lost, it is confirmed that no nerubian queen is immortal.\n\nAge would have taken Zaltra many centuries before this addendum was added.\n\nThere is a small chance her knowledge may still be preserved within the strands of her corpse, mummified and waiting, a treasure only the nerubians people would understand.",
+				},
+				["material"] = "ParchmentLarge",
+				["singlePage"] = true,
+				["title"] = "Queen Zaltra",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-455275"] = {
+			["base"] = {
+				["mapData"] = {
+					[2214] = {
+						0.5107366442680359,
+						0.1451387405395508,
+					},
+				},
+				["pageCount"] = 0,
+				["text"] = {
+					'Machine Speakers who have delayed their sync cycle in the Awakening Machine may begin to display psychological aberrance. This may include unacceptable or unprofessional displays of emotion. Such behavior is described as "non-compliant" and coworkers remain vigilant for non-compliant behavior. \r\n\r\nAn effective foreman will intercede before then, reminding a worker to "moderate their tone".\r\n\r\nOver time after a Machine Speakers\' sync in the Awakening Machine, they may begin to develop friendships or more romantic relationships. This is deemed acceptable, and some privately agree to form long-term partnerships, fusing their time together. However, when a Machine Speaker returns to the Awakening Machine, everything deemed peripheral to work and training (including these relationships) is removed from the individual\'s mind, so they can focus on work.',
+				},
+				["material"] = "Parchment",
+				["singlePage"] = true,
+				["title"] = "Notes On The Machine Speakers: Fragment III",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["Item-223903"] = {
+			["base"] = {
+				["title"] = "Gold Silk Scrap",
+				["text"] = {
+					"<On close inspection, you can decipher an encoded message expertly woven into the patterns of the silk.\r\n\r\nIt tells of an anonymous benefactor in the city, with a fondness for red wine stolen from the Arathi. It weakens his judgement, making him more pliable to suggestion.>",
+				},
+				["material"] = "default",
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["Item-223902"] = {
+			["base"] = {
+				["title"] = "Crimson Silk Scrap",
+				["text"] = {
+					"<On close inspection, you can decipher an encoded message expertly woven into the patterns of the silk.\r\n\r\nIt tells of all of the bribes taken by General Anub'azal over his long and heroic career. The war machine runs on gold and greased tendrils, after all, as well as silk.>",
+				},
+				["material"] = "default",
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454320"] = {
+			["base"] = {
+				["title"] = "Queen Anub'izek",
+				["text"] = {
+					"The First Queen of True Nerub.\n\nIn ancient times before the children of stone or the strands of queens and sages there was an Empire born of darkness.\n\nIt was a time of death and war. Hosts of armies swarmed in numbers sixteen and five times the people of the Last Kingdom when this record was sewn.From that crucible of darkness rose a leader who foresaw where the darkness would lead.\n\nAnub'izek was a unique creature crafted with the power of a lord and the memory of a sage. They were made to command and lead legions into battles that they would not survive.\n\nAnd so Anub'izek defied the dark ones that had helped in her creation.With her army, she led them deep into the earth and away from the front of a lost battle. Spurned by endless war, unwilling to sacrifice more of her people, Anub'izek would become the first queen of the true nerubians.\n\nThus, our people became a people, and would never be puppets of the Empire of darkness again.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2213] = {
+						0.3712312579154968,
+						0.3250300288200378,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454330"] = {
+			["base"] = {
+				["title"] = "Treatise on Forms: Skitterlings",
+				["text"] = {
+					"Crafted by Grand Splicer Zi'chi of the Ozoli Dynasty, the skitterlings were the last true successful form to be adopted by nerubian culture before the strands for new forms were severed.\n\nIntelligent, crafty, and dexterous, the skitterling has proven to be an exceptionally agile form sought after by the most social and artisan members of the Last Kingdom.",
+					"Their utility in construction and architecture surpasses even the most versatile of domesticated insects, and their ability to respond to crisis is beyond exceptional.\n\nWhen first crafted, there was great backlash in the Last Kingdom. Few enjoyed the idea of a bipedal form walking among the City of Threads. However, through perseverance and their exuberant attitudes the skitterlings quickly earned the respect of the kingdom.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2213] = {
+						0.3858159780502319,
+						0.3780514001846314,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454418"] = {
+			["base"] = {
+				["title"] = "Sathilga's Plaque",
+				["text"] = {
+					"<A silver plaque stands at the foot of this inert earthen.>\r\n\r\nSathilga the Overseer. May the Vault welcome you soon, and may your gears know no rust.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2214] = {
+						0.6404616832733154,
+						0.5573855638504028,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["Item-225205"] = {
+			["base"] = {
+				["title"] = "Shadow Curfew Journal",
+				["text"] = {
+					"Day 1\r\n\r\nShadow curfew was called. I watched Beledar shift before getting into the house. I know we're not supposed to, but it's spectacular to watch. The last shadow lasted only a few days. I'm praying to the Flame this one is shorter. I have crops to harvest.",
+					"Day 3\r\n\r\nOur weapons have been oiled and sharpened. We canned the vegetables. Mended the clothing. And run through our defense drills. Is it over yet? I'm running out of things to do.",
+					"Day 6\r\n\r\nThis is going to be a long shadow, isn't it? Fynn and Janka are still into their Light's Gambit campaign, but they insist on role playing it. No thank you. The books I borrowed from Bronwyn in Mereldar were not as engaging as I wanted. Three of them I had read, one of them I remember hating.",
+					"Day 8\r\n\r\nI am going to come up with as many recipes involving cabbage as possible! This will be fun!",
+					"Day 9\r\n\r\nIt was not fun. Alyze asked me to stop. Fynn and Janka won't leave the Light's Gambit board.",
+					"Day 11 or 12--Flames I can't tell anymore.\r\n\r\nThinking about what my neighbor Rubaen was saying about how in the absence of a vision of the self, promoted by the state and enforced through the threat of violence, those who deviate from the norms set down by dead men from another time are free to imagine ways of living that does not repeat the mistakes of our ancestors. Is a feudal autocracy the best way to live one's life? Does the Sacred Flame speak to all of us and not just to one man with magic blood? Why did I join the army in the first place? Are all the aspects of my life what I want, or just a performative way of engaging in what society tells me I need to be?",
+					"Day 13\r\n\r\nWe're making PICKLES! Flames be praised! Best day ever! I don't care how long this shadow goes on! Kids are thrilled and have taken a break from their game.",
+					"Day 15\r\n\r\nSomething awful has burrowed under the shed. We can see its insectile legs rendering a shalehorn corpse it dragged in with it. We've barricaded ourselves upstairs with the kids. Surviving on pickles.",
+					"Day 18\r\n\r\nStill upstairs. I think I've had my fill of pickles. Though now I'm very much into Fynn and Janka's Light's Gambit campaign. I play an Ardent who preaches a reformed vision of the Sacred Flame that gives everyone prophetic visions. Janka home brewed up some rules for me. We're still scared of the thing in the shed, but I'm having fun with the kids.",
+					'Day 21\r\n\r\nBeledar has shifted, thank the Flame. Won\'t have much time to write. The crops are a mess. I\'m having to till the soil to get the light on the worms so they stop being monstrous. Brother Foreten from the Priory stopped by. He had a rather pointed chat with me. He did not think much of my ideas, said they were "shadowed thoughts," and I should put them aside. He gave me a copy of the book of Mereldar and an approved rulebook for Light\'s Gambit. He told me to read and reflect on both next Beledar\'s Shadow. Foreten is probably right, I shouldn\'t let myself get weird when I\'m cooped up.',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-441223"] = {
+			["base"] = {
+				["title"] = "Stone of The Unbound",
+				["text"] = {
+					"In this spot, a gathering of like-minded Stonebound took place--\r\n\r\nA gathering of earthen that for millennia have witnessed the cracks in our society created by the unquestioning belief in our creators, the titans, and their return.\r\n\r\nA gathering of earthen that wish to no longer be bound to the Edicts of long-gone oppressors.\r\n \r\nHenceforth, we, the Stonebound gathered here, declare ourselves the Unbound, free of the titans and Edicts.\r\n\r\nNow, we will go forth from this place to enlighten others that they can leave their directives behind and live as they see fit.\r\n\r\nAnd words of this first meeting will forever remain here on this stone: the Stone of the Unbound.\r\n\r\n- Kriegval",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2248] = {
+						0.4404706954956055,
+						0.3012377619743347,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454417"] = {
+			["base"] = {
+				["title"] = "Gundrig's Plaque",
+				["text"] = {
+					"<A bronze plaque has been bolted to the rock behind this inert earthen, its words crudely etched.>\r\n\r\nGundrig this is. I will come back for her.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2214] = {
+						0.6543798446655273,
+						0.8379828929901123,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-441284"] = {
+			["base"] = {
+				["title"] = "Watcher of the North",
+				["text"] = {
+					"Here stands Korrag, Watcher of the North, a Stormrider.\r\n\r\nMay his sight protect us forever.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2248] = {
+						0.5721775889396667,
+						0.2004520297050476,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454406"] = {
+			["base"] = {
+				["title"] = "Krattdaz's Plaque",
+				["text"] = {
+					"<A shiny bronze plaque has been secured to the rock at the foot of this inert earthen.>\r\n\r\nKrattdaz, I found you at last my friend. I leave this plaque, that others may know and honor you. Rest well, until the Machine is ready to welcome you back.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2214] = {
+						0.4314517974853516,
+						0.4088149666786194,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-455278"] = {
+			["base"] = {
+				["title"] = "Notes On The Machine Speakers: Fragment VI",
+				["text"] = {
+					"The titans designed Machine Speakers with the ability to breathe, taste, and smell, although these faculties may not be strictly necessary for the performance of duties. \r\n\r\nAn earthen does not require the consumption of organic food to function, since life force originates from the Awakening Machine, but they can still consume these materials and enjoy their taste. Intoxicants also fall within this category of consumable materials.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2214] = {
+						0.650770902633667,
+						0.7954450845718384,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454336"] = {
+			["base"] = {
+				["title"] = "Entomological Essay on Grubs, Volume 2",
+				["text"] = {
+					"Entomological Essay on Grubs, Vol. 2\r\nBy Wormcaller Iz'tikrine\r\n\r\nWhen a thing of power is born to darkness without scent, sight, or sapience, a challenge presents itself in the domestication of such a creature.\r\n\r\nI, dear reader, have mastered this technique... nay... art!\r\n\r\nThe magical domain of resonancy was long scoffed at in the annals of the sages, yet I have learned to master these magics. With them I can channel acoustics to sing to these creatures of perpetual hunger.\r\n\r\nI can call forth the burrowing death! To unleash them upon my foes!\r\n\r\nYes, I am hardly the first to do so but it was I who truly mastered the art of earning their trust!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2255] = {
+						0.3980054259300232,
+						0.4050180315971375,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454343"] = {
+			["base"] = {
+				["title"] = "Ethos of War, Part 1",
+				["text"] = {
+					"Ethos of War, Part 1\r\nBy Anub'azal\r\n\r\nKnow your enemy, but do not let them know you.\n\nDiscover your foe's advantages, their passions, their art. Know them for what they believe in and whom they chose to serve. Know these things, for in doing so you will know how to defeat them. How to break them by striking where they are weakest, or where they care the most. How best to shatter their resolve with the death of a single loved one or a beloved leader.\n\nKnow too that you must hide your own passions and true self from those you see as an enemy, or who may one day become an enemy, lest you reward them with the same knowledge of how to break you.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2255] = {
+						0.6295334100723267,
+						0.3110761642456055,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["isFinalVersion"] = true,
+			},
+		},
+		["GameObject-454344"] = {
+			["base"] = {
+				["title"] = "Ethos of War, Part 2",
+				["text"] = {
+					"Ethos of War, Part 2\n\r\nBy Anub'azal\n\nFairness is for duels, not war.\n\nIf you are fighting a fair fight in war, you have failed as a strategist. Warfare is not kind, it is a means to an end. Learn how to take advantage of a battlefield, coax your enemy into traps, strike at them when they least expect. Hit them when they are sleeping, when they believe they are safe. Strike when the enemy believes they are their strongest.\n\nWhen an enemy finally sees the first nerubian soldier, it should be too late for them to act.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2255] = {
+						0.666481614112854,
+						0.3125127553939819,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["isFinalVersion"] = true,
+			},
+		},
+		["GameObject-454348"] = {
+			["base"] = {
+				["title"] = "Ethos of War, Part 3",
+				["text"] = {
+					"Ethos of War, Part 3\r\nBy Anub'azal\n\nNever take your enemy for a fool.\n\nPlan, plot, position, and ensure victory, but at no point should you ever assume your enemy will simply let you win.\n\nThey will plan, plot, and position to their own ends in ways that you will not and cannot predict. You must ready your forces in war so that when your enemy reveals their own plan, you can adapt and respond. Do not be fully undermined by the loss of a single battle, no matter how critical.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2255] = {
+						0.4886576533317566,
+						0.2396668791770935,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["isFinalVersion"] = true,
+			},
+			["copy_1"] = {
+				["title"] = "Ethos of War, Part 3",
+				["text"] = {
+					'The "writing" of this book is a series of burns, slashes, punctures and strange scents that you lack the sensory organs to fully comprehend the meaning of.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2255] = {
+						0.4886096715927124,
+						0.2395924925804138,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["isFinalVersion"] = false,
+			},
+		},
+		["GameObject-454350"] = {
+			["base"] = {
+				["title"] = "Ethos of War, Part 4",
+				["text"] = {
+					"Ethos of War, Part 4\r\nBy Anub'azal\r\n\r\nRespect the value of a single soldier's life.\n\nWe are not a swarm. We are not the Black Empire. We are not mindless bugs like the mantid or qiraji.\n\nWe are the legions of Azj-Kahet! The Last Kingdom!\n\nEvery soul on the battlefield has chosen to be there.\n\nAs a leader, you must be ready to send soldiers to their death. You must be ready to sacrifice every soldier under your command for an objective if that is what it takes.\n\nBut may the Old Gods devour your soul if you ever take a soldier's life for granted. Fight smarter, not harder. Never hesitate to lean on precision combat power versus concentrated combat power to win the day.\n\nA high death toll is the failure of a strategist.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2255] = {
+						0.4327383041381836,
+						0.2554555535316467,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["isFinalVersion"] = true,
+			},
+			["copy_1"] = {
+				["title"] = "Ethos of War, Part 4",
+				["text"] = {
+					'The "writing" of this book is a series of burns, slashes, punctures and strange scents that you lack the sensory organs to fully comprehend the meaning of.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2255] = {
+						0.4328629374504089,
+						0.2551416754722595,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["isFinalVersion"] = false,
+			},
+		},
+		["GameObject-455274"] = {
+			["base"] = {
+				["title"] = "Notes On The Machine Speakers: Fragment II",
+				["text"] = {
+					"Less than ten Machine Speakers hold the rank of Speaker at any given time. Any one of them can be demoted or even exiled if their performance does not meet with expectations. Not all expectations are declared, of course, and expectations can change.\r\n\r\nThe Awakening Machine reaffirms that a Machine Speakers parameters confirm to the titan's original specifications, including mental and psychological parameters. By design, Machine Speaker returns to the Awakening Machine for revivification and rededication every three to five thousand years.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2214] = {
+						0.489435613155365,
+						0.2592270374298096,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454416"] = {
+			["base"] = {
+				["title"] = "Alfritha's Plaque",
+				["text"] = {
+					"<A golden plaque has been secured to the rock before this inert earthen.>\r\n\r\nAlfritha carved these words. Her hand was finer than Uisgaz's, and more graceful than a leaf on a gentle breeze. Marvels flowed from her fingertips and metal was sculpted like the softest clay. From her precise tooling came the most beautiful words.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2214] = {
+						0.4852069020271301,
+						0.7066587209701538,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["Item-225207"] = {
+			["base"] = {
+				["title"] = "Care and Feeding of the Imperial Lynx",
+				["text"] = {
+					"Aside from our mastery of the Sacred Flame, an Arathi soldier's biggest advantage on the battlefield is their bonded imperial lynx. It is every soldier's duty to try and foster a bond with these magnificent creatures.\r\n\r\nEstablish Trust: Spend time with your lynx daily. Cats bond with specific people, so your presence must be a constant in their life.\r\n \r\nProud Creatures: A lynx will choose an Arathi to bond to. Allow them the space and opportunity to come to you.",
+					"Consistent Training: Begin with simple commands and reward compliance with treats. Lynx love understrider hatchlings and enjoy chasing such treats before eating.\r\n \r\nPlay as Practice: A lynx learns the basics of warfare through play. Encourage your lynx by walking into their ambush or letting them pounce upon you. Remember to don your armor first.\r\n \r\nCommand Reinforcement: Pair commands with actions during play to create associations.\r\n\r\nMock Battles: Participate in staged battles to acclimate your lynx to the chaos of war.",
+					"Diet: A diet rich in protein is essential. Large prey, such as shalehorn, is a lynx's preferred food. But they will happily gulp down hammerfish by the barrelful.\r\n \r\nFeeding Schedule: Maintain a regular feeding schedule to establish routine and discipline.\r\n \r\nGrooming: Regular brushing will help manage shedding and reinforce bonding. Remember to deposit the brushed fur in the reclamation bin so it can be reused as fiber.",
+					"Tail Movements: A flicking tail indicates irritation, while a relaxed tail suggests contentment.\r\n\r\nEars and Whiskers: Forward-facing ears and whiskers signal curiosity; flattened ears mean aggression.\r\n\r\nPurring: A sign of contentment but can also indicate pain or some form of shadow curse. Be attentive to context.\r\n\r\nRemember, patience and respect are the cornerstones of training your imperial lynx. With time, your feline will not only be a mount but a loyal companion in arms for the glory of the empire.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["Item-225203"] = {
+			["base"] = {
+				["title"] = "Beledar- The Emperor's Vision",
+				["text"] = {
+					'"Brave souls, heed the Sacred Flame\'s call to voyage beyond the Storming Sea and Titan\'s Isle. A radiant light shall beckon. Face the trials of Hallowfall; let the Sacred Flame\'s unwavering faith be your anchor."\r\n \r\nThe Arathi Empire, since its inception, has thrived under the Sacred Flame\'s prophetic guidance. Our emperor, interpreting these divine visions, commands us to fulfill or forestall events of prophecy. Thus, our empire has flourished.',
+					"The quest for Hallowfall, a perilous journey across the Storming Sea, was no different. Our military, driven by prophecy and the church's fiery heart, sought this sacred land. The journey was perilous, and we lost many faithful Arathi on that journey, but we persevered, and revealed the Emperor's Vision.\r\n \r\nBeledar's embrace, the first of our trials, ravaged our Third Fleet. Dashing it upon the cliffs. Yet, those who endured sanctified the land beneath the light of the star we named Beledar. The land in the cavern proved fertile, and we settled, founding Mereldar, our holy city. We honor the fallen and celebrate our new Arathi society.",
+					"Years later, the Day of Darkness tested us anew. Beledar faltered, casting horrors from the depths upon us. We battled the nerubians, the kobyss, and shadowy apparitions. Through the Sacred Flame's strength, we withstood the darkness, bolstering the star Beledar with our faith.",
+					"Now we face the unknown third tribulation. Will it be the Harbinger's final onslaught of Renilash? Our faith remains steadfast. We are the empire's resilient children, yet the future looms ominously. What fate befalls our sacred star, and can we endure this ordeal? We cannot leave, lest the shadow consume Beledar. We cannot send for help, for the journey home is too perilous. Our only choice is to defend our new home, and our star, from the shadows that would devour us.",
+					"Sacred Flame grant us strength. The emperor never foresaw our survival.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-456928"] = {
+			["base"] = {
+				["title"] = "Treatise on Forms: Ascended",
+				["text"] = {
+					"Shortly after Queen Ansurek assumed control of the throne, she introduced our kingdom to our first new form in millennia. \r\n\r\nThe Ascended.\r\n\r\nUsing a process kept secret by Grand Splicer Izo, the Ascended are astonishingly fast, powerful, and cunning. They master many traits previously unattainable by other nerubians forms and are quite capable casters and venom wielders.",
+					"But for all their advancements, they suffer a shortcoming in their inability to sense scents. Their awareness of nerubians pheromones, perfected over long eons to assist in communicating with each other and dominating lesser insects, is all but non-existent.\r\n\r\nTheir ability to emit pheromones of any consistency or coherency is absent. This has caused a divide in the ranks of the Last Kingdom as many nerubians view these new Ascended as incomplete, or aberrations. They are alien in both physique and scent. \r\n\r\nYet our queen wills their existence, and thus it shall be so.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2213] = {
+						0.7801513075828552,
+						0.4090108275413513,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["isFinalVersion"] = true,
+			},
+			["copy_1"] = {
+				["title"] = "Treatise on Forms: Ascended",
+				["text"] = {
+					'The "writing" of this book is a series of burns, slashes, punctures and strange scents that you lack the sensory organs to fully comprehend the meaning of.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2213] = {
+						0.7797603011131287,
+						0.409041166305542,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["isFinalVersion"] = false,
+			},
+		},
+		["GameObject-454332"] = {
+			["base"] = {
+				["title"] = "Treatise on Forms: Sages",
+				["text"] = {
+					"In ancient times of the old empire, before nerubians were nerubians, there was the sage.\n\nA need rose where the ancestors of Nerub required a shape that could wield magic against foes, evoke the dark energies of the ancient ones, and pass this knowledge on to future sorcerers.\n\nCrafted of folded flesh and warping of life through dark alchemy, these transformed sages were priests, mages, and harbingers of the ancient ones.",
+					"Now, they are the scholars of the Last Kingdom. The keepers of power and wisdom that let the Kingdom thrive, while remembering what it used to be.\n\nCapable of weaving strands of knowledge to pass between one another, the sages have become custodians of techniques no written word could capture.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2213] = {
+						0.3825194239616394,
+						0.390883207321167,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+			},
+		},
+		["GameObject-454335"] = {
+			["base"] = {
+				["title"] = "Entomological Essay on Grubs, Volume 1",
+				["text"] = {
+					"Entomological Essay on Grubs, Vol. 1\r\nBy Wormcaller Iz'tikrine\r\n\r\nIt is not enough to exert our will upon bilateral feeders. We nerubians did not achieve dominance of the deeps by ignoring its strengths and limitations.\r\n\r\nI present to you, dear reader, the worm.\r\n\r\nEyeless, noseless, and devoid of petty things like sentience or sapience, the worm is a creature born in the darkness with an endless desire to feed.\r\n\r\nIt is aware of its surroundings through reverberations and resonances. In this way it has laid low armies of wanton guests, consumed vast hosts of parasites or invasive growths, and survived, content in its gluttony.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2255] = {
+						0.4009796977043152,
+						0.3978378176689148,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
 			},
 		},
 
