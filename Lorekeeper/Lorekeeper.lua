@@ -477,26 +477,38 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			activeContext.mapData = {
 				[map] = coords,
 			};
-			if LK["LocalData"]["text"][key] and LK["LocalData"]["text"][key]["base"] and LK["LocalData"]["text"][key]["base"]["mapData"] then
-				if not LK["LocalData"]["text"][key]["base"]["mapData"][map] then
-					LoreK_DB["text"][key]["base"]["mapData"] = {
-						[map] = coords,
-					};
+			if LK["LocalData"]["text"][key] and LK["LocalData"]["text"][key]["base"] and LK["LocalData"]["text"][key]["base"]["mapData"] then -- local map data is found
+				if not LK["LocalData"]["text"][key]["base"]["mapData"][map] then -- check if no data specific to map ID exists
+					LoreK_DB["text"][key]["base"]["mapData"][map] = coords;
 					if LoreK_DB.settings.debugAdvanced then
 						Print("Adding MapID data to SVs")
 					end
 				else
-					if LoreK_DB["text"][key]["base"]["mapData"] and LoreK_DB["text"][key]["base"]["mapData"][map] then
-						LoreK_DB["text"][key]["base"]["mapData"][map] = nil
+					if LoreK_DB["text"][key]["base"]["mapData"] and LoreK_DB["text"][key]["base"]["mapData"][map] then -- check for duplicate data is found and delete it
+						LoreK_DB["text"][key]["base"]["mapData"][map] = nil;
 						if LoreK_DB.settings.debugAdvanced then
 							Print("Cleaning up duplicate Map ID data found in LocalData.")
 						end
 					end
 				end
-			else
-				LoreK_DB["text"][key]["base"]["mapData"] = {
-					[map] = coords,
-				};
+			else -- no local data
+				if LoreK_DB["text"][key] and LoreK_DB["text"][key]["base"] then
+					if LoreK_DB["text"][key]["base"]["mapData"] then -- local map data is not found, but the SV map data exists
+						if not LoreK_DB["text"][key]["base"]["mapData"][map] then -- check if specific map ID data exists
+							LoreK_DB["text"][key]["base"]["mapData"][map] = coords;
+							if LoreK_DB.settings.debugAdvanced then
+								Print("Adding MapID data to SVs")
+							end
+						end
+					else -- no map data exists
+						LoreK_DB["text"][key]["base"]["mapData"] = {
+							[map] = coords,
+						};
+						if LoreK_DB.settings.debugAdvanced then
+							Print("Writing Map Data")
+						end
+					end
+				end
 			end
 		end
 		if LoreK_DB["text"][key] then
