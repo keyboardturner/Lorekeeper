@@ -4,6 +4,10 @@ Weekly LocalData Update 3 - 17/09/24 (110 new entries)
 
 Implemented Duplicate MapData Cleaning (Currently only works upon selecting a journal entry, may add button to iterate over entire library in the future)
 
+Adjustment to name / class detection in text
+
+Treat "Valentine's Day Card" item as a mail item (22059)
+
 # 0.1.0
 
 Weekly LocalData Update 2 - 10/09/24 (17 new entries)

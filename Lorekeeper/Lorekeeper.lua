@@ -25,10 +25,13 @@ local PH_PLAYER_CLASS = "$PLAYER_CLASS$";
 
 -- replace player name and class with generic identifiers
 local function ReplaceNameAndClass(word)
-	if word == GetUnitName("player", false) or word == GetUnitName("player", true) then
+	local playerNameF = GetUnitName("player", false);
+	local playerNameT = GetUnitName("player", true);
+	local playerClass = UnitClass("player");
+	if string.lower(word) == string.lower(playerNameF) or string.lower(word) == string.lower(playerNameT) then
 		return PH_PLAYER_NAME;
 	end
-	if word == UnitClass("player") then
+	if string.lower(word) == string.lower(playerClass) then
 		return PH_PLAYER_CLASS;
 	end
 end
@@ -395,7 +398,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		local npcID = select(6, strsplit("-", activeContext.guid));
 		local GUIDType = select(1, strsplit("-", activeContext.guid));
 		local key = GUIDType .. "-" .. ( C_Item.GetItemIDByGUID(activeContext.guid) or npcID );
-		if key == "Item-8383" then -- this will be handled by the Mail plugin.
+		if key == "Item-8383" or key == "Item-22059" then -- this will be handled by the Mail plugin.
 			if C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
 				local itemLink = C_Item.GetItemLinkByGUID(activeContext.guid);
 				local PlayerGUID = ProcessItemLink(itemLink);
