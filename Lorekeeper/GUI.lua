@@ -902,6 +902,12 @@ ScrollUtil.AddInitializedFrameCallback(ItemScrollBox, LoreKGUI.OnFrameInitialize
 
 --------------------------------------------------------------------------
 
+-- This function will clear the ScrollView and repopulate it with the given search results
+local function PopulateNewDataProvider(newData)
+	ItemDataProvider = CreateDataProvider(newData);
+	ItemScrollView:SetDataProvider(ItemDataProvider);
+end
+
 --sort by favorite, then books that have been read, then alphabetize each category by title
 function LoreKGUI.sortFunc(a, b)
 	--print("a",a.base.title, a.base.isFavorite)
@@ -929,15 +935,15 @@ function LoreKGUI.PopulateList()
 	end
 
 	ItemScrollView:SetElementInitializer("Button", ItemInitializer);
-	-- Insert each entry into the DataProvider
+
+	local proxy = {};
 	for id, data in pairs(allData) do
 		data.id = id;
-		ItemDataProvider:Insert(data);
+		tinsert(proxy, data);
 	end
 
+	PopulateNewDataProvider(proxy);
 	LoreKGUI.OnTextChanged(LoreKGUI.SearchBox);
-	ItemDataProvider:SetSortComparator(LoreKGUI.sortFunc);
-	ItemDataProvider:Sort();
 end
 
 -- Search box
@@ -945,12 +951,6 @@ LoreKGUI.SearchBox = CreateFrame("EditBox", "LoreKSearchBox", ItemDisplayFrame, 
 LoreKGUI.SearchBox:SetSize(105, 20);
 LoreKGUI.SearchBox:SetPoint("TOPLEFT", ItemDisplayFrame, "TOPLEFT", 10, -5);
 LoreKGUI.SearchBox:SetAutoFocus(false);
-
-	-- This function will clear the ScrollView and repopulate it with the given search results
-local function PopulateNewDataProvider(newData)
-	ItemDataProvider = CreateDataProvider(newData);
-	ItemScrollView:SetDataProvider(ItemDataProvider);
-end
 
 local function escapePattern(text)
 	-- Escape all special characters in the user's input
