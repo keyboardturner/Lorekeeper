@@ -1,3 +1,11 @@
+# 0.1.2
+
+Lag upon reading / closing books has been eliminated
+
+Added option to disable sound upon learning an entry
+
+Fixed "Obtainable" state of many recent classic items
+
 # 0.1.1
 
 Weekly LocalData Update 3 - 17/09/24 (110 new entries)

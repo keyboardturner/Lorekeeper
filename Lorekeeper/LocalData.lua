@@ -18,8 +18,16 @@ LK["LocalData"] = {
 				["pageCount"] = 0,
 				["singlePage"] = false,
 				["material"] = "Parchment", -- the vast majority of text is Parchment, but not always.
+				["mapData"] = { -- location found - generally auto-generated. coords will be 0 in instances. only for game objects
+					[1234] = {
+						0.1234,
+						0.1234,
+					},
+				},
 				["isObtainable"] = true, -- this must be manually verified. There will never be a deterministic way of setting this key.
-				["isClassSpecific"] = false, -- same as above.
+				["isClassSpecific"] = false, -- same as above. if it isn't false, use the class ID number value.
+				["isFinalVersion"] = true, -- manually verified if it's the final version or not. generally kept blank for most items as it's not necessary to specify, but some text change with progress (artifact books)
+				["expansion"] = 9, -- WoW Project Expansion ID - follows similar number scheme. Classic = 0, MoP = 4, War Within = 10, etc. 
 			},
 			["copy_1"] = { -- the copy number should be incremental. These do not get displayed but will still be stored because they're a variant.
 				["title"] = "Thunderspine Nest Shopping List",
@@ -67,6 +75,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-92471"] = {
@@ -90,6 +99,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = 9, -- Warlock
+				["expansion"] = 4,
 			},
 		},
 		["Item-204185"] = {
@@ -110,6 +120,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 9,
 			},
 		},
 		["Item-225430"] = {
@@ -123,6 +134,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225417"] = {
@@ -136,6 +148,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225416"] = {
@@ -149,6 +162,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225426"] = {
@@ -162,6 +176,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-139034"] = {
@@ -175,6 +190,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = 9, -- Warlock
+				["expansion"] = 6,
 			},
 		},
 		["Item-95412"] = {
@@ -189,6 +205,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["Item-225422"] = {
@@ -202,6 +219,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225429"] = {
@@ -215,6 +233,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-201518"] = {
@@ -234,6 +253,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 3,
 			},
 		},
 		["GameObject-408060"] = {
@@ -253,6 +273,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 9,
 			},
 		},
 		["Item-225420"] = {
@@ -266,6 +287,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225428"] = {
@@ -279,6 +301,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225421"] = {
@@ -292,6 +315,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-245005"] = {
@@ -348,6 +372,7 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = 9, -- Warlock
 				["isFinalVersion"] = true,
+				["expansion"] = 6,
 			},
 			["copy_1"] = {
 				["title"] = "Tome of Blighted Implements",
@@ -381,6 +406,16 @@ LK["LocalData"] = {
 				["singlePage"] = false,
 				["pageCount"] = 0,
 				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[717] = {
+						0.5666234493255615,
+						0.4116912484169006,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 9, -- Warlock
+				["isFinalVersion"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-385586"] = {
@@ -396,6 +431,7 @@ LK["LocalData"] = {
 				["isClassSpecific"] = false,
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 9,
 			},
 		},
 		["Item-206033"] = {
@@ -409,6 +445,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 9,
 			},
 		},
 		["Item-200295"] = {
@@ -427,6 +464,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 9,
 			},
 		},
 		["Item-225427"] = {
@@ -440,6 +478,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225423"] = {
@@ -453,6 +492,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225418"] = {
@@ -466,6 +506,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-83078"] = {
@@ -485,6 +526,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = 9, -- Warlock
+				["expansion"] = 4,
 			},
 		},
 		["Item-225424"] = {
@@ -498,6 +540,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225425"] = {
@@ -511,6 +554,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225216"] = {
@@ -528,6 +572,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-424378"] = {
@@ -547,6 +592,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-453734"] = {
@@ -566,6 +612,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-208416"] = {
@@ -580,6 +627,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 9,
 			},
 		},
 		["GameObject-447480"] = {
@@ -599,6 +647,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-464019"] = {
@@ -620,6 +669,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-423110"] = {
@@ -639,6 +689,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-441720"] = {
@@ -658,6 +709,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-447478"] = {
@@ -677,6 +729,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-455610"] = {
@@ -704,6 +757,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-441555"] = {
@@ -723,6 +777,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-449579"] = {
@@ -742,6 +797,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-217171"] = {
@@ -762,6 +818,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-421361"] = {
@@ -781,6 +838,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-424375"] = {
@@ -800,6 +858,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-226015"] = {
@@ -813,6 +872,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-419693"] = {
@@ -832,6 +892,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-441278"] = {
@@ -851,6 +912,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-421358"] = {
@@ -872,6 +934,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-441577"] = {
@@ -891,6 +954,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-216888"] = {
@@ -904,6 +968,7 @@ LK["LocalData"] = {
 				["material"] = "ParchmentLarge",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-228369"] = {
@@ -924,6 +989,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-212605"] = {
@@ -937,6 +1003,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-439328"] = {
@@ -956,6 +1023,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-446374"] = {
@@ -975,6 +1043,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-455603"] = {
@@ -996,6 +1065,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-441578"] = {
@@ -1015,6 +1085,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-463888"] = {
@@ -1040,6 +1111,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-441231"] = {
@@ -1059,6 +1131,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-466232"] = {
@@ -1078,6 +1151,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-453729"] = {
@@ -1097,6 +1171,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-421355"] = {
@@ -1116,6 +1191,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-464021"] = {
@@ -1137,6 +1213,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-423109"] = {
@@ -1156,6 +1233,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-217990"] = {
@@ -1169,6 +1247,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-464137"] = {
@@ -1191,6 +1270,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-447479"] = {
@@ -1210,6 +1290,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-145296"] = {
@@ -1230,6 +1311,7 @@ LK["LocalData"] = {
 				["pageCount"] = 0,
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-441563"] = {
@@ -1249,6 +1331,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-441637"] = {
@@ -1268,6 +1351,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-216882"] = {
@@ -1283,6 +1367,7 @@ LK["LocalData"] = {
 				["isClassSpecific"] = false,
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-441358"] = {
@@ -1302,6 +1387,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-217995"] = {
@@ -1315,6 +1401,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-466233"] = {
@@ -1334,6 +1421,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-216889"] = {
@@ -1347,6 +1435,7 @@ LK["LocalData"] = {
 				["material"] = "ParchmentLarge",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-453725"] = {
@@ -1366,6 +1455,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-217993"] = {
@@ -1379,6 +1469,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-424377"] = {
@@ -1398,6 +1489,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-175727"] = {
@@ -1435,6 +1527,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["Item-225206"] = {
@@ -1451,6 +1544,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-145282"] = {
@@ -1471,6 +1565,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["Item-225212"] = {
@@ -1489,6 +1584,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-269989"] = {
@@ -1508,6 +1604,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["Item-145306"] = {
@@ -1531,6 +1628,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-441633"] = {
@@ -1550,6 +1648,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-145275"] = {
@@ -1568,6 +1667,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["Item-145289"] = {
@@ -1591,6 +1691,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-216757"] = {
@@ -1614,6 +1715,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-266736"] = {
@@ -1633,6 +1735,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["Item-145285"] = {
@@ -1653,6 +1756,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-175752"] = {
@@ -1688,6 +1792,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["Item-13158"] = {
@@ -1704,6 +1809,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["Item-145308"] = {
@@ -1720,6 +1826,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-464020"] = {
@@ -1741,6 +1848,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-145305"] = {
@@ -1757,6 +1865,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-175758"] = {
@@ -1786,6 +1895,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["Item-145297"] = {
@@ -1815,6 +1925,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-441183"] = {
@@ -1834,6 +1945,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-145280"] = {
@@ -1859,6 +1971,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["Item-145284"] = {
@@ -1879,6 +1992,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["Item-145300"] = {
@@ -1895,6 +2009,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["Item-225217"] = {
@@ -1912,6 +2027,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-175735"] = {
@@ -1946,6 +2062,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["Item-145292"] = {
@@ -1966,6 +2083,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-175730"] = {
@@ -2000,6 +2118,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-215765"] = {
@@ -2019,6 +2138,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-175729"] = {
@@ -2053,6 +2173,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-266761"] = {
@@ -2072,6 +2193,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["Item-189753"] = {
@@ -2089,6 +2211,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 8,
 			},
 		},
 		["GameObject-21581"] = {
@@ -2125,6 +2248,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["Item-145286"] = {
@@ -2142,6 +2266,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-270855"] = {
@@ -2161,6 +2286,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-148502"] = {
@@ -2180,6 +2306,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-408631"] = {
@@ -2200,6 +2327,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 9,
 			},
 		},
 		["Item-145279"] = {
@@ -2224,6 +2352,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-406321"] = {
@@ -2249,6 +2378,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 9,
 			},
 		},
 		["Item-145298"] = {
@@ -2277,6 +2407,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["Item-145290"] = {
@@ -2305,6 +2436,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["Item-142250"] = {
@@ -2325,6 +2457,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-455269"] = {
@@ -2344,6 +2477,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-145283"] = {
@@ -2371,6 +2505,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-382168"] = {
@@ -2390,6 +2525,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 9,
 			},
 		},
 		["GameObject-175760"] = {
@@ -2420,6 +2556,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175746"] = {
@@ -2474,6 +2611,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["Item-145303"] = {
@@ -2500,6 +2638,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-258986"] = {
@@ -2519,6 +2658,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 6,
 			},
 		},
 		["GameObject-466230"] = {
@@ -2544,6 +2684,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-351956"] = {
@@ -2563,6 +2704,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 8,
 			},
 		},
 		["GameObject-355478"] = {
@@ -2582,6 +2724,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 8,
 			},
 		},
 		["GameObject-355484"] = {
@@ -2601,6 +2744,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 8,
 			},
 		},
 		["Item-228457"] = {
@@ -2616,6 +2760,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225208"] = {
@@ -2632,6 +2777,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-355487"] = {
@@ -2651,6 +2797,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 8,
 			},
 		},
 		["GameObject-455277"] = {
@@ -2670,6 +2817,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-355462"] = {
@@ -2689,6 +2837,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 8,
 			},
 		},
 		["GameObject-355486"] = {
@@ -2708,6 +2857,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 8,
 			},
 		},
 		["GameObject-355465"] = {
@@ -2727,6 +2877,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 8,
 			},
 		},
 		["GameObject-355476"] = {
@@ -2746,6 +2897,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 8,
 			},
 		},
 		["GameObject-355464"] = {
@@ -2765,6 +2917,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 8,
 			},
 		},
 		["GameObject-355489"] = {
@@ -2784,6 +2937,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 8,
 			},
 		},
 		["Item-225204"] = {
@@ -2802,6 +2956,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-355482"] = {
@@ -2821,6 +2976,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 8,
 			},
 		},
 		["Item-223901"] = {
@@ -2834,6 +2990,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-455276"] = {
@@ -2853,6 +3010,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454328"] = {
@@ -2872,6 +3030,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454412"] = {
@@ -2891,6 +3050,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454404"] = {
@@ -2910,6 +3070,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225215"] = {
@@ -2927,6 +3088,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-456927"] = {
@@ -2946,6 +3108,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454408"] = {
@@ -2965,6 +3128,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454338"] = {
@@ -2984,6 +3148,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454407"] = {
@@ -3003,6 +3168,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454405"] = {
@@ -3022,83 +3188,88 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454414"] = {
 			["base"] = {
+				["title"] = "Varerko's Plaque",
+				["text"] = {
+					"<A battered bronze plaque has been hammered into the rock near this inert earthen.>\r\n\r\nVarerko stands here, proud and true to the Machine. She never turned away a mug of cinderbrew, and she was always first to assist others if her duties completed early. May we dance together again, my friend.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
 				["mapData"] = {
 					[2214] = {
 						0.4934879541397095,
 						0.4903172850608826,
 					},
 				},
-				["pageCount"] = 0,
-				["text"] = {
-					"<A battered bronze plaque has been hammered into the rock near this inert earthen.>\r\n\r\nVarerko stands here, proud and true to the Machine. She never turned away a mug of cinderbrew, and she was always first to assist others if her duties completed early. May we dance together again, my friend.",
-				},
-				["material"] = "Bronze",
-				["singlePage"] = true,
-				["title"] = "Varerko's Plaque",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454313"] = {
 			["base"] = {
+				["title"] = "Queen Xekatha",
+				["text"] = {
+					"",
+					"The strand of Queen Xekatha is the tale of the Reign of Blue.\n\nIn her time was born the shimmer worms, named so for the light they emit. These worms began as a pest infesting crops until they were transformed by the Grand Splicer Kizriith as a gift to his beloved queen.\n\nBefore the swing of the seventy-fifth pendulum, the pestilence of the Last Kingdom had become its most glorious form of art.\n\nThe trend of the dynasty was to encourage glimmer worms to grow across entire strands of webs, trapped in place for all to see, their blue light a new form of expression.\n\nFor the love of our queen, the Last Kingdom bathed in the blue light of her favorite art, and all was good.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
 				["mapData"] = {
 					[2213] = {
 						0.382533609867096,
 						0.3549173474311829,
 					},
 				},
-				["pageCount"] = 0,
-				["text"] = {
-					"",
-					"The strand of Queen Xekatha is the tale of the Reign of Blue.\n\nIn her time was born the shimmer worms, named so for the light they emit. These worms began as a pest infesting crops until they were transformed by the Grand Splicer Kizriith as a gift to his beloved queen.\n\nBefore the swing of the seventy-fifth pendulum, the pestilence of the Last Kingdom had become its most glorious form of art.\n\nThe trend of the dynasty was to encourage glimmer worms to grow across entire strands of webs, trapped in place for all to see, their blue light a new form of expression.\n\nFor the love of our queen, the Last Kingdom bathed in the blue light of her favorite art, and all was good.",
-				},
-				["material"] = "ParchmentLarge",
-				["singlePage"] = false,
-				["title"] = "Queen Xekatha",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454316"] = {
 			["base"] = {
+				["title"] = "Queen Zaltra",
+				["text"] = {
+					"The queen of cobwebs.\n\n\r\nZaltra, may her name never be spoken with grace but as a lesson in hubris.\n\n\r\nIn her arrogance, she strove to conquer the children of stone. Her mandibles of greed broke upon their carapace of metal. Against the will of her people, she drove the nerubians to war. \n\n\r\nSo began the first recorded civil war in nerubian history. The queen attempted dominance over her subjects, wielding the scents of power. \n\n\r\nThe lords and sages refused. The dream of conquest was not theirs, and so they turned against Queen Zaltra.\n\nUnwilling to slay her for fear of losing the knowledge of her strand, Zaltra was sent into exile until she would part with the knowledge held within her body.\n\nMany claim Zaltra still walks the depths of the earth, lording over the cobwebs of old, waiting for a day when her dreams of conquest might come to fruition.\n\n\n\nAddendum by Izvan the High Sage:\n\nWhile Zaltra's body was never found, the knowledge of her strand lost, it is confirmed that no nerubian queen is immortal.\n\nAge would have taken Zaltra many centuries before this addendum was added.\n\nThere is a small chance her knowledge may still be preserved within the strands of her corpse, mummified and waiting, a treasure only the nerubians people would understand.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
 				["mapData"] = {
 					[2213] = {
 						0.3847172260284424,
 						0.3242721557617188,
 					},
 				},
-				["pageCount"] = 0,
-				["text"] = {
-					"The queen of cobwebs.\n\n\r\nZaltra, may her name never be spoken with grace but as a lesson in hubris.\n\n\r\nIn her arrogance, she strove to conquer the children of stone. Her mandibles of greed broke upon their carapace of metal. Against the will of her people, she drove the nerubians to war. \n\n\r\nSo began the first recorded civil war in nerubian history. The queen attempted dominance over her subjects, wielding the scents of power. \n\n\r\nThe lords and sages refused. The dream of conquest was not theirs, and so they turned against Queen Zaltra.\n\nUnwilling to slay her for fear of losing the knowledge of her strand, Zaltra was sent into exile until she would part with the knowledge held within her body.\n\nMany claim Zaltra still walks the depths of the earth, lording over the cobwebs of old, waiting for a day when her dreams of conquest might come to fruition.\n\n\n\nAddendum by Izvan the High Sage:\n\nWhile Zaltra's body was never found, the knowledge of her strand lost, it is confirmed that no nerubian queen is immortal.\n\nAge would have taken Zaltra many centuries before this addendum was added.\n\nThere is a small chance her knowledge may still be preserved within the strands of her corpse, mummified and waiting, a treasure only the nerubians people would understand.",
-				},
-				["material"] = "ParchmentLarge",
-				["singlePage"] = true,
-				["title"] = "Queen Zaltra",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-455275"] = {
 			["base"] = {
+				["title"] = "Notes On The Machine Speakers: Fragment III",
+				["text"] = {
+					'Machine Speakers who have delayed their sync cycle in the Awakening Machine may begin to display psychological aberrance. This may include unacceptable or unprofessional displays of emotion. Such behavior is described as "non-compliant" and coworkers remain vigilant for non-compliant behavior. \r\n\r\nAn effective foreman will intercede before then, reminding a worker to "moderate their tone".\r\n\r\nOver time after a Machine Speakers\' sync in the Awakening Machine, they may begin to develop friendships or more romantic relationships. This is deemed acceptable, and some privately agree to form long-term partnerships, fusing their time together. However, when a Machine Speaker returns to the Awakening Machine, everything deemed peripheral to work and training (including these relationships) is removed from the individual\'s mind, so they can focus on work.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
 						0.5107366442680359,
 						0.1451387405395508,
 					},
 				},
-				["pageCount"] = 0,
-				["text"] = {
-					'Machine Speakers who have delayed their sync cycle in the Awakening Machine may begin to display psychological aberrance. This may include unacceptable or unprofessional displays of emotion. Such behavior is described as "non-compliant" and coworkers remain vigilant for non-compliant behavior. \r\n\r\nAn effective foreman will intercede before then, reminding a worker to "moderate their tone".\r\n\r\nOver time after a Machine Speakers\' sync in the Awakening Machine, they may begin to develop friendships or more romantic relationships. This is deemed acceptable, and some privately agree to form long-term partnerships, fusing their time together. However, when a Machine Speaker returns to the Awakening Machine, everything deemed peripheral to work and training (including these relationships) is removed from the individual\'s mind, so they can focus on work.',
-				},
-				["material"] = "Parchment",
-				["singlePage"] = true,
-				["title"] = "Notes On The Machine Speakers: Fragment III",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-223903"] = {
@@ -3112,6 +3283,7 @@ LK["LocalData"] = {
 				["pageCount"] = 0,
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-223902"] = {
@@ -3125,6 +3297,7 @@ LK["LocalData"] = {
 				["pageCount"] = 0,
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454320"] = {
@@ -3144,6 +3317,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454330"] = {
@@ -3164,6 +3338,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454418"] = {
@@ -3183,6 +3358,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225205"] = {
@@ -3205,6 +3381,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-441223"] = {
@@ -3224,6 +3401,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454417"] = {
@@ -3243,6 +3421,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-441284"] = {
@@ -3262,6 +3441,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454406"] = {
@@ -3281,6 +3461,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-455278"] = {
@@ -3300,6 +3481,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454336"] = {
@@ -3319,6 +3501,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454343"] = {
@@ -3339,6 +3522,7 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["isFinalVersion"] = true,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454344"] = {
@@ -3359,6 +3543,7 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["isFinalVersion"] = true,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454348"] = {
@@ -3379,6 +3564,7 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["isFinalVersion"] = true,
+				["expansion"] = 10,
 			},
 			["copy_1"] = {
 				["title"] = "Ethos of War, Part 3",
@@ -3397,6 +3583,7 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["isFinalVersion"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454350"] = {
@@ -3417,6 +3604,7 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["isFinalVersion"] = true,
+				["expansion"] = 10,
 			},
 			["copy_1"] = {
 				["title"] = "Ethos of War, Part 4",
@@ -3435,6 +3623,7 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["isFinalVersion"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-455274"] = {
@@ -3454,6 +3643,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454416"] = {
@@ -3473,6 +3663,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225207"] = {
@@ -3489,6 +3680,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["Item-225203"] = {
@@ -3506,6 +3698,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-456928"] = {
@@ -3527,6 +3720,7 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["isFinalVersion"] = true,
+				["expansion"] = 10,
 			},
 			["copy_1"] = {
 				["title"] = "Treatise on Forms: Ascended",
@@ -3545,6 +3739,7 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["isFinalVersion"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454332"] = {
@@ -3565,6 +3760,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-454335"] = {
@@ -3584,6 +3780,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-175761"] = {
@@ -3628,8 +3825,9 @@ LK["LocalData"] = {
 						0.4537755250930786,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["Item-19484"] = {
@@ -3646,8 +3844,9 @@ LK["LocalData"] = {
 				["singlePage"] = false,
 				["pageCount"] = 0,
 				["material"] = "default",
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175762"] = {
@@ -3671,8 +3870,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-210490"] = {
@@ -3690,8 +3890,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-175745"] = {
@@ -3741,8 +3942,9 @@ LK["LocalData"] = {
 						0.1606178879737854,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175750"] = {
@@ -3771,8 +3973,9 @@ LK["LocalData"] = {
 						0.3604362607002258,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175731"] = {
@@ -3802,8 +4005,9 @@ LK["LocalData"] = {
 						0.7335357666015625,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175680"] = {
@@ -3821,8 +4025,9 @@ LK["LocalData"] = {
 						0.2438442707061768,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175681"] = {
@@ -3840,8 +4045,9 @@ LK["LocalData"] = {
 						0.2389614582061768,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-21004"] = {
@@ -3859,8 +4065,9 @@ LK["LocalData"] = {
 						0.7900363206863403,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175739"] = {
@@ -3923,8 +4130,9 @@ LK["LocalData"] = {
 						0.4343588948249817,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175748"] = {
@@ -3963,8 +4171,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175684"] = {
@@ -3982,8 +4191,9 @@ LK["LocalData"] = {
 						0.223034143447876,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175736"] = {
@@ -4026,8 +4236,9 @@ LK["LocalData"] = {
 						0.09084397554397583,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175683"] = {
@@ -4045,8 +4256,9 @@ LK["LocalData"] = {
 						0.2103515267372131,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175688"] = {
@@ -4064,8 +4276,9 @@ LK["LocalData"] = {
 						0.06491047143936157,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175738"] = {
@@ -4102,8 +4315,9 @@ LK["LocalData"] = {
 						0.3019936084747315,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-268164"] = {
@@ -4121,8 +4335,9 @@ LK["LocalData"] = {
 						0.8352710008621216,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 7,
 			},
 		},
 		["GameObject-210491"] = {
@@ -4140,8 +4355,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["Item-20009"] = {
@@ -4155,8 +4371,9 @@ LK["LocalData"] = {
 				["singlePage"] = false,
 				["pageCount"] = 0,
 				["material"] = "Parchment",
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175742"] = {
@@ -4189,8 +4406,9 @@ LK["LocalData"] = {
 						0.4575161337852478,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175774"] = {
@@ -4208,8 +4426,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-177222"] = {
@@ -4227,8 +4446,9 @@ LK["LocalData"] = {
 						0.1241941452026367,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175779"] = {
@@ -4246,8 +4466,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-408646"] = {
@@ -4265,8 +4486,9 @@ LK["LocalData"] = {
 						0.866545557975769,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 9,
 			},
 		},
 		["GameObject-175741"] = {
@@ -4300,8 +4522,9 @@ LK["LocalData"] = {
 						0.4538248181343079,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175740"] = {
@@ -4332,8 +4555,9 @@ LK["LocalData"] = {
 						0.5309373140335083,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175659"] = {
@@ -4351,8 +4575,9 @@ LK["LocalData"] = {
 						0.4379124641418457,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-210488"] = {
@@ -4370,8 +4595,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-175775"] = {
@@ -4383,14 +4609,15 @@ LK["LocalData"] = {
 				["singlePage"] = true,
 				["pageCount"] = 0,
 				["material"] = "Bronze",
-				["isObtainable"] = false,
-				["isClassSpecific"] = false,
 				["mapData"] = {
 					[304] = {
 						0,
 						0,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-210486"] = {
@@ -4408,8 +4635,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-175771"] = {
@@ -4427,8 +4655,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175732"] = {
@@ -4454,8 +4683,9 @@ LK["LocalData"] = {
 						0.7364071607589722,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175763"] = {
@@ -4484,8 +4714,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175682"] = {
@@ -4503,8 +4734,9 @@ LK["LocalData"] = {
 						0.2160977721214294,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175756"] = {
@@ -4545,8 +4777,9 @@ LK["LocalData"] = {
 						0.474770188331604,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175753"] = {
@@ -4580,27 +4813,29 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175773"] = {
 			["base"] = {
+				["title"] = "Dorgar Stoenbrow",
 				["text"] = {
 					"Dorgar Stoenbrow\r\nWarrior of the Scarlet Crusade \r\nLord of the Red Caverns \r\nLast seen in the Mountains of Alterac",
 				},
 				["singlePage"] = true,
 				["pageCount"] = 0,
 				["material"] = "Bronze",
-				["title"] = "Dorgar Stoenbrow",
 				["mapData"] = {
 					[304] = {
 						0,
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-210494"] = {
@@ -4618,8 +4853,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-175679"] = {
@@ -4637,8 +4873,9 @@ LK["LocalData"] = {
 						0.2763707637786865,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175855"] = {
@@ -4664,8 +4901,9 @@ LK["LocalData"] = {
 						0.7375640869140625,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-210485"] = {
@@ -4683,8 +4921,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-175757"] = {
@@ -4709,8 +4948,9 @@ LK["LocalData"] = {
 						0.7444580793380737,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-210484"] = {
@@ -4728,8 +4968,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-175687"] = {
@@ -4747,8 +4988,9 @@ LK["LocalData"] = {
 						0.05086928606033325,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175777"] = {
@@ -4766,8 +5008,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-175725"] = {
@@ -4808,8 +5051,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175780"] = {
@@ -4821,14 +5065,15 @@ LK["LocalData"] = {
 				["singlePage"] = true,
 				["pageCount"] = 0,
 				["material"] = "Bronze",
-				["isObtainable"] = false,
-				["isClassSpecific"] = false,
 				["mapData"] = {
 					[304] = {
 						0,
 						0,
 					},
 				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175751"] = {
@@ -4857,8 +5102,9 @@ LK["LocalData"] = {
 						0.6974332332611084,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-210492"] = {
@@ -4876,8 +5122,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-175772"] = {
@@ -4895,8 +5142,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175726"] = {
@@ -4933,8 +5181,9 @@ LK["LocalData"] = {
 						0.691175103187561,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-210489"] = {
@@ -4952,8 +5201,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-21582"] = {
@@ -4986,8 +5236,9 @@ LK["LocalData"] = {
 						0.2441827654838562,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175685"] = {
@@ -5005,8 +5256,9 @@ LK["LocalData"] = {
 						0.1774955987930298,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175734"] = {
@@ -5042,8 +5294,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175689"] = {
@@ -5061,8 +5314,9 @@ LK["LocalData"] = {
 						0.03037387132644653,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175778"] = {
@@ -5080,8 +5334,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175759"] = {
@@ -5112,8 +5367,9 @@ LK["LocalData"] = {
 						0.641454815864563,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175724"] = {
@@ -5151,8 +5407,9 @@ LK["LocalData"] = {
 						0.7499347925186157,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175854"] = {
@@ -5180,8 +5437,9 @@ LK["LocalData"] = {
 						0.7375640869140625,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-210487"] = {
@@ -5199,8 +5457,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-175754"] = {
@@ -5247,8 +5506,9 @@ LK["LocalData"] = {
 						0.5095947980880737,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175747"] = {
@@ -5279,8 +5539,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-210493"] = {
@@ -5298,8 +5559,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 4,
 			},
 		},
 		["GameObject-21583"] = {
@@ -5332,8 +5594,9 @@ LK["LocalData"] = {
 						0.2598657011985779,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175776"] = {
@@ -5351,8 +5614,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175737"] = {
@@ -5381,8 +5645,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175733"] = {
@@ -5414,8 +5679,9 @@ LK["LocalData"] = {
 						0.4505859613418579,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175749"] = {
@@ -5454,8 +5720,9 @@ LK["LocalData"] = {
 						0.5079053640365601,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175781"] = {
@@ -5473,8 +5740,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175686"] = {
@@ -5492,8 +5760,9 @@ LK["LocalData"] = {
 						0.1089720726013184,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 		["GameObject-175856"] = {
@@ -5520,8 +5789,9 @@ LK["LocalData"] = {
 						0.7375640869140625,
 					},
 				},
-				["isObtainable"] = false,
+				["isObtainable"] = true,
 				["isClassSpecific"] = false,
+				["expansion"] = 0,
 			},
 		},
 

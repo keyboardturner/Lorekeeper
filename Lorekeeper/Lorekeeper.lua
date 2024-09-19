@@ -82,6 +82,8 @@ local ignoredKeys = {
 	isClassSpecific = true,
 	isFinalVersion = true,
 	isHidden = true,
+	expansion = true,
+	source = true,
 };
 
 -- Helper function to check if a key is in the ignored list
@@ -244,6 +246,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					hideUnread = true,
 					slashRead = false,
 					debugAdvanced = false,
+					collectSound = false,
 					searchMenu = {
 						showUnobtainable = false,
 						showClassrestricted = true,
@@ -430,6 +433,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					hideUnread = true,
 					slashRead = false,
 					debugAdvanced = false,
+					collectSound = false,
 					searchMenu = {
 						showUnobtainable = false,
 						showClassrestricted = true,
@@ -540,9 +544,13 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					else
 						-- entry does NOT exist in SVs or LocalData, proceed to save.
 						LoreK_DB["text"][key]["base"] = CopyTable(activeContext)
-						PlaySound(SOUNDKIT.TRADING_POST_UI_COMPLETED_ACTIVITY_TOAST, "SFX", true);
-						PlaySound(SOUNDKIT.CONTENT_TRACKING_ITEM_ACQUIRED_TOAST, "SFX", true);
-						Print("Saved base version into SVs: "..activeContext.title)
+						if LoreK_DB["settings"]["collectSound"] ~= true then
+							PlaySound(SOUNDKIT.TRADING_POST_UI_COMPLETED_ACTIVITY_TOAST, "SFX", true);
+							PlaySound(SOUNDKIT.CONTENT_TRACKING_ITEM_ACQUIRED_TOAST, "SFX", true);
+						end
+						if LoreK_DB.settings.debugAdvanced then
+							Print("Saved base version into SVs: "..activeContext.title)
+						end
 					end
 				else
 					if LK.tCompareDeez(LK["LocalData"]["text"][key]["base"], activeContext) then -- compare LocalData to Active
@@ -575,8 +583,10 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					end
 				end
 				if not LoreK_DB["text"][key]["base"]["hasRead"] then
-					PlaySound(SOUNDKIT.TRADING_POST_UI_COMPLETED_ACTIVITY_TOAST, "SFX", true);
-					PlaySound(SOUNDKIT.CONTENT_TRACKING_ITEM_ACQUIRED_TOAST, "SFX", true);
+					if LoreK_DB["settings"]["collectSound"] ~= true then
+						PlaySound(SOUNDKIT.TRADING_POST_UI_COMPLETED_ACTIVITY_TOAST, "SFX", true);
+						PlaySound(SOUNDKIT.CONTENT_TRACKING_ITEM_ACQUIRED_TOAST, "SFX", true);
+					end
 					LoreK_DB["text"][key]["base"]["hasRead"] = true;
 				end
 			end

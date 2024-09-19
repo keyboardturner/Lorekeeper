@@ -1458,11 +1458,42 @@ SettingsDisplayFrame.TextSizeDropdown:SetupMenu(function(dropdown, rootDescripti
 	end);
 end);
 
+SettingsDisplayFrame.disableCollectSound_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
+SettingsDisplayFrame.disableCollectSound_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*13);
+SettingsDisplayFrame.disableCollectSound_Checkbox:SetScript("OnClick", function(self)
+	if self:GetChecked() then
+		LoreK_DB["settings"]["collectSound"] = true;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON, "SFX");
+	else
+		LoreK_DB["settings"]["collectSound"] = false;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF, "SFX");
+	end
+	LoreKGUI.SetParchmentTexture()
+end);
+SettingsDisplayFrame.disableCollectSound_Checkbox.Text:SetText(LK["ToggleSoundCollected"])
+SettingsDisplayFrame.disableCollectSound_Checkbox.Text:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.disableCollectSound_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["ToggleSoundCollectedTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.disableCollectSound_Checkbox.Text:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+SettingsDisplayFrame.disableCollectSound_Checkbox:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.disableCollectSound_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["ToggleSoundCollectedTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.disableCollectSound_Checkbox:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+
+
 
 --------------------------------------------------------------------------
 --Somewhere way below
 SettingsDisplayFrame.debug_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
-SettingsDisplayFrame.debug_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*15);
+SettingsDisplayFrame.debug_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*16);
 SettingsDisplayFrame.debug_Checkbox:SetScript("OnClick", function(self)
 	if self:GetChecked() then
 		LoreK_DB["settings"]["debugAdvanced"] = true;
@@ -1610,6 +1641,7 @@ function LoreKGUI.Initialize(self, event, arg1)
 				hideUnread = true,
 				slashRead = false,
 				debugAdvanced = false,
+				collectSound = false,
 				searchMenu = {
 					showUnobtainable = false,
 					showClassrestricted = true,
@@ -1665,6 +1697,7 @@ function LoreKGUI.Initialize(self, event, arg1)
 		SettingsDisplayFrame.overrideMats_Checkbox:SetChecked(LoreK_DB["settings"]["overrideMaterials"]);
 		SettingsDisplayFrame.hideUnread_Checkbox:SetChecked(LoreK_DB["settings"]["hideUnread"]);
 		SettingsDisplayFrame.slashRead_Checkbox:SetChecked(LoreK_DB["settings"]["slashRead"]);
+		SettingsDisplayFrame.disableCollectSound_Checkbox:SetChecked(LoreK_DB["settings"]["collectSound"]);
 		SettingsDisplayFrame.debug_Checkbox:SetChecked(LoreK_DB["settings"]["debugAdvanced"]);
 		
 		LoreKGUI.SetParchmentTexture()

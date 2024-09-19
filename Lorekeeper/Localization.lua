@@ -79,6 +79,8 @@ if LOCALE == "enUS" then
 	LK["Hidden"] = "Hidden"
 	LK["ClassRestricted"] = "Class Restricted"
 	LK["Unobtainable"] = "Unobtainable"
+	LK["ToggleSoundCollected"] = "Disable Collected Sound"
+	LK["ToggleSoundCollectedTT"] = "Disable the sound that plays when collecting a text item."
 
 return end
 
@@ -146,6 +148,9 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["Hidden"] = "Oculto"
 	LK["ClassRestricted"] = "Restringido por Clase"
 	LK["Unobtainable"] = "Inalcanzable"
+	LK["ToggleSoundCollected"] = "Desactivar Sonido de Colección"
+	LK["ToggleSoundCollectedTT"] = "Desactivar el sonido que se reproduce al recoger un objeto de texto."
+
 
 return end
 
@@ -213,6 +218,9 @@ if LOCALE == "deDE" then
 	LK["Hidden"] = "Versteckt"
 	LK["ClassRestricted"] = "Klassenbeschränkt"
 	LK["Unobtainable"] = "Unerreichbar"
+	LK["ToggleSoundCollected"] = "Gesammelten Ton deaktivieren"
+	LK["ToggleSoundCollectedTT"] = "Den Ton deaktivieren, der abgespielt wird, wenn ein Textgegenstand gesammelt wird."
+
 
 return end
 
@@ -280,6 +288,9 @@ if LOCALE == "frFR" then
 	LK["Hidden"] = "Caché"
 	LK["ClassRestricted"] = "Restreint à la classe"
 	LK["Unobtainable"] = "Inaccessible"
+	LK["ToggleSoundCollected"] = "Disattiva Suono di Raccolta"
+	LK["ToggleSoundCollectedTT"] = "Disattiva il suono che viene riprodotto quando si raccoglie un oggetto di testo."
+
 
 return end
 
@@ -347,6 +358,9 @@ if LOCALE == "itIT" then
 	LK["Hidden"] = "Nascosto"
 	LK["ClassRestricted"] = "Limitato alla Classe"
 	LK["Unobtainable"] = "Irreperibile"
+	LK["ToggleSoundCollected"] = "Disattiva Suono di Raccolta"
+	LK["ToggleSoundCollectedTT"] = "Disattiva il suono che viene riprodotto quando si raccoglie un oggetto di testo."
+
 
 return end
 
@@ -414,6 +428,9 @@ if LOCALE == "ptBR" then
 	LK["Hidden"] = "Oculto"
 	LK["ClassRestricted"] = "Restrito à Classe"
 	LK["Unobtainable"] = "Inalcançável"
+	LK["ToggleSoundCollected"] = "Desativar Som de Coleta"
+	LK["ToggleSoundCollectedTT"] = "Desativar o som que toca ao coletar um item de texto."
+
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -483,6 +500,9 @@ if LOCALE == "ruRU" then
 	LK["Hidden"] = "Скрыто"
 	LK["ClassRestricted"] = "Ограничено классом"
 	LK["Unobtainable"] = "Недоступно"
+	LK["ToggleSoundCollected"] = "Отключить звук сбора"
+	LK["ToggleSoundCollectedTT"] = "Отключить звук, который воспроизводится при сборе текстового предмета."
+
 
 return end
 
@@ -550,6 +570,9 @@ if LOCALE == "koKR" then
 	LK["Hidden"] = "숨김"
 	LK["ClassRestricted"] = "직업 제한"
 	LK["Unobtainable"] = "획득 불가"
+	LK["ToggleSoundCollected"] = "수집된 소리 비활성화"
+	LK["ToggleSoundCollectedTT"] = "텍스트 아이템을 수집할 때 재생되는 소리를 비활성화합니다."
+
 
 return end
 
@@ -617,6 +640,9 @@ if LOCALE == "zhCN" then
 	LK["Hidden"] = "隐藏"
 	LK["ClassRestricted"] = "职业限制"
 	LK["Unobtainable"] = "无法获得"
+	LK["ToggleSoundCollected"] = "禁用收集声音"
+	LK["ToggleSoundCollectedTT"] = "禁用收集文本物品时播放的声音。"
+
 
 return end
 
@@ -684,5 +710,8 @@ if LOCALE == "zhTW" then
 	LK["Hidden"] = "隱藏"
 	LK["ClassRestricted"] = "職業限制"
 	LK["Unobtainable"] = "無法取得"
+	LK["ToggleSoundCollected"] = "禁用收集聲音"
+	LK["ToggleSoundCollectedTT"] = "禁用收集文本物品時播放的聲音。"
+
 
 return end
