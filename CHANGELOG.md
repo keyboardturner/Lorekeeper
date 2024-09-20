@@ -1,6 +1,6 @@
 # 0.1.3
 
-Weekly LocalData Update 4 - 24/09/24 (255 personal entries + 64 user-submitted entries)
+Weekly LocalData Update 4 - 24/09/24 (255 personal entries + 64 Anonymous User 1 submitted entries + 33 Anonymous User 2 submitted entries)
 
 # 0.1.2
 
