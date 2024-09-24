@@ -31,9 +31,9 @@ local function ReplaceNameAndClass(word)
 	if string.lower(word) == string.lower(playerNameF) or string.lower(word) == string.lower(playerNameT) then
 		return PH_PLAYER_NAME;
 	end
-	if string.lower(word) == string.lower(playerClass) then
-		return PH_PLAYER_CLASS;
-	end
+	--if string.lower(word) == string.lower(playerClass) then
+		--return PH_PLAYER_CLASS; -- this doesn't seem to be utilized legitimately, so disable for now.
+	--end
 end
 
 local DEFAULT_PAGE_COUNT = 0; -- since books are not zero-indexed
