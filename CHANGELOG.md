@@ -2,6 +2,8 @@
 
 Weekly LocalData Update 4 - 24/09/24 (255 personal entries + 64 Anonymous User 1 submitted entries + 33 Anonymous User 2 submitted entries)
 
+Removed PLAYER_CLASS variable auto-replacing the player class in objects
+
 # 0.1.2
 
 Lag upon reading / closing books has been eliminated
