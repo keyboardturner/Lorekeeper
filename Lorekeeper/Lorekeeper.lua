@@ -646,12 +646,14 @@ function LJ:OnEvent(event, arg1)
 				if not LoreK_DB["questItems"] then
 					LoreK_DB["questItems"] = {};
 				end
-				LoreK_DB["questItems"][itemID] = {
-					isQuestItem = true,
-					isDiscovered = true,
-				};
-				if LoreK_DB.settings.debugAdvanced then
-					Print("Quest item stored: " .. itemID)
+				if not LoreK_DB["questItems"][itemID] then
+					LoreK_DB["questItems"][itemID] = {
+						isQuestItem = true,
+						isDiscovered = true,
+					};
+					if LoreK_DB.settings.debugAdvanced then
+						Print("Quest item stored: " .. itemID)
+					end
 				end
 			end
 		end
