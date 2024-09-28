@@ -285,7 +285,7 @@ local function ShowColorPicker(configTable)
 	ColorPickerFrame:SetupColorPickerAndShow(options);
 end
 
-
+local HasLoginForTab = false
 -- Function to handle tab clicks
 local function Tab_OnClick(self)
 	PanelTemplates_SetTab(self:GetParent(), self:GetID());
@@ -294,11 +294,15 @@ local function Tab_OnClick(self)
 	end
 	self.content:Show();
 	PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB, "SFX");
-	LoreKMainframeTab2:SetEnabled(false) -- until the GUI implemented
+	--LoreKMainframeTab2:SetEnabled(true) -- until the GUI implemented
 
-	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
-		LoreKMainframeTab2:SetEnabled(false);
-		LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5);
+	if HasLoginForTab then
+		if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
+			LoreKMainframeTab2:SetEnabled(false);
+			LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5);
+		else
+			Lorekeeper_API.SetUpMailColorsAndTextures();
+		end
 	end
 end
 
@@ -367,10 +371,10 @@ end
 local content1, content2, content3 = SetTabs(LoreKGUI, 3, LK["Library"], LK["Mail"], LK["Settings"]);
 
 
-LoreKMainframeTab2:SetEnabled(false)
+--LoreKMainframeTab2:SetEnabled(false)
 --LoreKMainframeTab3:SetEnabled(false)
 
-LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
+--LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
 --LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5)
 
 LoreKMainframeTab1:SetScript("OnEnter", function(self)
@@ -385,7 +389,7 @@ end);
 LoreKMainframeTab2:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
 	GameTooltip:AddLine(LK["Mail"], 1, 1, 1);
-	GameTooltip:AddLine(LK["NotYetAvailable"], 1, 0, 0) -- until GUI is implemented
+	--GameTooltip:AddLine(LK["NotYetAvailable"], 1, 0, 0) -- until GUI is implemented
 	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
 		GameTooltip:AddLine(LK["AddonDisabled"], 1, 0, 0)
 	end
@@ -614,8 +618,8 @@ local function ItemInitializer(button, data)
 		button.icon.tex:SetDesaturated(true);
 	end
 	button.icon.favoritesIcon = button.icon.favoritesIcon or button.icon:CreateTexture(nil, "OVERLAY", nil, 2);
-	button.icon.favoritesIcon:SetPoint("TOPLEFT", button.icon.unreadIcon, "TOPLEFT", -5,2);
-	button.icon.favoritesIcon:SetPoint("BOTTOMRIGHT", button.icon.unreadIcon, "BOTTOMRIGHT", -20,17);
+	button.icon.favoritesIcon:SetPoint("TOPLEFT", button.icon, "TOPLEFT", -6,2);
+	button.icon.favoritesIcon:SetPoint("BOTTOMRIGHT", button.icon, "BOTTOMRIGHT", -21,17);
 	button.icon.favoritesIcon:SetAtlas("PetJournal-FavoritesIcon");
 	if isFavorite then
 		button.icon.favoritesIcon:Show();
@@ -1625,12 +1629,12 @@ function LoreKGUI.SetFontSizeP()
 	SettingsDisplayFrame.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"] or 13, flags);  -- dummy text
 	SettingsDisplayFrame.textHTMLLarge:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"] or 13, flags); -- dummy text
 	TextScrollChild.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"] or 13, flags);
-	TextScrollChild.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"] or 13, flags);
 end;
 
 
 LoreKGUI.Events = CreateFrame("Frame");
 LoreKGUI.Events:RegisterEvent("ADDON_LOADED");
+LoreKGUI.Events:RegisterEvent("PLAYER_ENTERING_WORLD");
 
 
 function LoreKGUI.Initialize(self, event, arg1)
@@ -1704,6 +1708,14 @@ function LoreKGUI.Initialize(self, event, arg1)
 		LoreKGUI.SetColors()
 		LoreKGUI.SetFontSizeP();
 	end
+	if event == "PLAYER_ENTERING_WORLD" then
+		HasLoginForTab = true
+		if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
+			print("THIS IS FIRING WTF")
+			LoreKMainframeTab2:SetEnabled(false);
+			LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5);
+		end
+	end
 end
 
 
@@ -1713,13 +1725,6 @@ function LoreKGUI.Script_OnShow()
 	PlaySound(SOUNDKIT.IG_SPELLBOOK_OPEN, "SFX");
 	if LoreK_DB["settings"]["slashRead"] then
 		DoEmote("READ", nil, true);
-	end
-	--LoreKMainframe.PopulateList(); -- doesn't seem necessary i think?
-	if C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
-		--LoreKMainframeTab2:SetEnabled(true); -- Mail GUI not ready
-	--else
-		LoreKMainframeTab2:SetEnabled(false);
-		LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
 	end
 end
 function LoreKGUI.Script_OnHide()
