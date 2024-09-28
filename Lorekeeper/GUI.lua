@@ -1711,7 +1711,6 @@ function LoreKGUI.Initialize(self, event, arg1)
 	if event == "PLAYER_ENTERING_WORLD" then
 		HasLoginForTab = true
 		if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
-			print("THIS IS FIRING WTF")
 			LoreKMainframeTab2:SetEnabled(false);
 			LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5);
 		end
