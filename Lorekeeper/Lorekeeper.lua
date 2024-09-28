@@ -236,6 +236,17 @@ local activeContext;
 local Lorekeeper = CreateFrame("Frame")
 Lorekeeper.Initialize = CreateFrame("Frame");
 
+function LK.ClearQuestItems() -- this should *only* be used to clear out duplicate entries in SVs. This will wipe all data including if it was discovered.
+	for k, v in pairs(LK["LocalData"]["questItems"]) do
+		if LK["LocalData"]["questItems"][k] and LoreK_DB["questItems"][k] then
+			LoreK_DB["questItems"][k] = nil;
+			if LoreK_DB.settings.debugAdvanced then
+				Print("LocalData exists for QuestItemID "..k..". Cleaning up entry.")
+			end
+		end
+	end
+end
+
 function Lorekeeper.Initialize:Events(event, arg1, arg2)
 	if event == "ADDON_LOADED" and arg1 == "Lorekeeper" then
 

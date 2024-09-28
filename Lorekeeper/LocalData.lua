@@ -5943,59 +5943,59 @@ LK["LocalData"] = {
 				["expansion"] = 6,
 			},
 		},
-        ["Item-128984"] = {
-            ["base"] = {
-                ["title"] = "A Steamy Romance Novel: Of Elven Bondage",
-                ["text"] = {
-                    '<HTML>\r\n<BODY>\r\nSteamy Romance Novel B\r\n<IMG src="Interface\\Pictures\\SteamyRomance08" width="301" height="354" texCoordRight="0.58984375" texCoordBottom="0.69140625"/>\r\n</BODY>\r\n</HTML>',
-                    'The weight of his fist crashed into the side of the ogre\'s face with a meaty thunk. The bulbous goon teetered for a moment like a marionette cut loose from its strings before falling into a heap atop his unconcious sibling. The Drektooth brothers may have been feared throughout the land, but the courage of Sir Crispin Greymane had won the day once again.\r\n\r\nThe brave hero had no time to pause and admire his handiwork... not when Lady Moonshade remained shackled to the wall. Greymane strode to her side, each step as graceful as a ram of Dun Morogh. "You are unhurt, my lady? I trust these brutes did not cause you harm."',
-                    'She breathed a relieved sigh as he broke away the bonds that held wrists and ankles. "Your swift arrival saw to that, noble champion," she answered. The night elf\'s glowing eyes beamed upon him like stars on a cloudless night. "The greatest suffering was enduring the ogres\' lecherous glances. My leather armor was damaged during my capture, and several pieces seem to have fallen away." She made a halfhearted attempt to cover the bareness of her taut midriff.\r\n\r\n"Of course a knight performing his duty would not notice such a quandry," he assured her, taking her hand and lightly massaging her bruised wrist as she rose to her feet.',
-                    'Standing her full height, Lady Moonshade was at least three heads taller than her savior, if not more. She puzzled at him a moment. "Forgive me, good sir, but I cannot discern if you are the shortest human I have ever met, or the tallest dwarf."\r\n\r\nHis white teeth flashed through the thickness of his beard like snowcaps on a mountain ridge. "I like to think I\'m the best of both, good lady." He gestured toward the doorway. "A spacious carriage awaits to convey you back home. I assure you, my driver will not disturb us as I personally see to your recovery. I will do my best to ensure the ride is to your liking."\r\n\r\nA playful smile danced about her lips. "I hope I can rely upon your driver\'s discretion. I fear the rest of my fragile armor might fall away at any moment."',
-                    'The ruggedly handsome knight bowed and flashed a confident wink. "Why my dear, I\'m positively counting on it!"\r\n\r\n"Oh, Sir Greymane!" she swooned, falling into his arms. He guided her toward the waiting coach, stepping over the unconscious ogres on the floor.\r\n\r\n<The story continues for many more chapters, laden with vehicle metaphors.>',
-                },
-                ["singlePage"] = false,
-                ["pageCount"] = 0,
-                ["material"] = "Parchment",
+		["Item-128984"] = {
+			["base"] = {
+				["title"] = "A Steamy Romance Novel: Of Elven Bondage",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\nSteamy Romance Novel B\r\n<IMG src="Interface\\Pictures\\SteamyRomance08" width="301" height="354" texCoordRight="0.58984375" texCoordBottom="0.69140625"/>\r\n</BODY>\r\n</HTML>',
+					'The weight of his fist crashed into the side of the ogre\'s face with a meaty thunk. The bulbous goon teetered for a moment like a marionette cut loose from its strings before falling into a heap atop his unconcious sibling. The Drektooth brothers may have been feared throughout the land, but the courage of Sir Crispin Greymane had won the day once again.\r\n\r\nThe brave hero had no time to pause and admire his handiwork... not when Lady Moonshade remained shackled to the wall. Greymane strode to her side, each step as graceful as a ram of Dun Morogh. "You are unhurt, my lady? I trust these brutes did not cause you harm."',
+					'She breathed a relieved sigh as he broke away the bonds that held wrists and ankles. "Your swift arrival saw to that, noble champion," she answered. The night elf\'s glowing eyes beamed upon him like stars on a cloudless night. "The greatest suffering was enduring the ogres\' lecherous glances. My leather armor was damaged during my capture, and several pieces seem to have fallen away." She made a halfhearted attempt to cover the bareness of her taut midriff.\r\n\r\n"Of course a knight performing his duty would not notice such a quandry," he assured her, taking her hand and lightly massaging her bruised wrist as she rose to her feet.',
+					'Standing her full height, Lady Moonshade was at least three heads taller than her savior, if not more. She puzzled at him a moment. "Forgive me, good sir, but I cannot discern if you are the shortest human I have ever met, or the tallest dwarf."\r\n\r\nHis white teeth flashed through the thickness of his beard like snowcaps on a mountain ridge. "I like to think I\'m the best of both, good lady." He gestured toward the doorway. "A spacious carriage awaits to convey you back home. I assure you, my driver will not disturb us as I personally see to your recovery. I will do my best to ensure the ride is to your liking."\r\n\r\nA playful smile danced about her lips. "I hope I can rely upon your driver\'s discretion. I fear the rest of my fragile armor might fall away at any moment."',
+					'The ruggedly handsome knight bowed and flashed a confident wink. "Why my dear, I\'m positively counting on it!"\r\n\r\n"Oh, Sir Greymane!" she swooned, falling into his arms. He guided her toward the waiting coach, stepping over the unconscious ogres on the floor.\r\n\r\n<The story continues for many more chapters, laden with vehicle metaphors.>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 6,
-            },
-        },
-        ["Item-128983"] = {
-            ["base"] = {
-                ["title"] = "A Steamy Romance Novel: Waves of Desire",
-                ["text"] = {
-                    '<HTML>\r\n<BODY>\r\n<IMG src="Interface\\Pictures\\SteamyRomance09" width="301" height="354" texCoordRight="0.58984375" texCoordBottom="0.69140625"/>\r\n</BODY>\r\n</HTML>',
-                    'Lord Gravesbane stared out through the porthole, watching the waves rise and fall in time with the aching that tormented him inside. How long had she kept him waiting here in the cabin of his luxury schooner? He felt the keen edge of his desire growing more insistent, spurring his impatience.\r\n\r\nAt last the cabin door swung open. She paused in the doorway, torchlight playing about the hem of her low-cut silken gown as the shadows danced upon her pale sin\'dorei skin. "Am I late, my lord?" she asked, chewing on the fullness of her lower lip.\r\n\r\nHe found himself speechless as his jaw dropped to the floor. He knelt to pick it up, rising as he snapped it back in place.',
-                    '"Some things are worth waiting for, Lady Sunskin." He held out his hand, beckoning her closer. |n|nFor a moment, a look of uncertainty crossed the highborne\'s brow. Her shallow breaths hung heavy with hesitation and longing. She brushed her fingertips across the cold, pallid skin of his cheek. "I hope your desiccation doesn\'t hinder your enthusiasm, Lord Gravesbane."|n|nHe took her hand and kissed it with his one good lip. "Fear not, darling. My jaw isn\'t what it used to be, but my tongue remains as limber as ever."',
-                    '"Oh, Lord Gravesbane!" she swooned, falling into his arms. He relished the warmth of her skin as he guided her toward the leather harness hanging over his bed. \r\n\r\n<The story continues for many more chapters, laden with "porthole" puns.>',
-                },
-                ["singlePage"] = false,
-                ["pageCount"] = 0,
-                ["material"] = "Parchment",
+			},
+		},
+		["Item-128983"] = {
+			["base"] = {
+				["title"] = "A Steamy Romance Novel: Waves of Desire",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<IMG src="Interface\\Pictures\\SteamyRomance09" width="301" height="354" texCoordRight="0.58984375" texCoordBottom="0.69140625"/>\r\n</BODY>\r\n</HTML>',
+					'Lord Gravesbane stared out through the porthole, watching the waves rise and fall in time with the aching that tormented him inside. How long had she kept him waiting here in the cabin of his luxury schooner? He felt the keen edge of his desire growing more insistent, spurring his impatience.\r\n\r\nAt last the cabin door swung open. She paused in the doorway, torchlight playing about the hem of her low-cut silken gown as the shadows danced upon her pale sin\'dorei skin. "Am I late, my lord?" she asked, chewing on the fullness of her lower lip.\r\n\r\nHe found himself speechless as his jaw dropped to the floor. He knelt to pick it up, rising as he snapped it back in place.',
+					'"Some things are worth waiting for, Lady Sunskin." He held out his hand, beckoning her closer. |n|nFor a moment, a look of uncertainty crossed the highborne\'s brow. Her shallow breaths hung heavy with hesitation and longing. She brushed her fingertips across the cold, pallid skin of his cheek. "I hope your desiccation doesn\'t hinder your enthusiasm, Lord Gravesbane."|n|nHe took her hand and kissed it with his one good lip. "Fear not, darling. My jaw isn\'t what it used to be, but my tongue remains as limber as ever."',
+					'"Oh, Lord Gravesbane!" she swooned, falling into his arms. He relished the warmth of her skin as he guided her toward the leather harness hanging over his bed. \r\n\r\n<The story continues for many more chapters, laden with "porthole" puns.>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 6,
-            },
-        },
-        ["Item-128985"] = {
-            ["base"] = {
-                ["title"] = "A Steamy Romance Novel: Nightborne of the Living Dead",
-                ["text"] = {
-                    '<HTML>\r\n<BODY>\r\nSteamy Romance Novel C\r\n<IMG src="Interface\\Pictures\\SteamyRomance10" width="301" height="354" texCoordRight="0.58984375" texCoordBottom="0.69140625"/>\r\n</BODY>\r\n</HTML>',
-                    'She accepted the chalice of wine with a bat of her long lashes. "I really shouldn\'t, Lord Gravesbane. My mother would never approve."\r\n\r\n"Nonsense, my dear Elonia," the nobleman answered. "You are ten-thousand years old. I\'m sure your mother would forgive you for indulging just this once."\r\n\r\nShe giggled. "It\'s not the wine, my lord. Rather, it\'s the notion of a nightborne spending her evening in the company of someone so..."\r\n\r\n"Charming?" he offered.\r\n\r\n"I was going to say decrepit."',
-                    '"My morals are not quite that far gone, I assure you," he replied, his good eye drifting up and down the length of her flowing gown. "I\'m sure your mother would find me most endearing."\r\n\r\n"Oh would I?" asked a sharp voice. Crispin Gravesbane turned to see another nightborne framed within the doorway. Though her attire was less inviting than her daughter\'s, her face and body were a mirror of Elonia\'s own.\r\n\r\nHe approached and bowed, hastily kicking aside the kneecap that clattered to the floor. "I am Lord Crispin Gravesbane, at your service. Do I have the honor of meeting Lady Marina?"\r\n\r\n"You do," she answered coldly, casting a harsh glance toward Elonia.',
-                    '"I fear you are toying with me, good lady," he smiled, careful to hold his jaw in place. "Surely you must be Elonia\'s sister, not her mother."\r\n\r\nA faint blush flashed across Lady Marina\'s cheeks. "You flatter me, my lord." Her voice softened. "It has been centuries since anyone has mistaken us for siblings."\r\n\r\n"Nonsense!" he insisted, taking her hand and guiding her toward the couch. He sat down between the two indigo-skinned elves. "Perhaps after we share a bit of wine, we\'ll find out what else you and your daughter have in common."',
-                    '"Oh, Lord Gravesbane!" Marina swooned. She took Elonia\'s hand, sharing a furtive smile with her daughter. "Perhaps it\'s time we introduced you to the true secrets of the shal\'dorei."\r\n\r\n<Subsequent pages seem to have been scribbled over in nightborne profanities.>',
-                },
-                ["singlePage"] = false,
-                ["pageCount"] = 0,
-                ["material"] = "Parchment",
+			},
+		},
+		["Item-128985"] = {
+			["base"] = {
+				["title"] = "A Steamy Romance Novel: Nightborne of the Living Dead",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\nSteamy Romance Novel C\r\n<IMG src="Interface\\Pictures\\SteamyRomance10" width="301" height="354" texCoordRight="0.58984375" texCoordBottom="0.69140625"/>\r\n</BODY>\r\n</HTML>',
+					'She accepted the chalice of wine with a bat of her long lashes. "I really shouldn\'t, Lord Gravesbane. My mother would never approve."\r\n\r\n"Nonsense, my dear Elonia," the nobleman answered. "You are ten-thousand years old. I\'m sure your mother would forgive you for indulging just this once."\r\n\r\nShe giggled. "It\'s not the wine, my lord. Rather, it\'s the notion of a nightborne spending her evening in the company of someone so..."\r\n\r\n"Charming?" he offered.\r\n\r\n"I was going to say decrepit."',
+					'"My morals are not quite that far gone, I assure you," he replied, his good eye drifting up and down the length of her flowing gown. "I\'m sure your mother would find me most endearing."\r\n\r\n"Oh would I?" asked a sharp voice. Crispin Gravesbane turned to see another nightborne framed within the doorway. Though her attire was less inviting than her daughter\'s, her face and body were a mirror of Elonia\'s own.\r\n\r\nHe approached and bowed, hastily kicking aside the kneecap that clattered to the floor. "I am Lord Crispin Gravesbane, at your service. Do I have the honor of meeting Lady Marina?"\r\n\r\n"You do," she answered coldly, casting a harsh glance toward Elonia.',
+					'"I fear you are toying with me, good lady," he smiled, careful to hold his jaw in place. "Surely you must be Elonia\'s sister, not her mother."\r\n\r\nA faint blush flashed across Lady Marina\'s cheeks. "You flatter me, my lord." Her voice softened. "It has been centuries since anyone has mistaken us for siblings."\r\n\r\n"Nonsense!" he insisted, taking her hand and guiding her toward the couch. He sat down between the two indigo-skinned elves. "Perhaps after we share a bit of wine, we\'ll find out what else you and your daughter have in common."',
+					'"Oh, Lord Gravesbane!" Marina swooned. She took Elonia\'s hand, sharing a furtive smile with her daughter. "Perhaps it\'s time we introduced you to the true secrets of the shal\'dorei."\r\n\r\n<Subsequent pages seem to have been scribbled over in nightborne profanities.>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 6,
-            },
-        },
+			},
+		},
 		["Item-162981"] = {
 			["base"] = {
 				["title"] = "A Steamy Romance Novel: Stormy Seas",
@@ -13909,7 +13909,1224 @@ LK["LocalData"]["questItems"] = {
 		["isObtainable"] = true,
 		["isClassSpecific"] = false,
 	},
+	[225215] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[225216] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[201263] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[104113] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[83769] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[201264] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[187531] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[24248] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[210207] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44999] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[83770] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[201266] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59036] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[222921] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[182169] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59148] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[113122] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[34157] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[113282] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[219346] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[83772] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[20009] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[216664] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[224074] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[32960] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[207084] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[83773] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[211811] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59149] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[45911] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[187987] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44969] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44985] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[224460] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[83774] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[210791] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[225674] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[150941] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[24401] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[211942] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[19850] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[182177] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[72597] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[219225] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[217309] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39269] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[225741] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[187225] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[60380] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[201470] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[111850] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[187227] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[23723] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[219357] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[187228] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[212331] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[38280] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[186591] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39510] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[28490] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[83076] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[12736] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39654] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[11754] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[219808] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[45898] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[5382] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[83780] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[227794] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59057] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39160] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[212339] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44925] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[43440] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[33955] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59058] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[210745] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[73084] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[72126] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44830] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44942] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[208447] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[72127] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151280] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[228378] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151281] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59059] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[183283] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[210430] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[3297] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44863] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44911] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151283] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151347] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[2797] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[2799] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151284] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[94198] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[224102] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59523] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[224103] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[211967] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[11751] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[226020] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[225952] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[183288] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[212333] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[201471] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151282] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[87388] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151286] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[93796] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[72706] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[73200] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59035] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[227669] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[211970] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59524] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[203475] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[129747] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59146] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[46318] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[150939] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[150943] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[205456] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[111575] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151141] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39362] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44913] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[113127] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39324] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[113106] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[111892] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[205994] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[111524] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[183293] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[83779] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[94199] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[83771] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151548] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[4016] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[23894] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[83777] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[187127] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[11753] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39700] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59142] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59147] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59150] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[93794] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[183296] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151167] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[163386] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[79713] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[180249] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[3919] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[225710] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151168] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[3920] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[29739] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[3922] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[38631] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[32906] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[60386] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[223220] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[38607] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39645] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[3932] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[57990] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59143] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[23735] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[58490] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[24246] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[83062] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[118417] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39326] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44995] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151368] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[45027] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[33306] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[225203] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[225207] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[32907] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[225204] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[45944] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[3924] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44864] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39646] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[40732] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[111485] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[11752] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[219344] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44927] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59037] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[93792] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[225205] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[18945] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59060] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59151] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[30810] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[135463] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[182603] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[87282] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[93793] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[225208] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[225336] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[135464] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151369] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39647] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[82807] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59145] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151370] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[78911] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[219525] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[94197] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39328] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59054] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[45885] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151166] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44976] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[150774] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[211478] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[225339] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[150940] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39504] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39253] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[93795] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[211479] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59034] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[113095] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[190337] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[150945] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[150946] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[20926] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[150938] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[150944] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[59226] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[151287] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[39329] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[44966] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[223952] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[37829] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
+	[46700] = {
+		["isQuestItem"] = true,
+		["isObtainable"] = true,
+		["isClassSpecific"] = false,
+	},
 };
+
+
 
 end
 
