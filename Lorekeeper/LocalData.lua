@@ -13288,6 +13288,3638 @@ LK["LocalData"] = {
 		},
 		-- end of user submission #2
 
+		
+		["GameObject-301082"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Rezan",
+				["text"] = {
+					"Rezan is de one \r\nWith de glory of de sun.\r\nHe stands strong, he stands tall,\r\nHe's de greatest of dem all!\r\n\r\nHe is mighty! He is bold!\r\nAs de legends surely told.\r\nStrong of will and true of deed, \r\nRezan can always have de lead.\r\n\r\nKingly, sharp, and honor bound.\r\nA more noble loa will not be found.\r\nHe is de son, de morning star.\r\nHe is de pride of Zandalar.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1164] = {
+						0.633577823638916,
+						0.2954518795013428,
+					},
+				},
+			},
+		},
+		["GameObject-254282"] = {
+			["base"] = {
+				["title"] = "Frozen Friends",
+				["text"] = {
+					"Within this pen are the chilly denizens of the Menagerie.\n\nDID YOU KNOW? Before the Sundering, the northern and southern edges of the world were much colder than our fair city. This is why the bear in the back of the pen has such a shaggy coat, as well as for fending off predators such as turtles and snow dragons.\n\nWATCH OUT! Penguins, while they seem docile and friendly under our mind control, are vicious in packs and are known predators.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.510827898979187,
+						0.5314323306083679,
+					},
+				},
+			},
+		},
+		["GameObject-241567"] = {
+			["base"] = {
+				["title"] = "He Who Shall Not Be Named",
+				["text"] = {
+					"May this failed king forever be entombed within his corpse till the end of days.\n\nMay his name be striken from memory, may his legacy rot on the vine.\n\nSuch is the fate of those who would defy the mystics.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[634] = {
+						0.6726754903793335,
+						0.3990839719772339,
+					},
+				},
+			},
+		},
+		["GameObject-297628"] = {
+			["base"] = {
+				["title"] = "Drust Stele: Constructs",
+				["text"] = {
+					"<There are many scenes on this stone but three are clear. The Drust are building large, person-shaped constructs in one image. In a second, a person is killed over the chest of one construct. In a third the stone creature walks into battle, taller than even the Drust.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[896] = {
+						0.5015170574188232,
+						0.423307478427887,
+					},
+				},
+			},
+		},
+		["GameObject-252528"] = {
+			["base"] = {
+				["title"] = "Scribbled Note",
+				["text"] = {
+					"I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose I am a rose",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[641] = {
+						0.6397937536239624,
+						0.453859806060791,
+					},
+				},
+			},
+		},
+		["GameObject-297523"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Torga",
+				["text"] = {
+					"Through de blue Torga do glide.\r\nOceans deep and journeys wide.\r\nDe one who strives, de one who seeks,\r\nMake his heart be full, his interest piqued.\r\n\r\nDere be no legend told,\r\nDat Torga will not know.\r\nTo listen is his pleasure,\r\nTo hear your tale, his treasure.\r\n\r\nAnd if to you he tells his story,\r\nDat may be your highest glory.\r\nTorga will remember. \r\nTorga is eternal.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[863] = {
+						0.7278462648391724,
+						0.07653629779815674,
+					},
+				},
+			},
+		},
+		["GameObject-292839"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"The Tomb of the Unworthy\r\n\r\nThe final resting place of those the Serpent rejects. Remember not the names of those interred within.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-281622"] = {
+			["base"] = {
+				["title"] = "Rhunok",
+				["text"] = {
+					"Rhunok\r\n\r\nThe Bear of the North, Rhunok was betrayed by his followers who wished to sacrifice him for his power. To prevent this, Rhunok turned to the power of a travelling adventurer to end his suffering and deny his followers the power of his death.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1165] = {
+						0.5226832628250122,
+						0.1606482267379761,
+					},
+				},
+			},
+		},
+		["GameObject-290700"] = {
+			["base"] = {
+				["title"] = "Worn Prayer Book",
+				["text"] = {
+					"Blessings upon those who honor their ancestors. Each gift is smiled upon by the kings and queens of old. May they grant you their favor, in this life or the next.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-241770"] = {
+			["base"] = {
+				["title"] = "Sea-kissed Scroll",
+				["text"] = {
+					"Today was a day of great dishonor. After a good journey raiding up the coast we came to drop off our share of the loot at our stash cave.\r\n\r\nThis time First Mate Torglork had other ideas, he and some of the crew wanted a larger share of the loot, so they jumped Captain Ironbeard in the cave and killed him! By the time the rest of us knew it was all too late. I did not want to be killed so I went along with it...\r\n\r\nTo make sure our leaders don't know, Torglork has taken the mantle of Ironbeard and serves as the new captain. Everytime I see him I want to put an axe in him, and then myself for letting this dishonor go on for so long...",
+					"With the invasion fully underway we have been reassigned to Ironfist Harbor in Nagrand, and will likely not see Tanaan again for some time.\r\n\r\nI managed to bribe a warlock for some help. He swore this ritual and enchanted thing would bring back Ironbeard... mostly. I will head back to the cave and try to bring him back. Perhaps together we can put this misdeed to right.",
+					"The ritual failed... mostly. Ironbeard got up but he was still dead. He only remembers rage and the moments of his death. I told him of Torglork's taking of his name and he only grew more enraged and attacked me, driving me out of the cave.\r\n\r\nI can hear him in there, raging against those that betrayed him. I will head back to the coast and return to the ship. I will find another way to restore my honor...",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[534] = {
+						0.3783294558525085,
+						0.8069750070571899,
+					},
+				},
+			},
+		},
+		["GameObject-302772"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"Though the waves howled as home did, it was not the shuttered existence we knew.\n\nFor most, that was enough.\n\nWith each writhe came loss, but sustenance. With sustenance, freedom.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.7697699666023254,
+						0.2571776509284973,
+					},
+				},
+			},
+		},
+		["Item-16263"] = {
+			["base"] = {
+				["title"] = "Sister Aquinne's Note",
+				["text"] = {
+					"Nyoma,\r\n\r\nYou can't imagine how surprised I was to receive the recipe book! Everything you included is just as I remember from home. I can't wait to try out the new recipes.\r\n\r\nWhen you have some time, you should come visit me in Darnassus. I'll even cook for you!\r\n\r\nYour friend,\r\nAquinne",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["GameObject-297629"] = {
+			["base"] = {
+				["title"] = "Drust Stele: The Cycle",
+				["text"] = {
+					"<This image shows a single tree in multiple states of life. On the right the leaves are small and low to the ground like a sapling. In the center of the tree the branches are tall and strong, the leaves large and open. On the left the branches are thin, broken and mostly bare. The last vestiges of dried red-black pigment cling to the ancient stone to mark fallen leaves. A stylized sun passes over the tree.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[896] = {
+						0.1908063292503357,
+						0.578953206539154,
+					},
+				},
+			},
+		},
+		["GameObject-297490"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Rezan",
+				["text"] = {
+					"Rezan is de one \r\nWith de glory of de sun.\r\nHe stands strong, he stands tall,\r\nHe's de greatest of dem all!\r\n\r\nHe is mighty! He is bold!\r\nAs de legends surely told.\r\nStrong of will and true of deed, \r\nRezan can always have de lead.\r\n\r\nKingly, sharp, and honor bound.\r\nA more noble loa will not be found.\r\nHe is de son, de morning star.\r\nHe is de pride of Zandalar.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[862] = {
+						0.4375205039978027,
+						0.7671195268630981,
+					},
+				},
+			},
+		},
+		["GameObject-302773"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"We scanned the horizon for home, sailor's eyes on the horizon day and night.\n\nWe knew not what we sought. A matrimony of earth and tide that might shelter our children from the tumult of life at sea.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.7702752947807312,
+						0.256074845790863,
+					},
+				},
+			},
+		},
+		["GameObject-421428"] = {
+			["base"] = {
+				["title"] = "The World Tree and the Emerald Dream",
+				["text"] = {
+					"For many years, the night elves worked tirelessly to rebuild what they could of their ancient homeland. Leaving their broken temples and roads to be overgrown, they constructed their new homes amidst the verdant trees and shadowed hills at Hyjal's base. In time, the dragons that had survived the great Sundering came forth from their secret abodes. ",
+					"Alexstrasza the red, Ysera the green, and Nozdormu the bronze descended upon the druids' tranquil glades and surveyed the fruits of the night elves' labors. Malfurion, who had become an arch-druid of immense power, greeted the mighty dragons and told them about the creation of the new Well of Eternity. ",
+					"The great dragons were alarmed to hear the dark news and speculated that as long as the Well remained, the Legion might one day return and assault the world once again. Malfurion and the three dragons made a pact to keep the Well safe and ensure that the agents of the Burning Legion would never find their way back into the world.",
+					"Alexstrasza, the Lifebinder, placed a single, enchanted acorn within the heart of the Well of Eternity. The acorn, activated by the potent, magical waters, sprung to life as a colossal tree. The mighty tree's roots grew from the Well's waters, and its verdant canopy seemed to scrape the roof of the sky. ",
+					'The immense tree would be an everlasting symbol of the night elves\' bond with nature, and its life-giving energies would extend out to heal the rest of the world over time. The night elves\' gave their World Tree the new name Nordrassil, which meant "crown of the heavens" in their native tongue. ',
+					"Nozdormu, the Timeless, placed an enchantment upon the World Tree to ensure that as long as the colossal tree stood, the night elves would never age or fall prey to sickness or disease. ",
+					"Ysera, the Dreamer, also placed an enchantment upon the World Tree by linking it to her own realm, the ethereal dimension known as the Emerald Dream. The Emerald Dream, a vast, ever-changing spirit world, existed outside the boundaries of the physical world. From the Dream, Ysera regulated the ebb and flow of nature and the evolutionary path of the world itself. ",
+					"The night elf druids, including Malfurion himself, were bound to the Dream through the World Tree. As part of the mystical pact, the druids agreed to sleep for centuries at a time so that their spirits could roam the infinite paths of Ysera's Dreamways. Though the druids were grieved at the prospect of losing so many years of their lives to hibernation, they selflessly agreed to uphold their bargain with Ysera.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[217] = {
+						0.6615947484970093,
+						0.9077420234680176,
+					},
+				},
+			},
+		},
+		["Item-210321"] = {
+			["base"] = {
+				["title"] = "The Reforging of the Tyr's Guard",
+				["text"] = {
+					"Honoring Tyr's Legacy\r\n\r\nWhen I determined that reforging the Tyr's Guard was the best way I could honor the legacy of Tyr, I decided to record notes on events and individuals so that future members of the Tyr's Guard could look to our history for guidance and inspiration.",
+					"Koranos\r\n\r\nKoranos went with me to Tyr's tomb to witness his final memories, and since then, has been utterly dedicated to the cause of Tyr. This Titan watcher has a level of determination I've never seen before!\r\n\r\nIn addition to accompanying me on my journeys through the isles to find our recruits, Koranos also did most of the work to clear out Tyr's Rest. Without his help, I don't think I could have re-established the order.",
+					"Tyr's Rest\r\n\r\nWhen Koranos and I found Tyr's Rest, it was a largely empty hall, close to Tyrhold, full of discarded Titan relics and remains. We cleaned out most of that, and I sent a letter to the Silver Hand, asking if they had any extra supplies. They sent what they could spare, and now Tyr's Rest is our headquarters. The result was a strong foundation for building the Tyr's Guard.\r\n\r\nRight now, there aren't many of us, so a headquarters isn't too important. But soon, I suspect paladins from all over Azeroth will want to see what we're doing, and possibly join our ranks.",
+					"Exemplar of Sacrifice: Nolaki\r\n\r\nI came upon Nolaki on the road from Wingrest Embassy. She and her brother were trying to protect a pair of dragonkin from a great Djaradin champion.\r\n\r\nThey appeared to be quite outmatched, but Nolaki was deeply committed to protecting her brother - a strong warrior in his own right - with no thought for her own safety, and no fear.\r\n\r\nI knew she belonged in the Tyr's Guard as the Exemplar of Sacrifice. Though if Koranos and I hadn't come along at just that time, that likely would have been her last heroic act.",
+					"Exemplar of Order: Talthis\r\n\r\nTalthis is simply unusual in how he values order. Koranos and I found him at the Flashfrost Assault, where the primalists attacked the Ruby Life Pools.\r\n\r\nHe was surrounded by heaps of stone and gravel from defeated elementals. More kept coming, and he kept fighting them, tirelessly. All the while, shouting about how disorder would not carry the day.\r\n\r\nKoranos and I joined him, and when the dust - and gravel - settled, I told him how the Tyr's Guard needed an Exemplar of Order in service to Tyr. He joined us without hesitation.",
+					"Exemplar of Compassion: Valunei\r\n\r\nI saw Valunei when we were on our way from Valdrakken to Tyrhold. She had stopped to help an injured drakonid, who said he was a veteran of the rebellion against the Aspects. Contemptible!\r\n\r\nBut not only did Valunei heal him, as we were walking up, I saw her hand him a pouch of gold. She refused to tell me how much was in it. But she helped that drakonid - who had been injured fighting against good and order - without stopping just at his physical injuries.\r\n\r\nSeeing that, I knew she was the right paladin to serve as Tyr's Exemplar of Compassion.",
+					"Exemplar of Justice: Hadwin\r\n\r\nWe met Hadwin in the Ohn'ahran Plains, as we heard loud noises off the main road. Following the sound, we came upon Hadwin and a centaur - Bolor, I think, her name was - fighting gorlocs.\r\n\r\nThe gorlocs had killed her hound companion, and Hadwin, having heard her story, accompanied her to bring justice to the gorlocs. Bolor had wanted to kill every gorloc in the camp, but Hadwin insisted, they would only fight the gorloc chieftain, and those gorlocs which stood in their way.\r\n\r\nSeeing his commitment to make things right, and his aversion to vengeance, I knew he would be our Exemplar of Justice.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["GameObject-227705"] = {
+			["base"] = {
+				["title"] = "Half-Eaten Skeleton",
+				["text"] = {
+					"This adventurer seems to have been killed by a long fall.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[539] = {
+						0.4722286462783814,
+						0.4604854583740234,
+					},
+				},
+			},
+		},
+		["GameObject-276191"] = {
+			["base"] = {
+				["title"] = "Zem'lan's Bloody Notes",
+				["text"] = {
+					"It be only a matter of time until the filthy slitherers raid us.\r\n\r\nWe don't got enough crews to win a fair fight. Luckily, I don't fight fair.\r\n\r\nFirst Mate Jamboya be searching for our advantage in the remaining contraband caches, but the best goods have already been swindled.\r\n\r\nMy mighty port be reduced to this? Fighting over black market crumbs like scarabs? This cannot be. Pirate-King Zem'lan don't beg for scraps.",
+					"Jamboya found something... powerful. Dark idols that whisper and pull at your insides when you be near.\r\n\r\nA perk of owning the black market. I get first taste of anything that comes through here, and these ones got real power.\r\n\r\nYoksa thinks he can perform a powerful ritual with them. Gonna test them on one of the refugees tonight. We see what happens.",
+					"It be even better then I thought.\r\n\r\nIf the sethrak set even one scaly foot here, I be ensuring them regret it for eternity.\r\n\r\nThe Port of Zem'lan be mine or no one's!",
+					"Bwonsamdi be damned. He not be stopping the sethrak. No one be stopping them.\r\n\r\nExcept us. We got the power now.\r\n\r\nDrink deep, ye fiendish idols. Honor our bargain.\r\n\r\nThe Port of Zem'lan be ours. Forever.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[864] = {
+						0.2967162728309631,
+						0.8797102570533752,
+					},
+				},
+			},
+		},
+		["GameObject-292842"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"HERE LIES -\r\nDazar, the First King. He who raised us beyond the curse of blood. He who defied the Dark One. He who built an empire.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-383817"] = {
+			["base"] = {
+				["title"] = "VIP List",
+				["text"] = {
+					"<It's a list of VIPs for The Ruby Feast.\r\n\r\n...Your name isn't on there.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2112] = {
+						0.6074904799461365,
+						0.1626681685447693,
+					},
+				},
+			},
+		},
+		["GameObject-252388"] = {
+			["base"] = {
+				["title"] = "Singed Page",
+				["text"] = {
+					"We are all driven by something. Revenge. Hope. Love. Hate. Illidan was no different. Resentment and bitterness churned in his heart, fueling his every thought and action.\r\n\r\nThe resentment came because he felt inferior to Malfurion, whose deeds always overshadowed Illidan's own. One example of this occurred when the Stormrage brothers both studied druidism. Illidan had already learned sorcery, but he desired to master the druidic arts as well. Such was not to be his fate, however. Whereas Malfurion excelled at wielding nature magic, Illidan failed.\r\n\r\nThe bitterness stemmed from Illidan's love for Tyrande Whisperwind. He adored the priestess, but she did not reciprocate his feelings. I think he also feared that Malfurion would inevitably win her heart.",
+					"Over time, he became obsessed with destroying the Legion, and he criticized any ally whom he saw as incompetent. He directed most of his ire at Latosius, the elderly commander of the Moon Guard sorcerers. To Illidan, Latosius symbolized everything that was wrong with the resistance. The old elf was stubborn, unimaginative, and timid. His ineffective tactics wasted the sorcerers' talents. More than once, Illidan claimed that he could do a better job leading the Moon Guard.\r\n\r\nWhen Latosius fell in battle to the Legion, Illidan would have a chance to make good on that claim.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[753] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-296903"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"We scanned the horizon for home, sailor's eyes on the horizon day and night.\n\nWe knew not what we sought. A matrimony of earth and tide that might shelter our children from the tumult of life at sea.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.3192576766014099,
+						0.7292826175689697,
+					},
+				},
+			},
+		},
+		["GameObject-290693"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"HERE LIES -\r\nKing A'akul. By blood he reigned. By blood he died.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-301076"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Gral",
+				["text"] = {
+					"Beneath de plane where Pa'ku reigns,\r\nGral rules de deep and dere remains.\r\nOceans vast, beneath de tide,\r\nWhere life be strange and horrors hide!\r\n\r\nGral is wisdom, Gral is power.\r\nGral is fierce, unworthy cower.\r\nTruths be found within de depths.\r\nLies exposed and secrets kept.\r\n\r\nHis realm be boundless! De pressure great.\r\nWith hunger for knowledge ya never sate.\r\nBlow de conch or bring fresh meat, \r\nYa find de loa that none can cheat.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1164] = {
+						0.6193145513534546,
+						0.4369028806686401,
+					},
+				},
+			},
+		},
+		["Item-208649"] = {
+			["base"] = {
+				["title"] = "On the Nature of the Dream",
+				["text"] = {
+					"I have spent ages here within the Emerald Dream, exploring its reaches and basking in its tranquility. Yet the more I experience, the more what I perceive seems to be at odds with lessons taught to us by the titan keepers.\r\n\r\nThus I am compelled to share my feelings here. Not to stir discontent, or to claim my theories are immutable truths, but to encourage others to ponder these subjects for themselves.",
+					'It has been said that the Dream was created by Keeper Freya, acting on behalf of her patron, Eonar. And yet, I have noticed that the titans\' acolytes do not speak of something as "finished" until it has been ordered. \r\n\r\nSo did they truly create the Dream, or merely discover it, seeing its vibrancy as chaos to which they were compelled to bring structure?',
+					"Seeking an answer, I have spoken to many spirits who inhabit the Dream. Dryads, ancients, grove keepers, and others. None of them tell of a titan creating the Dream.\r\n\r\nInstead, they speak of the first spirits awakening long ago within its wilds, in lands as beautiful and free as they are today.\r\n\r\n(Though I wonder, since time has so little meaning here, whether those born of the Dream truly think in terms of past or present.)",
+					"We have also been told that the Dream is a sort of framework for life on Azeroth. And it is true that we can see reflections of our world within the Dream.\r\n\r\nYet while it is clear these realms share a bond, is one a copy of the other? Or might both be reflections, each informing the shape of its counterpart?",
+					"Many times I have shrugged off the call of sleep and taken wing to explore the distant reaches of the Dream. The farther I flew, the greater the wonders I beheld.\r\n\r\nLife took forms strange and unfamiliar. Bizarre, impossible plants and trees. Creatures unlike any I beheld before.\r\n\r\nPerhaps the Dream is bound not only to Azeroth, but to realms not yet discovered. Is it a reflection of those places, too?",
+					"At these far reaches, I felt the presence of entities whose power seemed vast and unknowable, akin to the titans themselves.\r\n\r\nHad I reached the edges of the Dream where it flows into the Realms of Life? Are they one and the same? Truly, I cannot say, for as waves of joy and contentment washed over me, I could no longer resist the call of sleep.\r\n\r\nI awoke back at the Eye of Ysera, wondering if I had experienced a dream within the Dream.",
+					"It seems clear that the servants of the titans wish the Dream to stay unchanging--at least, unchanged by any hand but theirs.\r\n\r\nYet the very nature of life is one of change, is it not? Things are born, live, and die, but life itself goes on.\r\n\r\nPerhaps life was never meant to be ordered. To be static and unchanging.",
+					"The titans' servants do not seem to understand that Life and Death are sisters, bound together in a Great Cycle.\r\n\r\nDo they not wish to see this truth? Or is it beyond their fundamental nature to perceive it?\r\n\r\nIf we dragons see it, then it can only mean that we are touched not just by Life and Order, but other forces as well.",
+					"And if dragons are the product of powers great and small being eternally intertwined, then so must all mortals be.\r\n\r\nPerhaps Azeroth herself was touched by all these forces. Or could she be their true source?\r\n\r\nSome things are beyond knowing. Some things are meant only to be pondered... in dreams.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["GameObject-252207"] = {
+			["base"] = {
+				["title"] = "Plaque",
+				["text"] = {
+					"The Chimes of the Moon\n\nThe Sisters say that Elune sings a song, notes pure and beautiful.\n\nThe Chime does not ring often, but when it does it is the same note as the one She is singing.\n\nZin-al Elune.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.5093281865119934,
+						0.3869823217391968,
+					},
+				},
+			},
+		},
+		["GameObject-301077"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Hir'eek",
+				["text"] = {
+					"Hir'eek guards de weak,\r\nHe can find de things you seek.\r\n\r\nHe be blind, and so kind.\r\nHe brings clarity of mind.\r\n\r\nHis screech dat you hear,\r\nCan dispel your every fear.\r\n\r\nSoftest wings glide through de night.\r\nTaste and sound bring different sight.\r\n\r\nWhen ya lost and all alone,\r\nIn de darkness where you roam,\r\nHis voice will guide ya home.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1164] = {
+						0.6746727824211121,
+						0.31353759765625,
+					},
+				},
+			},
+		},
+		["GameObject-364993"] = {
+			["base"] = {
+				["title"] = "A Proclamation From Sire Denathrius",
+				["text"] = {
+					"To the good people of Revendreth...\r\n\r\nIt is with optimism that I address you today... though these are challenging times.\r\n\r\nFirstly, I assure you that our holy mission to help the most violent and wicked souls atone for their sins, is and always will be, our utmost priority.\r\n\r\nOur rituals are effective -- our judgment, keen but fair. We venthyr remain committed to bringing eventual redemption to all who desire it. It is through your faithful work that even the most evil and prideful beings may ultimately be spared an eternity in the Maw.",
+					'Unfortunately, of late the flow of such hubris-ridden souls has virtually ceased.  And as a result, Anima, our most precious resource, is in dwindling supply. \r\n\r\nEven we, the faithful who extract the anima, have not been spared the effects of this mysterious drought.\r\n\r\nYes, we still have our "Old Reliables" - our workhorses.  Yet I fear they will not be enough. \r\n\r\nWe are doing everything in our power to gather more anima, but - simply put, we must all - rich and poor alike - make sacrifices for the greater good.',
+					"Therefore, I have decided to implement a strategy of conservation and rationing, which should keep the anima flowing to those most in need.  \r\n\r\nIn this manner, we will keep our people strong and our land healthy - despite the efforts of those who would use this crisis to further their own ends... \r\n\r\n... and rebel against the rightful structures of our society.",
+					"Rest assured, we shall bring these miscreants to justice - with fairness and mercy, of course. I am, after all, nothing if not compassionate.\r\n\r\nMy loyal subjects, we are doing all that can be done to stimulate Anima production and fulfill Revendreth's honorable purpose. Remain devout and resolute - \r\n\r\n- and know that I will lead us all to a brighter future.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[1525] = {
+						0.7119033932685852,
+						0.8028283715248108,
+					},
+				},
+			},
+		},
+		["GameObject-281621"] = {
+			["base"] = {
+				["title"] = "Quetz'lun",
+				["text"] = {
+					"Quetz'lun\r\n\r\nWind serpent and a loa of great cunning, Quetz'lun met her demise at the hands of her own prophet. In her death throws, the loa of cunning claimed the souls of her trecherous followers, condemning them to a new underworld she had crafted just for their torment.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1165] = {
+						0.5223835706710815,
+						0.1684218645095825,
+					},
+				},
+			},
+		},	
+		["GameObject-329696"] = {
+			["base"] = {
+				["title"] = "Guide to Azsharan Court Etiquette, Vol. 3",
+				["text"] = {
+					"Military ranks are always respected. Saluting while standing abreast with your battalion is an acceptable method of showing comradery.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1513] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-233978"] = {
+			["base"] = {
+				["title"] = "Green Hills of Stranglethorn",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<BR/>\r\n<BR/>\r\n<H1 align="center">THE GREEN HILLS OF STRANGLETHORN</H1>\r\n<BR/>\r\n<H3 align="center">by Hemet Nesingwary</H3>\r\n</BODY>\r\n</HTML>',
+					"Our first day went as well as one can expect first days to go.  Most of our time was preoccupied with making the necessary arrangements to establish a base camp.  I located an ideal setting by a freshwater river inlet.  Judging by the old, abandoned docks nearby, this site was inhabited sometime ago.  As for the original inhabitants, only time can tell that tale.",
+					"For this expedition I have assembled Ajeck Rouack and Sir S. J Erlgadin, along with my trusted servant, Barnil Stonepot.  I fought alongside Ajeck's father's side in many battles in defense of the Alliance.  Seeing her grown is quite special.  Her father schooled her well in the ways of weaponry.  Her skills with a bow make me wonder if there is elven blood running through those veins.",
+					"Sir S. J. Erlgadin comes from human aristocracy.  His father, Count Erlgadin, was renowned for his generosity.  It was the Count who lobbied for improved working conditions for the Stonemasons' Guild during the restoration of Stormwind after the Second Great War.",
+					"In the years that followed, after Stormwind betrayed the Stonemasons' Guild, Sir Erlgadin grew bitter about the role of the nobles within the Kingdom.  He no longer wished to uphold the position that his father's bloodline had earned for him in the House of Nobles.\r\n\r\nBut I digress.  The purpose of this story is not to act as a political treatise or a biography.  This is the account of my experiences hunting big game in the green hills of Stranglethorn....",
+					"We rose with the sun.  Barnil began to prepare the morning meal. I noticed Ajeck's attention was somewhat distracted.  The day's trek would be long and our hunt would bring us close to danger.  A lack of focus could easily lead to an errant mishap.  Yet Ajeck seemed unable to divert her gaze from Barnil who stood by the edge of the river rinsing out his mess kit.",
+					"Just as I was about to question Ajeck's lack of interest in the day's hunting strategy, she reached for her quiver, drew an arrow and unleashed a shot right towards poor Barnil.  But it was not Barnil that Ajeck was shooting at.  For when Barnil stepped aside, mouth agape, a large river crocilisk floated to the surface with Ajeck's arrow perfectly placed between his two large eyes.",
+					"We set out toward the west, through the thick overgrowth of the tangled jungle.  Moving with slow, deliberate steps we paced through thick foliage in search of prey.  The morning passed in frustrated silence.  Nothing was stirring in the Vale, not even a breeze.  By the afternoon, the expedition had grown restless.  Barnil no longer strode with the cautious steps of a predator tracking prey.  Rather he clumsily clomped along the path often stepping noisily on dried leaves or fallen branches.",
+					"During one such misstep, Erlgadin laid a heavy hand on Barnil's shoulder.  Ajeck and I gave a casual glance, assuming the man was simply giving Barnil a much-needed scolding for his carelessness.  Erlgadin, however, gestured slowly with his head toward a nearby fallen tree.  Gazing back at us were two piercing black eyes just above a mouthful of razor sharp fangs.",
+					"The beast was a male Stranglethorn Tiger.  Before I could cock my rifle, Erlgadin raised his crossbow and fired upon the beast.  The bolt missed its mark and caught the beast heavily in the left flank.  The tiger made a futile attempt to flee but its wound was too grave.  The beast stumbled for a few tragic seconds until Barnil finished the kill with a thrown axe.",
+					"The kill brought about a festive mood amongst the expedition.  Barnil poured mead for all to enjoy.  But our festivities were short-lived.  As we were preparing the corpse for transport back to base camp we were all caught off guard by a horrendous growl.  In all my years I have never heard anything so blood curdling.",
+					"On a rocky precipice above, silhouetted by the setting sun, I could make out the largest cat of prey I have ever laid eyes upon.  I was able to loose one clumsy volley with my rifle, but the cat held his ground.  He growled once again, this time louder than the first, and vanished.\r\n\r\nWe gathered our belongings and headed solemnly back to camp.",
+					"I had promised the expedition that we would spend the next day hunting panthers, as their furs are in high demand throughout Azeroth.  It only makes sense that such demand should exist with all of the able-bodied hunters, trappers and fur-traders off giving their lives so valiantly in the name of the Alliance.",
+					"Ajeck and Sir Erlgadin were anxious to learn how to hunt effectively with a Dwarven Rifle.  I had the two humans leave their primitive range weapons at base camp.  Barnil and I outfitted them with some of Ironforge's finest firearms.",
+					"On this day we ventured to the south, following some fresh panther tracks.  Soon we reached a ravine spanned by a tremendous rope bridge.  I could not help but to think of Brann's descriptive writings of this region when I saw the engineering marvel.  So often it was assumed that the native Trolls were a primitive and uneducated race yet as I gazed upon the master craftsmanship of the bridge I was able to recognize the skill with which the Troll builders overcame the seemingly impossible feat.",
+					"Before long, Ajeck tracked the panther to the southwest.  We walked quietly, guns at the ready, in anticipation of our prey.  A snapping of twigs from a nearby copse of trees drew our attention immediately.  Something was in there.  One stern glance at Barnil was enough to convey my thoughts.  Barnil slowly lowered his rifle.  This kill was not for us; it was for our Human companions.  Countless panthers had lost their lives in front of our smoking barrels.  This kill would be for the Humans.",
+					"Both Ajeck and Sir Erlgadin stood poised, guns leveled at the bristling overgrowth at the base of the swaying trees.  The midday sun beat heavily upon us.  A slow trickle of perspiration trailed down from Elrgadin's temple as he pulled the pin back.  Upon the sound of the click, the thick flora parted and a large black panther -- a beautiful specimen -- darted out onto the plain.",
+					"The Humans trained their sights on the panther as it ran along the edge of the tree line.  The barrels of their guns moved in perfect parallel tandem.  Barnil gave me an urging glance but I shook my head no.  This hunt was for the Humans, not Barnil or me.  Erlgadin fired a booming shot, missing the panther altogether.  Apparently he was unprepared for the violent kickback of the rifle blast.",
+					"His gun tossed back violently in his arms.  The barrel swooped sideways and came up beneath Ajeck's rifle.  Ajeck had chosen that exact moment to pull her trigger.  The rifle, the aim now knocked clumsily toward the tree line, went off with a distinct boom.  A flock of birds screamed out of the canopy, scattering in every direction.  A plume of smoke rose from the tree.  We watched in awe as a tremendous branch fell squarely on the fleeing panther, breaking its back",
+					"As the weeks passed our stockpile of panther and tiger skins grew immense.  I decided it was time for the expedition to shift our focus to a new challenge: Raptors.\r\n\r\nThe Humans, while appreciative of the training Barnil and I offered, decided to refrain from hunting with firearms.  Ajeck was much more comfortable with a finely strung bow and Sir Erlgadin never left camp without his sturdy crossbow.",
+					"We set out at first light, heading south past the Tkashi Ruins.  Barnil voiced concern that we might encounter members of the Bloodscalp Tribe.  I reminded Barnil that the Bloodscalps were more concerned with destroying their tribal enemy, the Skullsplitters.  Needless to say, Barnil was not comforted in the least.  I, however, had a loaded rifle, a satchel full of gunpowder and three deadly hunters with me to ease any concerns of an unfriendly ambush.",
+					"I've stood before a towering Infernal on the battlefield, the army of the Burning Legion advancing from all directions.  An unruly band of Trolls seems as harmless as a jackrabbit in the hills of Dun Morogh.\r\n\r\nWe passed the Tkashi Ruins without event, much to Barnil's relief.  The party proceeded to head westward, toward the Great Sea, skirting the Ruins of Zul'Kunda just to the south.  As we ascended the high sea bluffs we spotted our first Raptor.",
+					"The beast never so much as detected our presence.  In fact, the only greeting he received from the expedition was a bullet between the eyes.\r\n\r\nSir Erlgadin let out a hearty *hurrah* as Ajeck nodded toward me with keen approval.  I sifted through my pack in search of my pipe, hoping to enjoy a celebratory smoke.  Barnil began to scurry up the hillside to retrieve the Raptor's corpse.  I stared at the fallen beast with the satisfaction that accompanies every big kill.",
+					"But I could not bask in the glory of the kill for long.  For when I turned my eyes toward the horizon, several silhouettes appeared cresting the hill, just above poor Barnil.\r\n\r\n*Flee, Barnil!* I shouted.  Ajeck, Sir Erlgadin and myself loosed a volley of bullets, arrows and bolts over Barnil and toward the pursuing raptors.  One of us landed a kill amidst the confusion.",
+					"Our hastily aimed shots were enough to buy Barnil's escape.  Barnil clamored back down the hill and rejoined the party. We scurried off into the jungle; a pack of ferocious Lashtail Raptors stalking our every move.  \r\n\r\nThe hunters were now the hunted.",
+					"I led the party toward the sea, hoping the shoreline would provide refuge from the Raptors.  In our haste we had drifted too far north, to a precariously high elevation.  The mistake was made.  The fault was mine.  We stopped just short of a sheer cliff, the Raptors just a few paces behind.",
+					"I stepped slowly forward, gun raised.  I had led these brave hunters to their death.  I would die defending them.  Lashtail Raptors are particularly fierce, known for their unrelenting blood-thirst.  They far outnumbered us.  But I would be damned if I let them kill me and my comrades without shedding some of their own blood first.",
+					"Ajeck and Sir Erlgadin readied their weapons, flanking me on either side, our backs to the sea.  Barnil let out a defeated sigh and drew his axe.  The Lashtails were almost upon us.  Their steady stride had slowed.  They were stalking their prey now for they knew they had us trapped.",
+					"And then something miraculous happened.  From off to our side we heard the distinct and terrifying roar of the great white tiger.  Despite their numbers, the Raptors turned and scattered in all directions.  We saw but a brief white flash as the tiger darted past us and pounced on one of the Raptors.  No command needed to be given.  All four members of our party knew it was time to run.",
+					"We sprinted all the way back to base camp, never slowing.  Later that night we sat quietly around the campfire, knowing our lives had been saved by a bizarre twist of fate.  Such are the risks of the big game hunter.  We toy with fate by delivering it.  Yet each of us, at some point, will face fate's razor sharp teeth.  This Dwarf is just glad that moment did not come upon the green hills of Stranglethorn.\r\n\r\n--The End--",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[550] = {
+						0.8603830337524414,
+						0.4627293944358826,
+					},
+				},
+			},
+		},
+		["GameObject-297485"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Sethraliss",
+				["text"] = {
+					"In densest jungle of darkest green,\r\nRules mother of many, but rarely seen.\r\nWarm and lush and full of life.\r\nIron will and without strife.\r\n\r\nHer mind unfurls, envelops all.\r\nHer faithful ever hear her call.\r\nAcross de ages her eyes do see,\r\nSeeking de best for you and me.\r\n\r\nThrough darkest night, and brightest day, \r\nShe will ever find her way.\r\nIn her, ya haven will be found,\r\nHer all for us, her care profound.\r\n\r\nLove unsurpassed will surely be,\r\nWhen Sethraliss ya truly see.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[864] = {
+						0.495756208896637,
+						0.2445464134216309,
+					},
+				},
+			},
+		},
+		["GameObject-303143"] = {
+			["base"] = {
+				["title"] = "Tandred Proudmoore",
+				["text"] = {
+					'<HTML><BODY>\r\n<br/>\r\n<br/>\r\n<p align="center">In Memoriam</p>\r\n<br/>\r\n<H1 align="center">Captain Tandred Proudmoore</H1>\r\n<br/>\r\n<p align="center">Fearless explorer. Sailor of uncharted waters. Youngest son of Daelin and Katherine. Brother of Derek and Jaina. Taken by the sea in a mighty storm.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[895] = {
+						0.6689251661300659,
+						0.3601255416870117,
+					},
+				},
+			},
+		},
+		["GameObject-296915"] = {
+			["base"] = {
+				["title"] = "Drust Stele: The Circle",
+				["text"] = {
+					"<The weathered cairn depicts a group of Drust in a circle. A horned creature, possibly a stag, possibly something else, is being sacrificed.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[896] = {
+						0.3681026697158814,
+						0.6446293592453003,
+					},
+				},
+			},
+		},
+		["GameObject-243559"] = {
+			["base"] = {
+				["title"] = "Statue of Liftbrul",
+				["text"] = {
+					'Liftbrul, greatest of weightlifters ("No, scratch that part out!") among all drogbar, champion of the Stonedark.\r\n\r\nImmortalized in stone by chief Rynox, second-strongest drogbar of his time ("What are you writing there, Stonecarver?").\r\n\r\nThis is not a statue, it is Liftbrul. Rynox is a Stoneshaper ("Does it say something nice about me?").',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[659] = {
+						0.5332267880439758,
+						0.511900782585144,
+					},
+				},
+			},
+		},
+		["GameObject-290701"] = {
+			["base"] = {
+				["title"] = "Tablet",
+				["text"] = {
+					"The Mausoleum of Ashes\r\n\r\nAhead lies those who fell to plague, fire, and Zulathra's folly at Uldum. May their spirits endure, even if their bodies did not.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-236156"] = {
+			["base"] = {
+				["title"] = "Spy's Logbook",
+				["text"] = {
+					'I have set up a small camp in a spot far enough from my target to avoid detection. The Laughing Skull we have "persuaded" to give us information call this one Drov the Ruiner.\n\nThese magnaron can be used for the Iron Horde, I know it!',
+					"The beast stands there most days tracing runes in the earth, almost if it is casting spells. Other magnaron wander about killing and destroying the earth but this one watches.\n\nIt may have some way to talk to the others I cannot understand.",
+					"A group of adventurers from the other world arrived and set upon Drov. It crushed them utterly. It is without emotion I think and its power is overwhelming.\n\nI am not sure it can be conquered...",
+					"Another group arrived and were beaten back many times.\n\nWhile the group did manage to do noticeable damage they eventually were forced to retreat after extremely heavy losses.\n\nDuring the encounter I swear the monster looked straight at me as it crushed a human paladin to paste. I think it knows I am watching...",
+					'I was busy skinning some fresh meat when a large boulder hit the side of my "camp". I almost fell off. When I spun around the magnaron was just standing there as usual, watching the horizon and drawing in the earth.\n\nI think it might have looked at me out of the corner of its eye though. I think my time here is nearly done...',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[543] = {
+						0.4498699307441711,
+						0.4273030757904053,
+					},
+				},
+			},
+		},
+		["GameObject-254283"] = {
+			["base"] = {
+				["title"] = "Misty Monsters",
+				["text"] = {
+					'This pit closely resembles the environments of the jungle basins. It is said that this is where life began! Inside this pen you can find Old Wise, our resident yeti.\n\nDID YOU KNOW?\n\nOld Wise did not need a collar of domination to come with us. Our top trappers realized he had an appetite for goats and lured him back to the city. He seems content to sit here and eat goats. It is said the Magistrix herself commended him for his wise behavior, and he has been affectionately called "Old Wise" ever since.\n\n\n\nPLEASE DO NOT ANGER OLD WISE - Management.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.5144389867782593,
+						0.5375176668167114,
+					},
+				},
+			},
+		},
+		["GameObject-292841"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"BEWARE - The Soulflayer's touch may yet abide here. \r\n\r\nIf you become infected, leap off this bridge. Better to die quickly than unleash the plague on Zandalar again.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-281619"] = {
+			["base"] = {
+				["title"] = "Akali",
+				["text"] = {
+					"Akali\r\n\r\nThe grand rhino of Zul'Drak, he fell to the power of his own followers.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1165] = {
+						0.519822359085083,
+						0.1684978604316711,
+					},
+				},
+			},
+		},
+		["GameObject-296908"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"House Stormsong laid claim to the most fertile valley in the northern reaches .\n\nIt took our lord's name as tribute for our gifts.\n\nWe were home.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.7507769465446472,
+						0.3114508986473084,
+					},
+				},
+			},
+		},
+		["GameObject-329697"] = {
+			["base"] = {
+				["title"] = "Guide to Azsharan Court Etiquette, Vol. 4",
+				["text"] = {
+					"If you wish to stand apart from the queen's other subjects, do so by showering her eminence with applause to demonstrate your devotion.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1513] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-278520"] = {
+			["base"] = {
+				["title"] = "Master J. Capaldi",
+				["text"] = {
+					"Master J. Capaldi\r\n\r\nBeloved Brother. Master Shipwright. Favorite Storyteller.\r\n\r\nTaken by the Sea.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[896] = {
+						0.5968916416168213,
+						0.4754820466041565,
+					},
+				},
+			},
+		},
+		["GameObject-252525"] = {
+			["base"] = {
+				["title"] = "Scribbled Note",
+				["text"] = {
+					"Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[641] = {
+						0.6433935165405273,
+						0.4512476921081543,
+					},
+				},
+			},
+		},
+		["GameObject-252526"] = {
+			["base"] = {
+				["title"] = "Scribbled Note",
+				["text"] = {
+					"Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[641] = {
+						0.6432356238365173,
+						0.4540303945541382,
+					},
+				},
+			},
+		},
+		["GameObject-290696"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"HERE LIES -\r\nAka'ali the Conqueror, the bloodthirsty princess. She challenged all who courted her. She was never defeated, and she never showed mercy to those she vanquished. Her brutality earned her power beyond reckoning and a legacy beyond question.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-298963"] = {
+			["base"] = {
+				["title"] = "Weathered Nazmani Tablet",
+				["text"] = {
+					"<The glyphs upon this ancient tablet have been worn away by the elements. Only a few words can still be read.>\r\n\r\nHere lies the cursed remains of... condemned to suffer... eternity... crime of blood magic...\r\n\r\n<The remainder of the text is illegible.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[863] = {
+						0.4335415959358215,
+						0.481543242931366,
+					},
+				},
+			},
+		},
+		["GameObject-365059"] = {
+			["base"] = {
+				["title"] = "Depleted Stygia Vessel",
+				["text"] = {
+					"A note is pinned to this object:\r\n\r\n$PLAYER_NAME$ left this behind! Maybe they come get it soon?",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[1533] = {
+						0.416826069355011,
+						0.6741811037063599,
+					},
+				},
+			},
+		},
+		["GameObject-301083"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Sethraliss",
+				["text"] = {
+					"In densest jungle of darkest green,\r\nRules mother of many, but rarely seen.\r\nWarm and lush and full of life.\r\nIron will and without strife.\r\n\r\nHer mind unfurls, envelops all.\r\nHer faithful ever hear her call.\r\nAcross de ages her eyes do see,\r\nSeeking de best for you and me.\r\n\r\nThrough darkest night, and brightest day, \r\nShe will ever find her way.\r\nIn her, ya haven will be found,\r\nHer all for us, her care profound.\r\n\r\nLove unsurpassed will surely be,\r\nWhen Sethraliss ya truly see.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1164] = {
+						0.6891639232635498,
+						0.4894043207168579,
+					},
+				},
+			},
+		},
+		["GameObject-290980"] = {
+			["base"] = {
+				["title"] = "General Jakra'zet",
+				["text"] = {
+					"General Jakra'zet\r\n\r\nA decorated Sandfury soldier, Jakra'zet joined the coalition of forces under the banner of the Prophet Zul during the Pandaria campaign. Despite the outcome of the campaign, Jakra'zet's skills in strategy and tactics could not be denied.\r\n\r\nEventually, the great Prophet Zul petitioned to promote Jakra'zet to the role of general. \r\n\r\nOf the Zanchuli Council, Yazma and Vol'kaal voted with Zul for the appointment. Raal and Loti objected, but were overruled by King Rastakhan, who was curious at what Jakra'zet could accomplish.\r\n\r\nAnd thus, Jakra'zet became the first of the Sandfury Tribe to hold the rank of General of the Zandalari army.\r\n\r\nMay he bring victory for Zandalar.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1166] = {
+						0.6724536418914795,
+						0.5953322649002075,
+					},
+				},
+			},
+		},
+		["GameObject-252206"] = {
+			["base"] = {
+				["title"] = "Memorial Plaque",
+				["text"] = {
+					"Here lie the Truecallers. \n\nBrave Aelynn and noble Banlorus ruled the battlefields and courts alike. They fell as they lived, protecting our people from threats on all sides.\n\nAnu Dorah. We remember.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.4436774253845215,
+						0.334135890007019,
+					},
+				},
+			},
+		},
+		["GameObject-297522"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Hir'eek",
+				["text"] = {
+					"Hir'eek guards de weak,\r\nHe can find de things you seek.\r\n\r\nHe be blind, and so kind.\r\nHe brings clarity of mind.\r\n\r\nHis screech dat you hear,\r\nCan dispel your every fear.\r\n\r\nSoftest wings glide through de night.\r\nTaste and sound bring different sight.\r\n\r\nWhen ya lost and all alone,\r\nIn de darkness where you roam,\r\nHis voice will guide ya home.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[863] = {
+						0.3953322172164917,
+						0.5467042326927185,
+					},
+				},
+			},
+		},
+		["GameObject-290689"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"The Tomb of the Unworthy\r\n\r\nThe final resting place of those the Serpent rejects. Remember not the names of those interred within.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-254280"] = {
+			["base"] = {
+				["title"] = "Frozen Friends",
+				["text"] = {
+					"Within this pen are the chilly denizens of the Menagerie.\n\nDID YOU KNOW? Before the Sundering, the northern and southern edges of the world were much colder than our fair city. This is why the bear in the back of the pen has such a shaggy coat, as well as for fending off predators such as turtles and snow dragons.\n\nWATCH OUT! Penguins, while they seem docile and friendly under our mind control, are vicious in packs and are known predators.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.5121646523475647,
+						0.5332885980606079,
+					},
+				},
+			},
+		},
+		["GameObject-302776"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"As our lord's gifts grew, others too heard the whispers.\n\nSoon the very wind in our sails was ours to command -- the waves pushing us ever onward into the night.\n\nWith time our hulls impenetrable to even the worst denizens of the deep below.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.7687246799468994,
+						0.2539989948272705,
+					},
+				},
+			},
+		},
+		["GameObject-254286"] = {
+			["base"] = {
+				["title"] = "Aquatic Wonders",
+				["text"] = {
+					"DAILY FEEDING DEMONSTRATION\n\nAsk a friendly staff member for feeding times and directions to our gift shop!\n\nDID YOU KNOW? Lion Seals are named for their fearsome roar, similar to that of the common Land Lion. We believe that their captivity has made them shy, however, so they no longer roar.\n\nThis is why conservation efforts are so important. Your small donation to the Menagerie can ensure we expand our exhibits in the millenia to come!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.5113338232040405,
+						0.5561511516571045,
+					},
+				},
+			},
+		},
+		["GameObject-234016"] = {
+			["base"] = {
+				["title"] = "Admiral Taylor",
+				["text"] = {
+					"In honor of Admiral Taylor\r\n\r\nAdmiral Taylor was a true hero of the Alliance. His numerous accomplishments on the battlefield serving his people will not be forgotten.\r\n\r\nHe bravely set out to establish a garrison stronghold among these spires to further the Draenor campaign, but was cut down by his own men before his time. \r\n\r\nMay he rest in peace.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[542] = {
+						0.4002088904380798,
+						0.6059780120849609,
+					},
+				},
+			},
+		},
+		["GameObject-297521"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Gonk",
+				["text"] = {
+					"Lithe and soundless with padded paw,\r\nHe's quick of mind, and sharp of claw.\r\nHe fills de heart with honor and awe.\r\nHe is Gonk!\r\n\r\nIn defense or on attack,\r\nHe de one dat has ya back.\r\nDe mighty master of de pack.\r\nHe is Gonk!\r\n\r\nBe it hoof or paw or hand,\r\nHe roams de sea and sky and land.\r\nWith dis loa we will stand.\r\nHe is Gonk!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[862] = {
+						0.516732931137085,
+						0.2826874852180481,
+					},
+				},
+			},
+		},
+		["GameObject-298965"] = {
+			["base"] = {
+				["title"] = "Cracked Tablet",
+				["text"] = {
+					"<The tablet has suffered damage and neglect, but a few words can still be made out.>\r\n\r\n...heavy hearts... this Path of Blood... no choice... deceived by whispers... forbidden rituals... rotting our kingdom... could not save... must flee south... always remember...\r\n\r\n<The rest of the message has been lost to the ages.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[863] = {
+						0.5120850801467896,
+						0.8511453866958618,
+					},
+				},
+			},
+		},
+		["GameObject-369226"] = {
+			["base"] = {
+				["title"] = "Archivist Roh-Gema's Teachings",
+				["text"] = {
+					"ARCHIVIST ROH-GEMA, KEEPER OF TRUTH\r\n\r\nAn Archivist functions as a conduit for the transferal of knowledge.\r\n\r\nHowever, the Archivist does not shoulder this burden alone. They rely upon the assistance of others who are faithful to the Purpose.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[1961] = {
+						0.3596450686454773,
+						0.5164194703102112,
+					},
+				},
+			},
+		},
+		["GameObject-243636"] = {
+			["base"] = {
+				["title"] = "Ledger of the Sea Wolf",
+				["text"] = {
+					"DAY 1:\n\nThe Scourge draws closer to Pyrewood Village, and my people have nowhere left to turn.\n\nThe gates to Gilneas remain closed, but at night, we can hear the howls of wild beasts over the walls. Rumors abound of a darker evil brewing within the city.\n\nI believe that no sanctuary will be found within Greymane's walls.",
+					"DAY 10:\n\nI have purchased a trader's ship. She is called the Sea Wolf, and can carry two score passengers.\n\nI have prepared ample supplies, and spoken to those families who seek haven from this place.\n\nTomorrow, we shall depart for a new life on a distant shore.",
+					"DAY 23:\n\nWe have been sailing south, seeking the city known as Stormwind. The humans are building a new capital, and it is here we hope to call our new home.\n\nSo far the seas have been calm, but storm clouds have been sighted on the horizon.",
+					"DAY 30:\n\nAfter battling a week of furious storms, our ship was blown entirely off course.\n\nOnly open sea surrounds us. The nights have been clouded, offering no guidance from the stars.",
+					"DAY 47:\n\nWe have ample food from the sea, but our water rations are nearly gone. The past few days have been unseasonably hot, and no wind fills our sails.",
+					"DAY 53:\n\nTwo days ago, another furious storm took us by surprise. The Sea Wolf is no more.\n\nOur sturdy ship breached upon some rocky shoals. Thankfully, no lives were lost.\n\nWhen the winds died, we found ourselves looking upon an unfamiliar coast.\n\nWe saw a towering fortress looming over a verdant lowlands, and a lush green forest stretching to the horizon.",
+					"DAY 54:\n\nOur ship is unsalvageable, but the land here is fertile and tillable.\n\nThe nearby forest offers a bounty of fruit and wood.\n\nThe fortress appears to have been abandoned many years ago.\n\nWe have decided to settle down here, and hereby christen our town Bradensbrook.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[641] = {
+						0.4253275990486145,
+						0.5974856019020081,
+					},
+				},
+			},
+		},
+		["GameObject-254287"] = {
+			["base"] = {
+				["title"] = "Desolate Deserts",
+				["text"] = {
+					"This pen is carefully engineered by our staff to replicate the desolate wastes of deserts.\n\nDID YOU KNOW? Our scholars believe that had we not raised the shield, Suramar might have ended up looking much like this!\n\nDID YOU KNOW? Basilisks used to be all over Suramar! Aggressive culling and hunting for their eyes made them endangered, and only a few species struggle for survival in remote locations.\n\nBasilisks use their mighty gaze to petrify their prey, because they eat rocks!\n\nOur basilisks, of course, are fed a regular diet of rocks and flowers to maintain their brilliant scales. Don't look at them too long!\n\n\n\nNOTE: PLEASE do not stare too long at the basilisks. Management is not responsible for additional dispel-petrification fees.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.5253663063049316,
+						0.5495129823684692,
+					},
+				},
+			},
+		},
+		["GameObject-292902"] = {
+			["base"] = {
+				["title"] = "Strongly Worded Letter",
+				["text"] = {
+					'To Whom It May Concern,\r\n\r\nI will absolutely NOT be closing down my ski lodge. I had sent in several requests for inspection. Month after month, it was ignored. I was then told to just, "go ahead because we\'re sure it\'s fine."\r\n\r\nI have spent too much gold to abandon my dream now. And the reasons given are simply outrageous. Avalanche? I\'ve looked over the place, it\'s perfectly safe!\r\n\r\nYetis? I\'ve got a strong enough sword arm, I\'ll deal with any I see myself.\r\n\r\nAnd these earthquakes, "but not earthquakes"? Ridiculous! \r\n\r\nI have half a mind to-\r\n\r\n<There is a blotch of ink that decorates the rest of the letter.>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.7135429382324219,
+						0.8661639094352722,
+					},
+				},
+			},
+		},
+		["GameObject-296904"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"Stormsong was the first to hear them.\n\nNot the crashing waves at the surface -- gentle whispers, imperceptible to all but him.\n\nThey guided his mind ever deeper, revealing untold truths of the powers within him.\n\nWe would never be the same.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.3381620645523071,
+						0.3326779007911682,
+					},
+				},
+			},
+		},
+		["GameObject-251128"] = {
+			["base"] = {
+				["title"] = "A Note",
+				["text"] = {
+					"Don't give up, skeleton!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[641] = {
+						0.338798999786377,
+						0.570842981338501,
+					},
+				},
+			},
+		},
+		["GameObject-254285"] = {
+			["base"] = {
+				["title"] = "Aquatic Wonders",
+				["text"] = {
+					"DAILY FEEDING DEMONSTRATION\n\nAsk a friendly staff member for feeding times and directions to our gift shop!\n\nDID YOU KNOW? Lion Seals are named for their fearsome roar, similar to that of the common Land Lion. We believe that their captivity has made them shy, however, so they no longer roar.\n\nThis is why conservation efforts are so important. Your small donation to the Menagerie can ensure we expand our exhibits in the millenia to come!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.5123533010482788,
+						0.5572319030761719,
+					},
+				},
+			},
+		},
+		["GameObject-297493"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Shadra",
+				["text"] = {
+					"In de shadows, Shadra lurks.\r\nFinding secrets as she works.\r\nWebs she weaves 'round those in power,\r\nDark of night her waking hour.\r\nYa seek us out with ill intent?\r\nDen writhe to poison most potent!\r\n\r\nHer eyes are everywhere, dey see all.\r\nDey hear ya words, where dey can crawl.\r\nWhat ya know, she knows as well, \r\nKeeper of secrets she'll never tell.\r\nPowerful strings she pulls in time of need,\r\nWith advice and warnings ya better heed.\r\n\r\nShould her faith in us be lost,\r\nHer good will falls, at terrible cost.\r\nBetray her and ya soon will find,\r\nHer venom is strong and most unkind.\r\nIf to Zandalar you stay true,\r\nThe danger will never come near you.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[862] = {
+						0.4783152341842651,
+						0.2880048155784607,
+					},
+				},
+			},
+		},
+		["GameObject-290682"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"HERE LIE -\r\nKing Rahu'ai and his trusted advisors, Atu and M'bara. Long did he rule. Painful was his fall.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-271719"] = {
+			["base"] = {
+				["title"] = "Dusty Journal",
+				["text"] = {
+					"Vol'dun ain't as bad as the stories they tell in Zuldazar.\r\n\r\nIt's hard, but there be pockets of paradise here too.\r\n\r\nLooking out into the endless ocean, it's hard not to be hopeful. We can make this work.",
+					"Seshu didn't come back from her hunt last night.\r\n\r\nI'd search for her, but our food supply's getting low, even for one. I gonna try to reach that oasis again, but the sethrak trappers make it difficult to sneak across the open dunes.\r\n\r\nSpirits, protect me. Please, hear my cry. Like you used to.",
+					"<Streaks of dried blood make most of this page illegible.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[864] = {
+						0.311160147190094,
+						0.67295241355896,
+					},
+				},
+			},
+		},
+		["GameObject-230580"] = {
+			["base"] = {
+				["title"] = "Bone Pile",
+				["text"] = {
+					"Judging by the bite and acid marks marks left in the bone, this corpse was eaten by Goren. The armor, meat, and most of the bone of whatever this creature was have been eaten away with equal vigor.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[525] = {
+						0.6782107949256897,
+						0.2298480272293091,
+					},
+				},
+			},
+		},
+		["GameObject-377901"] = {
+			["base"] = {
+				["title"] = "Observant Riddles: A Field Guide",
+				["text"] = {
+					"Treasures held by one who croaks? Fear not, for I have an infallible hoax.\r\n\r\nOne part bar of ivory slick to halt a most unwelcome kick. Seek out bubbles quite bizarre so that our simple trick might go far.\r\n\r\nOne part prize of crescent gold, a wondrous flavour to behold. Find this bounty flung far and wide, only precious to those with fur pure white.\r\n\r\nAnd last but not least a pleasurable crunch to give that 'swog a delightful lunch. Abscond with a material so brittle and white it often gives everyone a fright.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[2022] = {
+						0.6445800065994263,
+						0.6909373998641968,
+					},
+				},
+			},
+		},
+		["Item-210346"] = {
+			["base"] = {
+				["title"] = "Self-Baking Herb Based Cookies",
+				["text"] = {
+					'I\'ve been experimenting to try to replicate various confectionary treats I was exposed to in Valdrakken by the mortals. They had me taste these things called "cookies" which I have to say are delicious. But these mortals spend so much time processing their food to get very specific ingredients, and while I personally think there are no better flavors to be found than in the Dream, I have had to get a little creative to replicate all the ingredients. I am sure it is fine.',
+					"Ingredients:\r\n\r\nLush Hochenblume stalk sugars - Break the stalk and scoop out the fibrous insides and squeeze them until you find the gritty natural sugars. Do not do this near sand. I learned that lesson the first few times.\r\n\r\nWindswept Saxifrage Powder - Take the seeds, don't let them blow away, and crush them into a fine powder. Also take steps to not make that blow away. I've gotten best results in a small cave with bad ventilation. The elemental air may make it difficult to handle, but the taste is worth it.",
+					"Frigid Bubble Poppy Butter - Most people think that you make this out of the poppy seed. The seeds are toxic, scatter them on the ground. Take the big mushroom bulb that has soaked up all the moisture and squeeze it as tight as you can, get all the oil.\r\n\r\nOvergrown Writhebark extract - This is important, there is a difference in the taste between attuning to the writhebark and chasing it down and tackling it. You want this to be very writhey. Once you get it tear it into strips and press it between two rocks for the oil.",
+					"Self-Cooking Wild Oats - These can be found on the border between the Dream and the Primalist held territory. They may be a perversion of the Dream caused by the Druids of the Flame, but they are so convenient. They are self-cooking!",
+					"Directions:\r\n\r\nAdd the sugar, saxifrage powder and wild oats into a mixture then quickly stir in the bubble poppy butter. The oats will start to immediately cook themselves and you need a consistent amount of the frigid butter to prevent the cookies from burning. Once you've prevented any open fires, add the writhebark extract. This will get your dough kneading itself. Get your hands out of the bowl or you might lose them.",
+					"Wait until things settle down and scoop out your spoonful of dough onto a flat rock, preferably near water in case you didn't get the right mixture of frigid butter to fiery oats and need to put out a fire. Give it about the time of a light nap, and they should be done.",
+					'Results:\r\n\r\nI\'m so proud of these. I sent some to Rumiastrasza in Valdrakken since I value her culinary opinions. She said they were "Interesting", and I was "exceedingly imaginative in my ingredient choices" which I am going to interpret as high praise.\r\n\r\nA local pack of dreamtalons had a far harsher view of my cookies, sniffing at them and then running off. But I guess that is because they are carnivores. I spent some time substituting ingredients until I had something that they would eat. But I think it couldn\'t be called a cookie at that point, more of an umbraclaw-haunch burger.',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["Item-210049"] = {
+			["base"] = {
+				["title"] = "The Legend of Elun'Ahir",
+				["text"] = {
+					"As we gather to defend Amirdrassil, we cannot help but recall the tragic fates of world trees past.\r\n\r\nThose lost to sacrifice. To corruption. To flame.\r\n\r\nYet there is an ancient tale--some claim it merely a legend--that tells of an earlier world tree that also met a sorrowful fate. Though it lived only a short time, its legacy endures.",
+					"Long before the first dragons drew breath, Azeroth was conquered by writhing horrors that plummeted from the skies and infested our world.\r\n\r\nThe Old Gods.\r\n\r\nHow long the reign of their Black Empire lasted, we cannot know. Surely it must have been a time of unimaginable suffering.\r\n\r\nBut at long last, there came hope.",
+					"The brave titan Aggramar discovered Azeroth, shining like a beacon in the Great Dark.\r\n\r\nAs he gazed upon the beauty and power of its slumbering soul, he realized it was imperiled. He told the other members of the Pantheon how the world they sought had been corrupted by the Old Gods.\r\n\r\nThe titans gathered to eradicate this dark influence.",
+					"Seeking to bring hope and healing, our patron titan, Eonar, carried a gift given to her by Elune--a branch of G'Hanir, the mother world tree.\r\n\r\nThe titan believed that the influence of Life would drive the darkness away.\r\n\r\nSo she reached down her hand and shaped the soil of Azeroth, planting the branch where it could be fed by river and sky.",
+					'The branch swiftly grew into a tree, its roots extending deep, deep below the surface. Eonar smiled, for everywhere the roots stretched, new life emerged.\r\n\r\nShe called the tree Elun\'Ahir, in honor of her great love.\r\n\r\nWhen Aman\'Thul saw what Eonar had done, he chided her. "This is not Order!" he bellowed. "You have infected this world with uncontrolled chaos!"\r\n\r\nThe Highfather took hold of the world tree\'s trunk and tore it from the earth.',
+					"Eonar wept bitter tears that rained down upon the resulting crater.\r\n\r\nBut as she peered down upon the sundered earth, the titan realized a truth she did not share with the Highfather.\r\n\r\nThough he had destroyed the tree, its winding roots still held firm beneath the soil, hidden from Aman'Thul's gaze.",
+					"As the forces of the titans waged war against the Black Empire, Eonar bid her keeper, Freya, to watch over the crater and nurture the life that blossomed there.\r\n\r\nBelow ground, the roots fed upon the tears of Eonar and grew strong.\r\n\r\nThe war was long, but in the end, the titans claimed victory. And Eonar was pleased, knowing Elune's legacy would endure.",
+					"It is said that much later, as the world entered a new age, mysterious guardians arrived who dedicated their lives to protecting the roots.\r\n\r\nBut that is a tale for another time.\r\n\r\nNow let us stand with our allies to defend Amirdrassil, crown of harmony. Together, we will preserve this symbol of hope. This symbol of the future.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["GameObject-381700"] = {
+			["base"] = {
+				["title"] = "Edict: The Adamant Vigil",
+				["text"] = {
+					"Daz Gulamir Kamil\r\n\r\nRaka revos modas xi daz kiel daz kiel ur daz zekul zennshinagas daz daz karaman ur rukadare.\r\n\r\nZekul lok kieldaz rakir, daz amir ante zila. Zekul lok arakal lok, me amir xi zenn maladath veni faralos rakir revola. Enkil daz zennrakkan ur lok ashj daz gulamir daz azrathud ur lok rakkas.\r\n\r\nMaev daz zenn ashj, zenn karaman, daz zenn rethul melarnagas modas zila daz refir ur daz Gulamir Kamil. Raka revos modas xi faralos  soranaman me tor me kar asj mannorgulan, daz modas tichar me maev  Soranaman daz daz Refir-Rakkas.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2151] = {
+						0.5563197135925293,
+						0.6886813640594482,
+					},
+				},
+			},
+		},
+		["GameObject-301078"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Jani",
+				["text"] = {
+					"Jani, Jani, loa of trash,\r\nTell me where to find your cache!\r\nRichmon, poormon, he don't mind.\r\nWhat's inside? He knows ya kind.\r\n\r\nDe one ya chose to throw away,\r\nWill have great worth some other day.\r\nHe tells a joke, he plays a trick, \r\nInside ya head, what makes ya tick?\r\n\r\nYa think ya great, ya know it all.\r\nBe none ta catch ya when ya fall.\r\nMy caste be low, ya cannot see.\r\nJani, Jani, o loa for me!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1164] = {
+						0.7178876996040344,
+						0.4888671636581421,
+					},
+				},
+			},
+		},
+		["GameObject-301086"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Torga",
+				["text"] = {
+					"Through de blue Torga do glide.\r\nOceans deep and journeys wide.\r\nDe one who strives, de one who seeks,\r\nMake his heart be full, his interest piqued.\r\n\r\nDere be no legend told,\r\nDat Torga will not know.\r\nTo listen is his pleasure,\r\nTo hear your tale, his treasure.\r\n\r\nAnd if to you he tells his story,\r\nDat may be your highest glory.\r\nTorga will remember. \r\nTorga is eternal.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[1164] = {
+						0.712430477142334,
+						0.3543233275413513,
+					},
+				},
+			},
+		},
+		["GameObject-301075"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Gonk",
+				["text"] = {
+					"Lithe and soundless with padded paw,\r\nHe's quick of mind, and sharp of claw.\r\nHe fills de heart with honor and awe.\r\nHe is Gonk!\r\n\r\nIn defense or on attack,\r\nHe de one dat has ya back.\r\nDe mighty master of de pack.\r\nHe is Gonk!\r\n\r\nBe it hoof or paw or hand,\r\nHe roams de sea and sky and land.\r\nWith dis loa we will stand.\r\nHe is Gonk!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1164] = {
+						0.7058393955230713,
+						0.3236144781112671,
+					},
+				},
+			},
+		},
+		["GameObject-301087"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Torcali",
+				["text"] = {
+					"If ya dismiss Torcali,\r\nIt be at your folly.\r\n\r\nShe teaches us de harvest,\r\nShe protects us in our home.\r\nWe become the smartest,\r\nOur fields are rich with loam.\r\nBrave and true and silent waiting,\r\nFar afield, be fascinating.\r\n\r\nEmbrace Torcali, if ya be wise.\r\nAnd finally rest dem weary eyes.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[1164] = {
+						0.7050289511680603,
+						0.3198384642601013,
+					},
+				},
+			},
+		},
+		["GameObject-301080"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Krag'wa",
+				["text"] = {
+					"All de creatures great and small,\r\nHis protection will encompass all.\r\nIf sacrifice be ya whim,\r\nBest look to yaself, not one of dem.\r\n\r\nFor those dat seek to care for others,\r\nYa find ya kin, sistas and brothas.\r\nIf ya be de one ya love de most,\r\nTo him ya surely should not boast.\r\n\r\nWith each word, he puts much weight,\r\nNo wasted thought, no hurried trait.\r\nIf ya be selfish, come not here.\r\nDe selfless have no need to fear.\r\nOf danger he has seen no end.\r\nOur faith and hope his greatest friend.\r\n\r\nKrag'wa\r\nLoa\r\nGuardian strong.\r\n\r\nKrag'wa\r\nFather\r\nMay ya live forever long.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1164] = {
+						0.6852244138717651,
+						0.2971486449241638,
+					},
+				},
+			},
+		},
+		["GameObject-229304"] = {
+			["base"] = {
+				["title"] = "Unmarked Journal",
+				["text"] = {
+					"An arakkoa sun priestess has come to our home, seeking dominion over our lands. She brings dust and wind and death, scorching our fields with sunfire.",
+					"<There are a few pages missing.>",
+					'Our village bleeds slowly to death. Many of our defenders have fallen under an abominable curse, which we call "the sun sickness."\n\nThey return to our village, stumbling and dazed, and unable to feel the warmth of the Light.',
+					"Today, I saw the sun priestess in the woods near our village. I was barely able to escape, but not before she cast the sun sickness upon me.\n\nSince she uttered her foul incantation, I have tried praying to the Light... and felt nothing.\n\nWhere there was once everlasting divinity, now, I sense only emptiness.\n\nNever have I felt such terror.",
+					"I have sent the children, the sick, and the elderly away. May they find safety beyond the river, away from here.\n\nOnly I remain.\n\nI will slay the sun priestess today.",
+					"<Most of the remaining pages are gone, except for the last entry.>",
+					"Much time has passed since I slew the feathered witch. How many seasons, how many years? I have lost count.\n\nI am an old man, and my time is near.\n\nAll these years I have wandered, blind and alone, severed from the Light. What is a Vindicator without vindication?\n\nIt is to eat without tasting. It is to learn without understanding. It is to live without meaning.\n\nThe darkness beckons. The world grows dim. Without the Light, I am hopeless.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[535] = {
+						0.6968599557876587,
+						0.3318461775779724,
+					},
+				},
+			},
+		},
+		["GameObject-301074"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Bwonsamdi",
+				["text"] = {
+					'Bwonsamdi guards our spirits well, \r\nHe makes death most inviting.\r\nYa think he be a trickster, \r\nHis humor often biting.\r\n\r\nBehind his smile and pointed humor,\r\nDere lies a darkness, a hint of rumor.\r\nHe knows things dat make de brave men shriek,\r\nThe truth from him, ya must not seek.\r\n\r\nDe realm of death be his alone.\r\nYa life and spirit to him be known.\r\nAnd when dat life do end,\r\nMake sure Bwonsamdi be ya friend.\r\n\r\nDen Bwonsamdi will surely guide, \r\n"Come on through to de other side."',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1164] = {
+						0.633577823638916,
+						0.2954518795013428,
+					},
+				},
+			},
+		},
+		["GameObject-301085"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Zandalar",
+				["text"] = {
+					"With de loa on our side,\r\nWe can rule dis land with pride.\r\nKeep dem in ya mind and heart,\r\nElse from us dey surely part!\r\n\r\nDey seem like us in many ways,\r\nDifferent moods for different days.\r\nSome can be a bit capricious,\r\nOthers be downright malicious.\r\n\r\nDis world to dem can be so small,\r\nTheir vision long, much to recall.\r\nDere is much we can't understand,\r\nYet all part of their master plan.\r\n\r\nDey bring us wisdom, strength and power.\r\nDey with us in our darkest hour.\r\nFor dem all, we must endeavor.\r\nCall to de heavens, Zandalar forever!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1164] = {
+						0.6353614330291748,
+						0.3032338619232178,
+					},
+				},
+			},
+		},
+		["GameObject-250606"] = {
+			["base"] = {
+				["title"] = "Asgrim the Dreadkiller",
+				["text"] = {
+					"Here lies Asgrim the Dreadkiller. His hatred for the kvaldir was unmatched and he made it his life's work to slay as many of Helya's minions as possible.\r\n\r\nHis deeds were so great, Helya sent the Naglfar for him. Though it cost him his life and his warband, he sent the dread ship emptyhanded back to Helheim.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[635] = {
+						0.6420300006866455,
+						0.5251134634017944,
+					},
+				},
+			},
+		},
+		["GameObject-336712"] = {
+			["base"] = {
+				["title"] = "Worlds Beyond Counting",
+				["text"] = {
+					"<The contents of this scroll appear to be constantly shifting as new entries are added.>\r\n\r\nWorld Designate: Azeroth\r\nOrigin: Titan\r\nInhabitants: Various, mostly sentient\r\nNotable Arrivals: Uther",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1533] = {
+						0.557389497756958,
+						0.8404990434646606,
+					},
+				},
+			},
+		},
+		["GameObject-336713"] = {
+			["base"] = {
+				["title"] = "The Infinite Treatises",
+				["text"] = {
+					"The Infinite Treatises\r\n\r\nA compendium of the philosophy, materials, and process of the greatest of Kyrian crafters.\r\n\r\nA masterwork of the Paragon of Wisdom.\r\n\r\n<This scroll never seems to end.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1533] = {
+						0.5546801090240479,
+						0.8410239219665527,
+					},
+				},
+			},
+		},
+		["GameObject-297528"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Jani",
+				["text"] = {
+					"Jani, Jani, loa of trash,\r\nTell me where to find your cache!\r\nRichmon, poormon, he don't mind.\r\nWhat's inside? He knows ya kind.\r\n\r\nDe one ya chose to throw away,\r\nWill have great worth some other day.\r\nHe tells a joke, he plays a trick, \r\nInside ya head, what makes ya tick?\r\n\r\nYa think ya great, ya know it all.\r\nBe none ta catch ya when ya fall.\r\nMy caste be low, ya cannot see.\r\nJani, Jani, o loa for me!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[862] = {
+						0.4854414463043213,
+						0.5457656383514404,
+					},
+				},
+			},
+		},
+		["GameObject-365057"] = {
+			["base"] = {
+				["title"] = "Grinning Urn",
+				["text"] = {
+					"A note is pinned to the object:\r\n\r\n$PLAYER_NAME$ touched this while rescuing a laughing god.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[1533] = {
+						0.4147467613220215,
+						0.6708506345748901,
+					},
+				},
+			},
+		},
+		["GameObject-297700"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Zandalar",
+				["text"] = {
+					"With de loa on our side,\r\nWe can rule dis land with pride.\r\nKeep dem in ya mind and heart,\r\nElse from us dey surely part!\r\n\r\nDey seem like us in many ways,\r\nDifferent moods for different days.\r\nSome can be a bit capricious,\r\nOthers be downright malicious.\r\n\r\nDis world to dem can be so small,\r\nTheir vision long, much to recall.\r\nDere is much we can't understand,\r\nYet all part of their master plan.\r\n\r\nDey bring us wisdom, strength and power.\r\nDey with us in our darkest hour.\r\nFor dem all, we must endeavor.\r\nCall to de heavens, Zandalar forever!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1165] = {
+						0.5327339768409729,
+						0.09321987628936768,
+					},
+				},
+			},
+		},
+		["GameObject-278498"] = {
+			["base"] = {
+				["title"] = "In Memoriam",
+				["text"] = {
+					"In Memory Of Those Lost",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[896] = {
+						0.604179859161377,
+						0.4807862043380737,
+					},
+				},
+			},
+		},
+		["GameObject-296902"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"Though the waves howled as home did, it was not the shuttered existence we knew.\n\nFor most, that was enough.\n\nWith each writhe came loss, but sustenance. With sustenance, freedom.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.5902986526489258,
+						0.5957111120223999,
+					},
+				},
+			},
+		},
+		["GameObject-296854"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"In the beginning, we were blind.\n\nWe were lost.\n\nWe left the howling streets of our homes in search of greater existence.\n\nIn the end, we found the sea. Or rather, it found us.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.4952186942100525,
+						0.8093975782394409,
+					},
+				},
+			},
+		},
+		["GameObject-230583"] = {
+			["base"] = {
+				["title"] = "Gnawed Crate",
+				["text"] = {
+					"Whatever was inside this crate is gone, though the Goren seem to have enjoyed eating the crate itself at least as much as the contents.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[525] = {
+						0.6597132682800293,
+						0.2289749979972839,
+					},
+				},
+			},
+		},
+		["GameObject-369230"] = {
+			["base"] = {
+				["title"] = "Archivist Roh-Mah's Teachings",
+				["text"] = {
+					"ARCHIVIST ROH-MAH, SCRIVENER OF WISDOM\r\n\r\nThe Shadowlands are composed of multitudinous afterlives. It is no small wonder that the properties of some subset of these afterlives, and the personalities of those who reside there, would lead to the existence of fantastic relics.\r\n\r\nOur studies, therefore, are not merely centered on the relics, but also on the beings with which they are associated, as well as their afterlife of origin.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[1961] = {
+						0.3112913370132446,
+						0.5771806240081787,
+					},
+				},
+			},
+		},
+		["GameObject-299073"] = {
+			["base"] = {
+				["title"] = "Fractured Tablet",
+				["text"] = {
+					'<The words still legible upon this broken tablet appear to be a royal decree.\r\n\r\nThis temple was dedicated to the priests of Bwonsamdi, serving as a first stopping point for souls on their journey to "the Other Side.">',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[863] = {
+						0.4256250262260437,
+						0.5711228251457214,
+					},
+				},
+			},
+		},
+		["GameObject-329695"] = {
+			["base"] = {
+				["title"] = "Guide to Azsharan Court Etiquette, Vol. 2",
+				["text"] = {
+					"During any performance, it is tradition to curtsey before our divine queen to receive her blessing.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1512] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-296918"] = {
+			["base"] = {
+				["title"] = "Drust Stele: Breath Into Stone",
+				["text"] = {
+					"<The carving looks like breath or wind is being drawn from a body and put into a stone.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[896] = {
+						0.5942156314849854,
+						0.6684731245040894,
+					},
+				},
+			},
+		},
+		["GameObject-302771"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"In the beginning, we were blind.\n\nWe were lost.\n\nWe left the howling streets of our homes in search of greater existence.\n\nIn the end, we found the sea. Or rather, it found us.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.7689367532730103,
+						0.2574318051338196,
+					},
+				},
+			},
+		},
+		["GameObject-251681"] = {
+			["base"] = {
+				["title"] = "Weathered Parchment",
+				["text"] = {
+					"In honor of those who ascend to unimaginable heights. May your spirit continue through the dreams of others who follow...",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[650] = {
+						0.5334675312042236,
+						0.8753147721290588,
+					},
+				},
+			},
+		},
+		["GameObject-252524"] = {
+			["base"] = {
+				["title"] = "Scribbled Note",
+				["text"] = {
+					"Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[641] = {
+						0.643018901348114,
+						0.4484641551971436,
+					},
+				},
+			},
+		},
+		["GameObject-302778"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"House Stormsong laid claim to the most fertile valley in the northern reaches .\n\nIt took our lord's name as tribute for our gifts.\n\nWe were home.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.7679541707038879,
+						0.2560456991195679,
+					},
+				},
+			},
+		},
+		["GameObject-252391"] = {
+			["base"] = {
+				["title"] = "Hastily-Scrawled Page",
+				["text"] = {
+					"What I felt after my father's passing is not for you to know. That pain is mine to keep. Mine to use. But I will say that my views changed. My hubris crumbled away. I questioned everything and everyone. I searched for a way to strike back at the Legion, for a weapon to make the demons suffer as much as I had.\r\n\r\nAnd in that searching, I realized that Illidan had been right all along. Though he was cold and arrogant, he had been effective. He understood that to defeat the demons, we must make sacrifices. We must forgo our fear and apprehension, and embrace the unknown.\r\n\r\nIn the wake of my father's death, Illidan disappeared. Rumors spread concerning his whereabouts. Some elves claimed he had died. Others said he had abandoned the resistance and joined the demons. Do not believe these lies. Illidan is still on our side. He is working from the shadows to uncover the Legion's weaknesses. No matter how questionable his methods may be, they are necessary.",
+					"I go now to find him, to walk in his footsteps and learn what I can about our enemy. Where this path will lead, I do not know. But I will do whatever I must to avenge my father and save our race from extinction.\r\n\r\nIf you wish to do the same, come find me.\r\n\r\n-Illysanna Ravencrest",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[756] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-253171"] = {
+			["base"] = {
+				["title"] = "Weathered Plaque",
+				["text"] = {
+					"Enter those of formidable power and discipline. You shall be tested.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[641] = {
+						0.7249716520309448,
+						0.446121871471405,
+					},
+				},
+			},
+		},
+		["GameObject-253170"] = {
+			["base"] = {
+				["title"] = "Written Note",
+				["text"] = {
+					"If you seek me, I am giving aid to our woodlands. I shall return when they are on the path of harmony once again.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[641] = {
+						0.7136240601539612,
+						0.425860583782196,
+					},
+				},
+			},
+		},
+		["GameObject-252210"] = {
+			["base"] = {
+				["title"] = "Memorial Plaque",
+				["text"] = {
+					"Here lies Lilyiana Meadowblade.\n\nHer blade was second to none, and flowed through her foes like a blade of grass dances in the wind.\n\nAnu Dorah. We remember.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.4740363359451294,
+						0.3354634046554565,
+					},
+				},
+			},
+		},
+		["GameObject-254290"] = {
+			["base"] = {
+				["title"] = "Aquarium of Wonders",
+				["text"] = {
+					'The Aquarium holds the largest collection of diverse sea life in the city.\n\nThe "Makrura" are notorious for their hard shells, tasty tails and fearsome claws.\n\nThe Murlocs are simple creatures, happy to swim about and gurgle incomprehensibly.\n\nPlease keep your hands off the glass.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.5071384906768799,
+						0.4969068765640259,
+					},
+				},
+			},
+		},
+		["GameObject-244836"] = {
+			["base"] = {
+				["title"] = "The Fjarnskaggl Fjormula",
+				["text"] = {
+					"- Do not touch the tips. Touching tips ruins the fjarnskaggl.\r\n\r\n- Dig out the whole plant. Breaking the plant ruins the fjarnskaggl.\r\n\r\n- Pull from the base, nearly the root. Stretching the fjarnskaggl ruins the fjarnskaggl.\r\n\r\n- Do not plant seeds. Fjarnskaggl is not planted. Fjarnskaggl grows where fjarnskaggl grows.\r\n\r\n- Keep in leather bag. Cloth bag ruins the fjarnskaggl.\r\n\r\n- Singing to the fjarnskaggl is OK.\r\n\r\n- Do not let fjarnskaggl get wet. Water ruins the fjarnskaggl.\r\n\r\n- Ruined fjarnskaggl looks just like regular fjarnskaggl, but is actually ruined.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[627] = {
+						0.4300516843795776,
+						0.3298201560974121,
+					},
+				},
+			},
+		},
+		["GameObject-281620"] = {
+			["base"] = {
+				["title"] = "Mam'toth",
+				["text"] = {
+					"Mam'toth\r\n\r\nMighty mamoth of Zul'Drak, he was turned on by his own followers who sought to take his power in an effort to survive the invasion of the scourge. When confronted, Mam'toth took his own life, and in so doing, took the lives of many of his would be slayers.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1165] = {
+						0.5210631489753723,
+						0.1684611439704895,
+					},
+				},
+			},
+		},
+		["GameObject-281624"] = {
+			["base"] = {
+				["title"] = "Tharon'ja",
+				["text"] = {
+					"Tharon'ja\r\n\r\nFor ages, Tharon'ja was the trusted guardian of Drak'Tharon Keep and patron of those who defended the borders of Zul'Drak. Tharon'ja fell to trechery when the threat of the scourge and the lies of the Lich King drove his own followers to turn on him.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1165] = {
+						0.5200886130332947,
+						0.1607721447944641,
+					},
+				},
+			},
+		},
+		["GameObject-192886"] = {
+			["base"] = {
+				["title"] = "In Time, the Arcane Corrupts All!",
+				["text"] = {
+					"<This flier was recently pasted here. Residue of glue on the stone shows that many fliers have previously occupied this location.>\r\n",
+					"Hark!\r\n\r\nMagic is not what you have been taught. Its dangers far exceed the greatest gifts it may bring! Question your Elders, that you may know the truth. Act now while there is time to save yourselves! Learn the ways of Nature and share in the balance of all things, ere your destructive ways upset it beyond repair.\r\n\r\n<An unfamiliar seal decorates the bottom of the flier.>\r\n",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.3078876733779907,
+						0.4605141282081604,
+					},
+				},
+			},
+		},
+		["GameObject-249415"] = {
+			["base"] = {
+				["title"] = "Volund the Hoarder",
+				["text"] = {
+					"Here lies Volund the Hoarder. His mastery of ancient titan artifacts granted him great power on the battlefield.\r\n\r\nHis drive for artifacts led to his downfall. He activated an ancient and powerful construct from the old lands and died stopping it from destroying Stormheim.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[635] = {
+						0.5223063826560974,
+						0.4885256886482239,
+					},
+				},
+			},
+		},
+		["GameObject-296905"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"It began simply.\n\nStormsong's gifts guided fish into our nets and fresh water into our mouths.\n\nNo longer were we slaves to the elements. We were masters.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.5604897737503052,
+						0.3849964141845703,
+					},
+				},
+			},
+		},
+		["GameObject-290688"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"The Approach of the Worthy\r\n\r\nYou will be judged. You will be measured. The Serpent shall decide your fate.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-254289"] = {
+			["base"] = {
+				["title"] = "Pride of the Menagerie",
+				["text"] = {
+					"SU'ESH\n\nTHE MENAGERIE STAR ATTRACTION\n\n\n\nPlease keep your arms to yourself. Management is not responsible for any limbs lost.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.4989307522773743,
+						0.5272407531738281,
+					},
+				},
+			},
+		},
+		["GameObject-192887"] = {
+			["base"] = {
+				["title"] = "Losses of the Third War",
+				["text"] = {
+					"Thule Ravenclaw\r\n\r\nThough accounts vary wildly, many recent  events transpiring in Tirisfal Glades and Silverpine Forest seem to indicate that Thule Ravenclaw had willingly sided with the Scourge. The husk of Fenris Keep on Lordamere Lake may yield clues, but our attention must remain elsewhere at present.\r\n",
+					"Gunther Arcanus\r\n\r\nPresumably killed during the events of the third war and lost to the Scourge.\r\n\r\nGunther was last in possession of my favorite pipe. Should his remains turn up, I would be most gracious for its return!\r\n",
+					"Bethor Iceshard\r\n\r\nKilled during the events of the third war. Bethor is known to have risen as a member of the Forsaken and should be treated as an agent of the Horde in all dealings.\r\n",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.2646366357803345,
+						0.5221374034881592,
+					},
+				},
+			},
+		},
+		["GameObject-289585"] = {
+			["base"] = {
+				["title"] = "WARNING: Boss Ahead!",
+				["text"] = {
+					"This area has been flagged as too dangerous for casual explorers. \r\n\r\nProceed with extreme caution. \r\n\r\n- H.J.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1010] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-302774"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"Stormsong was the first to hear them.\n\nNot the crashing waves at the surface -- gentle whispers, imperceptible to all but him.\n\nThey guided his mind ever deeper, revealing untold truths of the powers within him.\n\nWe would never be the same.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.7702222466468811,
+						0.2550342082977295,
+					},
+				},
+			},
+		},
+		["GameObject-252390"] = {
+			["base"] = {
+				["title"] = "Ink-splattered Page",
+				["text"] = {
+					"Though I distrusted Illidan, my father did not. He appointed the young sorcerer as the Moon Guard's commander. Immediately, Illidan set to work reforging the order. He pushed the sorcerers to their limits and developed new methods of wielding arcane magic. \r\n\r\nThe most controversial of these methods involved Illidan channeling the other sorcerers' powers through himself. This granted him incredible arcane might, and he used it to annihilate scores of demons. Yet there was a price. The sorcerers who gave their power to Illidan were left defenseless in battle. Many succumbed to the Legion's fel-tainted blades. Illidan never apologized for these deaths. He saw them as necessary sacrifices.\r\n \r\nAs the days and weeks passed, Illidan's mood darkened, though I am not sure why. I believe something had changed in his relationship with Malfurion and Tyrande. Whenever I mentioned his ill humor, Illidan would talk about a different subject, or he would simply glare at me and say nothing.",
+					"Some elves admired Illidan. After all, he was hurting the demons. Making them suffer. Under his command, the Moon Guard had become one of the resistance's most powerful weapons. Yet my father grew concerned about Illidan's recklessness, and he questioned his decision to make him the Moon Guard's leader. \r\n\r\nPerhaps Kur'talos could have stopped Illidan's rash behavior, but he never had the opportunity. A Legion agent assassinated my father, and his death threw the resistance into turmoil and uncertainty.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[755] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-301084"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Shadra",
+				["text"] = {
+					"In de shadows, Shadra lurks.\r\nFinding secrets as she works.\r\nWebs she weaves 'round those in power,\r\nDark of night her waking hour.\r\nYa seek us out with ill intent?\r\nDen writhe to poison most potent!\r\n\r\nHer eyes are everywhere, dey see all.\r\nDey hear ya words, where dey can crawl.\r\nWhat ya know, she knows as well, \r\nKeeper of secrets she'll never tell.\r\nPowerful strings she pulls in time of need,\r\nWith advice and warnings ya better heed.\r\n\r\nShould her faith in us be lost,\r\nHer good will falls, at terrible cost.\r\nBetray her and ya soon will find,\r\nHer venom is strong and most unkind.\r\nIf to Zandalar you stay true,\r\nThe danger will never come near you.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1164] = {
+						0.6166978478431702,
+						0.4840983152389526,
+					},
+				},
+			},
+		},
+		["GameObject-296949"] = {
+			["base"] = {
+				["title"] = "The Assemblage of Houses",
+				["text"] = {
+					'<HTML><BODY>\r\n<br/>\r\n<br/>\r\n<p align="center">Let us speak plainly now, and in earnest, for words mean little without the weight of conviction.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[1161] = {
+						0.4842222929000855,
+						0.8287401795387268,
+					},
+				},
+			},
+		},
+		["GameObject-252521"] = {
+			["base"] = {
+				["title"] = "Scribbled Note",
+				["text"] = {
+					"Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[641] = {
+						0.6448042988777161,
+						0.4488925933837891,
+					},
+				},
+			},
+		},
+		["GameObject-234057"] = {
+			["base"] = {
+				["title"] = "Barely Legible Scroll",
+				["text"] = {
+					"They said it could not be done but soon I will show them! Only a few more days out here and I will prove that any orc brave enough can live off goren eggs.",
+					"The small cold eggs are getting harder to get as the goren eat them as well. Maybe those don't hatch. I will have to go out further and find new nests.",
+					"I managed to find two glowing eggs! The first one was easily cracked and I so hungry I just upended it and drank the whole thing in a couple of gulps. There were some big chunks in there but I just ate it all like a true orc!  I don't feel so good but at least I'm full.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[543] = {
+						0.4891180992126465,
+						0.472049355506897,
+					},
+				},
+			},
+		},
+		["GameObject-290694"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"HERE LIES -\r\nZanazal the Wise, born to rule, beset by enemies, and resilient enough to endure a civil war that few others did. Though he never saw the others as his equal, he nevertheless saw the value in keeping his enemies close.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-290992"] = {
+			["base"] = {
+				["title"] = "Zul the Prophet",
+				["text"] = {
+					"Zul the Prophet\r\n\r\nLeader of the Zanchuli Council and chief advisor to King Rastakhan, Zul has earned his name and title through his many years fortelling accurate futures, providing the kingdom's military and agriculture with a tremendous advantage.\r\n\r\nFrom a young age, Zul was burdened by prophecies of dark times and the end of the world. Many of these prophecies came to pass, including the coming of the Cataclysm. \r\n\r\nWhile some of the catastrophes were not as grim as Zul predicted, the events did come to pass. \r\n\r\nZul has lived many lives of trolls, preaching and predicting, and standing by the side of his friend and king, Rastakhan.\r\n\r\nLong may his visions praise Zandalar.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1166] = {
+						0.6601483821868896,
+						0.6180607080459595,
+					},
+				},
+			},
+		},
+		["GameObject-252212"] = {
+			["base"] = {
+				["title"] = "Memorial Plaque",
+				["text"] = {
+					"Here lies Arnaera.\n\nIn service to a mythical cause, they were a shining gem to our people, giving aid where they could in assisting the populace.\n\nAlas, the hammer fell and Arnaera made a journey west.\n\nThey were reborn in winter's heart, and their grand design continues.\n\nAnu Dorah. We remember.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.4295836091041565,
+						0.3915200233459473,
+					},
+				},
+			},
+		},
+		["GameObject-297627"] = {
+			["base"] = {
+				["title"] = "Drust Stele: Sacrifice",
+				["text"] = {
+					"<The weathered stone has as worn groove across the middle, as if a blade has struck down the same line over centuries. Dark stains mark one side of the worn cut.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[896] = {
+						0.2759836316108704,
+						0.5758965015411377,
+					},
+				},
+			},
+		},
+		["GameObject-230621"] = {
+			["base"] = {
+				["title"] = "Ogre Wayguide",
+				["text"] = {
+					"Ha Ha You Came This Far For Nothing\r\n\r\nGo Away\r\n\r\nNow",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[525] = {
+						0.3796496391296387,
+						0.326349675655365,
+					},
+				},
+			},
+		},
+		["GameObject-296907"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"The depths' guidance became clear; they guided us home. A new home.\n\nThe land was rich and could provide for endless generations.\n\nWe guided others to us, sending our sages to ensure safe passage.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.6208334565162659,
+						0.3018798232078552,
+					},
+				},
+			},
+		},
+		["GameObject-254130"] = {
+			["base"] = {
+				["title"] = "Barely Legible Note",
+				["text"] = {
+					"Dumb moosey people don't know we take their stuff! It is easy pickings for us here on the outside. No more tunnels! I going to get my candle. Keep by our stash. Moosey people won't bother you here!\r\n\r\n- Your taskmaster,\r\n\r\n    Dhink",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[650] = {
+						0.3871554136276245,
+						0.4324817657470703,
+					},
+				},
+			},
+		},
+		["GameObject-252208"] = {
+			["base"] = {
+				["title"] = "Memorial Plaque",
+				["text"] = {
+					"Here lies Dorendil Wildcaller.\n\nNature and society called to him alike, and he was one of the first to speak with the hippogryphs. His legacy lives on in our eternal kinship with them.\n\nAnu Dorah. We remember.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.4718407988548279,
+						0.3352600336074829,
+					},
+				},
+			},
+		},
+		["GameObject-281623"] = {
+			["base"] = {
+				["title"] = "Sseratus",
+				["text"] = {
+					"Sseratus\r\n\r\nSerpent god of the Drakkari, Sseratus was worshipped for millenia until the day his own prophet slew him to consume his power.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1165] = {
+						0.5213649272918701,
+						0.1606483459472656,
+					},
+				},
+			},
+		},
+		["GameObject-230619"] = {
+			["base"] = {
+				["title"] = "Ogre Wayguide",
+				["text"] = {
+					"Definitely Only Secret Lava Pool On Mountain\r\n\r\nStop Here",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[525] = {
+						0.3578749299049377,
+						0.3184932470321655,
+					},
+				},
+			},
+		},
+		["GameObject-297630"] = {
+			["base"] = {
+				["title"] = "Drust Stele: Conflict",
+				["text"] = {
+					"<This stone shows multiple conflicts or one great battle with many scenes. In the oldest they fight beings that look like themselves or great beasts. In others they fight much smaller beings that resemble gnomes in stature. In another the Drust are driving some Naga back into the seas. Where the carving is most recent the Drust are fighting men and women bearing anchor sigils.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[896] = {
+						0.4645439982414246,
+						0.3723675608634949,
+					},
+				},
+			},
+		},
+		["GameObject-244838"] = {
+			["base"] = {
+				["title"] = "Herblore of the Ancients",
+				["text"] = {
+					'Only Torgus could gather the fjarnskaggl so deftly. Some argued it was sorcery, others say it was simply a practiced hand. But those who were closest to Torgus knew better.\r\n\r\nTorgus had made a deal with a greater power. He had read the old passage "Herbs beget herbs", and had seen the two sides to the lesson: Firstly, that planting the herb\'s seeds would allow more herbs to grow in place of the harvested plant. Secondly, that practice and mastery of herbalistic practices would allow one to, in time, more efficiently harvest.\r\n\r\nHe also saw a third meaning in the lesson. He saw it as a bargain to be made with the very gods who gave us fjarnskaggl. So Torgus did gather a large pile of fjarnskaggl, wrapped it as a gift, and brought the offering to',
+					"<The remainder of the book's pages have been ripped out.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[627] = {
+						0.4300516843795776,
+						0.3298201560974121,
+					},
+				},
+			},
+		},
+		["GameObject-297631"] = {
+			["base"] = {
+				["title"] = "Drust Stele: The Flayed Man",
+				["text"] = {
+					"<The carving on this stone is of a life-sized Drust who has been flayed. The placement of important organs is surprisingly accurate despite the stylization and primitive materials. The eyes are white stones with the faint remains of paint on them. They seem to follow you around. At one point there were prayers, or instructions, carved around the body, but time has rendered the runes illegible. The carving was done with great care, but the purpose remains unknown.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[896] = {
+						0.56494140625,
+						0.8602092266082764,
+					},
+				},
+			},
+		},
+		["Item-208619"] = {
+			["base"] = {
+				["title"] = "The Tragedy of Erinethria",
+				["text"] = {
+					"In the days when the kingdom of dragons was young, brave Erinethria's emerald wings soared above the clouds.\r\n\r\nThe fastest flier of her day, she feared no enemy. Nor would she back down from any challenge.\r\n\r\nAlas, her courage would be her undoing.",
+					"Erinethria had flown to the far corners of Kalimdor and back. She had witnessed wondrous sights, and loved to share stories of them with her kin.\r\n\r\nYet there came a day when Erinethria felt she had seen all there was to see of the world. She grew bored. Restless.",
+					'Erinethria sought the wisdom of Keeper Tyr.\r\n\r\n"Great keeper, is there any mystery left for me to discover? Any riddle yet to be solved?"\r\n\r\n"Everything you need is here, child. What more could you want to see? What else could you seek to know?"',
+					'As the dragon\'s brow furrowed, a cool wind blew in from the west.\r\n\r\n"The breeze, great keeper. I wish to see the place from whence the winds are born."\r\n\r\nTyr grew solemn. "Beyond the Storming Sea lies only ruin. Stay close to home. Stay close to kin."',
+					'Tyr\'s warning hung like a shadow over Erinethria\'s heart. It clashed again and again with her deep yearning for answers.\r\n\r\nOne bright morning, the green dragon bid farewell to her clutchmates.\r\n\r\n"Fear not," she told them, "for I can fly higher than any storm. Faster than any thunder. And when I know from whence the west winds come, I shall return home and tell you all!"',
+					"And with that, Erinethria soared into the sky.\r\n\r\nMoons passed. And still more. Yet brave Erinethria did not return.\r\n\r\nEven Ysera woke from her dreaming to aid in the search. But there was no sign to be found.",
+					"Most believed that Erinethria was lost to the Storming Sea. That her mighty wings grew tired and torn by the harsh winds, and that she tumbled into the roiling waters.\r\n\r\nBut some greens claimed that they saw her in their dreams. That she reached a land beyond, where she raised a brood of her own.",
+					"Surely, after all these ages, we must accept the truth of her loss. While we honor her courage, we must remember the wisdom she failed to heed.\r\n\r\nBeyond the Storming Sea lies only ruin. Stay close to home. Stay close to kin.",
+					"Beware, beware, the wind from the west,\r\nIts call holds only doom.\r\n\r\nFor if you take wing across storm and sea,\r\nYou shall share Erinethria's tomb.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+		},
+		["GameObject-252387"] = {
+			["base"] = {
+				["title"] = "Dog-Eared Page",
+				["text"] = {
+					"I should have admired Illidan from the beginning. After all, he saved my father's life.\r\n\r\nIt happened during a mission that Kur'talos took into the wilds beyond Black Rook Hold. I was not there to witness it, but it was reported that one of the Legion's ravenous felhunter demons attacked and disarmed my father. The beast would have devoured him if Illidan had not intervened. With his quick thinking and mastery of the arcane, the Stormrage twin defeated the demon and spared my father a grim end.\r\n\r\nRather than downplay this event, my father celebrated it. He named Illidan his personal sorcerer, and young Stormrage became the talk of the resistance. Moon Guard members clamored for an audience with him to discuss his thoughts on the war, the nature of demons, and the arcane arts. Before long, Illidan had gained a reputation as a sorcerer without equal.",
+					"From that day forward, Illidan fought by my father's side in battle. I watched him like a storm crow, determined to learn more about this strange new member of my family's inner circle. \r\n\r\nWhat I discovered did not put my heart at ease. Far from it.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[752] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-290695"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"HERE LIES -\r\nKula the Butcher, cruel enough to earn her name, yet clever enough to know who needed butchering. Often outnumbered, her strategy and keen eye for timing made her a force to fear.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-290692"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"HERE LIE -\r\nKing Timalji and Queen Wasi. Never have two rulers shared such a love of power.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-301079"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Kimbul",
+				["text"] = {
+					"Kimbul be fierce, Kimbul be quick.\r\nHis claws be sharp much like his wit.\r\n\r\nKimbul prowls, he will endure.\r\nHis focus locked, his footing sure.\r\nSuffer fools - Kimbul does not,\r\nHis mind be strong, his temper hot.\r\n\r\nOnce ya earn dis loa's trust,\r\nHis force be yours, his will be just.\r\nHe accepts only de best.\r\nIf ya got what it takes, be put to da test!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1164] = {
+						0.6736931800842285,
+						0.4942098259925842,
+					},
+				},
+			},
+		},
+		["GameObject-302777"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"The depths' guidance became clear; they guided us home. A new home.\n\nThe land was rich and could provide for endless generations.\n\nWe guided others to us, sending our sages to ensure safe passage.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.7680697441101074,
+						0.254804253578186,
+					},
+				},
+			},
+		},
+		["GameObject-252527"] = {
+			["base"] = {
+				["title"] = "Scribbled Note",
+				["text"] = {
+					"Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn Every rose has its thorn",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[641] = {
+						0.6426791548728943,
+						0.4541148543357849,
+					},
+				},
+			},
+		},
+		["GameObject-250607"] = {
+			["base"] = {
+				["title"] = "Hakkap One-leg",
+				["text"] = {
+					"Here lies Hakkap One-leg, who first learned to tame the storm drakes of this land. He and his powerful black drake, Ruthless, were unbeatable in battle, his newly trained Galeborn the fiercest warband in Stormheim.\r\n\r\nOne day a thunderstorm covered nearly all of Stormheim, its thunder sounded of a titanic beast that echoed across the land. Hakkap and his strongest Galeborn flew into the storm. In the clashes of lightning a great battle was fought. The storm passed, and Hakkap's body fell to the earth.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[635] = {
+						0.6338822841644287,
+						0.5874484777450562,
+					},
+				},
+			},
+		},
+		["GameObject-297491"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Bwonsamdi",
+				["text"] = {
+					'Bwonsamdi guards our spirits well, \r\nHe makes death most inviting.\r\nYa think he be a trickster, \r\nHis humor often biting.\r\n\r\nBehind his smile and pointed humor,\r\nDere lies a darkness, a hint of rumor.\r\nHe knows things dat make de brave men shriek,\r\nThe truth from him, ya must not seek.\r\n\r\nDe realm of death be his alone.\r\nYa life and spirit to him be known.\r\nAnd when dat life do end,\r\nMake sure Bwonsamdi be ya friend.\r\n\r\nDen Bwonsamdi will surely guide, \r\n"Come on through to de other side."',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[863] = {
+						0.3911285996437073,
+						0.3869256377220154,
+					},
+				},
+			},
+		},
+		["GameObject-249409"] = {
+			["base"] = {
+				["title"] = "Magnar Icebreaker",
+				["text"] = {
+					"Here lies Magnar Icebreaker. He stole a scale from the Earth Warder himself and led his warband to countless victories.\r\n\r\nIn the Battle of Suramar Pass he and his son were betrayed by secret worshippers of Helya and slain. He did not go alone, lying atop the piled corpses of his foes.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[635] = {
+						0.5121846199035645,
+						0.5536416172981262,
+					},
+				},
+			},
+		},
+		["GameObject-296952"] = {
+			["base"] = {
+				["title"] = '"The Ambassador"',
+				["text"] = {
+					"This heavy cannon - designed and forged by the Ashvane Trading Company - fired nearly two thousand rounds during The Second War.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[1161] = {
+						0.3643144369125366,
+						0.7204803228378296,
+					},
+				},
+			},
+		},
+		["GameObject-252211"] = {
+			["base"] = {
+				["title"] = "Memorial Plaque",
+				["text"] = {
+					"Here lies Latara Feathersong.\n\nA huntress of the Sentinels, she led the vanguard in many campaigns. Her bravery and compassion were endless.\n\nAnu Dorah. I remember.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.4503083229064941,
+						0.3071515560150147,
+					},
+				},
+			},
+		},
+		["GameObject-286966"] = {
+			["base"] = {
+				["title"] = "Plaque",
+				["text"] = {
+					'<HTML><BODY>\r\n<BR/><BR/><BR/>\r\n<H1 align="center">Arom Waycrest</H1>\r\n<BR/><BR/><BR/>\r\n<p align="center">First Lord of Drustvar</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[896] = {
+						0.3598390817642212,
+						0.5121932029724121,
+					},
+				},
+			},
+		},
+		["GameObject-296917"] = {
+			["base"] = {
+				["title"] = "Drust Stele: The Tree",
+				["text"] = {
+					"<The carving shows a massive tree, bigger than the others marked onto the stone. It is surrounded by worshipful Drust.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[896] = {
+						0.2734872102737427,
+						0.4828166961669922,
+					},
+				},
+			},
+		},
+		["GameObject-297489"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Krag'wa",
+				["text"] = {
+					"All de creatures great and small,\r\nHis protection will encompass all.\r\nIf sacrifice be ya whim,\r\nBest look to yaself, not one of dem.\r\n\r\nFor those dat seek to care for others,\r\nYa find ya kin, sistas and brothas.\r\nIf ya be de one ya love de most,\r\nTo him ya surely should not boast.\r\n\r\nWith each word, he puts much weight,\r\nNo wasted thought, no hurried trait.\r\nIf ya be selfish, come not here.\r\nDe selfless have no need to fear.\r\nOf danger he has seen no end.\r\nOur faith and hope his greatest friend.\r\n\r\nKrag'wa\r\nLoa\r\nGuardian strong.\r\n\r\nKrag'wa\r\nFather\r\nMay ya live forever long.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[863] = {
+						0.5892144441604614,
+						0.4868592619895935,
+					},
+				},
+			},
+		},
+		["GameObject-237843"] = {
+			["base"] = {
+				["title"] = "Adherent Note",
+				["text"] = {
+					"Our search for the chamber rumored to be in this area has been a short one. One of the Bloodmane mongrels had already found it and has been pilfering artifacts from the chamber for weeks!\r\n\r\nWe found his den at the base of the mountain, he seems to have been making the trek to the chamber up the hill almost daily.\r\n\r\nThe crystals seem to have... altered him in some way. He is more calm than the other saberon. He speaks, though crudely, and has even given himself a new name: Leorajh.\r\n\r\nSurely the beast cannot possibly comprehend the true power of the artifacts! I will continue to study its effects on him as I awaken the guardians within the chamber.\r\n\r\nThen, I expect, we will dispose of him.\r\n\r\n- Sol-Shaper Valarik",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[542] = {
+						0.557189404964447,
+						0.684972882270813,
+					},
+				},
+			},
+		},
+		["GameObject-298921"] = {
+			["base"] = {
+				["title"] = "Ancient Nazmani Tablet",
+				["text"] = {
+					"<The words upon this ancient tablet are faded and worn. Only a portion is still legible.>\r\n\r\n...glory of Zul'Nazman... since time before time... invincible walls... loa watch over... heart of our people... will stand forever...\r\n\r\n<The remainder of the text is too faint to decipher.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[863] = {
+						0.5636463165283203,
+						0.572372555732727,
+					},
+				},
+			},
+		},
+		["GameObject-290988"] = {
+			["base"] = {
+				["title"] = "Wardruid Loti",
+				["text"] = {
+					"Wardruid Loti\r\n\r\nBeloved by the youth of Zandalar, Wardruid Loti earned her place on the Zanchuli Council through the demands of the next generation of warriors and hunters.\r\n\r\nSome credit the decision of Gonk to allow the Zandalari the worship of many loa, not just himself. This progressive movement, championed in voice by Loti, aided in the resurgance of druidism as a cultural mainstay of Zandalar.\r\n\r\nLong may she protect the borders of Zandalar.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1166] = {
+						0.3996736407279968,
+						0.3876434564590454,
+					},
+				},
+			},
+		},
+		["GameObject-295162"] = {
+			["base"] = {
+				["title"] = "Jungle Studies",
+				["text"] = {
+					"A book by one Kip Ru'rar describing the jungles and the creatures within.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[862] = {
+						0.7059038877487183,
+						0.08334040641784668,
+					},
+				},
+			},
+		},
+		["GameObject-192709"] = {
+			["base"] = {
+				["title"] = "The Schools of Arcane Magic - Abjuration",
+				["text"] = {
+					"<Penned by the skilled hand of Archmage Ansirem Runeweaver>",
+					"Abjuration is the study of protective magic and one of the most important schools for a young mage to study. The most generalized abjuration spell is the mana shield, a spell that transmutes raw mana into a barrier that protects the caster from attacks. Properly executed, this spell can protect the mage against even the most formidable of attacks - but the mana shield is very difficult for a novice to master. It often takes a mage months of practice to even conjure a simple mana shield, and thus, more basic alternatives exist.\r\n",
+					"A series of elemental armor spells were invented to aid the traveling mage in the unfortunate case that he or she might be attacked. These spells require far less raw energy to cast than a mana shield and are more easily maintained over time, but lack the raw potency of the mana shield. Rather than stopping an attack completely, a frost armor spell might simply decrease the effectiveness of the assault. The more advanced armor spells grant other benefits - for example, the potent mage armor spell actually assists the caster in regaining magical power more easily.",
+					"Practitioners of the arcane arts are often ambitious, and we frequently find ourselves in situations where magic may slip just slightly beyond our control. It is for this reason that the 'Ward' spells exist. Ward spells are quick, potent incantations to protect the caster against a form of elemental damage - damage which is often caused by the caster attempting one of the other schools of magic. This is why studying abjuration early is so imperative.",
+					"One of the most renowned practitioners of Abjuration magic is Prince Kael'thas Sunstrider. While the prince is quite formidable in all schools of magic, Kael'thas has created a variation of Mana Shield that is practically unsurpassed in among the residents of Dalaran. Also notable is the Arcanist Doan, who has perfected a spell that combines Evocation and Abjuration to shield himself for a short time while preparing a powerful area-of-effect spell. This 'Detonate' spell provides Doan with a degree of near invulnerability for a precious few seconds, but few mages have the capacity to cast it safely.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.5228633880615234,
+						0.5485934019088745,
+					},
+				},
+			},
+		},
+		["GameObject-297885"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Torcali",
+				["text"] = {
+					"If ya dismiss Torcali,\r\nIt be at your folly.\r\n\r\nShe teaches us de harvest,\r\nShe protects us in our home.\r\nWe become the smartest,\r\nOur fields are rich with loam.\r\nBrave and true and silent waiting,\r\nFar afield, be fascinating.\r\n\r\nEmbrace Torcali, if ya be wise.\r\nAnd finally rest dem weary eyes.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[862] = {
+						0.6728277206420898,
+						0.1763551235198975,
+					},
+				},
+			},
+		},
+		["GameObject-254284"] = {
+			["base"] = {
+				["title"] = "Frozen Friends",
+				["text"] = {
+					"Within this pen are the chilly denizens of the Menagerie.\n\nDID YOU KNOW? Before the Sundering, the northern and southern edges of the world were much colder than our fair city. This is why the bear in the back of the pen has such a shaggy coat, as well as for fending off predators such as turtles and snow dragons.\n\nWATCH OUT! Penguins, while they seem docile and friendly under our mind control, are vicious in packs and are known predators.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.5131212472915649,
+						0.5356982946395874,
+					},
+				},
+			},
+		},
+		["GameObject-290687"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"The Resting Halls of the Conquered\r\n\r\nBefore you lie those that sought the throne and died for it. They embraced the truth every Zandalari knows: Dying while reaching for power carries no dishonor.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-254288"] = {
+			["base"] = {
+				["title"] = "Pride of the Menagerie",
+				["text"] = {
+					"SU'ESH\n\nTHE MENAGERIE STAR ATTRACTION\n\n\n\nPlease keep your arms to yourself. Management is not responsible for any limbs lost.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.4992631673812866,
+						0.522810697555542,
+					},
+				},
+			},
+		},
+		["GameObject-369229"] = {
+			["base"] = {
+				["title"] = "Archivist Roh-Kiel's Teachings",
+				["text"] = {
+					"ARCHIVIST ROH-KIEL, SPEAKER FOR ALL\r\n\r\nThe Lodestaff serves a unique purpose. It can effectively locate the rest of the relics.\r\n\r\nEach Archivist is attuned to the relics they studied. When five pass their attunements to the Lodestaff, it can be harnessed to locate these objects.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[1961] = {
+						0.2799772024154663,
+						0.4850535988807678,
+					},
+				},
+			},
+		},
+		["GameObject-297632"] = {
+			["base"] = {
+				["title"] = "Drust Stele: Protectors of the Forest",
+				["text"] = {
+					"<A great bramblebear, possibly a Drust druid, is posed with their head bowed to a massive stag and doe. The deer appear to be blessing the bear or accepting its supplication. The stag's coat was once whitewashed while the doe's was covered with blackened soot.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[896] = {
+						0.4457852244377136,
+						0.4564515352249146,
+					},
+				},
+			},
+		},
+		["GameObject-252529"] = {
+			["base"] = {
+				["title"] = "Scribbled Note",
+				["text"] = {
+					"If I am a rose then I have a thorn but if I have a thorn I am not pure and if I am not pure then I am not worthy and if I am not worthy I will suffer and if I will suffer then I shall make those who are also not worthy suffer and suffer and suffer and suffer and suffer and suffer...",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[641] = {
+						0.6386789083480835,
+						0.4556723237037659,
+					},
+				},
+			},
+		},
+		["GameObject-329698"] = {
+			["base"] = {
+				["title"] = "Guide to Azsharan Court Etiquette, Vol. 5",
+				["text"] = {
+					"Our benevolent queen is not without mercy. Those sentenced may grovel at her feet in order to plead their case.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1516] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-329694"] = {
+			["base"] = {
+				["title"] = "Guide to Azsharan Court Etiquette, Vol. 1",
+				["text"] = {
+					"Our queen demands that subjects obey her commands without question. To demonstrate your obedience, kneel while in her divine presence or be cut down.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1512] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-252166"] = {
+			["base"] = {
+				["title"] = "The Hunter's Guide to Being Useful",
+				["text"] = {
+					"<This tome bears the teeth marks of at least a dozen wild beasts. Though heavily patched, it is no longer readable, and gives off a pungent, musky odor.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[739] = {
+						0.5307468771934509,
+						0.3121836185455322,
+					},
+				},
+			},
+		},
+		["GameObject-329711"] = {
+			["base"] = {
+				["title"] = "Guide to Azsharan Court Etiquette, Vol. 6",
+				["text"] = {
+					"Rude gestures are forbidden while in Queen Azshara's presence. Disobeying this mandate will result in a swift and painful demise.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1518] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-281611"] = {
+			["base"] = {
+				["title"] = "Hakkar",
+				["text"] = {
+					'Hakkar the Soulflayer\r\n\r\nPatron and doom of the Gurubashi Empire, the corrupted "Blood God" was defeated during a union of Zandalar with foreign powers.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1165] = {
+						0.519822359085083,
+						0.1684978604316711,
+					},
+				},
+			},
+		},
+		["GameObject-302775"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"It began simply.\n\nStormsong's gifts guided fish into our nets and fresh water into our mouths.\n\nNo longer were we slaves to the elements. We were masters.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.7696740031242371,
+						0.2541183829307556,
+					},
+				},
+			},
+		},
+		["GameObject-244837"] = {
+			["base"] = {
+				["title"] = "The Tangled Beard",
+				["text"] = {
+					"Fjarnskaggl was not always so rare, my child. It was a staple of our culture; to be vrykul was to live among the fjarnskaggl. It lined our beds, it flavored our broth, it warmed our infants.\r\n\r\nNow, it dies. It grows in scattered clumps at the edges of our town, never in the neat rows we once reaped. Only the most resilient snarl of fjarnskaggl can survive the brisk winds of Stormheim, and none can survive the frigid winters of Northrend.\r\n\r\nWe lost our way, my daughter. We forgot from whence fjarnskaggl came. The herb is a gift from the heavens. Those that smile down on us from above want us to be happy, and one of their gifts is the fjarnskaggl. To harvest fjarnskaggl is to touch the tangled beard of god.",
+					"At some point, however, we took their gift for granted. We burned fjarnskaggl when simple straw would do. We fed it to the musk ox. We harvested the herb, then let it rot in storage.\r\n\r\nDo not allow yourself to repeat the mistakes of our people, child. Treat the sacred herb of our people with respect, and it may return to our people in its full splendor once again.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[627] = {
+						0.4300516843795776,
+						0.3298201560974121,
+					},
+				},
+			},
+		},
+		["GameObject-290984"] = {
+			["base"] = {
+				["title"] = "Yazma",
+				["text"] = {
+					"Yazma\r\n\r\nHigh Priestess of the spider loa Shadra, Yazma comes from a long line of priestesses who served the King as the keeper of secrets and spies.\r\n\r\nThrough Yazma's diligence, King Rastakhan was warned of and survived at least fifteen assassination attempts. It was her spy network that also led to the discovery of the Gurubashi once again practicing blood magics and worshiping the fallen loa: Hakkar.\r\n\r\nMay her vigalence ever serve Zandalar!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1166] = {
+						0.6042743921279907,
+						0.6967848539352417,
+					},
+				},
+			},
+		},
+		["GameObject-336711"] = {
+			["base"] = {
+				["title"] = "Bear Witness: The Watcher's Code",
+				["text"] = {
+					"Bear Witness: The Watcher's Code\r\n\r\nFirst Verse\r\n\r\nThe first virtue will come naturally to the denizens of Bastion. Compassion for what was, is, and will be. \r\n\r\nThe soul knows itself, and its deeds, though it is with a gaze of compassion that the Kyrian will know them.\r\n\r\nForgive small slights, and give praise to the great sacrifices.\r\n\r\n<The scroll continues on for fifty-seven more verses.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1533] = {
+						0.5575363039970398,
+						0.8360684514045715,
+					},
+				},
+			},
+		},
+		["GameObject-296916"] = {
+			["base"] = {
+				["title"] = "Drust Stele: The Ritual",
+				["text"] = {
+					"<The Drust carved onto this stone appears to carry a curved blade in one hand. The head of a man or animal is in his other hand. At his feet are the bodies of many slain animals. Their entrails are being observed by other Drust.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[896] = {
+						0.5078068971633911,
+						0.7370857000350952,
+					},
+				},
+			},
+		},
+		["GameObject-230620"] = {
+			["base"] = {
+				["title"] = "Ogre Wayguide",
+				["text"] = {
+					"Nothing At The Top Of This Mountain\r\n\r\nTurn Around Now",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[525] = {
+						0.3399010896682739,
+						0.2994167804718018,
+					},
+				},
+			},
+		},
+		["GameObject-252385"] = {
+			["base"] = {
+				["title"] = "Torn Page",
+				["text"] = {
+					"I am Illysanna, daughter of the resistance commander Kur'talos Ravencrest. You should know by now that my father is dead. I am not the only one who has lost someone. Our great empire, our entire world, is burning before our eyes.\r\n\r\nNothing in this war with the Burning Legion has gone according to plan. Nothing. Every battle we win is followed by two defeats. Every demon we slay is replaced by ten more.\r\n\r\nLike my father, I was once so certain of victory. So overconfident. So foolish. Most resistance fighters still are. They hold tight to their archaic ways, unwilling to accept that we cannot best our enemy through conventional means. We are fighting something alien to this world, something born of nightmare.\r\n\r\nThere is one elf who understands this: Illidan Stormrage. He knows that to defeat the demons, we must adapt. We must embrace extraordinary new tactics. If not, we will die. It is as simple as that.",
+					"Perhaps you consider Illidan an arrogant sorcerer, or even a menace to our way of life. I once did, but my opinions have changed. I am writing to explain why, and to chronicle what I have learned of Illidan. Despite his dangerous reputation, I believe he is our only chance of surviving the days ahead.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[751] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-297495"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Akunda",
+				["text"] = {
+					"Akunda brings de lightning,\r\nAkunda brings de thunder.\r\nDe faithless be afraid,\r\nDe brave be full of wonder.\r\n\r\nAkunda brings de wind, \r\nAkunda brings de rain.\r\nYa memories come flooding up,\r\nHis will can ease ya pain.\r\n\r\nOne day he hits with all de force,\r\nDe next day he be kind.\r\nMuch like Akunda's touch,\r\nDere be great power in his mind.\r\n\r\nWhen ya courage goes astray,\r\nWhen doubt be in ya heart.\r\nThink of calm before de storm,\r\nAnd Akunda do his part.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[864] = {
+						0.4216925501823425,
+						0.6215142011642456,
+					},
+				},
+			},
+		},
+		["GameObject-230618"] = {
+			["base"] = {
+				["title"] = "Ogre Wayguide",
+				["text"] = {
+					"Definitely Not This Way To Secret Lava Pools",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[525] = {
+						0.3991251587867737,
+						0.3079695701599121,
+					},
+				},
+			},
+		},
+		["GameObject-252386"] = {
+			["base"] = {
+				["title"] = "Worn-Edged Page",
+				["text"] = {
+					"I first met Illidan in the early stages of the war, back when I considered the Burning Legion a passing threat. The night elf resistance was headquartered at my family's ancestral home, the great fortress of Black Rook Hold. Those days were glorious to behold. Thousands of elves gathered at the stronghold from the far ends of the empire, all sworn to defend our lands against the demons.\r\n\r\nAs the daughter of Commander Ravencrest, I enjoyed a position of power and privilege. I attended council meetings with sorcerers from the Moon Guard, priestesses from the Sisterhood of Elune, and other influential figures. I also crossed paths with lesser-known resistance members-elves like Illidan.",
+					"Illidan came to Black Rook Hold with his brother, the druid Malfurion Stormrage, and the priestess Tyrande Whisperwind. I met the trio only briefly, and they did not leave any lasting impressions on me. Illidan in particular seemed like just one more sorcerer among the hundreds who had joined the resistance.\r\n\r\nYet soon, everyone would know his name. And some, like me, would come to distrust him.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[752] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-292840"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"Bring your offering. Display your strength. Turn the stone.\r\n\r\nThen your fate is sealed.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-292838"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"The Approach of the Worthy\r\n\r\nYou will be judged. You will be measured. The Serpent shall decide your fate.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-254281"] = {
+			["base"] = {
+				["title"] = "Beasts of Barren Savannas",
+				["text"] = {
+					'This enclosure closely replicates a barren landscape, where these particular creatures thrive.\n\nDID YOU KNOW? Tigers are furry friends and very warm. They are perfect for snuggling up next to on a cold night, if it were not for our weather being magically controlled. Scratching behind their ears will be sure to elicit a wonderful purr.\n\nDID YOU KNOW? The monohorn within are a rare breed, their distinctive hides being used for all manner of fashion, including hats, coat linings, and other fine apparel.\n\nThere is some discussion within the zoological community to naming these magnificent beasts "unicorns," but the majority agree that monohorn is a much more fitting name.\n\n\n\nPLEASE DO NOT TOUCH THE EXHIBITS - Management.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.5091167688369751,
+						0.5284258127212524,
+					},
+				},
+			},
+		},
+		["GameObject-237809"] = {
+			["base"] = {
+				["title"] = "The Gods of Arak",
+				["text"] = {
+					"The ancient skies of Arak were once shared by three gods...",
+					"Rukhmar was strong, youthful and ambitious. She flew higher, ever higher, for she loved to feel the sun's warmth upon her feathers. She would climb until she caught fire, but she did not burn. The flames cascaded off of her in long stokes of brilliant red and gold.\r\n\r\nThe sky was her canvas, and her children were the kaliri.",
+					"Anzu was physically meager, but possessed a great intellect. He preferred the cool of the shade and the peace of the twilight hours where he could be alone in quiet contemplation. He would converse with the gods of the abyss, and he would find them dull, witless creatures.\r\n\r\nHis down was an inky midnight, and his children were the dread ravens.",
+					"Sethe was cold-blooded and scornful. When he flew, the wind bit his flesh. He would sun himself on the mountainsides, but he could never taste warmth.\r\n\r\nHis scales were frosted glass, and his children were the wind serpents.",
+					"Sethe coveted the favor of the wind and the warmth of the sun. He persuaded Anzu to help him slay Rukhmar and take the sky for themselves.\r\n\r\nBut Anzu was cunning, and cared little for the wind serpents. In the dark of night, he sent a raven to warn Rukhmar of Sethe's intentions.\r\n\r\nAnzu watched from the top of a mountain spire as Rukhmar and Sethe clashed.\r\n\r\nSethe struck exactly as Anzu had warned, and Rukhmar avoided him with ease. She flew high, put the sun at her back, and dove at Sethe.",
+					"Rukhmar's talons found Sethe's head with ease. With a great flap of her wings, she split the very sky upon him like the crack of a whip. \r\n\r\nSethe crashed into a spire with such force that it crumbled and fell around him.\r\n\r\nIn a flash, Anzu fell upon Sethe, pinning him underfoot.",
+					'Looking up at the raven god, Sethe uttered a dying curse: \r\n\r\n"My blood shall blacken the sea until it runs thick as tar! My flesh shall fester and spoil until the very sky rots with it!"\r\n\r\nAnzu replied, "Then we shall leave no blood nor flesh."\r\n\r\nHe feasted on the writhing wind serpent and picked the bones clean.\r\n\r\nOnly a small trickle of blood managed to escape the broken spire and blight the valley below.',
+					"Soon Anzu felt Sethe's hatred coursing through him. His back twisted. His wings became weak. His mind was wracked with painful visions.\r\n\r\nThe raven god had contained Sethe's curse by taking it upon himself.\r\n\r\nAnzu would grapple with the curse for some time before retreating to the shadows.",
+					"Rukhmar, terrified of the curse, would never land in Arak again. She would fly far away to new lands, and create a new race of people to command the skies - a people who would combine her power and grace with the guile and thirst for knowledge of Anzu.\r\n\r\nShe called them Arakkoa, in hopes that one day they would return to Arak to bask in the wind and sun as she once had.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[542] = {
+						0.4584181308746338,
+						0.456974983215332,
+					},
+				},
+			},
+		},
+		["GameObject-252574"] = {
+			["base"] = {
+				["title"] = "Mysterious Pearl",
+				["text"] = {
+					"The pearl appears to be temporarily drained of its power...",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[630] = {
+						0.3717369437217712,
+						0.1705187559127808,
+					},
+				},
+			},
+		},
+		["GameObject-290986"] = {
+			["base"] = {
+				["title"] = "Hexlord Raal",
+				["text"] = {
+					'Hexlord Raal\r\n\r\nRaal\'s appointment to the Zanchuli Council was no surprise to anyone. The charming hexlord of Pa\'ku had won the heart of his loa and of many of the people.\r\n\r\nSeen as the "man of the people," Raal has taken it upon himself to represent many of the people within Zandalar\'s borders.\r\n\r\nLong may his smile adorn the Zanchuli Council.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1166] = {
+						0.4636005163192749,
+						0.2939127683639526,
+					},
+				},
+			},
+		},
+		["GameObject-334231"] = {
+			["base"] = {
+				["title"] = "Wrathion's Recorded Journal",
+				["text"] = {
+					"As I suspected, little of what the Shen'dralar collected in their archives survived their flight from Eldre'thalas. Still, there was some knowledge to be gleaned from the tomes they were forced to leave behind as they escaped the Horde's aggression. References to the Old Gods are vague and oblique, existing only as archaeological footnotes from a time before the Sundering. Even the Shen'dralar, adept in the arcane arts as they were, could not completely unravel the intricacies of the Black Empire's dark magic. Yet a few of them did dabble in the Void, and the lessons they learned grant me hope that N'Zoth's own power can be wielded against him. \n\nEven in its abandoned state, the library's meticulous organization truly impressed me. If only more of it had remained intact. Such an extensive loss of wisdom is lamentable. The Shen'dralar toiled ceaselessly to collect the librams that lined their bookshelves, only for the lion's share of it to be consumed by the flames of war.",
+					"But such is the nature of warfare, is it not? Seldom does it accomplish the intentions of its architects, and never without leaving immeasurable devastation in its wake... especially when the Horde and the Alliance are the forces in conflict. Can one ultimately say that victory is worth the price that must be paid to achieve it? \n\nPerhaps it is, in some cases. But the verdict is not as easily reached as I once thought.",
+					"For all the time I have spent in Pandaria, only recently did I make acquaintance with the Lorewalkers. The sheer volume of knowledge to be found within their scrolls was marvelous to behold. Lorewalker Cho taught me much about the legends of the Black Empire. He can be... shall we say... long-winded at times, but the wisdom he can impart upon those with the patience to listen is valuable indeed. \n\nThe Shado-Pan, in contrast, have little time for conversations not directly related to the defense of the pandaren. Their Omnia scholars have accumulated centuries of practical expertise in combatting the dark powers of the sha without succumbing to their influence. Given that the sha originated from the essence of Y'Shaarj, the underlying principles of their techniques could prove effective in resisting the whispers of the Old Gods.",
+					"I must admit, I felt a certain kinship with the Shado-Pan that I did not anticipate. The pandaren do not maintain a standing army, and so the Shado-Pan serve as their sole defense against both the mantid and the sha. Though they have trained themselves to seal away their emotions, there is an air of solitude about them that I recognize all too well. It is no easy task to stand alone against the darkness so that others may bask in the light. \n\nBut someone must always make that stand. And they can never allow themselves to falter.",
+					'Few mysteries intrigue me more than the lost knowledge and technology left behind by the titans. The zeal with which I pursued their secrets in the past may have bordered on excess, but the quest in and of itself is one that must be continued. I know for certain that the Forge of Origination is the key to dealing the Old Gods their ultimate defeat, though I have not yet been able to discern the exact manner in which it is meant to be used. \n\nMy hope was that the Vault of Archavon would hold the answers I seek. Unfortunately, though the Vault contained much material for me to study, the giants who make it their home were... less than cordial to me upon my arrival. I cannot say I blame them, given their previous encounters with "visitors" from the Alliance and the Horde.',
+					"It is strange to think on how those events predate my own hatching. While I plumb the depths of forgotten lore from eons past, others have lived through crises I will only ever know from historical accounts. There must be someone on Azeroth who possesses the understanding I require, and perhaps my next course of action should be to seek them out. \n\nA pity the former Aspects are so reluctant to trust me. Even after all my research, their familiarity with the titans' handiwork surely eclipses my own. But given the troubled history of my dragonflight... of Deathwing, Onyxia, Nefarian... and myself... I cannot say I blame them, either.",
+					"It is impossible to set eyes upon Karazhan without reflecting on the dark saga of its master. As befitting his title, the Last Guardian of Tirisfal had amassed a vast collection of writings and artifacts that dwarfs even that of the Kirin Tor. The insight I gained from the tower's library allowed me to reach a significant milestone: I have concocted a tonic that, when imbibed, will cleanse a minor amount of the Old Gods' corruption and silence their whispers. Such is merely the first step on the path to defeating them once and for all, but it warrants celebration, nonetheless.",
+					'Though I knew there were valuable lessons to learn in Karazhan, I did not anticipate that some of them would emerge from my conversations with Medivh\'s lingering spirit. He recounted his struggles under Sargeras\'s influence as the dark titan twisted his soul from within, and I was left to wonder if similar thoughts plagued Neltharion as he descended into madness himself. But Medivh also spoke of his spirit\'s return to the mortal realm, and how it guided Azeroth\'s champions in the fight against the very forces that once corrupted him. He said something on which I ruminate even now: "I can never change the actions of my past," he told me, "but I can forge a new legacy to leave behind."',
+					"A new legacy. In the end, perhaps that is what I am truly after. A way to make amends for my father's failings... as well as my own. A legacy worthy of the black dragonflight's original sacred charge: the defense of Azeroth. The end of the Old Gods. \n\nI do hope these pages have proven to be of use to you, $PLAYER_NAME$. I would hate to think my agents wasted their time delivering them to you as instructed. Rest assured that when the time is right, you will have my aid in the fight against N'Zoth. In the true battle for Azeroth. \n\nOh, and one last request: Burn this journal. It is time my actions speak for me.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[1473] = {
+						0.4345163106918335,
+						0.6452098488807678,
+					},
+				},
+			},
+		},
+		["GameObject-252209"] = {
+			["base"] = {
+				["title"] = "Memorial Plaque",
+				["text"] = {
+					"Here lie the Windstrikers.\n\nMarksmen without peer, their skill with a bow was an inspiration to generations of archers.\n\nTheir family developed the gauntlets the Sentinels wear, carefully articulated mail links that empower our archers to this day.\n\nAnu Dorah. We remember.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[680] = {
+						0.4280712604522705,
+						0.3795098662376404,
+					},
+				},
+			},
+		},
+		["GameObject-292901"] = {
+			["base"] = {
+				["title"] = "Notice of Eviction",
+				["text"] = {
+					"EVICTION NOTICE\r\n\r\nIt has been determined this mountain is UNSAFE for any ski lodge due to hazardous conditions which include, but are not limited to:\r\n\r\nAvalanches\r\nYeti attacks\r\nEarthquakes*\r\n\r\nThe lodge must be shutdown immediately. \r\n\r\n\r\n*Research indicates these are not true earthquakes but more like tremors, as if something is stirring beneath the mountain.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.7097412347793579,
+						0.8701228499412537,
+					},
+				},
+			},
+		},
+		["GameObject-278507"] = {
+			["base"] = {
+				["title"] = "Lost Sailors' Memorial",
+				["text"] = {
+					"In search of the next horizon, I follow a constant star, the sea is vast and empty, the journey takes me far.\r\n\r\nDarkness falls, the wind now howls, the sky no longer cleared. Straining eyes search the skies but the stars have disappeared.\r\n\r\nThrough squall and storm, wind and rain, White Lady guide my path, shine through and bless me with protection from the sea's mighty wrath.\r\n\r\nThe winds arise, my ship is tossed, our course I fight to keep, struggling against the tides, we are pulled into the deep.\r\n\r\nBlue Child comfort the one I love, the one I left alone, the sea is a cruel mistress; I'll not be returning home.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[896] = {
+						0.6345609426498413,
+						0.3997663259506226,
+					},
+				},
+			},
+		},
+		["GameObject-237886"] = {
+			["base"] = {
+				["title"] = "Jailor's Law Book",
+				["text"] = {
+					'1. Await prisoners sent to prison from our comrades above.\r\n2. Open the door and approach the prisoner slowly, but with conviction.\r\n3. Say upon the prisoner, "You have been found guilty of crimes against the Alliance!"\r\n4. Slay the prisoner with righteous conviction.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[588] = {
+						0.4483011960983276,
+						0.7896355390548706,
+					},
+				},
+			},
+		},
+		["GameObject-297494"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Kimbul",
+				["text"] = {
+					"Kimbul be fierce, Kimbul be quick.\r\nHis claws be sharp much like his wit.\r\n\r\nKimbul prowls, he will endure.\r\nHis focus locked, his footing sure.\r\nSuffer fools - Kimbul does not,\r\nHis mind be strong, his temper hot.\r\n\r\nOnce ya earn dis loa's trust,\r\nHis force be yours, his will be just.\r\nHe accepts only de best.\r\nIf ya got what it takes, be put to da test!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[864] = {
+						0.2769067883491516,
+						0.6210432052612305,
+					},
+				},
+			},
+		},
+		["GameObject-290690"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"Bring your offering. Display your strength. Turn the stone.\r\n\r\nThen your fate is sealed.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-290691"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"BEWARE - The Soulflayer's touch may yet abide here. \r\n\r\nIf you become infected, leap off this bridge. Better to die quickly than unleash the plague on Zandalar again.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-290697"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"HERE LIES -\r\nDazar, the First King. He who raised us beyond the curse of blood. He who defied the Dark One. He who built an empire.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-290698"] = {
+			["base"] = {
+				["title"] = "Tablet",
+				["text"] = {
+					"For my mother. She answered the call to return to the Throne of Thunder, and there she died. May her sacrifice be remembered.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-290681"] = {
+			["base"] = {
+				["title"] = "Placard",
+				["text"] = {
+					"HERE LIES -\r\nQueen Patlaa. Friend of beasts. Scourge of her enemies. Beloved by her descendants.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1004] = {
+						0,
+						0,
+					},
+				},
+			},
+		},
+		["GameObject-290985"] = {
+			["base"] = {
+				["title"] = "Vol'kaal",
+				["text"] = {
+					"Vol'kaal\r\n\r\nAmong the military of Zandalar are the elite dire trolls. These trolls are warriors who have perfected their arts, traded portions of their lives for the dark gift of brutal strength, and serve Zandalar as her greatest weapons of war.\r\n\r\nLong ago it was decided that the dire trolls should always have a seat on the Zanchuli Council, to ensure that those special needs of the elite warriors were met by the government, and to provide the wisdom of war to those councilors who may seldom see a battlefront.\r\n\r\nOf these elite, Vol'kaal was chosen for his strength, his power, and a strongly worded recommendation from Yazma. This would be the third dire troll appointed by Yazma, for they are short lived, and their minds are easily bent.\r\n\r\nMay his strength defend Zandalar to the end of his days!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[1166] = {
+						0.5946744680404663,
+						0.709756076335907,
+					},
+				},
+			},
+		},
+		["GameObject-298873"] = {
+			["base"] = {
+				["title"] = "Daelin Proudmoore",
+				["text"] = {
+					'<HTML><BODY>\r\n<br/>\r\n<br/>\r\n<p align="center">In Memoriam</p>\r\n<br/>\r\n<H1 align="center">Lord Admiral Daelin Proudmoore</H1>\r\n<br/>\r\n<p align="center">Noble leader. Beloved husband and father. Taken too soon.</p>\r\n<p align="center">Sea to sea, ashes to ashes, tide to tide.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[895] = {
+						0.6688446402549744,
+						0.3621775507926941,
+					},
+				},
+			},
+		},
+		["GameObject-296906"] = {
+			["base"] = {
+				["title"] = "Ancient Tidesage Scroll",
+				["text"] = {
+					"As our lord's gifts grew, others too heard the whispers.\n\nSoon the very wind in our sails was ours to command -- the waves pushing us ever onward into the night.\n\nWith time our hulls impenetrable to even the worst denizens of the deep below.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[942] = {
+						0.4413129091262817,
+						0.3660241961479187,
+					},
+				},
+			},
+		},
+		["GameObject-237697"] = {
+			["base"] = {
+				["title"] = "Faded Note",
+				["text"] = {
+					"My love... I hope you can forgive me. All I could do was run. If I let them catch us both, there would be no way to save you. Now all I feel is a terrible emptiness for not having stayed by your side. This morning I intend to face the flying beasts the way I should have before. I pledge to seek you endlessly in the afterlife... I desire only to be with you. Whatever the sacrifice...",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[542] = {
+						0.5534768104553223,
+						0.1801818609237671,
+					},
+				},
+			},
+		},
+		["GameObject-297068"] = {
+			["base"] = {
+				["title"] = "De Gral Kantik",
+				["text"] = {
+					"Dey looked into his blackest eyes,\r\nAnd asked of him de hows and whys.\r\nHe told dem of how it had been,\r\nWhat did be done and will again.\r\n\r\nNo tale is new, nor battle won,\r\nJust stories broken and undone.\r\nWhat was lost can still be found.\r\nDe current brings hope back around.\r\n\r\nWhen from de deeps de dark does rise,\r\nTrust de light. Reach to de skies.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[862] = {
+						0.8296704888343811,
+						0.4460318088531494,
+					},
+				},
+			},
+		},
+		["GameObject-278519"] = {
+			["base"] = {
+				["title"] = "Sir Aaron Cresterly",
+				["text"] = {
+					"Here lies Sir Aaron Cresterly\r\n\r\nDefender of Drustvar\r\n\r\nValiant Hero. Loving Brother-in-Arms. True friend.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[896] = {
+						0.6081327199935913,
+						0.46671462059021,
+					},
+				},
+			},
+		},
+		["GameObject-303142"] = {
+			["base"] = {
+				["title"] = "Derek Proudmoore",
+				["text"] = {
+					'<HTML><BODY>\r\n<br/>\r\n<br/>\r\n<p align="center">In Memoriam</p>\r\n<br/>\r\n<H1 align="center">Captain Derek Proudmoore</H1>\r\n<br/>\r\n<p align="center">Proud Captain in the Third Fleet. Eldest son of Daelin and Katherine. Brother of Tandred and Jaina. A gallant warrior, slain in combat during the Second War.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[895] = {
+						0.6688807606697083,
+						0.3642259836196899,
+					},
+				},
+			},
+		},
+		["GameObject-365060"] = {
+			["base"] = {
+				["title"] = "Ven'ari's Shopping List",
+				["text"] = {
+					"A note is pinned to this object:\r\n\r\n$PLAYER_NAME$ touched this. Wrote on it, too. Precious.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[1533] = {
+						0.416826069355011,
+						0.6741811037063599,
+					},
+				},
+			},
+		},
+		["GameObject-369228"] = {
+			["base"] = {
+				["title"] = "Archivist Roh-Luda's Teachings",
+				["text"] = {
+					"ARCHIVIST ROH-LUDA, RELIC RESTORER\r\n\r\nThe afterlives of the Shadowlands give rise to many curious, fantastic, and unstable relics. It is our Purpose to catalog, curate, study, and safeguard them.\r\n\r\nBy our ministrations, we will better understand the nature of each afterlife, we will comprehend how disparate souls fit in the fabric of existence, and perhaps most importantly, we will keep potentially dangerous relics out of the hands of those who would misuse them.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[1961] = {
+						0.3298265933990479,
+						0.4301740527153015,
+					},
+				},
+			},
+		},
+		["GameObject-357162"] = {
+			["base"] = {
+				["title"] = "Lost Chalice Band Poster",
+				["text"] = {
+					"THE LOST CHALICE BAND\r\n\r\nThree souls. One mission.\r\n\r\n<An elaborate drawing of sinstones, stoneborn, and souls being pulled into the Maw covers most of the poster.>\r\n\r\nThe sweet sounds of atonement.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[1525] = {
+						0.5513535737991333,
+						0.4377769231796265,
+					},
+				},
+			},
+		},
+		["GameObject-297524"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Pa'ku",
+				["text"] = {
+					"Pa'ku, o Pa'ku is coming for you.\r\nShe's de mother of de seas, \r\nShe's de master of de skies.\r\nShe's de breeze in de trees,\r\nOn de wind she flies.\r\n\r\nPa'ku, o Pa'ku is coming for you.\r\nShe knows de seas and de land,\r\nFrom here to dere and back again.\r\nDere is no place for you ta hide,\r\nShould ya get yaself on her bad side.\r\n\r\nPa'ku, o Pa'ku is coming for you.\r\nIn a flash she will strike, \r\nSmooth and calm, den all de fright!\r\nDe truest loa, full of pride,\r\nIf ya always keep her satisfied.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[862] = {
+						0.490000307559967,
+						0.4127461314201355,
+					},
+				},
+			},
+		},
+		["GameObject-247539"] = {
+			["base"] = {
+				["title"] = "Plaque",
+				["text"] = {
+					"Dedicated to the memory of our beloved founder, Namuria Gladesong, and the many other brave hunters lost in the War of the Shifting Sands.\r\n\r\nThey gave their lives to save Azeroth, and we shall honor their sacrifice forever.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[739] = {
+						0.4007473587989807,
+						0.1684019565582275,
+					},
+				},
+			},
+		},
+		["GameObject-297074"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Gral",
+				["text"] = {
+					"Beneath de plane where Pa'ku reigns,\r\nGral rules de deep and dere remains.\r\nOceans vast, beneath de tide,\r\nWhere life be strange and horrors hide!\r\n\r\nGral is wisdom, Gral is power.\r\nGral is fierce, unworthy cower.\r\nTruths be found within de depths.\r\nLies exposed and secrets kept.\r\n\r\nHis realm be boundless! De pressure great.\r\nWith hunger for knowledge ya never sate.\r\nBlow de conch or bring fresh meat, \r\nYa find de loa that none can cheat.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[862] = {
+						0.7548349499702454,
+						0.6757792234420776,
+					},
+				},
+			},
+		},
+		["GameObject-301073"] = {
+			["base"] = {
+				["title"] = "Tales of de Loa: Akunda",
+				["text"] = {
+					"Akunda brings de lightning,\r\nAkunda brings de thunder.\r\nDe faithless be afraid,\r\nDe brave be full of wonder.\r\n\r\nAkunda brings de wind, \r\nAkunda brings de rain.\r\nYa memories come flooding up,\r\nHis will can ease ya pain.\r\n\r\nOne day he hits with all de force,\r\nDe next day he be kind.\r\nMuch like Akunda's touch,\r\nDere be great power in his mind.\r\n\r\nWhen ya courage goes astray,\r\nWhen doubt be in ya heart.\r\nThink of calm before de storm,\r\nAnd Akunda do his part.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[1164] = {
+						0.6828352212905884,
+						0.5057108402252197,
+					},
+				},
+			},
+		},
+
 		--put stuff above here
 	},
 };
