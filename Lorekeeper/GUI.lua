@@ -440,6 +440,42 @@ ItemDisplayFrame:SetWidth(210);
 ItemDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.LibraryPanel, "TOPLEFT", 0, -65);
 ItemDisplayFrame:SetPoint("BOTTOMLEFT", LoreKGUI.LibraryPanel, "BOTTOMLEFT", 0, 30);
 
+LoreKGUI.TextCount = CreateFrame("Frame", "LoreKDisplayFrame", LoreKGUI.LibraryPanel, "InsetFrameTemplate3");
+local TextCount = LoreKGUI.TextCount;
+TextCount:SetSize(130,20);
+TextCount:SetPoint("TOPLEFT", LoreKGUI.LibraryPanel, "TOPLEFT", 70, -35);
+TextCount.Label = TextCount:CreateFontString(nil, "OVERLAY");
+TextCount.Label:SetFont(STANDARD_TEXT_FONT, 10);
+TextCount.Label:SetPoint("LEFT", TextCount, "LEFT", 10, 0);
+TextCount.Label:SetJustifyH("LEFT");
+TextCount.Label:SetJustifyV("MIDDLE");
+TextCount.Label:SetText("|cnYELLOW_FONT_COLOR:"..LK["TotalItemsLabel"].."|r")
+TextCount.Count = TextCount:CreateFontString(nil, "OVERLAY");
+TextCount.Count:SetFont(STANDARD_TEXT_FONT, 10);
+TextCount.Count:SetPoint("RIGHT", TextCount, "RIGHT", -10, 0);
+TextCount.Count:SetJustifyH("RIGHT");
+TextCount.Count:SetJustifyV("MIDDLE");
+function TextCount.UpdateCount(current, max)
+	if not current then TextCount:Hide(); return; end
+	TextCount.Count:SetText(current);
+
+	TextCount.totalText = current
+	TextCount.uncollectedText = max - current
+end
+
+TextCount:SetScript("OnEnter", function(self)
+	local totalText = TextCount.totalText
+	local uncollectedText = TextCount.uncollectedText
+
+	GameTooltip:SetOwner(self, "ANCHOR_TOP");
+	GameTooltip:AddLine("|cnYELLOW_FONT_COLOR:"..LK["TotalItemsLabel"] ..":|r ".. totalText, 1, 1, 1);
+	GameTooltip:AddLine("|cnYELLOW_FONT_COLOR:"..LK["ItemsUncollected"] ..":|r ".. uncollectedText, 1, 1, 1);
+	GameTooltip:Show();
+end);
+TextCount:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
+
 --------------------------------------------------------------------------
 
 -- Right Side
@@ -1239,6 +1275,8 @@ function LoreKGUI.sortFunc(a, b)
 end
 
 function LoreKGUI.PopulateList()
+	local countMax = 0
+	local countCurrent = 0
 	if not LoreK_DB or not LoreK_DB["text"] then
 		return;
 	end
@@ -1258,10 +1296,16 @@ function LoreKGUI.PopulateList()
 	for id, data in pairs(allData) do
 		data.id = id;
 		tinsert(proxy, data);
+		countMax = countMax + 1
+		if data.base.hasRead then
+			countCurrent = countCurrent + 1
+		end
 	end
 
 	PopulateNewDataProvider(proxy);
 	LoreKGUI.OnTextChanged(LoreKGUI.SearchBox);
+
+	TextCount.UpdateCount(countCurrent, countMax);
 end
 
 -- Search box

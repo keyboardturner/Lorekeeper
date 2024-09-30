@@ -6,6 +6,8 @@ Mail has been delivered to the mail tab, which is now also active and clickable 
 
 A Text to Speech button has been added to the Library, with a Left Click functionality to play the displayed page text and a Right Click functionality to display and configure the settings
 
+Added text count label above list
+
 # 0.1.3
 
 Weekly LocalData Update 4 - 24/09/24 (255 personal entries + 64 Anonymous User 1 submitted entries + 33 Anonymous User 2 submitted entries)

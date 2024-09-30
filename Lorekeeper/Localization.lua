@@ -91,6 +91,8 @@ if LOCALE == "enUS" then
 	LK["LeftClick"] = "Left-Click"
 	LK["TTSQueuePages"] = "Queue Pages"
 	LK["TTSQueuePagesTT"] = "Queue all pages in sequential order."
+	LK["TotalItemsLabel"] = "Total Texts"
+	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 
 return end
 
@@ -170,6 +172,8 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["LeftClick"] = "Clic Izquierdo"
 	LK["TTSQueuePages"] = "Cola de Páginas"
 	LK["TTSQueuePagesTT"] = "Coloca todas las páginas en cola en orden secuencial."
+	LK["TotalItemsLabel"] = "Total de Textos"
+	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 
 return end
 
@@ -249,6 +253,8 @@ if LOCALE == "deDE" then
 	LK["LeftClick"] = "Linksklick"
 	LK["TTSQueuePages"] = "Seiten in die Warteschlange stellen"
 	LK["TTSQueuePagesTT"] = "Alle Seiten in sequentieller Reihenfolge in die Warteschlange stellen."
+	LK["TotalItemsLabel"] = "Gesamte Texte"
+	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 
 return end
 
@@ -328,6 +334,8 @@ if LOCALE == "frFR" then
 	LK["LeftClick"] = "Clic Gauche"
 	LK["TTSQueuePages"] = "Mettre en File d'Attente"
 	LK["TTSQueuePagesTT"] = "Mettre toutes les pages en file d'attente dans l'ordre séquentiel."
+	LK["TotalItemsLabel"] = "Total des Textes"
+	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 
 return end
 
@@ -407,6 +415,8 @@ if LOCALE == "itIT" then
 	LK["LeftClick"] = "Clic Sinistro"
 	LK["TTSQueuePages"] = "Metti in Coda"
 	LK["TTSQueuePagesTT"] = "Metti tutte le pagine in coda in ordine sequenziale."
+	LK["TotalItemsLabel"] = "Totale dei Testi"
+	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 
 return end
 
@@ -486,6 +496,8 @@ if LOCALE == "ptBR" then
 	LK["LeftClick"] = "Clique com o Botão Esquerdo"
 	LK["TTSQueuePages"] = "Enfileirar Páginas"
 	LK["TTSQueuePagesTT"] = "Enfileire todas as páginas em ordem sequencial."
+	LK["TotalItemsLabel"] = "Total de Textos"
+	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -567,6 +579,8 @@ if LOCALE == "ruRU" then
 	LK["LeftClick"] = "Левая кнопка"
 	LK["TTSQueuePages"] = "Поставить страницы в очередь"
 	LK["TTSQueuePagesTT"] = "Поставить все страницы в очередь по порядку."
+	LK["TotalItemsLabel"] = "Всего текстов"
+	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 
 return end
 
@@ -646,6 +660,8 @@ if LOCALE == "koKR" then
 	LK["LeftClick"] = "좌클릭"
 	LK["TTSQueuePages"] = "페이지 대기열"
 	LK["TTSQueuePagesTT"] = "모든 페이지를 순차적으로 대기열에 추가합니다."
+	LK["TotalItemsLabel"] = "총 텍스트 수"
+	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 
 return end
 
@@ -725,6 +741,8 @@ if LOCALE == "zhCN" then
 	LK["LeftClick"] = "左键点击"
 	LK["TTSQueuePages"] = "排队页面"
 	LK["TTSQueuePagesTT"] = "按顺序将所有页面排队。"
+	LK["TotalItemsLabel"] = "文本总数"
+	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 
 return end
 
@@ -804,5 +822,7 @@ if LOCALE == "zhTW" then
 	LK["LeftClick"] = "左鍵點擊"
 	LK["TTSQueuePages"] = "排隊頁面"
 	LK["TTSQueuePagesTT"] = "按順序將所有頁面排隊。"
+	LK["TotalItemsLabel"] = "文本總數"
+	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 
 return end
