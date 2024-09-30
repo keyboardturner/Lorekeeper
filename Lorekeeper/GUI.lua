@@ -799,7 +799,8 @@ function TTSButton.OnEvent(self,event)
 	end
 
 	if event == "VOICE_CHAT_TTS_PLAYBACK_FINISHED" then
-		if LoreK_DB.settings.debugAdvanced and TTSButton.textPlaying then
+		local queuePages = LoreK_DB["settings"]["TTSSettings"]["queuePages"]
+		if queuePages and TTSButton.textPlaying then
 			if LoreKTextDisplayFrame.NextPageButton:IsEnabled() then
 				LoreKTextDisplayFrame.NextPageButton:Click()
 				LoreKGUI.LibraryPanel.TTSExecute();
@@ -814,13 +815,14 @@ TTSButton:SetScript("OnEvent", TTSButton.OnEvent);
 
 TTSButton:SetScript("OnClick", function(self, button, down)
 	if button == "LeftButton" and down == false then
+		local queuePages = LoreK_DB["settings"]["TTSSettings"]["queuePages"]
 		if TTSButton.textQueuePlaying then	
 			C_VoiceChat.StopSpeakingText();
 			TTSButton.textQueuePlaying = false;
 			TTSButton.textPlaying = false;
 			return;
 		end
-		if LoreK_DB.settings.debugAdvanced then
+		if queuePages then
 			TTSButton.textQueuePlaying = true;
 		end
 		LoreKGUI.LibraryPanel.TTSExecute();
