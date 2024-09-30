@@ -449,7 +449,7 @@ TextCount.Label:SetFont(STANDARD_TEXT_FONT, 10);
 TextCount.Label:SetPoint("LEFT", TextCount, "LEFT", 10, 0);
 TextCount.Label:SetJustifyH("LEFT");
 TextCount.Label:SetJustifyV("MIDDLE");
-TextCount.Label:SetText("|cnYELLOW_FONT_COLOR:"..LK["TotalItemsLabel"].."|r")
+TextCount.Label:SetText("|cnNORMAL_FONT_COLOR:"..LK["TotalItemsLabel"].."|r")
 TextCount.Count = TextCount:CreateFontString(nil, "OVERLAY");
 TextCount.Count:SetFont(STANDARD_TEXT_FONT, 10);
 TextCount.Count:SetPoint("RIGHT", TextCount, "RIGHT", -10, 0);
@@ -468,8 +468,8 @@ TextCount:SetScript("OnEnter", function(self)
 	local uncollectedText = TextCount.uncollectedText
 
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine("|cnYELLOW_FONT_COLOR:"..LK["TotalItemsLabel"] ..":|r ".. totalText, 1, 1, 1);
-	GameTooltip:AddLine("|cnYELLOW_FONT_COLOR:"..LK["ItemsUncollected"] ..":|r ".. uncollectedText, 1, 1, 1);
+	GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["TotalItemsLabel"] ..":|r ".. totalText, 1, 1, 1);
+	GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["ItemsUncollected"] ..":|r ".. uncollectedText, 1, 1, 1);
 	GameTooltip:Show();
 end);
 TextCount:SetScript("OnLeave", function()
