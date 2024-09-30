@@ -7,6 +7,12 @@ local FrameFaderDriver;
 local fadingFrames;
 local deferredFadingFrames;
 
+local defaultTTSSettings = {
+	queuePages = false,
+	volume = 50,
+	speed = 0,
+};
+
 local function OnUpdate(self, elapsed)
 	local isMoving = IsPlayerMoving();
 	for frame, setting in pairs(fadingFrames) do
@@ -544,6 +550,309 @@ TextDisplayFrame.Type_ID = TextDisplayFrame:CreateFontString(nil, "OVERLAY");
 TextDisplayFrame.Type_ID:SetFontObject("GameFontHighlightLarge"); -- make into option later
 TextDisplayFrame.Type_ID:SetPoint("LEFT", TextDisplayFrame.NextPageButton, "RIGHT", 15, 0);
 
+--------------------------------------------------------------------------
+-- Variant Text Dropdown Soon(tm)
+
+
+
+--------------------------------------------------------------------------
+-- Text to Speech Settings
+
+
+LoreKGUI.LibraryPanel.TTSButton = CreateFrame("Button", nil, LoreKGUI.LibraryPanel);
+local TTSButton = LoreKGUI.LibraryPanel.TTSButton;
+
+LoreKGUI.LibraryPanel.backdropInfo = {
+	bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+	edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+	tile = true,
+	tileEdge = true,
+	tileSize = 8,
+	edgeSize = 8,
+	insets = { left = 1, right = 1, top = 1, bottom = 1 },
+};
+
+LoreKGUI.LibraryPanel.TTSSettings = CreateFrame("Frame", nil, TTSButton, "BackdropTemplate");
+local TTSSettings = LoreKGUI.LibraryPanel.TTSSettings;
+TTSSettings:SetPoint("TOPRIGHT", TTSButton, "BOTTOMRIGHT", 0, 0);
+TTSSettings:SetWidth(130*2);
+TTSSettings:SetHeight((26*11));
+TTSSettings:SetBackdrop(LoreKGUI.LibraryPanel.backdropInfo);
+TTSSettings:SetFrameStrata("HIGH");
+TTSSettings:Hide();
+TTSSettings:SetBackdropColor(0,0,0,1);
+TTSSettings.closebutton = CreateFrame("Button", nil, TTSSettings, "UIPanelCloseButton");
+TTSSettings.closebutton:SetWidth(24);
+TTSSettings.closebutton:SetHeight(24);
+TTSSettings.closebutton:SetPoint("TOPRIGHT", TTSSettings, "TOPRIGHT", 1, 1);
+TTSSettings.closebutton:SetScript("OnClick", function(self, button)
+	TTSSettings:Hide();
+end)
+
+local TTSSettingsPlacer = 1
+
+TTSSettings.TitleFrame = TTSSettings:CreateFontString(nil, "OVERLAY", "GameFontNormal");
+TTSSettings.TitleFrame:SetFont(STANDARD_TEXT_FONT, 15);
+TTSSettings.TitleFrame:ClearAllPoints();
+TTSSettings.TitleFrame:SetPoint("TOPLEFT", TTSSettings, "TOPLEFT",10,TTSSettingsPlacer*-10);
+TTSSettings.TitleFrame:SetText(LK["TTSConfigTT"]);
+TTSSettingsPlacer = TTSSettingsPlacer+1
+
+TTSSettings.TTSVoiceChoice = CreateFrame("DropdownButton", nil, TTSSettings, "WowStyle1DropdownTemplate");
+TTSSettings.TTSVoiceChoice:SetDefaultText(LK["TTSVoiceOption"]);
+TTSSettings.TTSVoiceChoice:SetPoint("TOPLEFT", TTSSettings, "TOPLEFT", 10, TTSSettingsPlacer*-25);
+TTSSettings.TTSVoiceChoice:SetSize(190, 26);
+TTSSettings.TTSVoiceChoice:SetupMenu(function(dropdown, rootDescription)
+
+	local optionHeight = 20; -- 20 is default
+	local maxElements = 8; -- amount of elements to show before scroll
+	local maxScrollExtent = optionHeight * maxElements;
+
+	for k, v in pairs(C_VoiceChat.GetTtsVoices()) do
+		local elementDescription = rootDescription:CreateButton(v.name,  function()
+			local voiceID = v.voiceID
+			LoreK_DB["settings"]["TTSSettings"]["voiceID"] = voiceID;
+		end);
+	end
+	rootDescription:SetScrollMode(maxScrollExtent);
+end);
+TTSSettingsPlacer = TTSSettingsPlacer+1
+
+TTSSettings.QueuePages_Checkbox = CreateFrame("CheckButton", nil, TTSSettings, "UICheckButtonTemplate");
+TTSSettings.QueuePages_Checkbox:SetPoint("TOPLEFT", TTSSettings, "TOPLEFT", 10, TTSSettingsPlacer*-25);
+TTSSettings.QueuePages_Checkbox:SetScript("OnClick", function(self)
+	if self:GetChecked() then
+		LoreK_DB["settings"]["TTSSettings"]["queuePages"] = true;
+	else
+		LoreK_DB["settings"]["TTSSettings"]["queuePages"] = false;
+	end
+end);
+TTSSettings.QueuePages_Checkbox.Text:SetText(LK["TTSQueuePages"])
+TTSSettings.QueuePages_Checkbox:SetScript("OnEnter", function()
+	GameTooltip:SetOwner(TTSSettings.QueuePages_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["TTSQueuePagesTT"]);
+	GameTooltip:SetWidth(20);
+	GameTooltip:Show();
+end);
+TTSSettings.QueuePages_Checkbox:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
+TTSSettings.QueuePages_Checkbox.Text:SetScript("OnEnter", function()
+	GameTooltip:SetOwner(TTSSettings.QueuePages_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["TTSQueuePagesTT"]);
+	GameTooltip:SetWidth(20);
+	GameTooltip:Show();
+end);
+TTSSettings.QueuePages_Checkbox.Text:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
+TTSSettingsPlacer = TTSSettingsPlacer+1
+
+do 
+	TTSSettings.VolumeSlider = CreateFrame("Slider", nil, TTSSettings, "MinimalSliderWithSteppersTemplate");
+	local VolumeSlider = TTSSettings.VolumeSlider
+	VolumeSlider:SetPoint("TOPLEFT", TTSSettings, "TOPLEFT", 30, TTSSettingsPlacer*-27);
+	VolumeSlider:SetWidth(190)
+
+	local initialValue = 50
+	local minValue = 0
+	local maxValue = 100
+	local steps = 100
+
+	local formatters = {
+		[MinimalSliderWithSteppersMixin.Label.Left] = function(value) return minValue end,
+		[MinimalSliderWithSteppersMixin.Label.Right] = function(value) return maxValue end,
+		[MinimalSliderWithSteppersMixin.Label.Top] = function(value) return LK["TTSVolume"] .. ": " .. VolumeSlider.Slider:GetValue() end,
+		--[MinimalSliderWithSteppersMixin.Label.Min] = function(value) return "Minimum" end,
+		--[MinimalSliderWithSteppersMixin.Label.Max] = function(value) return "Maximum" end,
+	};
+
+	-- Initialize the slider with the values and formatters
+	VolumeSlider:Init(initialValue, minValue, maxValue, steps, formatters);
+
+	local function SliderFuncTest()
+		LoreK_DB["settings"]["TTSSettings"]["volume"] = VolumeSlider.Slider:GetValue()
+	end
+	-- Set up a listener for the value changed event
+	VolumeSlider:RegisterCallback("OnValueChanged",SliderFuncTest)
+
+	-- Optionally, enable or disable the slider
+	VolumeSlider:SetEnabled(true)  -- true to enable, false to disable
+end
+TTSSettingsPlacer = TTSSettingsPlacer+2
+
+do 
+	TTSSettings.SpeedSlider = CreateFrame("Slider", nil, TTSSettings, "MinimalSliderWithSteppersTemplate");
+	local SpeedSlider = TTSSettings.SpeedSlider
+	SpeedSlider:SetPoint("TOPLEFT", TTSSettings, "TOPLEFT", 30, TTSSettingsPlacer*-25);
+	SpeedSlider:SetWidth(190)
+
+	local initialValue = 0
+	local minValue = -10
+	local maxValue = 10
+	local steps = 20
+
+	local formatters = {
+		[MinimalSliderWithSteppersMixin.Label.Left] = function(value) return minValue end,
+		[MinimalSliderWithSteppersMixin.Label.Right] = function(value) return maxValue end,
+		[MinimalSliderWithSteppersMixin.Label.Top] = function(value) return LK["TTSSpeed"] .. ": " .. SpeedSlider.Slider:GetValue() end,
+		--[MinimalSliderWithSteppersMixin.Label.Min] = function(value) return "Minimum" end,
+		--[MinimalSliderWithSteppersMixin.Label.Max] = function(value) return "Maximum" end,
+	};
+
+	-- Initialize the slider with the values and formatters
+	SpeedSlider:Init(initialValue, minValue, maxValue, steps, formatters);
+
+	local function SliderFuncTest()
+		LoreK_DB["settings"]["TTSSettings"]["speed"] = SpeedSlider.Slider:GetValue()
+	end
+	-- Set up a listener for the value changed event
+	SpeedSlider:RegisterCallback("OnValueChanged",SliderFuncTest)
+
+	-- Optionally, enable or disable the slider
+	SpeedSlider:SetEnabled(true)  -- true to enable, false to disable
+end
+TTSSettingsPlacer = TTSSettingsPlacer+2
+
+TTSSettings.PlaySample = CreateFrame("Button", nil, TTSSettings, "SharedButtonTemplate");
+TTSSettings.PlaySample:SetPoint("TOPLEFT", TTSSettings, "TOPLEFT", 10, TTSSettingsPlacer*-25);
+TTSSettings.PlaySample:SetSize(190, 26);
+TTSSettings.PlaySample:SetText(TEXT_TO_SPEECH_PLAY_SAMPLE);
+TTSSettings.PlaySample:SetScript("OnClick", function()
+	local voiceID = LoreK_DB["settings"]["TTSSettings"]["voiceID"] or 0;
+	local speed = LoreK_DB["settings"]["TTSSettings"]["speed"] or 0;
+	local volume = LoreK_DB["settings"]["TTSSettings"]["volume"] or 50;
+	C_VoiceChat.SpeakText(voiceID, TEXT_TO_SPEECH_SAMPLE_TEXT , 1, speed, volume);
+end);
+TTSSettingsPlacer = TTSSettingsPlacer+1
+
+TTSSettings.Hyperlink = TTSSettings:CreateFontString(nil, "OVERLAY", "GameFontNormal");
+TTSSettings.Hyperlink:SetTextColor(1,1,1,1);
+TTSSettings.Hyperlink:SetPoint("TOPLEFT", TTSSettings, "TOPLEFT", -5, TTSSettingsPlacer*-25);
+TTSSettings.Hyperlink:SetText("|Tinterface\\chatframe\\ui-chaticon-blizz:12:20|t" .. TEXT_TO_SPEECH_MORE_VOICES);
+TTSSettings.Hyperlink:SetWidth(TTSSettings:GetWidth()-20)
+TTSSettings:SetHyperlinksEnabled(true)
+TTSSettings:SetScript("OnHyperlinkClick", function(self, link, text, button)
+	SetItemRef(link, text, button, self)
+end)
+TTSSettingsPlacer = TTSSettingsPlacer+1
+
+
+--------------------------------------------------------------------------
+-- Text to Speech Functions & Button
+
+local function CleanTextForTTS(text)
+	-- Remove \n, \r, and other escape sequences
+	local cleanedText = text:gsub("[\n\r\\]", ". "):gsub("|n", " ");
+	return cleanedText;
+end
+
+function LoreKGUI.LibraryPanel.TTSExecute()
+	local bingle = LoreKGUI.TextDisplayFrame.TextScrollChild.textHTML:GetTextData();
+	local concText = "";
+	for k, v in ipairs(bingle) do
+		if bingle[k].text then
+			concText = concText .. ". " ..  bingle[k].text;
+			concText = CleanTextForTTS(concText);
+		end
+	end
+
+	if TTSButton.textQueuePlaying then
+		local voiceID = LoreK_DB["settings"]["TTSSettings"]["voiceID"] or 0;
+		local speed = LoreK_DB["settings"]["TTSSettings"]["speed"] or 0;
+		local volume = LoreK_DB["settings"]["TTSSettings"]["volume"] or 50;
+		C_VoiceChat.SpeakText(voiceID, concText , 1, speed, volume);
+		TTSButton.textPlaying = true;
+		return;
+	end
+
+	if TTSButton.textPlaying then
+		C_VoiceChat.StopSpeakingText();
+		TTSButton.textPlaying = false;
+	else
+		local voiceID = LoreK_DB["settings"]["TTSSettings"]["voiceID"] or 0;
+		local speed = LoreK_DB["settings"]["TTSSettings"]["speed"] or 0;
+		local volume = LoreK_DB["settings"]["TTSSettings"]["volume"] or 50;
+		C_VoiceChat.SpeakText(voiceID, concText , 1, speed, volume);
+		TTSButton.textPlaying = true;
+	end
+end
+
+TTSButton:SetPoint("TOPRIGHT", LoreKGUI.LibraryPanel, "TOPRIGHT", -40, -40);
+TTSButton:SetWidth(24);
+TTSButton:SetHeight(24);
+TTSButton.tex = TTSButton:CreateTexture(nil, "ARTWORK", nil, 1);
+TTSButton.tex:SetAllPoints(TTSButton);
+TTSButton.tex:SetAtlas("chatframe-button-icon-TTS");
+TTSButton.tex:SetTexCoord(-.08, 1.08, -.08, 1.08);
+TTSButton:SetNormalAtlas("chatframe-button-up");
+TTSButton:SetPushedAtlas("chatframe-button-down");
+TTSButton:SetHighlightAtlas("chatframe-button-highlight");
+
+TTSButton:RegisterEvent("VOICE_CHAT_TTS_PLAYBACK_STARTED");
+TTSButton:RegisterEvent("VOICE_CHAT_TTS_PLAYBACK_FINISHED");
+
+function TTSButton.OnEvent(self,event)
+
+	if event == "VOICE_CHAT_TTS_PLAYBACK_STARTED" then
+		TTSButton.textPlaying = true;
+	end
+
+	if event == "VOICE_CHAT_TTS_PLAYBACK_FINISHED" then
+		if LoreK_DB.settings.debugAdvanced and TTSButton.textPlaying then
+			if LoreKTextDisplayFrame.NextPageButton:IsEnabled() then
+				LoreKTextDisplayFrame.NextPageButton:Click()
+				LoreKGUI.LibraryPanel.TTSExecute();
+			else
+				TTSButton.textQueuePlaying = false;
+			end
+		end
+		TTSButton.textPlaying = false;
+	end
+end
+TTSButton:SetScript("OnEvent", TTSButton.OnEvent);
+
+TTSButton:SetScript("OnClick", function(self, button, down)
+	if button == "LeftButton" and down == false then
+		if TTSButton.textQueuePlaying then	
+			C_VoiceChat.StopSpeakingText();
+			TTSButton.textQueuePlaying = false;
+			TTSButton.textPlaying = false;
+			return;
+		end
+		if LoreK_DB.settings.debugAdvanced then
+			TTSButton.textQueuePlaying = true;
+		end
+		LoreKGUI.LibraryPanel.TTSExecute();
+	end
+	if button == "RightButton" and down == false then
+		if TTSSettings:IsShown() then
+			TTSSettings:Hide();
+		else
+			TTSSettings:Show();
+		end
+	end
+end)
+TTSButton:SetScript("OnMouseDown", function()
+	TTSButton.tex:SetTexCoord(-.08, 1.16, -.16, 1.08);
+end)
+TTSButton:SetScript("OnMouseUp", function()
+	TTSButton.tex:SetTexCoord(-.08, 1.08, -.08, 1.08);
+end)
+TTSButton:RegisterForClicks("AnyDown", "AnyUp")
+
+
+TTSButton:SetScript("OnEnter", function()
+	GameTooltip:SetOwner(TTSButton, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["TTSLabelTT"]);
+	GameTooltip:AddLine(LK["LeftClick"] ..": " .. LK["TTSReadorStopTT"], 1, 1, 1, true);
+	GameTooltip:AddLine(LK["RightClick"] ..": " .. LK["TTSConfigTT"], 1, 1, 1, true);
+	GameTooltip:SetWidth(20);
+	GameTooltip:Show();
+end)
+TTSButton:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end)
 
 --------------------------------------------------------------------------
 -- scrollBOX rework
@@ -711,6 +1020,9 @@ local function ItemInitializer(button, data)
 			end
 		else
 			LoreKGUI.SelectionBehavior:Select(self);
+
+			C_VoiceChat.StopSpeakingText();
+			TTSButton.textPlaying = false;
 
 			PlaySound(SOUNDKIT.UI_JOURNEYS_OPEN_LORE_BOOK, "SFX", true);
 			DeleteEntry:SetEnabled(true);
@@ -1694,6 +2006,12 @@ function LoreKGUI.Initialize(self, event, arg1)
 				},
 			};
 		end
+		if not LoreK_DB["settings"]["TTSSettings"] then
+			LoreK_DB["settings"]["TTSSettings"] = CopyTable(defaultTTSSettings);
+		end
+		TTSSettings.QueuePages_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["queuePages"]);
+		TTSSettings.VolumeSlider.Slider:SetValue(LoreK_DB["settings"]["TTSSettings"]["volume"]);
+		TTSSettings.SpeedSlider.Slider:SetValue(LoreK_DB["settings"]["TTSSettings"]["speed"]);
 
 		LoreKGUI.FilterDropdown:SetupMenu(FilterHandler);
 

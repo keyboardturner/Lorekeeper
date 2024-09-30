@@ -4,6 +4,8 @@ Weekly LocalData Update 4 - 01/10/24 (208 personal entries)
 
 Mail has been delivered to the mail tab, which is now also active and clickable if you have the mail plugin enabled. Multiple mails sent by the same sender will organize as if they were pages in a book. Mail can only (currently) be collected by actually making a copy of a letter from the mailbox and reading the plain letter item.
 
+A Text to Speech button has been added to the Library, with a Left Click functionality to play the displayed page text and a Right Click functionality to display and configure the settings
+
 # 0.1.3
 
 Weekly LocalData Update 4 - 24/09/24 (255 personal entries + 64 Anonymous User 1 submitted entries + 33 Anonymous User 2 submitted entries)

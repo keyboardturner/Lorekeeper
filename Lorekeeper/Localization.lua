@@ -81,6 +81,16 @@ if LOCALE == "enUS" then
 	LK["Unobtainable"] = "Unobtainable"
 	LK["ToggleSoundCollected"] = "Disable Collected Sound"
 	LK["ToggleSoundCollectedTT"] = "Disable the sound that plays when collecting a text item."
+	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
+	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
+	LK["TTSLabelTT"] = TTS_LABEL
+	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
+	LK["TTSVolume"] = VOLUME
+	LK["TTSSpeed"] = SPEED
+	LK["RightClick"] = "Right-Click"
+	LK["LeftClick"] = "Left-Click"
+	LK["TTSQueuePages"] = "Queue Pages"
+	LK["TTSQueuePagesTT"] = "Queue all pages in sequential order."
 
 return end
 
@@ -150,7 +160,16 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["Unobtainable"] = "Inalcanzable"
 	LK["ToggleSoundCollected"] = "Desactivar Sonido de Colección"
 	LK["ToggleSoundCollectedTT"] = "Desactivar el sonido que se reproduce al recoger un objeto de texto."
-
+	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
+	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
+	LK["TTSLabelTT"] = TTS_LABEL
+	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
+	LK["TTSVolume"] = VOLUME
+	LK["TTSSpeed"] = SPEED
+	LK["RightClick"] = "Clic Derecho"
+	LK["LeftClick"] = "Clic Izquierdo"
+	LK["TTSQueuePages"] = "Cola de Páginas"
+	LK["TTSQueuePagesTT"] = "Coloca todas las páginas en cola en orden secuencial."
 
 return end
 
@@ -220,7 +239,16 @@ if LOCALE == "deDE" then
 	LK["Unobtainable"] = "Unerreichbar"
 	LK["ToggleSoundCollected"] = "Gesammelten Ton deaktivieren"
 	LK["ToggleSoundCollectedTT"] = "Den Ton deaktivieren, der abgespielt wird, wenn ein Textgegenstand gesammelt wird."
-
+	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
+	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
+	LK["TTSLabelTT"] = TTS_LABEL
+	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
+	LK["TTSVolume"] = VOLUME
+	LK["TTSSpeed"] = SPEED
+	LK["RightClick"] = "Rechtsklick"
+	LK["LeftClick"] = "Linksklick"
+	LK["TTSQueuePages"] = "Seiten in die Warteschlange stellen"
+	LK["TTSQueuePagesTT"] = "Alle Seiten in sequentieller Reihenfolge in die Warteschlange stellen."
 
 return end
 
@@ -290,7 +318,16 @@ if LOCALE == "frFR" then
 	LK["Unobtainable"] = "Inaccessible"
 	LK["ToggleSoundCollected"] = "Disattiva Suono di Raccolta"
 	LK["ToggleSoundCollectedTT"] = "Disattiva il suono che viene riprodotto quando si raccoglie un oggetto di testo."
-
+	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
+	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
+	LK["TTSLabelTT"] = TTS_LABEL
+	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
+	LK["TTSVolume"] = VOLUME
+	LK["TTSSpeed"] = SPEED
+	LK["RightClick"] = "Clic Droit"
+	LK["LeftClick"] = "Clic Gauche"
+	LK["TTSQueuePages"] = "Mettre en File d'Attente"
+	LK["TTSQueuePagesTT"] = "Mettre toutes les pages en file d'attente dans l'ordre séquentiel."
 
 return end
 
@@ -360,7 +397,16 @@ if LOCALE == "itIT" then
 	LK["Unobtainable"] = "Irreperibile"
 	LK["ToggleSoundCollected"] = "Disattiva Suono di Raccolta"
 	LK["ToggleSoundCollectedTT"] = "Disattiva il suono che viene riprodotto quando si raccoglie un oggetto di testo."
-
+	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
+	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
+	LK["TTSLabelTT"] = TTS_LABEL
+	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
+	LK["TTSVolume"] = VOLUME
+	LK["TTSSpeed"] = SPEED
+	LK["RightClick"] = "Clic Destro"
+	LK["LeftClick"] = "Clic Sinistro"
+	LK["TTSQueuePages"] = "Metti in Coda"
+	LK["TTSQueuePagesTT"] = "Metti tutte le pagine in coda in ordine sequenziale."
 
 return end
 
@@ -430,7 +476,16 @@ if LOCALE == "ptBR" then
 	LK["Unobtainable"] = "Inalcançável"
 	LK["ToggleSoundCollected"] = "Desativar Som de Coleta"
 	LK["ToggleSoundCollectedTT"] = "Desativar o som que toca ao coletar um item de texto."
-
+	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
+	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
+	LK["TTSLabelTT"] = TTS_LABEL
+	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
+	LK["TTSVolume"] = VOLUME
+	LK["TTSSpeed"] = SPEED
+	LK["RightClick"] = "Clique com o Botão Direito"
+	LK["LeftClick"] = "Clique com o Botão Esquerdo"
+	LK["TTSQueuePages"] = "Enfileirar Páginas"
+	LK["TTSQueuePagesTT"] = "Enfileire todas as páginas em ordem sequencial."
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -502,7 +557,16 @@ if LOCALE == "ruRU" then
 	LK["Unobtainable"] = "Недоступно"
 	LK["ToggleSoundCollected"] = "Отключить звук сбора"
 	LK["ToggleSoundCollectedTT"] = "Отключить звук, который воспроизводится при сборе текстового предмета."
-
+	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
+	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
+	LK["TTSLabelTT"] = TTS_LABEL
+	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
+	LK["TTSVolume"] = VOLUME
+	LK["TTSSpeed"] = SPEED
+	LK["RightClick"] = "Правая кнопка"
+	LK["LeftClick"] = "Левая кнопка"
+	LK["TTSQueuePages"] = "Поставить страницы в очередь"
+	LK["TTSQueuePagesTT"] = "Поставить все страницы в очередь по порядку."
 
 return end
 
@@ -572,7 +636,16 @@ if LOCALE == "koKR" then
 	LK["Unobtainable"] = "획득 불가"
 	LK["ToggleSoundCollected"] = "수집된 소리 비활성화"
 	LK["ToggleSoundCollectedTT"] = "텍스트 아이템을 수집할 때 재생되는 소리를 비활성화합니다."
-
+	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
+	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
+	LK["TTSLabelTT"] = TTS_LABEL
+	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
+	LK["TTSVolume"] = VOLUME
+	LK["TTSSpeed"] = SPEED
+	LK["RightClick"] = "우클릭"
+	LK["LeftClick"] = "좌클릭"
+	LK["TTSQueuePages"] = "페이지 대기열"
+	LK["TTSQueuePagesTT"] = "모든 페이지를 순차적으로 대기열에 추가합니다."
 
 return end
 
@@ -642,7 +715,16 @@ if LOCALE == "zhCN" then
 	LK["Unobtainable"] = "无法获得"
 	LK["ToggleSoundCollected"] = "禁用收集声音"
 	LK["ToggleSoundCollectedTT"] = "禁用收集文本物品时播放的声音。"
-
+	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
+	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
+	LK["TTSLabelTT"] = TTS_LABEL
+	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
+	LK["TTSVolume"] = VOLUME
+	LK["TTSSpeed"] = SPEED
+	LK["RightClick"] = "右键点击"
+	LK["LeftClick"] = "左键点击"
+	LK["TTSQueuePages"] = "排队页面"
+	LK["TTSQueuePagesTT"] = "按顺序将所有页面排队。"
 
 return end
 
@@ -712,6 +794,15 @@ if LOCALE == "zhTW" then
 	LK["Unobtainable"] = "無法取得"
 	LK["ToggleSoundCollected"] = "禁用收集聲音"
 	LK["ToggleSoundCollectedTT"] = "禁用收集文本物品時播放的聲音。"
-
+	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
+	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
+	LK["TTSLabelTT"] = TTS_LABEL
+	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
+	LK["TTSVolume"] = VOLUME
+	LK["TTSSpeed"] = SPEED
+	LK["RightClick"] = "右鍵點擊"
+	LK["LeftClick"] = "左鍵點擊"
+	LK["TTSQueuePages"] = "排隊頁面"
+	LK["TTSQueuePagesTT"] = "按順序將所有頁面排隊。"
 
 return end
