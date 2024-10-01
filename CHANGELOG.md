@@ -8,6 +8,8 @@ A Text to Speech button has been added to the Library, with a Left Click functio
 
 Added text count label above list
 
+Added ability to force learn / unlearn items when debug mode is enabled in the right click menu on the library
+
 # 0.1.3
 
 Weekly LocalData Update 4 - 24/09/24 (255 personal entries + 64 Anonymous User 1 submitted entries + 33 Anonymous User 2 submitted entries)

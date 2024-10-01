@@ -940,6 +940,7 @@ local function ItemInitializer(button, data)
 	else
 		icon_Q = "Interface/ICONS/INV_Misc_Book_09" or "Interface/AddOns/Lorekeeper/Assets/Textures/TEMP";
 	end
+	local hasRead = LoreK_DB["text"] and LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] and LoreK_DB["text"][itemID]["base"]["hasRead"]
 	--button:SetWidth(168);
 	--button:SetPoint(moveFrameXY(22,0));
 	button.tex = button.tex or button:CreateTexture(nil, "OVERLAY", nil, 0);
@@ -957,7 +958,7 @@ local function ItemInitializer(button, data)
 	button.icon.unreadIcon:SetPoint("TOPLEFT", button.icon, "TOPLEFT", -1,0);
 	button.icon.unreadIcon:SetPoint("BOTTOMRIGHT", button.icon, "BOTTOMRIGHT", -1,0);
 	button.icon.unreadIcon:SetAtlas("UI-LFG-PendingMark"); -- possibly change to "Campaign-QuestLog-LoreBook"
-	if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"]["hasRead"] then
+	if hasRead then
 		button.icon.unreadIcon:Hide();
 		button.icon.tex:SetDesaturated(false);
 	else
@@ -988,7 +989,7 @@ local function ItemInitializer(button, data)
 	button.textFont:SetJustifyV("TOP");
 	button.textFont:SetText(title);
 	button.textFont:SetTextColor(1, 1, 1, 1);
-	if not LoreK_DB["text"][itemID] or not LoreK_DB["text"][itemID]["base"]["hasRead"] then
+	if not LoreK_DB["text"][itemID] or not hasRead then
 		button.textFont:SetTextColor(.5, .5, .5, 1);
 	end
 	button:SetScript("OnEnter", function()
@@ -1045,13 +1046,40 @@ local function ItemInitializer(button, data)
 						rootDescription:CreateButton(LK["Show"], function()
 							LoreK_DB["text"][itemID]["base"]["isHidden"] = false;
 							LoreKMainframe.PopulateList();
-						end)
+						end);
 					else
 						if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] then
 							rootDescription:CreateButton(LK["Hide"], function()
 								LoreK_DB["text"][itemID]["base"]["isHidden"] = true;
 								LoreKMainframe.PopulateList();
-							end)
+							end);
+						end
+					end
+					if LoreK_DB.settings.debugAdvanced and hasRead then
+						rootDescription:CreateButton(LK["DebugUnlearn"], function()
+							LoreK_DB["text"][itemID]["base"]["hasRead"] = false;
+							LoreKMainframe.PopulateList();
+						end);
+					else
+						if LoreK_DB.settings.debugAdvanced and not hasRead then
+							rootDescription:CreateButton(LK["DebugLearn"], function()
+								if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] then
+									if not not LoreK_DB["text"][itemID]["base"]["hasRead"] then
+										LoreK_DB["text"][itemID]["base"]["hasRead"] = true;
+									else
+										LoreK_DB["text"][itemID]["base"] = {
+											hasRead = true,
+										};
+									end
+								else
+									LoreK_DB["text"][itemID] = {
+										base = {
+											hasRead = true,
+										},
+									};
+								end
+								LoreKMainframe.PopulateList();
+							end);
 						end
 					end
 				end)

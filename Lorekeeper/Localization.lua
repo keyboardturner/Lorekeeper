@@ -93,6 +93,8 @@ if LOCALE == "enUS" then
 	LK["TTSQueuePagesTT"] = "Queue all pages in sequential order."
 	LK["TotalItemsLabel"] = "Total Texts"
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
+	LK["DebugUnlearn"] = UNLEARN
+	LK["DebugLearn"] = LEARN
 
 return end
 
@@ -174,6 +176,8 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["TTSQueuePagesTT"] = "Coloca todas las páginas en cola en orden secuencial."
 	LK["TotalItemsLabel"] = "Total de Textos"
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
+	LK["DebugUnlearn"] = UNLEARN
+	LK["DebugLearn"] = LEARN
 
 return end
 
@@ -255,6 +259,8 @@ if LOCALE == "deDE" then
 	LK["TTSQueuePagesTT"] = "Alle Seiten in sequentieller Reihenfolge in die Warteschlange stellen."
 	LK["TotalItemsLabel"] = "Gesamte Texte"
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
+	LK["DebugUnlearn"] = UNLEARN
+	LK["DebugLearn"] = LEARN
 
 return end
 
@@ -336,6 +342,8 @@ if LOCALE == "frFR" then
 	LK["TTSQueuePagesTT"] = "Mettre toutes les pages en file d'attente dans l'ordre séquentiel."
 	LK["TotalItemsLabel"] = "Total des Textes"
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
+	LK["DebugUnlearn"] = UNLEARN
+	LK["DebugLearn"] = LEARN
 
 return end
 
@@ -417,6 +425,8 @@ if LOCALE == "itIT" then
 	LK["TTSQueuePagesTT"] = "Metti tutte le pagine in coda in ordine sequenziale."
 	LK["TotalItemsLabel"] = "Totale dei Testi"
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
+	LK["DebugUnlearn"] = UNLEARN
+	LK["DebugLearn"] = LEARN
 
 return end
 
@@ -498,6 +508,8 @@ if LOCALE == "ptBR" then
 	LK["TTSQueuePagesTT"] = "Enfileire todas as páginas em ordem sequencial."
 	LK["TotalItemsLabel"] = "Total de Textos"
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
+	LK["DebugUnlearn"] = UNLEARN
+	LK["DebugLearn"] = LEARN
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -581,6 +593,8 @@ if LOCALE == "ruRU" then
 	LK["TTSQueuePagesTT"] = "Поставить все страницы в очередь по порядку."
 	LK["TotalItemsLabel"] = "Всего текстов"
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
+	LK["DebugUnlearn"] = UNLEARN
+	LK["DebugLearn"] = LEARN
 
 return end
 
@@ -662,6 +676,8 @@ if LOCALE == "koKR" then
 	LK["TTSQueuePagesTT"] = "모든 페이지를 순차적으로 대기열에 추가합니다."
 	LK["TotalItemsLabel"] = "총 텍스트 수"
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
+	LK["DebugUnlearn"] = UNLEARN
+	LK["DebugLearn"] = LEARN
 
 return end
 
@@ -743,6 +759,8 @@ if LOCALE == "zhCN" then
 	LK["TTSQueuePagesTT"] = "按顺序将所有页面排队。"
 	LK["TotalItemsLabel"] = "文本总数"
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
+	LK["DebugUnlearn"] = UNLEARN
+	LK["DebugLearn"] = LEARN
 
 return end
 
@@ -824,5 +842,7 @@ if LOCALE == "zhTW" then
 	LK["TTSQueuePagesTT"] = "按順序將所有頁面排隊。"
 	LK["TotalItemsLabel"] = "文本總數"
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
+	LK["DebugUnlearn"] = UNLEARN
+	LK["DebugLearn"] = LEARN
 
 return end
