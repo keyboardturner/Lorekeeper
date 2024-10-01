@@ -941,6 +941,7 @@ local function ItemInitializer(button, data)
 		icon_Q = "Interface/ICONS/INV_Misc_Book_09" or "Interface/AddOns/Lorekeeper/Assets/Textures/TEMP";
 	end
 	local hasRead = LoreK_DB["text"] and LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] and LoreK_DB["text"][itemID]["base"]["hasRead"]
+	local hasMapData = allData[itemID] and allData[itemID]["base"] and allData[itemID]["base"]["mapData"]
 	--button:SetWidth(168);
 	--button:SetPoint(moveFrameXY(22,0));
 	button.tex = button.tex or button:CreateTexture(nil, "OVERLAY", nil, 0);
@@ -1042,13 +1043,28 @@ local function ItemInitializer(button, data)
 							end);
 						end
 					end
+					if GUIDType == "GameObject" and hasMapData then
+						rootDescription:CreateButton(LK["SetItemTracked"], function()
+							local mapData = CopyTable(allData[itemID]["base"]["mapData"]);
+							for k, v in pairs(mapData) do
+								WorldMapFrame:Show();
+								WorldMapFrame:SetMapID(k);
+								C_Map.SetUserWaypoint(UiMapPoint.CreateFromVector2D(k, CreateVector2D(v[1],v[2])));
+								C_SuperTrack.SetSuperTrackedUserWaypoint(true);
+								PlaySound(170270);
+								return;
+							end
+						end);
+					end
 					if isManuallyHidden then
+						rootDescription:CreateDivider();
 						rootDescription:CreateButton(LK["Show"], function()
 							LoreK_DB["text"][itemID]["base"]["isHidden"] = false;
 							LoreKMainframe.PopulateList();
 						end);
 					else
 						if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] then
+							rootDescription:CreateDivider();
 							rootDescription:CreateButton(LK["Hide"], function()
 								LoreK_DB["text"][itemID]["base"]["isHidden"] = true;
 								LoreKMainframe.PopulateList();
@@ -1056,12 +1072,14 @@ local function ItemInitializer(button, data)
 						end
 					end
 					if LoreK_DB.settings.debugAdvanced and hasRead then
+						rootDescription:CreateDivider();
 						rootDescription:CreateButton(LK["DebugUnlearn"], function()
 							LoreK_DB["text"][itemID]["base"]["hasRead"] = false;
 							LoreKMainframe.PopulateList();
 						end);
 					else
 						if LoreK_DB.settings.debugAdvanced and not hasRead then
+							rootDescription:CreateDivider();
 							rootDescription:CreateButton(LK["DebugLearn"], function()
 								if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] then
 									if not not LoreK_DB["text"][itemID]["base"]["hasRead"] then

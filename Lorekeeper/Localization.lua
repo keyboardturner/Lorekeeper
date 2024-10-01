@@ -95,6 +95,7 @@ if LOCALE == "enUS" then
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
+	LK["SetItemTracked"] = MAP_PIN
 
 return end
 
@@ -178,6 +179,7 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
+	LK["SetItemTracked"] = MAP_PIN
 
 return end
 
@@ -261,6 +263,7 @@ if LOCALE == "deDE" then
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
+	LK["SetItemTracked"] = MAP_PIN
 
 return end
 
@@ -344,6 +347,7 @@ if LOCALE == "frFR" then
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
+	LK["SetItemTracked"] = MAP_PIN
 
 return end
 
@@ -427,6 +431,7 @@ if LOCALE == "itIT" then
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
+	LK["SetItemTracked"] = MAP_PIN
 
 return end
 
@@ -510,6 +515,7 @@ if LOCALE == "ptBR" then
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
+	LK["SetItemTracked"] = MAP_PIN
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -595,6 +601,7 @@ if LOCALE == "ruRU" then
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
+	LK["SetItemTracked"] = MAP_PIN
 
 return end
 
@@ -678,6 +685,7 @@ if LOCALE == "koKR" then
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
+	LK["SetItemTracked"] = MAP_PIN
 
 return end
 
@@ -761,6 +769,7 @@ if LOCALE == "zhCN" then
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
+	LK["SetItemTracked"] = MAP_PIN
 
 return end
 
@@ -844,5 +853,6 @@ if LOCALE == "zhTW" then
 	LK["ItemsUncollected"] = FOLLOWERLIST_LABEL_UNCOLLECTED
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
+	LK["SetItemTracked"] = MAP_PIN
 
 return end

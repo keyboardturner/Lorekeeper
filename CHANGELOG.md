@@ -10,6 +10,8 @@ Added text count label above list
 
 Added ability to force learn / unlearn items when debug mode is enabled in the right click menu on the library
 
+Added an option to map pin track certain game objects with map data available to them in the right click menu in the list
+
 # 0.1.3
 
 Weekly LocalData Update 4 - 24/09/24 (255 personal entries + 64 Anonymous User 1 submitted entries + 33 Anonymous User 2 submitted entries)
