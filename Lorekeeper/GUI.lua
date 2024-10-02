@@ -135,6 +135,29 @@ local function ReverseNameAndClass(pageText)
 	return pageText;
 end
 
+-- Function to replace words with their phonetic equivalents
+local function replaceWithPhonetics(text)
+	if not LK["Phonetics"] then return text end
+	return text:gsub("[%w']+", function(word)
+        local lowerWord = word:lower()
+
+        -- Check if the word itself is in the phoneticTable
+        if LK["Phonetics"][lowerWord] then
+            return LK["Phonetics"][lowerWord]
+
+        -- Check for possessive form (word ending with 's)
+        elseif lowerWord:sub(-2) == "'s" then
+            local baseWord = lowerWord:sub(1, -3)  -- Remove the 's for lookup
+            if LK["Phonetics"][baseWord] then
+                return LK["Phonetics"][baseWord] .. "'s"  -- Append the 's to the phonetic replacement
+            end
+        end
+
+        -- If no replacement found, return the original word
+        return word
+    end)
+end
+
 -- Sort items in a list
 local filteredItems = {};
 
@@ -797,6 +820,7 @@ function LoreKGUI.LibraryPanel.TTSExecute()
 		local voiceID = LoreK_DB["settings"]["TTSSettings"]["voiceID"] or 0;
 		local speed = LoreK_DB["settings"]["TTSSettings"]["speed"] or 0;
 		local volume = LoreK_DB["settings"]["TTSSettings"]["volume"] or 50;
+		concText = replaceWithPhonetics(concText);
 		C_VoiceChat.SpeakText(voiceID, concText , 1, speed, volume);
 		TTSButton.textPlaying = true;
 		return;
@@ -809,6 +833,7 @@ function LoreKGUI.LibraryPanel.TTSExecute()
 		local voiceID = LoreK_DB["settings"]["TTSSettings"]["voiceID"] or 0;
 		local speed = LoreK_DB["settings"]["TTSSettings"]["speed"] or 0;
 		local volume = LoreK_DB["settings"]["TTSSettings"]["volume"] or 50;
+		concText = replaceWithPhonetics(concText);
 		C_VoiceChat.SpeakText(voiceID, concText , 1, speed, volume);
 		TTSButton.textPlaying = true;
 	end
