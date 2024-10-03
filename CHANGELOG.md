@@ -2,7 +2,7 @@
 
 Spooky Holiday :)
 
-Custom Text to Speech Phonetics Helper
+Custom Text to Speech Phonetics Helper (WIP)
 
 # 0.1.4
 
