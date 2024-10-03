@@ -139,23 +139,23 @@ end
 local function replaceWithPhonetics(text)
 	if not LK["Phonetics"] then return text end
 	return text:gsub("[%w']+", function(word)
-        local lowerWord = word:lower()
+		local lowerWord = word:lower()
 
-        -- Check if the word itself is in the phoneticTable
-        if LK["Phonetics"][lowerWord] then
-            return LK["Phonetics"][lowerWord]
+		-- Check if the word itself is in the phoneticTable
+		if LK["Phonetics"][lowerWord] then
+			return LK["Phonetics"][lowerWord]
 
-        -- Check for possessive form (word ending with 's)
-        elseif lowerWord:sub(-2) == "'s" then
-            local baseWord = lowerWord:sub(1, -3)  -- Remove the 's for lookup
-            if LK["Phonetics"][baseWord] then
-                return LK["Phonetics"][baseWord] .. "'s"  -- Append the 's to the phonetic replacement
-            end
-        end
+		-- Check for possessive form (word ending with 's)
+		elseif lowerWord:sub(-2) == "'s" then
+			local baseWord = lowerWord:sub(1, -3)  -- Remove the 's for lookup
+			if LK["Phonetics"][baseWord] then
+				return LK["Phonetics"][baseWord] .. "'s"  -- Append the 's to the phonetic replacement
+			end
+		end
 
-        -- If no replacement found, return the original word
-        return word
-    end)
+		-- If no replacement found, return the original word
+		return word
+	end)
 end
 
 -- Sort items in a list
@@ -227,7 +227,62 @@ LoreKGUI:SetScript("OnDragStop", LoreKGUI.StopMovingOrSizing);
 LoreKGUI:SetTitle(LK["Lorekeeper"]);
 LoreKGUI:SetFrameStrata("MEDIUM");
 LoreKGUI:Hide();
-LoreKGUI:SetScript("OnMouseDown", function(self) self:SetToplevel(true); end)
+LoreKGUI:SetScript("OnMouseDown", function(self) self:SetToplevel(true); end);
+
+local HolidaysTheme = {};
+HolidaysTheme.Header = CreateFrame("Frame", nil, LoreKGUI);
+HolidaysTheme.Header.Resize = .56
+HolidaysTheme.Header:SetPoint("CENTER", LoreKGUI, "TOP", 45, -2);
+HolidaysTheme.Header:SetSize(2048*HolidaysTheme.Header.Resize,256*HolidaysTheme.Header.Resize);
+HolidaysTheme.Header:SetFrameLevel(LoreKGUI.TitleContainer:GetFrameLevel()+50);
+HolidaysTheme.Header.tex = HolidaysTheme.Header:CreateTexture(nil, "ARTWORK", nil, 1);
+HolidaysTheme.Header.tex:SetAllPoints(true);
+HolidaysTheme.Header.tex:SetTexture("Interface\\AddOns\\Lorekeeper\\Assets\\Textures\\HallowsEndTop");
+
+HolidaysTheme.Corner_BL = CreateFrame("Frame", nil, LoreKGUI);
+HolidaysTheme.Corner_BL:SetSize(220,80);
+HolidaysTheme.Corner_BL:SetFrameLevel(LoreKGUI.TitleContainer:GetFrameLevel()+50);
+HolidaysTheme.Corner_BL.tex = HolidaysTheme.Corner_BL:CreateTexture(nil, "ARTWORK", nil, 2);
+HolidaysTheme.Corner_BL.tex:SetAllPoints(true);
+HolidaysTheme.Corner_BL.tex:SetTexture("Interface\\store\\perksthemehallowsend");
+HolidaysTheme.Corner_BL.tex:SetTexCoord(.00098, .21466, .16811, .27642);
+
+HolidaysTheme.Corner_BR = CreateFrame("Frame", nil, LoreKGUI);
+HolidaysTheme.Corner_BR:SetSize(220,290);
+HolidaysTheme.Corner_BR:SetFrameLevel(LoreKGUI.TitleContainer:GetFrameLevel()+50);
+HolidaysTheme.Corner_BR.tex = HolidaysTheme.Corner_BR:CreateTexture(nil, "ARTWORK", nil, 2);
+HolidaysTheme.Corner_BR.tex:SetAllPoints(true);
+HolidaysTheme.Corner_BR.tex:SetAtlas("perks-theme-hallowsend-tl-box");
+
+local function GetHoliday()
+	local numEvents = C_Calendar.GetNumDayEvents(0, C_DateAndTime.GetCurrentCalendarTime().monthDay);
+
+	for i = 1, numEvents do
+		local event = C_Calendar.GetHolidayInfo(0, C_DateAndTime.GetCurrentCalendarTime().monthDay, i);
+		
+		if event and event.name == LK["Holiday_HallowsEnd"] then
+			return true;
+		end
+	end
+end
+
+local function HideHolidays()
+	for k, v in pairs(HolidaysTheme) do
+		v:Hide();
+	end
+end
+HideHolidays();
+
+local function ToggleHolidays()
+	if GetHoliday() and LoreK_DB["settings"]["holidayThemes"] then
+		for k, v in pairs(HolidaysTheme) do
+			v:Show();
+		end
+	else
+		HideHolidays();
+	end
+end
+
 
 local MeowFrameMixin = {};
 
@@ -506,7 +561,7 @@ LoreKGUI.TextDisplayFrame = CreateFrame("Frame", "LoreKTextDisplayFrame", LoreKG
 local TextDisplayFrame = LoreKGUI.TextDisplayFrame;
 TextDisplayFrame:SetPoint("TOPLEFT", ItemDisplayFrame, "TOPRIGHT", 19, 0);
 TextDisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI.LibraryPanel, "BOTTOMRIGHT",-20,30);
-TextDisplayFrame.bg = TextDisplayFrame:CreateTexture(nil, "BACKGROUND");
+TextDisplayFrame.bg = TextDisplayFrame:CreateTexture(nil, "BACKGROUND", nil, 0);
 TextDisplayFrame.bg:SetPoint("TOPLEFT", TextDisplayFrame, "TOPLEFT", 3, -40);
 TextDisplayFrame.bg:SetPoint("BOTTOMRIGHT", TextDisplayFrame, "BOTTOMRIGHT", -4, 5);
 TextDisplayFrame.bg:SetAtlas("QuestBG-Parchment");
@@ -547,9 +602,9 @@ local TitleBackdrop = TextDisplayFrame.TitleBackdrop;
 TitleBackdrop:SetPoint("BOTTOM", TextScrollFrame, "TOP", -11.5,3);
 TitleBackdrop:SetWidth(TextScrollFrame:GetWidth()+20);
 TitleBackdrop:SetHeight(48);
-TitleBackdrop.tex = TitleBackdrop:CreateTexture()
-TitleBackdrop.tex:SetAllPoints(true)
-TitleBackdrop.tex:SetAtlas("StoryHeader-BG")
+TitleBackdrop.tex = TitleBackdrop:CreateTexture(nil, "ARTWORK", nil, 1);
+TitleBackdrop.tex:SetAllPoints(true);
+TitleBackdrop.tex:SetAtlas("StoryHeader-BG");
 
 TextDisplayFrame.DeleteEntry = CreateFrame("Button", nil, TextDisplayFrame);
 local DeleteEntry = TextDisplayFrame.DeleteEntry;
@@ -1901,7 +1956,6 @@ SettingsDisplayFrame.disableCollectSound_Checkbox:SetScript("OnClick", function(
 		LoreK_DB["settings"]["collectSound"] = false;
 		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF, "SFX");
 	end
-	LoreKGUI.SetParchmentTexture()
 end);
 SettingsDisplayFrame.disableCollectSound_Checkbox.Text:SetText(LK["ToggleSoundCollected"])
 SettingsDisplayFrame.disableCollectSound_Checkbox.Text:SetScript("OnEnter", function(self)
@@ -1918,6 +1972,36 @@ SettingsDisplayFrame.disableCollectSound_Checkbox:SetScript("OnEnter", function(
 	GameTooltip:Show();
 end);
 SettingsDisplayFrame.disableCollectSound_Checkbox:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+
+SettingsDisplayFrame.disableHolidays_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
+SettingsDisplayFrame.disableHolidays_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*14);
+SettingsDisplayFrame.disableHolidays_Checkbox:SetScript("OnClick", function(self)
+	if self:GetChecked() then
+		LoreK_DB["settings"]["holidayThemes"] = true;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON, "SFX");
+	else
+		LoreK_DB["settings"]["holidayThemes"] = false;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF, "SFX");
+	end
+	ToggleHolidays();
+end);
+SettingsDisplayFrame.disableHolidays_Checkbox.Text:SetText(LK["Settings_disableHolidays"])
+SettingsDisplayFrame.disableHolidays_Checkbox.Text:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.disableHolidays_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["Settings_disableHolidaysTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.disableHolidays_Checkbox.Text:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+SettingsDisplayFrame.disableHolidays_Checkbox:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.disableHolidays_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["Settings_disableHolidaysTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.disableHolidays_Checkbox:SetScript("OnLeave", function(self)
 	GameTooltip:Hide();
 end);
 
@@ -2126,6 +2210,10 @@ function LoreKGUI.Initialize(self, event, arg1)
 		if not LoreK_DB["settings"]["TTSSettings"] then
 			LoreK_DB["settings"]["TTSSettings"] = CopyTable(defaultTTSSettings);
 		end
+
+		if LoreK_DB["settings"]["holidayThemes"] == nil then
+			LoreK_DB["settings"]["holidayThemes"] = true;
+		end
 		TTSSettings.QueuePages_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["queuePages"]);
 		TTSSettings.VolumeSlider.Slider:SetValue(LoreK_DB["settings"]["TTSSettings"]["volume"]);
 		TTSSettings.SpeedSlider.Slider:SetValue(LoreK_DB["settings"]["TTSSettings"]["speed"]);
@@ -2137,11 +2225,15 @@ function LoreKGUI.Initialize(self, event, arg1)
 		SettingsDisplayFrame.hideUnread_Checkbox:SetChecked(LoreK_DB["settings"]["hideUnread"]);
 		SettingsDisplayFrame.slashRead_Checkbox:SetChecked(LoreK_DB["settings"]["slashRead"]);
 		SettingsDisplayFrame.disableCollectSound_Checkbox:SetChecked(LoreK_DB["settings"]["collectSound"]);
+		SettingsDisplayFrame.disableHolidays_Checkbox:SetChecked(LoreK_DB["settings"]["holidayThemes"]);
 		SettingsDisplayFrame.debug_Checkbox:SetChecked(LoreK_DB["settings"]["debugAdvanced"]);
 		
 		LoreKGUI.SetParchmentTexture()
 		LoreKGUI.SetColors()
 		LoreKGUI.SetFontSizeP();
+
+		HolidaysTheme.Corner_BL:SetPoint("BOTTOMLEFT", LoreKGUI.TextDisplayFrame, "BOTTOMLEFT", 0, 0);
+		HolidaysTheme.Corner_BR:SetPoint("BOTTOMRIGHT", LoreKGUI.TextDisplayFrame, "BOTTOMRIGHT", 0, 0);
 	end
 	if event == "PLAYER_ENTERING_WORLD" then
 		HasLoginForTab = true
@@ -2152,7 +2244,6 @@ function LoreKGUI.Initialize(self, event, arg1)
 	end
 end
 
-
 LoreKGUI.Events:SetScript("OnEvent", LoreKGUI.Initialize);
 
 function LoreKGUI.Script_OnShow()
@@ -2160,6 +2251,8 @@ function LoreKGUI.Script_OnShow()
 	if LoreK_DB["settings"]["slashRead"] then
 		DoEmote("READ", nil, true);
 	end
+
+	ToggleHolidays();
 end
 function LoreKGUI.Script_OnHide()
 	PlaySound(SOUNDKIT.IG_SPELLBOOK_CLOSE, "SFX");

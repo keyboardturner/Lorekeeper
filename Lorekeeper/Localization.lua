@@ -96,6 +96,9 @@ if LOCALE == "enUS" then
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
 	LK["SetItemTracked"] = MAP_PIN
+	LK["Holiday_HallowsEnd"] = "Hallow's End"
+	LK["Settings_disableHolidays"] = "Holiday Themes"
+	LK["Settings_disableHolidaysTT"] = "Toggles the holiday theme textures placed on the Lorekeeper frame."
 
 return end
 
@@ -180,6 +183,9 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
 	LK["SetItemTracked"] = MAP_PIN
+	LK["Holiday_HallowsEnd"] = "Halloween"
+	LK["Settings_disableHolidays"] = "Temas Festivos"
+	LK["Settings_disableHolidaysTT"] = "Alterna las texturas temáticas de festividades colocadas en el marco de Lorekeeper."
 
 return end
 
@@ -264,6 +270,9 @@ if LOCALE == "deDE" then
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
 	LK["SetItemTracked"] = MAP_PIN
+	LK["Holiday_HallowsEnd"] = "Schlotternächte"
+	LK["Settings_disableHolidays"] = "Festtagsthemen"
+	LK["Settings_disableHolidaysTT"] = "Schaltet die Festtagstexturen ein oder aus, die auf dem Lorekeeper-Rahmen platziert sind."
 
 return end
 
@@ -348,6 +357,9 @@ if LOCALE == "frFR" then
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
 	LK["SetItemTracked"] = MAP_PIN
+	LK["Holiday_HallowsEnd"] = "Sanssaint"
+	LK["Settings_disableHolidays"] = "Thèmes de Fête"
+	LK["Settings_disableHolidaysTT"] = "Active ou désactive les textures des thèmes de fête placées sur le cadre du Lorekeeper."
 
 return end
 
@@ -432,6 +444,9 @@ if LOCALE == "itIT" then
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
 	LK["SetItemTracked"] = MAP_PIN
+	LK["Holiday_HallowsEnd"] = "Veglia delle Ombre"
+	LK["Settings_disableHolidays"] = "Temi Festivi"
+	LK["Settings_disableHolidaysTT"] = "Attiva o disattiva le texture a tema festivo posizionate sul riquadro di Lorekeeper."
 
 return end
 
@@ -516,6 +531,9 @@ if LOCALE == "ptBR" then
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
 	LK["SetItemTracked"] = MAP_PIN
+	LK["Holiday_HallowsEnd"] = "Noturnália"
+	LK["Settings_disableHolidays"] = "Temas de Feriado"
+	LK["Settings_disableHolidaysTT"] = "Alterna as texturas de tema de feriado colocadas na moldura do Lorekeeper."
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -602,6 +620,9 @@ if LOCALE == "ruRU" then
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
 	LK["SetItemTracked"] = MAP_PIN
+	LK["Holiday_HallowsEnd"] = "Тыквовин"
+	LK["Settings_disableHolidays"] = "Праздничные темы"
+	LK["Settings_disableHolidaysTT"] = "Переключает праздничные текстуры, размещенные на рамке Lorekeeper."
 
 return end
 
@@ -686,6 +707,9 @@ if LOCALE == "koKR" then
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
 	LK["SetItemTracked"] = MAP_PIN
+	LK["Holiday_HallowsEnd"] = "할로윈 축제"
+	LK["Settings_disableHolidays"] = "휴일 테마"
+	LK["Settings_disableHolidaysTT"] = "Lorekeeper 프레임에 적용된 휴일 테마 텍스처를 전환합니다."
 
 return end
 
@@ -770,6 +794,9 @@ if LOCALE == "zhCN" then
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
 	LK["SetItemTracked"] = MAP_PIN
+	LK["Holiday_HallowsEnd"] = "万圣节"
+	LK["Settings_disableHolidays"] = "节日主题"
+	LK["Settings_disableHolidaysTT"] = "切换放置在Lorekeeper框架上的节日主题纹理。"
 
 return end
 
@@ -854,5 +881,8 @@ if LOCALE == "zhTW" then
 	LK["DebugUnlearn"] = UNLEARN
 	LK["DebugLearn"] = LEARN
 	LK["SetItemTracked"] = MAP_PIN
+	LK["Holiday_HallowsEnd"] = "萬鬼節"
+	LK["Settings_disableHolidays"] = "節日主題"
+	LK["Settings_disableHolidaysTT"] = "切換放置在Lorekeeper框架上的節日主題紋理。"
 
 return end
