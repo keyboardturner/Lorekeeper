@@ -81,7 +81,6 @@ if LOCALE == "enUS" then
 	LK["Unobtainable"] = "Unobtainable"
 	LK["ToggleSoundCollected"] = "Disable Collected Sound"
 	LK["ToggleSoundCollectedTT"] = "Disable the sound that plays when collecting a text item."
-	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
 	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
 	LK["TTSLabelTT"] = TTS_LABEL
 	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
@@ -99,6 +98,9 @@ if LOCALE == "enUS" then
 	LK["Holiday_HallowsEnd"] = "Hallow's End"
 	LK["Settings_disableHolidays"] = "Holiday Themes"
 	LK["Settings_disableHolidaysTT"] = "Toggles the holiday theme textures placed on the Lorekeeper frame."
+	LK["TTSReadorStopTT"] = "Start / Stop Text To Speech playback."
+	LK["Settings_Phonetics"] = "Custom Phonetics"
+	LK["Settings_PhoneticsTT"] = "Toggles the use of custom phonetics in Text To Speech to replace pronunciations for certain proper nouns. (This is a work in progress and intended for more natural voice narrators - see addon page for more info. Not all languages will have entries available.)"
 
 return end
 
@@ -168,7 +170,6 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["Unobtainable"] = "Inalcanzable"
 	LK["ToggleSoundCollected"] = "Desactivar Sonido de Colección"
 	LK["ToggleSoundCollectedTT"] = "Desactivar el sonido que se reproduce al recoger un objeto de texto."
-	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
 	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
 	LK["TTSLabelTT"] = TTS_LABEL
 	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
@@ -186,6 +187,9 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["Holiday_HallowsEnd"] = "Halloween"
 	LK["Settings_disableHolidays"] = "Temas Festivos"
 	LK["Settings_disableHolidaysTT"] = "Alterna las texturas temáticas de festividades colocadas en el marco de Lorekeeper."
+	LK["TTSReadorStopTT"] = "Iniciar / Detener la reproducción de Texto a Voz"
+	LK["Settings_Phonetics"] = "Fonética Personalizada"
+	LK["Settings_PhoneticsTT"] = "Activa o desactiva el uso de fonética personalizada en Texto a Voz para reemplazar las pronunciaciones de ciertos nombres propios. (Esto es un trabajo en progreso y está destinado a narradores de voz más naturales - consulta la página del addon para más información. No todos los idiomas tendrán entradas disponibles.)"
 
 return end
 
@@ -255,7 +259,6 @@ if LOCALE == "deDE" then
 	LK["Unobtainable"] = "Unerreichbar"
 	LK["ToggleSoundCollected"] = "Gesammelten Ton deaktivieren"
 	LK["ToggleSoundCollectedTT"] = "Den Ton deaktivieren, der abgespielt wird, wenn ein Textgegenstand gesammelt wird."
-	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
 	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
 	LK["TTSLabelTT"] = TTS_LABEL
 	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
@@ -273,6 +276,9 @@ if LOCALE == "deDE" then
 	LK["Holiday_HallowsEnd"] = "Schlotternächte"
 	LK["Settings_disableHolidays"] = "Festtagsthemen"
 	LK["Settings_disableHolidaysTT"] = "Schaltet die Festtagstexturen ein oder aus, die auf dem Lorekeeper-Rahmen platziert sind."
+	LK["TTSReadorStopTT"] = "Text-zu-Sprache Wiedergabe starten / stoppen"
+	LK["Settings_Phonetics"] = "Benutzerdefinierte Phonetik"
+	LK["Settings_PhoneticsTT"] = "Schaltet die Verwendung von benutzerdefinierter Phonetik in Text-zu-Sprache um, um die Aussprache bestimmter Eigennamen zu ersetzen. (Dies ist ein laufendes Projekt und für natürlichere Stimmen gedacht – siehe Addon-Seite für weitere Informationen. Nicht alle Sprachen haben verfügbare Einträge.)"
 
 return end
 
@@ -342,7 +348,6 @@ if LOCALE == "frFR" then
 	LK["Unobtainable"] = "Inaccessible"
 	LK["ToggleSoundCollected"] = "Disattiva Suono di Raccolta"
 	LK["ToggleSoundCollectedTT"] = "Disattiva il suono che viene riprodotto quando si raccoglie un oggetto di testo."
-	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
 	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
 	LK["TTSLabelTT"] = TTS_LABEL
 	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
@@ -360,6 +365,9 @@ if LOCALE == "frFR" then
 	LK["Holiday_HallowsEnd"] = "Sanssaint"
 	LK["Settings_disableHolidays"] = "Thèmes de Fête"
 	LK["Settings_disableHolidaysTT"] = "Active ou désactive les textures des thèmes de fête placées sur le cadre du Lorekeeper."
+	LK["TTSReadorStopTT"] = "Démarrer / Arrêter la lecture du Texte à Parole"
+	LK["Settings_Phonetics"] = "Phonétique Personnalisée"
+	LK["Settings_PhoneticsTT"] = "Active ou désactive l'utilisation de phonétiques personnalisées dans Texte à Parole pour remplacer la prononciation de certains noms propres. (Ceci est un travail en cours destiné aux narrateurs à voix plus naturelles - voir la page de l'addon pour plus d'infos. Toutes les langues ne disposent pas de toutes les entrées.)"
 
 return end
 
@@ -429,7 +437,6 @@ if LOCALE == "itIT" then
 	LK["Unobtainable"] = "Irreperibile"
 	LK["ToggleSoundCollected"] = "Disattiva Suono di Raccolta"
 	LK["ToggleSoundCollectedTT"] = "Disattiva il suono che viene riprodotto quando si raccoglie un oggetto di testo."
-	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
 	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
 	LK["TTSLabelTT"] = TTS_LABEL
 	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
@@ -447,6 +454,9 @@ if LOCALE == "itIT" then
 	LK["Holiday_HallowsEnd"] = "Veglia delle Ombre"
 	LK["Settings_disableHolidays"] = "Temi Festivi"
 	LK["Settings_disableHolidaysTT"] = "Attiva o disattiva le texture a tema festivo posizionate sul riquadro di Lorekeeper."
+	LK["TTSReadorStopTT"] = "Avvia / Ferma la riproduzione di Sintesi Vocale"
+	LK["Settings_Phonetics"] = "Fonetica Personalizzata"
+	LK["Settings_PhoneticsTT"] = "Attiva o disattiva l'uso della fonetica personalizzata nella Sintesi Vocale per sostituire la pronuncia di alcuni nomi propri. (Questo è un lavoro in corso e destinato a voci narranti più naturali - vedi la pagina dell'addon per maggiori informazioni. Non tutte le lingue avranno voci disponibili.)"
 
 return end
 
@@ -516,7 +526,6 @@ if LOCALE == "ptBR" then
 	LK["Unobtainable"] = "Inalcançável"
 	LK["ToggleSoundCollected"] = "Desativar Som de Coleta"
 	LK["ToggleSoundCollectedTT"] = "Desativar o som que toca ao coletar um item de texto."
-	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
 	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
 	LK["TTSLabelTT"] = TTS_LABEL
 	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
@@ -534,6 +543,9 @@ if LOCALE == "ptBR" then
 	LK["Holiday_HallowsEnd"] = "Noturnália"
 	LK["Settings_disableHolidays"] = "Temas de Feriado"
 	LK["Settings_disableHolidaysTT"] = "Alterna as texturas de tema de feriado colocadas na moldura do Lorekeeper."
+	LK["TTSReadorStopTT"] = "Iniciar / Parar a reprodução de Texto para Fala"
+	LK["Settings_Phonetics"] = "Fonética Personalizada"
+	LK["Settings_PhoneticsTT"] = "Alterna o uso de fonética personalizada em Texto para Fala para substituir a pronúncia de certos nomes próprios. (Este é um trabalho em andamento destinado a narradores com vozes mais naturais - veja a página do addon para mais informações. Nem todos os idiomas terão entradas disponíveis.)"
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -605,7 +617,6 @@ if LOCALE == "ruRU" then
 	LK["Unobtainable"] = "Недоступно"
 	LK["ToggleSoundCollected"] = "Отключить звук сбора"
 	LK["ToggleSoundCollectedTT"] = "Отключить звук, который воспроизводится при сборе текстового предмета."
-	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
 	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
 	LK["TTSLabelTT"] = TTS_LABEL
 	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
@@ -623,6 +634,9 @@ if LOCALE == "ruRU" then
 	LK["Holiday_HallowsEnd"] = "Тыквовин"
 	LK["Settings_disableHolidays"] = "Праздничные темы"
 	LK["Settings_disableHolidaysTT"] = "Переключает праздничные текстуры, размещенные на рамке Lorekeeper."
+	LK["TTSReadorStopTT"] = "Запустить / Остановить воспроизведение текста вслух"
+	LK["Settings_Phonetics"] = "Пользовательская фонетика"
+	LK["Settings_PhoneticsTT"] = "Включает или отключает использование пользовательской фонетики в тексте для преобразования речи, чтобы заменить произношение некоторых имен собственных. (Это работа в процессе, предназначенная для более естественных голосов - см. страницу аддона для получения дополнительной информации. Не для всех языков есть доступные записи.)"
 
 return end
 
@@ -692,7 +706,6 @@ if LOCALE == "koKR" then
 	LK["Unobtainable"] = "획득 불가"
 	LK["ToggleSoundCollected"] = "수집된 소리 비활성화"
 	LK["ToggleSoundCollectedTT"] = "텍스트 아이템을 수집할 때 재생되는 소리를 비활성화합니다."
-	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
 	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
 	LK["TTSLabelTT"] = TTS_LABEL
 	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
@@ -710,6 +723,9 @@ if LOCALE == "koKR" then
 	LK["Holiday_HallowsEnd"] = "할로윈 축제"
 	LK["Settings_disableHolidays"] = "휴일 테마"
 	LK["Settings_disableHolidaysTT"] = "Lorekeeper 프레임에 적용된 휴일 테마 텍스처를 전환합니다."
+	LK["TTSReadorStopTT"] = "텍스트 음성 변환 시작 / 중지"
+	LK["Settings_Phonetics"] = "맞춤 음성 변환"
+	LK["Settings_PhoneticsTT"] = "일부 고유 명사의 발음을 대체하기 위해 텍스트 음성 변환에서 맞춤 발음을 사용하는 기능을 켭니다. (이 기능은 진행 중이며 자연스러운 음성 해설자를 위해 설계되었습니다 - 추가 정보는 애드온 페이지를 참조하세요. 모든 언어에 항목이 제공되는 것은 아닙니다.)"
 
 return end
 
@@ -779,7 +795,6 @@ if LOCALE == "zhCN" then
 	LK["Unobtainable"] = "无法获得"
 	LK["ToggleSoundCollected"] = "禁用收集声音"
 	LK["ToggleSoundCollectedTT"] = "禁用收集文本物品时播放的声音。"
-	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
 	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
 	LK["TTSLabelTT"] = TTS_LABEL
 	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
@@ -797,6 +812,9 @@ if LOCALE == "zhCN" then
 	LK["Holiday_HallowsEnd"] = "万圣节"
 	LK["Settings_disableHolidays"] = "节日主题"
 	LK["Settings_disableHolidaysTT"] = "切换放置在Lorekeeper框架上的节日主题纹理。"
+	LK["TTSReadorStopTT"] = "开始 / 停止文字转语音播放"
+	LK["Settings_Phonetics"] = "自定义语音"
+	LK["Settings_PhoneticsTT"] = "切换文字转语音中的自定义发音，以替换某些专有名词的发音。(这是一个正在进行中的项目，旨在为更自然的语音播报服务——更多信息请参见插件页面。并非所有语言都有可用的条目。)"
 
 return end
 
@@ -866,7 +884,6 @@ if LOCALE == "zhTW" then
 	LK["Unobtainable"] = "無法取得"
 	LK["ToggleSoundCollected"] = "禁用收集聲音"
 	LK["ToggleSoundCollectedTT"] = "禁用收集文本物品時播放的聲音。"
-	LK["TTSReadorStopTT"] = ENABLE_TEXT_TO_SPEECH .. " / " .. BINDING_NAME_TEXT_TO_SPEECH_STOP
 	LK["TTSConfigTT"] = TEXT_TO_SPEECH_CONFIG
 	LK["TTSLabelTT"] = TTS_LABEL
 	LK["TTSVoiceOption"] = TEXT_TO_SPEECH_VOICE_OPTION
@@ -884,5 +901,8 @@ if LOCALE == "zhTW" then
 	LK["Holiday_HallowsEnd"] = "萬鬼節"
 	LK["Settings_disableHolidays"] = "節日主題"
 	LK["Settings_disableHolidaysTT"] = "切換放置在Lorekeeper框架上的節日主題紋理。"
+	LK["TTSReadorStopTT"] = "開始 / 停止文字轉語音播放"
+	LK["Settings_Phonetics"] = "自定語音"
+	LK["Settings_PhoneticsTT"] = "切換文字轉語音中的自定發音，以替換某些專有名詞的發音。(這是一個正在進行中的專案，旨在提供更自然的語音敘述——更多資訊請參見插件頁面。並非所有語言都有可用的項目。)"
 
 return end

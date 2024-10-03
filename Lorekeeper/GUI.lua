@@ -11,6 +11,7 @@ local defaultTTSSettings = {
 	queuePages = false,
 	volume = 50,
 	speed = 0,
+	phonetics = true,
 };
 
 local function OnUpdate(self, elapsed)
@@ -138,6 +139,7 @@ end
 -- Function to replace words with their phonetic equivalents
 local function replaceWithPhonetics(text)
 	if not LK["Phonetics"] then return text end
+	if not LoreK_DB.settings.TTSSettings.phonetics then return text end
 	return text:gsub("[%w']+", function(word)
 		local lowerWord = word:lower()
 
@@ -617,7 +619,7 @@ DeleteEntry:SetHighlightAtlas("128-RedButton-Delete-Highlight");
 DeleteEntry:SetEnabled(false);
 DeleteEntry:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine(LK["DeleteAll"], 1, 1, 1);
+	GameTooltip:AddLine(LK["DeleteAll"], 1, 1, 1, true);
 	GameTooltip:Show();
 end);
 DeleteEntry:SetScript("OnLeave", function()
@@ -730,6 +732,25 @@ TTSSettings.TTSVoiceChoice:SetupMenu(function(dropdown, rootDescription)
 	end
 	rootDescription:SetScrollMode(maxScrollExtent);
 end);
+TTSSettings.TTSVoiceChoice:SetScript("OnEnter", function()
+	if not LoreK_DB["settings"]["TTSSettings"]["voiceID"] then return end
+	local voiceID = LoreK_DB["settings"]["TTSSettings"]["voiceID"];
+	local narratorName;
+	for k, v in pairs(C_VoiceChat.GetTtsVoices()) do
+		if v.voiceID == voiceID then
+			narratorName = v.name;
+		end
+	end
+	if not narratorName then return end
+	GameTooltip:SetOwner(TTSSettings.PhoneticReplace_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(narratorName, 1, 1, 1, true);
+	GameTooltip:SetWidth(20);
+	GameTooltip:Show();
+end);
+TTSSettings.TTSVoiceChoice:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
+
 TTSSettingsPlacer = TTSSettingsPlacer+1
 
 TTSSettings.QueuePages_Checkbox = CreateFrame("CheckButton", nil, TTSSettings, "UICheckButtonTemplate");
@@ -744,7 +765,7 @@ end);
 TTSSettings.QueuePages_Checkbox.Text:SetText(LK["TTSQueuePages"])
 TTSSettings.QueuePages_Checkbox:SetScript("OnEnter", function()
 	GameTooltip:SetOwner(TTSSettings.QueuePages_Checkbox, "ANCHOR_TOPLEFT");
-	GameTooltip:AddLine(LK["TTSQueuePagesTT"]);
+	GameTooltip:AddLine(LK["TTSQueuePagesTT"], 1, 1, 1, true);
 	GameTooltip:SetWidth(20);
 	GameTooltip:Show();
 end);
@@ -753,11 +774,41 @@ TTSSettings.QueuePages_Checkbox:SetScript("OnLeave", function()
 end);
 TTSSettings.QueuePages_Checkbox.Text:SetScript("OnEnter", function()
 	GameTooltip:SetOwner(TTSSettings.QueuePages_Checkbox, "ANCHOR_TOPLEFT");
-	GameTooltip:AddLine(LK["TTSQueuePagesTT"]);
+	GameTooltip:AddLine(LK["TTSQueuePagesTT"], 1, 1, 1, true);
 	GameTooltip:SetWidth(20);
 	GameTooltip:Show();
 end);
 TTSSettings.QueuePages_Checkbox.Text:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
+TTSSettingsPlacer = TTSSettingsPlacer+1
+
+TTSSettings.PhoneticReplace_Checkbox = CreateFrame("CheckButton", nil, TTSSettings, "UICheckButtonTemplate");
+TTSSettings.PhoneticReplace_Checkbox:SetPoint("TOPLEFT", TTSSettings, "TOPLEFT", 10, TTSSettingsPlacer*-25);
+TTSSettings.PhoneticReplace_Checkbox:SetScript("OnClick", function(self)
+	if self:GetChecked() then
+		LoreK_DB["settings"]["TTSSettings"]["phonetics"] = true;
+	else
+		LoreK_DB["settings"]["TTSSettings"]["phonetics"] = false;
+	end
+end);
+TTSSettings.PhoneticReplace_Checkbox.Text:SetText(LK["Settings_Phonetics"])
+TTSSettings.PhoneticReplace_Checkbox:SetScript("OnEnter", function()
+	GameTooltip:SetOwner(TTSSettings.PhoneticReplace_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["Settings_PhoneticsTT"], 1, 1, 1, true);
+	GameTooltip:SetWidth(20);
+	GameTooltip:Show();
+end);
+TTSSettings.PhoneticReplace_Checkbox:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
+TTSSettings.PhoneticReplace_Checkbox.Text:SetScript("OnEnter", function()
+	GameTooltip:SetOwner(TTSSettings.PhoneticReplace_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["Settings_PhoneticsTT"], 1, 1, 1, true);
+	GameTooltip:SetWidth(20);
+	GameTooltip:Show();
+end);
+TTSSettings.PhoneticReplace_Checkbox.Text:SetScript("OnLeave", function()
 	GameTooltip:Hide();
 end);
 TTSSettingsPlacer = TTSSettingsPlacer+1
@@ -2210,11 +2261,14 @@ function LoreKGUI.Initialize(self, event, arg1)
 		if not LoreK_DB["settings"]["TTSSettings"] then
 			LoreK_DB["settings"]["TTSSettings"] = CopyTable(defaultTTSSettings);
 		end
-
+		if LoreK_DB["settings"]["TTSSettings"]["phonetics"] == nil then
+			LoreK_DB["settings"]["TTSSettings"]["phonetics"] = true;
+		end
 		if LoreK_DB["settings"]["holidayThemes"] == nil then
 			LoreK_DB["settings"]["holidayThemes"] = true;
 		end
 		TTSSettings.QueuePages_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["queuePages"]);
+		TTSSettings.PhoneticReplace_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["phonetics"]);
 		TTSSettings.VolumeSlider.Slider:SetValue(LoreK_DB["settings"]["TTSSettings"]["volume"]);
 		TTSSettings.SpeedSlider.Slider:SetValue(LoreK_DB["settings"]["TTSSettings"]["speed"]);
 
