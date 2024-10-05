@@ -203,6 +203,9 @@ LK["Phonetics"] = { -- keep the key lowercase so it always can match
 	["anub'azal"] = "anoob'ahzal",
 	["evildoer"] = "evil-doer",
 	["evildoers"] = "evil-doers",
+	["ghoul"] = "gool",
+	["ghouls"] = "gools",
+	["ghoulish"] = "goolish",
 
 
 	-- player names
