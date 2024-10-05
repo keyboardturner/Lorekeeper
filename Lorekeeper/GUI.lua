@@ -535,8 +535,9 @@ TextCount.Count:SetFont(STANDARD_TEXT_FONT, 10);
 TextCount.Count:SetPoint("RIGHT", TextCount, "RIGHT", -10, 0);
 TextCount.Count:SetJustifyH("RIGHT");
 TextCount.Count:SetJustifyV("MIDDLE");
-function TextCount.UpdateCount(current, max)
+function TextCount.UpdateCount(current, max, unobtainables)
 	if not current then TextCount:Hide(); return; end
+	TextCount.unobtainables = unobtainables or 0
 	TextCount.Count:SetText(current);
 
 	TextCount.totalText = current
@@ -546,10 +547,16 @@ end
 TextCount:SetScript("OnEnter", function(self)
 	local totalText = TextCount.totalText
 	local uncollectedText = TextCount.uncollectedText
+	local unobtainables = TextCount.unobtainables
 
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
 	GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["TotalItemsLabel"] ..":|r ".. totalText, 1, 1, 1);
-	GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["ItemsUncollected"] ..":|r ".. uncollectedText, 1, 1, 1);
+	if uncollectedText > 0 then
+		GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["ItemsUncollected"] ..":|r ".. uncollectedText, 1, 1, 1);
+	end
+	--if unobtainables > 0 then
+		--GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["Unobtainable"] ..":|r ".. unobtainables, 1, 1, 1);
+	--end
 	GameTooltip:Show();
 end);
 TextCount:SetScript("OnLeave", function()
@@ -1454,6 +1461,7 @@ end
 function LoreKGUI.PopulateList()
 	local countMax = 0
 	local countCurrent = 0
+	local unobtainables = 0
 	if not LoreK_DB or not LoreK_DB["text"] then
 		return;
 	end
@@ -1473,7 +1481,13 @@ function LoreKGUI.PopulateList()
 	for id, data in pairs(allData) do
 		data.id = id;
 		tinsert(proxy, data);
-		countMax = countMax + 1
+		if data.base.isObtainable then
+			countMax = countMax + 1
+		end
+
+		if data.base.isObtainable == false then
+			unobtainables = unobtainables + 1
+		end
 		if data.base.hasRead then
 			countCurrent = countCurrent + 1
 		end
@@ -1482,7 +1496,7 @@ function LoreKGUI.PopulateList()
 	PopulateNewDataProvider(proxy);
 	LoreKGUI.OnTextChanged(LoreKGUI.SearchBox);
 
-	TextCount.UpdateCount(countCurrent, countMax);
+	TextCount.UpdateCount(countCurrent, countMax, unobtainables);
 end
 
 -- Search box
