@@ -535,14 +535,14 @@ TextCount.Count:SetFont(STANDARD_TEXT_FONT, 10);
 TextCount.Count:SetPoint("RIGHT", TextCount, "RIGHT", -10, 0);
 TextCount.Count:SetJustifyH("RIGHT");
 TextCount.Count:SetJustifyV("MIDDLE");
-function TextCount.UpdateCount(current, max, unobtainables, newTexts, currentLocalData)
+function TextCount.UpdateCount(current, unread, unobtainables, newTexts)
 	if not current then TextCount:Hide(); return; end
 	TextCount.unobtainables = unobtainables or 0
 	TextCount.Count:SetText(current);
 
-	TextCount.totalText = current
-	TextCount.uncollectedText = max - currentLocalData
-	TextCount.newTexts = newTexts
+	TextCount.totalText = current;
+	TextCount.unread = unread;
+	TextCount.newTexts = newTexts;
 end
 
 function TextCount.Reminder()
@@ -554,20 +554,22 @@ function TextCount.Reminder()
 end
 
 TextCount:SetScript("OnEnter", function(self)
-	local totalText = TextCount.totalText
-	local uncollectedText = TextCount.uncollectedText
-	local unobtainables = TextCount.unobtainables
-	local newTexts = TextCount.newTexts
+	local totalText = TextCount.totalText;
+	local uncollectedText = TextCount.unread;
+	local unobtainables = TextCount.unobtainables;
+	local newTexts = TextCount.newTexts;
 
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["TotalItemsLabel"] ..":|r ".. totalText, 1, 1, 1);
-	if uncollectedText > 0 then
+	if totalText and totalText > 0 then
+		GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["TotalItemsLabel"] ..":|r ".. totalText, 1, 1, 1);
+	end
+	if uncollectedText and uncollectedText > 0 then
 		GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["ItemsUncollected"] ..":|r ".. uncollectedText, 1, 1, 1);
 	end
 	--if unobtainables > 0 then
 		--GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["Unobtainable"] ..":|r ".. unobtainables, 1, 1, 1);
 	--end
-	if newTexts > 0 then
+	if newTexts and newTexts > 0 then
 		TextCount.Reminder()
 		GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["NewTexts"] ..":|r ".. newTexts, 1, 1, 1);
 	end
@@ -1477,7 +1479,7 @@ function LoreKGUI.PopulateList()
 	local countCurrent = 0;
 	local unobtainables = 0;
 	local newTexts = 0;
-	local currentLocalData = 0;
+	local unread = 0;
 	if not LoreK_DB or not LoreK_DB["text"] then
 		return;
 	end
@@ -1507,8 +1509,8 @@ function LoreKGUI.PopulateList()
 		if data.base.hasRead then
 			countCurrent = countCurrent + 1;
 		end
-		if LK["LocalData"]["text"][id] and data.base.hasRead then
-			currentLocalData = currentLocalData + 1;
+		if LK["LocalData"]["text"][id] and not data.base.hasRead then
+			unread = unread + 1;
 		end
 		if data.base.hasRead and not LK["LocalData"]["text"][id] then
 			newTexts = newTexts + 1;
@@ -1518,7 +1520,7 @@ function LoreKGUI.PopulateList()
 	PopulateNewDataProvider(proxy);
 	LoreKGUI.OnTextChanged(LoreKGUI.SearchBox);
 
-	TextCount.UpdateCount(countCurrent, countMax, unobtainables, newTexts, currentLocalData);
+	TextCount.UpdateCount(countCurrent, unread, unobtainables, newTexts);
 end
 
 -- Search box
