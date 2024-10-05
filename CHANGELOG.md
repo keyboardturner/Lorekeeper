@@ -4,6 +4,8 @@ Correctly display the uncollected counter (for real this time).
 
 Added a one-time-per-session reminder upon hovering over the tooltip to contribute undiscovered texts if the user has some.
 
+Added "New" counter, for entries that are not in local data but have been collected by the player.
+
 # 0.1.5
 
 Spooky Holiday :)
