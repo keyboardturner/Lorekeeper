@@ -1,3 +1,9 @@
+# 0.1.6
+
+Correctly display the uncollected counter (for real this time).
+
+Added a one-time-per-session reminder upon hovering over the tooltip to contribute undiscovered texts if the user has some.
+
 # 0.1.5
 
 Spooky Holiday :)
