@@ -535,19 +535,29 @@ TextCount.Count:SetFont(STANDARD_TEXT_FONT, 10);
 TextCount.Count:SetPoint("RIGHT", TextCount, "RIGHT", -10, 0);
 TextCount.Count:SetJustifyH("RIGHT");
 TextCount.Count:SetJustifyV("MIDDLE");
-function TextCount.UpdateCount(current, max, unobtainables)
+function TextCount.UpdateCount(current, max, unobtainables, newTexts)
 	if not current then TextCount:Hide(); return; end
 	TextCount.unobtainables = unobtainables or 0
 	TextCount.Count:SetText(current);
 
 	TextCount.totalText = current
 	TextCount.uncollectedText = max - current
+	TextCount.newTexts = newTexts
+end
+
+function TextCount.Reminder()
+	if TextCount.remind then
+		return;
+	end
+	Print(string.format(LK["PotentialReminder"], TextCount.newTexts));
+	TextCount.remind = true; -- don't warn for the rest of the session
 end
 
 TextCount:SetScript("OnEnter", function(self)
 	local totalText = TextCount.totalText
 	local uncollectedText = TextCount.uncollectedText
 	local unobtainables = TextCount.unobtainables
+	local newTexts = TextCount.newTexts
 
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
 	GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["TotalItemsLabel"] ..":|r ".. totalText, 1, 1, 1);
@@ -557,6 +567,10 @@ TextCount:SetScript("OnEnter", function(self)
 	--if unobtainables > 0 then
 		--GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["Unobtainable"] ..":|r ".. unobtainables, 1, 1, 1);
 	--end
+	if newTexts > 0 then
+		TextCount.Reminder()
+		GameTooltip:AddLine("|cnNORMAL_FONT_COLOR:"..LK["NewTexts"] ..":|r ".. newTexts, 1, 1, 1);
+	end
 	GameTooltip:Show();
 end);
 TextCount:SetScript("OnLeave", function()
@@ -1459,9 +1473,10 @@ function LoreKGUI.sortFunc(a, b)
 end
 
 function LoreKGUI.PopulateList()
-	local countMax = 0
-	local countCurrent = 0
-	local unobtainables = 0
+	local countMax = 0;
+	local countCurrent = 0;
+	local unobtainables = 0;
+	local newTexts = 0;
 	if not LoreK_DB or not LoreK_DB["text"] then
 		return;
 	end
@@ -1482,21 +1497,24 @@ function LoreKGUI.PopulateList()
 		data.id = id;
 		tinsert(proxy, data);
 		if data.base.isObtainable then
-			countMax = countMax + 1
+			countMax = countMax + 1;
 		end
 
 		if data.base.isObtainable == false then
-			unobtainables = unobtainables + 1
+			unobtainables = unobtainables + 1;
 		end
 		if data.base.hasRead then
-			countCurrent = countCurrent + 1
+			countCurrent = countCurrent + 1;
+		end
+		if data.base.hasRead and not LK["LocalData"]["text"][id] then
+			newTexts = newTexts + 1;
 		end
 	end
 
 	PopulateNewDataProvider(proxy);
 	LoreKGUI.OnTextChanged(LoreKGUI.SearchBox);
 
-	TextCount.UpdateCount(countCurrent, countMax, unobtainables);
+	TextCount.UpdateCount(countCurrent, countMax, unobtainables, newTexts);
 end
 
 -- Search box
