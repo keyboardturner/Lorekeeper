@@ -1,3 +1,7 @@
+# 0.1.7
+
+Plain Letter items which are read and have no creator are now kept under "Miscellaneous". It is literally impossible to get the sender name on these items if they're cross realm or from NPCs, but I guess it's better than nothing.
+
 # 0.1.6
 
 Correctly display the uncollected counter (for real this time).

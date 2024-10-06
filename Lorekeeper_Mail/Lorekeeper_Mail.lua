@@ -35,6 +35,11 @@ local function Print(...)
 	DEFAULT_CHAT_FRAME:AddMessage(string.join(" ", prefix, ...));
 end
 
+
+local allData = {}
+
+local LoreKGUI = Lorekeeper_API.LK.LoreKGUI
+
 function Lorekeeper_API.MailDetected(activeContext)
 	if not activeContext then
 		return;
@@ -57,6 +62,9 @@ function Lorekeeper_API.MailDetected(activeContext)
 		if IsNameWithoutRealm(creator) then
 			creator = creator.."-"..RealmFromGUID; -- this *might* handle connected realms?
 		end
+	end
+	if creator == "-"..realmCurrent or creator == nil then
+		creator = MISCELLANEOUS;
 	end
 	local text = activeContext.text[1];
 	local isDuplicateFound;
@@ -92,6 +100,7 @@ function Lorekeeper_API.MailDetected(activeContext)
 			Print("Mail found! Saving entry under creator name: " .. creator);
 		end
 	end
+	LoreKGUI.PopulateMailList();
 end
 
 local function moveFrameXY(frame, point, relativePoint, newxOfs, newyOfs)
@@ -99,10 +108,6 @@ local function moveFrameXY(frame, point, relativePoint, newxOfs, newyOfs)
 	point, relativeTo, relativePoint, xOfs, yOfs = point, relativeTo, relativePoint, xOfs+newxOfs, yOfs+newyOfs;
 	frame:SetPoint(point, relativeTo, relativePoint, xOfs, yOfs);
 end
-
-local allData = {}
-
-local LoreKGUI = Lorekeeper_API.LK.LoreKGUI
 
 local LK = Lorekeeper_API.LK
 

@@ -420,11 +420,13 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					activeContext.playerGUID = PlayerGUID;
 					Lorekeeper_API.MailDetected(activeContext);
 				else
-					activeContext = nil;
+					activeContext.playerGUID = MISCELLANEOUS;
+					Lorekeeper_API.MailDetected(activeContext);
+					--activeContext = nil;
 					if LoreK_DB.settings.debugAdvanced then
-						Print("Can't find GUID for item, it's probably been transferred cross realm.")
+						Print("Attempting to save under 'Miscellaneous'.")
+						--Print("Can't find GUID for item, it's probably been transferred cross realm.")
 					end
-					return
 				end
 			end
 			activeContext = nil;
