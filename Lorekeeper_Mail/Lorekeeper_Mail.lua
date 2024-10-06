@@ -17,6 +17,7 @@ if not C_AddOns.IsAddOnLoaded("Lorekeeper") then
 end
 
 local function IsNameWithoutRealm(nameRealm)
+	if not nameRealm then return end
 	if string.find(nameRealm, "-") then
 		return false -- The string contains a realm
 	else
@@ -39,6 +40,17 @@ end
 local allData = {}
 
 local LoreKGUI = Lorekeeper_API.LK.LoreKGUI
+
+local PH_PLAYER_NAME = "$PLAYER_NAME$";
+local PH_PLAYER_CLASS = "$PLAYER_CLASS$";
+
+local function ReverseNameAndClass(pageText)
+	local name = UnitName("player");
+	local class = UnitClass("player");
+	pageText = pageText:gsub("%$PLAYER_NAME%$", name);
+	pageText = pageText:gsub("%$PLAYER_CLASS%$", class);
+	return pageText;
+end
 
 function Lorekeeper_API.MailDetected(activeContext)
 	if not activeContext then
@@ -335,7 +347,7 @@ local function MailInitializer(button, data)
 			local pageText = textTable[pageNum]
 			local HTMLbody
 			local textTitle = allData[mailID]["nameRealm"]; --parseFunc('["text"][mailID]["title"]', mailID);
-			local isHTML = string.lower(pageText):find("<html>");
+			local isHTML = string.lower(ReverseNameAndClass(pageText)):find("<html>");
 			local singlePage = true;
 
 			if #allData[mailID]["text"] > 1 then
@@ -398,18 +410,18 @@ local function MailInitializer(button, data)
 					local textTable = allData[mailID]["text"];
 					local pageText = textTable[pageNum]
 					local textTitle = allData[mailID]["nameRealm"] or UNKNOWN;
-					local isHTML = string.lower(pageText):find("<html>");
+					local isHTML = string.lower(ReverseNameAndClass(pageText)):find("<html>");
 					local singlePage = allData[mailID]["singlePage"];
 					if isHTML then
-						HTMLbody = string.gsub(pageText,"<BODY>","<BODY>".."<br />");
+						HTMLbody = string.gsub(ReverseNameAndClass(pageText),"<BODY>","<BODY>".."<br />");
 					end
 
 					MailTextDisplayFrame.PageNumber:SetText(pageNumberText);
 					TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
 					if isHTML then
-						TextScrollChild.textHTML:SetText(HTMLbody or pageText, false);
+						TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(pageText), false);
 					else
-						TextScrollChild.textHTML:SetText("\n"..pageText, false);
+						TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(pageText), false);
 					end
 				end)
 				MailTextDisplayFrame.NextPageButton:SetScript("OnClick", function()
@@ -426,18 +438,18 @@ local function MailInitializer(button, data)
 					local textTable = allData[mailID]["text"];
 					local pageText = textTable[pageNum]
 					local textTitle = allData[mailID]["nameRealm"];
-					local isHTML = string.lower(pageText):find("<html>");
+					local isHTML = string.lower(ReverseNameAndClass(pageText)):find("<html>");
 					local singlePage = allData[mailID]["singlePage"];
 					if isHTML then
-						HTMLbody = string.gsub(textTable[pageNum],"<BODY>","<BODY>".."<br />");
+						HTMLbody = string.gsub(ReverseNameAndClass(textTable[pageNum]),"<BODY>","<BODY>".."<br />");
 					end
 
 					MailTextDisplayFrame.PageNumber:SetText(pageNumberText);
 					TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
 					if isHTML then
-						TextScrollChild.textHTML:SetText(HTMLbody or textTable[pageNum], false);
+						TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(textTable[pageNum]), false);
 					else
-						TextScrollChild.textHTML:SetText("\n"..textTable[pageNum], false);
+						TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(textTable[pageNum]), false);
 					end
 				end)
 			else
@@ -460,12 +472,12 @@ local function MailInitializer(button, data)
 				MailTextDisplayFrame.Type_ID:SetText("", 1, 1, 1, 1, true);
 			end
 			if isHTML then
-				HTMLbody = string.gsub(textTable[pageNum],"<BODY>","<BODY>".."<br />")
+				HTMLbody = string.gsub(ReverseNameAndClass(textTable[pageNum]),"<BODY>","<BODY>".."<br />")
 			end
 			if isHTML then
-				TextScrollChild.textHTML:SetText(HTMLbody or textTable[pageNum], false);
+				TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(textTable[pageNum]), false);
 			else
-				TextScrollChild.textHTML:SetText("\n"..textTable[pageNum], false);
+				TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(textTable[pageNum]), false);
 			end
 		end
 	end);
