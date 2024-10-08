@@ -1,3 +1,7 @@
+# 0.1.8
+
+Quick fix to a localdata entry
+
 # 0.1.7
 
 Weekly LocalData Update 5 - 08/10/24 (54 personal entries + 11 Anonymous User 3 entries + 9 Anonymous User 4 entries + 41 Anonymous User 5 entries)
