@@ -1,5 +1,7 @@
 # 0.1.7
 
+Weekly LocalData Update 5 - 08/10/24 (54 personal entries + 11 Anonymous User 3 entries + 9 Anonymous User 4 entries + 41 Anonymous User 5 entries)
+
 Plain Letter items which are read and have no creator are now kept under "Miscellaneous". It is literally impossible to get the sender name on these items if they're cross realm or from NPCs, but I guess it's better than nothing.
 
 # 0.1.6
