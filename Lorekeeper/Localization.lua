@@ -103,6 +103,8 @@ if LOCALE == "enUS" then
 	LK["Settings_PhoneticsTT"] = "Toggles the use of custom phonetics in Text To Speech to replace pronunciations for certain proper nouns. (This is a work in progress and intended for more natural voice narrators - see addon page for more info. Not all languages will have entries available.)"
 	LK["NewTexts"] = NEW
 	LK["PotentialReminder"] = "You have %d new texts undiscovered by the core addon. Consider contributing your entries by following the instructions on the Lorekeeper addon page!"
+	LK["CopyTitle"] = CALENDAR_COPY_EVENT
+	LK["CopyDescriptTT"] = "Toggle window to copy book text."
 
 return end
 
@@ -194,6 +196,8 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["Settings_PhoneticsTT"] = "Activa o desactiva el uso de fonética personalizada en Texto a Voz para reemplazar las pronunciaciones de ciertos nombres propios. (Esto es un trabajo en progreso y está destinado a narradores de voz más naturales - consulta la página del addon para más información. No todos los idiomas tendrán entradas disponibles.)"
 	LK["NewTexts"] = NEW
 	LK["PotentialReminder"] = "Tienes %d textos nuevos no descubiertos por el addon principal. ¡Considera contribuir con tus entradas siguiendo las instrucciones en la página del addon Lorekeeper!"
+	LK["CopyTitle"] = CALENDAR_COPY_EVENT
+	LK["CopyDescriptTT"] = "Alternar ventana para copiar el texto del libro."
 
 return end
 
@@ -285,6 +289,8 @@ if LOCALE == "deDE" then
 	LK["Settings_PhoneticsTT"] = "Schaltet die Verwendung von benutzerdefinierter Phonetik in Text-zu-Sprache um, um die Aussprache bestimmter Eigennamen zu ersetzen. (Dies ist ein laufendes Projekt und für natürlichere Stimmen gedacht – siehe Addon-Seite für weitere Informationen. Nicht alle Sprachen haben verfügbare Einträge.)"
 	LK["NewTexts"] = NEW
 	LK["PotentialReminder"] = "Du hast %d neue Texte, die vom Haupt-Addon noch nicht entdeckt wurden. Erwäge, deine Einträge beizutragen, indem du die Anweisungen auf der Lorekeeper-Addon-Seite befolgst!"
+	LK["CopyTitle"] = CALENDAR_COPY_EVENT
+	LK["CopyDescriptTT"] = "Fenster umschalten, um den Buchtext zu kopieren."
 
 return end
 
@@ -376,6 +382,8 @@ if LOCALE == "frFR" then
 	LK["Settings_PhoneticsTT"] = "Active ou désactive l'utilisation de phonétiques personnalisées dans Texte à Parole pour remplacer la prononciation de certains noms propres. (Ceci est un travail en cours destiné aux narrateurs à voix plus naturelles - voir la page de l'addon pour plus d'infos. Toutes les langues ne disposent pas de toutes les entrées.)"
 	LK["NewTexts"] = NEW
 	LK["PotentialReminder"] = "Vous avez %d nouveaux textes non découverts par l'addon principal. Envisagez de contribuer avec vos entrées en suivant les instructions sur la page de l'addon Lorekeeper !"
+	LK["CopyTitle"] = CALENDAR_COPY_EVENT
+	LK["CopyDescriptTT"] = "Basculer la fenêtre pour copier le texte du livre."
 
 return end
 
@@ -467,6 +475,8 @@ if LOCALE == "itIT" then
 	LK["Settings_PhoneticsTT"] = "Attiva o disattiva l'uso della fonetica personalizzata nella Sintesi Vocale per sostituire la pronuncia di alcuni nomi propri. (Questo è un lavoro in corso e destinato a voci narranti più naturali - vedi la pagina dell'addon per maggiori informazioni. Non tutte le lingue avranno voci disponibili.)"
 	LK["NewTexts"] = NEW
 	LK["PotentialReminder"] = "Hai %d nuovi testi non scoperti dal componente aggiuntivo principale. Considera di contribuire con le tue voci seguendo le istruzioni sulla pagina del componente aggiuntivo Lorekeeper!"
+	LK["CopyTitle"] = CALENDAR_COPY_EVENT
+	LK["CopyDescriptTT"] = "Attiva/disattiva la finestra per copiare il testo del libro."
 
 return end
 
@@ -558,6 +568,8 @@ if LOCALE == "ptBR" then
 	LK["Settings_PhoneticsTT"] = "Alterna o uso de fonética personalizada em Texto para Fala para substituir a pronúncia de certos nomes próprios. (Este é um trabalho em andamento destinado a narradores com vozes mais naturais - veja a página do addon para mais informações. Nem todos os idiomas terão entradas disponíveis.)"
 	LK["NewTexts"] = NEW
 	LK["PotentialReminder"] = "Você tem %d novos textos não descobertos pelo addon principal. Considere contribuir com suas entradas seguindo as instruções na página do addon Lorekeeper!"
+	LK["CopyTitle"] = CALENDAR_COPY_EVENT
+	LK["CopyDescriptTT"] = "Alternar a janela para copiar o texto do livro."
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -651,6 +663,8 @@ if LOCALE == "ruRU" then
 	LK["Settings_PhoneticsTT"] = "Включает или отключает использование пользовательской фонетики в тексте для преобразования речи, чтобы заменить произношение некоторых имен собственных. (Это работа в процессе, предназначенная для более естественных голосов - см. страницу аддона для получения дополнительной информации. Не для всех языков есть доступные записи.)"
 	LK["NewTexts"] = NEW
 	LK["PotentialReminder"] = "У вас %d новых текстов, не обнаруженных основным аддоном. Рассмотрите возможность внесения ваших записей, следуя инструкциям на странице аддона Хранитель знаний!"
+	LK["CopyTitle"] = CALENDAR_COPY_EVENT
+	LK["CopyDescriptTT"] = "Переключить окно для копирования текста книги."
 
 return end
 
@@ -742,6 +756,8 @@ if LOCALE == "koKR" then
 	LK["Settings_PhoneticsTT"] = "일부 고유 명사의 발음을 대체하기 위해 텍스트 음성 변환에서 맞춤 발음을 사용하는 기능을 켭니다. (이 기능은 진행 중이며 자연스러운 음성 해설자를 위해 설계되었습니다 - 추가 정보는 애드온 페이지를 참조하세요. 모든 언어에 항목이 제공되는 것은 아닙니다.)"
 	LK["NewTexts"] = NEW
 	LK["PotentialReminder"] = "코어 애드온에 의해 발견되지 않은 %d개의 새로운 텍스트가 있습니다. 지식의 수호자 애드온 페이지의 지침을 따라 기여를 고려해 보세요!"
+	LK["CopyTitle"] = CALENDAR_COPY_EVENT
+	LK["CopyDescriptTT"] = "책 텍스트를 복사하기 위한 창을 전환합니다."
 
 return end
 
@@ -833,6 +849,8 @@ if LOCALE == "zhCN" then
 	LK["Settings_PhoneticsTT"] = "切换文字转语音中的自定义发音，以替换某些专有名词的发音。(这是一个正在进行中的项目，旨在为更自然的语音播报服务——更多信息请参见插件页面。并非所有语言都有可用的条目。)"
 	LK["NewTexts"] = NEW
 	LK["PotentialReminder"] = "您有 %d 篇新文本未被核心插件发现。请考虑按照 知识守护者 插件页面上的说明贡献您的条目！"
+	LK["CopyTitle"] = CALENDAR_COPY_EVENT
+	LK["CopyDescriptTT"] = "切换窗口以复制书本文本。"
 
 return end
 
@@ -924,5 +942,7 @@ if LOCALE == "zhTW" then
 	LK["Settings_PhoneticsTT"] = "切換文字轉語音中的自定發音，以替換某些專有名詞的發音。(這是一個正在進行中的專案，旨在提供更自然的語音敘述——更多資訊請參見插件頁面。並非所有語言都有可用的項目。)"
 	LK["NewTexts"] = NEW
 	LK["PotentialReminder"] = "您有 %d 篇新文本未被核心插件發現。請考慮按照 知識守護者 插件頁面的說明貢獻您的條目！"
+	LK["CopyTitle"] = CALENDAR_COPY_EVENT
+	LK["CopyDescriptTT"] = "切換窗口以複製書本文字。"
 
 return end

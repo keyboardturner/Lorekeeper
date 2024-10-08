@@ -968,7 +968,7 @@ function LoreKGUI.LibraryPanel.TTSExecute()
 	end
 end
 
-TTSButton:SetPoint("TOPRIGHT", LoreKGUI.LibraryPanel, "TOPRIGHT", -40, -40);
+TTSButton:SetPoint("TOPRIGHT", LoreKGUI.LibraryPanel, "TOPRIGHT", -50, -40);
 TTSButton:SetWidth(24);
 TTSButton:SetHeight(24);
 TTSButton.tex = TTSButton:CreateTexture(nil, "ARTWORK", nil, 1);
@@ -1043,6 +1043,50 @@ TTSButton:SetScript("OnEnter", function()
 	GameTooltip:Show();
 end)
 TTSButton:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end)
+
+LoreKGUI.LibraryPanel.CopyTextButton = CreateFrame("Button", nil, LoreKGUI.LibraryPanel);
+local CopyTextButton = LoreKGUI.LibraryPanel.CopyTextButton;
+CopyTextButton:SetPoint("TOPRIGHT", LoreKGUI.LibraryPanel, "TOPRIGHT", -25, -40);
+CopyTextButton:SetWidth(24);
+CopyTextButton:SetHeight(24);
+CopyTextButton.tex = CopyTextButton:CreateTexture(nil, "ARTWORK", nil, 1);
+CopyTextButton.tex:SetAllPoints(CopyTextButton);
+CopyTextButton.tex:SetTexture("Interface\\AddOns\\Lorekeeper\\Assets\\Textures\\CopyTextIcon");
+CopyTextButton.tex:SetTexCoord(.08, .92, .08, .92);
+CopyTextButton:SetNormalAtlas("chatframe-button-up");
+CopyTextButton:SetPushedAtlas("chatframe-button-down");
+CopyTextButton:SetHighlightAtlas("chatframe-button-highlight");
+
+CopyTextButton:SetScript("OnClick", function(self, button, down)
+	if button == "LeftButton" and down == false then
+		if LoreKGUI.LibraryPanel.CopyTextFrame:IsShown() then
+			LoreKGUI.LibraryPanel.CopyTextFrame:Hide();
+		else
+			LoreKGUI.LibraryPanel.CopyTextFrame:Show();
+		end
+	end
+	--if button == "RightButton" and down == false then
+		-- nothing set here yet
+	--end
+end)
+CopyTextButton:SetScript("OnMouseDown", function()
+	CopyTextButton.tex:SetTexCoord(.08, 1, 0, .92);
+end)
+CopyTextButton:SetScript("OnMouseUp", function()
+	CopyTextButton.tex:SetTexCoord(.08, .92, .08, .92);
+end)
+CopyTextButton:RegisterForClicks("AnyDown", "AnyUp")
+
+CopyTextButton:SetScript("OnEnter", function()
+	GameTooltip:SetOwner(CopyTextButton, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["CopyTitle"]);
+	GameTooltip:AddLine(LK["LeftClick"] ..": " .. LK["CopyDescriptTT"], 1, 1, 1, true);
+	GameTooltip:SetWidth(20);
+	GameTooltip:Show();
+end)
+CopyTextButton:SetScript("OnLeave", function()
 	GameTooltip:Hide();
 end)
 
@@ -1420,13 +1464,27 @@ local function ItemInitializer(button, data)
 				TextDisplayFrame.Type_ID:SetText("", 1, 1, 1, 1, true);
 			end
 			if isHTML then
-				HTMLbody = string.gsub(ReverseNameAndClass(textTable[pageNum]),"<BODY>","<BODY>".."<br />")
+				HTMLbody = string.gsub(ReverseNameAndClass(textTable[pageNum]),"<BODY>","<BODY>".."<br />");
 			end
 			if isHTML then
 				TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(textTable[pageNum]), false);
 			else
 				TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(textTable[pageNum]), false);
 			end
+
+			-- Set the title once before the loop
+			LoreKGUI.LibraryPanel.CopyTextEditBoxText = textTitle .. "\n\n";
+
+			-- Loop over the table of text and append the page number and content
+			for k, v in ipairs(textTable) do
+				-- Append the page number and the page text to the existing text
+				if k ~= #textTable then
+					LoreKGUI.LibraryPanel.CopyTextEditBoxText = LoreKGUI.LibraryPanel.CopyTextEditBoxText .. string.format(PAGE_NUMBER_WITH_MAX, k, #textTable) .. "\n\n" .. v .. "\n\n";
+				else
+					LoreKGUI.LibraryPanel.CopyTextEditBoxText = LoreKGUI.LibraryPanel.CopyTextEditBoxText .. string.format(PAGE_NUMBER_WITH_MAX, k, #textTable) .. "\n\n" .. v;
+				end
+			end
+			LoreKGUI.LibraryPanel.CopyTextEditBox:SetText(LoreKGUI.LibraryPanel.CopyTextEditBoxText);
 		end
 	end);
 	button:RegisterForClicks("AnyUp", "AnyDown");
@@ -1647,6 +1705,60 @@ local function FilterHandler(owner, rootDescription)
 	checkbox4:SetSelectionIgnored();
 
 end
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+-- copy frame
+
+LoreKGUI.LibraryPanel.CopyTextFrame = CreateFrame("Frame", nil, LoreKGUI.LibraryPanel, "BackdropTemplate");
+local CopyTextFrame = LoreKGUI.LibraryPanel.CopyTextFrame;
+CopyTextFrame:SetPoint("TOPLEFT", LoreKGUI.LibraryPanel, "TOPRIGHT", 10, 0);
+CopyTextFrame:SetPoint("BOTTOMLEFT", LoreKGUI.LibraryPanel, "BOTTOMRIGHT", 10, 0);
+CopyTextFrame:SetWidth(400);
+CopyTextFrame:SetBackdrop({
+	bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+	tile = true, tileSize = 16, edgeSize = 16,
+	insets = {left = 4, right = 4, top = 4, bottom = 4}
+});
+CopyTextFrame:SetBackdropColor(0, 0, 0, 1);
+CopyTextFrame.closebutton = CreateFrame("Button", nil, CopyTextFrame, "UIPanelCloseButton");
+CopyTextFrame.closebutton:SetWidth(24);
+CopyTextFrame.closebutton:SetHeight(24);
+CopyTextFrame.closebutton:SetPoint("TOPRIGHT", CopyTextFrame, "TOPRIGHT", 1, 1);
+CopyTextFrame.closebutton:SetScript("OnClick", function(self, button)
+	CopyTextFrame:Hide();
+end)
+
+LoreKGUI.LibraryPanel.copyTextScrollFrame = CreateFrame("ScrollFrame", nil, CopyTextFrame, "ScrollFrameTemplate");
+local copyTextScrollFrame = LoreKGUI.LibraryPanel.copyTextScrollFrame;
+copyTextScrollFrame:SetPoint("TOPLEFT", 10, -10);
+copyTextScrollFrame:SetPoint("BOTTOMRIGHT", -7.5, 0);
+
+LoreKGUI.LibraryPanel.CopyTextEditBox = CreateFrame("EditBox", nil, copyTextScrollFrame);
+local CopyTextEditBox = LoreKGUI.LibraryPanel.CopyTextEditBox;
+CopyTextEditBox:SetMultiLine(true);
+CopyTextEditBox:SetSize(360, 280);
+CopyTextEditBox:SetAutoFocus(false);
+CopyTextEditBox:SetFontObject(GameFontNormal);
+CopyTextEditBox:SetScript("OnEscapePressed", function(self) self:ClearFocus() end);
+LoreKGUI.LibraryPanel.CopyTextEditBoxText = "";
+local CopyTextEditBoxText = LoreKGUI.LibraryPanel.CopyTextEditBoxText;
+CopyTextEditBox:HighlightText();
+
+CopyTextEditBox:SetScript("OnTextChanged", function(self)
+	self:SetText(LoreKGUI.LibraryPanel.CopyTextEditBoxText);
+end)
+copyTextScrollFrame:SetScrollChild(CopyTextEditBox);
+copyTextScrollFrame.ScrollBar:ClearAllPoints();
+copyTextScrollFrame.ScrollBar:SetPoint("TOPLEFT", copyTextScrollFrame, "TOPRIGHT", -12, -18);
+copyTextScrollFrame.ScrollBar:SetPoint("BOTTOMLEFT", copyTextScrollFrame, "BOTTOMRIGHT", -12, 18);
+
+CopyTextFrame:EnableMouse(true);
+CopyTextEditBox:HookScript("OnChar", function(self)
+	self:SetText(LoreKGUI.LibraryPanel.CopyTextEditBoxText);
+end)
+CopyTextFrame:Hide();
 
 
 

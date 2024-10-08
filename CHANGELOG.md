@@ -4,6 +4,8 @@ Weekly LocalData Update 5 - 08/10/24 (54 personal entries + 11 Anonymous User 3 
 
 Plain Letter items which are read and have no creator are now kept under "Miscellaneous". It is literally impossible to get the sender name on these items if they're cross realm or from NPCs, but I guess it's better than nothing.
 
+Added button to allow copying book text data
+
 # 0.1.6
 
 Correctly display the uncollected counter (for real this time).
