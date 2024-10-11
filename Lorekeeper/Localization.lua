@@ -105,6 +105,9 @@ if LOCALE == "enUS" then
 	LK["PotentialReminder"] = "You have %d new texts undiscovered by the core addon. Consider contributing your entries by following the instructions on the Lorekeeper addon page!"
 	LK["CopyTitle"] = CALENDAR_COPY_EVENT
 	LK["CopyDescriptTT"] = "Toggle window to copy book text."
+	LK["TRP3E_Title"] = "Total RP 3: Extended Copy"
+	LK["TRP3E_TitleTT"] = "Convert entry into a Total RP 3: Extended item."
+	LK["TRP3E_Added"] = "Added entry %s to Total RP 3: Extended Database."
 
 return end
 
@@ -198,6 +201,9 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["PotentialReminder"] = "Tienes %d textos nuevos no descubiertos por el addon principal. ¡Considera contribuir con tus entradas siguiendo las instrucciones en la página del addon Lorekeeper!"
 	LK["CopyTitle"] = CALENDAR_COPY_EVENT
 	LK["CopyDescriptTT"] = "Alternar ventana para copiar el texto del libro."
+	LK["TRP3E_Title"] = "Total RP 3: Extended Copia"
+	LK["TRP3E_TitleTT"] = "Convertir entrada en un objeto de Total RP 3: Extended."
+	LK["TRP3E_Added"] = "Entrada %s añadida a la base de datos de Total RP 3: Extended."
 
 return end
 
@@ -291,6 +297,9 @@ if LOCALE == "deDE" then
 	LK["PotentialReminder"] = "Du hast %d neue Texte, die vom Haupt-Addon noch nicht entdeckt wurden. Erwäge, deine Einträge beizutragen, indem du die Anweisungen auf der Lorekeeper-Addon-Seite befolgst!"
 	LK["CopyTitle"] = CALENDAR_COPY_EVENT
 	LK["CopyDescriptTT"] = "Fenster umschalten, um den Buchtext zu kopieren."
+	LK["TRP3E_Title"] = "Total RP 3: Extended Kopie"
+	LK["TRP3E_TitleTT"] = "Eintrag in einen Total RP 3: Extended Gegenstand umwandeln."
+	LK["TRP3E_Added"] = "Eintrag %s zur Total RP 3: Extended Datenbank hinzugefügt."
 
 return end
 
@@ -384,6 +393,9 @@ if LOCALE == "frFR" then
 	LK["PotentialReminder"] = "Vous avez %d nouveaux textes non découverts par l'addon principal. Envisagez de contribuer avec vos entrées en suivant les instructions sur la page de l'addon Lorekeeper !"
 	LK["CopyTitle"] = CALENDAR_COPY_EVENT
 	LK["CopyDescriptTT"] = "Basculer la fenêtre pour copier le texte du livre."
+	LK["TRP3E_Title"] = "Total RP 3: Extended Copie"
+	LK["TRP3E_TitleTT"] = "Convertir l'entrée en un objet Total RP 3: Extended."
+	LK["TRP3E_Added"] = "Entrée %s ajoutée à la base de données Total RP 3: Extended."
 
 return end
 
@@ -477,6 +489,9 @@ if LOCALE == "itIT" then
 	LK["PotentialReminder"] = "Hai %d nuovi testi non scoperti dal componente aggiuntivo principale. Considera di contribuire con le tue voci seguendo le istruzioni sulla pagina del componente aggiuntivo Lorekeeper!"
 	LK["CopyTitle"] = CALENDAR_COPY_EVENT
 	LK["CopyDescriptTT"] = "Attiva/disattiva la finestra per copiare il testo del libro."
+	LK["TRP3E_Title"] = "Total RP 3: Extended Copia"
+	LK["TRP3E_TitleTT"] = "Converti l'elemento in un oggetto di Total RP 3: Extended."
+	LK["TRP3E_Added"] = "Voce %s aggiunta al database di Total RP 3: Extended."
 
 return end
 
@@ -570,6 +585,9 @@ if LOCALE == "ptBR" then
 	LK["PotentialReminder"] = "Você tem %d novos textos não descobertos pelo addon principal. Considere contribuir com suas entradas seguindo as instruções na página do addon Lorekeeper!"
 	LK["CopyTitle"] = CALENDAR_COPY_EVENT
 	LK["CopyDescriptTT"] = "Alternar a janela para copiar o texto do livro."
+	LK["TRP3E_Title"] = "Total RP 3: Extended Cópia"
+	LK["TRP3E_TitleTT"] = "Converter entrada em um item de Total RP 3: Extended."
+	LK["TRP3E_Added"] = "Entrada %s adicionada ao banco de dados de Total RP 3: Extended."
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -665,6 +683,10 @@ if LOCALE == "ruRU" then
 	LK["PotentialReminder"] = "У вас %d новых текстов, не обнаруженных основным аддоном. Рассмотрите возможность внесения ваших записей, следуя инструкциям на странице аддона Хранитель знаний!"
 	LK["CopyTitle"] = CALENDAR_COPY_EVENT
 	LK["CopyDescriptTT"] = "Переключить окно для копирования текста книги."
+	LK["TRP3E_Title"] = "Total RP 3: Extended копия"
+	LK["TRP3E_TitleTT"] = "Преобразовать запись в предмет Total RP 3: Extended."
+	LK["TRP3E_Added"] = "Запись %s добавлена в базу данных Total RP 3: Extended."
+
 
 return end
 
@@ -758,6 +780,10 @@ if LOCALE == "koKR" then
 	LK["PotentialReminder"] = "코어 애드온에 의해 발견되지 않은 %d개의 새로운 텍스트가 있습니다. 지식의 수호자 애드온 페이지의 지침을 따라 기여를 고려해 보세요!"
 	LK["CopyTitle"] = CALENDAR_COPY_EVENT
 	LK["CopyDescriptTT"] = "책 텍스트를 복사하기 위한 창을 전환합니다."
+	LK["TRP3E_Title"] = "Total RP 3: Extended 복사본"
+	LK["TRP3E_TitleTT"] = "항목을 Total RP 3: Extended 아이템으로 변환합니다."
+	LK["TRP3E_Added"] = "항목 %s이(가) Total RP 3: Extended 데이터베이스에 추가되었습니다."
+
 
 return end
 
@@ -851,6 +877,10 @@ if LOCALE == "zhCN" then
 	LK["PotentialReminder"] = "您有 %d 篇新文本未被核心插件发现。请考虑按照 知识守护者 插件页面上的说明贡献您的条目！"
 	LK["CopyTitle"] = CALENDAR_COPY_EVENT
 	LK["CopyDescriptTT"] = "切换窗口以复制书本文本。"
+	LK["TRP3E_Title"] = "Total RP 3: Extended 副本"
+	LK["TRP3E_TitleTT"] = "将条目转换为 Total RP 3: Extended 项目。"
+	LK["TRP3E_Added"] = "已将条目 %s 添加到 Total RP 3: Extended 数据库。"
+
 
 return end
 
@@ -944,5 +974,9 @@ if LOCALE == "zhTW" then
 	LK["PotentialReminder"] = "您有 %d 篇新文本未被核心插件發現。請考慮按照 知識守護者 插件頁面的說明貢獻您的條目！"
 	LK["CopyTitle"] = CALENDAR_COPY_EVENT
 	LK["CopyDescriptTT"] = "切換窗口以複製書本文字。"
+	LK["TRP3E_Title"] = "Total RP 3: Extended 副本"
+	LK["TRP3E_TitleTT"] = "將條目轉換為 Total RP 3: Extended 項目。"
+	LK["TRP3E_Added"] = "已將條目 %s 添加到 Total RP 3: Extended 資料庫。"
+
 
 return end

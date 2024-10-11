@@ -1090,6 +1090,95 @@ CopyTextButton:SetScript("OnLeave", function()
 	GameTooltip:Hide();
 end)
 
+
+LoreKGUI.LibraryPanel.TRP3Button = CreateFrame("Button", nil, LoreKGUI.LibraryPanel);
+local TRP3Button = LoreKGUI.LibraryPanel.TRP3Button;
+TRP3Button:SetPoint("TOPRIGHT", LoreKGUI.LibraryPanel, "TOPRIGHT", -75, -40);
+TRP3Button:SetWidth(24);
+TRP3Button:SetHeight(24);
+TRP3Button.tex = TRP3Button:CreateTexture(nil, "ARTWORK", nil, 1);
+TRP3Button.tex:SetAllPoints(TRP3Button);
+TRP3Button.tex:SetTexture("Interface\\AddOns\\totalRP3\\Resources\\trp3minimap");
+TRP3Button.tex:SetTexCoord(-.08, 1.08, -.08, 1.08);
+TRP3Button:SetNormalAtlas("chatframe-button-up");
+TRP3Button:SetPushedAtlas("chatframe-button-down");
+TRP3Button:SetHighlightAtlas("chatframe-button-highlight");
+
+function TRP3Button.CopyItem()
+	local entryID = TRP3Button.entryID
+	if not entryID or not allData[entryID] then return end
+	 -- If the text table is empty, exit the function
+	if not next(allData[entryID]["base"]["text"]) then
+		if LoreK_DB.settings.debugAdvanced then
+			Print("Something exploded! The entry had no text data!")
+		end
+		return;
+	end
+
+	local generatedID = TRP3_API.utils.str.id();
+	local itemID, data = TRP3_API.extended.tools.createItem(TRP3_API.extended.tools.getDocumentItemData(generatedID), generatedID);
+
+	local name = allData[entryID]["base"]["title"];
+	local innerDocName = name .. "_innerDoc";
+
+	data.BA.NA = name;
+	data.IN.doc.BA.NA = innerDocName;
+	-- Initialize an empty table for the pages
+
+	data.IN.doc.PA = {};
+
+	-- Iterate over the text entries
+	for index, pageText in ipairs(allData[entryID]["base"]["text"]) do
+		table.insert(data.IN.doc.PA, { TX = pageText });
+	end
+
+	Print(string.format(LK["TRP3E_Added"],name));
+
+	-- If you wanna automatically add the book to the main bag
+	TRP3_API.inventory.addItem(nil, itemID, { count = 1, madeBy = data.BA and data.BA.CR });
+end
+
+TRP3Button:SetScript("OnClick", function(self, button, down)
+	if button == "LeftButton" and down == false then
+		TRP3Button.CopyItem();
+	end
+	if button == "RightButton" and down == false then
+
+	end
+end)
+TRP3Button:SetScript("OnMouseDown", function()
+	TRP3Button.tex:SetTexCoord(-.08, 1.16, -.16, 1.08);
+end)
+TRP3Button:SetScript("OnMouseUp", function()
+	TRP3Button.tex:SetTexCoord(-.08, 1.08, -.08, 1.08);
+end)
+TRP3Button:RegisterForClicks("AnyDown", "AnyUp")
+
+
+TRP3Button:SetScript("OnEnter", function()
+	GameTooltip:SetOwner(TRP3Button, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["TRP3E_Title"]);
+	GameTooltip:AddLine(LK["TRP3E_TitleTT"], 1, 1, 1, true);
+	GameTooltip:SetWidth(20);
+	GameTooltip:Show();
+end)
+TRP3Button:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end)
+
+TRP3Button:Hide();
+
+function TRP3Button.ToggleTRP3Button()
+	local IsAddonLoaded = C_AddOns.IsAddOnLoaded("TotalRP3") and C_AddOns.IsAddOnLoaded("totalRP3_Extended");
+
+	if IsAddonLoaded then
+		TRP3Button:Show();
+	else
+		TRP3Button:Hide();
+	end
+end
+
+
 --------------------------------------------------------------------------
 -- scrollBOX rework
 
@@ -1225,7 +1314,7 @@ local function ItemInitializer(button, data)
 							PlaySound(SOUNDKIT.UI_70_ARTIFACT_FORGE_APPEARANCE_LOCKED, "SFX");
 						end)
 					else
-						if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] then
+						if allData[itemID] and allData[itemID]["base"] and allData[itemID]["base"]["hasRead"] then
 							rootDescription:CreateButton(LK["SetFavorite"], function()
 								LoreK_DB["text"][itemID]["base"]["isFavorite"] = true;
 								LoreKMainframe.PopulateList();
@@ -1485,6 +1574,9 @@ local function ItemInitializer(button, data)
 				end
 			end
 			LoreKGUI.LibraryPanel.CopyTextEditBox:SetText(LoreKGUI.LibraryPanel.CopyTextEditBoxText);
+
+			TRP3Button.entryID = itemID
+			TRP3Button.ToggleTRP3Button();
 		end
 	end);
 	button:RegisterForClicks("AnyUp", "AnyDown");
