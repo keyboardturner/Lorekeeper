@@ -160,6 +160,89 @@ local function replaceWithPhonetics(text)
 	end)
 end
 
+local TRP3Replacements = {
+	-- Center aligned headers and paragraphs
+	["<h1%s+align=\"center\">"] = "{h1:c}",
+	["<h2%s+align=\"center\">"] = "{h2:c}",
+	["<h3%s+align=\"center\">"] = "{h3:c}",
+	["<p%s+align=\"center\">"] = "{p:c}",
+	["</p>"] = "{/p}",
+	["<p>"] = "{p}",
+	["</h1>"] = "{/h1}",
+	["</h2>"] = "{/h2}",
+	["</h3>"] = "{/h3}",
+
+	-- Left aligned
+	["<h1%s+align=\"left\">"] = "{h1:l}",
+	["<h2%s+align=\"left\">"] = "{h2:l}",
+	["<h3%s+align=\"left\">"] = "{h3:l}",
+	["<p%s+align=\"left\">"] = "{p:l}",
+
+	-- Right aligned
+	["<h1%s+align=\"right\">"] = "{h1:r}",
+	["<h2%s+align=\"right\">"] = "{h2:r}",
+	["<h3%s+align=\"right\">"] = "{h3:r}",
+	["<p%s+align=\"right\">"] = "{p:r}",
+
+	-- Generic tags
+	["<html>"] = "",
+	["</html>"] = "",
+	["<body>"] = "",
+	["</body>"] = "",
+	["<br/>"] = "\n",
+	["<hr/>"] = "\n",
+
+	-- Handle combined closing tags
+	["</body></html>"] = "",
+	["<html><body>"] = "",
+};
+
+
+local function replaceImageTags(inputText)
+	inputText = inputText:gsub(
+		'<img ([^>]-)/>',
+		function(attributes)
+			local src = attributes:match('src="(.-)"') or "";
+			
+			local width = attributes:match('width="(%d+)"') or 512;
+			local height = attributes:match('height="(%d+)"') or 256;
+			
+			-- Extract the align, and map it to shorthand
+			local align = attributes:match('align="(.-)"') or "";
+			local alignMap = { ["center"] = "c", ["left"] = "l", ["right"] = "r" };
+			local alignShort = alignMap[align] or "";
+			
+			-- Return the formatted replacement
+			return string.format("{img:%s:%s:%s:%s}", src, width, height, alignShort);
+		end
+	)
+	return inputText;
+end
+
+local function replaceHTMLTags(tag, replacementsTable)
+	local lowerTag = tag:lower();
+
+	for pattern, replacement in pairs(replacementsTable) do
+		lowerTag = lowerTag:gsub(pattern, replacement);
+	end
+
+	return lowerTag;
+end
+
+local function TRP3HTMLConvert(text)
+	if not text then return end
+
+	text = text:gsub("(<[^>]+>)", function(tag) 
+		return replaceHTMLTags(tag, TRP3Replacements);
+	end)
+
+	text = replaceImageTags(text);
+
+	return text;
+end
+
+
+
 -- Sort items in a list
 local filteredItems = {};
 
@@ -175,37 +258,6 @@ local function insertItems(dataSource, searchText)
 			end
 		end
 	end
-end
-
--- Function to get nested table value based on a path
-local function getNestedValue(t, path, itemID)
-	local result = t;
-	for part in path:gmatch("%[(.-)%]") do
-		part = part:match('^"(.-)"$') or tonumber(part) or part;
-		result = result[part];
-		if not result then return nil end;
-	end
-	return result;
-end
-
-local function parseFunc(path, itemID)
-
-	-- Attempt to find the data in LK["LocalData"]
-	local localData = getNestedValue(LK["LocalData"], path:gsub("itemID", "\""..itemID.."\""));
-
-	if localData then
-		return localData;
-	end
-
-	-- If not found in LK["LocalData"], attempt to find it in LoreK_DB
-	local savedData = getNestedValue(LoreK_DB, path:gsub("itemID", "\""..itemID.."\""));
-
-	if savedData then
-		return savedData;
-	end
-
-	-- If not found in either table, return nil or an appropriate message
-	return nil; -- or return "Data not found" if you prefer a message
 end
 
 --------------------------------------------------------------------------
@@ -1106,6 +1158,17 @@ TRP3Button:SetHighlightAtlas("chatframe-button-highlight");
 
 function TRP3Button.CopyItem()
 	local entryID = TRP3Button.entryID
+	local iconID = TRP3Button.iconID
+	local iconName
+
+	if type(iconID) == "number" then
+		local LRPM12 = LibStub:GetLibrary("LibRPMedia-1.2");
+		local iconInfo = LRPM12:GetIconInfoByID(iconID);
+		iconName = iconInfo and iconInfo.name;
+	else
+		iconName = "INV_Misc_Book_09";
+	end
+
 	if not entryID or not allData[entryID] then return end
 	 -- If the text table is empty, exit the function
 	if not next(allData[entryID]["base"]["text"]) then
@@ -1123,13 +1186,15 @@ function TRP3Button.CopyItem()
 
 	data.BA.NA = name;
 	data.IN.doc.BA.NA = innerDocName;
+	data.BA.IC = iconName
 	-- Initialize an empty table for the pages
 
 	data.IN.doc.PA = {};
 
 	-- Iterate over the text entries
 	for index, pageText in ipairs(allData[entryID]["base"]["text"]) do
-		table.insert(data.IN.doc.PA, { TX = pageText });
+		local purgedText = TRP3HTMLConvert(pageText)
+		table.insert(data.IN.doc.PA, { TX = purgedText });
 	end
 
 	Print(string.format(LK["TRP3E_Added"],name));
@@ -1401,13 +1466,13 @@ local function ItemInitializer(button, data)
 
 			local maxPages = 1;
 			local pageNum = 1;
-			local textTable = allData[itemID]["base"]["text"]--parseFunc('["text"][itemID]["base"]["text"]', itemID);
+			local textTable = allData[itemID]["base"]["text"]
 			local pageText = textTable[pageNum]
 			local HTMLbody
-			local textTitle = allData[itemID]["base"]["title"]; --parseFunc('["text"][itemID]["base"]["title"]', itemID);
+			local textTitle = allData[itemID]["base"]["title"];
 			local isHTML = string.lower(ReverseNameAndClass(pageText)):find("<html>");
-			local singlePage = allData[itemID]["base"]["singlePage"]; --parseFunc('["text"][itemID]["base"]["singlePage"]', itemID);
-			local material = allData[itemID]["base"]["material"] or "default"; --parseFunc('["text"][itemID]["base"]["material"]', itemID) or "default";
+			local singlePage = allData[itemID]["base"]["singlePage"];
+			local material = allData[itemID]["base"]["material"] or "default";
 			local isHidden = LoreK_DB["settings"]["hideUnread"];
 			local hasRead = false;
 			if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] and LoreK_DB["text"][itemID]["base"]["hasRead"] then
@@ -1576,6 +1641,11 @@ local function ItemInitializer(button, data)
 			LoreKGUI.LibraryPanel.CopyTextEditBox:SetText(LoreKGUI.LibraryPanel.CopyTextEditBoxText);
 
 			TRP3Button.entryID = itemID
+			if type(icon_Q) == "number" then 
+				TRP3Button.iconID = icon_Q
+			else
+				TRP3Button.iconID = "INV_Misc_Book_09"
+			end
 			TRP3Button.ToggleTRP3Button();
 		end
 	end);
