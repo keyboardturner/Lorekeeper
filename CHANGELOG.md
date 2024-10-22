@@ -4,7 +4,7 @@ Added button to convert a Lorekeeper entry into a TRP3: Extended Item.
 
 11.0.5 toc update
 
-Weekly LocalData Update 6 - 22/10/24 ()
+Weekly LocalData Update 6 - 22/10/24 (39 personal entries + 32 Anonymous User 6 entries + 35 Anonymous User 7 entries)
 
 # 0.1.8
 

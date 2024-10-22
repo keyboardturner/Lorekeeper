@@ -3506,6 +3506,16 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 10,
+				["isFinalVersion"] = true,
+			},
+			["copy_1"] = {
+				["title"] = "Treatise on Forms: Skitterlings",
+				["text"] = {
+					'The "writing" of this book is a series of burns, slashes, punctures and strange scents that you lack the sensory organs to fully comprehend the meaning of.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
 			},
 		},
 		["GameObject-454418"] = {
@@ -12773,6 +12783,37 @@ LK["LocalData"] = {
 				["isClassSpecific"] = false,
 				["expansion"] = 8,
 			},
+			["copy_1"] = {
+				["title"] = "The Archivists' Codex",
+				["text"] = {
+					"The Archivists' Codex\r\n\r\nHerein lies a catalogue of notable relics held within the archive. I shall endeavor to contextualize their history and significance as the Maw Walker aids me in recovering them.\r\n\r\nMay the Purpose grant me wisdom.\r\n\r\n--Archivist Roh-Suir",
+					"The Lodestaff\r\n\r\nFor eons I witnessed Roh-Senara hold this staff aloft as she maintained the archive. It passed to me before I was ready, and I can only hope that I fulfill the trust that has been placed in me.\r\n\r\nThe path before me is long and arduous. I am eternally grateful that I need not walk it alone.",
+					"The Talisman of the Eternal Scholar\r\n\r\nThank the Purpose! I had feared that the talisman and all of its history were lost forever. \r\n\r\nRoh-Senara never revealed its power to me. Yet when I hold it, I can feel the weight of my responsibility. It fills me with the strength to carry on.\r\n\r\nSurely, that is power in and of itself.",
+					"Celestial Shadowlands Chart\r\n\r\nI have always been fascinated by maps. A few lines and names scribbled onto parchment, and entire worlds unfurl before the one who reads them.\r\n\r\nSeeing all of the realms at once reminds me of the grandeur of the Purpose... and of my infinitesimal part within it.",
+					"Cipher of Understanding\r\n\r\nSometimes I ponder the nature of language. We learn to communicate, forming symbols that evolve into text. Yet languages vary widely, even within a single realm.\r\n\r\nWould it not be in the best interests of the Purpose if we could all understand each other?",
+					'Everliving Statuette\r\n\r\nThis statue has vexed me for eons. It claims to know much but speaks only in falsehoods. I once told Roh-Senara as much, and to my surprise, she laughed.\r\n\r\n"There is one truth above all others," she said to me as she regarded the relic. "No one knows everything."',
+					"Enigmatic Decrypting Device\r\n\r\nWe attendants are straightforward in our speech. Such is not the case with other beings.\r\n\r\nDuplicity can be easy to detect. But there are more subtle inflections--sarcasm, innuendo, allusion--that often elude me. \r\n\r\nPerhaps I should make use of this device myself.",
+					"Drum of the Death Loa\r\n\r\nTrickster. Liar. Swindler. A few of many words to describe Bwonsamdi. I feel as if I hear his voice whenever this drum is sounded.\r\n\r\nThough he is the loa of Death, it is said that he began as a mortal. Perhaps that is why, despite his title, he always seems so full of life.",
+					"Diviner's Rune Chits\r\n\r\nThis is one of many items within the archive crafted for divination. As I have always been guided by the Purpose, I sometimes ask myself if mortals are frustrated by the ambiguity of their existence.\r\n\r\nAnd sometimes, I wonder if they relish the thrill of possibility.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+			["copy_2"] = {
+				["title"] = "The Archivists' Codex",
+				["text"] = {
+					"The Archivists' Codex\r\n\r\nHerein lies a catalogue of notable relics held within the archive. I shall endeavor to contextualize their history and significance as the Maw Walker aids me in recovering them.\r\n\r\nMay the Purpose grant me wisdom.\r\n\r\n--Archivist Roh-Suir",
+					"The Lodestaff\r\n\r\nFor eons I witnessed Roh-Senara hold this staff aloft as she maintained the archive. It passed to me before I was ready, and I can only hope that I fulfill the trust that has been placed in me.\r\n\r\nThe path before me is long and arduous. I am eternally grateful that I need not walk it alone.",
+					"Book of Binding: The Mad Witch\r\n\r\nRoh-Senara kept the final page of this book in a different wing of the archive, and once chastised me when I took it upon myself to finish its restoration.\r\n\r\nI often wonder what its prisoner did to warrant such a punishment. One can justify terrible acts in the pursuit of knowledge.",
+					"The Talisman of the Eternal Scholar\r\n\r\nThank the Purpose! I had feared that the talisman and all of its history were lost forever. \r\n\r\nRoh-Senara never revealed its power to me. Yet when I hold it, I can feel the weight of my responsibility. It fills me with the strength to carry on.\r\n\r\nSurely, that is power in and of itself.",
+					"Celestial Shadowlands Chart\r\n\r\nI have always been fascinated by maps. A few lines and names scribbled onto parchment, and entire worlds unfurl before the one who reads them.\r\n\r\nSeeing all of the realms at once reminds me of the grandeur of the Purpose... and of my infinitesimal part within it.",
+					"Diviner's Rune Chits\r\n\r\nThis is one of many items within the archive crafted for divination. As I have always been guided by the Purpose, I sometimes ask myself if mortals are frustrated by the ambiguity of their existence.\r\n\r\nAnd sometimes, I wonder if they relish the thrill of possibility.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
 		},
 		["GameObject-437576"] = {
 			["base"] = {
@@ -17731,20 +17772,6 @@ LK["LocalData"] = {
 				["expansion"] = 10,
 			},
 		},
-		["GameObject-454330"] = {
-			["base"] = {
-				["title"] = "Treatise on Forms: Skitterlings",
-				["text"] = {
-					'The "writing" of this book is a series of burns, slashes, punctures and strange scents that you lack the sensory organs to fully comprehend the meaning of.',
-				},
-				["singlePage"] = true,
-				["pageCount"] = 0,
-				["material"] = "Parchment",
-				["isObtainable"] = true,
-				["isClassSpecific"] = false,
-				["expansion"] = 10,
-			},
-		},
 		["GameObject-463993"] = {
 			["base"] = {
 				["title"] = "Observational Notes: Ramoliths",
@@ -17795,14 +17822,30 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "Entomological Essay on Grubs, Volume 1",
 				["text"] = {
+					"Entomological Essay on Grubs, Vol. 1\r\nBy Wormcaller Iz'tikrine\r\n\r\nIt is not enough to exert our will upon bilateral feeders. We nerubians did not achieve dominance of the deeps by ignoring its strengths and limitations.\r\n\r\nI present to you, dear reader, the worm.\r\n\r\nEyeless, noseless, and devoid of petty things like sentience or sapience, the worm is a creature born in the darkness with an endless desire to feed.\r\n\r\nIt is aware of its surroundings through reverberations and resonances. In this way it has laid low armies of wanton guests, consumed vast hosts of parasites or invasive growths, and survived, content in its gluttony.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2255] = {
+						0.4001979231834412,
+						0.3987372517585754,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+				["isFinalVersion"] = true,
+			},
+			["copy_1"] = {
+				["title"] = "Entomological Essay on Grubs, Volume 1",
+				["text"] = {
 					'The "writing" of this book is a series of burns, slashes, punctures and strange scents that you lack the sensory organs to fully comprehend the meaning of.',
 				},
 				["singlePage"] = true,
 				["pageCount"] = 0,
 				["material"] = "Parchment",
-				["isObtainable"] = true,
-				["isClassSpecific"] = false,
-				["expansion"] = 10,
 			},
 		},
 		
@@ -19932,6 +19975,1947 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 1,
+			},
+		},
+
+
+		-- user submission #6
+
+		["Item-204335"] = {
+			["base"] = {
+				["title"] = "A Song of the Depths",
+				["text"] = {
+					"Rise, rise! Our Queen calls to us from beyond the Umbral Veil. She has transcended the Circle of Stars and basks in her eternal grandeur!\r\n\r\nThe time we have long awaited is nigh.\r\n\r\nEven now, the Harbinger gathers the children of the first flesh to reclaim what was lost. They must remember their vows and serve those to whom they owe fealty.",
+					"While they toil in the deep places, we will journey to the shores of dragon lands, to the blessed isle where the Worldbreaker first embraced the whispers.\r\n\r\nAs one storm recedes, another rises. The torches have been lit. The secrets he buried will strike as a dagger into the hearts of his kin!",
+					"The Harbinger speaks of a primal power that seeks the end of Order. Such rage can be bent to serve our ends.\r\n\r\nA hunger lost to the ages will be reclaimed.\r\n\r\nA dark heart left broken awaits the taking.",
+					"When these things come to pass, the Harbinger will fulfill the final prophecy and complete the awakening.\r\n\r\nOnly then shall our Queen return to reign over sea and sky and earth. We must make ready.\r\n\r\nRise, rise! Soon all that was hidden will be revealed.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-127143"] = {
+			["base"] = {
+				["title"] = "Faded Treasure Map",
+				["text"] = {
+					"If the Darkmoon Treasure you wish to find, then begin your search by using your mind.\r\n\r\nThe next clue that can be found, is on a home you can take out of town.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-127144"] = {
+			["base"] = {
+				["title"] = "Damp Note",
+				["text"] = {
+					"You've found my note and an ocean breeze, but the next clue won't come with such ease.\r\n\r\nTo find the spot where your hint hides, go to the place where four cats ride.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-161437"] = {
+			["base"] = {
+				["title"] = "Shipping Contract",
+				["text"] = {
+					'This Contract for Services is made effective by and between the Ashvane Trading Company of Lady Ashvane (collectively known as the "Client") and Sweete Enterprises of Freehold (Collectively known as the "Carrier").\r\n\r\nDESCRIPTION OF SERVICES: The Carrier will supply to the Client shipping services for one (1) Exiled Kul Tiran (henceforth described as the "Cargo") as described in the following document (henceforth known as the "Services"). All shipments are to be sent as soon as prevailing weather make possible.',
+					"A. Carrier shall promptly and efficiently receive, ship, and deliver alive, within Client established schedules and without delay, the Cargo entrusted to it hereunder, whether received from the Client or from third parties at the request of the Client.\r\n\r\nB. Cosignee shall be present at the time of delivery of the Cargo shipped under this Agreement.\r\n\r\nC. The Client shall provide the necessary security precautions for conveying this cargo and preventing the Cargo from breaching contract. See Section 3.\r\n\r\nD. The Carrier will respect the security precautions necessary to transport this cargo to the final destination and will adhere to all posted and verbal warnings. Security features are defined in Section 4.\r\n\r\nE. Breach of containment of the Cargo due to mishandling by The Carrier will incur a 20,000 gold fine which the Carrier agrees to pay to the Client. \r\n\r\nF. In the event of a breach in containment, the Carrier waives the right to claim damages and recompense from the Client.",
+					'PAYMENT. Payment shall be made to Sweete Enterprises of Freehold in the amount of 10,000 Gold upon completion of the shipping services described in this contract, with an additional 2,000 gold to cover "Hazard pay".\r\n\r\nFailure of the Carrier to deliver goods in any condition other than "Alive, contained and in good condition" will be understood to be a breach of contract and the Carrier will incur the 20,000 gold penalty.\r\n\r\nPERFORMANCE OF SERVICES Carrier agrees to meet Client\'s distinct transit and pricing requirements. Carrier agrees that Carrier will perform its services under this Agreement un accordance with the highest standards of industry.',
+					"Section 1: Terms of Liability.\r\n\r\nThe Client Agrees to pay to the Carrier...\r\n\r\n<The contract goes on for a dozen pages, the last three of which are in very fine print.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-185918"] = {
+			["base"] = {
+				["title"] = "Translated Cryptograms",
+				["text"] = {
+					"Lady Mel'tranix, I charge you with securing information regarding the asset. We must know both of the security and maintenance of the asset's location.",
+					"Kisdranath, stall them. Find any way and how to slow the advancing power of the Maw Walker and their allies. If there is a way to choke their economy, do so. If there is a way for supplies to go missing, make it happen.",
+					"Nal'ragas, do not kill Renathal. I know you will be tempted but we still need him. And his death would... upset... the Master.",
+					"Jennath, be mindful of the forces being sent to the Maw. If Sinfall is foolish enough to distribute forces into that place you must find a way to infiltrate them and ensure their defeat.",
+					"Thaliatroven, infiltrate the dredgers. Get to know them. They can go places most cannot.",
+					"Mof'ralan, search the archives.\r\n\r\nSinfall is home to ancient knowledge and we must learn of what happened to Kivretan. She has been lost to us for long enough. It is time we recovered her.",
+					"Solener, I want a detailed log of all peoples entering or leaving Sinfall, frequency, guard rotation, and so on. \r\n\r\nMost importantly, watch the dredgers. We will need them for the final stage of the plan.",
+					"Sathrovarr, get out of there now.\r\n\r\nYour identity is about to be discovered. Sybille walks the halls of Sinfall once again and she will remember the smell of your aura. \r\n\r\nLeave before it is too late, but avoid arousing suspicions. Fake your death if you must.",
+					"Mal'Ganis, yours shall be the greatest challenge. Infiltrate Renathal's inner circle. Walk side by side with our brother and ensure he comes to no harm. \r\n\r\nEndear yourself to the Azerothians and allay their suspicions. When the time is right, we will give you the honor of revealing my plan to Renathal.",
+					"Detheroc, if you fail us again I will personally flay you. When Mal'Ganis springs his trap, you are responsible for recovering the asset.\r\n\r\nDo. Not. Fail. Me.\r\n\r\nThis is the Master's final order, and I will see it executed correctly.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["Item-95411"] = {
+			["base"] = {
+				["title"] = "Torn Zandalari Journal",
+				["text"] = {
+					'I take back everything I said about this place. When Zul landed us on the northern shores of the mainland, I thought this was the promised land, the salvation of the Zandalari. The fishing villages fell easily. Nobody put up a battle \'til those dark ones came along - the "Shado-Pan." They don\'t stand up and fight. They come at us from the trees. Sometimes I swear they walk through walls. Always behind us, always out of the corner of our eyes - never fighting from the front.\n\nOnce we had that old mogu king\'s corpse, we were out of there. Mogu, mogu, mogu. I could see why Zul wanted them as our allies: I saw the glory of their ancient empire firsthand when we fought our way through the Valley of Emperors.',
+					"But that was weeks ago. Now I'm slogging through a swamp, digging up statues in the rain. The mogu look down on us. I can see it, at least in the ones that have eyes. Some of them are just stones, with stones for hearts and stones for brains.\n\nThey're using us. But Zul says they'll keep their word once they're in power again. And Zul... he just seems to KNOW things.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 4,
+			},
+		},
+		["Item-211395"] = {
+			["base"] = {
+				["title"] = "Ashphodel Research Notes",
+				["text"] = {
+					"<The page is dotted with scratched out observation notes, scribbled diagrams and a barely legible journal entry.>\r\n\r\n\r\nOur experiment was a success!\r\n\r\n\r\nThe flame pollen from our newly created specimens have proven a viable means for natural flame infusion. We've not only observed the successful transformation of other plant life, but some of the local wildlife as well.\r\n\r\n\r\nIt is curious to note, however, that our pollen has little to no effect on the more powerful spirits of the Dream.\r\n\r\n\r\nNeither dryad nor treant appeared to be affected by the pollen. I theorize the more powerful the denizen, the more resistant they may be to our magic.\r\n|nI've recommended we focus our efforts on the local wildlife for the next stage in our plan. Firodren has been updated on our progress and Chardryn has ordered the initiation of phase two.\r\n\r\n\r\nOur guards have isolated a small glade and transplanted a few dozen grafts of our Ashphodel specimen to test its effects on the wildlife.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-140263"] = {
+			["base"] = {
+				["title"] = "Worn Pamphlet",
+				["text"] = {
+					"THE EMERALD ASCENSION\r\n\r\nFear not the time when great Sargeras's shadow eclipses the sun. \r\n\r\nThat is the moment of our ascension. \r\n\r\nDeath will follow, but it is only a doorway. \r\n\r\nStep through, and you will shed your frail skin and take on a form kissed by emerald fire.\r\n\r\nDig the ash from your eyes, and you will find a higher purpose at Sargeras's side.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-163606"] = {
+			["base"] = {
+				["title"] = "Note From Leo",
+				["text"] = {
+					"$PLAYER_NAME$,\r\n\r\nDon't have your share of the treasure yet, maybe next week.\r\n\r\nHope this holds you over till then!\r\n\r\nLeo Shealds",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-204328"] = {
+			["base"] = {
+				["title"] = "Return of the Nightsquall",
+				["text"] = {
+					"By now ye all know the many legends o' Captain Nightsquall. The wild-eyed night elf who ran away from his forest home as a boy to sign on with a hardy pirate crew. How through boldness and treachery he rose up the ranks to claim a ship o' his own.\r\n\r\nNever was there a more darin' captain in all the seas than the Nightsquall!",
+					"He sailed through the mists to Pandaria an age before the Alliance and Horde ever found it, and made a fortune haulin' kegs o' brew to the far corners of the world.\r\n\r\nHe plundered the treasure rooms o' old King Rastakhan and sacked Kul Tiran villages right under the noses o' those haughty Proudmoores!",
+					"Nightsquall has raided more islands in the South Seas than any captain who ever sailed. They say he's stashed so much gold beneath the sands o' Tel'Abim that the island now rises ten feet higher than when he first landed on it!\r\n\r\nBut don't ye be thinkin' about stealin' his booty, now. Many's the tale o' a greedy lass or laddie who tried to outsmart the Nightsquall, only to end up feedin' the fishes!",
+					"Ye've heard these stories a thousand times, I know. Legends traded from one deckhand to another, until one might think the tales grew in the tellin'. Some might wonder if they could even have a grain o' truth between 'em.\r\n\r\nWell, let me tell ye, they be true as starlight! I sailed with the Nightsquall for a spell, and seen him do all these things and a hundred more!",
+					"O' course, ye've likely heard the greatest tale o' them all. How after buildin' a brand new flagship he set sail for the west, promisin' not to return until he'd seen all there was o' the world and taken his share.\r\n\r\nThat was years ago, and many tides have passed without so much as a whisper.",
+					"Even an old salt like me started to wonder if he'd met his match.\r\n\r\nThat what they say about the western storms be true, that monsters and magic make the ocean impossible to cross. \r\n\r\nThat in payment for his pride, it was now Nightsquall who be feedin' the fishes in the halls o' Neptulon.",
+					"But hear me now, and know I be speakin' true. The Nightsquall has returned!\r\n\r\nHe ain't tellin' tales o' what he seen on his journeys, but the hulls o' the ships that made it back be full to burstin' with treasures like ye've never seen before!\r\n\r\nAnd that ain't all. The Nightsquall says he's got a new prize in his crosshairs. And to claim it, he aims to build the biggest pirate fleet the world has ever known!",
+					"So whether ye be Irontide or Bloodsail, Defias or Freebooter, all are welcome to sail under the Nightsquall's flag. Follow him as your new admiral and no navy on Azeroth will have a prayer against us!\r\n\r\nIt all starts with the Dragon Isles. Plunder its secrets in the name o' Dread Admiral Nightsquall, and from there, the world is ours for the takin'!",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-200590"] = {
+			["base"] = {
+				["title"] = "Carefully Rolled Message",
+				["text"] = {
+					"<The faded lettering scrawled across the parchment appears to be written in coal.>\r\n\r\nI dunnae have too long... 'bout as long as this here piece of coal lasts.\r\n\r\nWord of a new waygate has made it's way home. Thought ye'd like tae know.\r\n\r\nFind me if yer interested, and I hope ye are!\r\n\r\nYer pal,\r\n\r\nThaelin\r\n\r\nP.S. Be sure to toss our little friend a treat or--\r\n\r\n<The charcoal must have run out. The lettering fades to nothingness.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-204317"] = {
+			["base"] = {
+				["title"] = "Words of the Wyrmslayer",
+				["text"] = {
+					"The storms have passed. The dragon we were told of, the mighty Storm-Eater, is gone.\r\n\r\nAnd along with her, the cowardly dragonkin who once served Deathwing. These weakling dracthyr fled like wolf pups. Ha!",
+					"This isle is ours to claim. Any treasures left behind belong to me! \r\n\r\nBut we must move quickly. Dragons are greedy beasts. They will return soon enough.\r\n\r\nI will not be denied what is mine by right!",
+					"Let the dragons come! I will strike them down, as I did on the day my name was earned. For I am the Wyrmslayer!\r\n\r\nGlory eternal will be mine. And should I fall, I will carry the skulls of dragons with me into the Halls of Valor. Odyn be praised!",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-204181"] = {
+			["base"] = {
+				["title"] = "Opera of the Aspects",
+				["text"] = {
+					"A heroic figure stands at the top of a cliff, the wind catching his cape around him heroically. It is Neltharion, savior of dragonkind.\r\n\r\nMalygos - Neltharion, thank you for saving us all. You are so brave.\r\nYsera - And heroic.\r\nAlexstrasza - And handsome.\r\nNeltharion - Thank you, you are too kind.\r\nNozdormu - And humble.\r\nNeltharion - Now that we have defeated...",
+					"<The rest of the pages are blank.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-200593"] = {
+			["base"] = {
+				["title"] = "Sealed Expedition Note",
+				["text"] = {
+					"Adventurer,\r\n\r\nMore stones of a curious nature were uncovered durin' some of our expeditionary work. Come an' meet up with me when ye have a chance.\r\n\r\nHope yer adventures are treatin' ye well! \r\n\r\n- Thaelin",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-95409"] = {
+			["base"] = {
+				["title"] = "Iron-Bound Zandalari Journal",
+				["text"] = {
+					"I never liked soothsayers. Especially never liked the dark ones. Those eyes all sunken, telling me things I don't want to hear but know will come true. And Zul, he was the worst of them. Worst because he always saw the worst things. Worst because there's never anything you can do to stop it.\n\nWhen King Rastakhan ordered me to join Zul's fleet, I thought I'd done something to offend the Council. I thought he was sacrificing me and the others just to get Zul off his back and away from Zandalar. I cursed my luck: ferrying that old prophet all around the oceans, meeting with those disgusting Sandfury trolls or crazed Drakkari.",
+					"That was weeks ago. Before I heard what happened to the capitol.\n\nI see now why the spirits sent me here. We Zandalari got to find a new home, and Zul was the only one looking. Zul, and his cursed, cursed eyes.\n\nCan you see a future for us, dark prophet? What now, old troll? What now?",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 4,
+			},
+		},
+		["Item-95408"] = {
+			["base"] = {
+				["title"] = "Waterlogged Zandalari Journal",
+				["text"] = {
+					"I can still see it, still remember how I felt when I laid eyes on it. Blinking to wake up, telling myself I was already awake. The great palace listing to one side, like a drunk hunched against the wall. Still gleaming and gold. Was Rastakhan still inside? King of a crooked throne.\n\nThe morning sun glimmering off the seawater that crept into the forum. Pretty but for the jagged fissure tearing up the tile. We thought that was the worst of it. But the Cataclysm had only begun.",
+					"Water up a foot by the next evening. A week later, high tide came up to the market awnings. Still the sun shone. Like the world was saying it was sorry. Sorry to take your home. Sorry to give it to the sea.\n\nWorld don't get off that easy.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 4,
+			},
+		},
+		["Item-127147"] = {
+			["base"] = {
+				["title"] = "Moonlit Note",
+				["text"] = {
+					"This is it, the final one! We hope you've had a lot of fun!\r\n\r\nYou seek a sail, not white or black, it must be the color of Silas' hat.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-119348"] = {
+			["base"] = {
+				["title"] = "Admiral Taylor's Garrison Log",
+				["text"] = {
+					'Day 0 \r\nArrived on the coast with most of our gear intact. Finn assures me this is an ideal location. Edward and Claudia constantly bickering since that last arakkoa attack. Ephial is obsessing over "ley lines" (whatever they are.) Can\'t even agree on the date since we went through the portal - feels like autumn? I\'m calling this day 0.',
+					"Day 2\r\nAbout a dozen lumberjacks have disappeared. The one who made it back had a wasp stinger in his gut the length of my arm. Dumberlin and Ephial offered to go out with a war party and clear out the place. I dispatched them with a couple followers. We desperately need the lumber.",
+					'Day 4\r\nVisit from Vindicator Maraad. He\'s pleased with our progress. Suggested that we send laborers to a draenei town called "Elodor" to acquire food. I turned him down - no way I\'m sending my best people halfway across the world for some food. I\'ve made other arrangements. That friendly Pandaren, Madam Goya, has offered cartloads of food at reasonable prices. Seems on the up-and-up.',
+					"Day 7\r\nIron Horde attack! Thank the Light we've got our walls up. Dumberlin was an absolute beast during the attack. Lots of good men were lost, though, many with wounds on their backs. Ephial missing for hours after the attack. Something about this stinks. Gave the laborers the day off to bury the dead. Work will resume tomorrow. Barracks nearly complete. Almost have enough resources for an armory.",
+					'Day 12\r\nSir Edward arrived in the town hall today with the Black Prince Wrathion in tow. Hard to tell who was the captive and who was the captor. Wrathion seeks asylum in my garrison, claims he did something to cheese off the ogres. Edward barked that Wrathion is a fugitive from the Alliance. Lady Claudia and her troops fanned out with guns drawn. Tense situation. Told Wrathion he was welcome as our "guest," provided he stayed under house arrest and full-time guard. Messages dispatched to the King. Black Dragon now ensconced in my garrison - what could go wrong?',
+					'Day 15\r\nBarracks complete. Armory in progress. Huge shipment of resources arrived this morning - a "gift" from Wrathion to build us an inn. How does he do that? Went to speak with Wrathion and he told me to keep an eye on Ephial. I don\'t trust either of them.',
+					"Day 16\r\nTook some of guards aside and offered them substantial hazard pay to maintain a 24-hour watch on Wrathion. They lowered their eyes and admitted that Wrathion was already paying them to keep an eye on ME. That son of a...",
+					'Day 21 \r\nGot a letter from Gurgthock inviting us to participate in the Ring of Blood. Potential to really show what the Alliance is capable of. Will shift the prize money to Goya. Set out with Edward and Claudia to "Win one for the Wrynn." Left Dunberlin in charge of security.',
+					"Day 25\r\nVictorious! Edward can take a hell of a beating in the arena.",
+					"Day 27\r\nMade it back. Chaos at the garrison. Goya's supplies never arrived. Dunberlin thought martial law was a good idea. He's taking orders from Ephial now. Wrathion nowhere to be found. Took some of my best followers with him. Time to roll up our sleeves and fix this.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-140281"] = {
+			["base"] = {
+				["title"] = "Ominous Pamphlet",
+				["text"] = {
+					"DEFY THE LEGION\r\n\r\nNo one can save us from the demons, but we can deny them the glory of their victory. \r\n\r\nBurn your worldly possessions. Set the streets alight and give in to the temptations of chaos. Do not stop the rampage until only dust and bones remain for the Legion to conquer.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-127146"] = {
+			["base"] = {
+				["title"] = "Dirty Note",
+				["text"] = {
+					"To find the next, don't follow the signs, just listen to the very next rhyme.\r\n\r\nWhat you seek is a penitent man, the smaller of two, if you can.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-140264"] = {
+			["base"] = {
+				["title"] = "Damp Pamphlet",
+				["text"] = {
+					'DISASTER PREPAREDNESS: DEMON INVASION EDITION\r\n\r\n<The scroll contains a list of instructions on how to prepare for the Burning Legion\'s invasion, but the items have been crossed out and are illegible. The phrases "burn everything" and "nothing can save you" have been scrawled in blood over and over again across the parchment.>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-147527"] = {
+			["base"] = {
+				["title"] = "Damp Pamphlet",
+				["text"] = {
+					"AN EMERALD DAWN\r\n\r\nAn emerald sun dawns in the vault of the heavens, but it casts no shadow.\r\n\r\nThe world lifts her voice in terror, but only one can hear her cries.\r\n\r\nFrom the space that is everywhere and nowhere, the crooked serpent feasts on stars.\r\n\r\nIt has no eyes to see, but it dreams of infinite endings and beginnings.\r\n\r\n<Strange glyphs and writing in an unknown language cover the rest of the scroll.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-204873"] = {
+			["base"] = {
+				["title"] = "Tied-up Envelope",
+				["text"] = {
+					"Me friend!\r\n\r\nIf I am right, we may have another chance tae expand our Waygate network!\r\n\r\nDrop by at yer earliest convenience!\r\n\r\n- Thaelin",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-140280"] = {
+			["base"] = {
+				["title"] = "Stained Pamphlet",
+				["text"] = {
+					"THE END OF ALL THINGS\r\n\r\nThe crooked serpent with no eyes is watching from the endless sky.\r\n\r\nForked tongues flicker through the black pits in dead stars.\r\n\r\nThe veil between dream and dreamer slides away like skin from bone.\r\n\r\nAnd even the darkness howls for the light it once despised.\r\n\r\n<The rest of the note is illegible, covered in strange glyphs and scribbles.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-116071"] = {
+			["base"] = {
+				["title"] = "A Collection of Poems",
+				["text"] = {
+					"My poems\r\nby Uratok\r\n\r\nold puddle...\r\na newt hops in\r\nwater's sound\r\n\r\nthe wind of Frostfire\r\nI've cloak on my shoulder!\r\na gift from Erda",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-114001"] = {
+			["base"] = {
+				["title"] = "Decoded Message 001-168",
+				["text"] = {
+					"Gift supply decreasing to inadequate levels.  Use of war surplus authorized.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-140267"] = {
+			["base"] = {
+				["title"] = "Crumpled Pamphlet",
+				["text"] = {
+					"EMBRACE THE LEGION\r\n\r\nThe demons are not the enemy we have been led to believe. They seek only to purge the corruption that rots at the heart of the Horde and the Alliance. Our leaders want us to think otherwise. They want us to fight the demons so that they can keep their precious thrones and lofty titles. \r\n\r\nDo not die for them. When the demons come, lay down your arms, and they will show you compassion.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-204316"] = {
+			["base"] = {
+				["title"] = "A Soldier's Journal",
+				["text"] = {
+					"Every day is the same. We train. We train again. Eat. Sleep. Wake. Train.\r\n\r\nThe scalecommanders say this should be enough for us. But I do not believe it is.\r\n\r\nNot for me.",
+					"There must be more to life than battle, even for soldiers. Yet the Earth-Warder demands we focus upon nothing else.\r\n\r\nAnd when he stands before us, the Oathbinder aglow upon his fist, I do feel a unity of purpose. A connection to my kin.",
+					"But off the training grounds of the Reach, in the quiet of the creche, I feel another calling.\r\n \r\nI wish to sing. To dance. To love another whose heart beats as mine does!\r\n\r\nYet I dare not speak of these desires. I am commanded to focus on my duty.",
+					"Will I ever be more than a soldier? Eat. Sleep. Wake. Train.\r\n\r\nWhat world awaits beyond these shores? Eat. Sleep. Wake. Train.\r\n\r\nShould I survive the battle the Earth-Warder says is coming, I must find the answer to the questions that burn inside me.\r\n\r\nI must...",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-140262"] = {
+			["base"] = {
+				["title"] = "Tattered Pamphlet",
+				["text"] = {
+					"FOR SALE: EZ-123 BUNKER BUILDER\r\n\r\nThe end is approaching, but you and your loved ones can survive with your very own B.B.! The Bunker Builder is the latest in gnomish engineering. Simple to operate, small enough for a mountain ram to carry, the B.B. can deploy in almost any terrain (see disclaimers). With the press of a button, the device will tunnel deep underground and hollow out a cozy cavern where you can live in peace. Each purchase comes with two air fresheners, a rope ladder (see disclaimers), and an operator's manual.\r\n\r\nDisclaimers: Not for use in sand, water, or Dalaran. Deploy rope ladder BEFORE entering the B.B. tunnel.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-151761"] = {
+			["base"] = {
+				["title"] = "Scribbled Ravings",
+				["text"] = {
+					"kill the dragon\r\nkill the dragon\r\nkill the\r\n  DRAGON\r\n\r\nit's not a gnome, it's a DRAGON\r\n\r\nnot even a good dragon\r\n\r\nSLAY THE DRAGON\r\n\r\ncrossed the timeways one too many times, didn't you? made a few enemies? maybe caused a paradox you couldn't reconcile?\r\n\r\nthe demons, the elementals, the humans and orcs... they're all on MY SIDE NOT YOURS\r\n\r\nNOW YOU'VE GONE AND DONE IT, WHELP",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-127145"] = {
+			["base"] = {
+				["title"] = "Faded Note",
+				["text"] = {
+					"Another note, another tease, it's enough to make you weak in the knees!\r\n\r\nYou're almost there, look for your next hint, next to a fellow that was negligent.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-160109"] = {
+			["base"] = {
+				["title"] = "The Fall of Corlain",
+				["text"] = {
+					"It has been a fortnight since anyone in Corlain has seen or heard from Lord or Lady Waycrest. Solicitors are turned back by the gate guards with no word on their condition.\r\n\r\nRumors are abound that the lord is suffering from a wasting sickness, and that the lady is so grief-stricken she has locked herself in his chambers.\r\n\r\nThese are truly dark times for Drustvar.",
+					"This is the third night that our Maggie has secreted away when she thought her father and I were asleep. I tried to follow, but I lost her outside the courtyard to Waycrest Manor.\r\n\r\nThe Daveys said that their girl has also gone missing some nights, only to return as mysteriously as she left, acting as if nothing is the matter. \r\n\r\nHer father swears he saw her enter the manor, but that's preposterous. Nobody has been in or out of that manor in weeks!",
+					"At last, there is a light of hope for Drustvar. Lady Waycrest emerged from the manor today to help assuage the fears of the townspeople due to Lord Waycrest's absence. \r\n\r\nShe assured us that the Lord is in good health, but it was rather peculiar the way that she ordered about the guards. She had never wielded that kind of authority before.\r\n\r\nI'm sure I'm just overthinking it. After the trials of the past few weeks, we should take whatever blessings we can get.",
+					'Ceridwen keeps trying to get me to join her "sister circle."\r\n\r\nI don\'t like it. Every day that passes I see more and more girls about town wearing the wicker charm. At this pace, the whole town is going to join before I know it.\r\n\r\nAnd the men don\'t even seem to notice - they\'re even more oblivious than usual. It\'s almost as if they\'re under some sort of spell.',
+					"There has been a third disappearance this week. The guards insist there is nothing to be worried about, but I know better.\r\n\r\nI spoke with Mr. Knowlton just last night, and he saw the body of Jon the stablehand, who was the first to go missing. The image was burned in his brain, he said - profane markings covering the wall of his servant's shack, and his body sprawled on his cart, a gaping hole in his chest where his heart used to be.\r\n\r\nKnowlton is gone, now, and the guards are silent.\r\n\r\nI feel that Corlain is no longer safe for me and my family. Once we are able, we should relocate to Arom's Stand.",
+					'To whomever reads this - do not trust the sisterhood\'s magic!\r\n\r\nI don\'t know where they came from, but their circle grew in secret in the dark places of Corlain. Now, they have taken to the streets, killing all who stand in their way and hunting the others with their wicker abominations!\r\n\r\nNobody knows what they want. All they speak of is revenge for their master, and glory to their traitorous leader, "The Mother."\r\n\r\nI don\'t think I will make it out of Corlain alive. I can only hope my words reach someone who can take action. Do not allow these "sisters" into your town! Their corruption will devour it from the inside, just like it has Corlain!',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+
+		-- end of user submission #6
+
+		-- user submission #7
+
+
+		["GameObject-212212"] = {
+			["base"] = {
+				["title"] = "Legacy of the Masters (Part 1)",
+				["text"] = {
+					"Read, pupil, and know that I am called Jubeka Shadowbreaker, and it is my duty to share some of the wisdom of our order with those who have the skill to read this document.\r\n\r\nAfter the fall of Deathwing, it was clear that the sorcery of the warlocks was sorely lacking in bite when compared to the threats facing Azeroth. So our council of six warlocks gathered to discuss how best to investigate the new magics witnessed by these threats.",
+					'At first, the six of us refused to cooperate, tossing blame and bickering as easily as shadowbolts and curses. Finally, after several nights, the human Kanrethad spoke out:\n\n"In the wake of the Cataclysm, the rising tensions between the Horde and Alliance have driven the greatest heroes of Azeroth to train for war. Warriors have readied their war banners, the Death Knights of Acherus have learned to control the undead and it is even said the Mages are researching ways to undo time itself."\n\n"The relentless darkness which bathed Azeroth has been pushed back. Cho\'gall is slain and the remnants of the Twilight\'s Hammer cult have been scattered. Ragnaros is defeated and his armies forced back into the Firelands. Deathwing lies torn apart and his Twilight drakes obliterated. However, the powers they commanded are not so easily forgotten... powers untapped and ripe for the taking."',
+					'"In fact, among us now stands several who have faced their power firsthand," he said, pointing at a hooded figure across the room. A deep, sinister laugh echoed from the hood as it burst into flames and burned away to reveal the orc enchanter, Ritssyn.\n\n"It is true, pink skin, I was there when the Firelord was vanquished. The intensity of his flame was unlike anything you can imagine." The burning glow of Ritssyn\'s eyes cast eerie shadows over his burn-scarred face and thick-tusked grin.\n\n"Untrue," spat a sharp, feminine voice.  Shinfel, a Blood Elf adorned with sharp spikes of Twilight elementium, glared across the table, "Until you\'ve been a prisoner within your own mind, you know nothing of horror." Shinfel\'s blood had been corrupted during the fight with Cho\'gall and her arms were now covered in black marks left behind by the corruption that had erupted from her skin.  The experience had only served to increase the intensity of her sadism.',
+					'Shinfel continued, "Even the Firelord\'s flames were overshadowed by the raw chaos unleashed by the Destroyer."  She paused a moment and glanced to the worgen who remained eerily silent. Zinnin had been present when Deathwing was unmade and had not spoken a word since. Zinnin\'s eyes narrowed for a moment, then snarled at Ritssyn. \r\n\r\nKanrethad stood up from the table and took a deep breath. "This is exactly why we are here. I have no love for any of you, but we each bore witness to pieces of even greater power. Imagine - if we fused the molten fury of the Firelands with the unstoppable chaos of Deathwing. Even the powers of the Burning Legion could not hold a candle to our flames!"',
+					'Ritssyn kicked his boots upon the table and snickered, "And just who would do this? You?" he spat. "I think not. You haven\'t been seen in battle since the siege of the Black Temple. If it weren\'t for having shared the secrets of Illidan\'s transformation with this council, I would kill you just for having the audacity of summoning me."\r\n\r\nKanrethad\'s lips pursed for a moment, but he relaxed and continued. "No. The scope of this task exceeds the capabilities of any single member here. I propose this council split into pairs. Ritssyn and Zinnin would lead a group into Sulfuras. Similarly, Shinfel and Zelifrax would hunt down the remaining members of the Twilight\'s Hammer cult and ... persuade them to share what they learned."',
+					'The pock-faced gnome applauded with mirthful glee.\n\nKanrethad continued, "Then we return... one year from now and take the results of our expeditions back to our own sects, more powerful than we would have been alone."\n\nRitssyn frowned as he saw the greed drawn out in the human\'s words dance across the council\'s faces.  "And what would keep us from simply killing our partner in their sleep once it was a success?"\n\nKanrethad\'s brow furrowed and he growled, "Which is why we swear that if any member of this council breaks the contract and fails to return or returns alone, the others shall strike them down and banish their soul forever. We either succeed together or die alone."',
+					'Ritssyn was a powerful warlock, and could probably defeat Kanrethad by himself. But against all five of us? We all saw his hesitation. We all let our hands drift toward our scrolls and weapons.\n\n"Fine," Ritssyn reluctantly agreed. "I can play along with your fool\'s errand, but first I must know, where will you and that miserable forsaken, Jubeka, be going?"\n\n"Me?" spoke Kanrethad with a wicked grin.  "Why I\'m returning... to Outland."',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[87] = {
+						0.5053747892379761,
+						0.07250118255615234,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 9,
+				["expansion"] = 4,
+			},
+		},
+		["GameObject-245381"] = {
+			["base"] = {
+				["title"] = "Uther the Lightbringer",
+				["text"] = {
+					'<HTML><BODY>\r\n<BR/><BR/>\r\n<H1 align="center">Uther the Lightbringer</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<P>\r\nFirst paladin, father of the original Order of the Silver Hand, guiding light for all. May we honor his legacy in all that we do.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[24] = {
+						0.7236427068710327,
+						0.1432253122329712,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 2,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-388711"] = {
+			["base"] = {
+				["title"] = "Translated Correspondence of Black Dragons",
+				["text"] = {
+					"What follows are translations of correspondence between the black dragon Adamanthia and Neltharion, the Aspect of Earth.\r\n\r\nAt the time of this translation, I can confirm that neither I nor any dracthyr I have spoken to or are able to fully remember Adamanthia. We have only fragments. Her origins and identity are mysterious. Yet we feel drawn to her for reasons beyond recollection.\r\n\r\nIt is as if she holds a part of us in her, sustained in more than just memory.\r\n\r\nNow you may peruse her words in this humble volume. May this transcription help spark memories for worthy dracthyr who read it.\r\n\r\n-- Zazulithan\r\nDracthyr Archivist",
+					"Transcription of Receiving Stone: Final Warning\r\n\r\nThis is your final warning, Adamanthia. If you continue in your defiance, you will become an example to all who foolishly entertain such asinine aspirations.\r\n\r\nYour suffering will span millennia. Even death will not release you. Any who look upon you will gaze upon your torment and despair. Cease this folly, or retribution awaits you.",
+					"Transcription of Sending Stone: Protest\r\n\r\nMy Aspect. \r\n\r\nI thought I was doing everything you asked and more. The extraction of black dragonflight essence from the dracthyr has gone smoothly, though I worry it may permanently cripple their abilities. Yet you commanded, and I obey.\r\n\r\nYou ordered the sealing of the creches, and so I worked with the wyrms of Malygos, as commanded.\r\n\r\nToday, I received word that you have ordered my awakened dracthyr to Aberrus, as if they were expendable for some esoteric experiment.\r\n\r\nI must know why. I demand their release. You can see for yourself they are awake and aware, creatures capable of independent thought. \r\n\r\nTheir trust must be cultivated, not forced. In the strongest possible terms, I must protest. Trusting to your genius, I entrust these words to the careful consideration of your sagacious intellect.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2151] = {
+						0.3513399958610535,
+						0.5933458209037781,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-245384"] = {
+			["base"] = {
+				["title"] = "Highlord Alexandros Mograine",
+				["text"] = {
+					'<HTML><BODY>\r\n<BR/><BR/>\r\n<H1 align="center">Highlord Alexandros Mograine</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<H1 align="center">The Ashbringer</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<P>\r\nThe beginning of a legend still spoken of in hushed whispers. His memory will never be forgotten, just as the forces of darkness will never forget his blade.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[24] = {
+						0.7263330221176147,
+						0.3821727633476257,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 2,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-381735"] = {
+			["base"] = {
+				["title"] = "Caretaker's Notes",
+				["text"] = {
+					"This place is downright melancholy. The skies are dark and gloomy no matter the time of day. They said I was here to learn responsibility, but I suspect they just put me here to dampen my spirits and make me behave 'like a proper dragon.'\r\n\r\nFine then. I will fulfill my tasks, dutifully even... but they cannot stop me from having a bit of fun whilst carrying them out. Our dead should not have to spend their eternity wallowing in mournful tears. After all, they succeeded in the onerous task of living, did they not?\r\n\r\nI wonder if the wildlife here have the same magnetic attraction to my arcane sphere as the dead foliage that I gather has. I believe that is worth an experiment...\r\n\r\nAt the very least, I suspect any lingering ghosts will find the effort very amusing!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2025] = {
+						0.6237998008728027,
+						0.1602462530136108,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-247332"] = {
+			["base"] = {
+				["title"] = "Slaghammer's Notes: The New Leader",
+				["text"] = {
+					'Praise be to the new leader! Once the hand to the Twilight Father, the Shadow Deacon has decided now is the time to regain our past glory!\r\n\r\nWhile the Twilight Father left to serve Deathwing, the Shadow Deacon maintained his "role" as a bishop in Stormwind. He continued infiltration and recruitment efforts there for some time until the fall of Deathwing and the Twilight Father. He then ordered what was left of our organization to go quiet and allow our foes their temporary victory.\r\n\r\nBut then he found it, or perhaps it found him. The Black Blade...',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[18] = {
+						0.1351735591888428,
+						0.5748443603515625,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 5,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-378437"] = {
+			["base"] = {
+				["title"] = "Alexstrasza's Welcome",
+				["text"] = {
+					"Welcome, friend of the dragonflights.\r\n\r\nMay your journeys in the Dragon Isles bring you tranquility, confidence, and camaraderie.\r\n\r\nWhile you travel these isles, reflect on the... <this portion of the tablet has broken off.>\r\n\r\n... remember our oaths to Azeroth, symbolized in the Oathstones at the seats of power for each dragonflight. We ask... <this portion of the tablet has broken off.>\r\n\r\n... For life, and for Azeroth.\r\n\r\nAlexstrasza the Life-Binder,\r\nQueen of the Dragons",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2022] = {
+						0.756650447845459,
+						0.3407730460166931,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-245383"] = {
+			["base"] = {
+				["title"] = "Krohm Dawnhammer",
+				["text"] = {
+					'<HTML><BODY>\r\n<BR/><BR/>\r\n<H1 align="center">Krohm Dawnhammer</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<P>\r\nHis legendary shining hammer guided countless innocents to safety during the rise of the Scourge in Lordareon. May he finally rest at peace.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[24] = {
+						0.7683130502700806,
+						0.3093253374099731,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 2,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-408816"] = {
+			["base"] = {
+				["title"] = "The Fourth Clue",
+				["text"] = {
+					"For the final piece, approach the Dark Portal.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[47] = {
+						0.1880766153335571,
+						0.250884473323822,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-192710"] = {
+			["base"] = {
+				["title"] = "The Schools of Arcane Magic - Conjuration",
+				["text"] = {
+					"<Penned by the skilled hand of Archmage Ansirem Runeweaver>",
+					"Conjuration is the study of summoning - both creatures and objects. Ever really, really wanted a fresh drink of spring water when you're in the middle of nowhere? Conjuration, my friend, is the answer. There is nothing more enjoyable for a mage than creating a fresh slice of bread or a glass of water. Just ask any of us!",
+					"More formidable specialists in conjuration can summon several glasses of water at once, or perhaps even a tankard. A few daring wizards have occasionally attempted to summon water without remembering the glass - and thus, the art of summoning water elementals was born. Water elementals are a wizard's best friend. (Felhounds are not, in fact, friendly at all.) A summoned elemental is a formidable ally in combat, a great listener, and they even taste great!",
+					"There are several wizards who have chosen to follow the refreshing path of conjuration. Captain Balinda Stonehearth is a fine example of a mage who has chosen to adapt conjuration magic for battle. Perhaps the most famous conjuror of our time, however, was the beloved Archmage Nileas Aran. Aran was not only noted for being able to summon several elementals at once, he also perfected a recipe for conjuring sparkling cider. It should also be noted that Nileas Aran was no simple jester. That's what magic is all about.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.3110654950141907,
+						0.4654777646064758,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["GameObject-245039"] = {
+			["base"] = {
+				["title"] = "Tales of the Hunt",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Tales of the Hunt</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-hunter-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Holt Thunderhorn of the Unseen Path.</p>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<p></p>\r\n<IMG src="Interface\\Pictures\\artifactbook-hunter-titanstrike" align="center"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="140"/>\r\n<H3 align="center">Titanstrike</H3>\r\n<BR/>\r\n<P>\r\nThe brilliant keeper Mimiron crafted many firearms, but Titanstrike was his crowning achievement. It was his first rifle, and he designed it to harness the raw fury of storms.\r\n<BR/><BR/>\r\nMimiron gave the weapon to his good friend, Keeper Thorim, to use in battle. Thorim was a legendary fighter who relished the hunt, and he wielded Titanstrike with great care and skill. No beast, no matter how mighty, could withstand the rifle\'s explosive power.\r\n<BR/><BR/>\r\nWith you, Titanstrike has found someone worthy of carrying on Thorim\'s legacy. \r\n<BR/><BR/>\r\nHunt wisely. Aim true.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Titanstrike, Part One</H2>\r\n<HR/>\r\n<P>\r\nTitanstrike was not conceived by a mortal mind, nor was it crafted by mortal hands. This rifle traces its origins to a mirthful being named Mimiron. He was one of the keepers, a race of noble creatures who warred with the Old Gods and imprisoned the wicked entities beneath the earth. \r\n<BR/><BR/>\r\nSome of Mimiron\'s fellow keepers could wield the fury of storms. Others were mighty warriors. Mimiron\'s strength was not physical but mental. His intellect and creativity had no equal.\r\n<BR/><BR/>Day and night, Mimiron tinkered away at unique mechanisms. He was especially fond of experimenting with weapons that the keepers and their servants could use to protect Azeroth. When the earthen suggested that Mimiron make something that could strike at enemies from a distance, the keeper devoted himself to the challenge. \r\n<BR/><BR/>\r\nBefore long, he developed the first firearm in history, a rifle known as Titanstrike.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Titanstrike, Part Two</H2>\r\n<HR/>\r\n<P>\r\nMimiron\'s inventions rarely worked as intended. At least, not at first. He embraced the process of trial and error, often to the detriment of his faithful servants, the clockwork mechagnomes.\r\n<BR/><BR/>\r\nWhile testing one of the earliest versions of Titanstrike, Mimiron set part of his workshop on fire and damaged over a dozen mechagnomes. The keeper learned a great deal from the disaster. After repairing his injured servants, Mimiron fine-tuned Titanstrike. He took the next prototype to a stormy mountain peak, a remote place where no one would be injured if the weapon went haywire.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Titanstrike, Part Three</H2>\r\n<HR/>\r\n<P>\r\nMimiron\'s decision to test Titanstrike atop a mountain peak proved disastrous, but it was also illuminating. He had forged the newest version of the rifle with a mix of rare metal alloys that unintentionally attracted electricity. When Mimiron fired the weapon, a bolt of lightning leapt from a storm cloud and blasted Titanstrike into two pieces.\r\n<BR/><BR/>\r\nMimiron wasn\'t angry or disappointed. He was ecstatic. The accident gave him an idea. The keeper would reassemble Titanstrike, and he would embrace its connection to the elements. \r\n<BR/><BR/>\r\nHe would infuse it with the power of storms.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Titanstrike, Part Four</H2>\r\n<HR/>\r\n<P>\r\nFrom chapter four of The Storm Thieves, by the historian Evelyna:\r\n<BR/><BR/>\r\n"Mimiron needed help to make his idea of Titanstrike a reality. He needed Keeper Thorim.\r\n<BR/><BR/>\r\n"Thorim commanded the crackling powers locked within the skies. His lair, the Temple of Storms, acted as a conduit for thunder and lightning. It would serve as the perfect forge to remake Titanstrike. \r\n<BR/><BR/>\r\n"One day, as an angry tempest churned over the temple, the two keepers went to work. Thorim wrestled with the winds and the lightning until they bent to his will. He gathered the storm, and all its fury, into a concentrated orb of energy called the Thunderspark, and then he bound it to his temple. \r\n<BR/><BR/>\r\n"Mimiron was ready. He channeled the Thunderspark into Titanstrike. Lightning rocked the temple before the keeper finally sealed the wrathful storm inside the rifle."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Titanstrike, Part Five</H2>\r\n<HR/>\r\n<P>\r\nFrom chapter eleven of The Storm Thieves, by the historian Evelyna:\r\n<BR/><BR/>\r\n"The earthen have a legend of a time when \'the sky went mad.\' It is said that thunder rolled through the heavens from distant corners of Azeroth for weeks on end. Most of the keepers thought something terrible had happened, that the sky itself had broken. But Mimiron ignored the sounds.\r\n<BR/><BR/>\r\n"Several keepers, led by Loken, followed the thunderous noise across the world. They finally tracked its source to an island far to the south, where monstrous devilsaurs and other scaled creatures roamed. There, the keepers discovered Thorim and his two worgs, Hati and Skoll, in the midst of a hunt.\r\n<BR/><BR/>"Loken hurried to the keeper\'s side to warn him of the sky\'s unrest. That was when he realized that Thorim himself was responsible for it.\r\n<BR/><BR/>\r\n"Thorim had received Titanstrike from Mimiron shortly after its creation, and he\'d wasted no time using it in his favorite hunting grounds. His own energies amplified the rifle\'s explosive power. Every time he fired it, a thunderclap would split the heavens and rumble over the world."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Titanstrike, Part Six</H2>\r\n<HR/>\r\n<P>\r\nFrom chapter twenty of The Storm Thieves, by the historian Evelyna:\r\n<BR/><BR/>\r\n"The only beast to escape Thorim and his worgs on their great hunts was a monstrous jormungar worm. The creature, covered in thick plates of white stone, was the largest of its kind ever to exist.\r\n<BR/><BR/>\r\n"When Thorim discovered the worm, he took aim with Titanstrike. His first shot cracked the jormungar\'s stone hide. Before he could fire again, his prey leapt forward and knocked Titanstrike from his grasp. Thorim pummeled the worm with his bare fists and forced it to burrow into the earth. \r\n<BR/><BR/>\r\n"So began a hunt that would last decades. Thorim and his worgs tracked the jormungar across the north, battling the worm whenever it emerged from the ground. In his last encounter with the beast, the keeper landed a shot between its armor plates. The jormungar fled, and it was never seen again."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Titanstrike, Part Seven</H2>\r\n<HR/>\r\n<P>\r\nBetrayal eventually shattered the unity of the keepers. Most were imprisoned within their fortress of Ulduar. Thorim sank into depression and secluded himself in the Temple of Storms. Even hunting no longer made him happy, and he stored Titanstrike in his lair. \r\n<BR/><BR/>\r\nAges passed, and the keepers\' servants spread across the icy north. The vrykul formed clans and sought to dominate the land. \r\n<BR/><BR/>\r\nA warrior named Volund yearned for more than that. He dreamed of lording over every vrykul. To do so, he searched for the powerful mechanisms and weapons crafted by the keepers. Volund\'s journeys would bring him to a lone mechagnome. The vrykul took the defenseless clockwork creature prisoner and forced him to reveal information about Mimiron\'s creations. \r\n<BR/><BR/>\r\nFrom the mechagnome, Volund learned of Titanstrike and its location.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Titanstrike, Part Eight</H2>\r\n<HR/>\r\n<P>\r\nFollowing Loken\'s betrayal, Thorim secluded himself in the Temple of Storms. He often drifted off into bouts of fitful sleep for years on end, while Hati and Skoll roamed the wilds as they pleased.\r\n<BR/><BR/>\r\nVolund waited for one of these periods of slumber to steal Titanstrike. He ensnared a mighty proto-drake and used the beast to ascend to the Temple of Storms. Right under Thorim\'s nose, the bold vrykul pilfered Titanstrike and fled the keeper\'s lair.\r\n<BR/><BR/>After Thorim awoke and discovered that Titanstrike was missing, he called Hati and Skoll to his side. The worgs and their master picked up Volund\'s trail and stormed after him. The vrykul narrowly stayed one step ahead of his pursuers, but he knew he could not do so forever. Thorim and his worgs were legendary hunters. They would eventually track down Volund and punish him.\r\n<BR/><BR/>\r\nAlong with his captured mechagnome and the relics he had uncovered, Volund escaped the north. He journeyed far to the south, to a land he\'d only heard stories of--a land known as Stormheim.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Titanstrike, Part Nine</H2>\r\n<HR/>\r\n<P>\r\nFrom chapter three of The False Keeper, by the historian Llore:\r\n<BR/><BR/>\r\n"Volund bragged of his might, and he demanded that Stormheim\'s vrykul follow his command. Of course, they did not obey him. Not yet. A few vrykul stepped forward to silence the arrogant newcomer. Volund felled them all with Titanstrike, each shot booming like a giant\'s footstep.\r\n<BR/><BR/>\r\n"When the vrykul witnessed Volund\'s power, they were in awe. He wielded the strength of the keepers, and therefore they believed he must have earned the mythical beings\' favor.\r\n<BR/><BR/>\r\n"Volund declared himself warlord, and he rallied Stormheim\'s warriors under his banner. He and his army marched out from Stormheim to conquer the surrounding land for the glory of the vrykul."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Titanstrike, Part Ten</H2>\r\n<HR/>\r\n<P>\r\nFrom chapter seven of The False Keeper, by the historian Llore:\r\n<BR/><BR/>\r\n"Warlord Volund had the strength of numbers and the weaponry needed to bring the lands around Stormheim to heel. What he lacked was unity.\r\n<BR/><BR/>\r\n"As the vrykul ranks made war against the mighty drogbar near Stormheim, Volund grew suspicious of his followers. He believed they were planning to murder him and take Titanstrike for themselves. After all, if he had stolen it from a keeper, surely someone could steal it from him.\r\n<BR/><BR/>\r\n"Volund\'s paranoia drove him to torture and execute many of his allies. The bulk of the vrykul soldiers abandoned the crazed warlord, and his once-formidable army crumbled."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Titanstrike, Part Eleven</H2>\r\n<HR/>\r\n<P>\r\nMany years later, as Volund neared death, he ordered his enslaved mechagnome and his few remaining vrykul followers to bury him alongside Titanstrike. The warlord used the keeper-wrought mechanisms he had stolen as defensive wards to keep grave robbers out of his tomb. Even in death, Volund would let no one touch his cherished rifle.\r\n<BR/><BR/>\r\nFortunately, Titanstrike did not remain buried beside the would-be conqueror forever. The rifle was not forged to spread terror or to dominate; it was forged to protect Azeroth.\r\n<BR/><BR/>\r\nNow reclaimed, Mimiron\'s masterwork can fulfill its original purpose. It will strike wherever darkness stirs, and its thunderous report will herald the death of all who threaten the world or its people.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<p></p>\r\n<IMG src="Interface\\Pictures\\artifactbook-hunter-thasdorah" align="center"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="125"/>\r\n<H3 align="center">Thas\'dorah, Legacy of the Windrunners</H3>\r\n<BR/>\r\n<P>\r\nIf only we could see the true glory of Quel\'Thalas again. Thas\'dorah was created to aid in the defense of the Highborne kingdom, but over the course of its storied history, the weapon became so much more. It has journeyed from Azeroth to the darkest corners of the Twisting Nether, and it has spilled the Burning Legion\'s blood on the demons\' home territory. \r\n<BR/><BR/>\r\nThe rightful owner of this bow is still missing. But Alleria Windrunner was stalwart and practical; she would insist that a worthy champion use it to strike fear in the Legion\'s heart once again.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Thas\'dorah, Legacy of the Windrunners, Part One</H2>\r\n<HR/>\r\n<P>\r\nNearly 7,000 years ago, the Highborne founded a new home in the Eastern Kingdoms. Their journey had been hard, and the land was hostile. But the end result was astonishing.\r\n<BR/><BR/>\r\nThe elves built upon a confluence of magical ley lines and created a city, Silvermoon, near the Sunwell, a fount of pure arcane power. The kingdom of Quel\'Thalas rose over the land as a shining monument to the glorious civilization that had once surrounded the shores of the Well of Eternity. \r\n<BR/><BR/>As the Sunwell\'s magic radiated outward through Eversong Woods, the forest\'s oldest tree began to absorb its energy. The massive tree was named Thas\'alah, the "Light of the Forest." From its enchanted branches, the entire region seemed to be bathed in the glow of an eternal spring.\r\n<BR/><BR/>\r\nThis bow would be made from Thas\'alah\'s wood, and it would bear the legacy of a Highborne family whose members showed heroism for thousands of years.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Thas\'dorah, Legacy of the Windrunners, Part Two</H2>\r\n<HR/>\r\n<P>\r\nThe Highborne elves of Quel\'Thalas had fended off constant attacks from Amani trolls. To keep their enemies at bay, they constructed a series of monolithic Runestones that acted as wards against intruders-and also hid the elves\' use of arcane magic from the Burning Legion.\r\n<BR/><BR/>\r\nThe wards succeeded in keeping their enemies out of Silvermoon, in part due to their anchor: the elven arcanists had linked the Runestones to Thas\'alah, tying the power of natural magic to their arcane spells.\r\n<BR/><BR/>\r\nHowever, the tree\'s power could not keep the Highborne safe when they left their city. For that, they needed skilled fighters.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Thas\'dorah, Legacy of the Windrunners, Part Three</H2>\r\n<HR/>\r\n<P>\r\nThe Amani trolls were wary of launching direct attacks on Silvermoon. The elves\' magic kept them at bay for several millennia, but eventually the trolls lashed out again. The conflict would become known as the Troll Wars, and the death toll rose quickly. An order of fighters called rangers was founded to defend Quel\'Thalas.\r\n<BR/><BR/>\r\nThe greatest of these early rangers was Talanas Windrunner, a master of archery and ranged combat. He swiftly rose in the ranks and was named the first ranger-general of Silvermoon for his bravery and valor. The leaders of Silvermoon commemorated the occasion by declaring that their champion be given a weapon befitting his new status.\r\n<BR/><BR/>\r\nHighborne weaponsmiths set to work immediately. \r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Thas\'dorah, Legacy of the Windrunners, Part Four</H2>\r\n<HR/>\r\n<P>\r\nA trio of skilled artisans joined together to create a great bow for Talanas. They carved its body from a limb taken from Thas\'alah and infused the wood with the waters of the Sunwell.\r\n<BR/><BR/>\r\nImmersed in arcane power, the bow began to change. It was hardened, becoming nearly indestructible, and yet it still maintained its connection to the natural magics of Thas\'alah. \r\n<BR/><BR/>\r\nWhen it was retrieved from the Sunwell, the bow radiated power. Talanas was humbled by the gift. He named the weapon Thas\'dorah, "Valor of the Forest."\r\n<BR/><BR/>\r\nHe promised that, as long as this weapon protected Highborne lands, Silvermoon would never fall.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Thas\'dorah, Legacy of the Windrunners, Part Five</H2>\r\n<HR/>\r\n<P>\r\nTalanas made good on his promise. Thas\'dorah\'s power was so skillfully wrought that even a novice would have been able to hit a target from a hundred paces. In his hands, each arrow sang as it sailed to its mark. \r\n<BR/><BR/>\r\nThe Amani trolls soon learned to fear the sight of his bow, for if they ever caught a glimpse of it, they were within its range. They were forced to retreat, allowing the Highborne elves to settle deeper into the forest. \r\n<BR/><BR/>\r\nTalanas Windrunner became a legend for his part in securing the land of Quel\'Thalas for future generations.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Thas\'dorah, Legacy of the Windrunners, Part Six</H2>\r\n<HR/>\r\n<P>\r\nThas\'dorah remained with the Windrunner bloodline for thousands of years. The family dedicated their lives to the defense of Quel\'Thalas, and in each generation, one would carry the bow into the forests to drive away any interlopers.\r\n<BR/><BR/>\r\nBecause Thas\'dorah never left the region, it continued to bask in the radiant magic of the Sunwell and the surrounding forests. Slowly but surely, the bow was seasoned in a way no one could have anticipated.\r\n<BR/><BR/>\r\nIts strength only increased. Its powers began to manifest in surprising ways. An arrow launched toward a target might be joined by other, magical arrows, also aimed at the enemy.\r\n<BR/><BR/>\r\nEven after the Troll Wars drew to a close, Thas\'dorah helped repel countless enemy incursions.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Thas\'dorah, Legacy of the Windrunners, Part Seven</H2>\r\n<HR/>\r\n<P>\r\nA few years before the Horde invaded Azeroth, the ranger-general of Silvermoon was Lireesa Windrunner, who had three daughters: Alleria, Sylvanas, and Vereesa.\r\n<BR/><BR/>\r\nAs the eldest, Alleria was to take on the mantle of ranger-general, but she had little use for tradition or expectations. She decided to apply her training to practical matters, so she became a Farstrider, a member of a group of rangers focused on fighting for the Highborne all across Azeroth. She made a name for herself after a number of quick, decisive victories. Her sister Sylvanas would one day rise to leadership in her stead.\r\n<BR/><BR/>\r\nThas\'dorah remained in Lireesa\'s hands. It would not be passed on to Alleria until tragedy struck.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Thas\'dorah, Legacy of the Windrunners, Part Eight</H2>\r\n<HR/>\r\n<P>\r\nWhen the Horde invaded, most of the kingdoms of Azeroth did not believe it was a threat. After the orcs burned Stormwind to the ground, a few leaders took notice. The rulers of Silvermoon were reluctant to commit significant aid to the humans of Lordaeron, but Alleria thought that the demon-possessed orcs were a grave danger to the entire world. She led her group of rangers to Lordaeron-against orders-and fought at the Alliance\'s side with bravery.\r\n<BR/><BR/>\r\nIt wasn\'t until the orcs allied with the Amani trolls and turned their attention to Quel\'Thalas that the Highborne understood the true threat. Many elven rangers--including Lireesa Windrunner, the ranger-general--died in a bloody attack.\r\n<BR/><BR/>Sylvanas Windrunner would become the new ranger-general, but she passed Thas\'dorah to her older sister Alleria. Sylvanas needed to help secure Quel\'Thalas; she trusted that Alleria, a Farstrider, would have better opportunities to exact vengeance on the front lines. \r\n<BR/><BR/>\r\nHer instincts proved correct. Alleria struck fear into orcs and trolls alike, bringing down countless enemies with her arrows.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Thas\'dorah, Legacy of the Windrunners, Part Nine</H2>\r\n<HR/>\r\n<P>\r\nWhen the Second War ended, the orcs retreated to their homeworld of Draenor and rallied under a new warchief. Ner\'zhul, the former chieftain of the Shadowmoon clan, promised that he would open portals to undiscovered worlds, ones ripe for plundering. The Alliance had no intention of letting him. Alleria volunteered to join the Alliance expedition as its lead scout. She carried Thas\'dorah to Draenor with her. \r\n<BR/><BR/>\r\nThe need for revenge still weighed heavy on her heart. It wasn\'t until she became close to a human, Turalyon, that she began to see a future beyond this war.\r\n<BR/><BR/>The Alliance expedition fought the Horde all across Draenor, but Ner\'zhul succeeded in opening countless portals. The magical stress on the orcs\' homeworld was so great that it was torn apart. \r\n<BR/><BR/>\r\nThose among the Alliance who had not escaped through the Dark Portal, including Alleria and Turalyon, were presumed dead.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Thas\'dorah, Legacy of the Windrunners, Part Ten</H2>\r\n<HR/>\r\n<P>\r\nWhen Thas\'dorah was recovered from the Legion world of Niskara, it renewed hope that Alleria had survived the destruction of Draenor. Vereesa believed that her eldest sister had continued her war against evil by hunting the Burning Legion itself, pursuing it into the deepest recesses of the Twisting Nether.\r\n<BR/><BR/>\r\nJust as Thas\'dorah had absorbed power from its native realm, it had drunk deeply of the chaotic magics swirling through the Nether. Its arrows grew more potent, more accurate, and more lethal against the minions of the dark.\r\n<BR/><BR/>\r\nThe bow became a symbol of the war against the Legion, a means to rally the greatest hunters of Azeroth against the demon horde.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Thas\'dorah, Legacy of the Windrunners, Part Eleven</H2>\r\n<HR/>\r\n<P>\r\nQuel\'Thalas is not what it once was. Thas\'alah, the tree from which this bow was crafted, was cut down by the forces of Arthas Menethil. The citadel of Deatholme now stands atop its withered roots. The Highborne suffered massive losses at the hands of the Scourge, so much so that the few remaining survivors call themselves blood elves in remembrance of that tragedy.\r\n<BR/><BR/>\r\nThis bow was crafted to protect innocents from evil. It has done so admirably, on this world and on countless others. \r\n<BR/><BR/>\r\nNow it has been returned to Azeroth. Launched by one of the world\'s greatest champions, Thas\'dorah\'s arrows will fly once more against evil.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<p></p>\r\n<IMG src="Interface\\Pictures\\artifactbook-hunter-talonclaw" align="center"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="155"/>\r\n<H3 align="center">Talonclaw, Spear of the Wild Gods</H3>\r\n<BR/>\r\n<P>\r\nCrafted before the War of the Ancients, this spear has a unique tip, curved to resemble an eagle\'s beak, and it is infused with the energies of animal Ancients, or Wild Gods. Talonclaw has helped the tauren defend the world of Azeroth against all enemies, and it was passed to the greatest hunter of the Highmountain tribe until it was lost. Its wielder will be honored among the tauren, to whom it is legendary, but they will be hunted and reviled by the Legion.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Talonclaw, Spear of the Wild Gods,<BR/>Part One</H2>\r\n<HR/>\r\n<P>\r\nLong before the War of the Ancients, tauren tribes roamed the sprawling wilds of ancient Kalimdor. The Highmountain tribe was led by Chieftain Moren Highmountain, who saved Ohn\'ahra, a Wild God in the form of a giant eagle spirit, from an attack by fire elementals. In thanks, the eagle infused a portion of her essence into Moren\'s spear, gifting it with powerful magical abilities. Moren carved Ohn\'ahra\'s name onto the haft of his weapon, which his people took to calling the Eagle Spear in her honor. \r\n<BR/><BR/>\r\nTo commemorate other heroes he encountered, enemies he bested, and events he witnessed, Moren carved their names onto the Eagle Spear. As the spear was passed down to his descendants, they, too, carried on this tradition. In this way, the spear became a living history of the Highmountain tribe.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Talonclaw, Spear of the Wild Gods,<BR/>Part Two</H2>\r\n<HR/>\r\n<P>\r\nMoren\'s granddaughter Eruna was expected to become her tribe\'s leader. But before she could believe herself worthy of this responsibility, she took the Eagle Spear with her on a pilgrimage, a rite of passage to prove herself. In the northern lands, she rushed to defend a family of night elves from a cabal of tentacled beings issuing forth from a vast cave, wielding sinister magic--servants of the Old Gods who slumbered in dark places but were now awakening. She was joined in the struggle by a mighty bear, who revealed himself as an Ancient named Ursoc. Together, Eruna and Ursoc drove the strange creatures away. \r\n<BR/><BR/>In the aftermath of Eruna Highmountain\'s battle alongside Ursoc, the colossal bear took Eruna\'s measure and judged her worthy. Ursoc told her that a great darkness was coming and that the world would need strong warriors and leaders like her to face it. To aid her, he blessed her spear, adding his might to its enchanted power. In gratitude, Eruna carved Ursoc\'s name into the weapon, continuing the living story of the Eagle Spear, and returned to her people, ready to lead them.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Talonclaw, Spear of the Wild Gods,<BR/>Part Three</H2>\r\n<HR/>\r\n<P>\r\nLong after Eruna\'s passing, the spear was handed down to Huln Highmountain. Facing a devastating invasion from the Burning Legion, Huln unified other tauren tribes under his banner to join the night elves in fighting the demons. \r\n<BR/><BR/>\r\nDuring one heated battle, Huln tried to protect the two-headed wolf Ancient, Omen, from the forces of the Legion, but the great beast was gravely wounded and poisoned with fel energy. Before he succumbed to demonic corruption, Omen gave his last breath of purity to the spear, adding to the powers that other Wild Gods had left therein. Huln placed the Ancient\'s name on his spear so that his courage would always be remembered.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Talonclaw, Spear of the Wild Gods,<BR/>Part Four</H2>\r\n<HR/>\r\n<P>\r\nDuring the War of the Ancients, Huln fought alongside many warriors who would go on to become legends in their own right. Among them was the night elf Jarod Shadowsong, who saved Huln\'s life from a demon attack in one of the last battles of the war. Huln carved their names into the Eagle Spear as well. He even crossed paths with the greatest of all druids, Malfurion Stormrage. \r\n<BR/><BR/>\r\nFrom legends related by the elders of the Highmountain tribe:\r\n"Huln handed the spear to the druid, who examined the weapon closely, remarking on the sharp, curved end fashioned to resemble the eagle\'s beak, and on all the names carved into the shaft by the tauren and his ancestors. Malfurion communed with the spirits within, and approved."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Talonclaw, Spear of the Wild Gods,<BR/>Part Five</H2>\r\n<HR/>\r\n<P>\r\nTauren elders still tell that the doomlord Xyburn made it his personal mission to eradicate their race, and that Huln swore to kill him. The two bitter foes finally clashed during the battle for the Well of Eternity, and their fight ended only when Huln, seemingly beaten, landed a near-killing strike to Xyburn\'s face with his spear. The demon narrowly deflected the weapon, which, imbued with spirit powers, nonetheless struck him in the left eye, blinding him on that side. \r\n<BR/><BR/>Huln won his battle, but before he could slay the doomlord, Xyburn--along with most of the demons in central Kalimdor--was expelled from Azeroth. Back in the Twisting Nether, he licked his wounds, awaiting the Legion\'s next campaign and vowing revenge on Huln, all tauren, and the weapon that had taken his sight. But there was no rest for Huln; shortly thereafter, the Well of Eternity imploded, creating massive earthquakes that tore through the world. As the land of Kalimdor shuddered and began to break apart, Huln and his people fled for their lives.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Talonclaw, Spear of the Wild Gods,<BR/>Part Six</H2>\r\n<HR/>\r\n<P>\r\nFollowing the War of the Ancients, the tauren tribes went their separate ways. With their ancestral land destroyed in the Great Sundering, Huln led his people on a quest to find a new home. They traveled far and saw many parts of the reshaped Azeroth before making their way to the Broken Isles, where they built the village of Thunder Totem in the shadow of the isles\' tallest peak. \r\n<BR/><BR/>\r\nHaving led his tribe to safety, Huln Highmountain bequeathed the Eagle Spear to his successor, and he went to join his ancestors. Legend has it that Ohn\'ahra herself appeared to carry the spirit of the great chieftain into the sky.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Talonclaw, Spear of the Wild Gods,<BR/>Part Seven</H2>\r\n<HR/>\r\n<P>\r\nYears after the legendary Huln\'s passing, the Highmountain tribe found itself led by twin sisters, Arien and Gardrel. Although Arien was the greater warrior and had an affinity to the wilds, Gardrel was acknowledged to be wiser and a strong diplomat. Rather than divide the tribe or place its well-being in the wrong hands, the aging chieftain named Gardrel the new chieftain, and Arien became Protector of the Mountain, possessor of the Eagle Spear. \r\n<BR/><BR/>\r\nThe sisters were happy with their roles, and Arien kept the tribe safe for many years, tapping into the blessings that the Wild Gods had bestowed on the weapon. She gave it the name Talonclaw, honoring the Wild Gods her ancestors had befriended.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Talonclaw, Spear of the Wild Gods,<BR/>Part Eight</H2>\r\n<HR/>\r\n<P>\r\nFrom the journal of Arien Highmountain, describing her tribe\'s encounter with an order of night elves called the Unseen Path:\r\n<BR/><BR/>\r\n"Gardrel and I led the night elves up the slopes of a nearby mountain. As we approached the summit, Talonclaw began to glow, emanating power. Instinctively, I held it up to the sky, and all were amazed--none more so than I--to see a cascade of golden energy pour from the spearhead and take the shape of a great eagle! But Gardrel and I remembered the lore of our tribe and realized that Ohn\'ahra herself had blessed this site. At that very moment, we knew this sacred place should be renamed Talon Peak."\r\n<BR/><BR/>It was only with the help of the Highmountain tribe that the hunters of the Unseen Path--who had come to the Broken Isles specifically to guard against the Legion--were able to build their new home, Trueshot Lodge. From the trio of towers known as the Three Talons, they watched over the land and vowed to be ready should the Burning Legion return. The elves and the tauren learned much from each other, and Arien eventually joined the Unseen Path, becoming one of its greatest members.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Talonclaw, Spear of the Wild Gods,<BR/>Part Nine</H2>\r\n<HR/>\r\n<P>\r\nThe tradition of passing Talonclaw to the greatest hunter of the Highmountain tribe was carried on for many generations. If there were threats to the tribe or challenges to be conquered, the spear would be brought into battle.\r\n<BR/><BR/>\r\nWhen word came that a mysterious beast was stalking the wilds of Stormheim, Nalmus Highmountain took up the spear and set out to tame the creature--or destroy it. The hunter was sent off with a great feast, and the epic "Song of Talonclaw" was sung to bring Nalmus success in his quest. All felt sure he would restore peace and calm to the land.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Talonclaw, Spear of the Wild Gods,<BR/>Part Ten</H2>\r\n<HR/>\r\n<P>\r\nWhen weeks passed without any word from Nalmus, a search party was dispatched. Though they looked far and wide, no trace of the famed hunter or his spear could be found, and several party members were lost to the unknown beast that prowled the mists. \r\n<BR/><BR/>\r\nOver the years, many other brave hunters would set out to find the creature. Most were never heard from again, and the treasured spear had not been seen since Nalmus disappeared--until you, with the guidance and blessing of Ohn\'ahra herself, recovered the legendary weapon. In so doing, you became a hunter whose name will long be remembered.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Talonclaw, Spear of the Wild Gods,<BR/>Part Eleven</H2>\r\n<HR/>\r\n<P>\r\nWith the Spear of the Wild Gods in hand, you are a hunter with few equals in all of Azeroth. Your strength, agility, and fierceness are sure to give you the edge over nearly any prey--or any foe-you set your sights upon. And unlike other hunters with their rifles or bows, you--like Huln Highmountain--prefer to stand toe-to-toe with your enemies. You have perfected your trapping, hunting, and killing abilities on the ground, but now you have a unique appreciation for how it feels to strike like the great eagle Ohn\'ahra. The spear enhances your survival skills, allowing you to become a true master of the wilds-and like the eagle, you need no help, for you have no peer.\r\n<BR/><BR/>Talonclaw\'s spiritual power is such that shrines or temples that resonate with the force of the Wild Gods may respond to it, and priests of the Wild Gods may sense its presence. Its owner would be an honored guest in any tauren settlement (provided that they have not shown themselves to be an enemy of the tauren). On the other hand, the spear is also likely to draw the attention of the servants of chaos, so do not wield it carelessly.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[739] = {
+						0.5173126459121704,
+						0.5580492615699768,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 3,
+				["expansion"] = 6,
+			},
+		},
+		["Item-11734"] = {
+			["base"] = {
+				["title"] = "Libram of Tenacity",
+				["text"] = {
+					"<The pages are covered in ancient elven runes.>\r\n\r\nThe pages herein contain memories of events that transpired in the collection and creation of the reagents required to craft lesser arcanum.\r\n\r\nMay our enemies never gain access to these libram. \r\n\r\nMay I live to see the pallid light of the moon shine upon Quel'Thalas once again.\r\n\r\nMay I die but for the grace of Kael'thas.\r\n\r\nMay I kill for the glory of Illidan.\r\n\r\n-Master Kariel Winthalus",
+					'<HTML>\r\n<BODY>\r\n<IMG src="Interface\\Pictures\\11733_blackrock_256"/>\r\n</BODY>\r\n</HTML>\r\n',
+					'<HTML>\r\n<BODY>\r\n<IMG src="Interface\\Pictures\\11733_bldbank_256"/>\r\n</BODY>\r\n</HTML>\r\n',
+					'<HTML>\r\n<BODY>\r\n<IMG src="Interface\\Pictures\\11733_blasted_256"/>\r\n</BODY>\r\n</HTML>\r\n',
+					'<HTML>\r\n<BODY>\r\n<IMG src="Interface\\Pictures\\11733_ungoro_256"/>\r\n</BODY>\r\n</HTML>\r\n',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["GameObject-309884"] = {
+			["base"] = {
+				["title"] = "Plaque",
+				["text"] = {
+					"By the light of the sun\r\nFailing children of the blood\r\nThey are breaking through\r\nO' children of the blood\r\nBy the light of the sun",
+				},
+				["material"] = "Bronze",
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["mapData"] = {
+					[95] = {
+						0.1253829598426819,
+						0.5692678093910217,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-250534"] = {
+			["base"] = {
+				["title"] = "Word of the Conclave",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Word of the Conclave</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-priest-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Juvess, historian of the Conclave.</p>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<p></p>\r\n<IMG src="Interface\\Pictures\\artifactbook-priest-tuure" align="center"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="170"/>\r\n<H3 align="center">T\'uure, Beacon of the Naaru</H3>\r\n<BR/>\r\n<P>\r\nT\'uure is one of the purest physical embodiments of the Light in existence. The dynamic energies that flow through this artifact can heal wounds both physical and mental. They can inspire hope in times of overwhelming darkness, and fortify timid hearts with courage.\r\n<BR/><BR/>\r\nBut perhaps T\'uure\'s greatest strength is what we can learn from its past. If there is one thing to take away from its history, it is this: even one brave soul wielding the Light can save the lives of thousands.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">T\'uure, Beacon of the Naaru, Part One</H2>\r\n<HR/>\r\n<P>\r\nThe draenei have many legends about the benevolent naaru. Few are as cherished as the tale of T\'uure. \r\n<BR/><BR/>\r\nLike other naaru, T\'uure vowed to protect all mortal civilizations in the universe from the clutches of darkness. This noble quest eventually led the holy being to a world called Karkora. Its mortal denizens faced annihilation at the hands of a monstrous entity known as Dimensius the All-Devouring.\r\n<BR/><BR/>\r\nAs Dimensius shrouded Karkora in Void energies, T\'uure expended its own life force to spare the world from doom. The naaru shattered into fragments and sparked a colossal holy nova. The energy cascaded over Karkora, washing away the void and banishing Dimensius from the world.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">T\'uure, Beacon of the Naaru, Part Two</H2>\r\n<HR/>\r\n<P>\r\nFrom the draenei holy tome entitled Lessons in Hope and Sacrifice:\r\n<BR/><BR/>\r\n"T\'uure had shattered, but even broken, its Light was undiminished. Each piece blazed like a star, drawing naaru from the far corners of creation. They scooped up T\'uure\'s glittering fragments, and they sang songs of the sacrifice that had saved a world. \r\n<BR/><BR/>\r\n"The naaru gifted these shards to various races that they believed showed potential for good. The largest piece of T\'uure was passed to our own ancestors: the ancient eredar of Argus. \r\n<BR/><BR/>\r\n"It is said that this artifact plummeted from the sky like a falling star. Night turned to day, and T\'uure\'s glorious Light painted the heavens in shades of gold for a full week."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">T\'uure, Beacon of the Naaru, Part Three</H2>\r\n<HR/>\r\n<P>\r\nThe eredar were a highly erudite people who cherished learning, and they studied T\'uure with great curiosity. The first among them to truly harness the artifact\'s power for good was the wise leader named Velen. \r\n<BR/><BR/>\r\nDuring Velen\'s time, a strange curse spread across Argus. The victims found their minds addled, their memories diminished. Few things terrified the eredar as much as losing their precious knowledge. They reacted with fear and paranoia. To prevent others from contracting the affliction, many of the eredar considered quarantining the cursed or even banishing them from Argus. \r\n<BR/><BR/>\r\nYet Velen would not abandon his people. At great risk to himself, he walked among the cursed with T\'uure in hand. Velen called upon the artifact\'s powers and cured all of the stricken eredar.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">T\'uure, Beacon of the Naaru, Part Four</H2>\r\n<HR/>\r\n<P>\r\nAn excerpt from The Corruption of the Eredar and the Flight of the Draenei, by the historian Llore:\r\n<BR/><BR/>\r\n"When Sargeras came to Argus to corrupt the eredar, nearly all fell under his sway. Velen and his followers were the exception. With the naaru\'s help, they embarked on a harrowing escape from their home. The going was not easy. Demons awaited the fleeing eredar at every corner.\r\n<BR/><BR/>"Despair gripped the renegades, and many even considered giving up. It was during this dark and trying time that Velen brought T\'uure to bear. Its brilliant energies shone before the renegades and renewed their dwindling confidence. Emboldened by the artifact, Velen\'s followers believed that they could do the impossible, that they could complete their daring flight from Argus. And so they did.\r\n<BR/><BR/>\r\n"From that day forward, the renegades called themselves the draenei. It is a name that everyone on Azeroth now knows. But if not for T\'uure, perhaps the draenei would have never come to be."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">T\'uure, Beacon of the Naaru, Part Five</H2>\r\n<HR/>\r\n<P>\r\nAboard a dimensional fortress called the Genedar, the draenei fled across the stars. The demons pursued them relentlessly, determined to punish the renegades for escaping corruption. \r\n<BR/><BR/>\r\nThe long millennia that followed were harsh on the draenei. They could not rest. The threat of capture haunted their dreams. To defend themselves against the Legion, many turned to T\'uure and other holy artifacts brought from Argus. The draenei studied these relics and honed their connection to the Light under the tutelage of Velen and the naaru.\r\n<BR/><BR/>\r\nA student named Askara showed more promise than the rest. In time, she would earn the right to carry T\'uure, and she would become one of the greatest healers the draenei would ever know.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">T\'uure, Beacon of the Naaru, Part Six</H2>\r\n<HR/>\r\n<P>\r\nAskara had lost her entire family on Argus, but she found a new one aboard the Genedar. She saw the draenei as her brothers and sisters, and she vowed to do whatever she could to protect them.\r\n<BR/><BR/>\r\nYet she was not gifted with physical strength or a talent for forging armaments. Instead, she turned to the Light. Her mastery of holy magic became so great that Velen eventually gave T\'uure to her. Askara spent her every waking hour studying the artifact and unlocking its extraordinary potential. \r\n<BR/><BR/>\r\nIt was during this time that Askara received a vision of the future. She foresaw her people finding a sanctuary from the Legion. A new life. A new world to call home.\r\n<BR/><BR/>\r\nBut strangely, she did not see herself there.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">T\'uure, Beacon of the Naaru, Part Seven</H2>\r\n<HR/>\r\n<P>\r\nThe draenei visited many different worlds in search of a safe haven, but they rarely stayed for very long before the Burning Legion would learn of their whereabouts. Before the demons could confront them, the draenei would gather aboard the Genedar and disappear into the stars once again.\r\n<BR/><BR/>\r\nThe Legion\'s relentless pursuit bred depression and pessimism in many draenei, but they did not suffer in silence. Askara sought out her forlorn kin and spoke to them of their troubles. She carried T\'uure with her at all times, the relic casting an aura of holy magic around her that lifted the other draenei\'s spirits. \r\n<BR/><BR/>\r\n "It is true that the Legion is vast and mighty, but they do not stand in the Light as we do," Askara often said. "No matter how strong our enemy is, if they walk in darkness, they will always stumble and fall."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">T\'uure, Beacon of the Naaru, Part Eight</H2>\r\n<HR/>\r\n<P>\r\nFrom the draenei holy tome entitled The Second Sun of Shar\'gel:\r\n<BR/><BR/>\r\n"The Burning Legion had lain in wait for us on Shar\'gel, watching as we disembarked from the Genedar and set foot on the world. We believed we had found a place to settle. A place to start over again. \r\n<BR/><BR/>\r\n"We were wrong. \r\n<BR/><BR/>\r\n"Fel portals screamed open all around us, spewing forth doomguards, felhounds, and other horrors. The Legion\'s forces cornered us, cutting off our retreat to the Genedar. I thought we were done for. \r\n<BR/><BR/>\r\n"Then I saw... her. I saw Askara. \r\n<BR/><BR/>\r\n"She planted herself between us and the demons, T\'uure held high. A storm of light erupted around her, blinding the Legion\'s minions and shielding us from their fel-touched blades. As we battled our way to the Genedar, T\'uure grew brighter and brighter until it shone like a second sun on Shar\'gel."\r\n</P></BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">T\'uure, Beacon of the Naaru, Part Nine</H2>\r\n<HR/>\r\n<P>\r\nWhen the Burning Legion beset the draenei on Shar\'gel, Askara finally understood the strange vision of the future she had seen so long ago. One day, her people would locate a new home, but she was not fated to join them. She would die on Shar\'gel to give them a chance to find that sanctuary.\r\n<BR/><BR/>\r\nAskara and seventy other draenei volunteered to distract the Legion. With their blood, they would buy the rest of the renegades the time to escape Shar\'gel. The battle between the demons and these brave defenders would go down as one of the greatest instances of self-sacrifice in draenei history.\r\n<BR/><BR/>Hundreds of demons smashed into the seventy-one like a battering ram of fel-forged steel, but the defenders gave no ground. Not a single inch. Every time a draenei teetered on the brink of death, Askara was there. She charged through the battle lines and mended the wounded with T\'uure\'s holy Light.\r\n<BR/><BR/>\r\nBecause of Askara, the seventy-one fought with the courage and strength of a thousand. Because of her, the draenei race escaped annihilation.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">T\'uure, Beacon of the Naaru, Part Ten</H2>\r\n<HR/>\r\n<P>\r\nAfter the Battle of Shar\'gel, T\'uure fell into the Burning Legion\'s hands. The demons had witnessed Askara\'s heroic last stand, and they attributed her immense power to the strange artifact. Legion forces squabbled over control of the relic before Kil\'jaeden the Deceiver finally decided whom it would go to.\r\n<BR/><BR/>\r\nHe entrusted the artifact to an eredar priestess named Lady Calindris. She was one of the few demons who understood the draenei\'s holy magics. What was more, Calindris had an intimate knowledge of T\'uure itself. Long ago on Argus, the priestess had acted as a caretaker of the eredar\'s holy relics.\r\n<BR/><BR/>It took years before Calindris finally bent T\'uure to her will. After a series of grim rituals, she transformed the artifact into a dark reflection of itself. Where once T\'uure inspired hope, now it would spread fear. Where once the relic healed, now it would cause wounds to fester.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">T\'uure, Beacon of the Naaru, Part Eleven</H2>\r\n<HR/>\r\n<P>\r\nLady Calindris relished bending T\'uure to her will and using its corrupted power against her foes. She loathed the draenei, and the thought of befouling their cherished artifact delighted her to no end.<BR/><BR/>\r\nCalindris grew so talented at wielding T\'uure that the demon lord Kil\'jaeden gave her a special task. She would serve as a torturer on the Legion\'s prison worlds. Calindris was well suited for this role. She made an art out of inflicting suffering on her captives, and images of T\'uure filled their nightmares. \r\n<BR/><BR/>Much like Askara, Calindris eventually received a vision of the future. She foresaw the Legion invading the world of Azeroth and bathing it in fel fire. Strangely, Calindris herself was not there.\r\n<BR/><BR/> \r\nBut T\'uure was. A stranger wielded the artifact in its glorious true form, and its Light blinded the Legion\'s forces, shining over the land like a second sun.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[702] = {
+						0.6046194434165955,
+						0.2610116004943848,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 5,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-381736"] = {
+			["base"] = {
+				["title"] = "Valdrakken",
+				["text"] = {
+					"My beloved kin,\r\n\r\nIt is here we have built a monument to our unity. Valdrakken stands not just as a home, but an example of what draconic ingenuity and cooperation can create. Every dragon has put their mark on this place through both the magic of their flight, and their dedication to each other.\r\n\r\nFrom its heights, we can watch over the Isles and keep them under our care. We can gather and share what we have accomplished, ensuring that each new generation continues to grow and thrive. \r\n\r\nValdrakken is a place of harmony, of balance... and of the love that unites us. As you walk its paths and speak with your kin, let that love guide you. Together, we flourish.\r\n\r\nAlexstrasza",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2112] = {
+						0.5690571069717407,
+						0.8135541081428528,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-192652"] = {
+			["base"] = {
+				["title"] = "Kirin Tor Monthly (May Issue)",
+				["text"] = {
+					'Ask The Mage!\r\n\r\nQ: My friends tell me that studying magic and becoming a mage will make me frail, weak, and unpopular with the ladies. Is it true?\r\n-Jimmy "Insecure" Townsend\r\n',
+					"A: Don't worry, Jimmy. Your friends are referring to an unfair stereotype that started as a result of a few lazy mages with poor eating habits. It is entirely possible to maintain peak physical condition while still finding time to master manipulating the fabric of the universe. Even members of the Kirin Tor, through strict diet and a robust exercise regime, keep themselves in great shape despite their busy schedules.\r\nAnd what woman does not like Polymorph?",
+					'Q: My parents are not supportive of my decision to become a mage. They say that arcane magic is dangerous and leads to other "harder" magics like demonology. I do not want to sell my soul. Are they right?\r\n-Joseph Winters\r\n\r\nA: Your parents\' concern is unfounded. While there are stories of mages turning to demon worship or necromancy there has been little to no evidence supporting these claims. Reassure your family that absolutely nothing can possibly go wrong. \r\n\r\n',
+					'Q: I just recently started studying the arcane and so far my friends just laugh at me.  All they seem to want me around for is to conjure food and drinks and to teleport them around. When will people start respecting me?\r\n-Gregory "Doormat" Adams \r\n\r\nA: Right about the time you learn pyroblast.\r\n',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.2625673413276672,
+						0.513741135597229,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-167169"] = {
+			["base"] = {
+				["title"] = "Letter from Sylvanas Windrunner",
+				["text"] = {
+					"Ah, young Zandalari, $PLAYER_NAME$ arrives to serve the Horde.\r\n\r\nThe Zandalari are a mighty and fearless people. I'm sure the strength your people exemplified in the Battle of Dazar'alor will prove useful to our cause.\r\n\r\nTo walk with the Horde is to walk with pride and with strength. I will be taking note of your progress. I expect you to bring glory to the Horde, and nothing less.\r\n\r\nIn your struggles ahead, know that you fight for the Horde!\r\n\r\n-Lady Sylvanas Windrunner",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-245379"] = {
+			["base"] = {
+				["title"] = "Highlord Tirion Fordring",
+				["text"] = {
+					'<HTML><BODY>\r\n<BR/><BR/>\r\n<H1 align="center">Highlord Tirion Fordring</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<P>\r\nFriend, brother, mentor. Highlord Fordring was a paragon of the Light - an exemplar of what all paladins strive to be. May his spirit guide us in the dark days to come.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[24] = {
+						0.6438912153244019,
+						0.2229508757591248,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 2,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-247335"] = {
+			["base"] = {
+				["title"] = "Slaghammer's Notes: Xal'atath, the Blade of the Black Empire",
+				["text"] = {
+					"The Shadow Deacon was a cautious and calculating master, preferring the secrecy of the shadows to direct action. Ever since he found the Blade, his entire demeanor has changed. Arrogant, commanding, audacious. He now favors a bold plan to restore power to the Twilight's Hammer.\r\n\r\nThe Blade is called Xal'atath. It has come from an age before most of our races existed. We only have the scrawlings of previous holders to go from. While it is mostly ravings of those that lacked the will to wield the Blade, many of them say the same things.\r\n\r\nThey speak of the Black Empire, of a time when our true masters ruled all of Azeroth. Massive sacrifices, living buildings filled with void energies. Sometimes we can hear the Shadow Deacon speaking to... someone in his tent. He has mentioned the glory of the Black Empire as well.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[18] = {
+						0.1389193534851074,
+						0.5553462505340576,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 5,
+				["expansion"] = 6,
+			},
+		},
+		["Item-23867"] = {
+			["base"] = {
+				["title"] = "Singed Page",
+				["text"] = {
+					"<No recognizable words remain on this badly burnt page.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 1,
+			},
+		},
+		["GameObject-245382"] = {
+			["base"] = {
+				["title"] = "Lady Mara Fordragon",
+				["text"] = {
+					'<HTML><BODY>\r\n<BR/><BR/>\r\n<H1 align="center">Lady Mara Fordragon</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<P>\r\nHigh Clerist of Stormwind, patron of the Refugees who fled to Lordareon after the First War. \r\n<BR/><BR/>\r\nShe was the bright mother of our future. May she rest in the Light.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[24] = {
+						0.7906525731086731,
+						0.2565487623214722,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 2,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-381340"] = {
+			["base"] = {
+				["title"] = "Neltharus Stands",
+				["text"] = {
+					"Behold, the bulwark of the Dragon Isles, Neltharus. \r\n\r\nAny who would threaten the land of dragons will first have to contend with its finest defenses. Our numbers are great, our weapons are greater still. Whether it be by claw, breath, or blade, our enemies will fall.\r\n\r\nLet this place serve as warning and grave to any who would be mad enough to test our prowess. \r\n\r\nFor this is our oath: To protect the deep places of the world. To protect the world itself. To protect our kin. \r\n\r\nWe will see dragonkind prosper under our watchful eyes and warding wings.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2022] = {
+						0.2614727020263672,
+						0.5628986954689026,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-241470"] = {
+			["base"] = {
+				["title"] = "General Lena Stormpike",
+				["text"] = {
+					'<HTML><BODY>\r\n<BR/><BR/>\r\n<H1 align="center">General Lena Stormpike</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<P>\r\nA stalwart combatant and defender of justice, fallen defending her home from the foul demons of the Burning Legion. Azeroth is darker for her passing.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[24] = {
+						0.6044921875,
+						0.2753467559814453,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 2,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-192895"] = {
+			["base"] = {
+				["title"] = "Kirin Tor Monthly (March Issue)",
+				["text"] = {
+					"So You Think You Can Cast: Frequently Asked Questions from First-Time Mages:\r\n\r\n",
+					"Q: I'm having trouble casting any spells at all.  What can I do?\r\n\r\nA: You may be suffering from dehydration.  If you're having trouble casting a spell that you know you know, try drinking a glass of water!  Proper hydration is critical to effective spellcasting.\r\n",
+					"Q: I can't cast fireblast!  I just cast it a couple seconds ago and now it's not working.  Help!\r\n\r\nA: Having trouble casting a spell?  Did you just cast it a few seconds ago?  Some spells just won't work twice in quick succession.  Try mixing in a few different spells while you're waiting.\r\n",
+					"Q: I peeked at my friend's spellbook in the locker room, and he already has way more spells than I do!  What's wrong with me?\r\n\r\nA: First of all, this is COMPLETELY NORMAL.  Be sure to talk to your trainer regularly.  He or she may be able to teach you some new incantations.  If not, you probably just need more practice with the spells you already know.  Be patient, you'll get your spells!\r\n",
+					"Q: My co-workers all seem to be doing more damage than I do.  How can I catch up with them without looking like a dufus?\r\n\r\nA: It's not all about damage.  You can aid your group in other ways - Arcane Refreshment spells are a good example.  If that doesn't pan out, perhaps a career in the arcane arts isn't the right career path for you.  We hear that hunting is easy!\r\n",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.3070645928382874,
+						0.4671534895896912,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["GameObject-214184"] = {
+			["base"] = {
+				["title"] = "Petrified Bone Whip",
+				["text"] = {
+					"This whip was fashined from the spine of some large and ancient creature.  The blood of many Mogu slaves was shed by this instrument of pain.\r\n\r\nThis specimen was donated by the esteemed death knight, $PLAYER_NAME$.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[390] = {
+						0.829832911491394,
+						0.3140093684196472,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 4,
+			},
+		},
+		["GameObject-203390"] = {
+			["base"] = {
+				["title"] = "Ranger Valarian",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<BR/>\r\n<H1 align="center">High Ranger Valarian</H1>\r\n<BR/>\r\n<BR/>\r\n<P>In memory of the hallowed hero of Vashj\'ir, the High Ranger Valarian. By his life, he granted us beauty and tranquility to the streets of our exquisite city. By his death, he banished our fears and created long lasting peace for our people. May his sacrifice never be forgotten.</P>\r\n</BODY>\r\n</HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[205] = {
+						0.3964033722877502,
+						0.6767169237136841,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["GameObject-209270"] = {
+			["base"] = {
+				["title"] = "Page 78",
+				["text"] = {
+					"...first of lords to fall...",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[47] = {
+						0.4922438859939575,
+						0.339185893535614,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 4,
+			},
+		},
+		["GameObject-252396"] = {
+			["base"] = {
+				["title"] = "Libram of Ancient Kings",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Libram of Ancient Kings</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-paladin-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Sister Elda, Head Archivist.</p>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<p></p>\r\n<IMG src="Interface\\Pictures\\artifactbook-paladin-silverhand" align="center"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="175"/>\r\n<H3 align="center">The Silver Hand</H3>\r\n<BR/>\r\n<P>\r\nThe Silver Hand has existed since before recorded history. The world-shaping titans gave this mighty hammer to Keeper Tyr, who used it to help liberate Azeroth from the wicked Old Gods. \r\n<BR/><BR/>\r\nOver the ages that followed, the Silver Hand served as a testament to the bravery and sacrifice of the keeper. Now this legendary artifact rests in your keeping. Wield it well, and honor Tyr\'s memory.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Silver Hand, Part One</H2>\r\n<HR/>\r\n<P>\r\nLong ago, the legendary titans crafted stone- and iron-skinned giants to make war on the Old Gods and free Azeroth from their oppressive will. \r\n<BR/><BR/>\r\nThe giants were led by beings known as the keepers, and the mightiest of these commanders was named Tyr. Armed with an immense hammer, Tyr helped his kin break the strength of the Old Gods and their dark armies. He forged a glorious new destiny for Azeroth. \r\n<BR/><BR/>\r\nTyr was a warrior without equal, but his greatest trait was his conviction. He never gave up. He never strayed from his titan-bestowed quest. The mere sight of his argent hammer on the battlefield inspired courage in everyone who fought at his side.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Silver Hand, Part Two</H2>\r\n<HR/>\r\n<P>\r\nFrom the writings of an order known as Tyr\'s Guard, recounting Keeper Tyr and Keeper Odyn\'s mythic battle against Ragnaros the Firelord:\r\n<BR/><BR/>\r\n"Ragnaros retreated to the heart of his lair, where he was most powerful, and waited for his enemies to come to him. He called fire from the sky to waylay Tyr and Odyn. Smoke descended on the land, and it became like night.\r\n<BR/><BR/>\r\n"A single brilliant light shone in the darkness-the silvery glow of Tyr\'s great hammer. It drifted to and fro, sometimes forward and sometimes back. The erratic movements confused Ragnaros. He gradually let his guard down, believing Tyr and Odyn were too cowardly to face him in battle.\r\n<BR/><BR/>"It was exactly what the keepers had been waiting for. \r\n<BR/><BR/>\r\n"Like a bolt of lightning, Tyr pierced through the smoke and scored a blow against Ragnaros with his hammer. Odyn then flanked the staggered Firelord, and the two keepers overwhelmed their foe."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Silver Hand, Part Three</H2>\r\n<HR/>\r\n<P>\r\nFrom chapter three of The Age of Galakrond, by the historian Evelyna:\r\n<BR/><BR/>\r\n"As great a warrior as Tyr was, he did not always escape his battles unharmed. An example of this was his confrontation with the monstrous proto-dragon named Galakrond.\r\n<BR/><BR/>\r\n"Countless years after the keepers defeated the Old Gods and imprisoned them beneath the earth, Galakrond emerged to rule the skies of the world. A fierce hunger compelled the proto-dragon to eat everything in his path. \r\n<BR/><BR/>\r\n"When Tyr learned about the creature, he feared Galakrond would soon devour all nature. He gathered five other proto-dragons to wage war on him. \r\n<BR/><BR/>"Though the five proto-dragons would eventually vanquish Galakrond, their initial attacks on him went poorly. Tyr\'s new allies did not always work together. Even when they did, Galakrond proved too mighty for the combined strength of the keeper and the proto-dragons.\r\n<BR/><BR/>\r\n"In one battle, Tyr himself grappled with Galakrond and pummeled the beast with his hammer. The blows had little effect. Tyr\'s weapon was knocked from his grasp, and Galakrond consumed the keeper\'s hand. \r\n<BR/><BR/>\r\n"Only with the help of his five winged allies did Tyr escape with his life."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Silver Hand, Part Four</H2>\r\n<HR/>\r\n<P>\r\nFrom chapter nine of The Age of Galakrond, by the historian Evelyna:\r\n<BR/><BR/>\r\n"Keeper Tyr worked with a giant named Jotun to replace his appendage. They mined a vein of pure silver deep within Azeroth. Jotun used the metal to forge a hand for his injured companion. \r\n<BR/><BR/>\r\n"Tyr was in awe of Jotun\'s craftsmanship, and he asked the giant for one final favor: to reforge his warhammer so that it would incorporate the image of his new hand. The giant did so, but he inquired why the keeper wanted to draw more attention to his wound.\r\n<BR/><BR/>\r\n"Tyr replied that he did not consider his argent hand a reminder of defeat. For him it was a symbol of the sacrifice he had made to defend Azeroth, and he wanted the world to see it that way as well.\r\n<BR/><BR/>\r\n"When Jotun finished reshaping the hammer, Tyr named his weapon the Silver Hand."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Silver Hand, Part Five</H2>\r\n<HR/>\r\n<P>\r\nAs the ages passed on Azeroth, the unity between Tyr and his fellow keepers crumbled.\r\n<BR/><BR/>\r\nKeeper Loken fell under the sway of the imprisoned Old God Yogg-Saron. The once-noble giant turned on his kin, leaving many of them incapacitated or imprisoned. Loken\'s betrayal ignited chaos among the earthen, vrykul, and other titan-forged creatures who served the keepers. \r\n<BR/><BR/>\r\nOnly Tyr and a handful of his closest allies eluded Loken\'s wrath. Though they planned to strike down the corrupted keeper, they first needed to find a refuge for the earthen and their other innocent servants. Tyr rallied the titan-forged to his side and ventured south in search of a place that was safe from Loken\'s reach.\r\n<BR/><BR/>The journey was harsh, and many of the titan-forged worried for the future. Only the sight of Tyr leading the way, his legendary hammer always in hand, gave them the hope they needed to continue.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Silver Hand, Part Six</H2>\r\n<HR/>\r\n<P>\r\nNearly all of Tyr\'s followers traveled south, but not Jotun. Inspired by the keeper\'s ideals of personal sacrifice, the giant stayed behind to distract Loken and help mask his allies\' escape.\r\n<BR/><BR/>\r\nJotun succeeded, but he was punished for his heroics. \r\n<BR/><BR/>\r\nWhen Loken learned that many of the titan-forged had fled south, he captured Jotun and twisted his mind. The cursed giant was forced to search the lands surrounding Ulduar and destroy Tyr, anything that symbolized his power, and anyone who followed his ideals.\r\n<BR/><BR/>\r\nAs his first act, Jotun shattered the anvil he had used to craft Tyr\'s hand and reshape his warhammer.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Silver Hand, Part Seven</H2>\r\n<HR/>\r\n<P>\r\nFrom the writings of Tyr\'s Guard, recounting Tyr\'s death:\r\n<BR/><BR/>\r\n"Loken awakened two of the Old Gods\' most powerful generals and sent them after Tyr. These enormous creatures were called the C\'Thraxxi. They stormed south and caught up with Tyr and the titan-forged refugees in the land we know as Tirisfal. Or, as the vrykul called it, \'Tyr\'s Fall.\'\r\n<BR/><BR/>\r\n"Tyr stood against the C\'Thraxxi alone. It would be his final-and greatest-hour. \r\n<BR/><BR/>"Tyr called upon all the lessons he had learned in battle. He wielded the Silver Hand as if it were an extension of his own body. The C\'Thraxxi slashed at his metal hide, but Tyr\'s hammer shielded him in holy power and mended his wounds. The battle dragged on, with neither the keeper nor his enemies giving any ground.\r\n<BR/><BR/>\r\n"Tyr knew there was only one way to secure the safety of his allies. He unleashed his immense powers, igniting an explosion of arcane magic that blasted a massive crater in the earth. Tyr and one of his foes were killed instantly. The other, on the verge of death, retreated from the battle site."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Silver Hand, Part Eight</H2>\r\n<HR/>\r\n<P>\r\nAfter Tyr\'s sacrifice, his allies entombed the fallen keeper and the dead C\'Thrax where they lay. None of the titan-forged felt worthy of taking up their leader\'s hammer, and they buried it with his corpse. \r\n<BR/><BR/>\r\nTyr\'s followers then enchanted the tomb with protective wards. They bound the Silver Hand to these magical seals, thereby preventing anyone from touching it in the future.\r\n<BR/><BR/>\r\nOf all the titan-forged who had come south, the vrykul were the most moved by what Tyr had done to protect them. They decided to stay in the region and stand vigil over the keeper\'s tomb.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Silver Hand, Part Nine</H2>\r\n<HR/>\r\n<P>\r\nAn excerpt from Legends of the Silver Hand, by the historian Evelyna:\r\n<BR/><BR/>\r\n"At some point in Azeroth\'s distant past, humanity emerged in Tirisfal Glades. The iron-skinned vrykul who lived there slowly died off. Many of them suffered from the curse of flesh, a strange malady that transformed them into creatures of flesh and blood.\r\n<BR/><BR/>\r\n"Yet one group of vrykul lasted longer than the others. They formed a secretive group-Tyr\'s Guard-to protect Keeper Tyr\'s tomb. The vrykul of this order knew that they would not live forever, and so they inducted some of the fledgling humans into their ranks. \r\n<BR/><BR/>\r\n"The vrykul taught the human members of Tyr\'s Guard the history of the fallen keeper, his tenets of self-sacrifice and justice, and the truth of what lay within the tomb."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Silver Hand, Part Ten</H2>\r\n<HR/>\r\n<P>\r\nIn the ancient days, the only humans ever to breach Tyr\'s tomb and bypass its protectors were following the legendary human king Thoradin. After the elderly ruler abdicated his throne, he became obsessed with his race\'s history. Thoradin\'s curiosity eventually led him to discover Tyr\'s final resting place.\r\n<BR/><BR/>\r\nWhen Thoradin arrived at the tomb, Tyr\'s Guard confronted him. A tense standoff ensued. The former king was accompanied by a powerful retinue of guards and learned sorcerers. Though the members of Tyr\'s Guard did not want them to disturb the gravesite, they also did not want bloodshed.\r\n<BR/><BR/>Thoradin and his followers forced their way past Tyr\'s Guard. Much of what happened next is shrouded in rumor. It is said that Thoradin and his retinue ventured into the darkened catacombs, and they were never seen again.\r\n<BR/><BR/>\r\nTyr\'s Guard knew that Thoradin\'s magi had broken the tomb\'s wards in their foolish quest to explore the gravesite. The order\'s members made a vow that day-they would not enter the catacombs again, for fear that further meddling could awaken the C\'Thrax buried inside and unleash its evil on the world.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Silver Hand, Part Eleven</H2>\r\n<HR/>\r\n<P>\r\nFor thousands of years, Tyr\'s Guard continued its sacred duty. New members came and went, and over time they adopted more techniques to help them protect Tyr\'s tomb. In particular, the defenders felt an affinity toward paladins, holy warriors who arose to battle the orcish Horde in the Second War.\r\n<BR/><BR/>\r\nThe members of Tyr\'s Guard learned how to wield the Holy Light, and they became mighty paladins. Yet even this newfound power could not save the order from the undead Scourge.\r\n<BR/><BR/>\r\nWhen the Scourge swept over the human kingdom of Lordaeron, Tyr\'s Guard crumbled. Only a few brave members, led by a paladin named Travard, remained to uphold their ancient vows.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<p></p>\r\n<IMG src="Interface\\Pictures\\artifactbook-paladin-truthguard" align="center"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="200"/>\r\n<H3 align="center">Truthguard</H3>\r\n<BR/>\r\n<P>\r\nMany have tried to break Truthguard. Vrykul war bringers, mighty giants, and even the wicked minions of the Old Gods. This shield has turned them all aside, and not a scratch mars its gleaming surface.\r\n<BR/><BR/>\r\nBut Truthguard is more than just a simple armament. It is the embodiment of justice, nobility, and honor. Bear this shield as you would a torch in the darkness. Bring light to those without hope, and burn away the shadows that seek to engulf your world in death and despair.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Truthguard, Part One</H2>\r\n<HR/>\r\n<P>\r\nEarthen poems and vrykul epic sagas speak of Truthguard emerging in a time of war, when armies forged of iron marched across the north and made even mountains tremble. \r\n<BR/><BR/>\r\nThe main aggressors of this war were the fearsome Winterskorn vrykul. Their goal was to dominate the lands surrounding Ulduar and put all who opposed them to the blade. The Winterskorn were a people who relished violence, and few relished it more than Yrgrim. He stood at the clan\'s bloody vanguard, leading brutal raids against the good-natured earthen who dwelled in the region.\r\n<BR/><BR/>\r\nStrange that someone so obsessed with wanton killing would one day wield Truthguard, a symbol of justice and honor. But the paths that fate weaves are often strange.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Truthguard, Part Two</H2>\r\n<HR/>\r\n<P>\r\nFrom a set of earthen tablets titled The Winterskorn War:\r\n<BR/><BR/>\r\n"The clang of sword against shield rumbled like thunder through the cavern. The Winterskorn\'s enchanted blades cleaved through the earthen\'s stone skin with ease, lopping off limbs and sending heads rolling. \r\n<BR/><BR/>\r\n"When the Winterskorn cornered the few surviving earthen at the back of the cavern, the lead vrykul charged forward with his sword poised to strike. His body came apart before he ever reached his prey.\r\n<BR/><BR/>\r\n"Another Winterskorn had cut him down. He moved quick as lightning then, sword arcing through the rest of his warrior kin.\r\n<BR/><BR/>"\'Follow me and live,\' the vrykul said after his killing was done. \'Stay and this place will be your tomb.\'\r\n<BR/><BR/>\r\n"Later, the earthen asked this Yrgrim why he had saved them. \r\n<BR/><BR/>\r\n"\'The battle lust has lifted from my eyes, and I have seen truth,\' Yrgrim replied. \'Killing for the sake of killing... conquering for the sake of conquest... there is no honor in such things. There is only shame and regret.\'"\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Truthguard, Part Three</H2>\r\n<HR/>\r\n<P>\r\nYrgrim led the earthen survivors to Keeper Tyr, the one being he believed could save them from the Winterskorn. The vrykul warrior did not expect a reward for doing so. Quite the opposite. Yrgrim had murdered scores of innocent earthen, and he thought Tyr would execute him for his transgressions.\r\n<BR/><BR/>\r\nAccording to one vrykul legend, these are the words Tyr spoke to Yrgrim: "I cannot wash the blood from your hands. No one can. All I can offer you is a way forward. Stand by my side. Hunt the wicked with the same ferocity you once used to hunt the earthen. Do this and you will find the path to redemption."\r\n<BR/><BR/>\r\nOn that day, Yrgrim swore an oath to the twin moons that he would serve Tyr and embody his noble ideals. In return, the keeper gifted the vrykul with a shield unlike any ever made. \r\n<BR/><BR/>\r\nIts name was Truthguard.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Truthguard, Part Four</H2>\r\n<HR/>\r\n<P>\r\nFrom the vrykul saga The Forging of Truthguard:\r\n<BR/><BR/>\r\n"Three strikes it took Keeper Archaedas to shape Truthguard. With the first hammer fall, rivers of magma spilled from the icy mountains. With the second, the sky howled and lightning set the heavens aflame. With the third, a single ray of sunlight pierced the storm clouds and whispered over Truthguard\'s surface.\r\n<BR/><BR/>\r\n"From afar, Keeper Tyr and the giantess Ironaya watched the work unfold. They had each given of themselves to make Truthguard. Tyr had chiseled off a piece of his silver hand to imbue the shield with righteous power. Ironaya had hewn a stone disc from her hide and etched it with runes of protection."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Truthguard, Part Five</H2>\r\n<HR/>\r\n<P>\r\nTruthguard saw its first battle in the waning days of the Winterskorn War. \r\n<BR/><BR/>\r\nWhile searching the frozen wastes for earthen whom he could lead to safety, Yrgrim stumbled across a small raiding party of Winterskorn. The vrykul knew of this "deserter." They cursed Yrgrim\'s name and howled for his blood. \r\n<BR/><BR/>\r\nYrgrim calmly offered a challenge: if any of the vrykul could knock the shield from his grip, he would surrender. But if the Winterskorn failed, they would lay down their arms and listen to Yrgrim\'s words.\r\n<BR/><BR/>\r\nOne after another, the vrykul charged Yrgrim, and their enchanted blades glanced off of Truthguard without making so much as a dent. \r\n<BR/><BR/>"You fail because you fight for cruelty and injustice," Yrgrim said to the bewildered vrykul. "So long as such wicked thoughts guide your hand, you will never become the champions you hope to be." Then he told them of all he had learned from Tyr, of the noble tenets of justice that now governed his life.\r\n<BR/><BR/>\r\nAnd one after another, the vrykul joined Yrgrim\'s cause and cast their enchanted blades aside.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Truthguard, Part Six</H2>\r\n<HR/>\r\n<P>\r\nThe Winterskorn War was only a symptom of a much greater problem: Keeper Loken. He had fallen to darkness and imprisoned many of his fellow keepers within the hallowed halls of Ulduar. But why had he done such terrible things? What could have driven a noble being like Loken to abuse his power?\r\n<BR/><BR/>\r\nTruthguard found some of the answers. \r\n<BR/><BR/>\r\nAt Tyr\'s behest, Yrgrim stalked the outskirts of Ulduar with his shield and confronted a small number of Loken\'s servants. Some were massive fire giants. A few others were iron-skinned vrykul whose only purpose was dealing death. Yrgrim bested them, one and all. When his opponents were on their knees, he forced them to look at their own reflections in Truthguard\'s surface.\r\n<BR/><BR/>The shield\'s righteous power caused the lies and half-truths that clouded their minds to melt away. They saw, for the first time, that Loken had used them as his pawns. Yrgrim\'s adversaries revealed many details about the fallen keeper, but one was more troubling than the rest...\r\n<BR/><BR/>\r\nLoken had succumbed to Yogg-Saron, the malevolent Old God shackled within Ulduar. \r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Truthguard, Part Seven</H2>\r\n<HR/>\r\n<P>\r\nAn excerpt from an unfinished book on the dwarves\' origins, by Royal Historian Archesonus:\r\n<BR/><BR/>\r\n"Tyr vowed to defeat Keeper Loken, but he needed time to plan. He also needed to find a refuge for the innocent earthen, mechagnomes, and vrykul who dwelled around Ulduar. As Tyr led these creatures south in search of a safe haven, he ordered his loyal servant Yrgrim to stay behind. The noble vrykul would hold off any of Loken\'s minions who tried to prevent the refugees from fleeing.\r\n<BR/><BR/>\r\n"Yrgrim, fabled Truthguard in hand, obeyed his master. It was the last time he would see Tyr alive.\r\n<BR/><BR/>"Three fire giants soon emerged to hunt down the refugees, but Yrgrim barred their way. They swarmed the lone vrykul and battered Truthguard. Not even the fists of giants could dent the shield.\r\n<BR/><BR/>\r\n"Yrgrim waited until his foes wore themselves ragged against Truthguard, and then he went on the offensive. He slammed the shield against the giants until their molten bodies crumbled and their blood ran like rivers of fire over the land."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Truthguard, Part Eight</H2>\r\n<HR/>\r\n<P>\r\nWhile Yrgrim battled the fire giants, Keeper Loken unleashed ancient horrors who had been locked within Ulduar. These were the C\'Thraxxi, monstrous servants of the Old Gods. They crawled from their underground chambers and slipped past Yrgrim, eager to exterminate Tyr and his motley followers.\r\n<BR/><BR/>\r\nYrgrim sensed the C\'Thraxxi\'s foul presence as they passed by, and he raced south in pursuit of the creatures. By the time he finally caught up to them, it was too late...\r\n<BR/><BR/>\r\nTyr had stood against the C\'Thraxxi alone, and he had paid the ultimate price to defeat them. His followers would name the site of his valiant sacrifice Tyr\'s Fall, which in the vrykul tongue translated to "Tirisfal."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Truthguard, Part Nine</H2>\r\n<HR/>\r\n<P>\r\nYrgrim laid the first stone of the tomb that would serve as Tyr\'s final resting place. He and his allies labored over the construction in silence, hearts filled with bittersweet reverence. When the work was done, the refugees set off south in search of a safe haven, but Yrgrim did not follow.\r\n<BR/><BR/>\r\nHe jammed Truthguard into the earth and swore to stand vigil over his master\'s tomb. It was the least he could do to honor Tyr\'s sacrifice. Moved by Yrgrim\'s decision, the other vrykul joined him.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Truthguard, Part Ten</H2>\r\n<HR/>\r\n<P>\r\nFor many years, Yrgrim remained in Tirisfal with Truthguard at his side. He urged his allies to dedicate themselves to the pursuit of justice and nobility, just as he had. In this way, Tyr\'s ideals would live on in more than stories. They would live on through the actions of Yrgrim and the other vrykul.\r\n<BR/><BR/>\r\nOnce Yrgrim had taught the Tirisfal vrykul all he could, he departed from the region. His battles had whittled away at his iron hide, and he longed to find a noble champion who could take up Truthguard. \r\n<BR/><BR/>\r\nYrgrim\'s quest eventually led him and his great shield to the land known as Stormheim.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Truthguard, Part Eleven</H2>\r\n<HR/>\r\n<P>\r\nStormheim was home to many mighty vrykul, and Yrgrim was sure he would find someone capable of bearing Truthguard. He constructed an arena to test the mettle of the local fighters. Challenger after challenger faced off against Yrgrim, but none could meet his high standards.\r\n<BR/><BR/>\r\nIn time, no one remained to face Yrgrim\'s trials. He abandoned his arena, but not his search. He held onto hope that he would find a successor someday.\r\n<BR/><BR/>\r\nYrgrim built a vast tomb and locked himself within. There, he waited for a hero. Someone strong of will and pure of heart. Someone worthy of bearing Truthguard, as Tyr would have wanted.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<p></p>\r\n<IMG src="Interface\\Pictures\\artifactbook-paladin-ashbringer" align="center"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="145"/>\r\n<H3 align="center">Ashbringer</H3>\r\n<BR/>\r\n<P>\r\nYou now possess one of the most iconic and renowned weapons ever created.\r\n<BR/><BR/>\r\nOnce the bane of the undead (then, for a time, one of the Scourge\'s greatest assets), the Ashbringer has been instrumental in the rise and fall of lords, empires, and kings, living and undead alike. It has stood for both good and evil, and now it rests within your hands. \r\n<BR/><BR/>\r\nWield it well.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part One</H2>\r\n<HR/>\r\n<P>\r\nFew known artifacts or relics are capable of rivaling the Ashbringer\'s legendary pedigree. \r\n<BR/><BR/>\r\nIts origins have been traced to the Second War between orcs and humans. There, on the field of battle, the renowned highlord Alexandros Mograine came into possession of a dark orb. \r\n<BR/><BR/>\r\nThough Alexandros considered the artifact to be a living embodiment of shadow, he also believed that it might one day be forged into a weapon of righteousness. \r\n<BR/><BR/>\r\nAlexandros\'s vision would become a reality, and that weapon would become the Ashbringer.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Two</H2>\r\n<HR/>\r\n<P>\r\nIt is said that deep within the hallowed halls of Ironforge, the Ashbringer was crafted by the dwarf king Magni Bronzebeard, a peerless weaponsmith. \r\n<BR/><BR/>\r\nFor King Magni, it was a dark time; he grieved over the recent loss of his brother Muradin.\r\n<BR/><BR/>\r\nLegend holds that King Magni infused the full weight of his rage and sorrow into the Ashbringer\'s forging, resulting in a weapon of untold vengeance and devastation.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Three</H2>\r\n<HR/>\r\n<P>\r\nSo it is written, that when confronted by undead forces, Highlord Alexandros Mograine dispatched them with ease. The blade in his hand felt like an extension of his own flesh, a beautifully lethal instrument of pure destruction.\r\n<BR/><BR/>\r\nAnd as it carved a swath through his Scourge enemies, this new weapon left naught in the aftermath but charred bone and swirling ash.\r\n<BR/><BR/>\r\nThus was the Ashbringer given its name.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Four</H2>\r\n<HR/>\r\n<P>\r\nIn the hands of Alexandros Mograine, the Ashbringer rained unparalleled fury upon the marauding Scourge armies, decimating the undead in numbers beyond reckoning. \r\n<BR/><BR/>\r\nSo it was that over the course of time, the man and the weapon seemed as one. Ashbringer became a name of legend, attributed not just to the fearsome blade but also to the relentless knight who wielded it.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Five</H2>\r\n<HR/>\r\n<P>\r\nFrom the testimony of Fairbanks, advisor to Highlord Alexandros Mograine, shortly before his execution:\r\n<BR/><BR/>\r\n"It was outside of Stratholme that we were surrounded by undead. Their numbers were unfathomable. Wave after wave washed over us... and yet Alexandros stood tall, unbowed and unbroken, a rock for them to break against.\r\n<BR/><BR/>\r\n"Alexandros\'s end came not from the undead but from his own son-the treacherous one, Renault, who took up the Ashbringer and stabbed his father in the back."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Six</H2>\r\n<HR/>\r\n<P>\r\nA recounting of the battle at Naxxramas by Darion Mograine, as told to Atticus Krohl:\r\n<BR/><BR/>\r\n"Deep within the floating undead citadel of Naxxramas, I discovered what had truly become of my father. Alexandros\'s spirit had been tortured and broken; he had been raised as a death knight to defend the very Scourge that he had once labored to destroy. \r\n<BR/><BR/>\r\n"They had scoured from him all that was good, leaving behind only a bitter, rotten shell. In defense of my own life, I was forced to end his cursed existence, or so I thought. \r\n<BR/><BR/>\r\n"The blade you see, the Ashbringer... it spoke to me in my father\'s voice."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Seven</H2>\r\n<HR/>\r\n<P>\r\nFrom the Liber Monasterium:\r\n<BR/><BR/>\r\n"And so it was that Darion Mograine, driven by the voice of his father, bore the Ashbringer to the Scarlet Monastery, where he learned of his brother Renault\'s treachery.\r\n<BR/><BR/>\r\n"The vengeful phantom of Alexandros Mograine manifested out of the Ashbringer. Renault begged for forgiveness, and he was dealt a vicious sweep of the corrupted blade, separating his head from his shoulders. \r\n<BR/><BR/>\r\n"\'You are forgiven,\' was Alexandros\'s reply."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Eight</H2>\r\n<HR/>\r\n<P>\r\nAn excerpt from The Battle for Light\'s Hope:\r\n<BR/><BR/>\r\n"The Argent Dawn amassed at Light\'s Hope Chapel against the swarming multitudes of Scourge. Battle was joined, and though each and every one of us fought bravely, it seemed there could be no hope of victory.\r\n<BR/><BR/>\r\n"In our darkest hour, in an effort to free his father\'s condemned soul, Darion Mograine plunged the Ashbringer into his own chest. \r\n<BR/><BR/>\r\n"It was then that the souls of the myriad champions buried beneath Light\'s Hope lashed out in a devastating blast of purest Light. In that instant, our enemies were undone."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Nine</H2>\r\n<HR/>\r\n<P>\r\nThere are scores of firsthand accounts of the Second Battle for Light\'s Hope Chapel. They differ in some ways, but on many points, they correspond. What is known is that several years after his sacrifice at the first Battle for Light\'s Hope, Darion Mograine returned... this time as would-be conqueror, a death knight in the Lich King\'s service.\r\n<BR/><BR/>\r\nHe faced off against his onetime ally, a former Knight of the Silver Hand, Tirion Fordring. Ultimately Darion was subdued even as the dreaded Lich King himself, Arthas, appeared on the battlefield. \r\n<BR/><BR/>\r\nIn an apparent act of contrition, Darion threw the Ashbringer to Tirion, who purified it with his touch. Tirion then focused his full efforts on the Lich King, who was forced to retreat after a single mighty blow from the uncorrupted Ashbringer.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Ten</H2>\r\n<HR/>\r\n<P>\r\nIn the aftermath of the Second Battle for Light\'s Hope, the Ashbringer remained in the possession of Tirion Fordring, highlord of the Argent Crusade. In order to draw out the greatest champions of Azeroth, Tirion instituted a contest of strength and battle prowess known as the Argent Tournament.\r\n<BR/><BR/>\r\nIn time, Tirion\'s Argent Crusade successfully breached the main gate of the Lich King\'s stronghold of Icecrown Citadel. As they laid siege to Icecrown\'s defenses, the highlord created a pact with Darion Mograine and his Knights of the Ebon Blade, resulting in the Ashen Verdict-a united order bent on destroying the Lich King.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Eleven</H2>\r\n<HR/>\r\n<P>\r\nThe final assault on Icecrown Citadel now ranks among the most legendary military campaigns in recent memory.\r\n<BR/><BR/>\r\nMarching alongside some of the greatest champions of Azeroth, Tirion Fordring continued his crusade against the Scourge, staging an all-out attack on the Lich King\'s seat of power. \r\n<BR/><BR/>\r\nThere, Tirion once again confronted Arthas, and all fell silent as the clash of steel rang out across the icy wastes. At the culmination of a fevered battle, the Ashbringer shattered Arthas\'s infamous sword, Frostmourne, in a single blow. \r\n<BR/><BR/>\r\nArthas was defeated at last, and the purified Ashbringer took its place among the most celebrated and renowned weapons in all of Azeroth\'s history.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[24] = {
+						0.423737645149231,
+						0.5816695690155029,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 2,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-245380"] = {
+			["base"] = {
+				["title"] = "General Turalyon",
+				["text"] = {
+					'<HTML><BODY>\r\n<BR/><BR/>\r\n<H1 align="center">General Turalyon</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<P>\r\nNone sacrificed more than the High General. May we always walk in his path, so we, too, might safeguard the innocent as he did. By Blood and Honor We Serve.\r\n</P> \r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[24] = {
+						0.6842326521873474,
+						0.1660686135292053,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 2,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-381731"] = {
+			["base"] = {
+				["title"] = "A Timely Message",
+				["text"] = {
+					"Choraldormi, \r\n\r\nOh ha ha, VERY funny. Look, I am certain you think it is a marvelous prank but if someone of an age not our own finds those pages, they may learn of events and incidents they should not know about. Think about the temporal repercussions! You could be opening the way to paradox, and you KNOW father wouldn't be happy about that, would he? \r\n\r\nAlso it was MY DIARY. I don't care when you took it, BRING IT BACK.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2025] = {
+						0.6005858182907104,
+						0.848843514919281,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-247334"] = {
+			["base"] = {
+				["title"] = "Slaghammer's Notes: Tyr's Fall",
+				["text"] = {
+					"We have finished setting up a small base as per the Deacon's orders. He is driven, so sure this is the proper path for the Twilight's Hammer. We will be visible to our enemies but he believes it is worth the risk.\r\n\r\nThere is some sort of broken seal leading to a complex beneath the lake. The lake itself looks like it suffered a titanic explosion thousands of years ago. Somehow the Shadow Deacon knew of this location and knows that a C'Thraxxi died here. His plan is bold. He will use the Black Blade to resurrect this ancient being and restore the Twilight's Hammer to its pinnacle.\r\n\r\nTomorrow I go in to command the forces holding the upper area. He has already dampened the wards and is preparing to enter the lower area.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[18] = {
+						0.1324850916862488,
+						0.555244505405426,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 5,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-215951"] = {
+			["base"] = {
+				["title"] = "Petrified Bone Whip",
+				["text"] = {
+					"This whip was fashined from the spine of some large and ancient creature.  The blood of many Mogu slaves was shed by this instrument of pain.\r\n\r\nThis specimen was donated by the esteemed death knight, $PLAYER_NAME$.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[390] = {
+						0.8288710117340088,
+						0.3152549862861633,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 4,
+			},
+		},
+		["GameObject-245385"] = {
+			["base"] = {
+				["title"] = "Vindicator Maraad",
+				["text"] = {
+					'<HTML><BODY>\r\n<BR/><BR/>\r\n<H1 align="center">Vindicator Maraad</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<P>\r\nHe always sought to protect those who could not protect themselves.\r\n<BR/><BR/>\r\nMaraad made the ultimate sacrifice in Draenor to save one of our own.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[24] = {
+						0.702601969242096,
+						0.4235831499099731,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 2,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-266408"] = {
+			["base"] = {
+				["title"] = "Smoldering Boots",
+				["text"] = {
+					'These boots look like they were struck with an incredible amount of arcane energy.\r\n\r\nThe name "Heinrich" is inscribed on the inside of each boot.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[76] = {
+						0.2510175704956055,
+						0.3855161666870117,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-203391"] = {
+			["base"] = {
+				["title"] = "High Priestess Siralen",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<BR/>\r\n<H1 align="center">High Priestess Siralen</H1>\r\n<BR/>\r\n<BR/>\r\n<P>Let this statue stand as an everlasting testament to High Priestess Siralen in the name of all she has done to nurture Quel\'Dormir Temple into a glowing beacon of faith.  May her newfound service under Queen Azshara herself shine as a testament to the potential of the noble birth nurtured in our beloved, Vashj\'ir.</P>\r\n</BODY>\r\n</HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[205] = {
+						0.3853839039802551,
+						0.6594858169555664,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+
+		-- end of user submission #7
+
+
+		["Item-58936"] = {
+			["base"] = {
+				["title"] = "Blackrock Orc Missive",
+				["text"] = {
+					"<Ogar moguna nogu ha gul'rok ha raznos. Ogg regas gesh'zugas throm'ka gi mog moth'aga.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-36832"] = {
+			["base"] = {
+				["title"] = "Letter of Introduction to Wyrmrest Temple",
+				["text"] = {
+					"My queen,\r\n\r\nIt has been discovered that the ley line intersection at Moonrest Gardens was unfettered by the blue dragonflight. Their forces used a surge needle to destroy the capstone, but instead of flowing the power back to the Nexus, they utilized a series of foci to clumsily run and augment the power under the land to the Azure Dragonshrine.\r\n\r\nNeedless to say, this has had dire consequences wherever the magic shot up through the ground. The Ancients of the woodlands, the Kalu'ak, and other creatures in the region have been adversely affected. Luckily for us, $PLAYER_NAME$, the night elf who stands before you, was instrumental in tracking down and dealing with all of these problems.\r\n\r\nIn my opinion, $PLAYER_NAME$ could be a great asset to Wyrmrest in helping to deal with the problems that the temple currently faces. I humbly ask that you consider her a resource, one which I found to be invaluable.\r\n\r\nYours ever respectfully,\r\n\r\nModera\r\nArchmage and Member of the Six",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-60214"] = {
+			["base"] = {
+				["title"] = "Kurzen Compound Prison Records",
+				["text"] = {
+					"KURZEN PRISON RECORDS\r\n\r\nDo not disseminate",
+					"BERRIN BURNQUILL\r\n\r\nCrimes: Disobedience, Disorderly Conduct\r\n\r\nPunishment: Incarceration, 50 years\r\n\r\n",
+					"EMERINE JUNIS\r\n\r\nCrimes: Punishment specially ordered by Colonel Kurzen\r\n\r\nPunishment: Incarceration, 75 years\r\n\r\n",
+					"OSBORN OBNOTICUS\r\n\r\nCrimes: Madness\r\n\r\nPunishment: Incarceration, 130 years",
+					"BOOKSTON HEROD\r\n\r\nCrimes: Consorting with rebels\r\n\r\nPunishment: Death by hanging\r\n",
+					"COLONEL CONRAD KURZEN\r\n\r\nCrimes: Weakness\r\n\r\nPunishment: Flung from tower\r\n\r\n",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-166893"] = {
+			["base"] = {
+				["title"] = "The Last Menethil",
+				["text"] = {
+					"Knowing that our dear Princess Calia was ASSASSINATED by Traitor Wrynn and raised as undead is a pang in our hearts, brothers and sisters.\r\n\r\nBut do not lose hope! King Terenas' dynasty will yet live on!",
+					"It was a well-guarded secret that during the late days of her father's reign, Princess Calia wed a nobleman of the ARATHI bloodline.\r\n\r\nThe prideful Arthas demanded that this truth remain hidden until he himself had wed and sired an heir. Of course, that never came to be.\r\n\r\nBut... a child WAS indeed born!\r\n\r\nPrincess Calia gave birth to a son. Yes, an HEIR to the Menethil throne!",
+					"Sadly, the princess was separated from her husband and child during a Scourge attack. Her family was presumed dead.\r\n\r\nBut let joy fill your hearts, friends... for the child was SAVED!\r\n\r\nThe young prince was rescued by a good-hearted citizen of Lordaeron. He has been kept sheltered and safe all these years by members of the Scarlet Brotherhood. We have him in a SECURE location that must, for obvious reasons, remain secret.",
+					"We had intended to reunite the young heir with his mother. Sadly, the Traitor King of the Alliance had Princess Calia murdered by his Banshee lover. The abomination that now walks this land is NOT Princess Calia!\r\n\r\nRetribution will fall upon all these monsters! Lordaeron is for the LIVING!",
+					"Let hope rise in your hearts, brothers and sisters. Once we have purged the undead FILTH and the CURSED worgen from our homeland, the young king will be revealed!\r\n\r\nThe Traitor Wrynn will be exposed and our TRUE king will take the throne. The Menethil dynasty WILL be restored!",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-41262"] = {
+			["base"] = {
+				["title"] = "Orders From Drakuru",
+				["text"] = {
+					"Minions be hearin' da call of your masta! Da Lich King be givin' Drakuru full control of da armies of da Scourge in Zul'Drak. We be commanded ta kill everyting.\n\nEVERYTING MUST DIE!\n\nWe be processin' all da corpses in da Dead Fields and sendin' em up ta Prince Navarius' crew in  Zeramas for Scourgin'! Notin' goes ta waste on Drakuru's watch!\n\nSoon we be drinkin' da blood of da prophets ta become stronger dan eva before! Zul'Drak and Gundrak gonna fall to da Scourge!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-58114"] = {
+			["base"] = {
+				["title"] = "Issue of the Moonbrook Times",
+				["text"] = {
+					'<HTML>\r\n<body>\r\n<h1>Group of Homeless Samaritans Brutally Murdered Behind Furlbrow Farm \r\n</h1>\r\n<BR/>\r\n<p>\r\nWitnesses state that the four men killed at the Furlbrow\'s farm were on their way to delivering dirt pies to a shelter on the east coast when attacked. \r\nJimb "Candles" McHannigan, an eyewitness on the scene, had this to say, "Yep, I saw the whole thing go down with my own two eyes. Was a female mage. She looked like she may have been on something. She slaughtered the poor bums in broad daylight while shouting obscenities and proclaiming her love for Stormwind and King Varian Wrynn. I think she may have killed Lou immediately afterward. I was too shaken up to see."\r\n</p>\r\n</body>\r\n</HTML>\r\n\r\n\r\n\r\n\r\n',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-59357"] = {
+			["base"] = {
+				["title"] = "A Slashed Bundle of Letters",
+				["text"] = {
+					"To the Honorable Headmaster Crillian,\r\n\r\nMy former Master, I write to you so that you might know what your apprentice has been doing of late.  Paying heed to your advice, I sought to build my knowledge and wisdom through travel outside the gates of our beloved Stormwind.  My journeys took me to many places but I have decided to take up residence here in the lovely town of Moonbrook.  The surrounding fields of Westfall are most beautiful as the harvest approaches.",
+					"Within just a few days of my visit I found myself tutoring the local children from the nearby farmlands.  The lessons went so well that the town mayor commissioned me to run a school and construction has begun on a brand new schoolhouse!  From Silverpine to Stormwind and now Moonbrook -- who would have guessed I would see so much of Azeroth!\r\n\r\nWarm regards,\r\n\r\nStalvan Mistmantle",
+					"Dear Noble Sir,\r\n\r\nWord of your need for a tutor for your children has traveled to me here in Goldshire, where I take up temporary residence in the Lion's Pride Inn.  Due to the unfortunate state of events in the region, I was forced to abandon my post as Headmaster of the Moonbrook Schoolhouse.  Please accept my application to serve as tutor for your offspring.  Headmaster Crillian of the Academy can speak to you of my abilities if necessary.",
+					"I shall travel to meet you in person when the winter rains subside and the roads are suitable for travel once again.\r\n\r\nUntil then,\r\n\r\nStalvan Mistmantle of Silverpine",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-57756"] = {
+			["base"] = {
+				["title"] = "Murloc Clue",
+				["text"] = {
+					"<The letter is missing entries as the ink has washed away in many places.>\r\n\r\n... every form of ... has been based ... on the antagonism of oppressing and oppressed ...\r\n\r\n... nothing to lose, but your chains ...\r\n\r\n... the past cannot be forgotten ...\r\n\r\n... cannot be forgiven ...\r\n\r\n... will RISE AGAIN!\r\n\r\n\r\n",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-58887"] = {
+			["base"] = {
+				["title"] = "Gnoll Battle Plans",
+				["text"] = {
+					"Step 1: KILL\r\nStep 4: Sleep?\r\nStep 2: EAT\r\nStep 1: Poop",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["GameObject-192872"] = {
+			["base"] = {
+				["title"] = "The Archmage Antonidas - Part III",
+				["text"] = {
+					"While Antonidas investigated ways to stop the plague, Arthas had fallen into madness, razing Stratholme and traveling to Northrend to hunt the Dreadlord Mal'ganis.  Before the aging archmage could find a cure, Arthas, accompanied by the Lich Kel'Thuzad and an undead army, marched south through Tirisfal and Lordaeron, destroying everything in their path and fueling the war machine with their wake.",
+					"Soon they were at Antonidas' doorstep, looking to destroy Dalaran and take the Book of Medivh, with which they planned to summon the demon Archimonde.  \r\n\r\nAntonidas stood before Arthas and his undead army, refusing to give up the book or the city.  Using his unparalleled skills of defensive magic, Antonidas set up a magical field that would destroy any undead that touched it (an earlier version of the defensive fields used today).",
+					"Sadly, this was not enough, and Arthas found a way to dispel the enchantment.  He marched straight into Dalaran and murdered Antonidas in cold blood.  Kel'Thuzad and Arthas entered the Violet Citadel, took the Book of Medivh, and summoned Archimonde.  \r\n\r\nAs the undead army left the city in search of new targets, Archimonde demolished its structures, bringing its magical spires crashing to the ground.  Antonidas' Dalaran, now leaderless and in shambles, was no more.",
+					"[Epilogue]\r\n\r\nHaving fallen in battle defending the only home he knew, Antonidas' legacy continues to be an example for those who live on. His accomplishments, valor, and memory are a testament to the survival of the old world and its new legacy. In this world of constant war, the fragile bonds of a new Alliance are but a tribute to the memory and fortitude of one of Lordaeron's bravest sons and greatest heroes.\r\n",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.4677895903587341,
+						0.3912357687950134,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-52279"] = {
+			["base"] = {
+				["title"] = "Salt-Crusted Journal",
+				["text"] = {
+					"We barely escaped from Kezan with our lives! The volcano took everything...my house, my car, my pet boar, my pet boar's house, my pet boar's car...\r\n\r\nBut at least we got safely onto the ships! We'll sail straight for Durotar, sucker a few orcs after we get onto dry land again, and be rolling in money again within a week!",
+					"We've been on the ocean for what seems like forever. I don't think anyone knows where we are.\r\n\r\nOur supplies are dwindling, and we used up half our water trying to run the pump for the makeshift desalinator. We tried throwing a few people overboard to gain speed, but we kept all their gold so it didn't help that much.\r\n\r\nIt was kinda fun, though.",
+					'We\'ve landed! Well, more like crashed. The boats tore themselves open overnight while the "captain" had a rag tied to the wheel.\r\n\r\nWe all woke up face-down in the sand on this mysterious desert beach! Nobody has any idea where we are, but we\'ll have to make do in this exotic and highly uncharted territory.\r\n\r\nDid I say we all woke up? That may have been an exaggeration.',
+					"We found something amazing! An old busted-up machine thing. One of the smartypants antique collectors that survived the crash said it looked like it might be a Titan thingy.\r\n\r\nWhatever it is, I bet it's valuable. The guys that found it said their heads hurt after digging it up and it's leaking some kinda glowy light but WHATEVER!",
+					"The guys who found that artifact are acting a little FUNNY! Nothing too bad for a goblin mind you. And they've only stabbed one or TWO people.\r\n\r\nI guess it's not that bad! Everyone around here is feeling a LITTLE funny anyway ha ha ha.\r\nThat brute they keep with them sure TALKS a lot, though.",
+					"THE others let me JOIN them finally they showed me the ARTIFACT for a really long time til I felt the tingles they say MEATFACE knows everything he is the SMARTEST I hope with his help we can LIBERATE this lost beach from the OTHER EVIL GOBLINS that came in their FLYING MACHINES to KILL US they lied they said WE'RE FROM GADGET-ZAN TO SAVE YOU but we were not fooled we took their stuff ha ha ha",
+					"DELICIOUS JOURNAL I MUST EAT IT\r\n\r\n<The rest of the pages are missing>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-59362"] = {
+			["base"] = {
+				["title"] = "The Legend of Stalvan",
+				["text"] = {
+					"To the Honorable Headmaster Crillian,\r\n\r\nMy former Master, I write to you so that you might know what your apprentice has been doing of late.  Paying heed to your advice, I sought to build my knowledge and wisdom through travel outside the gates of our beloved Stormwind.  My journeys took me to many places but I have decided to take up residence here in the lovely town of Moonbrook.  The surrounding fields of Westfall are most beautiful as the harvest approaches.",
+					"Within just a few days of my visit I found myself tutoring the local children from the nearby farmlands.  The lessons went so well that the town mayor commissioned me to run a school and construction has begun on a brand new schoolhouse!  From Silverpine to Stormwind and now Moonbrook -- who would have guessed I would see so much of Azeroth!\r\n\r\nWarm regards,\r\n\r\nStalvan Mistmantle",
+					"Dear Noble Sir,\r\n\r\nWord of your need for a tutor for your children has traveled to me here in Goldshire, where I take up temporary residence in the Lion's Pride Inn.  Due to the unfortunate state of events in the region, I was forced to abandon my post as Headmaster of the Moonbrook Schoolhouse.  Please accept my application to serve as tutor for your offspring.  Headmaster Crillian of the Academy can speak to you of my abilities if necessary.",
+					"I shall travel to meet you in person when the winter rains subside and the roads are suitable for travel once again.\r\n\r\nUntil then,\r\n\r\nStalvan Mistmantle of Silverpine",
+					". . .Giles, the boy, seems a bit rambunctious and will be a challenge to educate.  However the elder daughter, Tilloa, seems exceptionally smart.  I couldn't help but to notice her captivating beauty as well.  She is on the cusp of womanhood now.  Supposedly the Lord has arranged her marriage for next year.  But I digress.  This week I will accompany the family to their summer cottage near the Eastvale Logging Camp in Elwynn, close to the Red Ridge Mountains.  I hope to write more while there.",
+					". . .most strange and uncontrollable feeling.  Never have I felt the way I did today.  Whilst assisting Giles with his history lesson, Tilloa was outside tending to the flower garden.  After a few minutes she came inside and placed a scarlet begonia in my open palm and smiled at me in such a way that my heart felt as though it was trembling within my chest. . . .",
+					". . .most certain that she shares the same feelings for me now.  She even placed her hand on mine this morning.  When she smiles, her eyes light up like glittering diamonds.  Unspoken words pass between us.  I can feel her in my pounding heart and heated veins.",
+					'. . .anger and fury the likes of which I never knew existed!  How dare she.  As I was instructing Giles in the meaning of numbers, Tilloa appears before me with a suitor, holding hands in public nonetheless!  What an uncouth young man.  Rather than introduce me properly, Tilloa simply said, "Oh that\'s just my tutor, Uncle Stalvan.  He\'s a nice old man."  Old!  At that word my cheeks flushed with heat.  I am but a few years older and yet she betrays. . .',
+					". . .downward spiral of despair.  First she mocks me and now she is engaged.  The ungracious charlatan was pretending to love when truly she desired to hurt me all along.  A black void lurks within me now and it grows with each waking moment.  The blood I shall spill pales in comparison to the tears I have shed. . .",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-166890"] = {
+			["base"] = {
+				["title"] = "The Traitor King",
+				["text"] = {
+					"The current King of Stormwind pretends that he represents our interests. That he cares about us.\r\n\r\nHe does not.\r\n\r\nAnduin Wrynn is unworthy of his name and heritage. He cares more about the undead than his living subjects. He has betrayed us all.",
+					'It was the boy-king who conspired with Sylvanas Windrunner to forge a pact between humans and undead. The meeting in the Arathi Highlands was a staged event to drum up sympathy for his cause.\r\n\r\nYou have heard stories that the so-called "Forsaken" were killed by the Banshee. FALSE. There was no massacre. But Anduin wants you to believe there was.',
+					"Why the deception? Because he wants us to feel SORRY for those monsters. To welcome them back into our lives. To give up the lands we've fought so hard to hold onto.\r\n\r\nLordaeron belongs to the LIVING. It is our LEGACY. Do not be tricked by the FALSE king!\r\n\r\nThe Scarlet Brotherhood must bring an end to Anduin's puppet reign. Unite and rise up against his treachery!",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-58116"] = {
+			["base"] = {
+				["title"] = "Mysterious Propaganda",
+				["text"] = {
+					"The hour of our redemption draws ever closer, brothers and sisters! Tonight we will shed the shell of our former lives and be reborn as heroes!\r\n\r\n-V",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-60215"] = {
+			["base"] = {
+				["title"] = "Kurzen Compound Officers' Dossier",
+				["text"] = {
+					"KURZEN OFFICERS' DOSSIER\r\n\r\nDo not disseminate",
+					"CHIEF ANDERS\r\n\r\nLeads the commandos and jungle fighters.  Responsible for maintaining the compound's militia and protecting the compound resources from rebel attacks.",
+					"CHIEF GAULUS\r\n\r\nLeads the medicine men and head shrinkers.  Responsible for medical corps and maintaining peace with nearby Bloodscalps and Skullsplitters.",
+					"CHIEF MIRANDA\r\n\r\nLeads the Kurzen Shadow Ops.  Responsible for maintaining blue stone cache and for further research into its uses.",
+					"CHIEF ESQUIVEL\r\n\r\nInterim chief after the death of Colonel Kurzen.  Responsible for overseeing all operations of Kurzen's Expedition.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-938"] = {
+			["base"] = {
+				["title"] = "Muddy Journal Pages",
+				["text"] = {
+					". . .most certain that she shares the same feelings for me now.  She even placed her hand on mine this morning.  When she smiles, her eyes light up like glittering diamonds.  Unspoken words pass between us.  I can feel her in my pounding heart and heated veins.",
+					'. . .anger and fury the likes of which I never knew existed!  How dare she.  As I was instructing Giles in the meaning of numbers, Tilloa appears before me with a suitor, holding hands in public nonetheless!  What an uncouth young man.  Rather than introduce me properly, Tilloa simply said, "Oh that\'s just my tutor, Uncle Stalvan.  He\'s a nice old man."  Old!  At that word my cheeks flushed with heat.  I am but a few years older and yet she betrays. . .',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-59157"] = {
+			["base"] = {
+				["title"] = "Brubaker's Report",
+				["text"] = {
+					"Keeshan, if you're reading this note, I'm dead. Likely that my position was compromised.\r\n\r\nOrcs are committing unspeakable atrocities against their prisoners. Yes, prisoners, Keeshan. They've got cages full of P.O.W's. If you're gonna blow up this valley, you'll need to free the prisoners first.\r\n\r\nTell my wife I love her and to take out the damned trash.\r\n\r\n-Brubaker\r\n\r\nPS - They've got black dragons.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-58113"] = {
+			["base"] = {
+				["title"] = "Informational Pamphlet",
+				["text"] = {
+					"Give a man a tabard and he will pledge his undying loyalty to your cause. These men are now government sheep who care not for your hardships. They wear the tabard of their leader and care only for what he desires.\r\n\r\n-V\r\n",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["GameObject-408079"] = {
+			["base"] = {
+				["title"] = "The Third Clue",
+				["text"] = {
+					"In Zul'Gurub: the coil and cache, the temple and terrace.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[50] = {
+						0.575767993927002,
+						0.2136504650115967,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-78917"] = {
+			["base"] = {
+				["title"] = "Dojani Orders",
+				["text"] = {
+					"The Reclamation\n\nBy order of his exalted, the reclaimers shall be dispatched to the ruins of Dojan. There they are to recover any artifacts that may be used to arm our people.\n\nWe need guardian statues, scrolls, any arcane devices that will help us rekindle our ancient glory.\n\nPriority must be given to the Pools of Youth on the north side of Dojan. Those waters are vital to the continued strength of the empire.\n\n-Groundbreaker Brojai,\n\n The Lord Reclaimer\r\n",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 4,
+			},
+		},
+		["GameObject-192707"] = {
+			["base"] = {
+				["title"] = "Weathered Diary - Dates from the Third War",
+				["text"] = {
+					"Entry 1\r\n\r\nBefore I could understand what was happening, the devastation was upon us. The ground trembled and our fair spire, which had stood citadel over Dalaran since the Second War, shattered.\r\n\r\nI remember screaming as my father's face disappeared behind the tumbling scaffolding, but I heard nothing. Even in my terror, I thought of my magical training. If I could only slow this disaster-but the spells died within me. Traces of demonic power barred my efforts. There was no hope. I closed my eyes and waited. But somehow, I am still here.",
+					"Entry 2\r\n\r\nThe wreckage shifted for hours. I was certain each new thundering tremor would finally end it. Instead, I remain huddled beneath an archway that had once framed our view of the bustling market streets. How many times had I seen my sister returning from there, her arms loaded with goods? Now only dust and stone stand before me.",
+					"Entry 4\r\n\r\nI must believe in the Kirin Tor. The great mages of Dalaran would not desert their people. This rubble that imprisons me is no more than a trifle to a skilled spellcaster. I will be saved, and one day, I will finish my training and stand among them.",
+					"Entry 5\r\n\r\nThere are no signs of others or of my family. I have called for them. Everything above is silent now. I am not sure whether I am blessed or cursed. My heart would quiet itself and follow the others to rest, but my mind is thick with fear.",
+					"Entry 6\r\n\r\nIt grows darker and the air is thinner. The faint lights I summon to write burn into my eyes. I can do no more. My energy must be saved for what may yet come. I am audacious enough to hope that these scraps of paper will hold out against the silence as I cannot. I would become a voice, singing up through this abyss, softening until a whisper, and then fading into the sky.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.4689543843269348,
+						0.3995146751403809,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-60295"] = {
+			["base"] = {
+				["title"] = "Bloodscalp Lore Tablet",
+				["text"] = {
+					"Moon Over the Vale",
+					"A Moon over the Vale shines\r\nCasting its glow upon the jungle\r\nWhere proud Warriors heed the call\r\nTo defend our Nation and sacred grounds. \r\n\r\nA Moon over the Vale shines\r\nFar above the cries of battle\r\nWhere blood is spilled\r\nOf foe and comrade alike.",
+					"And when our brethren pass\r\nInto realms beyond the known\r\nThe soul-spirit hardens\r\nDeep beneath the Vale.\r\n\r\nAnd when our brethren pass\r\nInto the Mountain's Temple\r\nWe shall protect their eternal spirit\r\nEncased within the holy blue crystal.\r\n\r\nAnd when our brethren pass\r\nA Moon over the Vale shines.",
+					"Gri'lek the Wanderer",
+					"Tale of Gri'lek the Wanderer\r\n\r\n[...The beginnings of the tablet were worn and erased.  But the end was legible...]\r\n\r\nGri'lek stamped through the jungle.  And his eyes burned and his chest rumbled, for there was great anger in him.  \r\n\r\nIn fury he roared to the sky, and he raised his arm.  He raised his left arm, grown strong and sure from hunting without its twin.  \r\n\r\nFor Gri'lek's right arm was gone, and it would not return.",
+					"And so he wandered, and he searched.  And his arm remained lost to him.  And so he cursed and roared as he walked.  \r\n\r\nBut Gri'lek had long ago turned his ear away from the spirits, and they were angered and would not listen to his curses.\r\n\r\nDoomed was Gri'lek.  Doomed to wander, armless.",
+					"Fall of Gurubashi",
+					"Rising from the ocean, a tower of water, Neptulon sent the great Krakken to doomed I'lalai.  So huge were their forms that jungles of kelp swayed through their limbs, and leviathans swam through bodies.  \r\n\r\nThe largest Krakken then raised his arms high and crashed them into the sea, sending waves about him.  And they raged toward I'lalai.",
+					'The Krakken roared, and their voices thundered like an ocean storm: \r\n\r\n"We come."\r\n\r\nMin\'loth, standing firm, called forth his magic.  The waves sent to I\'lalai parted and washed to both sides, and they flooded the jungle beyond.  Min\'loth then bade his minions chant spells of binding, and a din rang out as dozens of troll voices rose.\r\n\r\nAnd one voice rose above the rest.',
+					"Min'loth bellowed and his magic gathered the power of his minion's spells, and he cast it at the approaching Krakken.\r\n\r\nThe seas parted and Min'loth's spell sped toward the servants of Neptulon.  Lightning tore the sky and the spell struck them, and a thousand bolts fell, boiling water and burning craters in the earth.\r\n\r\nMin'loth cried in triumph, knowing his spell would fell the great beasts.",
+					"But the Krakken are old, very old.  They remembered when the land was first born from the sea.\r\n\r\nThey remembered when the Old Ones ruled and when the Travelers came and cast them down.  They remembered when magic was new.\r\n\r\nThey are old and they hold many secrets.  And though Min'loth's spell was strong, it, like the troll, was mortal.  \r\n\r\nAnd so it failed.",
+					"It failed to bind the Krakken, but it enraged them.  Not in aeons had a mortal caused them pain, and the troll's spell was painful.\r\n\r\nAnd so they shed the bindings of Minloth's spell, but then roared and struck with fury.\r\n\r\nA rumble was heard as great waves rose from the deep and raced toward the land.  When they reached I'lalai they cast a shadow on the city.\r\n\r\nBut before they destroyed it the Krakken halted, poised.",
+					"The troll witchdoctors trembled and cried out to their master.  Min'loth gazed at the mountains of the sea, doomed and defiant.  He turned to his adepts and whispered, and the trolls etched his last words into stone.  Min'loth then faced the looming Krakken.\r\n\r\nHe grimaced and hurled his staff, his last bold act.\r\n\r\nThe Krakken then bent their fury upon Min'loth, and an ocean fell upon I'lalai.\r\n\r\nAnd it was no more.",
+					"And then the waters fell upon the jungle, washing clean all they met.  Trolls and beasts cried out as the waters smashed and drowned them.\r\n\r\nMany Gurubashi wondered why the ocean swallowed them, but then they died and knew nothing.\r\n\r\nAnd finally, when the waters reached the mountains, they stopped.  Appeased, they retreated back beyond the shores, and they left a wake of death.\r\n\r\nThey retreated, but they surged around I'lalai and remained, drowning it forever.",
+					"And the chief Var'gazul, safe behind the mountains in Zul'Gurub, went out to the jungle and found it washed clean of his people.\r\n\r\nAnd he despaired, for his dreams of conquest were thwarted.\r\n\r\nAnd never was Min'loth the Serpent found.",
+					"The Emperor's Tomb",
+					"By moon and fire,\r\nBy flesh and bone,\r\nScribed in blood,\r\nCarved in stone.\r\n\r\nLeave this place\r\nOr meet your doom\r\nDeath stands guard\r\nOver the Emperor's Tomb.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-58115"] = {
+			["base"] = {
+				["title"] = "Secret Journal",
+				["text"] = {
+					"I can hardly believe it. We've endured this torment for four long years, but soon it will be over. The Brotherhood will be reborn and we will then wash across this land as a flood to cleanse it of its filth and corruption.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-58888"] = {
+			["base"] = {
+				["title"] = "Gnoll Orders",
+				["text"] = {
+					"You attack from down there!\r\nWe attack from up here!\r\nMeet in middle at humie town.\r\n\r\n-Yowler, Son of Yowler",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-85688"] = {
+			["base"] = {
+				["title"] = "A Missive from Lorewalker Cho",
+				["text"] = {
+					"$PLAYER_NAME$,\n\nYour companions that survived the battle with the Sha of Doubt are now in the care of Binan Village, home to Pandaria's finest healers. It looks as though they shall recover their physical injuries.\n\nThe journey to Binan will take you up the Veiled Stair to the very doorstep of Kun-Lai Summit. I urge you to bring this missive to Mayor Bramblestaff in Binan Village. There, he can direct you to your companions.\n\nI look forward to our paths crossing again.\n\n-Lorewalker Cho",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 4,
+			},
+		},
+		["Item-57136"] = {
+			["base"] = {
+				["title"] = "A Letter to Kasim Sharim",
+				["text"] = {
+					"Kasim,\n\nHe has returned.\n\n    - Watcher Mahar Ba",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-110536"] = {
+			["base"] = {
+				["title"] = "Envoy's Log",
+				["text"] = {
+					"<It appears that the envoy has been keeping a journal.>\r\n\r\nDay 3,\r\n\r\nWe have arrived at the Bloodmaul camp. Their chief Borgal refused to talk with with me unless I promised to buy a few cartloads of slaves. The charge was of course way higher then I should have paid but I need their goodwill on this mission.\r\n\r\nBorgal has agreed, at a ridiculous price, to have his slaves mine into the sites we have indicated and turn over to us anything that may be found.\r\n\r\nEven though the prophet Garrosh says that an artifact lays buried under this mountain I question the wisdom of employing the Bloodmaul to find it. Orders are orders nonetheless...",
+					"Day 7,\r\n\r\nOur digging results so far have resulted in just rocks and dirt. The ogres are starting to mumble about getting rid of us. Another pouch full of coins in Borgal's hand seemed to smooth things over.",
+					"Day 10,\r\n\r\nMore rocks and dirt.",
+					'Day 14,\r\n\r\nLate last night there was a strange commotion in the southwest cave. What exactly happened I\'m not sure, but I observed several slaves hauling bodies out of the cave entrance.\r\n\r\nThis might be from the "Soulgrinder" mentioned in the breifing.',
+					"Day 15,\r\n\r\nBorgal refused to turn over the artifact!\r\n\r\nI will not allow that fat ogre to keep Iron Horde property!\r\n\r\nI have discussed the matter with my guards and we are going to return in the morning and force him to hand over the artifact or else!\r\n\r\n<The following pages are blank.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-35783"] = {
+			["base"] = {
+				["title"] = "Moonrest Gardens Plans",
+				["text"] = {
+					"Goramosh,\r\n\r\nI am sending a representative of the Ethereum to you.  Ambassador Duyheen tells me that there are more of his kind who would like to join the cause.  Feel him out, see if you can find a use for him.\r\n\r\nIf he proves helpful, I may consider accepting more of his kind into the fold.\r\n\r\nDon't be an idiot; burn this letter once you've read it!\r\n\r\nM",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-166892"] = {
+			["base"] = {
+				["title"] = "The Would-Be Queen",
+				["text"] = {
+					"We all know that Terenas Menethil was the last true liege of Lordaeron. In fact, he was the last GREAT king in all of Azeroth.\r\n\r\nSadly, he was murdered by a son who had become obsessed with undeath. The same prince who slaughtered so many of our loved ones and raised them up as MONSTERS.",
+					"Yet we clung to one hope for the Menethil dynasty to live on: Princess Calia, the last living heir of King Terenas.\r\n\r\nSadly, that hope has been taken from us by a dark CONSPIRACY led by one of our own.",
+					"Though she was serving as a humble priestess, Calia Menethil was destined to REIGN in Lordaeron one day. The people of this great land would have risen up and helped her fight for the throne.\r\n\r\nAnduin Wrynn knew this. He FEARED such a challenge to his reign. So he set about to bring her down.",
+					"The boy-king CONSPIRED with the Banshee herself to arrange a meeting between the living and the dead under a FALSE flag of truce. Traitor Wrynn seduced the Banshee into staging a FAKE massacre to lure out the good-hearted Princess Calia.\r\n\r\nThen the traitor king had our princess MURDERED.",
+					"But that was not the end of Anduin's foul scheme. No, he had his Banshee lover raise Calia as a lich... practically SPITTING on the grave of good King Terenas!\r\n\r\nWhy?\r\n\r\nBecause the traitor king is OBSESSED with the dead! He plans to MARRY Calia and secure his right to the throne of Lordaeron.",
+					"The Scarlet Brotherhood will not allow this to happen! We will BRING DOWN the traitor king and his undead puppet!\r\n\r\nWith tears in our eyes, we will burn the corpse of Princess Calia. Upon her ashes, Lordaeron will return to GREATNESS!",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-58889"] = {
+			["base"] = {
+				["title"] = "Gnoll Strategy Guide",
+				["text"] = {
+					"<This document is blank.>\r\n\r\n<Correction. This document was used recently as toilet paper.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-34801"] = {
+			["base"] = {
+				["title"] = "Crafty's Shopping List",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<BR/>\r\n<P>Okay, $PLAYER_NAME$, this is a list of all the stuff that I\'m going to need for our new super-secret, er..., super weapon. For now, let\'s just call it "Crafty\'s Ultra-Advanced Proto-Typical Shortening Blaster".</P>\r\n<BR/>\r\n<P>Trust me, it\'s going to be far more revolutionary than that old, hokey world enlarger!</P>\r\n<BR/>\r\n<P>Anyway, don\'t think too hard about it right now. Just get me this stuff and we\'ll be golden!</P>\r\n</BODY>\r\n</HTML>',
+					'<HTML>\r\n<BODY>\r\n<BR/>\r\n<H1 align="center">My Tools</H1>\r\n<BR/>\r\n<P>First things first... I need my tools. For a project this intricate no others will do!</P>\r\n<BR/>\r\n<P>When we had to run for our lives to escape from the pumping station -- that\'s a whole different story -- I didn\'t have time to pick them up. I mean, come on, I was running for my life! But I do remember that I left them under the pumping station to the east.</P>\r\n</BODY>\r\n</HTML>',
+					'<HTML>\r\n<BODY>\r\n<BR/>\r\n<H1 align="center">An Overcharged Capacitor</H1>\r\n<BR/>\r\n<P>Any engineering hack worth their salt should be able to whip one of these up for you if you can\'t create it yourself. Hell, I\'d make one for you, but I\'m missing my tools at the moment, remember?</P>\r\n<BR/>\r\n<P>So, do whatever it takes, but get me one. The project\'s going nowhere without it. If you have to, head back to the southern continents and scour the auction house!</P>\r\n</BODY>\r\n</HTML>',
+					'<HTML>\r\n<BODY>\r\n<BR/>\r\n<H1 align="center">A Handful of Rocknar\'s Grit</H1>\r\n<BR/>\r\n<P>This last bit might be a little tricky to get, but it\'s necessary to fashion the blaster\'s lens from only the finest sand. That means obtaining it from a top-notch elemental.</P>\r\n<BR/>\r\n<P>Rocknar will do nicely. He was spotted to the southeast in the Frozen Reach between Unu\'pe and the Wailing Ziggurat. Go break down his icy exterior to get to his rocky core and bring me back a handful.</P>\r\n</BODY>\r\n</HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-45058"] = {
+			["base"] = {
+				["title"] = "Dusty Journal",
+				["text"] = {
+					"The first half of the journal seems to be nothing more than the ledger for Mr. Cooper's business. Handwritten columns of figures note the production and sale of barrels to the inhabitants of Moonbrook and even a few clients in Stormwind itself.\n\nThe back half of the book seems to have been Mr. Cooper's journal, where he discusses leaving the family business to his younger brother. You find no mention of children.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-62807"] = {
+			["base"] = {
+				["title"] = "Dark Iron Memo",
+				["text"] = {
+					"Gravius,\r\n\r\nStarting today, you are to redouble your efforts.  The scope of our project has just expanded severalfold.  Your archaeological studies and geological studies can wait.\r\n\r\nMoving forward, you are to dig downward as quickly as possible.  Crews within the Slag Pit will be working from the other direction to connect their tunnels to yours.  The underground empire of the Dark Iron dwarves is growing, Gravius, and we are at the forefront.",
+					"Succeed in this task, and you will be rewarded.  You should know, these orders do not come from me, but from Overseer Maltorius and the Archduke themselves.\r\n\r\nDig deep,\r\nDig-Boss Dinwhisker",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-58937"] = {
+			["base"] = {
+				["title"] = "Blackrock Invasion Plans",
+				["text"] = {
+					"Ogerin'naz makogg kil Tov'nokaz kagg kaz tov'osh ko g lok'tar osh'kazil il makogg Lok'mogul.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-50410"] = {
+			["base"] = {
+				["title"] = "Durrin's Archaeological Findings",
+				["text"] = {
+					"Emperor Thaurissan,\n\nBelow is my account of my most recent finding here in Un'Goro Crater.  After the Cataclysm hit, I stopped my current project and began sweeping the Crater for new potential dig sites.  Curiously, the Crater wasn't hard hit by the Cataclysm, but I did find what appeared to be a monstrous mandible peeking out of the ground in Terror Run!",
+					"It appears to be an ancestor of the dinosaurs that live here.  I've spent the last several weeks digging it out, and it has been my most exciting dig yet.  By my calculations, this beast must be nearly 300 feet long, from tip to tail.  That's longer than some of the largest dragons, and FAR larger than any dino that currently exists here in the Crater.",
+					"The going has been slow, mainly because I've needed to cover up my work behind me.  That blasted goblin, Nilminer, still has cronies digging in the area, and I mustn't risk any news of this discovery leaking before I send my final results back to Blackrock Mountain.  This may be the key piece of information that tells us what the Titans were doing in Un'Goro!\n\nRegards,\n\nDurrin Direshovel",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["Item-58111"] = {
+			["base"] = {
+				["title"] = "Gnoll Attack Orders",
+				["text"] = {
+					"Minions, our leader has spoken. You are to sack Sentinel Hill and free the admiral. You may keep anything that you find in your rampage.\r\n\r\n-Helix",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["GameObject-192894"] = {
+			["base"] = {
+				["title"] = "Remedial Magic 101: Tips from the Pros",
+				["text"] = {
+					"- Fight fire with fire!  Just because a monster's body is completely made of flames doesn't mean that your fireball spell won't work.  Give it a shot!  The results might surprise you.\r\n\r\n- Dress for success!  Studies show that mages who pay attention to their wardrobe are FAR more effective than those who wear older, lower-quality clothing.  Have you updated your robe lately?\r\n\r\n- Know your role!  At first glance, your staff may look like an effective melee weapon, but it's not.  Let the guys with the big shiny armor stand in front.  That being said...\r\n",
+					"- Friendly fire!  Don't doubt yourself - go ahead and cast that spell!  It's OK if you miss; your arcane missiles probably won't hit your friends.\r\n\r\n- Get a job!  A great way to build your skill is to ask people if they need any help with anything.  You'd be surprised how many people are looking for a good mage to hire!  Contrary to what you might think, even the simplest act of delivering a package can make you a better caster.\r\n\r\n- The daily grind!  You may have heard about some mages choosing to mindlessly and repetitively kill monsters - often several at a time - in order to practice their spellcasting.  While this is a legitimate and often effective method to become more powerful, over extended periods of time, it will rot your brain.\r\n",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.4360669255256653,
+						0.4665119647979736,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-166891"] = {
+			["base"] = {
+				["title"] = "The Cursed Old Wolf",
+				["text"] = {
+					"We all know that Anduin Wrynn is a traitor to his race and does not deserve to be king. These facts are INDISPUTABLE.\r\n\r\nSo who should be king? For now, there is only one answer: Genn Greymane.",
+					"Yes, we must rally behind a shapeshifting monster, cursed by a night elf plague to spend half his life as a beast.\r\n\r\nWhy?\r\n\r\nBecause for all his many flaws, Greymane HATES the Forsaken. He wants the Banshee DEAD. His goals align with ours, and he has the forces to get the job done.",
+					"But do not worry, brothers and sisters. Greymane is NOT a long-term solution. We will follow him only until the undead are wiped out.\r\n\r\nThen we will bring down Greymane and turn our blades upon the rest of his cursed kind.",
+					"It will be a challenge to hide your disdain for the mongrel worgen. But we must do it for a time, brothers and sisters.\r\n\r\nOnce Lordaeron is free of undead filth, the Scarlet Brotherhood will FINISH the job and ensure that only pure-blooded humans hold this land!",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-59361"] = {
+			["base"] = {
+				["title"] = "A Torn Journal",
+				["text"] = {
+					". . .Giles, the boy, seems a bit rambunctious and will be a challenge to educate.  However the elder daughter, Tilloa, seems exceptionally smart.  I couldn't help but to notice her captivating beauty as well.  She is on the cusp of womanhood now.  Supposedly the Lord has arranged her marriage for next year.  But I digress.  This week I will accompany the family to their summer cottage near the Eastvale Logging Camp in Elwynn, close to the Red Ridge Mountains.  I hope to write more while there.",
+					". . .most strange and uncontrollable feeling.  Never have I felt the way I did today.  Whilst assisting Giles with his history lesson, Tilloa was outside tending to the flower garden.  After a few minutes she came inside and placed a scarlet begonia in my open palm and smiled at me in such a way that my heart felt as though it was trembling within my chest. . . .",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
 			},
 		},
 
