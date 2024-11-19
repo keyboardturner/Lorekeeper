@@ -750,6 +750,27 @@ TextDisplayFrame.Type_ID:SetPoint("LEFT", TextDisplayFrame.NextPageButton, "RIGH
 
 
 --------------------------------------------------------------------------
+-- Clean Data
+
+function LoreKGUI.CleanItemData(itemID)
+	if not itemID then return end;
+
+	LoreK_DB["text"][itemID]["base"]["text"] = nil;
+	LoreK_DB["text"][itemID]["base"]["title"] = nil;
+	LoreK_DB["text"][itemID]["base"]["singlePage"] = nil;
+	LoreK_DB["text"][itemID]["base"]["pageCount"] = nil;
+	LoreK_DB["text"][itemID]["base"]["material"] = nil;
+
+	local textTitle = LK["LocalData"]["text"][itemID]["base"]["title"];
+	if LoreK_DB.settings.debugAdvanced then
+		Print("Detected exact copy between SVs and LocalData, deleting extra SV data: ",textTitle)
+	end
+
+end
+
+
+
+--------------------------------------------------------------------------
 -- Text to Speech Settings
 
 
@@ -1499,14 +1520,7 @@ local function ItemInitializer(button, data)
 					end
 				end
 				if LK.tCompareDeez(LoreK_DB["text"][itemID]["base"], LK["LocalData"]["text"][itemID]["base"]) then -- entry exists, but it's a copy of the LocalData, local data probably got updated, so clean SV bloat but preserve hasRead/isFavorite/mapData
-					LoreK_DB["text"][itemID]["base"]["text"] = nil;
-					LoreK_DB["text"][itemID]["base"]["title"] = nil;
-					LoreK_DB["text"][itemID]["base"]["singlePage"] = nil;
-					LoreK_DB["text"][itemID]["base"]["pageCount"] = nil;
-					LoreK_DB["text"][itemID]["base"]["material"] = nil;
-					if LoreK_DB.settings.debugAdvanced then
-						Print("Detected exact copy between SVs and LocalData, deleting extra SV data: "..textTitle)
-					end
+					LoreKGUI.CleanItemData(itemID);
 				end
 			end
 
@@ -1737,6 +1751,13 @@ function LoreKGUI.PopulateList()
 		end
 		if data.base.hasRead and not LK["LocalData"]["text"][id] then
 			newTexts = newTexts + 1;
+		end
+
+		-- Try and clean *all* entries, if this lags a lot, i remove.
+		if LoreK_DB["text"][id] and LoreK_DB["text"][id]["base"] and LK["LocalData"]["text"][id] and LK["LocalData"]["text"][id]["base"] then
+			if LK.tCompareDeez(LoreK_DB["text"][id]["base"], LK["LocalData"]["text"][id]["base"]) then
+				LoreKGUI.CleanItemData(id);
+			end
 		end
 	end
 

@@ -433,7 +433,10 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			return;
 		end
 		local map = C_Map.GetBestMapForUnit("player");
-		local position = C_Map.GetPlayerMapPosition(map, "player");
+		local position
+		if map then
+			position = C_Map.GetPlayerMapPosition(map, "player");
+		end
 		local coords = {0,0} -- instanced content doesn't always allow proper pos
 		if position then
 			coords = {position:GetXY()};

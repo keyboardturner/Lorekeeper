@@ -1,3 +1,11 @@
+# 0.2.0
+
+LocalData Update 7 - (48 personal entries + 45 spookibaby entries) - reminder for self later, add credits option soon
+
+Added data cleanup functionality upon login (not just when reading a specific item from journal)
+
+Positional map data is nil checked because some zones (airlocks) really like to mess with coords when saving data
+
 # 0.1.9
 
 Weekly LocalData Update 6 - 22/10/24 (39 personal entries + 32 Anonymous User 6 entries + 35 Anonymous User 7 entries)
