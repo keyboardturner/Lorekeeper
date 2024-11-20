@@ -18808,6 +18808,15 @@ LK["LocalData"] = {
 					},
 				},
 			},
+			["copy_2"] = {
+				["title"] = "Blood Ledger",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">The Blood Ledger</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-rogue-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Senior Archivist Filius Sparkstache.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+			},
 		},
 		["Item-81231"] = {
 			["base"] = {
@@ -23282,20 +23291,6 @@ LK["LocalData"] = {
 				["expansion"] = 5,
 			},
 		},
-		["GameObject-249517"] = {
-			["base"] = {
-				["title"] = "Blood Ledger",
-				["text"] = {
-					'<HTML><BODY>\r\n<H1 align="center">The Blood Ledger</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-rogue-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Senior Archivist Filius Sparkstache.</p>\r\n</BODY></HTML>',
-				},
-				["singlePage"] = true,
-				["pageCount"] = 0,
-				["material"] = "ParchmentLarge",
-				["isObtainable"] = true,
-				["isClassSpecific"] = false,
-				["expansion"] = 6,
-			},
-		},
 		["GameObject-378702"] = {
 			["base"] = {
 				["title"] = "Edict: Dark Talons",
@@ -23473,8 +23468,159 @@ LK["LocalData"] = {
 
 
 
+		-- user submission #8
 
+		["Item-187696"] = {
+			["base"] = {
+				["title"] = "The Wolf, the Wolpertinger, and Other Tails",
+				["text"] = {
+					'<Many pages are torn out, but you find some intact scrawlings.>\r\n\r\n\r\nThere once was a lad from Gilneas\r\nWho turned to a worgen to slay us.\r\nWe gave him a toy, \r\n"Aw, who\'s a good boy?"\r\nAnd he now cannot wait to repay us.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["GameObject-408083"] = {
+			["base"] = {
+				["title"] = "A Partial Fourth Clue",
+				["text"] = {
+					'"Princess..."',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[337] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-408028"] = {
+			["base"] = {
+				["title"] = "The Sixth Clue",
+				["text"] = {
+					"Mimiron's second piece at 35, 8.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[77] = {
+						0.4417737722396851,
+						0.2847941517829895,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-408082"] = {
+			["base"] = {
+				["title"] = "A Partial Fourth Clue",
+				["text"] = {
+					'"...a light."',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[337] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-167102"] = {
+			["base"] = {
+				["title"] = "A Decrypted Letter from Ashvane",
+				["text"] = {
+					"Mister Francis,\r\n\r\nAs you no doubt have heard, I am no longer incarcerated in Tol Dagor. The circumstances were, shall we say, interesting. \r\n\r\nGather those who remain loyal and wait at the location we discussed before. I will return shortly, but first I have a meeting with an important patron.\r\n\r\nWe're not done yet.\r\n\r\n- Lady Ashvane\r\n\r\n<The letter is dated several weeks in the past.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-18332"] = {
+			["base"] = {
+				["title"] = "Libram of Rapidity",
+				["text"] = {
+					"<The pages are covered in ancient elven runes.>\r\n\r\nThe pages herein contain memories of events that transpired in the collection and creation of the reagents required to craft greater arcanum.\r\n\r\nMay our enemies never gain access to these libram.\r\n\r\nMay I live to see the pallid light of the moon shine upon Quel'Thalas once again.\r\n\r\nMay I die but for the grace of Kael'thas.\r\n\r\nMay I kill for the glory of Illidan.\r\n\r\n-Master Telmius Dreamseeker",
+					"<You feel a searing pain when glancing at these pages.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-3248"] = {
+			["base"] = {
+				["title"] = "Translated Letter from The Embalmer",
+				["text"] = {
+					"Greetings Ello Ebonlocke, Mayor of Darkshire.  I'm afraid I have news for your town.  Grave news.\r\n\r\nYou see, I am a creator.  I fooled the bearer of this note into aiding me in my latest, most dire creation - a fiend of flesh and bone and twisted metal!  As you read this, it's likely outside my humble dwelling, gnashing its teeth and waiting for my word to go forth and slaughter.\r\n\r\nBut you'll know soon enough.\r\n\r\n-The Embalmer",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-211777"] = {
+			["base"] = {
+				["title"] = "Naga Manuscript",
+				["text"] = {
+					"< The manuscript shows a map of three crystals along the Zoram Strand. An ordered path is traced between the crystals; going from south to north. Next to each crystal is a drawing depicting an explosion of arcane magic. >",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = false,
+				["isClassSpecific"] = 8, -- Mage
+				["expansion"] = 0,
+			},
+		},
+		["Item-11727"] = {
+			["base"] = {
+				["title"] = "Goodsteel Ledger",
+				["text"] = {
+					"Greetings and Salutations, Adventurers!\r\n\r\nI, Krinkle Goodsteel, have need of those willing to put themselves at risk in order to complete some of my most arduous tasks. Because of my many duties and the workload I've managed to take upon myself, I ensure that anyone brave enough to complete this list of items and return them to me intact will be paid handsomely. \r\n\r\nThe list is contained on the following pages...",
+					"Solid Crystal Leg Shafts - \r\n\r\nThe Glassweb spiders of Searing Gorge are made of an incredible crystal-like material. Their legs, if not damaged when they're killed, make for a wonderful conductor in some of my companions' engineering experiments.\r\n\r\nI will need a number of them to test  upon. The spiders having eight possible legs themselves should be no problem for a stalwart warrior or practiced mage.",
+					"An Overdue Package -\r\n\r\nI hired someone who I thought was a reliable pilot to bring me a package from Theramore. I was apparently wrong. And even though the pilot lived to tell the tale, he left his entire zepplin and all of its cargo behind to save his own neck.\r\n\r\nWell, I need that package back. From what Beezil tells me, he crashed just west of the bay in Dustwallow Marsh. It went down just after he crossed the hills along the water's edge.\r\n\r\nHmmm... never did tell me what caused him to crash... ",
+					"Goodsteel's Balanced Flameberge - \r\n\r\nFinally, I want one of my finest works of blacksmithing to date. This flameberge was an incredible sword that I bestowed upon what I thought was a very honorable and great warrior. Well, he was trounced by a murloc named Jarquai? Something like that. \r\n\r\nIt was while he was traveling along the coast of the Swamp of Sorrows when he thought to attack the creature. He failed and apparently fled, but not before leaving the weapon behind for this murloc to take.",
+					"Find me these items and return to Gadgetzan with them all, along with this ledger, and I will reward you. ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
 
+		-- end of user submission #8
 
 
 

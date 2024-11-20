@@ -1,3 +1,9 @@
+# 0.2.1
+
+LocalData Update 8 - (9 Anonymous User 8 entries)
+
+Fixed 1 entry
+
 # 0.2.0
 
 LocalData Update 7 - (48 personal entries + 45 spookibaby entries) - reminder for self later, add credits option soon
