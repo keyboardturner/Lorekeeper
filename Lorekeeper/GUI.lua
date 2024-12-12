@@ -296,20 +296,12 @@ HolidaysTheme.Header.tex = HolidaysTheme.Header:CreateTexture(nil, "ARTWORK", ni
 HolidaysTheme.Header.tex:SetAllPoints(true);
 HolidaysTheme.Header.tex:SetTexture("Interface\\AddOns\\Lorekeeper\\Assets\\Textures\\HallowsEndTop");
 
-HolidaysTheme.Corner_BL = CreateFrame("Frame", nil, LoreKGUI);
-HolidaysTheme.Corner_BL:SetSize(220,80);
-HolidaysTheme.Corner_BL:SetFrameLevel(LoreKGUI.TitleContainer:GetFrameLevel()+50);
-HolidaysTheme.Corner_BL.tex = HolidaysTheme.Corner_BL:CreateTexture(nil, "ARTWORK", nil, 2);
-HolidaysTheme.Corner_BL.tex:SetAllPoints(true);
-HolidaysTheme.Corner_BL.tex:SetTexture("Interface\\store\\perksthemehallowsend");
-HolidaysTheme.Corner_BL.tex:SetTexCoord(.00098, .21466, .16811, .27642);
-
-HolidaysTheme.Corner_BR = CreateFrame("Frame", nil, LoreKGUI);
-HolidaysTheme.Corner_BR:SetSize(220,290);
-HolidaysTheme.Corner_BR:SetFrameLevel(LoreKGUI.TitleContainer:GetFrameLevel()+50);
-HolidaysTheme.Corner_BR.tex = HolidaysTheme.Corner_BR:CreateTexture(nil, "ARTWORK", nil, 2);
-HolidaysTheme.Corner_BR.tex:SetAllPoints(true);
-HolidaysTheme.Corner_BR.tex:SetAtlas("perks-theme-hallowsend-tl-box");
+HolidaysTheme.Bottom = CreateFrame("Frame", nil, LoreKGUI);
+HolidaysTheme.Bottom:SetSize(565,570);
+HolidaysTheme.Bottom:SetFrameLevel(LoreKGUI.TitleContainer:GetFrameLevel()+50);
+HolidaysTheme.Bottom.tex = HolidaysTheme.Bottom:CreateTexture(nil, "ARTWORK", nil, 2);
+HolidaysTheme.Bottom.tex:SetAllPoints(true);
+HolidaysTheme.Bottom.tex:SetAtlas("perks-theme-hallowsend-tl-box");
 
 local function GetHoliday()
 	local numEvents = C_Calendar.GetNumDayEvents(0, C_DateAndTime.GetCurrentCalendarTime().monthDay);
@@ -318,7 +310,12 @@ local function GetHoliday()
 		local event = C_Calendar.GetHolidayInfo(0, C_DateAndTime.GetCurrentCalendarTime().monthDay, i);
 		
 		if event and event.name == LK["Holiday_HallowsEnd"] then
+			HolidaysTheme.Header.tex:SetTexture("Interface\\AddOns\\Lorekeeper\\Assets\\Textures\\HallowsEndTop");
+			HolidaysTheme.Bottom.tex:SetTexture("Interface\\AddOns\\Lorekeeper\\Assets\\Textures\\HallowsEndBottom");
 			return true;
+		elseif event and event.name == LK["Holiday_WinterVeil"] then
+			HolidaysTheme.Header.tex:SetTexture("Interface\\AddOns\\Lorekeeper\\Assets\\Textures\\WinterVeilTop");
+			HolidaysTheme.Bottom.tex:SetTexture("Interface\\AddOns\\Lorekeeper\\Assets\\Textures\\WinterVeilBottom");
 		end
 	end
 end
@@ -348,7 +345,7 @@ MeowFrameMixin.SoundFileList = {
 	3598609, 3598613, 3598617, 3598619,
 	3598621, 3598623, 3598625, 3598641,
 	3598639, 3598635, 3598637, 3598611,
-}
+};
 
 function MeowFrameMixin:OnLoad()
 	self.clickCount = 0;
@@ -383,17 +380,41 @@ function MeowFrameMixin:OnClick(_, down)
 end
 
 function MeowFrameMixin:ResetClicks()
-	self.clickCount = 0
+	self.clickCount = 0;
 end
 
 function MeowFrameMixin:Mrow()
-	local sound = self.SoundFileList[fastrandom(1, #self.SoundFileList)]
-	PlaySoundFile(sound, "SFX")
+	local sound = self.SoundFileList[fastrandom(1, #self.SoundFileList)];
+	PlaySoundFile(sound, "SFX");
 end
 
-LoreKGUI.PortraitContainer.portrait.MeowFrame = CreateFrame("Button", nil, LoreKGUI)
-FrameUtil.SpecializeFrameWithMixins(LoreKGUI.PortraitContainer.portrait.MeowFrame, MeowFrameMixin)
-LoreKGUI.PortraitContainer.portrait.MeowFrame:SetAllPoints(LoreKGUI.PortraitContainer.portrait)
+function MeowFrameMixin:ConcatenateNames(texts)
+	local newTexts = ""
+	for i = 1, 1 do -- increase value with more contributors
+		if LK["Contributor_"..i] then
+			newTexts = newTexts .. "\n" .. LK["Contributor_"..i]
+		end
+	end
+	newTexts = newTexts .. "\n" .. LK["Contributor_Anonymous"]
+
+	return newTexts
+end
+
+LoreKGUI.PortraitContainer.portrait.MeowFrame = CreateFrame("Button", nil, LoreKGUI);
+FrameUtil.SpecializeFrameWithMixins(LoreKGUI.PortraitContainer.portrait.MeowFrame, MeowFrameMixin);
+LoreKGUI.PortraitContainer.portrait.MeowFrame:SetAllPoints(LoreKGUI.PortraitContainer.portrait);
+
+LoreKGUI.PortraitContainer.portrait.MeowFrame:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(self, "ANCHOR_BOTTOM");
+	GameTooltip:AddLine(LK["Contributors"], 1, 1, 1, 1, true);
+	GameTooltip:AddLine(LK["SpecialThanks"], 1, 1, 1, 1, true);
+	GameTooltip:AddLine(MeowFrameMixin:ConcatenateNames(), 1, 1, 1, 1, true);
+	GameTooltip:AddTexture("Interface\\ICONS\\UI_JailersTower_Defense", {width = 32, height = 32});
+	GameTooltip:Show();
+end);
+LoreKGUI.PortraitContainer.portrait.MeowFrame:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
 
 
 -- here, we just pass in the table containing our saved color config
@@ -2622,8 +2643,7 @@ function LoreKGUI.Initialize(self, event, arg1)
 		LoreKGUI.SetColors()
 		LoreKGUI.SetFontSizeP();
 
-		HolidaysTheme.Corner_BL:SetPoint("BOTTOMLEFT", LoreKGUI.TextDisplayFrame, "BOTTOMLEFT", 0, 0);
-		HolidaysTheme.Corner_BR:SetPoint("BOTTOMRIGHT", LoreKGUI.TextDisplayFrame, "BOTTOMRIGHT", 0, 0);
+		HolidaysTheme.Bottom:SetPoint("CENTER", LoreKGUI.TextDisplayFrame, "CENTER", 0, 0);
 	end
 	if event == "PLAYER_ENTERING_WORLD" then
 		HasLoginForTab = true

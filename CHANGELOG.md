@@ -1,3 +1,9 @@
+# 0.2.2
+
+Added Winter Veil holiday assets
+
+Contributors can now be found when mousing over the Lorekeeper icon button.
+
 # 0.2.1
 
 LocalData Update 8 - (9 Anonymous User 8 entries)

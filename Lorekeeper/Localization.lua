@@ -12,6 +12,14 @@ local function defaultFunc(L, key)
 end
 setmetatable(LK, {__index=defaultFunc});
 
+-- All Localizations
+------------------------------------------------
+
+	LK["Contributor_1"] = "spookibaby"
+	LK["Contributor_Anonymous"] = "Anonymous Users"
+
+------------------------------------------------
+
 local LOCALE = GetLocale()
 
 if LOCALE == "enUS" then
@@ -108,6 +116,9 @@ if LOCALE == "enUS" then
 	LK["TRP3E_Title"] = "Total RP 3: Extended Copy"
 	LK["TRP3E_TitleTT"] = "Convert entry into a Total RP 3: Extended item."
 	LK["TRP3E_Added"] = "Added entry %s to Total RP 3: Extended Database."
+	LK["Holiday_WinterVeil"] = "Feast of Winter Veil"
+	LK["Contributors"] = "Contributors"
+	LK["SpecialThanks"] = "Thank you to these wonderful people who contributed to this addon!"
 
 return end
 
@@ -204,6 +215,9 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["TRP3E_Title"] = "Total RP 3: Extended Copia"
 	LK["TRP3E_TitleTT"] = "Convertir entrada en un objeto de Total RP 3: Extended."
 	LK["TRP3E_Added"] = "Entrada %s añadida a la base de datos de Total RP 3: Extended."
+	LK["Holiday_WinterVeil"] = "El festín del Festival de Invierno"
+	LK["Contributors"] = "Colaboradores"
+	LK["SpecialThanks"] = "¡Gracias a estas maravillosas personas que contribuyeron a este complemento!"
 
 return end
 
@@ -300,6 +314,9 @@ if LOCALE == "deDE" then
 	LK["TRP3E_Title"] = "Total RP 3: Extended Kopie"
 	LK["TRP3E_TitleTT"] = "Eintrag in einen Total RP 3: Extended Gegenstand umwandeln."
 	LK["TRP3E_Added"] = "Eintrag %s zur Total RP 3: Extended Datenbank hinzugefügt."
+	LK["Holiday_WinterVeil"] = "Winterhauchfest"
+	LK["Contributors"] = "Mitwirkende"
+	LK["SpecialThanks"] = "Vielen Dank an diese wunderbaren Menschen, die zu diesem Add-on beigetragen haben!"
 
 return end
 
@@ -396,6 +413,9 @@ if LOCALE == "frFR" then
 	LK["TRP3E_Title"] = "Total RP 3: Extended Copie"
 	LK["TRP3E_TitleTT"] = "Convertir l'entrée en un objet Total RP 3: Extended."
 	LK["TRP3E_Added"] = "Entrée %s ajoutée à la base de données Total RP 3: Extended."
+	LK["Holiday_WinterVeil"] = "Voile d'hiver"
+	LK["Contributors"] = "Contributeurs"
+	LK["SpecialThanks"] = "Merci à ces merveilleuses personnes qui ont contribué à cet addon !"
 
 return end
 
@@ -492,6 +512,9 @@ if LOCALE == "itIT" then
 	LK["TRP3E_Title"] = "Total RP 3: Extended Copia"
 	LK["TRP3E_TitleTT"] = "Converti l'elemento in un oggetto di Total RP 3: Extended."
 	LK["TRP3E_Added"] = "Voce %s aggiunta al database di Total RP 3: Extended."
+	LK["Holiday_WinterVeil"] = "Vigilia di Grande Inverno"
+	LK["Contributors"] = "Collaboratori"
+	LK["SpecialThanks"] = "Grazie a queste persone meravigliose che hanno contribuito a questo componente aggiuntivo!"
 
 return end
 
@@ -588,6 +611,9 @@ if LOCALE == "ptBR" then
 	LK["TRP3E_Title"] = "Total RP 3: Extended Cópia"
 	LK["TRP3E_TitleTT"] = "Converter entrada em um item de Total RP 3: Extended."
 	LK["TRP3E_Added"] = "Entrada %s adicionada ao banco de dados de Total RP 3: Extended."
+	LK["Holiday_WinterVeil"] = "Festa do Véu de Inverno"
+	LK["Contributors"] = "Colaboradores"
+	LK["SpecialThanks"] = "Obrigado a essas pessoas maravilhosas que contribuíram para este complemento!"
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -686,6 +712,9 @@ if LOCALE == "ruRU" then
 	LK["TRP3E_Title"] = "Total RP 3: Extended копия"
 	LK["TRP3E_TitleTT"] = "Преобразовать запись в предмет Total RP 3: Extended."
 	LK["TRP3E_Added"] = "Запись %s добавлена в базу данных Total RP 3: Extended."
+	LK["Holiday_WinterVeil"] = "Зимний Покров"
+	LK["Contributors"] = "Участники"
+	LK["SpecialThanks"] = "Спасибо этим замечательным людям, которые внесли свой вклад в это дополнение!"
 
 
 return end
@@ -783,6 +812,9 @@ if LOCALE == "koKR" then
 	LK["TRP3E_Title"] = "Total RP 3: Extended 복사본"
 	LK["TRP3E_TitleTT"] = "항목을 Total RP 3: Extended 아이템으로 변환합니다."
 	LK["TRP3E_Added"] = "항목 %s이(가) Total RP 3: Extended 데이터베이스에 추가되었습니다."
+	LK["Holiday_WinterVeil"] = "겨울맞이 축제"
+	LK["Contributors"] = "기여자"
+	LK["SpecialThanks"] = "이 애드온에 기여한 훌륭한 사람들에게 감사드립니다!"
 
 
 return end
@@ -880,6 +912,9 @@ if LOCALE == "zhCN" then
 	LK["TRP3E_Title"] = "Total RP 3: Extended 副本"
 	LK["TRP3E_TitleTT"] = "将条目转换为 Total RP 3: Extended 项目。"
 	LK["TRP3E_Added"] = "已将条目 %s 添加到 Total RP 3: Extended 数据库。"
+	LK["Holiday_WinterVeil"] = "冬幕节"
+	LK["Contributors"] = "贡献者"
+	LK["SpecialThanks"] = "感谢为这个插件做出贡献的优秀人士！"
 
 
 return end
@@ -977,6 +1012,9 @@ if LOCALE == "zhTW" then
 	LK["TRP3E_Title"] = "Total RP 3: Extended 副本"
 	LK["TRP3E_TitleTT"] = "將條目轉換為 Total RP 3: Extended 項目。"
 	LK["TRP3E_Added"] = "已將條目 %s 添加到 Total RP 3: Extended 資料庫。"
+	LK["Holiday_WinterVeil"] = "冬幕節"
+	LK["Contributors"] = "貢獻者"
+	LK["SpecialThanks"] = "感謝這些為這個插件做出貢獻的優秀人士！"
 
 
 return end
