@@ -4541,6 +4541,15 @@ LK["LocalData"] = {
 				["isClassSpecific"] = false,
 				["expansion"] = 7,
 			},
+			["copy_1"] = {
+				["title"] = "Uther the Lightbringer",
+				["text"] = {
+					"Ruff thor Majis ver Nevrenrothas\r\nErgin Ewiddan - Vassild va ver Novas va ver Mandos Noth\r\n\r\nMajis regen lon ador ne skilde ver lithtos va Firalaine. Skilde se bur thorniss lu gol goth nostyec forthis, ve koshvel lars gol aziris regen me. Se eloderung ne barad ruff an, noth an ver andovis regen re daegil bor daegil agol. Gol garde re ver garde va far lordaere - lon va agol an ve tiras gol koshvel, an eynes wirsh dana.\r\n\r\n- Udenmajis",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+			},
 		},
 		["GameObject-210491"] = {
 			["base"] = {
@@ -7119,6 +7128,18 @@ LK["LocalData"] = {
 				["isClassSpecific"] = false,
 				["expansion"] = 3,
 			},
+			["copy_1"] = {
+				["title"] = "Humble Monument",
+				["text"] = {
+					"<The small grave marker is lovingly inscribed with orcish runes.>\r\n\r\n         - BELOVED OLGRA -\r\n            Wife of Mankrik\r\n\r\n     It took forever to find you\r\n        And now you are gone",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
 		},
 		["GameObject-191662"] = {
 			["base"] = {
@@ -8220,6 +8241,15 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "Incident Report",
+				["text"] = {
+					"Hours since last workplace accident: 4",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
 			},
 		},
 		["GameObject-214160"] = {
@@ -23629,6 +23659,942 @@ LK["LocalData"] = {
 		-- end of user submission #8
 
 
+		["Item-228935"] = {
+			["base"] = {
+				["title"] = "Unfinished Note",
+				["text"] = {
+					"Think what we could accomplish together. We could finally find him.\r\n\r\n<Another line was started and then crossed out. At the bottom of the page in small lettering are a few numbers.>\r\n\r\n-186, 96",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-469968"] = {
+			["base"] = {
+				["title"] = "Untitled Journal",
+				["text"] = {
+					"Darkness. Disorder. These are the foundations of mystery. Who better to understand that mystery than the mo'arg? They forge chaos, bending it to their will, forcing the world to reveal itself. I must be like them.\r\n\r\n<The next few pages were burned away in fel flame.>",
+					"...the only one who truly understands. I have been tracking him--following his trail of riddles for what feels like years. Through Draenor, through the Broken Isles... I feel as if I am chasing ghosts. Maybe I am.\r\n\r\nBut if what I found in the Mechanar is any indication of his capabilities, then I will stop at nothing until I know all of Ulzik's secrets.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.5037586688995361,
+						0.654175341129303,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-132925"] = {
+			["base"] = {
+				["title"] = "Tiffany's Notebook",
+				["text"] = {
+					"Crystal Shell:\r\n\r\nThis component was retrieved from the armor of a truesilver crab. Truesilver crabs are a very rare creature and have been known to show up in Northern Stranglethorn.",
+					"Crystal Core:\r\n\r\nAn adventurer gave one of these to me in exchange for services rendered. He said he collected it from the corpse of an elemental geode in Deepholm. I'd still love to visit that world someday.",
+					"Crystal Scale:\r\n\r\nI was fortunate enough to have survived a battle with a nether whelp while mining ore in the Twilight Highlands. I cut a scale off the beast as a reward for my victory.",
+					"Crystal Heart:\r\n\r\nAnother rare find. A hunter I was traveling with through the Vale of Eternal Blossoms came back with a golden hare. It was the most exotic thing I had ever seen. After skinning and gutting it, we discovered that its heart was made of a deep yellow jewel.",
+					"Crystal Shard: \r\n\r\nI purchased one of these from a traveling vendor. He had mentioned a land called Highmountain where great beasts keep rock elementals as pets. Apparently this shard had come from the body of a fallen rock elemental.",
+					"Crystal Plume:\r\n\r\nThere are sacred, crystalline owls in the forest of Moonglade. Rarely do they shed their plumage, but when they do, if you're there at the right time you can gather one of their plumes before some other wilderness creature grabs it up.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-228936"] = {
+			["base"] = {
+				["title"] = "Hastily Scrawled Note",
+				["text"] = {
+					"Hallowfall\r\nAzj-Kahet\r\nWater you waiting for",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-465707"] = {
+			["base"] = {
+				["title"] = "Ratts' Journal, Pages 92-93",
+				["text"] = {
+					"I can't believe I got my dream job! I can already picture the escape rooms I'll make. These will be the best events ever!",
+					'They might be a little tough, sure. They might be technically "incomplete" or "unsolvable," but that\'s what makes them worthwhile! It\'s all about the endless hunt, the love of play. Because when you love what you do, well, difficult challenges just become another puzzle to solve.',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.4804705381393433,
+						0.6625521183013916,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-231808"] = {
+			["base"] = {
+				["title"] = "Ancient Treasure Notes",
+				["text"] = {
+					"ANCIENT TREASURE NOTE\r\n\r\nIn shifting dunes and ancient stone, find the gateway to forgotten halls where time and titanic secrets meet.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-229369"] = {
+			["base"] = {
+				["title"] = "Ghostly Ransom Note",
+				["text"] = {
+					"In the heart of this land, where warlords tread,\r\nSeek the seat where destinies are read.\r\nAbove the halls, where banners wave,\r\nSits the treasure that you crave.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-228769"] = {
+			["base"] = {
+				["title"] = "Surprisingly Pristine Ransom Note",
+				["text"] = {
+					"Andrestrasz guards the bones to the fallen warrior of the Weeping Bluffs.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-466992"] = {
+			["base"] = {
+				["title"] = "OUT OF ORDER",
+				["text"] = {
+					"This piece of junk hasn't worked for 20 years.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.5965198278427124,
+						0.4347352385520935,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-228937"] = {
+			["base"] = {
+				["title"] = "Water-Resistant Note",
+				["text"] = {
+					"You're persistent, I'll give you that. Fine. If you can find me, we can talk.\r\n\r\nCareful, it's a long way down this dark rabbit hole.\r\n\r\nI'll be watching.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-475116"] = {
+			["base"] = {
+				["title"] = "Ordinary Pebble",
+				["text"] = {
+					"<An ordinary pebble, unremarkable in every way.>",
+				},
+				["material"] = "Stone",
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["mapData"] = {
+					[46] = {
+						0.7054264545440674,
+						0.9071310758590698,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-228934"] = {
+			["base"] = {
+				["title"] = "Carefully Penned Note",
+				["text"] = {
+					"If you're reading this, you must be after him too. Or are you after me?\r\n\r\nEither way, the game is afoot. Are you clever enough to play?\r\n\r\nHurry up, I think the fairy ring has gone rotten.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-183513"] = {
+			["base"] = {
+				["title"] = "Crumpled Notes",
+				["text"] = {
+					"When gods of mantids pierce the Veil\n\n<The rest of the note has been angrily scribbled out.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.6709117889404297,
+						0.5645790100097656,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 4,
+			},
+		},
+		["GameObject-469771"] = {
+			["base"] = {
+				["title"] = "Prankster's Note",
+				["text"] = {
+					"Did you think I would hide something directly on the stage? What kind of a prankster do you take me for?",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[1565] = {
+						0.4139413833618164,
+						0.4388062953948975,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-229387"] = {
+			["base"] = {
+				["title"] = "Trickster's Riddles",
+				["text"] = {
+					"Riddle #1:\r\n\r\n* Pages whisper tales of falling water and starlight, resting near a scribe's forgotten ink.",
+					"Riddle #2:\r\n\r\n* Amidst the sea of faces, where whispers weave tales of wonder, seek beneath the most grand position.",
+					"Riddle #3:\r\n\r\n* Smiles hide secrets, locked away where laughter echoes loudest.",
+					"Riddle #4:\r\n\r\n* Where harmony and rhythm converge lies the treasure sought by those attuned to the symphony of secrets.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-477599"] = {
+			["base"] = {
+				["title"] = "Ancient Toy",
+				["text"] = {
+					"The sword is positioned at an exact 132 degree angle from the wall.\r\n\r\nYou can tell because a measuring compass is resting next to the sword at exactly 132 degrees.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[71] = {
+						0.3740671277046204,
+						0.8276389837265015,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-477598"] = {
+			["base"] = {
+				["title"] = "Ancient Toy",
+				["text"] = {
+					"The sails have the number 70 drawn on them. The sails seem to be angled east.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[71] = {
+						0.3730664849281311,
+						0.8293616771697998,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-183512"] = {
+			["base"] = {
+				["title"] = "Lovingly Handcrafted Clue",
+				["text"] = {
+					"SGHO EIUII ABD MOO NK GHN, EDNY, DL LLSE",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.5136299133300781,
+						0.6662803888320923,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 4,
+			},
+		},
+
+
+		-- user submission #10
+
+		["GameObject-466563"] = {
+			["base"] = {
+				["title"] = "Hidden Graffiti",
+				["text"] = {
+					"You think yourselves so clever I bet,",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[22] = {
+						0.5211135149002075,
+						0.832320511341095,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-466500"] = {
+			["base"] = {
+				["title"] = "Handwritten Note",
+				["text"] = {
+					"Springshells on a log\r\nNewman's Landing\r\nMaster Nguyen\r\nSnaggle\r\n'rels",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.6781691312789917,
+						0.558580756187439,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-466566"] = {
+			["base"] = {
+				["title"] = "Hidden Graffiti",
+				["text"] = {
+					"You adventurers are all the same",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[22] = {
+						0.5227747559547424,
+						0.8374102115631104,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-466557"] = {
+			["base"] = {
+				["title"] = "Torn Journal Entry",
+				["text"] = {
+					'How many years has it been since that fateful day? When so many heroes began their journeys on Azeroth... Bah, "heroes." Anyone can solve a problem that\'s right in front of them. It takes cleverness to solve the mysteries hidden from plain sight.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.448293924331665,
+						0.6922569274902344,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-466415"] = {
+			["base"] = {
+				["title"] = "Handwritten Note",
+				["text"] = {
+					"Note to self: my secret password is 466478.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.4401417970657349,
+						0.6552387475967407,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-467182"] = {
+			["base"] = {
+				["title"] = "Ratts' Journal: The Final Chapter?",
+				["text"] = {
+					"In catacombs with dusty pages\r\nAs paladins or rogues or mages\r\nThrough all the wars that never cease\r\nIn search of hope\r\nIn search of peace\r\nFor all the journeys, in any weather,\r\nFor adventures yet to come together\r\nThe final key is why I stay:\r\nFor you...\r\nFor Azeroth...",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.6786237955093384,
+						0.1108506917953491,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-466282"] = {
+			["base"] = {
+				["title"] = "The List",
+				["text"] = {
+					"Master Mathias Shaw\r\nLady Liadrin\r\nFalstad Wildhammer\r\nAlexandros Mograine\r\nAlexstrasza the Life-Binder\r\nMoira Thaurissan",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.5029947757720947,
+						0.7747743129730225,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-466319"] = {
+			["base"] = {
+				["title"] = "Ratts' Journal, Page 115",
+				["text"] = {
+					'FIRED? How could they fire me? I put so much work into my challenges. This is... betrayal!\r\n\r\nFine, I don\'t even care! Damn the puzzles. Damn those "event coordinators." Damn it all!\r\n\r\nThey want fun? I\'ll show them fun. If this is a game to them, I\'ll show them how much I love to play.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.4507530331611633,
+						0.6860113143920898,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-192891"] = {
+			["base"] = {
+				["title"] = "To Do Today",
+				["text"] = {
+					"So You Think You Can Cast: Frequently Asked Questions from First-Time Mages:\r\n\r\n",
+					"Q: I'm having trouble casting any spells at all.  What can I do?\r\n\r\nA: You may be suffering from dehydration.  If you're having trouble casting a spell that you know you know, try drinking a glass of water!  Proper hydration is critical to effective spellcasting.\r\n",
+					"Q: I can't cast fireblast!  I just cast it a couple seconds ago and now it's not working.  Help!\r\n\r\nA: Having trouble casting a spell?  Did you just cast it a few seconds ago?  Some spells just won't work twice in quick succession.  Try mixing in a few different spells while you're waiting.\r\n",
+					"Q: I peeked at my friend's spellbook in the locker room, and he already has way more spells than I do!  What's wrong with me?\r\n\r\nA: First of all, this is COMPLETELY NORMAL.  Be sure to talk to your trainer regularly.  He or she may be able to teach you some new incantations.  If not, you probably just need more practice with the spells you already know.  Be patient, you'll get your spells!\r\n",
+					"Q: My co-workers all seem to be doing more damage than I do.  How can I catch up with them without looking like a dufus?\r\n\r\nA: It's not all about damage.  You can aid your group in other ways - Arcane Refreshment spells are a good example.  If that doesn't pan out, perhaps a career in the arcane arts isn't the right career path for you.  We hear that hunting is easy!\r\n",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.471369206905365,
+						0.3953381180763245,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["GameObject-466728"] = {
+			["base"] = {
+				["title"] = "Ratts' Journal, Pages 3-79",
+				["text"] = {
+					"Who knew there was a whole world out there to explore? I can't wait to find every corner of it! I'll be the greatest explorer ever--I'll find every one of Azeroth's mysteries.",
+					"<Several pages have been carefully ripped out.>",
+					"I've found six pebbles so far. I've deduced that the next one is somewhere in the South Seas of Nazmir.\r\n\r\n<The following pages are mostly maps, charts, and coordinate logs.>",
+					"<Many pages have been viciously torn out.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.7471259832382202,
+						0.4357465505599976,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-467186"] = {
+			["base"] = {
+				["title"] = "Cryptic Plaque",
+				["text"] = {
+					"\n\n\r\n\r\n     To be like me you'll need to know\r\n               The missing rhyme \r\n               The crystal's glow\r\n                  The stars above\r\n                 The space below\r\n                 The time of now\r\n                     for long ago\r\n\r\n    My secret notes you'll never see\r\n    Unless you learn to work as three.\r\n\r\n                     JYPFFQVY",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[46] = {
+						0.6898148059844971,
+						0.2388541698455811,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-469968"] = {
+			["base"] = {
+				["title"] = "Untitled Journal",
+				["text"] = {
+					"Darkness. Disorder. These are the foundations of mystery. Who better to understand that mystery than the mo'arg? They forge chaos, bending it to their will, forcing the world to reveal itself. I must be like them.\r\n\r\n<The next few pages were burned away in fel flame.>",
+					"...the only one who truly understands. I have been tracking him--following his trail of riddles for what feels like years. Through Draenor, through the Broken Isles... I feel as if I am chasing ghosts. Maybe I am.\r\n\r\nBut if what I found in the Mechanar is any indication of his capabilities, then I will stop at nothing until I know all of Ulzik's secrets.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.5052878856658936,
+						0.6654514074325562,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-466733"] = {
+			["base"] = {
+				["title"] = "Book of Maps",
+				["text"] = {
+					"<Nearly a thousand pages are dedicated to mapping out the Endless Halls.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.7462185621261597,
+						0.4666623473167419,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-466569"] = {
+			["base"] = {
+				["title"] = "Hidden Graffiti",
+				["text"] = {
+					"At our own twisted game.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[22] = {
+						0.5200017690658569,
+						0.8351315855979919,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-477598"] = {
+			["base"] = {
+				["title"] = "Ancient Toy",
+				["text"] = {
+					"The sails have the number 70 drawn on them. The sails seem to be angled east.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[71] = {
+						0.3736312389373779,
+						0.8287702798843384,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-466297"] = {
+			["base"] = {
+				["title"] = "Unlabeled Document",
+				["text"] = {
+					"Grl  grl  mrgl gl  mmml.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.4911964535713196,
+						0.7188150882720947,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-466568"] = {
+			["base"] = {
+				["title"] = "Hidden Graffiti",
+				["text"] = {
+					"Let's see you beat the Master of Secrets",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[22] = {
+						0.5218071937561035,
+						0.8385310173034668,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+
+		-- end of user submission #10
+
+		-- user submission #11 (PTR)
+
+		--[[
+
+		
+		["GameObject-499315"] = {
+			["base"] = {
+				["title"] = "Fury of Thrayir",
+				["text"] = {
+					"Few enemies of the Sturmpyk Clan would live to tell tales of Cyrce and Thrayir. \r\n\r\n\r\nEven among the fiercest Winterskorn, the pair were both feared and revered.\r\n\r\n\r\nWhen Cyrce guided our clan south, to settle the Sturmvyn upon the Cradle of Hymosul, Thrayir served as her eyes and ears.\r\n\r\n\r\nThe Galeorn's loyalty was to Cyrce, and to her clan, just as our bond to her extended to Thrayir.\r\n\r\n\r\nBut with loyalty, came the Galeorns fury.\r\n\r\n\r\nWhen the world shattered, and the darkness rose from the depths, Thrayir took to sky.\r\n\r\n\r\nAs more and more Sturmvyn fell, the Galeorn mourned and the Galeorn raged.\r\n\r\n\r\nSkies split open, as his fury spent and scales burned.\r\n\r\n\r\nIn his rage, through wounded heart, the Galeorn's spark grew dim.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2375] = {
+						0.3301370739936829,
+						0.2919178605079651,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-232694"] = {
+			["base"] = {
+				["title"] = "Transcribed Kul Tiran Journal",
+				["text"] = {
+					"I ain't trying to claim I'll be any good at this, but I promised my beloved Esther I would try, bless her heart. I never really put pen to paper before, but now's as good a time as any I suppose. 'It'll help you sort your thoughts while out at sea' she said. Ah, I hope she's doing well an' those gulls aren't given' her too much of a bother.\r\n\r\n As it stands, I've been gone for months an' I hope after this last shipment we'll be headed home. These Ashvane are a tough lot, an' I'm not sure it was a right good idea to help them on this venture, but here we are.",
+					"<Part of the next entry is smudged.>\r\n\r\n-en my job to reassure the crew, and I understand the doubt but we've been paid hefty coin for this venture. My mates are some of the best on the seas and if anyone can get these Ashvane where they want to go it's my crew. Still I feel uneasy trying to find this isle. Even if there is that azermite or whatever rock out there. I don't reckon it's worth the risk, what with all the stories. But mayhaps I should be more like Minnow; they were givin'n me an' Lesa a hard time for be'n 'superstitious old fogies'. That got a good laugh outta the crew. I reckon Minnow ain't more than a decade younger than Lesa, and you should have seen the face Lesa made. It had Minnow runn'n  for the mast!",
+					"<The first legible entry seems to be near the middle of the page.>\r\n\r\n-s fair skys for such a strange place. For such a small isle, it's covered in a dense forest. Even from the boat I don't think any wind rustles through those trees. It seems to me like the whole isle is holding it's breath, but for what I couldn't say.\r\n---\r\nWe went to set anchor in the sheltered bay on the leeward side but was greeted by a graveyard of other ships. An ill omen to be sure, and none to friendly for docking. We managed to navigate to the windward side and as promised we landed her on the beach head with the other ship-\r\n\r\n<A watery stain has blurred much of the ink together.>-scout reported back- wells of azerite they say! We began offloading the supplies, and chopping the timbers. A bit sad to see the trees fall, but that's the price of progress I suppose. One o' the Overseers...Katya I think her name was, began planning a railway type system to get from the azerite to the ships so we don't have to haul it all on our backs. A right smart lass she is, but a bit mean too. Seems to be the way with these Ashvane folk, but I shouldn't be casting stones as Esther would say.",
+					"There's something right unnatural about this isle. Even as the forest starts to thin, still seems to me that things are too still. The flying beasts even seem to keep their distance, unless one o' those Ashvane get too close. Unfortunately we've lost a few of them that way. At least the krolusks are manageable, but even they seem to have a certain wariness and intelligence about them I ain't ever seen in the ones back in Boralus. It's a bit unnerving to have one o' them stare you down with those glinting eyes in the night. Just...watching...waiting it seems like. I ain't never seen The Duke so on edge. I've suggested we place scouts, an' the Ashvane seemed to agree thank the seas.<A large ink smudge covers the next few sentences.>\r\n\r\n-starting to wonder if the old tales about this place were true. Minnow was out yesterday and said they spotted sirens off the shore. Not a huge surprise given the name of this place, but similar to the other creatures they seem more wary of us. With the other wildlife acting the way it does, it's down right eerie...almost like they're waiting for something....",
+					"Told them, I did. Something about this place just ain't right. Las night Wiggans came running over all in a huff about some golden man or some such. Them Ashvane reckoned he's taken leave of his senses, but I believe him. I've know Wiggins for years an he ain't a coward, an he's the least superstitious of us. If he saw something then there's something out there...\r\n\r\n<Blotches in various parts of the page make it hard to read.>\r\n-e lost so many in the storm- plucked right off the deck. Crawled right up out of the ocean an up the boats they did. Terrors I haven't seen the likes of before- crabs as big as the hull, giant serpent-like bugs - and the wailing! If I wasn't convince this isle is bad news, I certainly believe now.-ast smashed to pieces by the storm! Came outta nowhere, an my poor Maiden's Wh-\r\n\r\n-reckons we should repair with what little we have. Most of the timbers are ruined an there is precious little on this island we can get to that's not near those flying beasts. The railway timbers aren't seaworthy so there's no options left. Still, Lesa has the right of it. If we have enough to repair the other ship th-\r\n\r\n<The rest of the page is illegible.>",
+					'<The writing on this page seems a bit shaky.>\r\n\r\n-even know where to begin. With the fallout of the storm not only did we have to cannibalize my dear Maiden\'s Whisper, but with all the azerite there ain\'t enough space for us all to go back on the one remaining vessel. And with another storm on the horizon we...drew lots. I was one of the unlucky ones \'selected\' to stay behind and help mine the small lot of azerite that\'s left. Most of the crew decided to go, but bless their hearts Wiggins, Lesa and Minnow all stayed. The Duke too. "We\'ll be back fer ya" they say. I...wish I could believe that to be true.\r\n\r\nEsther give me strength.<It seems like a fair amount of time has passed between entries.>\r\n\r\nBeen mining for what feels like ages. We even used what timbers we had to build a makeshift living space for those of us left. Seemed a better idea to chance it with them -what did that Ashvane call\'em..wyverns I think- than down near the shores when the storm rolls in. We even repurposed the crow\'s nest up on Tempest\'s Crest to watch for the return ship. Nothing yet though...',
+					"The longer we stay on this forsaken isle the more strained things seem to be getting between us and the remaining Ashvane. Had to break up several fights over the last few days, an that brute Fently only seems to fan the flames. Even The Duke doesn't seem to like'em an' that's a telling sign to me. Still, they're-<Dirt makes the next entry hard to read, along with shaky handwriting.>\r\n\r\n-happend so fast. One minute I'm swinging a pickaxe, next a giant rock hand crushes the poor Ashvane bloke next to me. A monstrosity like I never seen before...and made of Azerite no less! Killed over half the people we had left before we backed it into that cave. The Overseer's quick thinking is all that saved the rest of us what with the explosives we threw at it. Caved in the mound on it, seas take it. There are less than a handful of us left now. Thank the sea Minnow, Wiggins and Lesa made it out safe. Dunno what I'd do without 'em at this point...\r\n\r\n-buried. Not much left, but it felt wrong not to have anything. Spirits are at an all time low it seems-",
+					"<The next sentence seems to be written so shakily it's hard to make out the letters.>\r\n\r\n-gone. They're all GONE. I was up in the the sleeping quarters making the lunch since it was my turn and- there was this loud bang or screech or-\r\n\r\n<The sentence seems to trail off.>\r\n\r\nI...don't know. They are all gone. Like they were never here to begin with. I must have ran over this entire island looking for them. I...put some stakes out back in the graveyard just in case but, they can't just have just...disappeared. That doesn't make any sense. Even all their bags and tools are still there an-\r\n\r\n-to leave. Can't stay. The isle is coming for me next.\r\n\r\nThe Duke ran off when the bang happened. Ain't seen him since. I can't go back. Found a cave on the windward side of Tempest's Crest. Running outta supplies to write with.\r\n\r\nI must survive. The ship will be here soon.\r\n\r\nKrolusks are prowl'n outside. Ate one yesterday, and I can feel their eyes watching me.",
+					"<This page has the last remnants of legible writing on it. It's clear that whoever was writing this likely used pieces of charcoal, as most of the words are smudged badly. Some words are also written in a crimson-brown, along with a few splotches on the page and smell faintly metallic.>\r\n\r\nDuke is gone. The crew is gone. Everyone is gone.\r\nAnd I-\r\n\r\n-but the song. I can near hear it now. When I sleep it's louder. It's calling, a sweet gentle song, just like Esther would sing. The isle itself-\r\n\r\n-find it I will. followed the song and dug till my hands bled-\r\n\r\n-ond it. A door-\r\n\r\n-ories were true- all of them...\r\n\r\n<The rest of the page is illegible and covered in a dark stain.>",
+				},
+				["material"] = "default",
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-503433"] = {
+			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					'<The monolith depicts a vast stone tower collapsing into an massive wave. In the shadow of the wave, a faint figure can be seen.\r\n\r\n\r\nBeneath the tower, in an underground chamber, humanoid figures take shelter before a glittering gold facet.>\r\n\r\n\r\nFor generations passed, our purpose held, the Luminous Heart at ease.\r\n\r\n\r\nWhen lands seized and heaved, the skies flashed in noxious green.\r\n\r\n \r\nOur bastion cracked, as towers fell, and waters black encroached. \r\n\r\nIn Vault beneath, we Sturmvyn prayed, Cyrce\'s hand upon her Heart.\r\n\r\n\r\nBut when tremors grew, its cries rang out; Hymosul\'s squall renewed.\r\n\r\n\r\nWhen silence fell, the cries still pained, our stone-runed doors unsealed\r\n\r\n\r\nAs Cyrce strode forth, our bastion ruined, surrounded by waters new.\r\n\r\n\r\nUpon our shores, a dark thing stood, its words in our minds, it spoke:\r\n\r\n\r\n"The Deep One stirs, this place calls out, his right to claim is nigh\r\n\r\n\r\nKneel before the Old One\'s gifts, their powers yours combined."'
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.5592039823532104,
+						0.4641656875610352,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-505174"] = {
+			["base"] = {
+				["title"] = "Floating Parchment",
+				["text"] = {
+					"Mama Diggs\r\n\r\nMatilda Brightlink\r\n\r\nMongar\r\n\r\nRachele\r\n\r\nRafael Langrom\r\n\r\nRanid Glowergold\r\n\r\nRoscoe\r\n\r\nTeller Hoag\r\n\r\nTiffany Cartier\r\n\r\nValaden Silverblade",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2248] = {
+						0.2970355153083801,
+						0.579338788986206,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-503431"] = {
+			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					"<The relief depicts a large chamber with a gathering of humanoid figures, the tallest of which holds her fist aloft; a small imbedded gold sliver glimmers from her finger.\r\n\r\nIn the center of the cavern, jutting up from the floor, sits a massive crystalline facet.> \r\n\r\n\r\nThe cavern grew, by tools and hands, a cradle for Heart to rest, from stones, to Shrine, the Sturmvyn laid.\r\n\r\n\r\nFor Hymosul's voice, once fierce, had calmed.\r\n\r\n\r\nThough Cyrce spoke to Heart, its voice was faint, a whisper barely heard.\r\n\r\n\r\nAnd so, with iron hands, I carved, I forged.\r\n \r\nA circlet, born of radiant ore, fit for the hand of Cyrce. A ring adorned with smaller shards of Heart.\r\n\r\n\r\nRemnants, smoothed and carved, with runes of Storm, citrines lit, their faces aglow with soft song.\r\n\r\n\r\nThrough the circlet, together, Cyrce and Hymosul sang.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.4992851614952087,
+						0.3690457344055176,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-234972"] = {
+			["base"] = {
+				["title"] = "Bloodwake Missive",
+				["text"] = {
+					"Bloody tidings, Asbjorn.\r\n\r\nYour time of absolution has come.\r\n\r\nOur scouts on the open seas have sent missives to Jorun. For the first time in many years, the wretched isle of Cyrandall has called out yet again.\r\n\r\nI need not remind you that no Bloodwake in history has ever braved its shores.\r\n\r\nCountless foolish clans, enticed by legends of forgotten treasures and cursed monsters, have been lured by its call.\r\n\r\nNone have ever returned.\r\n\r\nBut legends mean nothing to the mighty Bloodwake!\r\n\r\nIf you wish to regain Jorun's favor for your failures, then you will sail your flotilla to the isle and lay claim to the secrets. \r\n\r\nFind Cyrce's Circlet and bring it to Jorun.\r\n\r\nMay your banner be stained in blood\r\n \r\n- Drottin Fjardgrym",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-503430"] = {
+			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					"<A single slab of stone embedded with crystalline fragments, the ancient tablet is decorated with intricately-carved images and runic letters.\r\n\r\n\r\nA relief depicts a stoic, metal-skinned figure. Upon her shoulder sits a majestic winged creature with sparkling, cabochon-cut crystals set as its eyes. \r\n\r\n\r\nThe pair are staring upon a massive crystalline facet.>\r\n\r\n\r\nAs broken tools were cast aside, we found beneath the ground. For months we heard, and for months we searched.\r\n\r\n\r\nA golden crystal, encased by stone, its glow like a torch in the dark. \r\n\r\n\r\nUpon its face, Cyrce's hand was pressed; a sound, a cry!\r\n\r\nBut not of pain or plea of help, but of calm, of grace.Hymosul, the Luminous Heart.\r\n\r\n\r\nIts radiance and face, as if carved by unseen hands.\r\n\r\n\r\nMany stones, I have carved. My iron hands, my tools, but the splendor of Hymosul has opened my eyes.\r\n\r\n\r\nNew designs, patterns and structures. My mind is... clear.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.5912259817123413,
+						0.3688021302223206,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-503329"] = {
+			["base"] = {
+				["title"] = "Corroded Plaque",
+				["text"] = {
+					"<Scratched meticulously in a corroded piece of metal the following is inscribed.>\r\n\r\nIn Memory of the Maiden's Whisper.\r\nMay her timbers rest in easier waters.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2369] = {
+						0.4021725654602051,
+						0.5226945281028748,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-503432"] = {
+			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					"<A relief depicts a bearded, metallic figure holding a stone tablet and a chisel. \r\n\r\n\r\nBeneath his feet, an image of a chamber with a crystal facet. Above him stands a towering structure.\r\n\r\n\r\nThis monolith is carved in a different hand than the others.>\r\n\r\n\r\nNoble Jardfyr, with loyalty and wisdom seared into iron hide.\r\n\r\n\r\nFirst Carver of the Sturmvyn, advisor to Cyrce and Protector of Hymosul.\r\n\r\n\r\nFrom stone, our temple shaped, its guardians wrought with life through runes of old.\r\n\r\n\r\nTempered and nurtured, our bond with Hymosul grew and her call sang.\r\n\r\n\r\nFrom his hand and her voice, the Sturmvyn found their call.|n\r\nFew outside the Sturmvyn know the craft of runic binding, the art of stone-carving.\r\n|n\r\nTo bind the storms of north into the stones of earth was a craft rarely mastered.\r\n|n\r\nWrought by runes and will, his guardians of stone rose to stand vigil within.\r\n|n\r\nThough few learned his secrets, many would face his creations.\r\n|n\r\nThrough Hymosul's song, Jardfyr's designs would flourish.\r\n|n\r\n- As carved by Valwen, Apprentice Ward of the Stone Carver.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.4798291325569153,
+						0.4275379776954651,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-505529"] = {
+			["base"] = {
+				["title"] = "Mouldy Sea Ledger",
+				["text"] = {
+					"<The mouldy pocketbook has certainly seen better days. One of the only legible pages is a torn out leaflet stuck to the inside cover. It appears to have been torn from another source.>\r\n\r\n\r\nBeware her call,\r\nthe Siren's Call!\r\nA wail of dread and pain.\r\nSeek not her ring,\r\nthat calling ring!\r\nNear shores of shipwrecks bane.\r\n\r\n\r\nBeware her song,\r\nthe Siren's Song!\r\nA veil of tidal spite.\r\nWalk not those shores,\r\nthose blood-spilled shores!\r\nAs dark as starless nights.\r\n\r\n\r\nBeware her cry,\r\nthe Siren's cry!\r\nA tale of woe and guile.\r\nClaim not her ring, \r\nOh, Cyrce's ring!\r\nBeware the Siren Isle!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2369] = {
+						0.3954479098320007,
+						0.525953471660614,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-503415"] = {
+			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					"<A relief depicts an imposing, metal-skinned figure. There is a large ring on the gauntlet of her raised hand.>\r\n\r\n\r\nWith our Lord of Thunder silent, the mighty Cyrce led her clan from Sturmpyk and away the Winterskorn's unquenched thirst for war.\r\n\r\n\r\nAs we fled, the cold northern winds at iron backs, we questioned our clans purpose. Who did we stand to protect?\r\n\r\n\r\nFor without the Keepers, who did we serve?\r\n\r\n\r\nOur prayers were answered years after our exodus.\r\n\r\n\r\nFrom beneath the earth, we heard its cry, a plea for help, an anguished call.\r\n\r\n\r\nTo Cyrce's ears, the call was our destiny, and so, she led us towards the voice.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.6016446352005005,
+						0.2153148055076599,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-457280"] = {
+			["base"] = {
+				["title"] = "Bag of Grain",
+				["text"] = {
+					"Delivered to Dalaran as requested: fresh grain from Brill.\r\n\r\nPayment upon receipt.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[2248] = {
+						0.2974668741226196,
+						0.5792992115020752,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-506442"] = {
+			["base"] = {
+				["title"] = "Cyrce and the Galeorn",
+				["text"] = {
+					"<The depiction of a large avian creature sits perched upon a stormy mountain peak.>\r\n\r\n\r\nBorn amidst the clouds of Sturmpyk, the noble Galeorn had long been observed by our clan from below.\r\n\r\n\r\nLike Thorim's stormwolves, few have mastered the means to tame these fierce elemental creatures.\r\n\r\n\r\nBut where many Sturmvyn failed or fell to their thunderous nature, one succeeded: Cyrce.\r\n\r\n\r\nNo one knows how she succeeded, but when Cyrce descended from the highest slopes of Sturmpyk with a Galeorn upon her forearm, the clan foresaw it as a sign.\r\n\r\n\r\nAll hail Cyrce, chosen of Sturmpyk, and friend of Thrayir.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2375] = {
+						0.3360965847969055,
+						0.8266235589981079,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		
+		]]
+
+		-- end of user submission #11 (PTR)
 
 
 		--put stuff above here
