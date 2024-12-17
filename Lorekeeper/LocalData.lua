@@ -24331,9 +24331,6 @@ LK["LocalData"] = {
 		-- end of user submission #10
 
 		-- user submission #11 (PTR)
-
-		--[[
-
 		
 		["GameObject-499315"] = {
 			["base"] = {
@@ -24591,8 +24588,6 @@ LK["LocalData"] = {
 				["expansion"] = 10,
 			},
 		},
-		
-		]]
 
 		-- end of user submission #11 (PTR)
 
