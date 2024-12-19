@@ -316,6 +316,7 @@ local function GetHoliday()
 		elseif event and event.name == LK["Holiday_WinterVeil"] then
 			HolidaysTheme.Header.tex:SetTexture("Interface\\AddOns\\Lorekeeper\\Assets\\Textures\\WinterVeilTop");
 			HolidaysTheme.Bottom.tex:SetTexture("Interface\\AddOns\\Lorekeeper\\Assets\\Textures\\WinterVeilBottom");
+			return true;
 		end
 	end
 end
