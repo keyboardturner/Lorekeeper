@@ -730,6 +730,22 @@ LK["LocalData"] = {
 					"One wonders if such quaint notions would have faded but for creatures like demons and the Old Gods who work primarily through a single energy type. This conflation of culture and dimensional topology holds back so many otherwise promising mages.",
 					"Put simply, the cosmos appears as a hexateron. Imagine a four-sided tetrahedron internally extruded to form a multidimensional solid with twenty planes of existence, fifteen transitory pathways, and six vertices where interferon patterns create monopolar expressions of cosmic forces.",
 					"Singular energy types are unstable according to Ogdaen's law, and thus they bind to one or more secondary elements. The Firelands contains as much magma as it does flame, and why the holy radiance of the Sacred Flame acts as an eternal beacon.",
+					"Enough preamble! Let's get to the fun part! Logic proofs. Let us start with a foundational equation:\r\n \r\nPhi(M1, M2) = k * (Sigma(C1 + C2 + ... + Cn) + Sigma(D1 + D2 + ... + Dn))\r\n \r\n<The rest of this tome consists of 627 more pages of symbolic logic and their proofs broken up by the occasional anecdote about mage tower hijinks, the debunking of a historical myth, or a truly terrible dad pun.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "Palawltar's Codex of Dimensional Structure",
+				["text"] = {
+					"Unlike our ancestors, we don't limit our thinking of the cosmos to monopole elemental phase spaces. A discredited notion rooted in ancient myths from old Arathor. A comforting, if technically incorrect arrangement of the fundamental forces of the cosmos.",
+					"One wonders if such quaint notions would have faded but for creatures like demons and the Old Gods who work primarily through a single energy type. This conflation of culture and dimensional topology holds back so many otherwise promising mages.",
+					"Put simply, the cosmos appears as a hexateron. Imagine a four-sided tetrahedron internally extruded to form a multidimensional solid with twenty planes of existence, fifteen transitory pathways, and six vertices where interferon patterns create monopolar expressions of cosmic forces.",
+					"Singular energy types are unstable according to Ogdaen's law, and thus they bind to one or more secondary elements. The Firelands contains as much magma as it does flame, and why the holy radiance of the Sacred Flame acts as an eternal beacon.",
 					"Enough preamble! Let's get to the fun part! Logic proofs. Let us start with a foundational equation:\r\n \r\nPhi(M1, M2) = k * (Sigma(C1 + C2 + ... + Cn) + Sigma(D1 + D2 + ... + Dn))\r\n \r\n<The rest of this tome consists of 627 more pages of symbolic logic and their proofs. Broken up by the occasional anecdote about mage tower hijinx, the debunking of a historical myth, or a truly terrible dad pun.>",
 				},
 				["singlePage"] = false,
@@ -1709,6 +1725,21 @@ LK["LocalData"] = {
 				["title"] = "Light's Gambit Playbook",
 				["text"] = {
 					"<The cover of this book has an elaborate drawing of a large shadowy creature on it, with a group of ferocious Holy Flame wielders driving it back.\r\n\r\nThis particular tome has many annotations, marks, and notes indicating significant use, and frequent referral to certain sections of rules. You flip to the first one.>",
+					'Character Classes\r\n\r\nThe noble Cleric, valiant Knight, and stalwart Castle represent the classes available to you for Light\'s Gambit (more classes coming in a future supplement!).\r\n\r\n<An annotation reads "Unlikely to get supplements from the Empire, maybe we should create our own classes?">\r\n\r\nYou must combine these against the Light\'s Gambit master to overcome any challenge they throw at you!\r\n\r\n<You flip to the next section.>',
+					"Enhancing Light's Gambit\r\n\r\nWhile combat is very important in Light's Gambit, the game is significantly improved by putting yourself in the shoes of your pieces and playing their role. \r\n\r\nWhile this isn't comfortable for everyone on their first go, we recommend at least trying it. If it's not for you though, don't worry. You can enjoy Light's Gambit the way you want to enjoy it!\r\n\r\n<You flip to the next section.>",
+					'Obscure Rule Interactions\r\n\r\nThe "For the Flame!" feat allows you to replace your move action with another attack action. If your piece becomes rooted in place for any reason, you cannot replace it\'s move action with an attack action.\r\n\r\n<An annotation reads: This is dumb! Rooting just stops you from moving. It doesn\'t stop you from being able to act. We\'re house ruling it that you can still replace the move action.\r\n\r\nThe book is filled with similar rules commentary, and annotations which seem to agree or disagree with the rules to varying degrees. It seems like the version of Light\'s Gambit played in Hallowfall is a heavily modified version of regular Light\'s Gambit.>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "Light's Gambit Playbook",
+				["text"] = {
+					"<The cover of this book has an elaborate drawing of a large shadowy creature on it, with a group of ferocious Holy Flame wielders driving it back.\r\n\r\nThis particular tome has many annotations, marks, and notes indicating significant use, and frequent referral to certain sections of rules. You flip to the first one.>",
 					'Character Classes\r\n\r\nThe noble Cleric, valiant Knight, and stalwart Castle represent the classes available to you for Light\'s Gambit (more classes coming in a future supplement!).\r\n\r\n<An annotation reads "Unlikely to get supplements from the Empire, maybe we should create our own classes?>\r\n\r\nYou must combine these against the Light\'s Gambit master to overcome any challenge they throw at you!\r\n\r\n<You flip to the next section.>',
 					"Enhancing Light's Gambit\r\n\r\nWhile combat is very important in Light's Gambit, the game is significantly improved by putting yourself in the shoes of your pieces and playing their role. \r\n\r\nWhile this isn't comfortable for everyone on their first go, we recommend at least trying it. if it's not for you though, don't worry. You can enjoy Light's Gambit the way you want to enjoy it!\r\n\r\n<You flip to the next section.>",
 					'Obscure Rule Interactions\r\n\r\nThe "For the Flame!" feat allows you to replace your move action with another attack action. If your piece becomes rooted in place for any reason, you cannot replace it\'s move action with an attack action.\r\n\r\n<An annotation reads: This is dumb! Rooting just stops you from moving, it doesn\'t stop you from being able to act, we\'re house ruling it that you can still replace the move action.\r\n\r\nThe book is filled with similar rules commentary, and annotations which seem to agree or disagree with the rules to varying degrees. It seems like the version of Light\'s Gambit played in Hallowfall is a heavily modified version of regular Light\'s Gambit.>',
@@ -1744,6 +1775,23 @@ LK["LocalData"] = {
 		},
 		["Item-225212"] = {
 			["base"] = {
+				["title"] = "The Big Book of Arathi Idioms",
+				["text"] = {
+					'Lothar\'s Landing\r\n\r\nDuke Lothar annexed the island of New Light, sparking an economic boom in the empire. "Lothar\'s Landing" became an idiom for hopeful but uncertain trade or diplomatic initiatives by the empire. Often said with dripping sarcasm when the venture fails to find success.',
+					'Dunelle\'s Kindness\r\n\r\nFrom Mereldar\'s Letters, "Dunelle\'s Kindness" is an idiom for a kind merchant. Dunelle\'s generosity symbolized a prosperous town.\r\n\r\n"A table of fruit awaited all travelers, not for sale but to relieve their woes. Dunelle\'s kindness was genuine, a gentle tide that lifted all spirits and ships in the city."',
+					'Tenir\'s Ascent\r\n\r\nTenir, a character in an otherwise unremarkable play, became a common trope and then an idiom for victory, especially in risky adventures. Tenir\'s Ascent is a saying that has come to mean victory, specifically an armada victory, or one that involves a risky and perilous adventure. \r\n\r\n"My heart was buoyed with joy as I witnessed Tenir\'s ascent into the light streaked sky. I knew my love would return to me, and the emperor\'s armies would prove victorious."',
+					'The Aegis Wall\r\n\r\nThis is a term referring to a magic shield from the old world, and to a sword and pike military maneuver named after it. Popularized from a manual of warfare from the reign of Emperor Laenz IV that described and promoted this tactic. Only after the Air Navy shifted combat to the skies was this tactic abandoned.\r\n \r\n"The spears broke from the weight of the bodies, but the Aegis Wall, like the shield of Thoradin, held."',
+					'Lightspark\r\n\r\nThe Church of the Sacred Flame is one that reveres the radiant glow that is a merger of light and fire. "Lightspark" is one of many words found in Arathi speech and literature that are used to indicate a positive or desirable occurrence. This portmanteau means something akin to "The beginning of our victory."',
+					'Lorel\'s Crossing\r\n\r\nThis is based on an old Arathi fairy tale about a young woman whose town on the frontier fell to raiders. Lorel is a young craftsperson who uses her skills to outwit various dangers as much as she uses her military training. This specific idiom refers to crossing a natural barrier to find a place of safety where one could settle and work.\r\n \r\n"Lorel\'s crossing of the river Aelrea left the wolves snapping not at her heels, but at each other\'s tails."\r\n\r\nLorel has become a popular name among Arathi in the northwest provinces.',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "The Big Book of Arathi Idioms",
 				["text"] = {
 					'Lothar\'s Landing\r\n\r\nDuke Lothar annexed the island of New Light, sparking an economic boom in the empire. "Lothar\'s Landing" became an idiom for hopeful but uncertain trade or diplomatic initiatives by the empire. Often said with dripping sarcasm when the venture fails to find success.',
@@ -8251,6 +8299,24 @@ LK["LocalData"] = {
 				["pageCount"] = 0,
 				["material"] = "Parchment",
 			},
+			["copy_2"] = {
+				["title"] = "Incident Report",
+				["text"] = {
+					"Hours since last workplace accident: 2"
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+			},
+			["copy_3"] = {
+				["title"] = "Incident Report",
+				["text"] = {
+					"Hours since last workplace accident: 3"
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+			},
 		},
 		["GameObject-214160"] = {
 			["base"] = {
@@ -12823,12 +12889,25 @@ LK["LocalData"] = {
 				["text"] = {
 					"The Archivists' Codex\r\n\r\nHerein lies a catalogue of notable relics held within the archive. I shall endeavor to contextualize their history and significance as the Maw Walker aids me in recovering them.\r\n\r\nMay the Purpose grant me wisdom.\r\n\r\n--Archivist Roh-Suir",
 					"The Lodestaff\r\n\r\nFor eons I witnessed Roh-Senara hold this staff aloft as she maintained the archive. It passed to me before I was ready, and I can only hope that I fulfill the trust that has been placed in me.\r\n\r\nThe path before me is long and arduous. I am eternally grateful that I need not walk it alone.",
+					"Book of Binding: The Mad Witch\r\n\r\nRoh-Senara kept the final page of this book in a different wing of the archive, and once chastised me when I took it upon myself to finish its restoration.\r\n\r\nI often wonder what its prisoner did to warrant such a punishment. One can justify terrible acts in the pursuit of knowledge.",
+					"Singing Steel Ingot\r\n\r\nIt occurred to me while cataloging the ingot that music is something rare in our culture. Other societies exult in their triumphs and lows, but we simply exist. The Purpose is enough for true fulfillment.\r\n\r\nStill, I recently caught myself humming along to it.",
+					"Book of Binding: The Tormented Sorcerer\r\n\r\nOccasionally I wonder what would happen if I were to retrieve that final page. Would I be fulfilling the book's part of the Purpose? \r\n\r\nAnd yet the adamant calls of the text only further my resolve to leave such matters be. Some stories are better left untold.",
 					"The Talisman of the Eternal Scholar\r\n\r\nThank the Purpose! I had feared that the talisman and all of its history were lost forever. \r\n\r\nRoh-Senara never revealed its power to me. Yet when I hold it, I can feel the weight of my responsibility. It fills me with the strength to carry on.\r\n\r\nSurely, that is power in and of itself.",
+					"Guise of the Changeling\r\n\r\nAh yes, this mask was one of the more recent additions to the archive. I understand that it originated from a mortal world but has passed through many a sorcerer's hand within the Shadowlands.\r\n\r\nI suppose that even in Death, one often possesses secrets they wish to hide.",
+					"Peculiar Wood Carving\r\n\r\nIt took great effort to restore this carving. I removed untold ages of soil until the image underneath was at last revealed. Roh-Senara praised my dedication to the task.\r\n\r\nFor the first time, I felt truly accomplished. Perhaps Korthia is where I am meant to be after all.",
 					"Celestial Shadowlands Chart\r\n\r\nI have always been fascinated by maps. A few lines and names scribbled onto parchment, and entire worlds unfurl before the one who reads them.\r\n\r\nSeeing all of the realms at once reminds me of the grandeur of the Purpose... and of my infinitesimal part within it.",
 					"Cipher of Understanding\r\n\r\nSometimes I ponder the nature of language. We learn to communicate, forming symbols that evolve into text. Yet languages vary widely, even within a single realm.\r\n\r\nWould it not be in the best interests of the Purpose if we could all understand each other?",
 					'Everliving Statuette\r\n\r\nThis statue has vexed me for eons. It claims to know much but speaks only in falsehoods. I once told Roh-Senara as much, and to my surprise, she laughed.\r\n\r\n"There is one truth above all others," she said to me as she regarded the relic. "No one knows everything."',
 					"Enigmatic Decrypting Device\r\n\r\nWe attendants are straightforward in our speech. Such is not the case with other beings.\r\n\r\nDuplicity can be easy to detect. But there are more subtle inflections--sarcasm, innuendo, allusion--that often elude me. \r\n\r\nPerhaps I should make use of this device myself.",
 					"Drum of the Death Loa\r\n\r\nTrickster. Liar. Swindler. A few of many words to describe Bwonsamdi. I feel as if I hear his voice whenever this drum is sounded.\r\n\r\nThough he is the loa of Death, it is said that he began as a mortal. Perhaps that is why, despite his title, he always seems so full of life.",
+					'Sack of Strange Soil\r\n\r\nThough I am unfamiliar with its origin, this small parcel of earth seems most eager to cultivate life. Perhaps it is not soil, but possibilities that merely wait for the right moment. \r\n\r\n"It is nothing so complicated," Roh-Senara told me with a laugh. "The soil merely fulfills its Purpose."',
+					"Unstable Explosive Orb\r\n\r\nThis relic makes me nervous. I do not like storing it in the archive, but Roh-Senara insists that we must. In our hands, she explained, we can be certain it will never be used. \r\n\r\nWe trust in the Purpose. Is it really so difficult to trust in each other as well?",
+					"Bulwark of Divine Intent\r\n\r\nSometimes when I am alone with the bulwark, it feels as though someone is standing watch nearby. I am overcome with the sense that I am somehow being protected. \r\n\r\nOne might think such an experience would be unnerving, but in truth I find it a source of comfort.",
+					"Shadow-Slicing Shortsword\r\n\r\nWhile considering the blade, I asked Roh-Senara about the nature of violence. What role does it play within the Purpose? She told me this was a mystery I would have to unravel on my own. \r\n\r\nRather than think upon that question, I now wonder why she answered in this way.",
+					"Gorak Claw Fetish\r\n\r\nToday I asked Roh-Senara whether the Drust are truly part of the Purpose if they exist between Life and Death.\r\n\r\nInstead of an answer, she posed a question in return: If the wind is not of soil or sky, is it truly part of nature?\r\n\r\nIt seems I have much to ponder.",
+					'Ring of Self-Reflection\r\n\r\nEvery relic within the archive was made for an intended use. I once asked Roh-Senara why someone would craft a ring such as this.\r\n\r\n"Perhaps they merely sought company," she mused, "even if it were only an illusion."\r\n\r\nI did not understand what she meant. I believe I do now.',
+					'The Netherstar\r\n\r\nI asked Roh-Senara where the Netherstar came from, but she did not know. When pressed further, she shook her head. \r\n\r\n"We must accept that some stories are simply lost. Those tales are no longer ours to tell. Instead, we find the ones that are."',
+					"Obelisk of Dark Tidings\r\n\r\nSo much power in such a humble object. Its whispers speak of the Purpose--if there is only one true way, why then does it diverge into different paths? \r\n\r\nSuch musings might work on those who lack faith. But my kind are faith incarnate. There is no shaking our convictions.",
 					"Diviner's Rune Chits\r\n\r\nThis is one of many items within the archive crafted for divination. As I have always been guided by the Purpose, I sometimes ask myself if mortals are frustrated by the ambiguity of their existence.\r\n\r\nAnd sometimes, I wonder if they relish the thrill of possibility.",
 				},
 				["singlePage"] = false,
@@ -17909,6 +17988,32 @@ LK["LocalData"] = {
 				["title"] = "Observational Notes: Stormrooks",
 				["text"] = {
 					"<The journal contains several hundred loose leaflets of ironwood paper, folded notes, and misaligned parchment. The further back into the book you go, the older and more faded the notes become.\r\n\r\nThe inside cover is transcribed with a message that reads:>\r\n\r\nThe following notes contains personal observations concerning the nature and behaviors of stormrooks. \r\n\r\nAuthor note: As a Stonebound Geomender, I do not claim to understand the full breadth of these elemental creatures. Rather, it is my hope to understand their origins and nature in order to better our connection with them.\r\n\r\n- Geomender Harmot",
+					"Entry 204\r\n\r\nThe Origin of the Stormrooks\r\n\r\nThe precise origin date of the stormrooks seems to be unknown, though I suspect the Stormriders may know more and are not keen to share such information. \r\n\r\nJudging from overheard conversations, their commentary seems to suggest the rooks appeared some time after the arrival of the earthen. \r\n\r\nSome witnesses state the first rooks appeared around Dhar Oztan. This theory could be supported by the perpetual storm around the peak.\r\n\r\nThe initial nature of the stormrooks appear to align with that of wild elementals. Volatile, unpredictable, and aggressive. Stormriders appear to have the means to control these creatures, but their power appears difficult to control.\r\n\r\nUnlike wild elementals which tend to be formless and random in their manifestations, the stormrooks appear to align with similar elemental beasts found in the region such as the ramoliths.",
+					"Entry 908\r\n\r\nObservational notes: Rainstorms\r\n\r\nWhile rainstorms that last several project cycles are typically disastrous for the Stonebound, I am pleased to make note that the stormrooks appear to relish in these occurrences.\r\n\r\nDuring my latest visit to Dornogal, I witnessed a significant change in their behavior. Their speed increased greatly, the energy radiating off their wings and beaks was more volatile, and their flight patterns even seemed to attract lightning strikes! Fortunately, the Stormriders themselves appeared unaffected.\r\n\r\nI cannot help but wonder if electrical currents have the same effects on stormrooks as healing clay has on ramoliths. Perhaps I will have future opportunities to observe.",
+					"Entry 2589\r\n\r\nSuccessful Experiment: Charged Mosswool\r\n\r\nMy hypothesis was proven successful! \r\n\r\nDuring a recent visit to Rambleshire, we discovered a strange static charge on the mosswools. I managed to bring a few samples to Dornogal and although the Stormward was too busy to see to my request, I was granted an audience with his Stormguard, Olbarig. \r\n\r\nTo both of our surprise, the stormrooks were quite interested in the charged moss. Ingesting it appeared to have a similar (if not significantly reduced) side effect as the lightning strikes had on the rooks and even appeared to heal one of them. \r\n\r\nAlthough I suspect a true storm will always serve as the more effective means of healing and empowering rooks, our discovery has proven to be quite valuable to the Stormriders! \r\n\r\nI look forward to my next visit to the Stormperch.",
+					"Entry 9534\r\n\r\nSummary on Stormrook, Cloudrook and Ramolith bond.\r\n\r\nIn previous observations, I made note of the curious bond between creatures like cloudrooks or ramoliths and their riders. Both of these creatures appear to demonstrate deference to their earthen rider.\r\n\r\nFurthermore, cloudrooks appear to be far more responsive and receptive to the hand of their trained rider and even comply with issued instructions.\r\n\r\nRamoliths have been observed stubbornly following their rider or rancher into the foothills or work sites and have even shown protective displays of guardianship when others attempted to separate them from their earthen.\r\n\r\nMost curiously, stormrooks do not appear to demonstrate such obvious connections. Given the similarities between them and their cloudrook kin, I am most curious as to why.",
+					"Entry 9535\r\n\r\nContinued Summary on Stormrook Behavior Differences\r\n\r\nI do not intend to undermine the efficiency of the stormrooks. They are obedient and responsive to the commands of their riders, yet the inherent connection I've observed in other creatures appears to be far more muted. \r\n\r\nTheir guardianship is displayed through strict commands and their responsiveness tethered to the discipline of their rider. \r\n\r\nBoth of these displays appear to be far less forceful and more natural when demonstrated with cloudrooks or ramoliths.\r\n\r\nUpon sharing my observations with Olbarig, they were immediately dismissed. It would seem that I am perhaps missing some crucial understanding that is privy only to Stormriders.",
+					"Entry 18,670\r\n\r\nStormrooks and Cloudrooks\r\n\r\nSince I am unable to make frequent visits to Dornogal due to Stonebound project protocol, I have asked Olbarig to continue my observations of the stormrooks.\r\n\r\nMuch to my surprise, he took an interest in the city cloudrooks and the similarities they share with their stormrook cousins. \r\n\r\nWhile stormrooks are more spirited, they are also faster and cleverer than cloudrooks, and have powerful offensive attacks. Because of this, they are exclusively utilized by the Stormriders. \r\n\r\nCloudrooks are slower and more docile, serving as transport mounts for messengers, workers and dignitaries. For this reason, they are often overlooked by the Stormriders.\r\n\r\nUpon my next visit, Olbarig shared some of his notes on the rooks and even acknowledged some of my previous observations.",
+					"Entry 23,000\r\n\r\nStormrook Departure\r\n\r\nAnother stormrook anomaly has occurred. Olbarig tells me that several rooks, all which had lost their rider in battle nearly half a cycle ago, have suddenly departed from the Stormperch. \r\n\r\nA few Stormriders took after them but lost them in a storm to the northeast and were forced to return to Dornogal. \r\n\r\nWithout their riders to control them, the rooks in question had become inactive for the past half of a cycle. Efforts to reintegrate them into service were met with fierce protest from the stormrooks, which Olbarig noted was a rare occurrence. \r\n\r\nI have a feeling Olbarig has further thoughts on this incident that he does not wish to share with me.",
+					'Entry 31,860\r\n\r\nIt would seem my persistent inquiries inspired Olbarig to conduct his own experiments.\r\n\r\nOlbarig has revealed to me the nature of the leg bindings worn by all combat-trained rooks. I merely assumed them to be decoration like the ones seen on cloudrooks or ramoliths, but Olbarig tells me that they are what keeps the stormrooks in check. No stormrider has ever been permitted to combat train a rook without bindings.\r\n\r\nHe would not tell me the exact origin of them, nor the details that seemed to be only privy to himself and the Stormward, but we did ponder if this stifled "bond" between rider and rook may be connected to these.\r\n\r\nI will not press the Stormguard further. It would seem he has taken an interest in this topic personally.',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2248] = {
+						0.4220709204673767,
+						0.7511572241783142,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "Observational Notes: Stormrooks",
+				["text"] = {
+					"<The journal contains several hundred loose leaflets of ironwood paper, folded notes, and misaligned parchment. The further back into the book you go, the older and more faded the notes become.\r\n\r\nThe inside cover is transcribed with a message that reads:>\r\n\r\nThe following notes contains personal observations concerning the nature and behaviors of stormrooks. \r\n\r\nAuthor note: As a Stonebound Geomender, I do not claim to understand the full breadth of these elemental creatures. Rather, it is my hope to understand their origins and nature in order to better our connection with them.\r\n\r\n- Geomender Harmot",
 					"Entry 204\r\n\r\nThe Origin of the Stormrooks\r\n\r\nThe precise origin date on the stormrooks seems to be unknown, though I suspect the Stormriders may know more and are not keen to share such information. \r\n\r\nJudging from overheard conversations, their commentary seems to suggest the rooks appeared some time after the arrival of the earthen. \r\n\r\nSome witnesses state the first rooks appeared around Dhar Oztan. This theory could be supported by the perpetual storm around the peak.\r\n\r\nThe initial nature of the stormrooks appear to align with that of wild elementals. Volatile, unpredictable, and aggressive. Stormriders appear to have the means to control these creatures, but their power appears difficult to control.\r\n\r\nUnlike wild elementals which tend to be formless and random in their manifestations, the stormrooks appear to align with similar elemental beasts found in the region such as the ramoliths.",
 					"Entry 908\r\n\r\nObservational notes: Rainstorms\r\n\r\nWhile rainstorms that last several project cycles are typically disastrous for the Stonebound, I am pleased to make note that the stormrooks appear to relish in these occurrences.\r\n\r\nDuring my latest visit to Dornogal, I witnessed a significant change in their behavior. Their speed increased greatly, the energy radiating off their wings and beaks was more volatile, and their flight patterns even seemed to attract lightning strikes! Fortunately, the Stormriders themselves appeared unaffected.\r\n\r\nI cannot help but wonder if electrical currents have the same effects on stormrooks as healing clay has on ramoliths. Perhaps I will have future opportunities to observe.",
 					"Entry 2589\r\n\r\nSuccessful Experiment: Charged Mosswool\r\n\r\nMy hypothesis was proven successful! \r\n\r\nDuring a recent visit to Rambleshire, we discovered a strange static charge on the mosswools. I managed to bring a few samples to Dornogal and although the Stormward was too busy to see to my request, I was granted an audience with his Stormguard, Olbarig. \r\n\r\nTo both of our surprise, the stormrooks were quite interested in the charged moss. Ingesting it appeared to have a similar (if not significantly reduced) side effect as the lightning strikes had on the rooks and even appeared to heal one of them. \r\n\r\nAlthough I suspect a true storm will always serve as the more effective means of healing and empowering rooks, our discovery has proven to be quite valuable to the Stormriders! \r\n\r\nI look forward to my next visit to the Stormperch.",
@@ -18352,6 +18457,25 @@ LK["LocalData"] = {
 		},
 		["GameObject-248981"] = {
 			["base"] = {
+				["title"] = "The Favored of Odyn",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">The Favored of Odyn</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-warrior-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">Tales of the greatest vrykul that ever lived</p>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<p></p>\r\n<H2 align="center">Honor in Remembrance</H2><HR/>\r\n<P>\r\nI dreamt of heroism. I wanted to stride into battle as a warrior, blade in hand, and remove the enemies of Odyn from this world.<BR/><BR/>But that was not to be. I was not born the strongest or the fastest. I was not attuned to mystical power. I could never rise to glory in war. So instead I resolved to chronicle the actions of those who could. I began with Odyn himself, telling the stories of his greatest battles and achievements as he cleansed the Black Empire from Azeroth.<BR/><BR/>Now I will record the actions of his followers. Countless vrykul have sought Odyn\'s favor through acts of heroism. They deserve to be remembered in this life and the next. And if I can help them achieve immortality among the living, perhaps they will invite me to join their number in the Halls of Valor and tell their tales for all eternity.<BR/><BR/>\r\n-Anonymous<BR/><BR/>\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[695] = {
+						0.4674533605575562,
+						0.288474440574646,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 1,
+				["expansion"] = 6,
+			},
+			["copy_1"] = {
 				["title"] = "The Favored of Odyn",
 				["text"] = {
 					'<HTML><BODY>\r\n<H1 align="center">The Favored of Odyn</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-warrior-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">Tales of the greatest vrykul that ever lived</p>\r\n</BODY></HTML>',
@@ -22671,6 +22795,19 @@ LK["LocalData"] = {
 				["title"] = "Preservationist's Dispatch Two",
 				["text"] = {
 					"Kathos, another artifact has come up in confiscated notes from recent looters. This time they reference the Idol of Ohn'ahra. It is said to be an ancient artifact whose keen eyes can quickly spot nearby treasures. If the location of this artifact is compromised, we must secure it quickly before it gets into the hands of looters.  \r\n\r\nThe notes we found referenced 3 Incense Braziers that must be lit for the location of the Idol to be uncovered. The notes also had the Eternal Kurgans underlined, so the incense and the idol must lie within the burial mounds in the Ohn'ahran Plains, southwest of Teerakai.  \r\n\r\nHurry, you and your new associates must find the idol before it is too late.",
+					"<A Note on the back shows you successfully solved this clue.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+			["copy_1"] = {
+				["title"] = "Preservationist's Dispatch Two",
+				["text"] = {
+					"Kathos, another artifact has come up in confiscated notes from recent looters. This time they reference the Idol of Ohn'ahra. It is said to be an ancient artifact whose keen eyes can quickly spot nearby treasures. If the location of this artifact is compromised, we must secure it quickly before it gets into the hands of looters.  \r\n\r\nThe notes we found referenced 3 Incense Braziers that must be lit for the location of the Idol to be uncovered. The notes also had the Eternal Kurgans underlined, so the incense and the idol must lie within the burial mounds in the Ohn'ahran Plains, southwest of Teerakai.  \r\n\r\nHurry, you and your new associates must find the idol before it is too late.",
 				},
 				["singlePage"] = true,
 				["pageCount"] = 0,
@@ -22682,6 +22819,19 @@ LK["LocalData"] = {
 		},
 		["Item-207802"] = {
 			["base"] = {
+				["title"] = "Bobby Carlisle's Thinking Cap Notes",
+				["text"] = {
+					"Thinking Cap Components - \r\n\r\nThought Calculating Apparatus - Clinkyclick Shatterboom - Engineering Trainer - \r\n* Loves the local Thuderspine Nest dish Erugosa makes here at the inn.\r\n\r\nDowny Liner - Gryffin - Clinkyclick's Assistant\r\n* Loves a toothy Fresh Tyranha, found swimming in the Cascades below Valdrakken.\r\n\r\nCrystal Ocular Lenses - Shakey Flatlap - \r\n* Loves our local Dragon's Hoard bar a bit too much, high tab.\r\n\r\nFangli Hoot's Current Location:\r\n\r\nRoom next to the Barber Shop. Does not like to stay in one place too long, so need to catch her here.",
+					"<A note on the back shows you successfully solved this clue.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+			["copy_1"] = {
 				["title"] = "Bobby Carlisle's Thinking Cap Notes",
 				["text"] = {
 					"Thinking Cap Components - \r\n\r\nThought Calculating Apparatus - Clinkyclick Shatterboom - Engineering Trainer - \r\n* Loves the local Thuderspine Nest dish Erugosa makes here at the inn.\r\n\r\nDowny Liner - Gryffin - Clinkyclick's Assistant\r\n* Loves a toothy Fresh Tyranha, found swimming in the Cascades below Valdrakken.\r\n\r\nCrystal Ocular Lenses - Shakey Flatlap - \r\n* Loves our local Dragon's Hoard bar a bit too much, high tab.\r\n\r\nFangli Hoot's Current Location:\r\n\r\nRoom next to the Barber Shop. Does not like to stay in one place too long, so need to catch her here.",
@@ -23159,6 +23309,19 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "The Case of the Superstitious and Hungry Pirates",
 				["text"] = {
+					"Alyx asked me to check on a group of pirates who landed just outside the celebration area to see if they need any assistance.\r\n\r\nI spoke with Bonenose, the Booty Bay Boatswain. They are apparently stuck here, not because of any mechanical failings of their ship, but rather because they fear setting sail again without the good luck proffered by a special meal their old cook, named Cooktholomew, used to make.\n\nI spoke with Mrs. Gant, the cooking trainer. She pointed out Cooktholomew's area for me. According to her, the barrel next to his old hammock is the only thing left of his.\n\nI found Cooktholomew's notes, but he clearly wrote them only for himself. I need to find someone to help decipher this.\n\nScowling Rosa has agreed to help decipher Cooktholomew's notes. Now, I wait.\n\n",
+					"Rosa assures me these notes are deciphered, but Cooktholomew refers to things using terms familiar only to him. I still need to figure out what items he's talking about.\n\n"
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "The Case of the Superstitious and Hungry Pirates",
+				["text"] = {
 					"Alyx asked me to check on a group of pirates who landed just outside the celebration area to see if they need any assistance.\r\n\r\nI spoke with Bonenose, the Booty Bay Boatswain. They are apparently stuck here, not because of any mechanical failings of their ship, but rather because they fear setting sail again without the good luck proffered by a special meal their old cook, named Cooktholomew, used to make.\n\n",
 				},
 				["singlePage"] = true,
@@ -23488,6 +23651,19 @@ LK["LocalData"] = {
 			},
 		},
 		["Item-229968"] = {
+			["copy_1"] = {
+				["title"] = "Boonful Banquet",
+				["text"] = {
+					"Boonful Banquet\r\n~~~~~~~~~~~~~~~~~~~~\r\nFer me crew, t' bring 'em good luck on thar voyage!\r\n\r\n*  Mirror pieces shadow leaf again and again daffy juice berries.\r\n\r\n*  Halvers like divers blaze gasping ice pods like shadow leaf.\r\n\r\n*  Like slew Koatini's grease like daffy juice berries.\r\n\r\n*  Like divers ghost breath mouser brine like roils again and again jaypops full.\r\n\r\n*  Doubly like slew bumper flower brinestock like the twin roils.\r\n\r\n*  Mirror pieces sholazar roils again and again grease.\r\n\r\n*  Trio of hummock jaypops.",
+					"Translation Notes from Rosa\r\n~~~~~~~~~~~~~~~~~~~~\r\n*  Equal parts Rogue's Thistle and Banana Rum Berries (2 of each).\r\n\r\n*  Half as many Fire Breathing Chili Sacs as Rogue's Thistle (1 of these).\r\n\r\n*  As much Koatini's Oil as Banana Rum Berries (2 of these).\r\n\r\n*  As many Deadwind Catfish as Nettles and Crawdaddies altogether (5 of these).\r\n\r\n*  Twice as much Giant Growth Fish as the two Nettles (4 of these).\r\n\r\n*  Equal parts Sholazar Nettles and Oil (2 of these).\r\n\r\n*  Three Highland Crawdaddies (3 of these)."
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
 			["base"] = {
 				["title"] = "Boonful Banquet",
 				["text"] = {
@@ -23977,7 +24153,7 @@ LK["LocalData"] = {
 		},
 
 
-		-- user submission #10
+		-- user submission #9
 
 		["GameObject-466563"] = {
 			["base"] = {
@@ -24328,9 +24504,9 @@ LK["LocalData"] = {
 			},
 		},
 
-		-- end of user submission #10
+		-- end of user submission #9
 
-		-- user submission #11 (PTR)
+		-- user submission #10 (PTR)
 		
 		["GameObject-499315"] = {
 			["base"] = {
@@ -24354,6 +24530,26 @@ LK["LocalData"] = {
 		},
 		["Item-232694"] = {
 			["base"] = {
+				["title"] = "Transcribed Kul Tiran Journal",
+				["text"] = {
+					"I ain't trying to claim I'll be any good at this, but I promised my beloved Esther I would try, bless her heart. I never really put pen to paper before, but now's as good a time as any I suppose. 'It'll help you sort your thoughts while out at sea' she said. Ah, I hope she's doing well an' those gulls aren't given' her too much of a bother.\r\n\r\n As it stands, I've been gone for months an' I hope after this last shipment we'll be headed home. These Ashvane are a tough lot, an' I'm not sure it was a right good idea to help them on this venture, but here we are.",
+					"<Part of the next entry is smudged.>\r\n\r\n-en my job to reassure the crew, and I understand the doubt but we've been paid hefty coin for this venture. My mates are some of the best on the seas and if anyone can get these Ashvane where they want to go it's my crew. Still I feel uneasy trying to find this isle. Even if there is that azermite or whatever rock out there. I don't reckon it's worth the risk, what with all the stories. But mayhaps I should be more like Minnow; they were givin'n me an' Lesa a hard time for be'n 'superstitious old fogies'. That got a good laugh outta the crew. I reckon Minnow ain't more than a decade younger than Lesa, and you should have seen the face Lesa made. It had Minnow runn'n  for the mast!",
+					"<The first legible entry seems to be near the middle of the page.>\r\n\r\n-s fair skies for such a strange place. For such a small isle, it's covered in a dense forest. Even from the boat I don't think any wind rustles through those trees. It seems to me like the whole isle is holding its breath, but for what I couldn't say.\r\n---\r\nWe went to set anchor in the sheltered bay on the leeward side but was greeted by a graveyard of other ships. An ill omen to be sure, and none too friendly for docking. We managed to navigate to the windward side and as promised we landed her on the beach head with the other ship-\r\n\r\n<A watery stain has blurred much of the ink together.>-scout reported back- wells of azerite they say! We began offloading the supplies and chopping the timbers. A bit sad to see the trees fall, but that's the price of progress I suppose. One o' the Overseers...Katya I think her name was, began planning a railway type system to get from the azerite to the ships so we don't have to haul it all on our backs. A right smart lass she is, but a bit mean too. Seems to be the way with these Ashvane folk, but I shouldn't be casting stones as Esther would say.",
+					"There's something right unnatural about this isle. Even as the forest starts to thin, still seems to me that things are too still. The flying beasts even seem to keep their distance, unless one o' those Ashvane get too close. Unfortunately we've lost a few of them that way. At least the krolusks are manageable, but even they seem to have a certain wariness and intelligence about them I ain't ever seen in the ones back in Boralus. It's a bit unnerving to have one o' them stare you down with those glinting eyes in the night. Just...watching...waiting it seems like. I ain't never seen The Duke so on edge. I've suggested we place scouts, an' the Ashvane seemed to agree thank the seas.<A large ink smudge covers the next few sentences.>\r\n\r\n-starting to wonder if the old tales about this place were true. Minnow was out yesterday and said they spotted sirens off the shore. Not a huge surprise given the name of this place, but similar to the other creatures they seem more wary of us. With the other wildlife acting the way it does, it's down right eerie...almost like they're waiting for something...",
+					"Told them, I did. Something about this place just ain't right. Las night Wiggans came running over all in a huff about some golden man or some such. Them Ashvane reckoned he's taken leave of his senses, but I believe him. I've know Wiggins for years an he ain't a coward, an he's the least superstitious of us. If he saw something then there's something out there...\r\n\r\n<Blotches in various parts of the page make it hard to read.>\r\n-e lost so many in the storm- plucked right off the deck. Crawled right up out of the ocean an' up the boats they did. Terrors I haven't seen the likes of before- crabs as big as the hull, giant serpent-like bugs - and the wailing! If I wasn't convince this isle is bad news, I certainly believe now.-ast smashed to pieces by the storm! Came outta nowhere, an my poor Maiden's Wh-\r\n\r\n-reckons we should repair with what little we have. Most of the timbers are ruined an there is precious little on this island we can get to that's not near those flying beasts. The railway timbers aren't seaworthy so there's no options left. Still, Lesa has the right of it. If we have enough to repair the other ship th-\r\n\r\n<The rest of the page is illegible.>",
+					'<The writing on this page seems a bit shaky.>\r\n\r\n-even know where to begin. With the fallout of the storm not only did we have to cannibalize my dear Maiden\'s Whisper, but with all the azerite there ain\'t enough space for us all to go back on the one remaining vessel. And with another storm on the horizon we...drew lots. I was one of the unlucky ones \'selected\' to stay behind and help mine the small lot of azerite that\'s left. Most of the crew decided to go, but bless their hearts Wiggins, Lesa and Minnow all stayed. The Duke too. "We\'ll be back fer ya" they say. I...wish I could believe that to be true.\r\n\r\nEsther give me strength.<It seems like a fair amount of time has passed between entries.>\r\n\r\nBeen mining for what feels like ages. We even used what timbers we had to build a makeshift living space for those of us left. Seemed a better idea to chance it with them -what did that Ashvane call\'em... wyverns I think- than down near the shores when the storm rolls in. We even repurposed the crow\'s nest up on Tempest\'s Crest to watch for the return ship. Nothing yet though...',
+					"The longer we stay on this forsaken isle the more strained things seem to be getting between us and the remaining Ashvane. Had to break up several fights over the last few days, an that brute Fently only seems to fan the flames. Even The Duke doesn't seem to like'em an' that's a telling sign to me. Still, they're-<Dirt makes the next entry hard to read, along with shaky handwriting.>\r\n\r\n-happened so fast. One minute I'm swinging a pickaxe, next a giant rock hand crushes the poor Ashvane bloke next to me. A monstrosity like I never seen before... and made of Azerite no less! Killed over half the people we had left before we backed it into that cave. The Overseer's quick thinking is all that saved the rest of us what with the explosives we threw at it. Caved in the mound on it, seas take it. There are less than a handful of us left now. Thank the sea Minnow, Wiggins and Lesa made it out safe. Dunno what I'd do without 'em at this point...\r\n\r\n-buried. Not much left, but it felt wrong not to have anything. Spirits are at an all-time low it seems-",
+					"<The next sentence seems to be written so shakily it's hard to make out the letters.>\r\n\r\n-gone. They're all GONE. I was up in the the sleeping quarters making the lunch since it was my turn and- there was this loud bang or screech or-\r\n\r\n<The sentence seems to trail off.>\r\n\r\nI... don't know. They are all gone. Like they were never here to begin with. I must have ran over this entire island looking for them. I... put some stakes out back in the graveyard just in case but, they can't just have just...disappeared. That doesn't make any sense. Even all their bags and tools are still there an-\r\n\r\n-to leave. Can't stay. The isle is coming for me next.\r\n\r\nThe Duke ran off when the bang happened. Ain't seen him since. I can't go back. Found a cave on the windward side of Tempest's Crest. Running outta supplies to write with.\r\n\r\nI must survive. The ship will be here soon.\r\n\r\nKrolusks are prowl'n outside. Ate one yesterday, and I can feel their eyes watching me.",
+					"<This page has the last remnants of legible writing on it. It's clear that whoever was writing this likely used pieces of charcoal, as most of the words are smudged badly. Some words are also written in a crimson-brown, along with a few splotches on the page and smell faintly metallic.>\r\n\r\nDuke is gone. The crew is gone. Everyone is gone.\r\nAnd I-\r\n\r\n-but the song. I can near hear it now. When I sleep it's louder. It's calling, a sweet gentle song, just like Esther would sing. The isle itself-\r\n\r\n-find it I will. followed the song and dug till my hands bled-\r\n\r\n-ond it. A door-\r\n\r\n-ories were true- all of them...\r\n\r\n<The rest of the page is illegible and covered in a dark stain.>",
+				},
+				["material"] = "default",
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "Transcribed Kul Tiran Journal",
 				["text"] = {
 					"I ain't trying to claim I'll be any good at this, but I promised my beloved Esther I would try, bless her heart. I never really put pen to paper before, but now's as good a time as any I suppose. 'It'll help you sort your thoughts while out at sea' she said. Ah, I hope she's doing well an' those gulls aren't given' her too much of a bother.\r\n\r\n As it stands, I've been gone for months an' I hope after this last shipment we'll be headed home. These Ashvane are a tough lot, an' I'm not sure it was a right good idea to help them on this venture, but here we are.",
@@ -24532,6 +24728,24 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "Glittering Ancient Tablet",
 				["text"] = {
+					"<A relief depicts an imposing, metal-skinned figure. There is a large ring on the gauntlet of her raised hand.>\r\n\r\n\r\nWith our Lord of Thunder silent, the mighty Cyrce led her clan from Sturmpyk and away from the Winterskorn's unquenched thirst for war.\r\n\r\n\r\nAs we fled, the cold northern winds at iron backs, we questioned our clans purpose. Who did we stand to protect?\r\n\r\n\r\nFor without the Keepers, who did we serve?\r\n\r\n\r\nOur prayers were answered years after our exodus.\r\n\r\n\r\nFrom beneath the earth, we heard its cry, a plea for help, an anguished call.\r\n\r\n\r\nTo Cyrce's ears, the call was our destiny, and so, she led us towards the voice."
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.6016446352005005,
+						0.2153148055076599,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
 					"<A relief depicts an imposing, metal-skinned figure. There is a large ring on the gauntlet of her raised hand.>\r\n\r\n\r\nWith our Lord of Thunder silent, the mighty Cyrce led her clan from Sturmpyk and away the Winterskorn's unquenched thirst for war.\r\n\r\n\r\nAs we fled, the cold northern winds at iron backs, we questioned our clans purpose. Who did we stand to protect?\r\n\r\n\r\nFor without the Keepers, who did we serve?\r\n\r\n\r\nOur prayers were answered years after our exodus.\r\n\r\n\r\nFrom beneath the earth, we heard its cry, a plea for help, an anguished call.\r\n\r\n\r\nTo Cyrce's ears, the call was our destiny, and so, she led us towards the voice.",
 				},
 				["singlePage"] = true,
@@ -24572,6 +24786,24 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "Cyrce and the Galeorn",
 				["text"] = {
+					"<The depiction of a large avian creature sits perched upon a stormy mountain peak.>\r\n\r\n\r\nBorn amidst the clouds of Sturmpyk, the noble galeorn had long been observed by our clan from below.\r\n\r\n\r\nLike Thorim's stormwolves, few have mastered the means to tame these fierce elemental creatures.\r\n\r\n\r\nBut where many Sturmvyn failed or fell to their thunderous nature, one succeeded: Cyrce.\r\n\r\n\r\nNo one knows how she triumphed, but when Cyrce descended from the highest slopes of Sturmpyk with a galeorn upon her forearm, the clan foresaw it as a sign.\r\n\r\n\r\nAll hail Cyrce, chosen of Sturmpyk and friend of Thrayir, the galeorn.\r\n\r\n- As carved by Valwen, Apprentice Ward of the Stone Carver."
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2375] = {
+						0.3360965847969055,
+						0.8266235589981079,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "Cyrce and the Galeorn",
+				["text"] = {
 					"<The depiction of a large avian creature sits perched upon a stormy mountain peak.>\r\n\r\n\r\nBorn amidst the clouds of Sturmpyk, the noble Galeorn had long been observed by our clan from below.\r\n\r\n\r\nLike Thorim's stormwolves, few have mastered the means to tame these fierce elemental creatures.\r\n\r\n\r\nBut where many Sturmvyn failed or fell to their thunderous nature, one succeeded: Cyrce.\r\n\r\n\r\nNo one knows how she succeeded, but when Cyrce descended from the highest slopes of Sturmpyk with a Galeorn upon her forearm, the clan foresaw it as a sign.\r\n\r\n\r\nAll hail Cyrce, chosen of Sturmpyk, and friend of Thrayir.",
 				},
 				["singlePage"] = true,
@@ -24589,8 +24821,1465 @@ LK["LocalData"] = {
 			},
 		},
 
-		-- end of user submission #11 (PTR)
+		-- end of user submission #10 (PTR)
 
+
+		
+		["GameObject-467268"] = {
+			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					"<A relief depicts an imposing, metal-skinned figure. There is a large ring on the gauntlet of her raised hand.>\r\n\r\n\r\nWith our Lord of Thunder silent, the mighty Cyrce led her clan from Sturmpyk and away from the Winterskorn's unquenched thirst for war.\r\n\r\n\r\nAs we fled, the cold northern winds at iron backs, we questioned our clans purpose. Who did we stand to protect?\r\n\r\n\r\nFor without the Keepers, who did we serve?\r\n\r\n\r\nOur prayers were answered years after our exodus.\r\n\r\n\r\nFrom beneath the earth, we heard its cry, a plea for help, an anguished call.\r\n\r\n\r\nTo Cyrce's ears, the call was our destiny, and so, she led us towards the voice.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.6011760234832764,
+						0.2159495949745178,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-506441"] = {
+			["base"] = {
+				["title"] = "Keys of Thrayir",
+				["text"] = {
+					"As Cyrce called for retreat, she bid me to take Thrayir. Great was his fury and terrible were his injuries, but Cyrce need not fear. I would not fail her.\r\n\r\nThrayir's wrath against our foes had unleashed a storm not seen since our days in the north. \r\n\r\nTo have seen so many Sturmvyn fall must have pushed the Galeorn into such a fury that he had started to unravel. I needed to stabilize his wounds.\r\n\r\nWhile Jardfyr saw to the Vaults defenses and carved new guardians, I turned to Ksvir the Thundered. Second only to the might of Cyrce, Ksvir wielded the blessing of Storms, a rumored gift bestowed by Thorim himself.  \r\n\r\nAnguished yet bound by oath as Cyrce command to lead her retreat, Ksvir lent me his gift. To stabilize Thrayir's wounds, we forged five runekeys to harness the tempest  that roiled above.Five keys of turbulent waters, torrential rains, thunderous lightning, cyclonic winds, and whirling waterspouts. \r\n\r\nKsvir would keep one runekey, while the rest were scattered. \r\n\r\nBound by five, we sealed Thrayir's tortured form in stasis. The fury of the Tempest would slowly heal his wounds and only by the wielder of the five keys, would his stasis break.\r\n\r\nMay his wounds mend and may his cries of sorrow drift away.\r\n\r\n\r\n- As carved by Valwen, Apprentice Ward of the Stone Carver.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2375] = {
+						0.7373156547546387,
+						0.6363997459411621,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-328378"] = {
+			["base"] = {
+				["title"] = "Power Terminal: Security",
+				["text"] = {
+					'<The plaque on this terminal reads "Norgannon Data Archive."\r\n\r\nIt appears to have been damaged by the Amathet, and is currently nonoperational.>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[1540] = {
+						0.6415131688117981,
+						0.3237954378128052,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-503434"] = {
+			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					'<This tablet depicts a great battle between humanoid, metallic figures and serpentine creatures emerging from the sea.\r\n\r\n\r\nAlthough the metallic figures are outnumbered, winged humanoids and stone guardians appear to fight at their side.\r\n\r\n\r\nThe largest of the metallic figures gestures with a golden sliver-embedded finger, while above her soars a winged creature.>\r\n\r\n\r\nIts head hit sand, its black blood sprayed, Cyrce\'s blade shone bright.\r\n\r\n\r\nFrom darkened depths, a presence stirred. Over wail and pain, she cried:\r\n\r\n\r\n"Hear us, O\'Heart! Upon this land, we Sturmvyn stand, to hold back a tide of woe.\r\n\r\n\r\nGuide us with your song, your heart, and make your pain our own!" \r\n\r\n\r\nAs she called, across sea and sky, they rose; a tide of scales in numbers never met.|n\r\nAs serpents died, and horrors fell, iron hide, with blood, was slick.\r\n\r\n\r\nThe rumbling skies cracked, Thrayir\'s fury tore through endless scales.\r\n\r\n\r\nBy hand, from earth, rose guards of stone, against the tide they crashed\r\n\r\n\r\nOn golden wings, from high above, her plea was heard; a heavens gift, they brought\r\n\r\n\r\nAnd yet, the tide ensued. With numbers few, a final song rang out.\r\n\r\n\r\nWhile Cyrce clashed, as Thrayir shrieked, her clanskin fell to scales.\r\n\r\n\r\nThe stone guards cracked, as rubble split, dragged to the waters deep.\r\n\r\n\r\nFrom the skies they fell; the gold ones screamed, their wings and spears torn asunder.\r\n\r\n\r\nWith heavy soul, Cyrce looked upon her kin and called, "Retreat, to the Vault! Protect our Heart."\r\n\r\n\r\nAs those yet lived obeyed, Cyrce, stood upon our shores, and faced the darkness alone.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.4390618205070496,
+						0.3912459015846252,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-245203"] = {
+			["base"] = {
+				["title"] = "Revelation of Garhan",
+				["text"] = {
+					"Garhan Stornhorn, also known as Garhan the Great, was a legendary leatherworker amongst the Highmountain tribes.\r\n\r\nLong after leather had shown its usefulness to our people, we became complacent with it, believing nothing further could be done to harness its potential. Garhan believed that we had just scratched the surface of what could be done.\r\n\r\nMany moons he toiled in his tent, applying various treatments to the leather to see if there was any change. Months passed, and seasons passed through their cycles, until one evening Garhan discovered something that made history.\r\n\r\nHis wife, Mahne, was preparing their dinner while Garhan was at his bench, deciding what to try next.",
+					'She was preparing to make a soup and had a pot of water boiling over the fire in the middle of their tent.\r\n\r\n"Garhan, my dear. Put down your leathers for a minute and come help me with this," she said delicately. She knew how important his work was to him, and didn\'t want to frustrate him further.\r\n\r\n"It just doesn\'t make sense," he responded, "Nothing I\'ve tried, NOTHING seems to make any significant changes to the leather. Is this really all we can do?!" He slammed his heavy fist upon the workbench and bowed his head in thought.\r\n\r\n"All the more reason to step away for a moment, and focus on something else to clear your head. I\'m sure your answer lies ahead of you. You\'ll find it in time."',
+					'Garhan stood from his bench and moved to where Mahne was cutting vegetables for the soup. "Here, put these in the pot for me please," she said as she handed Garhan a handful of herbs.\r\n\r\nAs Garhan approached the pot, he looked down and his mind wandered. "What if I boiled the leather?" He continued standing there, herbs in hand, wondering what could happen from trying such a thing.\r\n\r\nIt was already known that water treatment made leather easier to mold into shapes, but cold water from the river had always been what was used.',
+					'Garhan turned around and put the herbs back on the table. He rushed to his workbench, grabbed a few pieces of leather, and dropped them in the pot. What he saw made his eyes go wide. The leather began to shrink, and become more dense.\r\n\r\n"What on earth have you done to my soup?" Mahne asked in surprise.\r\n\r\n"I\'m sorry, Mahne, but I think I\'ve found what I\'ve been looking for," Garhan replied. He fetched a spoon and fished out the leather. After it had cooled, he tested it. The leather was thicker, but still pliable. As he continued to examine it, it became cooler and harder.',
+					'After a few hours, the leather had completely hardened. Garhan held it in his hand, and examined what it had become. "This is it," he thought to himself. "This will change everything."\r\n\r\nOver the next few weeks, Garhan perfected his process. He fashioned a jerkin and fit it on to himself. It was as light as leather should be, but felt stronger. \r\n\r\nHe tested spear and hammer against it, and it proved to be much more durable than the tanned hides his people were accustomed to.',
+					"And so it was that Garhan Stornhorn fashioned the first true leather armor of the Highmountain tribes. His methods and his legend spread far and wide. \r\n\r\nHis legacy was honorably carried on by his daughter, Leyota. But that is a different tale for a different hide.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[750] = {
+						0.3652862906455994,
+						0.8223955631256104,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-245204"] = {
+			["base"] = {
+				["title"] = "Caruk the Simple",
+				["text"] = {
+					'Caruk Bloodwind, known amongst our people as the first leatherworker in Highmountain, was the inventor of what we call "tanning". How he discovered this process, though, is quite a story.\r\n\r\nAs one of the oldest legends amongst the Highmountain tribes, details are vague. As the story goes, our ancestors would use the hides of the animals they killed to protect themselves from the elements of Highmountain.\r\n\r\nOf course the hides would be cleaned, but even that could not prevent them from eventually spoiling and rotting away. As such, our people were forced to continuously hunt for more hides in order to survive.',
+					"Caruk hated the smell of rotting hides and as a result, he would fill his tent with things that he loved the scent of: bark, fruit, and the leaves of many different plants. He even slept on them so as to have them as close as possible to his discriminating snout.\r\n\r\nOne particularly hot Highmountain summer, Caruk would leave his tent, drop his hides to the ground and go hunting. While he was gone, the hides sat upon the ground with the sun beating down on them.\r\n\r\nDay after day, Caruk continued his routine. After many months, he realized that his hides had stopped rotting. They even smelled as good as his tent.",
+					"From smell alone, Caruk could tell that the essences of the fruits, bark, and wood in his tent were soaking into his hides. The smell must have also pleased the nose of An'she, because the great sun spirit blessed his hides, allowing them to last much longer.\r\n\r\nAnd so, our people learned the art of tanning. In time, tribes all over Highmountain began tanning their hides... and Caruk's legend was born.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[750] = {
+						0.3688721656799316,
+						0.8181099891662598,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-457273"] = {
+			["base"] = {
+				["title"] = "Research Notes",
+				["text"] = {
+					'After extensive experimentation on rats, it is evident that I have reached the limitations of what can be learned from them as test subjects.\r\n\r\nTo progress my research further, it is imperative that I transition to human subjects. However, this shift introduces significant ethical risks. I also risk discovery by my meddling "peers."\r\n\r\nTo mitigate these risks, I should consider sourcing subjects from the sewers, where disappearances are less likely to attract attention.\r\n\r\nThis approach may seem "controversial," but it is the only way to obtain the knowledge I so crave.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-17735"] = {
+			["base"] = {
+				["title"] = "The Feast of Winter Veil",
+				["text"] = {
+					"The Feast of Winter Veil\n\nThe later seasons of Azeroth are marked as a time of change in many cultures.  The dwarves and the tauren especially look to a legend of the coming Winter Veil - the blanketing of the land in snow, thus heralding a time of renewal - as a time for celebration.  Though the understanding of the legends that the races of Azeroth share are not dissimilar, the ways they choose to acknowledge them are as diverse as the races themselves.",
+					'The Legend of Greatfather Winter\n\nThe term "Winter Veil" is said to stem from a supernatural being referred in many cultures to as Greatfather Winter.  As he would walk the land late in the seasons, winter itself would be his billowing cloak.  In his wake was the blanketing of the land in snow, and thus it is said that Greatfather Winter would cast his wintry veil over the land.  Though parts of Azeroth may lie in snow, it gives the land time for rebirth and renewal.',
+					"The Dwarves\n\nEver consumed with the research of their origins, the dwarves choose to celebrate the season as a recognition of Greatfather Winter himself.  They consider him to be the personification of one of the ancients of Azeroth - the titans.  Much as they claim lineage in one degree or another to these mystical beings, they consider their snowy home of Dun Morogh as the prime example of Greatfather Winter's blessings.",
+					"The Tauren\n\nThe tauren and their shamanistic understanding of winter, along with their recent emergence into druidic endeavors, fit in well with the legend of Winter Veil.  They focus almost entirely on the renewing aspects of the lore however, leaving legend worship to those races (as they view it) less in tune with the nature of things.  Many tauren choose this time as the right time to give thanks for the blessings of their new home in Mulgore.",
+					"Feasting\n\nThe idea of feasting during this time of year is one that traces its origins to the legend itself.  As Greatfather Winter walked Azeroth, bringing winter in his wake, it is said he would provide a bounty for those who welcomed his presence.  As such, the idea of feasting during the Winter Veil would bring together communities as they shared whatever they had.  Typically, a single day of merriment and feasting welcomed the change, all in anticipation of the land's renewal.",
+					"Modern Day Observation\n\nOther cultures have begun to recognize the Feast of Winter Veil as a time of great celebration, though not in the same traditions as the legend bases it in.  Customs, often unrelated to anything other than a chance for celebration and gift exchange, have made their way into modern day observation of the season.  Even the image of Greatfather Winter is sometimes used, but more as a harbinger of commercial exploit rather than as a supernatural titan.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-203475"] = {
+			["base"] = {
+				["title"] = "Urgent Stormwind Summons",
+				["text"] = {
+					"$PLAYER_NAME$, \r\n\r\nThere is an urgent mission that requires a seasoned champion of Stormwind such as yourself. \r\n\r\nQuickly, meet me behind Stormwind Keep, and tell no one!\r\n\r\n<The paper is not signed, only branded with with an insignia of SI:7.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-500650"] = {
+			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					'<The monolith depicts a vast stone tower collapsing into an massive wave. In the shadow of the wave, a faint figure can be seen.\r\n\r\n\r\nBeneath the tower, in an underground chamber, humanoid figures take shelter before a glittering gold facet.>\r\n\r\n\r\nFor generations passed, our purpose held, the Luminous Heart at ease.\r\n\r\n\r\nWhen lands seized and heaved, the skies flashed in noxious green.\r\n\r\n \r\nOur bastion cracked, as towers fell, and waters black encroached. \r\n\r\nIn Vault beneath, we Sturmvyn prayed, Cyrce\'s hand upon her Heart.\r\n\r\n\r\nBut when tremors grew, its cries rang out; Hymosul\'s squall renewed.\r\n\r\n\r\nWhen silence fell, the cries still pained, our stone-runed doors unsealed\r\n\r\n\r\nAs Cyrce strode forth, our bastion ruined, surrounded by waters new.\r\n\r\n\r\nUpon our shores, a dark thing stood, its words in our minds, it spoke:\r\n\r\n\r\n"The Deep One stirs, this place calls out, his right to claim is nigh\r\n\r\n\r\nKneel before the Old One\'s gifts, their powers yours combined."',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.567211389541626,
+						0.4588212370872498,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-328377"] = {
+			["base"] = {
+				["title"] = "Power Terminal: Reorigination",
+				["text"] = {
+					'<This power terminal is simply marked "Reorigination.">',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[1540] = {
+						0.4853523969650269,
+						0.2176955342292786,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-500651"] = {
+			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					'<This tablet depicts a great battle between humanoid, metallic figures and serpentine creatures emerging from the sea.\r\n\r\n\r\nAlthough the metallic figures are outnumbered, winged humanoids and stone guardians appear to fight at their side.\r\n\r\n\r\nThe largest of the metallic figures gestures with a golden sliver-embedded finger, while above her soars a winged creature.>\r\n\r\n\r\nIts head hit sand, its black blood sprayed, Cyrce\'s blade shone bright.\r\n\r\n\r\nFrom darkened depths, a presence stirred. Over wail and pain, she cried:\r\n\r\n\r\n"Hear us, O\'Heart! Upon this land, we Sturmvyn stand, to hold back a tide of woe.\r\n\r\n\r\nGuide us with your song, your heart, and make your pain our own!" \r\n\r\n\r\nAs she called, across sea and sky, they rose; a tide of scales in numbers never met.|n\r\nAs serpents died, and horrors fell, iron hide, with blood, was slick.\r\n\r\n\r\nThe rumbling skies cracked, Thrayir\'s fury tore through endless scales.\r\n\r\n\r\nBy hand, from earth, rose guards of stone, against the tide they crashed\r\n\r\n\r\nOn golden wings, from high above, her plea was heard; a heavens gift, they brought\r\n\r\n\r\nAnd yet, the tide ensued. With numbers few, a final song rang out.\r\n\r\n\r\nWhile Cyrce clashed, as Thrayir shrieked, her clanskin fell to scales.\r\n\r\n\r\nThe stone guards cracked, as rubble split, dragged to the waters deep.\r\n\r\n\r\nFrom the skies they fell; the gold ones screamed, their wings and spears torn asunder.\r\n\r\n\r\nWith heavy soul, Cyrce looked upon her kin and called, "Retreat, to the Vault! Protect our Heart."\r\n\r\n\r\nAs those yet lived obeyed, Cyrce, stood upon our shores, and faced the darkness alone.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.4377894401550293,
+						0.3911482095718384,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-500647"] = {
+			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					"<The relief depicts a large chamber with a gathering of humanoid figures, the tallest of which holds her fist aloft; a small imbedded gold sliver glimmers from her finger.\r\n\r\nIn the center of the cavern, jutting up from the floor, sits a massive crystalline facet.> \r\n\r\n\r\nThe cavern grew, by tools and hands, a cradle for Heart to rest, from stones, to Shrine, the Sturmvyn laid.\r\n\r\n\r\nFor Hymosul's voice, once fierce, had calmed.\r\n\r\n\r\nThough Cyrce spoke to Heart, its voice was faint, a whisper barely heard.\r\n\r\n\r\nAnd so, with iron hands, I carved, I forged.\r\n \r\nA circlet, born of radiant ore, fit for the hand of Cyrce. A ring adorned with smaller shards of Heart.\r\n\r\n\r\nRemnants, smoothed and carved, with runes of Storm, citrines lit, their faces aglow with soft song.\r\n\r\n\r\nThrough the circlet, together, Cyrce and Hymosul sang.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.4951176643371582,
+						0.3745577931404114,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-457207"] = {
+			["base"] = {
+				["title"] = "Journal",
+				["text"] = {
+					"Today, Antonidas introduced me to his pupil, Miss Proudmoore. \r\n\r\nWhile she shows a certain aptitude, I cannot help but feel disappointed by the lack of ambition and drive I see in her and many of her generation. They seem content with mediocrity, unwilling to push beyond the basic limits of their abilities. \r\n\r\nIn my day, we were eager to delve into the deepest arcane mysteries and constantly sought to expand our knowledge and power. \r\n\r\nThe future of our craft looks bleak if this complacency persists.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-507946"] = {
+			["base"] = {
+				["title"] = "Scholars of the Sea: Siren Isle Synopsis",
+				["text"] = {
+					"<The inside cover of the ledger features a delicately drawn map adorned with nautical imagery. Surrounding the map is the depiction of a female figure with an ornate band wrapped around her tail.>\r\n|n\r\nSince the age of the First Tide, we tidesages have chronicled the many islands dotting the open seas.\r\n\r\n\r\nAmong them is the Siren Isle.\r\n\r\n\r\nHow we first found the isle is disputed amongst our scholars.\r\n\r\n\r\nSome records claim the first tidesages discovered it by chance during our early voyages at sea.\r\n\r\n\r\nOthers claim that legends of an isle with a haunting call were passed down from our ancestors and prompted our tidesages to search for it.\r\n\r\n\r\nWhatever the truth may be, a dense fog of mystery has long clung to that dreaded place.",
+					'Though the isle has borne many names throughout our chronicles, the first recorded instance of the name "Siren Isle" dates back over two thousand years in the compendium of Sister Galeopa.\r\n\r\n\r\nEarly sea-song\'s attributed the "haunting call" to the alluring song of the sirens that lurked in the shallows around the isle.\r\n\r\n\r\nEarly records also suggest that it was not only our ancestors who heard the siren\'s song but other seafaring races as indicated by nearby shipwreck debris.\r\n\r\n\r\nThe name "Siren Isle" took root in the legend "Cyrce and the Ring." \r\n|n\r\nAlthough the story (and sea shanties it inspired) have evolved over time, the core legend tells of a great Siren who led many to their deaths with her alluring voice and her enchanted ring.',
+					"Although the island's namesake derives from the various legends of Cyrce and the sirens found in its waters, the nature of the sirens and their connection to the isle remains a mystery.\r\n\r\n\r\nIn several separate historical accounts, expedition survivors have reported a strange absence in the siren population on the isle even as the wailing cry persisted on the wind.\r\n\r\n\r\nEven more curiously, during many of these same expeditions, a devastating storm rolled across the island and laid waste to our ships.\r\n\r\n\r\nIt was only by the grace of the Tidemother and the power of our sea priests that what few survivors remained were able to walk away from such a tempest.\r\n\r\n\r\nDid the sirens foresee the arrival of the storm? Did the haunting call, somehow, prelude the tempest?",
+					"The relentless storms of the isle that have long puzzled our Tidesages.\r\n\r\n\r\nThe tales of sirens, wailing screams, and spectral figures have fueled sea-shanties and children's stories alike.\r\n\r\n\r\nThe Siren isle stands as an enigma of malice, mystery and misfortune for those who brave the open seas.\r\n\r\n\r\nAny seafarer worth their salt knows to steer clear of a siren's song, but the call of the Siren Isle is unlike any other.\r\n\r\n\r\nDue to the volatile nature and history of the island, it has long been counseled that all Kul Tiran vessels steer clear of the Siren Isle.\r\n\r\n\r\nFor those who choose to forgo this advisement, may the Tidemother grant you swift passage.\r\n\r\n\r\nAdditional excerpts from Sister Galeopa's Compendium and other Siren Isle records can be found within the monastery archives.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2369] = {
+						0.3906527161598206,
+						0.5104340314865112,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-499319"] = {
+			["base"] = {
+				["title"] = "Cyrce and the Galeorn",
+				["text"] = {
+					"<The depiction of a large avian creature sits perched upon a stormy mountain peak.>\r\n\r\n\r\nBorn amidst the clouds of Sturmpyk, the noble galeorn had long been observed by our clan from below.\r\n\r\n\r\nLike Thorim's stormwolves, few have mastered the means to tame these fierce elemental creatures.\r\n\r\n\r\nBut where many Sturmvyn failed or fell to their thunderous nature, one succeeded: Cyrce.\r\n\r\n\r\nNo one knows how she triumphed, but when Cyrce descended from the highest slopes of Sturmpyk with a galeorn upon her forearm, the clan foresaw it as a sign.\r\n\r\n\r\nAll hail Cyrce, chosen of Sturmpyk and friend of Thrayir, the galeorn.\r\n\r\n- As carved by Valwen, Apprentice Ward of the Stone Carver.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2375] = {
+						0.3352689743041992,
+						0.8387206792831421,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-328373"] = {
+			["base"] = {
+				["title"] = "Power Terminal: Maker's Rise",
+				["text"] = {
+					"<This terminal controls the power to the lift in the Maker's Rise.\r\n\r\nTwo pillars flank the terminal, topped by orbs of power. \r\n\r\nIt looks like diverting power into both orbs will activate the lift.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[1540] = {
+						0.4833484888076782,
+						0.3214293122291565,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-499318"] = {
+			["base"] = {
+				["title"] = "Keys of Thrayir",
+				["text"] = {
+					"As Cyrce called for retreat, she bid me to take Thrayir. Great was his fury and terrible were his injuries, but Cyrce need not fear. I would not fail her.\r\n\r\nThrayir's wrath against our foes had unleashed a storm not seen since our days in the north. \r\n\r\nTo have seen so many Sturmvyn fall must have pushed the Galeorn into such a fury that he had started to unravel. I needed to stabilize his wounds.\r\n\r\nWhile Jardfyr saw to the Vaults defenses and carved new guardians, I turned to Ksvir the Thundered. Second only to the might of Cyrce, Ksvir wielded the blessing of Storms, a rumored gift bestowed by Thorim himself.  \r\n\r\nAnguished yet bound by oath as Cyrce command to lead her retreat, Ksvir lent me his gift. To stabilize Thrayir's wounds, we forged five runekeys to harness the tempest  that roiled above.Five keys of turbulent waters, torrential rains, thunderous lightning, cyclonic winds, and whirling waterspouts. \r\n\r\nKsvir would keep one runekey, while the rest were scattered. \r\n\r\nBound by five, we sealed Thrayir's tortured form in stasis. The fury of the Tempest would slowly heal his wounds and only by the wielder of the five keys, would his stasis break.\r\n\r\nMay his wounds mend and may his cries of sorrow drift away.\r\n\r\n\r\n- As carved by Valwen, Apprentice Ward of the Stone Carver.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2375] = {
+						0.7372696995735168,
+						0.6381047964096069,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-457205"] = {
+			["base"] = {
+				["title"] = "Letter from the Council",
+				["text"] = {
+					"Following the Council's recent investigation, all forbidden tomes and scrolls concerning dark magics in your possession have been seized and destroyed.\r\n\r\nShould we ever discover any further engagement with forbidden arcane practices, severe consequences will follow, including expulsion from the Council of Six and Dalaran.\r\n\r\nThis is your last warning.\r\n\r\n[Signed]\r\nGrand Magus Antonidas",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-195119"] = {
+			["base"] = {
+				["title"] = "Humble Monument",
+				["text"] = {
+					"<The small grave marker is lovingly inscribed with orcish runes.>\r\n\r\n         - BELOVED OLGRA -\r\n            Wife of Mankrik\r\n\r\n     It took forever to find you\r\n        And now you are gone",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["GameObject-500646"] = {
+			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					"<A single slab of stone embedded with crystalline fragments, the ancient tablet is decorated with intricately-carved images and runic letters.\r\n\r\n\r\nA relief depicts a stoic, metal-skinned figure. Upon her shoulder sits a majestic winged creature with sparkling, cabochon-cut crystals set as its eyes. \r\n\r\n\r\nThe pair are staring upon a massive crystalline facet.>\r\n\r\n\r\nAs broken tools were cast aside, we found beneath the ground. For months we heard, and for months we searched.\r\n\r\n\r\nA golden crystal, encased by stone, its glow like a torch in the dark. \r\n\r\n\r\nUpon its face, Cyrce's hand was pressed; a sound, a cry!\r\n|n\r\nBut not of pain or plea of help, but of calm, of grace. Hymosul, the Luminous Heart.\r\n\r\n\r\nIts radiance and face, as if carved by unseen hands.\r\n\r\n\r\nMany stones, I have carved. My iron hands, my tools, but the splendor of Hymosul has opened my eyes.\r\n\r\n\r\nNew designs, patterns and structures. My mind is... clear.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.585709810256958,
+						0.3763566613197327,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-245201"] = {
+			["base"] = {
+				["title"] = "Leyota's Legacy",
+				["text"] = {
+					'Leyota, daughter of Garhan the Great, followed in her father\'s footsteps as one of the greatest leatherworkers of Highmountain. Yet her greatest achievement was her willingness to go against the grain and change the old ways.\r\n\r\nAfter the Earthmother reclaimed Garhan, all eyes looked to Leyota to carry on his legacy. She spoke to the elders of her tribe: "My people, long have we hunted these lands, and long have we been blessed with food, shelter and protection.\r\n\r\n"But we are wasteful," she continued, "We bury our kills with their teeth, their hooves, their claws."',
+					'"It is our way," one elder spoke up, "We leave their spirits with their weapons so they may hunt in the next realm. It is a sign of respect, Leyota. You know this."\r\n\r\n"I see it differently, elder. Do we not show respect by ensuring that our prey\'s death was not in vain?" she asked. "Should we not use everything the Earthmother has to offer? We can strengthen our armor two-fold if we use the rest of the animal in our construction."\r\n\r\nThe elders spoke quietly for a moment amongst themselves, then looked up to Leyota.',
+					'"To change tradition is to change our way of life. We do not believe that adding those components to one\'s armor will accomplish anything, save to disrespect the creatures with which we share this land."\r\n\r\nLeyota\'s brow furrowed as the elders continued, "We are sorry, Leyota, but we will not allow you to dishonor us. If your quest is to strengthen our armor, you will have to find another way."\r\n\r\nThe elders left the tent, leaving a frustrated Leyota to think. The next day, Leyota emerged from her tent wearing an unusual set of armor. Her tribesmen eyed her incredulously, scurrying out of her way as she approached the center of the camp.',
+					'"This armor is made with the teeth and claws of a bristlefur bear I killed the other day," she announced. Horrified looks washed over the crowd as the realization of what she had done sunk in.\r\n\r\n"I challenge any of our warriors to run me through, if they can." The tribespeople looked around at one another, unsure to what to make of Leyota\'s challenge.\r\n\r\n"Leyota!", yelled a voice from the crowd. A stout young brave emerged with a spear in hand, "I take your challenge. You have committed a great disrespect to our traditions by what you have done. It would be my honor to send your spirit away from here."',
+					'The brave rushed at Leyota, yet she didn\'t move a muscle. The spear tip smashed into her chest, sending her falling to the ground with the weight of the brave behind it.\r\n\r\nOnlookers leaned in as the dust settled. Leyota\'s armor was unbroken. The brave, still clutching his spear, stood up and began to examine the tip. It was slightly bent.\r\n\r\nHe looked down at Leyota and she lay there, clutching at her chest, yet there was no blood to be seen. After a while, Leyota stood up, breathing heavily, but otherwise unharmed. \r\n\r\n"This is what I wanted to show you!" she announced. "The animal that I slew was given no disrespect as its life and its body was taken to protect me."',
+					'The tribe had fallen silent now, all eyes and ears paying full attention to what Leyota had to say.\r\n\r\n"The animals we kill can protect all of us in this way, if we continue to use this method." she continued. An elder emerged from the crowd and approached Leyota. He examined the point at which the spear had struck.\r\n\r\nHe nodded his head as he spoke, "I understand now, Leyota. There is no vanity here. Only strength."\r\n\r\nHe turned to the tribe and said, "Leyota has given us a stronger future. Our tribe will not fall so easily to those we hunt, or those who hunt us. And we will continue to honor our animal brothers and sisters in their death by the armor we wear."',
+					"And so it was that Leyota, daughter of Garhan, had changed the ways of the past for her people. To this day, the leather armor of Highmountain continues to use nearly all of the animal to give it its strength.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[750] = {
+						0.3619630932807922,
+						0.8201387524604797,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-505511"] = {
+			["base"] = {
+				["title"] = "Crumpled Paper",
+				["text"] = {
+					"<Neatly-written handwriting is hard to make out on the heavily-weathered page.>\r\n\r\nFound something today. Not sure what it is, but I can feel the power of it as I hold it in my hand! It looks like it broke off of something larger.\r\n\r\nI've never seen anything of its like before. It feels different then the azerite we're having the sailors mine.\r\n\r\nWhatever it is, I'm not about to had it over to a lap dog like Katya. She'd just take it, lock it up, and give it to our superiors when they return.\r\n\r\nNo, this will be my little secret.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2369] = {
+						0.523736298084259,
+						0.3841895461082459,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-457282"] = {
+			["base"] = {
+				["title"] = "Rusted Key",
+				["text"] = {
+					'<Attached to the keychain you find a note: "Stratholme".>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-506440"] = {
+			["base"] = {
+				["title"] = "Fury of Thrayir",
+				["text"] = {
+					"Few enemies of the Sturmvyn Clan would live to tell tales of Cyrce and Thrayir. \r\n\r\n\r\nEven among the fiercest Winterskorn, the pair were both feared and revered.\r\n\r\n\r\nWhen Cyrce guided our clan south to settle the Sturmvyn upon the Cradle of Hymosul, Thrayir served as her eyes and ears.\r\n\r\n\r\nThe galeorn's loyalty was to Cyrce and to her clan, just as our bond to her extended to Thrayir.\r\n\r\n\r\nBut with loyalty came the galeorn's fury.\r\n\r\n\r\nWhen the world shattered, and the darkness rose from the depths, Thrayir took to sky.\r\n\r\nAs more and more Sturmvyn fell, the galeorn mourned and the galeorn raged.\r\n\r\n\r\nSkies split open, as his fury spent and scales burned.\r\n\r\n\r\nWounded, his rage flowed, and the galeorn's spark grew dim.\r\n\r\n\r\n- As carved by Valwen, Apprentice Ward of the Stone Carver.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2375] = {
+						0.322517991065979,
+						0.29052734375,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-500648"] = {
+			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					"<A relief depicts a bearded, metallic figure holding a stone tablet and a chisel. \r\n\r\n\r\nBeneath his feet, an image of a chamber with a crystal facet. Above him stands a towering structure.\r\n\r\n\r\nThis monolith is carved in a different hand than the others.>\r\n\r\n\r\nNoble Jardfyr, with loyalty and wisdom seared into iron hide.\r\n\r\n\r\nFirst Carver of the Sturmvyn, advisor to Cyrce and Protector of Hymosul.\r\n\r\n\r\nFrom stone, our temple shaped, its guardians wrought with life through runes of old.\r\n\r\n\r\nTempered and nurtured, our bond with Hymosul grew and her call sang.\r\n\r\n\r\nFrom his hand and her voice, the Sturmvyn found their call.|n\r\nFew outside the Sturmvyn know the craft of runic binding, the art of stone-carving.\r\n|n\r\nTo bind the storms of north into the stones of earth was a craft rarely mastered.\r\n|n\r\nWrought by runes and will, his guardians of stone rose to stand vigil within.\r\n|n\r\nThough few learned his secrets, many would face his creations.\r\n|n\r\nThrough Hymosul's song, Jardfyr's designs would flourish.\r\n|n\r\n- As carved by Valwen, Apprentice Ward of the Stone Carver.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.4748150706291199,
+						0.4221513271331787,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-328375"] = {
+			["base"] = {
+				["title"] = "Power Terminal: Defense Matrix",
+				["text"] = {
+					"<This terminal controls the power to the Forge of Origination's defense matrix.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[1540] = {
+						0.6411702632904053,
+						0.2188899517059326,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-234973"] = {
+			["base"] = {
+				["title"] = "Pearlshell Scroll Case",
+				["text"] = {
+					"Rise and listen, Darktide!\r\n\r\nThe screams of the Stormcursed echo through the depths once more but we will not be swayed!\r\n\r\nShe has evaded our capture for millennia and forsaken the gifts bestowed upon her for too long!\r\n\r\nHer wretched isle calls out once again and she will not keep us from it!\r\n\r\nNazeshi, Deepsurge, Hatecoil--allhave sought her circlet and all have failed.\r\n\r\nBut we will succeed.\r\n\r\nWe will atone for the failures endured upon those shores long ago and claim it!\r\n\r\nAnd with it, we will usher in our queen's return.\r\n\r\nBy the Queen's Glory",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-505512"] = {
+			["base"] = {
+				["title"] = "Torn Paper",
+				["text"] = {
+					"<A dark stain covers the entire page leaving it almost illegible.>\r\n\r\nFound the last piece. Almost lost my arm for my trouble.\r\n\r\n<The writing becomes less legible as if Fently was in a hurry.>\r\n\r\nBut now I have to hide it.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2369] = {
+						0.6720468997955322,
+						0.7918320298194885,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+
+		-- user submission #11
+
+		["GameObject-192868"] = {
+			["base"] = {
+				["title"] = "The Dangers of Magic Abuse",
+				["text"] = {
+					"By Ilustriel Greenleaf\r\n\r\nStop! Think about what you're doing. Is arcane magic really right for you? \r\n\r\n",
+					"Facts:\r\n- Magic is a dangerous force that leads to the deaths of millions each year.\r\n- Arcane magic is highly addictive. Once you start practicing magic, it's almost impossible to stop.\r\n- Learning simple arcane spells can seem innocent at first, but it's often a gateway to harder and harder spells. In the worst cases, you could even end up addicted to fel magic.\r\n- Casting magic during childbirth can cause significant risks to the health of your children.\r\n- Magic abuse can lead to violence and necromancy.\r\n- Arcane magic is not cool. ",
+					"That's why we've started the Magic Abuse Resistance Education (M.A.R.E.) program to educate people everywhere about the dangers of magic abuse. Our mission is to show the world that it's okay to live without magic. You can find fun elsewhere, like with flowers or basketweaving. Doesn't that sound exciting?",
+					"In addition, our program helps recovering magic addicts re-integrate themselves into society. In the nearly six days of our existence, our program has established a very strong relationship with the Priestess of Elune and the Cenarion Circle. These organizations are capable and willing to help you get on the path to a speedy recovery. Remember, it's never too late to learn to love yourself!",
+					"Contemporary Azeroth is full of unique challenges that make it very difficult to maintain a safe and magic-free lifestyle. We're here to help you find that safe, comfortable path. Dozens of people have already benefited from our lifestyle enriching magic-alternatives. Won't you be the next?",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.6444716453552246,
+						0.5297809839248657
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["GameObject-192883"] = {
+			["base"] = {
+				["title"] = "Blinking Rules & Regulations",
+				["text"] = {
+					"Short range full-body instant cast teleportations have specific rules and boundaries which must be adhered to at all times. This book is a guideline for proper usage of this travel option, to ensure a safe and expedient teleportation.\r\n",
+					"Rule #1: Never blink into space occupied by anyone else. Blink, as it has been taught, replaces the air and water from the casters target position, to the casters starting position. The spells success and widespread use is based on its simple elegance: The real objective of the spell is to replace the casters body with whatever is in front of them - the fact that the caster is moved to that area is the side-effect. \r\n",
+					"The spell is elegant enough to recognize and avoid people most of the time. Immense Kirin Tor resources are being spent to perfect an already nearly flawless spell, but be warned that deliberate blinking into others may result in one of three outcomes: The caster replaces the target, the target replaces the caster, or both occupy the same space, creating a sickly abomination the likes of which even The Scourge would exile from their ranks. If you would like to prevent one of these three tragedies, please be mindful of your blink target areas. Which brings us to...\r\n",
+					"Rule #2: Look where you're going! After a staggering number of incidences that were the product of people violating Rule #1, the Kirin Tor has moved this rule up from its previous position at #8 to here. We understand that accidents happen, but some accidents are not so easily remedied. Remember mages, look both ways before crossing the Astral Plane!\r\n",
+					"Rule #3: Don't blink to anywhere you can't see. This is a variation of Rule #2 that deserves special mention, due to the fact that this rule is the one most commonly broken on purpose. Like Rule #2, we have gotten increasing reports of mages meeting tragic ends with their blink. Some mages admitted to consciously trying to blink through walls, into dark areas, and even inside crates in a desperate attempt to hide from pursuers. We cannot stress enough how foolish this is. \r\n",
+					"Solid matter is connected to itself rigidly enough to, well, make it solid. Unlike air and water, which can be easily separated and swapped, the bonds of solids WILL translate onto the caster. The Kirin Tor feels obligated to list all documented Small Claims Disaster Cases pertaining to blinking inside solid objects. Memorize these claims, and avoid making the same mistakes yourselves:\r\n",
+					'10012-c: "Removal of bar stool from hip of Squibly Ratchetdibble via fire. Collateral burns minimal."\r\n\r\n19798-g: "Removal of (3) mithril support rods from head of Jenus Killian via corrosive brew. Thanks to RAS for donation of mentioned brew. Side-effect: Permanent hair loss of affected area."\r\n\r\n14761-aa: "Removal of Cynthia Wallerby from side of barn via Goblin Shredder. Collateral damage is, unfortunately, severe. However, Mrs. Wallerby can still enjoy a full life with one hand and foot."',
+					'16616-x: "Removal of Harland Wilson from statue of General Turalyon via magma, shipped from Ironforge. Collateral damage moderate. Mr. Wilson was unharmed, but nearby school children witnessed the General being melted to retrieve him, and were consequently scarred for life."\r\n\r\n11773-c: "Removal of (6) Snapvine Watermelons from torso of Sinella Redblade. Collateral damage minimal. (4) melons salvaged and donated to local orphanage."\r\n\r\n<This goes on for hundreds of pages>\r\n',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.5208594799041748,
+						0.5495543479919434,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+
+		-- end of user submission #11
+
+		-- user submission #12
+
+
+		["GameObject-370466"] = {
+			["base"] = {
+				["title"] = "Collected Concordances",
+				["text"] = {
+					"A Collection of Meditations on the Creations of the First Ones.",
+					"Variations on Actualization|n|nWhen does an idea truly become its own individual? Every one of us is carefully created, structured, and meant to serve a purpose. Each line painstakingly drawn and put together to create a strong latticework, but still whole on its own. When is the line distinct from the design?",
+					"Reflections on Choice|n|nAll of creation resides in the heart. A central point that flows outward into endless possibilities. All paths have been travelled but never the same twice. Each choice is unique. The song ever changes into a new and beautiful tune with every step.",
+					"A Meditation on Existence|n|nExistence is contextual. The light cannot be defined without the dark, to have one requires the other. Language is also contextual, there is only meaning with reasoning. The deeper the reasoning, the ever changing the meaning. Their thoughts encompass everything and nothing all at once. They are what we cannot comprehend.",
+					"Reflections on Reality|n|nA desire to tame the wild. Make what is vicious, playful. It can shift one to the other with enough time. The weave of reality flows in all directions making any outcome possible.",
+					"Circles and Cycles|n|nThe Circles are industrious. True beings of harmony. Their thoughts flow like a river that breaks into smaller and smaller channels that feed once again into the greater stream. There is no beginning or end to them, they are always whole.",
+					"A Meditation on Secrets|n|nSecrets must be kept. Stored away. Contained safely so that they may be revealed at the correct time and place. A secret told too soon is ruinous to all. The archives maintain the balance. The grand design of the First Ones must be protected at all costs.",
+					"Variations on Majesty|n|nI hear their song ring out across the water. Melodies in the pattern telling stories to all. Jumping. Swimming. Running. Bulbous and majestic, they stand strong.",
+					"A Hymn of Awe|n|nThe land shifts as needed. From dust to lush, from forest to desert. It changes to suit their needs, to build their great designs. The First Ones. Architects of the pattern. In their wisdom we stand in awe.",
+					"Variations on Growth|n|nCreation, growth, life. Everything bursts forth from the spark of idea. Death is an ending that they rebuild from. Anything broken can be fixed with proper care and culling.",
+					"Variations on Cervid|n|nWith grace and beauty the cervid lope across the land. Their elegant lines a delight to behold. Joy to the viewer, prey to the predator. This is the cycle eternal, a beginning, and an end.",
+					"Reflections on Balance|n|nThere is purpose to each of us. Built with intention we each perform  our task to  perfection. Building. Tending.  Guiding.  Maintaining. We fulfill their wishes perfectly balanced. Their designnot to be questioned.",
+					"A Meditation on Separation|n|nI see the harmony and juxtaposition of beings so sprightly yet so deadly. Is this why we are separated? Two worlds so close yet so far apart. A barrier that protects one from the other.  As was meant to be.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Progenitor",
+				["mapData"] = {
+					[1970] = {
+						0.3459317088127136,
+						0.4814269542694092,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["GameObject-408080"] = {
+			["base"] = {
+				["title"] = "A Partial Fourth Clue",
+				["text"] = {
+					'"...Poohbah..."',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[337] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-466294"] = {
+			["base"] = {
+				["title"] = "Unlabeled Document",
+				["text"] = {
+					"Gul belankar gul a ashj za theramas zila.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[46] = {
+						0.4822179079055786,
+						0.7605555653572083,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-23858"] = {
+			["base"] = {
+				["title"] = "Singed Page",
+				["text"] = {
+					"Though nearly defeated\nHis courage stayed strong\nTook sword and unsheathed it\nAnd charged the fel throng\n\nSince that violent day\nNe'r would arrow, nor sword\nFind, in battle nor fray,\nIts way to the dwarven lord",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 1,
+			},
+		},
+		["Item-229991"] = {
+			["base"] = {
+				["title"] = "My Journal: Operation Toy Rescue",
+				["text"] = {
+					"Maru said to look for Yennu in the Dragon Isles. I should look for him in Iskaara.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-293854"] = {
+			["base"] = {
+				["title"] = "Hastily Scrawled Note",
+				["text"] = {
+					"$PLAYER_NAME$ -\r\n\r\nSharing my story with you has brought me a peace I did not think I'd ever know. \r\n\r\nThank you for reminding me dat dere is still good in dis world. \r\n\r\nIf you find yourself in de small village at de end of de old merchant road, look for my lockbox.\r\n\r\nIt belongs to you now.\r\n\r\nYour friend, \r\n\r\nZenbaro",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[864] = {
+						0.5023410320281982,
+						0.7642133235931396,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-229997"] = {
+			["base"] = {
+				["title"] = "My Journal: Operation Toy Rescue",
+				["text"] = {
+					"Maru needs help figuring out who the culprit is. I should talk to her and tell her who I think it is.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-358545"] = {
+			["base"] = {
+				["title"] = "Journey Toward Ascension: The Five Rites",
+				["text"] = {
+					"After achieving the form and role of aspirant, you will continue to the longest part of your journey.\r\n\r\nYou will venture through the five temples: Purity, Courage, Humility, Wisdom, and Loyalty. There you will learn their virtues and undergo a final ritual that will test your merit against these values. These are known as the Five Rites.\r\n\r\nThe Rite of Purity will help you be at peace with your past.\r\nThe Rite of Courage will teach you to stand against all odds.\r\nThe Rite of Humility will show you your place in the cosmos.\r\nThe Rite of Wisdom will ensure you understand your purpose.\r\nThe Rite of Loyalty will deepen your bond with those who walk beside you.\r\n\r\nThis journey may encompass eons. It may stretch into time incalculable. It will be fraught with setbacks and disappointments, yes, but also joy and achievement unlike any you have known before. You will grow. You will become the best version of yourself. \r\n\r\nWhen you are ready, you will ascend.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1533] = {
+						0.4177023768424988,
+						0.7616701126098633,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["GameObject-475130"] = {
+			["base"] = {
+				["title"] = "Hidden Hatch",
+				["text"] = {
+					"<This hatch appears to lead to an empty storage area. Whatever was stored here is gone now.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[267] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-358535"] = {
+			["base"] = {
+				["title"] = "Roles In Bastion: The Collector",
+				["text"] = {
+					"Collectors maintain the realm and contribute to all of Bastion's great works. They are responsible for the collection and ordering of anima in our realm.\r\n\r\nA Collector may take the form of a Forgelite, or perhaps a scholar. They craft armor, furnishings, carve statues, build fantastic works of architecture, and write our many stories and songs. They weave masterful works from anima itself. They are great craftsmen and musicians.\r\n\r\nA Collector will, over the course of their eternity, dedicate themselves to honing their skill and perfecting the arts of their choice. They find a worthwhile existence in great works and are the source of Bastion's considerable beauty.\r\n\r\nThere are many Collectors, but no two are the same. In this role you will serve to bolster this realm that you now call home.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1533] = {
+						0.4192346334457398,
+						0.7960822582244873,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["GameObject-268063"] = {
+			["base"] = {
+				["title"] = "Dingy Plaque",
+				["text"] = {
+					"<The plaque is old and barely legible. You can only make out fragments of each line of text.>\r\n\r\nSupremacy?\r\n\r\nGet...\r\n\r\nShirk...\r\n\r\n...eke...",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[207] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-145273"] = {
+			["base"] = {
+				["title"] = "The Birth of the Lich King",
+				["text"] = {
+					"Ner'zhul and his followers entered the Twisting Nether, the ethereal plane that connects all of the worlds scattered throughout the Great Dark Beyond. Unfortunately Kil'jaeden and his demonic minions were waiting for them. Kil'jaeden, who had sworn to take vengeance on Ner'zhul for his prideful defiance, slowly tore the old shaman's body apart, piece by piece. ",
+					"Kil'jaeden kept the shaman's spirit alive and intact, thus leaving Ner'zhul painfully aware of his body's gross dismemberment. Though Ner'zhul pleaded with the demon to release his spirit and grant him death, the demon grimly replied that the Blood Pact they had made long ago was still binding, and that Ner'zhul still had a purpose to serve.",
+					"The orcs' failure to conquer the world for the Burning Legion forced Kil'jaeden to create a new army to sow chaos throughout the kingdoms of Azeroth. This new army could not be allowed to fall prey to the same petty rivalries and infighting that had plagued the Horde. It would have to be merciless and single-minded in its mission. This time, Kil'jaeden could not afford to fail. ",
+					"Holding Ner'zhul's spirit helpless in stasis, Kil'jaeden gave him one last chance to serve the Legion or suffer eternal torment. Once again, Ner'zhul recklessly agreed to the demon's pact. Ner'zhul's spirit was placed within a specially crafted block of diamond-hard ice gathered from the far reaches of the Twisting Nether. ",
+					"Encased within the frozen cask, Ner'zhul felt his consciousness expand ten thousand-fold. Warped by the demon's chaotic powers, Ner'zhul became a spectral being of unfathomable power. At that moment, the orc known as Ner'zhul was shattered forever, and the Lich King was born.",
+					"Ner'zhul's loyal death knights and Shadowmoon followers were also transformed by the demon's chaotic energies. The wicked spellcasters were ripped apart and remade as skeletal liches. The demons had ensured that even in death, Ner'zhul's followers would serve him unquestioningly.",
+					"When the time was right, Kil'jaeden explained the mission for which he had created the Lich King. Ner'zhul was to spread a plague of death and terror across Azeroth that would snuff out human civilization forever. All those who died from the dreaded plague would arise as the undead, and their spirits would be bound to Ner'zhul's iron will forever.",
+					" Kil'jaeden promised that if Ner'zhul accomplished his dark mission of scouring humanity from the world, he would be freed from his curse and granted a new, healthy body to inhabit.",
+					"Though Ner'zhul was agreeable and seemingly anxious to play his part, Kil'jaeden remained skeptical of his pawn's loyalties. Keeping the Lich King bodiless and trapped within the crystal cask assured his good conduct for the short term, but the demon knew that he would need to keep a watchful eye on him. To this end, Kil'jaeden called upon his elite demon guard, the vampiric dreadlords, to police Ner'zhul and ensure that he accomplished his dread task. ",
+					"Tichondrius, the most powerful and cunning of the dreadlords, warmed to the challenge; he was fascinated by the plague's severity and the Lich King's unbridled potential for genocide.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-272061"] = {
+			["base"] = {
+				["title"] = "Inconspicuous Note",
+				["text"] = {
+					"Deeper than deep.\r\n\r\nAwaits your seat.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[321] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-408295"] = {
+			["base"] = {
+				["title"] = "Clue Scrap",
+				["text"] = {
+					"3 - E",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[64] = {
+						0.4718024730682373,
+						0.5688310861587524,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-408313"] = {
+			["base"] = {
+				["title"] = "Clue Scrap",
+				["text"] = {
+					"20 - R",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[64] = {
+						0.2398965954780579,
+						0.4018428921699524,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-408296"] = {
+			["base"] = {
+				["title"] = "Clue Scrap",
+				["text"] = {
+					"4 - P",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[64] = {
+						0.2288529872894287,
+						0.3438155055046082,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-408302"] = {
+			["base"] = {
+				["title"] = "Clue Scrap",
+				["text"] = {
+					"9 - N",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[64] = {
+						0.2317036986351013,
+						0.2817821502685547,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-358536"] = {
+			["base"] = {
+				["title"] = "Roles In Bastion: The Bearer",
+				["text"] = {
+					"Bearers perform the vital task of bearing souls across the Veil to Oribos, where they will be given the fate they earned in life.\r\n\r\nBearers are known for their adventurous spirit and indomitable will. They will see countless worlds beyond the Shadowlands. They will encounter beings of all shapes and sizes that will be carried to Oribos to serve the Purpose. By their arms, and their will, the great cycle continues.\r\n\r\nBeing a Bearer is a grave responsibility, but no kyrian will know more of the worlds beyond than those who bear mortal souls.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1533] = {
+						0.420346736907959,
+						0.7981458306312561,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["GameObject-272165"] = {
+			["base"] = {
+				["title"] = "Inconspicuous Note",
+				["text"] = {
+					"Where the shaded delegate may appear.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[207] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-408300"] = {
+			["base"] = {
+				["title"] = "Clue Scrap",
+				["text"] = {
+					"8 - W",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[64] = {
+						0.2683129906654358,
+						0.4393587112426758,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-505513"] = {
+			["base"] = {
+				["title"] = "Faded Paper",
+				["text"] = {
+					"<Neatly-written handwriting is hard to make out on the heavily-weathered page.>\r\n\r\nI can't believe my luck. This is the second fragment I've found!\r\n\r\nWhen I held them close, the two pieces began to thrum with energy. I was sure I was going to be discovered, so I buried the first fragment where I found it, and I figured I would bury the second closer to me, so I have it just in case...\r\n\r\n<Part of the page is torn leaving most of the next entry illegible.>\r\n\r\n...giant beast made of azerite! I fought that incompetent loser Haddock over killing the thing to mine more azerite off it, but he was crying about losing what few men we have left. \r\n\r\nHopefully, there weren't any more fragment pieces in that cave. ... no way to check that the creature is still alive in there.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2369] = {
+						0.3885341286659241,
+						0.5133814215660095,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-358537"] = {
+			["base"] = {
+				["title"] = "Roles In Bastion: The Watcher",
+				["text"] = {
+					"Watchers perform a difficult and emotionally taxing role among the kyrian.\r\n\r\nIt is they who linger at the edge of the Veil and greet mortal souls who seek to cross into the Shadowlands. It is the Watchers who weigh that soul, peer into its existence and judge whether it is their time.\r\n\r\nAs a Watcher, you will be burdened with that soul's memories, and you will see and know things that will weigh heavy on your mind. This role is only for the strong of heart, for those who can endure with the Purpose in mind at all times.\r\n\r\nFew ultimately choose this path, but those that do are held among the highest regard.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1533] = {
+						0.420346736907959,
+						0.7981458306312561,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["Item-187810"] = {
+			["base"] = {
+				["title"] = "Cypher Lore Codex",
+				["text"] = {
+					"A Collection of Meditations on the Creations of the First Ones.",
+					"Variations on Actualization|n|nWhen does an idea truly become its own individual? Every one of us is carefully created, structured, and meant to serve a purpose. Each line painstakingly drawn and put together to create a strong latticework, but still whole on its own. When is the line distinct from the design?",
+					"Reflections on Choice|n|nAll of creation resides in the heart. A central point that flows outward into endless possibilities. All paths have been travelled but never the same twice. Each choice is unique. The song ever changes into a new and beautiful tune with every step.",
+					"A Meditation on Existence|n|nExistence is contextual. The light cannot be defined without the dark, to have one requires the other. Language is also contextual, there is only meaning with reasoning. The deeper the reasoning, the ever changing the meaning. Their thoughts encompass everything and nothing all at once. They are what we cannot comprehend.",
+					"Reflections on Reality|n|nA desire to tame the wild. Make what is vicious, playful. It can shift one to the other with enough time. The weave of reality flows in all directions making any outcome possible.",
+					"Circles and Cycles|n|nThe Circles are industrious. True beings of harmony. Their thoughts flow like a river that breaks into smaller and smaller channels that feed once again into the greater stream. There is no beginning or end to them, they are always whole.",
+					"A Meditation on Secrets|n|nSecrets must be kept. Stored away. Contained safely so that they may be revealed at the correct time and place. A secret told too soon is ruinous to all. The archives maintain the balance. The grand design of the First Ones must be protected at all costs.",
+					"Variations on Majesty|n|nI hear their song ring out across the water. Melodies in the pattern telling stories to all. Jumping. Swimming. Running. Bulbous and majestic, they stand strong.",
+					"A Hymn of Awe|n|nThe land shifts as needed. From dust to lush, from forest to desert. It changes to suit their needs, to build their great designs. The First Ones. Architects of the pattern. In their wisdom we stand in awe.",
+					"Variations on Growth|n|nCreation, growth, life. Everything bursts forth from the spark of idea. Death is an ending that they rebuild from. Anything broken can be fixed with proper care and culling.",
+					"Variations on Cervid|n|nWith grace and beauty the cervid lope across the land. Their elegant lines a delight to behold. Joy to the viewer, prey to the predator. This is the cycle eternal, a beginning, and an end.",
+					"Reflections on Balance|n|nThere is purpose to each of us. Built with intention we each perform  our task to  perfection. Building. Tending.  Guiding.  Maintaining. We fulfill their wishes perfectly balanced. Their designnot to be questioned.",
+					"A Meditation on Separation|n|nI see the harmony and juxtaposition of beings so sprightly yet so deadly. Is this why we are separated? Two worlds so close yet so far apart. A barrier that protects one from the other.  As was meant to be.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Progenitor",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["GameObject-381722"] = {
+			["base"] = {
+				["title"] = "Vakthros Maintenance",
+				["text"] = {
+					"A note to all guards and attendants--although perhaps my finest work to date, Vakthros is also the most delicate. Due to the nature of the enchantments provided to reinforce the nearby Vault, the tower has been keyed to every major ley line in the Azure Span. While ingenious, this does pose a considerable amount of risk.\r\n\r\nIf there are any signs of structural or arcane damage to the tower, report to me immediately. Should you fail to do so... well, I suppose you would not survive long enough to regret that decision. \r\n\r\nMalygos",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2024] = {
+						0.7741774320602417,
+						0.3106602430343628,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+
+		-- end of user submission #12
+
+		-- user submission #13
+		
+		["Item-122147"] = {
+			["base"] = {
+				["title"] = "Grinning Tolg's Journal",
+				["text"] = {
+					"The Skulltaker lives!\r\n\r\nI cannot mistake the twisted horns of his cursed mask, nor the demon-eyes that peer from within. He had thought himself escaped from the fury of the Laughing Skull, but none take the lives of our clan without retribution. \r\n\r\nNot even one of our own.",
+					"Long has the Skulltaker hunted his fellow orcs without reprisal. I saw the day he donned the bloodthirsty skull that consumed his savage heart. None know where he found the cursed thing, only that it had claimed the warrior's soul. He now lives only to take the skulls of the living - a silent specter of death.\r\n\r\nNow the Skulltaker hunts in Everbloom, and I have caught his scent. No longer will he be the hunter. \r\nSoon it will be his skull that is taken.",
+					"The foe remains elusive. When I think I have his path, his tracks vanish. It's as if he had sprouted wings and taken to the sky.\r\n\r\nHe looks to be retreating among the ravagers and wasps of Everbloom. I must find where he is going.",
+					"I've lost him! I had tracked his position and was ready to strike when a great ravager, twice the size of any I had ever seen, swooped down and carried him away! I had thought him taken for prey, beast showed no intent to harm him.\r\n\r\nThis must be how the Skulltaker has remained hidden from the blades of the Laughing Skull. I will not let him escape my wrath. I will find a way to scour the skies!",
+					"An elixir is the key. The Crowfeeder knows a recipe used by shaman to speak to the wilds. Using it, I will pry the answers from the ravagers that have aided my enemy.\r\n\r\nI must cut the reagents from the hands of the wreteched botani - a task that I will carry out gladly.\r\n\r\nI have set up camp in a nearby cave. At dawns light, I will strike into the heart of the botani and claim the key to the Skulltaker.",
+					"First, the thistle of shade with leaves black as night. It rests in the shadows of the harsh Gorgrond sun. I saw some under standing stones near the black iron walls. There are many of the plant-men there, but I will cut through them like a scythe through grain.\r\n\r\nThe sons of the genesaur will not keep me from my quarry.",
+					"I have acquired the shadethistle, though not without incident. The thorns of the botani are sharp, and my flesh is ailing. This will not keep me from my prize.\r\n\r\nI must find a vine of bonethorn, which grows in the bones of the ancient dead. I remember seeing the bones of a long-dead beast in the dry beds of the northern wilds. Its sun-parched skull would make a pleasant home for such a plant.",
+					"Steamcap mushrooms are all that are needed to complete the elixir. The Crowfeeder said that they grow among the steam vents in the higher parts of the Everbloom. I have seen one such place near the northern hydra pools.\r\n\r\nI must make haste. The wounds of the botani fester and the flesh twists against bone. I must find the Skulltaker before I am no longer my own orc.",
+					"It is too late. Even now my body rebels against me as the infection of the botani takes hold. If my brothers come upon these writings, I would charge them to take their blades against the Skulltaker.\r\n\r\nBut first, burn my body and take my skull.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-121837"] = {
+			["base"] = {
+				["title"] = "Megacharge's Cookbook",
+				["text"] = {
+					'This heavy book contains recipes and uses for various types of explosives, from conventional to exotic. You quickly flip through to the section entitled "Anti-Magical Ordnance."\r\n\r\n"If you\'ve ever gotta take down some kind of magic barrier, then you might have to get a bit unconventional with your munitions. You could stack an ogre-sized heap of dynamite against one and you\'re only likely to end up with some scorched ground, and maybe a missing limb or two.\r\n\r\n"Fortunately, Megacharge has got you covered there, with the Arcane Bunker Buster (patent pending)!"',
+					'"To make one, you\'ll first need to acquire some high grade, precision blasting powder. Here in Blackfuse Company, it\'s pretty easy to come by, since they use it for all of the cannons. \r\n\r\n"If you\'re elsewhere in the world, though, you\'ll need to find a top-of-the-line producer, as only the finest blasting powder will work in this application."',
+					'"For a detonator, you\'ll need one of those high-charge electric deals. The Arcane Bunker Buster requires a lot of juice to go off, so your average detonator just won\'t do."\r\n\r\nA note is attached to this page:\r\n\r\n"Reminder: Order more high-voltage detonators. The last shipment was lost off of the Shadowmoon coast near the demon-inhabited cliffs. Maybe we should send a diving team to salvage."',
+					'"The final, and most important ingredient for the Arcane Bunker Buster, is a sizable quantity of demon blood. The unique properties of the magic-infused blood combine with the blasting powder into an incredibly potent mixture. \r\n\r\n"When ignited by a high-voltage electric charge, this combination will explode in a magically-charged explosion, sufficient enough to take down most arcane barriers.\r\n\r\n"Just make sure to take cover before the thing goes off."',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-208190"] = {
+			["base"] = {
+				["title"] = "The Elder's Drawing",
+				["text"] = {
+					"|A:secretsofazeroth-tuskarrmonument:265:241:0:0|a",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-198979"] = {
+			["base"] = {
+				["title"] = "Time Capsule Letter",
+				["text"] = {
+					"Azeroth breaks, and the black dragonflight is attacking both dragons and the mortals. With the collapse of the Kaldorei empire, the breaking of the lands, they are close to helpless. We have been talking and we will soar to their aid. \r\n\r\nAlexstrasza asked each of us our opinion, and we all agreed to help protect them. These times are tough for everyone, but at least us Dragons understand what is going on. They are as in the dark as when they were.\r\n\r\nTerrible things have taken place here after the black flight turned. Staying here could end up leaving a sour taste in our mouths, and we need to be where the mortals are to protect them adequately anyway.\r\n\r\nI am leaving this record for those who come after us if we do not make it back.",
+					"We love this land, please take care of it. \r\n\r\nWe have left a lot of our friends behind to take care of the land, treat them with respect.\r\n\r\nHelp the mortal races if we have fallen, they have incredible potential.\r\n\r\nDo not trust the black flight if they still exist. Something has happened to them, and they are vicious murderers now.",
+					"We go now to the mortals' aid, and potentially to our doom, but we do so in the knowledge that we can help and protect those that need it. We all have our reasons; I was not there to protect my family when they needed it. I can only hope that I can be there for others, so they do not have to feel that pain. \r\n\r\nLive life to the fullest,\r\n\r\nVeritistrasz",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-208929"] = {
+			["base"] = {
+				["title"] = "Great Places to Visit in Valdrakken",
+				["text"] = {
+					"* The Valdrakken fountain is such a pretty spot to visit as you leave the Seat of the Aspects (-8, -4).\r\n\r\n* They're doing such a great job restoring the titan statue on the eastern edge of the city (-14, -4).\r\n\r\n* A true highlight of Valdrakken is visiting the Ruby Feast and trying their tea (-12, -17).\r\n\r\n* Make sure to attend an enchanted candlelit story reading in the Sapphire Enclave (-16, -22).\r\n\r\n* Did you know that they have a SANDBOX and a swing at the Little Scales Daycare? You should definitely check it out (27, -7)!\r\n\r\n* You must visit the Dragon's Hoard bar. I have to BOW before whoever made that statue! But don't IDOL too long since you want to get USE to the interior.",
+					"Location - Auction House - Bedding and trunks.",
+					"Location - Void Storage - Tithris' personal items.",
+					"Location - Garden Keeper's Room - Garden tools, maintenance items, and adventure party items?",
+					"Location - Titan Studies Building - Copied titan books for library.",
+					"Location - Market - Smuggled in foodstuffs, but could be for adventurer packs.",
+					"Location - Dragon's Hoard - Canteens? Note said for adventurer party.",
+					"<A note on the back shows you successfully solved this clue.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-206944"] = {
+			["base"] = {
+				["title"] = "A Clue: The Thinking Cap",
+				["text"] = {
+					"Let's put that thinking cap through its paces!\r\n\r\nSee that arrow above me? No?? Well put on your thinking cap!\r\n\r\nNow... there's writing on it if you look real close. And it'll tell you where to find another arrow... in Cogs and Bolts.\r\n\r\nCogs = North and South\r\nBolts = East and West\r\n\r\nFollow the arrows, and after the Eighth Clue you get your prize!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-122101"] = {
+			["base"] = {
+				["title"] = "Argoram's Journal",
+				["text"] = {
+					"In my years hunting with the Thunderlord clan, I have come to know them as a brave and cunning people. Though I was not born into their clan, they allowed me to fight alongside them and earn my place. In my prime, I stood side by side with their best hunters as we felled beasts that I had previously thought invincible. It is this togetherness that gives them strength.\r\n\r\nHowever, many Thunderlord speak legends of one of the earliest of the giant-slayers, who could fell these beasts single-handedly. Though their culture is greatly focused on synergy, there are still those who strive to become like these ancestors of legend. To this end, some of the most powerful in the clan will seek the weapon Gronnsbane, which is said to be the key to this power.",
+					"As I find myself growing longer in the years, I have found myself wondering if such a power exists. There are very few scholars among the Thunderlord, so I am taking it as a personal cause to unravel the mystery of Gronnsbane, so that it may be returned to its people.\r\n\r\nThe stories of Gronnsbane speak of the hero Brakor, who wielded Gronnsbane when the orcs were still enslaved by the ogres of Frostfire. It is said that the weapon was blessed by the elements of the land and its beasts, and that its power faded when it left Brakor's hands. Indeed, it seems that a weapon matching the description of Gronnsbane has been found many times since, but has never possessed this fabled power.\r\n\r\nIt is my belief that the weapon does not possess the power on its own, but that the aforementioned blessings are what give its potency.",
+					"When speaking with the clan's shaman, I have uncovered more about these blessings. In the time of the Thunderlord's formation, just as the orcs began winning their freedom from the ogres, the ancient shaman were said to be granted their powers from powerful shamanstones. These stones granted the orcs with the blessings of frost and fire, which aided the Thunderlords in their liberation. These stones may be the key to the elemental blessings originally possessed by Gronnsbane.\r\n\r\nThe stones were left behind when the orcs fled their cruel enslavers, and it is believed that the ogres now use them to enhance their own magics.",
+					"In a recent raid against the Bloodmaul ogres, one of our warriors spotted what sounds to me like the Molten Shamanstone, which is said to offer the Blessing of Fire. \r\n\r\nHe describes an ancient monolith, perched upon the edge of a precipice extending from the cliff where the searing magma falls into the sea.  I believe the location he speaks of is just overlooking Tor'goroth's Tooth.",
+					"I borrowed a rylak from one of our sky riders to scout the ogre camp myself.  As I was maneuvering away from the great boulders hurled at me by the ogron brutes, I glanced what looked like another monolith atop the tallest of the snow-capped towers in Bloodmaul. Perhaps this is the Frozen Shamanstone, which is thought to grant the Blessing of Frost.\r\n\r\nIf these are indeed the sources of the ancient elemental blessings, then I may be very close to recovering the legacy of Gronnsbane. The last piece to unravel would be the blessing of beasts, which seems to be the final part of the enchantment.",
+					"I believe that this enigmatic blessing of beasts may be tied to the legends around Brakor's first kill with Gronnsbane. It is said that Brakor proved his might by bloodying the spear against one of the ancient black rylaks that inhabit the tallest spires of the Stonefury Cliffs. The tales indicate that the weapon grew in power after that point, so the rylaks must be the final key!\r\n\r\nHigh in the Stonefury Cliffs, I have seen an altar where the ogres have left offerings to these ancient beasts. Perhaps I could use it to lure one of them down.",
+					"It seems that the pieces have come together, and I just may be able to recover Gronnsbane to its rightful home among the Thunderlord clan. Today I leave for Magnarok, which is the last known location of the weapon. \r\n\r\nOnce found, I will seek out the blessings and restore Gronnsbane to its legendary status.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-208131"] = {
+			["base"] = {
+				["title"] = "Preservationist's Dispatch",
+				["text"] = {
+					"Kathos, we are worried about a new artifact we just learned about called the Torch of Pyrreth. It is rumored to empower various ancient mechanisms. It was locked away in the Life-Binder Conservatory. \r\n\r\nWe have these codes to help you, and a text that references a hearth in a building bounded by lava: \r\n(15, 1) \r\n(24, -18) \r\n(19, -27)\r\n\r\nAnother entry lists these. Tithris commented this could be the torches location.\r\n(-1, 0)\r\n\r\nHopefully you can figure out their meaning and find the torch before the Primalists.",
+					"<A note on the back shows you successfully solved this clue.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-121820"] = {
+			["base"] = {
+				["title"] = "Compiled Research",
+				["text"] = {
+					"One of the outcast slaves happened upon some writings today from the time of Terokk, detailing the workings of an ancient Apexis device. Based on the writings, the device appears to be linked to the Amulet of Rukhmar - an artifact said to empower the wearer with the essence of Rukhmar herself! \r\n\r\nWe have yet to discover where the device is located, or how to activate it, but even now our scholars are working to unearth further writings in the ruins of Skettis.",
+					"Further deciphering of the writings reveals that the device needs to be activated remotely before it can be used.  It seems these activation points have been placed in secret in the low places of the Spires, presumably to hide them from our brethren on the wing.",
+					'We have found a forgotten outcast scroll that seems to be linked to this device. It refers to a key, which may be referencing one of these remote access points:\r\n\r\n"The first key is kept in the high reaches of upper Skettis. It lay where the dead can protect it from the talons of the unwanted."\r\n\r\nIf the first device is indeed in Skettis, we must make haste to uncover it.',
+					'Another piece of the puzzle has been unearthed in the outcast\'s ancient writings. The text reads:\r\n\r\n"Beneath the third fall of the great Skettis river lay the second key. May the ever-rushing waters sweep away those that might seek it."',
+					'Yet another writing from the ancient outcasts mentions a third key:\r\n\r\n"The final key has been housed deep within the fungal caves where the river makes its final drop. Though the pale orcs that dwell there may be vile, they should prove a worthy deterrent."',
+					'I believe we have pieced together the location of this device, and with the activation keys, we should be able to operate it. Various writings refer to the location being "against the fungal shore, within the shrine to the raven god." \r\n\r\nThis may be referring to the ruins in Lost Veil Anzu. We must send our researchers there to investigate.',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-201726"] = {
+			["base"] = {
+				["title"] = "Progress Report: Uldorus",
+				["text"] = {
+					"Brother Loken,\r\n\r\nAs you requested, I offer the following report on the progress toward our objectives.\r\n\r\nI am pleased to say that the Halls of Infusion are now operational. Though the work of imbuing Order magic into the wellspring is only beginning, I remain optimistic that the process will prove effective.",
+					"Already we are detecting reduced levels of contamination. I hope your investigation into how Yogg-Saron compromised these living waters will yield answers.\r\n\r\nIn the meantime, we can be assured that the evolution of another Galakrond will not be triggered by consuming unfiltered water.\r\n\r\nOnce purification is complete, an additional benefit will be found in offering the infused water to dragonkind.",
+					"By ingesting the water (or causing their eggs to absorb its effects), it should be possible to keep even the most willful dragons aligned with the titans' philosophies.\r\n\r\nOur efforts to bring the proto-dragons in line have faced resistance, but I am formulating a strategy to speed the process along.",
+					"Construction of the facility atop the Halls of Infusion is proceeding apace.\r\n\r\nThough the station is to be designated Uldorus, I must reluctantly report that the dragons have taken to calling the structure by the name Tyrhold.\r\n\r\nI will do my best to ensure our titan-forged workforce does not also adopt this embarrassing pseudonym. But as of late, they seem to be expressing more and more opinions of their own.",
+					"In closing, let me underscore once again how fervently I disagree with the assertions of Prime Designate Odyn concerning the unsuitability of the Dragon Aspects.\r\n\r\nI have every confidence that they will prove fervent allies in our shared goals of keeping the world structured and disciplined.\r\n\r\nEver your friend,\r\n\r\nKeeper Tyr",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-208958"] = {
+			["base"] = {
+				["title"] = "Ancient Tyrhold Artifact Notes",
+				["text"] = {
+					"Summary\r\n* An unnamed artifact (or collection of artifacts) was found by Tyr and other titan keepers around Azeroth long ago. \r\n* Tyr focused on one cache in particular, hiding it within Tyr's Hold behind a number of mechanical and magical locks.\r\n* In the next few pages we have detailed the information we found about each of the locks Tyr put in place.\r\n* The texts do not say what was found, but the writing sounds frightened. Not a good sign coming from a titan keeper! We cannot let Tithris steal the artifact.",
+					'Lock 1 - Torch of Pyrreth\r\n* We believe the first lock requires the torch. We found the line below as a reference. Hopefully these keepers will be easy to discern.\r\n\r\n"Eight keepers stand vigil awaiting a flame bearer."',
+					'Lock 2 - Titan Key\r\n* This one is very straightforward. It appears from the text only a few titan keys were forged, including the Titan Key of Tyr you were able to reforge.\r\n\r\n"Only key holders can gain approval from my golden visage overlooking the furnaces of the hold."\r\n\r\n* You will have to locate this visage and see what the "approval" means.',
+					'Lock 3 - Idol of Ohn\'ahra\r\n* The third lock requires the idol.\r\n\r\n"Scattered amidst the odd rings, one must search each room to find and return all four whole to the Mother Oathstone\'s charges."\r\n\r\n* There was a line that followed with four sets of coordinates: (8, 13), (25, 25), (10, -12), and (25, -24). \r\n* Kathos thinks the Idol of Ohn\'ahra will find the scattered items amongst the circular ring tiers that lead deeper into Tyr\'s Hold. \r\n* Seems you should use the thinking cap near the Mother Oathstone at the base of the main stair. Looks important for that second part!\r\n\r\nNote: Is this why Tithris told Bobby about Fangli Hoot? To decipher the coordinate system?',
+					'Lock 4 - Orb of Rathmus\r\n* The last lock uses the Orb of Rathmus, which Tithris has. We hope we can bypass this lock to secure the artifact before Tithris can get it. Here is the clue:\r\n\r\n"Return the Orb of Rathmus to its consoling rest where Tyr can watch over it from on high."\r\n\r\n* There is a great console at the top of Tyrhold which we both believe is the right place.',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-208829"] = {
+			["base"] = {
+				["title"] = "Titan Key Materials List",
+				["text"] = {
+					"Rose Gold\r\n* Found as dusty red pellets near sulfur pools. Try the Overflowing Rapids in the Waking Shore. We need at least 50.\r\n* Tithris mentioned you might have an idol that could help to spot them.\r\n\r\nIgneous Flux\r\n* Found where lava hits saltwater. Again, this is common in the Waking Shores. \r\n* Find at least 8 flux to be sure.\r\n\r\nEarth-Warder's Forge\r\n* Located at the base of the Obsidian Citadel. Forgemaster Bazentus is said to be watching over the reclaimed forge. \r\n* I was talking with Tithris about the forging and I think he's right. We will need that special torch you found.",
+					"<A note on the back shows you successfully solved this clue.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-208486"] = {
+			["base"] = {
+				["title"] = "The Blacksmith and the Apprentice",
+				["text"] = {
+					"Deep in Cloverwood Hollow, swallowed by a sylvan glade, worked a smith with his apprentice. One day their forge was attacked by thieves. The smith told his apprentice to hide their most treasured crafts, including the mold to an incredible key said be crafted for Keeper Tyr himself. The smith then went off to hold off the attackers.\r\n\r\nWith little time, the apprentice cast a spell to obscure the mold by blending it into the masonry. To find it again, she magicked a stone table to react to their torches and display the location of the mold. As a last precaution, she ensured that only those with the eyes of Ohn'ahra would be able to spot the mold against the masonry. \r\n\r\nThe attackers soon overwhelmed the smith and made their way into the forge. The apprentice escaped and would never return. Still, she passed her secret to those she trusted, hoping one day the mold would be found again.",
+					"<A note on the back shows you successfully solved this clue.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-201727"] = {
+			["base"] = {
+				["title"] = "To My Staunchest Allies",
+				["text"] = {
+					"My noble friends,\r\n\r\nForgive me for keeping secrets, but I instructed Sentinel Talondras to withhold this message until you had safely reached your destination.\r\n\r\nIf you are reading this, then our worst fears have been realized. I have fallen to our foes, murdered on the orders of the treacherous Loken.",
+					"But fear not, for I have prepared for this dark eventuality.\r\n\r\nAlong with the Discs of Norgannon that you carry, I have hidden another disc that holds a record of my own memories.\r\n\r\nTalondras will ensure it is safeguarded within the depths of Uldaman until such time as it can be safely retrieved. I have fashioned the refti to be unquestioningly loyal to me.",
+					"Before departing Valdrakken, I left a gift in the care of the Dragon Aspects.\r\n\r\nThough they are unaware of its true purpose, the artifact can be used within the halls of Uldorus to outwit Loken's malignant schemes.\r\n\r\nWhen it is safe to do so, bring my memory disc back to Uldorus and retrieve the item I gave to the Aspects. You will know what to do next.",
+					"Dearest Ironaya and most noble Archaedas, I place my trust in you. When we stand together, nothing can overcome our unity.\r\n\r\nYours always,\r\n\r\nTyr",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-206948"] = {
+			["base"] = {
+				["title"] = "A Clue: The Shifting Sands",
+				["text"] = {
+					"Use the Idol of Ohn'ahra south of Azim in the Shifting Sands.\r\n\r\nSearch for fragments of the Time-Lost Tablet. \r\n\r\nFind all its pieces and make it whole.",
+					"<A note on the back shows you successfully solved this clue.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-200595"] = {
+			["base"] = {
+				["title"] = "Odorous Parchment",
+				["text"] = {
+					"<Fresh, new ink appears boldly atop the old, washed out lettering. What remains is an unpleasant smell and delicate parchment.>\r\n\r\nDragonscale Representative,\r\n\r\nI hope this delivery finds ye well. We could use yer help with yet another recent discovery.\r\n\r\nMore details tae share if ye should find yer way back to camp.\r\n\r\n- Thaelin",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-208128"] = {
+			["base"] = {
+				["title"] = "Fangli's Note",
+				["text"] = {
+					"Artifact storage locker - \r\nStart at the lamp as you reach the second floor of Roasted Ram: (2 Cogs, -3 Bolts) \r\n\r\nAppraiser - \r\nStart at the Bank mailbox: (12 Cogs, -13 Bolts)",
+					"<A note on the back shows you successfully solved this clue.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-208888"] = {
+			["base"] = {
+				["title"] = "Kirin Tor Contact's Note",
+				["text"] = {
+					'Carlisle,\r\n\r\nI was able to track down a note that Khadgar sent to Dalaran (back when he was still an apprentice in Karazhan) referencing the tablets you described. It seems Medivh didn\'t use a traditional filing system. Here\'s the entire note:\r\n\r\n"Stand squarely in the entrance to the Guardian\'s Library. Head to (-12, -1)."\r\n\r\nI\'m not sure if that\'s paces, shelves, or what have you. You\'re on your own there. Don\'t get yourself killed, and don\'t contact me again!\r\n\r\n-O',
+					"Note 1: Re-shelved in titan section (3,6).\r\n\r\nNote 2: Re-shelved in Guardian's of Tirisfal section (8,-14).\r\n\r\nNote 3: Re-shelved back in Dragon Isles section under 'U' (-11, 7).",
+					"The book, Tyr's Legacy, was found and given to Bobby Carlisle.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-208942"] = {
+			["base"] = {
+				["title"] = "Preservationist's Dispatch Three",
+				["text"] = {
+					"Kathos, \r\n\r\nAnother artifact is going to be stolen. It's called the Orb of Rathmus.\r\n\r\nIt's hidden in Stormshroud Peak. You'll find the orb west of the Temporal Confluence high up in the mountains. Reports claim three markers were hidden in the caves of the area that would lead to the orb. You will most likely need all of your artifacts and tools to find the orb.\r\n\r\nHurry, before it is stolen!",
+					"<A note on the back shows you successfully solved this clue.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-208137"] = {
+			["base"] = {
+				["title"] = "The Clerk's Notes",
+				["text"] = {
+					"* Map of Eastern Azure Span\r\n* Top Level of Blue Dragonflight facility, Vakthros\r\n* Console is (11, -2) from door, whatever that means?",
+					"<A note on the back shows you successfully solved this clue.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-208857"] = {
+			["base"] = {
+				["title"] = "The Path of Ishtaar Drawing",
+				["text"] = {
+					"|A:secretsofazeroth-OhnahraStatue:265:241:0:0|a\r\nJhara said the first cairn along the Path of Ishtaar is located near the prey of Ohn'ahra below the statue.",
+					"The First Cairn of Ishtaar\r\n* Find a cavern in the Roaring Dragonsprings filled with sulfur elementals.\r\n* Seek the path to a spot where you can look down on the main pool.\r\n* The Idol of Ohn'ahra can find the cairns.",
+					"The Second Cairn of Ishtaar\r\n* Find Windsong Rise on the mesa in the south central part of the plains.\r\n* Locate the main altar.\r\n* The next marker should be located (-2, 5) from the main altar.",
+					"The Third Cairn of Ishtaar\r\n* Travel to the Eternal Kurgan southwest of Teerakai.\r\n* Find the largest burial mound. The next cairn is within.",
+					"The Fourth Cairn of Ishtaar\r\n* Navigate to the Primordial Vale. It is the forest and lake area southeast of Nokhudon Hold.\r\n* Find a cave Ishtaar might have called his home.",
+					"The Final Cairn of Ishtaar\r\n* The burial spot lies within the Dreadsnare Caverns.",
+					"The burial banner was returned successfully to Ishtaar Rethon's final resting spot.",
+				},
+				["material"] = "Parchment",
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["creator"] = "$PLAYER_NAME$",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+
+		-- end of user submission #13
 
 		--put stuff above here
 	},

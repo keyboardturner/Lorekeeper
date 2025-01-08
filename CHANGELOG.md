@@ -1,3 +1,9 @@
+# 0.2.4
+
+LocalData Update 9 - (29 personal entries + 2 Anonymous User 11 entries + 31 Anonymous User 12 entries + 28 Anonymous User 13 entries)
+
+Fix to player map not being found & nil check if guid/title can't be found.
+
 # 0.2.3
 
 quick fix to winter veil enable ooprs

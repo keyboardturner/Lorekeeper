@@ -57,11 +57,15 @@ local function CreateContext()
 	local ctx = CopyTable(_context);
 	ctx.guid = UnitGUID("npc");
 	ctx.title = ItemTextGetItem();
+	if not ctx.guid or not ctx.title then return; end
 	ctx.singlePage = not ItemTextHasNextPage();
 	ctx.material = ItemTextGetMaterial() or "default";
 	ctx.creator = ItemTextGetCreator();
 	ctx.hasRead = true;
 	ctx.isFavorite = false;
+	if LoreK_DB.settings.debugAdvanced then
+		Print(ctx.guid,ctx.title);
+	end
 	return ctx;
 end
 
@@ -497,9 +501,11 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		end
 
 		if GUIDType == "GameObject" then
-			activeContext.mapData = {
-				[map] = coords,
-			};
+			if map and coords then
+				activeContext.mapData = {
+					[map] = coords,
+				};
+			end
 			if LK["LocalData"]["text"][key] and LK["LocalData"]["text"][key]["base"] and LK["LocalData"]["text"][key]["base"]["mapData"] then -- local map data is found
 				if not LK["LocalData"]["text"][key]["base"]["mapData"][map] then -- check if no data specific to map ID exists
 					LoreK_DB["text"][key]["base"]["mapData"][map] = coords;
@@ -524,11 +530,13 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 							end
 						end
 					else -- no map data exists
-						LoreK_DB["text"][key]["base"]["mapData"] = {
-							[map] = coords,
-						};
-						if LoreK_DB.settings.debugAdvanced then
-							Print("Writing Map Data")
+						if map and coords then
+							LoreK_DB["text"][key]["base"]["mapData"] = {
+								[map] = coords,
+							};
+							if LoreK_DB.settings.debugAdvanced then
+								Print("Writing Map Data")
+							end
 						end
 					end
 				end
