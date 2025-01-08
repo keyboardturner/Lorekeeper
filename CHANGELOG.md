@@ -1,3 +1,9 @@
+# 0.2.5
+
+Nil check map IDs before setting map pins
+
+Added numbered map pins for variant locations
+
 # 0.2.4
 
 LocalData Update 9 - (29 personal entries + 2 Anonymous User 11 entries + 31 Anonymous User 12 entries + 28 Anonymous User 13 entries)

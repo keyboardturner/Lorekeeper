@@ -1340,6 +1340,7 @@ local function ItemInitializer(button, data)
 	end
 	local hasRead = LoreK_DB["text"] and LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] and LoreK_DB["text"][itemID]["base"]["hasRead"]
 	local hasMapData = allData[itemID] and allData[itemID]["base"] and allData[itemID]["base"]["mapData"]
+	local isObtainable = allData[itemID] and allData[itemID]["base"] and allData[itemID]["base"]["isObtainable"]
 	--button:SetWidth(168);
 	--button:SetPoint(moveFrameXY(22,0));
 	button.tex = button.tex or button:CreateTexture(nil, "OVERLAY", nil, 0);
@@ -1442,17 +1443,20 @@ local function ItemInitializer(button, data)
 						end
 					end
 					if GUIDType == "GameObject" and hasMapData then
-						rootDescription:CreateButton(LK["SetItemTracked"], function()
-							local mapData = CopyTable(allData[itemID]["base"]["mapData"]);
-							for k, v in pairs(mapData) do
+						local mapData = CopyTable(allData[itemID]["base"]["mapData"]);
+						local variant = 1;
+						for k, v in pairs(mapData) do
+							if not C_Map.GetMapInfo(k) then return; end
+							rootDescription:CreateButton(LK["SetItemTracked"].." "..variant, function()
 								WorldMapFrame:Show();
 								WorldMapFrame:SetMapID(k);
 								C_Map.SetUserWaypoint(UiMapPoint.CreateFromVector2D(k, CreateVector2D(v[1],v[2])));
 								C_SuperTrack.SetSuperTrackedUserWaypoint(true);
 								PlaySound(170270);
 								return;
-							end
-						end);
+							end);
+							variant = variant + 1;
+						end
 					end
 					if isManuallyHidden then
 						rootDescription:CreateDivider();
