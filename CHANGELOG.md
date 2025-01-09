@@ -1,8 +1,12 @@
 # 0.2.5
 
-Nil check map IDs before setting map pins
+Added option to toggle minimap button
+
+Nil check GUID before saving + check map IDs before setting map pins
 
 Added numbered map pins for variant locations
+
+Unused Code Cleanup
 
 # 0.2.4
 
