@@ -21,19 +21,14 @@ local function PrevPage()
 end
 
 local PH_PLAYER_NAME = "$PLAYER_NAME$";
-local PH_PLAYER_CLASS = "$PLAYER_CLASS$";
 
 -- replace player name and class with generic identifiers
 local function ReplaceNameAndClass(word)
 	local playerNameF = GetUnitName("player", false);
 	local playerNameT = GetUnitName("player", true);
-	local playerClass = UnitClass("player");
 	if string.lower(word) == string.lower(playerNameF) or string.lower(word) == string.lower(playerNameT) then
 		return PH_PLAYER_NAME;
 	end
-	--if string.lower(word) == string.lower(playerClass) then
-		--return PH_PLAYER_CLASS; -- this doesn't seem to be utilized legitimately, so disable for now.
-	--end
 end
 
 local DEFAULT_PAGE_COUNT = 0; -- since books are not zero-indexed
@@ -64,17 +59,9 @@ local function CreateContext()
 	ctx.hasRead = true;
 	ctx.isFavorite = false;
 	if LoreK_DB.settings.debugAdvanced then
-		Print(ctx.guid,ctx.title);
+		Print(ctx.guid, ctx.title);
 	end
 	return ctx;
-end
-
-local function MakeReadingGreatAgain(bookText)
-	local tbl = {};
-	for k, v in pairs(bookText) do
-		tbl[tonumber(k)] = v;
-	end
-	return tbl;
 end
 
 local ignoredKeys = {
@@ -429,10 +416,8 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 				else
 					activeContext.playerGUID = MISCELLANEOUS;
 					Lorekeeper_API.MailDetected(activeContext);
-					--activeContext = nil;
 					if LoreK_DB.settings.debugAdvanced then
 						Print("Attempting to save under 'Miscellaneous'.")
-						--Print("Can't find GUID for item, it's probably been transferred cross realm.")
 					end
 				end
 			end
@@ -642,32 +627,20 @@ LJ:RegisterEvent("CHAT_MSG_LOOT");
 function LJ:OnEvent(event, arg1)
 	if event == "CHAT_MSG_LOOT" then
 		local itemID = arg1:match("item:(%d+):");
-		if not itemID then return end -- Blizzard, why do you loot spells when you gain anima powers?
 		itemID = tonumber(itemID);
-		if select(7, C_Item.GetItemInfoInstant(itemID)) then
-			local itemIDQ, itemType, itemSubType, itemEquipLoc, icon, classID, subClassID = C_Item.GetItemInfoInstant(itemID);
-			-- Check if subClassID is valid (not nil)
-			if not subClassID then
-				-- It's not a valid item, might be a spell or something else, handle accordingly
-				return -- Exit the function or handle the spell case as needed
+		if not itemID then return end -- Blizzard, why do you loot spells when you gain anima powers?
+		local classID = select(6, C_Item.GetItemInfoInstant(itemID));
+		if classID and classID == 12 then
+			if not LoreK_DB["questItems"] then
+				LoreK_DB["questItems"] = {};
 			end
-
-			-- If subClassID is valid, proceed with the rest of your code
-			local itemType, itemSubType, _, _, _, _, classID, subclassID = select(6, C_Item.GetItemInfo(itemID));
-
-
-			if classID == 12 then -- quest item detected
-				if not LoreK_DB["questItems"] then
-					LoreK_DB["questItems"] = {};
-				end
-				if not LoreK_DB["questItems"][itemID] then
-					LoreK_DB["questItems"][itemID] = {
-						isQuestItem = true,
-						isDiscovered = true,
-					};
-					if LoreK_DB.settings.debugAdvanced then
-						Print("Quest item stored: " .. itemID)
-					end
+			if not LoreK_DB["questItems"][itemID] then
+				LoreK_DB["questItems"][itemID] = {
+					isQuestItem = true,
+					isDiscovered = true,
+				};
+				if LoreK_DB.settings.debugAdvanced then
+					Print("Quest item stored: " .. itemID)
 				end
 			end
 		end
