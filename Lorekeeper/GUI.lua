@@ -2418,7 +2418,19 @@ SettingsDisplayFrame.disableHolidays_Checkbox:SetScript("OnLeave", function(self
 	GameTooltip:Hide();
 end);
 
-
+SettingsDisplayFrame.minimap_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
+SettingsDisplayFrame.minimap_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*15);
+SettingsDisplayFrame.minimap_Checkbox:SetScript("OnClick", function(self)
+	if self:GetChecked() then
+		LK.SetMinimapButtonShown(true);
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON, "SFX");
+	else
+		LK.SetMinimapButtonShown(false);
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF, "SFX");
+	end
+end);
+SettingsDisplayFrame.minimap_Checkbox.Text:SetText(LK["ToggleMinimapIcon"])
+LK.MinimapCheckbox = SettingsDisplayFrame.minimap_Checkbox;
 
 --------------------------------------------------------------------------
 --Somewhere way below
@@ -2642,6 +2654,7 @@ function LoreKGUI.Initialize(self, event, arg1)
 		SettingsDisplayFrame.slashRead_Checkbox:SetChecked(LoreK_DB["settings"]["slashRead"]);
 		SettingsDisplayFrame.disableCollectSound_Checkbox:SetChecked(LoreK_DB["settings"]["collectSound"]);
 		SettingsDisplayFrame.disableHolidays_Checkbox:SetChecked(LoreK_DB["settings"]["holidayThemes"]);
+		SettingsDisplayFrame.minimap_Checkbox:SetChecked(not LK.AceAddon.db.profile.minimap.hide);
 		SettingsDisplayFrame.debug_Checkbox:SetChecked(LoreK_DB["settings"]["debugAdvanced"]);
 		
 		LoreKGUI.SetParchmentTexture()

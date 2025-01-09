@@ -26,7 +26,7 @@ if LOCALE == "enUS" then
 	-- The EU English game client also
 	-- uses the US English locale code.
 	LK["Lorekeeper"] = "Lorekeeper"
-	LK["LoreKeeperMinMap"] = "Click to toggle Lorekeeper journal."
+	LK["LoreKeeperMinMap"] = "Click to toggle Lorekeeper journal.|nRight-click to hide this icon."
 	LK["LoreKIntro"] = "Type /lorekeeper to open the journal."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
@@ -119,7 +119,7 @@ if LOCALE == "enUS" then
 	LK["Holiday_WinterVeil"] = "Feast of Winter Veil"
 	LK["Contributors"] = "Contributors"
 	LK["SpecialThanks"] = "Thank you to these wonderful people who contributed to this addon!"
-
+	LK["ToggleMinimapIcon"] = "Show Minimap Icon";
 return end
 
 if LOCALE == "esES" or LOCALE == "esMX" then

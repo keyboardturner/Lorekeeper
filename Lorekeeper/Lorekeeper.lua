@@ -687,24 +687,39 @@ function Lorekeeper_OnAddonCompartmentLeave(addonName, menuButtonFrame)
 	GameTooltip:Hide();
 end
 
+local icon = LibStub("LibDBIcon-1.0");
 local addon = LibStub("AceAddon-3.0"):NewAddon("Lorekeeper");
+
+local function SetMinimapButtonShown(shouldShow)
+	addon.db.profile.minimap.hide = not shouldShow;
+	if shouldShow then
+		icon:Show("Lorekeeper");
+	else
+		icon:Hide("Lorekeeper");
+	end
+	LK.MinimapCheckbox:SetChecked(shouldShow);
+end
+LK.SetMinimapButtonShown = SetMinimapButtonShown;
+
+local function OnMinimapButtonClicked(_, button)
+	if button == "RightButton" then
+		SetMinimapButtonShown(false);
+	else
+		local ui = LK["LoreKGUI"];
+		ui:SetShown(not ui:IsShown());
+	end
+end
+
 local LoreK_DB = LibStub("LibDataBroker-1.1"):NewDataObject("Lorekeeper", {
 	type = "data source",
 	text = LK["Lorekeeper"],
 	icon = "Interface\\Icons\\inv_misc_book_16",
-	OnClick = function()
-		if LK["LoreKGUI"]:IsShown() then
-			LK["LoreKGUI"]:Hide();
-		else
-			LK["LoreKGUI"]:Show();
-		end
-	end, 
+	OnClick = OnMinimapButtonClicked,
 	OnTooltipShow = function(tt)
 		tt:SetText("|cFFFFF569"..LK["Lorekeeper"].."|r")
 		tt:AddLine("|cFFFFFFFF"..LK["LoreKeeperMinMap"].."|r");
 	end,
-})  
-local icon = LibStub("LibDBIcon-1.0");
+});
 
 function addon:OnInitialize()
 	self.db = LibStub("AceDB-3.0"):New("LoreK_DB", {
@@ -715,5 +730,5 @@ function addon:OnInitialize()
 		},
 	})
 	icon:Register("Lorekeeper", LoreK_DB, self.db.profile.minimap);
+	LK.AceAddon = addon;
 end
-
