@@ -668,7 +668,7 @@ end
 function Lorekeeper_OnAddonCompartmentEnter(addonName, menuButtonFrame)
 	local tooltipData = {
 		[1] = "|cFFFFF569"..LK["Lorekeeper"].."|r",
-		[2] = "|cFFFFFFFF"..LK["LoreKeeperMinMap"].."|r",
+		[2] = "|cFFFFFFFF"..LK["LoreKeeperCompartmentTT"].."|r",
 	};
 	local concatenatedString
 	for k, v in ipairs(tooltipData) do

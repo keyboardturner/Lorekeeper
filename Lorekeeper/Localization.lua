@@ -119,6 +119,7 @@ if LOCALE == "enUS" then
 	LK["Contributors"] = "Contributors"
 	LK["SpecialThanks"] = "Thank you to these wonderful people who contributed to this addon!"
 	LK["LoreKeeperMinMap"] = "Click to toggle Lorekeeper journal.|nRight-click to hide this icon."
+	LK["LoreKeeperCompartmentTT"] = "Click to toggle Lorekeeper journal."
 	LK["ToggleMinimapIcon"] = "Show Minimap Icon";
 return end
 
@@ -218,6 +219,7 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["Contributors"] = "Colaboradores"
 	LK["SpecialThanks"] = "¡Gracias a estas maravillosas personas que contribuyeron a este complemento!"
 	LK["LoreKeeperMinMap"] = "Haz clic para alternar el diario del Lorekeeper.|nHaz clic derecho para ocultar este icono."
+	LK["LoreKeeperCompartmentTT"] = "Haz clic para alternar el diario del Lorekeeper."
 	LK["ToggleMinimapIcon"] = "Mostrar icono del minimapa"
 
 return end
@@ -318,6 +320,7 @@ if LOCALE == "deDE" then
 	LK["Contributors"] = "Mitwirkende"
 	LK["SpecialThanks"] = "Vielen Dank an diese wunderbaren Menschen, die zu diesem Add-on beigetragen haben!"
 	LK["LoreKeeperMinMap"] = "Klicken, um das Tagebuch des Lorekeepers umzuschalten.|nRechtsklicken, um dieses Symbol zu verbergen."
+	LK["LoreKeeperCompartmentTT"] = "Klicken, um das Tagebuch des Lorekeepers umzuschalten."
 	LK["ToggleMinimapIcon"] = "Minikarten-Symbol anzeigen"
 
 return end
@@ -418,6 +421,7 @@ if LOCALE == "frFR" then
 	LK["Contributors"] = "Contributeurs"
 	LK["SpecialThanks"] = "Merci à ces merveilleuses personnes qui ont contribué à cet addon !"
 	LK["LoreKeeperMinMap"] = "Cliquez pour basculer le journal du Lorekeeper.|nClic droit pour masquer cette icône."
+	LK["LoreKeeperCompartmentTT"] = "Cliquez pour basculer le journal du Lorekeeper."
 	LK["ToggleMinimapIcon"] = "Afficher l'icône de la minicarte"
 
 return end
@@ -518,6 +522,7 @@ if LOCALE == "itIT" then
 	LK["Contributors"] = "Collaboratori"
 	LK["SpecialThanks"] = "Grazie a queste persone meravigliose che hanno contribuito a questo componente aggiuntivo!"
 	LK["LoreKeeperMinMap"] = "Clicca per aprire il diario di Lorekeeper.|nFai clic destro per nascondere questa icona."
+	LK["LoreKeeperCompartmentTT"] = "Clicca per aprire il diario di Lorekeeper."
 	LK["ToggleMinimapIcon"] = "Mostra icona della minimappa"
 
 return end
@@ -618,6 +623,7 @@ if LOCALE == "ptBR" then
 	LK["Contributors"] = "Colaboradores"
 	LK["SpecialThanks"] = "Obrigado a essas pessoas maravilhosas que contribuíram para este complemento!"
 	LK["LoreKeeperMinMap"] = "Clique para alternar o diário do Lorekeeper.|nClique com o botão direito para ocultar este ícone."
+	LK["LoreKeeperCompartmentTT"] = "Clique para alternar o diário do Lorekeeper."
 	LK["ToggleMinimapIcon"] = "Mostrar ícone do minimapa"
 
 -- Note that the EU Portuguese WoW client also
@@ -720,6 +726,7 @@ if LOCALE == "ruRU" then
 	LK["Contributors"] = "Участники"
 	LK["SpecialThanks"] = "Спасибо этим замечательным людям, которые внесли свой вклад в это дополнение!"
 	LK["LoreKeeperMinMap"] = "Нажмите, чтобы переключить журнал Хранителя знаний.|nЩелкните правой кнопкой, чтобы скрыть эту иконку."
+	LK["LoreKeeperCompartmentTT"] = "Нажмите, чтобы переключить журнал Хранителя знаний."
 	LK["ToggleMinimapIcon"] = "Показать значок миникарты"
 
 
@@ -821,6 +828,7 @@ if LOCALE == "koKR" then
 	LK["Contributors"] = "기여자"
 	LK["SpecialThanks"] = "이 애드온에 기여한 훌륭한 사람들에게 감사드립니다!"
 	LK["LoreKeeperMinMap"] = "클릭하여 지식의 수호자 일지를 전환하세요.|n오른쪽 클릭하여 이 아이콘을 숨깁니다."
+	LK["LoreKeeperCompartmentTT"] = "클릭하여 지식의 수호자 일지를 전환하세요."
 	LK["ToggleMinimapIcon"] = "미니맵 아이콘 표시"
 
 
@@ -922,6 +930,7 @@ if LOCALE == "zhCN" then
 	LK["Contributors"] = "贡献者"
 	LK["SpecialThanks"] = "感谢为这个插件做出贡献的优秀人士！"
 	LK["LoreKeeperMinMap"] = "点击以切换知识守护者日志。|n右键点击隐藏此图标。"
+	LK["LoreKeeperCompartmentTT"] = "点击以切换知识守护者日志。"
 	LK["ToggleMinimapIcon"] = "显示小地图图标"
 
 
@@ -1023,6 +1032,7 @@ if LOCALE == "zhTW" then
 	LK["Contributors"] = "貢獻者"
 	LK["SpecialThanks"] = "感謝這些為這個插件做出貢獻的優秀人士！"
 	LK["LoreKeeperMinMap"] = "點擊以切換知識守護者日誌。|n右鍵點擊隱藏此圖標。"
+	LK["LoreKeeperCompartmentTT"] = "點擊以切換知識守護者日誌。"
 	LK["ToggleMinimapIcon"] = "顯示小地圖圖標"
 
 
