@@ -46,7 +46,7 @@ local _context = {
 	pageCount = DEFAULT_PAGE_COUNT,
 	doneReading = false,
 	doneResetting = false,
-	material = ItemTextGetMaterial() or "default", 
+	material = ItemTextGetMaterial() or "default",
 	creator = ItemTextGetCreator(),
 	hasRead = true,
 	isFavorite = false,
@@ -354,8 +354,8 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					if (path[arg]) then
 						if (type(path[arg]) == "function") then
 							-- all remaining args passed to our function!
-							path[arg](select(id + 1, unpack(args))); 
-							return;                 
+							path[arg](select(id + 1, unpack(args)));
+							return;
 						elseif (type(path[arg]) == "table") then
 							path = path[arg]; -- another sub-table found!
 						end
@@ -410,7 +410,10 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		end
 	end
 	if event == "ITEM_TEXT_CLOSED" then
-		if not activeContext then
+		if not activeContext or not activeContext.guid then
+			-- UnitGUID doesn't work here because we're no longer interacting with the object
+			-- otherwise, we could just reset activeContext.guid
+			-- if you're wondering how we have an activeContext but the guid is nil... I couldn't tell you, cosmic radiation or something
 			return;
 		end
 		local npcID = select(6, strsplit("-", activeContext.guid));
@@ -500,12 +503,10 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			};
 		end
 
-		if GUIDType == "GameObject" then
-			if map and coords then
-				activeContext.mapData = {
-					[map] = coords,
-				};
-			end
+		if GUIDType == "GameObject" and map and coords then
+			activeContext.mapData = {
+				[map] = coords,
+			};
 			if LK["LocalData"]["text"][key] and LK["LocalData"]["text"][key]["base"] and LK["LocalData"]["text"][key]["base"]["mapData"] then -- local map data is found
 				if not LK["LocalData"]["text"][key]["base"]["mapData"][map] then -- check if no data specific to map ID exists
 					LoreK_DB["text"][key]["base"]["mapData"][map] = coords;
