@@ -26,7 +26,6 @@ if LOCALE == "enUS" then
 	-- The EU English game client also
 	-- uses the US English locale code.
 	LK["Lorekeeper"] = "Lorekeeper"
-	LK["LoreKeeperMinMap"] = "Click to toggle Lorekeeper journal.|nRight-click to hide this icon."
 	LK["LoreKIntro"] = "Type /lorekeeper to open the journal."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
@@ -119,13 +118,13 @@ if LOCALE == "enUS" then
 	LK["Holiday_WinterVeil"] = "Feast of Winter Veil"
 	LK["Contributors"] = "Contributors"
 	LK["SpecialThanks"] = "Thank you to these wonderful people who contributed to this addon!"
+	LK["LoreKeeperMinMap"] = "Click to toggle Lorekeeper journal.|nRight-click to hide this icon."
 	LK["ToggleMinimapIcon"] = "Show Minimap Icon";
 return end
 
 if LOCALE == "esES" or LOCALE == "esMX" then
 	-- Spanish translations go here
 	LK["Lorekeeper"] = "Lorekeeper"
-	LK["LoreKeeperMinMap"] = "Haz clic para alternar el diario del Lorekeeper."
 	LK["LoreKIntro"] = "Escribe /lorekeeper para abrir el diario."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
@@ -218,13 +217,14 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["Holiday_WinterVeil"] = "El festín del Festival de Invierno"
 	LK["Contributors"] = "Colaboradores"
 	LK["SpecialThanks"] = "¡Gracias a estas maravillosas personas que contribuyeron a este complemento!"
+	LK["LoreKeeperMinMap"] = "Haz clic para alternar el diario del Lorekeeper.|nHaz clic derecho para ocultar este icono."
+	LK["ToggleMinimapIcon"] = "Mostrar icono del minimapa"
 
 return end
 
 if LOCALE == "deDE" then
 	-- German translations go here
 	LK["Lorekeeper"] = "Lorekeeper"
-	LK["LoreKeeperMinMap"] = "Klicken, um das Tagebuch des Lorekeepers umzuschalten."
 	LK["LoreKIntro"] = "Geben Sie /lorekeeper ein, um das Tagebuch zu öffnen."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
@@ -317,13 +317,14 @@ if LOCALE == "deDE" then
 	LK["Holiday_WinterVeil"] = "Winterhauchfest"
 	LK["Contributors"] = "Mitwirkende"
 	LK["SpecialThanks"] = "Vielen Dank an diese wunderbaren Menschen, die zu diesem Add-on beigetragen haben!"
+	LK["LoreKeeperMinMap"] = "Klicken, um das Tagebuch des Lorekeepers umzuschalten.|nRechtsklicken, um dieses Symbol zu verbergen."
+	LK["ToggleMinimapIcon"] = "Minikarten-Symbol anzeigen"
 
 return end
 
 if LOCALE == "frFR" then
 	-- French translations go here
 	LK["Lorekeeper"] = "Lorekeeper"
-	LK["LoreKeeperMinMap"] = "Cliquez pour basculer le journal du Lorekeeper."
 	LK["LoreKIntro"] = "Tapez /lorekeeper pour ouvrir le journal."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
@@ -416,13 +417,14 @@ if LOCALE == "frFR" then
 	LK["Holiday_WinterVeil"] = "Voile d'hiver"
 	LK["Contributors"] = "Contributeurs"
 	LK["SpecialThanks"] = "Merci à ces merveilleuses personnes qui ont contribué à cet addon !"
+	LK["LoreKeeperMinMap"] = "Cliquez pour basculer le journal du Lorekeeper.|nClic droit pour masquer cette icône."
+	LK["ToggleMinimapIcon"] = "Afficher l'icône de la minicarte"
 
 return end
 
 if LOCALE == "itIT" then
 	-- French translations go here
 	LK["Lorekeeper"] = "Lorekeeper"
-	LK["LoreKeeperMinMap"] = "Clicca per attivare/disattivare il diario del Lorekeeper."
 	LK["LoreKIntro"] = "Digita /lorekeeper per aprire il diario."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
@@ -515,13 +517,14 @@ if LOCALE == "itIT" then
 	LK["Holiday_WinterVeil"] = "Vigilia di Grande Inverno"
 	LK["Contributors"] = "Collaboratori"
 	LK["SpecialThanks"] = "Grazie a queste persone meravigliose che hanno contribuito a questo componente aggiuntivo!"
+	LK["LoreKeeperMinMap"] = "Clicca per aprire il diario di Lorekeeper.|nFai clic destro per nascondere questa icona."
+	LK["ToggleMinimapIcon"] = "Mostra icona della minimappa"
 
 return end
 
 if LOCALE == "ptBR" then
 	-- Brazilian Portuguese translations go here
 	LK["Lorekeeper"] = "Lorekeeper"
-	LK["LoreKeeperMinMap"] = "Clique para alternar o diário do Lorekeeper."
 	LK["LoreKIntro"] = "Digite /lorekeeper para abrir o diário."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
@@ -614,6 +617,8 @@ if LOCALE == "ptBR" then
 	LK["Holiday_WinterVeil"] = "Festa do Véu de Inverno"
 	LK["Contributors"] = "Colaboradores"
 	LK["SpecialThanks"] = "Obrigado a essas pessoas maravilhosas que contribuíram para este complemento!"
+	LK["LoreKeeperMinMap"] = "Clique para alternar o diário do Lorekeeper.|nClique com o botão direito para ocultar este ícone."
+	LK["ToggleMinimapIcon"] = "Mostrar ícone do minimapa"
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -622,7 +627,6 @@ return end
 if LOCALE == "ruRU" then
 	-- Russian translations go here
 	LK["Lorekeeper"] = "Хранитель знаний"
-	LK["LoreKeeperMinMap"] = "Нажмите, чтобы переключить журнал Хранителя знаний."
 	LK["LoreKIntro"] = "Введите /lorekeeper, чтобы открыть журнал."
 	LK["SlashLoreK1"] = "хранительзнаний"
 	LK["SlashLoreK2"] = "хранительз"
@@ -715,6 +719,8 @@ if LOCALE == "ruRU" then
 	LK["Holiday_WinterVeil"] = "Зимний Покров"
 	LK["Contributors"] = "Участники"
 	LK["SpecialThanks"] = "Спасибо этим замечательным людям, которые внесли свой вклад в это дополнение!"
+	LK["LoreKeeperMinMap"] = "Нажмите, чтобы переключить журнал Хранителя знаний.|nЩелкните правой кнопкой, чтобы скрыть эту иконку."
+	LK["ToggleMinimapIcon"] = "Показать значок миникарты"
 
 
 return end
@@ -722,7 +728,6 @@ return end
 if LOCALE == "koKR" then
 	-- Korean translations go here
 	LK["Lorekeeper"] = "지식의 수호자"
-	LK["LoreKeeperMinMap"] = "클릭하여 지식의 수호자 일지를 전환하세요."
 	LK["LoreKIntro"] = "일지를 열려면 /지식수호자 를 입력하세요."
 	LK["SlashLoreK1"] = "지식수호자"
 	LK["SlashLoreK2"] = "지식수"
@@ -815,6 +820,8 @@ if LOCALE == "koKR" then
 	LK["Holiday_WinterVeil"] = "겨울맞이 축제"
 	LK["Contributors"] = "기여자"
 	LK["SpecialThanks"] = "이 애드온에 기여한 훌륭한 사람들에게 감사드립니다!"
+	LK["LoreKeeperMinMap"] = "클릭하여 지식의 수호자 일지를 전환하세요.|n오른쪽 클릭하여 이 아이콘을 숨깁니다."
+	LK["ToggleMinimapIcon"] = "미니맵 아이콘 표시"
 
 
 return end
@@ -822,7 +829,6 @@ return end
 if LOCALE == "zhCN" then
 	-- Simplified Chinese translations go here
 	LK["Lorekeeper"] = "知识守护者"
-	LK["LoreKeeperMinMap"] = "点击以切换知识守护者日志。"
 	LK["LoreKIntro"] = "输入 /知识守护者 打开日志。"
 	LK["SlashLoreK1"] = "知识守护者"
 	LK["SlashLoreK2"] = "知识守"
@@ -915,6 +921,8 @@ if LOCALE == "zhCN" then
 	LK["Holiday_WinterVeil"] = "冬幕节"
 	LK["Contributors"] = "贡献者"
 	LK["SpecialThanks"] = "感谢为这个插件做出贡献的优秀人士！"
+	LK["LoreKeeperMinMap"] = "点击以切换知识守护者日志。|n右键点击隐藏此图标。"
+	LK["ToggleMinimapIcon"] = "显示小地图图标"
 
 
 return end
@@ -922,7 +930,6 @@ return end
 if LOCALE == "zhTW" then
 	-- Traditional Chinese translations go here
 	LK["Lorekeeper"] = "知識守護者"
-	LK["LoreKeeperMinMap"] = "點擊以切換知識守護者日誌。"
 	LK["LoreKIntro"] = "輸入 /知識守護者 打開日誌。"
 	LK["SlashLoreK1"] = "知識守護者"
 	LK["SlashLoreK2"] = "知識守"
@@ -1015,6 +1022,8 @@ if LOCALE == "zhTW" then
 	LK["Holiday_WinterVeil"] = "冬幕節"
 	LK["Contributors"] = "貢獻者"
 	LK["SpecialThanks"] = "感謝這些為這個插件做出貢獻的優秀人士！"
+	LK["LoreKeeperMinMap"] = "點擊以切換知識守護者日誌。|n右鍵點擊隱藏此圖標。"
+	LK["ToggleMinimapIcon"] = "顯示小地圖圖標"
 
 
 return end
