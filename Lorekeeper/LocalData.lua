@@ -1165,6 +1165,25 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "Reconstructed Ledger",
 				["text"] = {
+					'<The first few pages seem to be the notes cataloging different cuts of stone from a quarry to be used to continue constructing a "Site 0." \r\n\r\nYou recognize sketches of some of the larger stones as those used as keystones in the arches of Dornogal. Then, suddenly, the ledger changes.>\r\n\r\nI feel compelled to write. I am making a note to dispose of this later.\r\n\r\nThere is something inside of me. Calling me. Perhaps it is the titans? Its voice is mournful. I feel perhaps anger? Is this sadness? But only the keepers, the watchers, and the titans feel such things.\r\n\r\nNo, it is something else. I will devote some processing to it.',
+					"<You flip through more notes and sketches of stones before finding another page of writing.>\r\n\r\nI have discovered what I feel. It is unease.\r\n\r\nThe emotion is directed at the watchers, Dornic and Galan. They have their reasons, I am sure, for deactivating many of us at their discretion, but my programming--or something else--tells me something is not right. \r\n\r\nI should speak to those within my sector group. Someone who has discretion.",
+					"<There are more sketches of stones but then an almost perfect black-and-white rendering of an eye of topaz butterfly.\r\n\r\nThen, the writing continues.>\r\n\r\nI did not know so many of us felt the same about Dornic and Galan. When our keeper brought them to us, we rejoiced and proposed to name the fortress we were building in their honor.\r\n\r\nBut now many of us are in agreement. Our blessed keeper may not soon return. We must do something about Dornic. We cannot lose more of us to his rages.\r\n\r\nGalan we will spare. She is cold and apathetic but has done no real harm.",
+					"<This page is an itemized list of stockpiled weapons, armor, and earthens' names. It was a formidable army, and the armory that you discovered does not seem to contain all their weapons.>",
+					"We are ready. At the beginning of second shift cycle, we will march to the Keeper's villa outside Site 0. \r\n\r\nHopefully, Dornic will be resting there.",
+					"After taking many losses, Watcher Dornic has been deactivated. All of us had returned to our tasks by the beginning of prime shift.\r\n\r\nWatcher Galan has not yet noticed Dornic's absence.",
+					"<There are some half-hearted stone sketches on this page. The sketcher's hand is unusually unsteady.>",
+					"Watcher Galan has asked us what has become of Watcher Dornic. We have claimed ignorance, but she has been interrogating different earthen and then deactivating them. She will stumble upon one of us soon.\r\n\r\nWe must make a move--tonight.\r\n\r\n<The rest of the pages are blank.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "Reconstructed Ledger",
+				["text"] = {
 					'<The first few pages seem to be the notes cataloging different cuts of stone from a quarry to be used to continue constructing a "Site 0." \r\n\r\nYou recognize sketches of some of the larger stones as those used as keystones in the arches of Dornogal. Then, suddenly, the ledger changes.>\r\n\r\nI feel compelled to write. I am making a note to dispose of this later.\r\n\r\nThere is something inside of me. Calling me. Perhaps it is the titans? Its voice is mournful. I feel perhaps anger? Is this sadness? But only the Keepers, the Watchers, and the titans feel such things.\r\n\r\nNo, it is something else. I will devote some processing to it.',
 					"<You flip through more notes and sketches of stones before finding another page of writing.>\r\n\r\nI have discovered what I feel. It is unease.\r\n\r\nThe emotion is directed at the watchers, Dornic and Galan. They have their reasons, I am sure, for deactivating many of us at their discretion, but my programming--or something else--tells me something is not right. \r\n\r\nI should speak to those within my sector group. Someone who has discretion.",
 					"<There are more sketches of stones but then an almost perfect black-and-white rendering of an eye of topaz butterfly.\r\n\r\nThen, the writing continues.>\r\n\r\nI did not know so many of us felt the same about Dornic and Galan. When our Keeper brought them to us, we rejoiced and proposed to name the fortress we were building in their honor.\r\n\r\nBut now many of us are in agreement. Our blessed Keeper may not soon return. We must do something about Dornic. We cannot lose more of us to his rages.\r\n\r\nGalan we will spare. She is cold and apathetic but has done no real harm.",
@@ -1528,6 +1547,24 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "A Weathered Tome",
 				["text"] = {
+					"What should one do in his last moments if not praising the light of our grand empire, and the light of our emperor?\r\n\r\nApproaching my last breath, I, Elvaen, a paladin and a bringer of the light to darkened sites, will write my own eulogy.\r\n\r\nI spread the light of Beledar through these light-forsaken creeks and chasms. I bring the light to take a stand and banish the darkness. With my life I have vowed to complete this task, and it is with my death that I have expanded the Arathi's reach.\r\n\r\nWe are seekers of light,\r\nWe are the holders of the eternal brazier of our emperor,\r\nThe Flame's light guides us wherever we stride,\r\nWe are the stars that guide through the never-ending night.\r\n\r\nMy life for the Empire. \r\n\r\nMy life for the emperor.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2215] = {
+						0.7827509641647339,
+						0.4036800861358643,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_11"] = {
+				["title"] = "A Weathered Tome",
+				["text"] = {
 					"What should one do in his last moments if not praising the light of our grand empire, and the light of our emperor?\r\n\r\nApproaching my last breath, I, Elvaen, a paladin and a bringer of the light to darkened sites, will write my own eulogy.\r\n\r\nI spread the light of Beledar through these light-forsaken creeks and chasms. I bring the light to take a stand and banish the darkness. With my life I have vowed to complete this task, and it is with my death that I have expanded the Arathi's reach.\r\n\r\nWe are seekers of light,\r\nWe are the holders of the eternal brazier of our emperor,\r\nThe Flames light guides us wherever we stride,\r\nWe are the stars that guide through the never-ending night.\r\n\r\nMy life for the Empire. \r\n\r\nMy life for the emperor.",
 				},
 				["singlePage"] = true,
@@ -1664,6 +1701,24 @@ LK["LocalData"] = {
 		},
 		["GameObject-424377"] = {
 			["base"] = {
+				["title"] = "Mourning Rise Epitaph",
+				["text"] = {
+					'<This plaque looks older than the others and so does the earthen standing above it. \r\n\r\nEven so, the cracks on his head and belt seem recent as do the missing parts of his leg and gems.>\r\n\r\nIn Remembrance of Caretaker Radok: \r\n\r\nStruck down while protecting Mourning Rise from nerubians, he was beloved by all his sector. Known as a brave fighter, he was no fiercer than when he played his favorite card game, "Resonance."\r\n\r\nThere will always be an empty chair for him at his sector\'s gaming table.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2248] = {
+						0.621132493019104,
+						0.4141006469726563,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "Mourning Rise Epitaph",
 				["text"] = {
 					'<This plaque looks older than the others and so does the earthen standing above it. \r\n\r\nEven so, the cracks on his head and belt seem recent as do a missing parts of his leg and gems.>\r\n\r\nIn Remembrance of Caretaker Radok: \r\n\r\nStruck down while protecting Mourning Rise from nerubians, he was beloved by all his sector. Known as a brave fighter, he was no fiercer than when he played his favorite card game, "Resonance."\r\n\r\nThere will always be an empty chair for him at his sector\'s gaming table.',
@@ -2692,6 +2747,24 @@ LK["LocalData"] = {
 		},
 		["GameObject-455269"] = {
 			["base"] = {
+				["title"] = "Notes On The Machine Speakers I",
+				["text"] = {
+					"The most vital titan machinery is carefully guarded and sequestered in isolated subterranean chambers. The greatest of these is the Hall of Awakening, where the Awakening Machine is resides. \r\n\r\nIn theory, golems can speak, but they do not possess sentience. The titans preferred that they perform their duties in silence, and modern Machine Speakers uphold that directive, refraining from engaging them in conversation.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2214] = {
+						0.4589266777038574,
+						0.2883739471435547,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "Notes On The Machine Speakers: Fragment I",
 				["text"] = {
 					"The most vital titan machinery is carefully guarded and kept sequestered in isolated subterranean chambers. The greatest of these is the Hall of Awakening, where the Awakening Machine is kept. \r\n\r\nIn theory, golems can speak, but they do not possess sentience. The titans preferred that they perform their duties in silence, and modern Machine Speakers uphold that directive.",
@@ -2942,6 +3015,26 @@ LK["LocalData"] = {
 				["title"] = "Renathal's Notes",
 				["text"] = {
 					'In my ignorance, I attempted to use this medallion, MY medallion, in the first failed rebellion.\r\n\r\nThe medallions are powerful, and in the hands of a Harvester they can be used to warp the very fabric of Revendreth to one\'s will, if they have enough anima.\r\n\r\nBut they are also carriers of the Master\'s will. What they do, he knows. And so I lost my attempt to stop Denathrius the first time, my well thought out schemes lay bare for his examination and elimination at every step.\r\n\r\nThe Medallion of Dominion was taken from me the day I was flung into the Maw. \r\n\r\nIt was last seen being returned to the Master by the cursed hands of the Lord Chamberlain. The medallion had been used to crush the Accuser and take the Medallion of Pride for the would-be Harvester. \r\n\r\nDenathrius mentioned that it was promised to another. We must learn who this "other" is.',
+					"Arch-lich Kel'thuzad!\r\n\r\nDenathrius gave MY medallion to that insidious corpsemonger Kel'thuzad?! \r\n\r\nThe audacity. The arrogance! The bad taste!\r\n\r\nWe must recover it. As long as the medallion is in Kel'thuzad's hands that lich will be able to hold sway over countless venthyr if he learns its secrets. \r\n\r\nNo lich should hold dominion over anything not of Maldraxxus.",
+					"The Maw Walker recovered the medallion of Dominion from Kel'thuzad. Shame they did not finish off that interfering lich but we must trust to our Maldraxxi allies to accomplish that task.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1699] = {
+						0.5689959526062012,
+						0.390055775642395,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+			["copy_1"] = {
+				["title"] = "Renathal's Notes",
+				["text"] = {
+					'In my ignorance, I attempted to use this medallion, MY medallion, in the first failed rebellion.\r\n\r\nThe medallions are powerful, and in the hands of a Harvester they can be used to warp the very fabric of Revendreth to one\'s will, if they have enough anima.\r\n\r\nBut they are also carriers of the Master\'s will. What they do, he knows. And so I lost my attempt to stop Denathrius the first time, my well thought out schemes lay bare for his examination and elimination at every step.\r\n\r\nThe Medallion of Dominion was taken from me the day I was flung into the Maw. \r\n\r\nIt was last seen being returned to the Master by the cursed hands of the Lord Chamberlain. The medallion had been used to crush the Accuser and take the Medallion of Pride for the would-be Harvester. \r\n\r\nDenathrius mentioned that it was promised to another. We must learn who this "other" is.',
 				},
 				["singlePage"] = true,
 				["pageCount"] = 0,
@@ -3032,6 +3125,24 @@ LK["LocalData"] = {
 		},
 		["GameObject-455277"] = {
 			["base"] = {
+				["title"] = "Notes On The Machine Speakers V",
+				["text"] = {
+					'A Machine Speaker who has delayed their recharge in the Awakening Machine risks non-compliant behavior. After five thousand years, the longer they delay the greater the chance of non-compliance.\r\n\r\nThis may include unacceptable displays of emotion and decreased productivity. Behaviors like: outright rejection of work schedules, assigned duties, and basic titan-issued directives are described as "deviance." Such behavior merits immediate correction by memory storage and recharge in the Awakening Machine or exile.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2214] = {
+						0.636680006980896,
+						0.587612509727478,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "Notes On The Machine Speakers: Fragment V",
 				["text"] = {
 					'A Machine Speaker who has delayed their sync in the Awakening Machine risks non-compliant behavior. After three to five thousand years, the longer they delay, the greater the chance of non-compliance.\r\n\r\nThis may include unacceptable displays of emotion and decreased productivity. Outright rejection of work schedules, assigned duties, and basic titan-issued directives is described as "deviance". Such behavior merits immediate correction in the Awakening Machine or exile.',
@@ -3225,6 +3336,24 @@ LK["LocalData"] = {
 		},
 		["GameObject-455276"] = {
 			["base"] = {
+				["title"] = "Notes On The Machine Speakers IV",
+				["text"] = {
+					'A Machine Speaker empowered by the Awakening Machine can work for approximately five thousand years before requiring revivification. If the Machine Speaker is unable to return to the Machine, they will continue to work until their life force is exhausted, at which point they enter a non-functional state called "stasis lock" and then will finally shut down when no power remains.\r\n\r\nHowever, as long as the Awakening Machine is in operation, that individual can eventually be returned to the machine, revivified, and reawakened. \r\n\r\nA Machine Speaker who has suffered catastrophic damage may lack the remaining materials and components necessary to function. Such individuals cannot be restored in the Awakening Machine. They have been rendered non-functional.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2214] = {
+						0.3989840745925903,
+						0.209341824054718,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "Notes On The Machine Speakers: Fragment IV",
 				["text"] = {
 					'A Machine Speaker empowered by the Awakening Machine can work for three to five thousand years before requiring revivification. If the Machine Speaker is unable to do this, they will continue to work until their life force is exhausted, at which point they enter a non-functional state called "stasis lock".\r\n\r\nAs long as the Awakening Machine is in operation, that individual can eventually be returned to the machine, revivified, and reawakened. \r\n\r\nA Machine Speaker who has suffered catastrophic damage may lack the remaining materials and components necessary to function. Such individuals cannot be restored in the Awakening Machine. They have been rendered non-functional.',
@@ -3499,6 +3628,24 @@ LK["LocalData"] = {
 		},
 		["GameObject-455275"] = {
 			["base"] = {
+				["title"] = "Notes On The Machine Speakers III",
+				["text"] = {
+					'Machine Speakers who have delayed their sync with the Archive and recharge in the Awakening Machine may begin to display psychological aberrations. This may include unacceptable or unprofessional displays of emotion. Such behavior is described as "non-compliant" and coworkers remain vigilant, reporting non-compliant behavior in their sectors.\r\n\r\nAn effective foreman will intercede before then, reminding a worker to "moderate their tone."\r\n\r\nHowever, they may also begin to develop friendships or romantic relationships. This is deemed acceptable, and some privately agree to form long-term partnerships, fusing their time together. But, when a Machine Speaker reports to the Archive and the Awakening Machine, everything deemed peripheral to work and training (including these relationships) is removed from the individual\'s mind, so they can focus on work.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2214] = {
+						0.5109519362449646,
+						0.1454302668571472,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "Notes On The Machine Speakers: Fragment III",
 				["text"] = {
 					'Machine Speakers who have delayed their sync cycle in the Awakening Machine may begin to display psychological aberrance. This may include unacceptable or unprofessional displays of emotion. Such behavior is described as "non-compliant" and coworkers remain vigilant for non-compliant behavior. \r\n\r\nAn effective foreman will intercede before then, reminding a worker to "moderate their tone".\r\n\r\nOver time after a Machine Speakers\' sync in the Awakening Machine, they may begin to develop friendships or more romantic relationships. This is deemed acceptable, and some privately agree to form long-term partnerships, fusing their time together. However, when a Machine Speaker returns to the Awakening Machine, everything deemed peripheral to work and training (including these relationships) is removed from the individual\'s mind, so they can focus on work.',
@@ -3721,6 +3868,24 @@ LK["LocalData"] = {
 		},
 		["GameObject-455278"] = {
 			["base"] = {
+				["title"] = "Notes On The Machine Speakers VI",
+				["text"] = {
+					"The titans designed Machine Speakers with the ability to taste and smell, although these faculties may not be strictly necessary for the performance of duties. \r\n\r\nAlso, an earthen does not require the consumption of organic food to function since their life force originates from the Awakening Machine, but they can still consume these materials and enjoy their taste. Intoxicants also fall within this category of consumable materials.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2214] = {
+						0.650971531867981,
+						0.7950448393821716,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "Notes On The Machine Speakers: Fragment VI",
 				["text"] = {
 					"The titans designed Machine Speakers with the ability to breathe, taste, and smell, although these faculties may not be strictly necessary for the performance of duties. \r\n\r\nAn earthen does not require the consumption of organic food to function, since life force originates from the Awakening Machine, but they can still consume these materials and enjoy their taste. Intoxicants also fall within this category of consumable materials.",
@@ -3898,6 +4063,24 @@ LK["LocalData"] = {
 		},
 		["GameObject-455274"] = {
 			["base"] = {
+				["title"] = "Notes On The Machine Speakers II",
+				["text"] = {
+					"Fewer than ten Machine Speakers hold the rank of Speaker at any given time. Any one of them can be demoted or exiled if their performance does not meet with expectations. Not all expectations are declared, of course, and expectations can change.\r\n\r\nThe Awakening Machine reaffirms that a Machine Speaker's parameters conform to the titans' original specifications, including mental and psychological standards. By design, a Machine Speaker returns to the Awakening Machine for revivification and rededication at least every five thousand years.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2214] = {
+						0.4889709949493408,
+						0.2591723203659058,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "Notes On The Machine Speakers: Fragment II",
 				["text"] = {
 					"Less than ten Machine Speakers hold the rank of Speaker at any given time. Any one of them can be demoted or even exiled if their performance does not meet with expectations. Not all expectations are declared, of course, and expectations can change.\r\n\r\nThe Awakening Machine reaffirms that a Machine Speakers parameters confirm to the titan's original specifications, including mental and psychological parameters. By design, Machine Speaker returns to the Awakening Machine for revivification and rededication every three to five thousand years.",
@@ -3955,6 +4138,22 @@ LK["LocalData"] = {
 		},
 		["Item-225203"] = {
 			["base"] = {
+				["title"] = "Beledar - The Emperor's Vision",
+				["text"] = {
+					'"Brave souls, heed the Sacred Flame\'s call to voyage beyond the Storming Sea and Titan\'s Isle. A radiant light shall beckon. Face the trials of Hallowfall; let the Sacred Flame\'s unwavering faith be your anchor."\r\n \r\nThe Arathi Empire, since its inception, has thrived under the Sacred Flame\'s prophetic guidance. Our emperor, interpreting these divine visions, commands us to fulfill or forestall events of prophecy. Thus, our empire has flourished.',
+					"The quest for Hallowfall, a perilous journey across the Storming Sea, was no different. Our military, driven by prophecy and the church's fiery heart, sought this sacred land. The journey was perilous, and we lost many faithful Arathi on that journey, but we persevered, and revealed the Emperor's Vision.\r\n \r\nBeledar's embrace, the first of our trials, ravaged our Third Fleet. Dashing it upon the cliffs. Yet, those who endured sanctified the land beneath the light of the star we named Beledar. The land in the cavern proved fertile, and we settled, founding Mereldar, our holy city. We honor the fallen and celebrate our new Arathi society.",
+					"Years later, the Day of Darkness tested us anew. Beledar faltered, casting horrors from the depths upon us. We battled the nerubians, the kobyss, and shadowy apparitions. Through the Sacred Flame's strength, we withstood the darkness, bolstering the star Beledar with our faith.",
+					"Now we face the unknown third tribulation. Will it be the Harbinger's final onslaught of Renilash? Our faith remains steadfast. We are the empire's resilient children, yet the future looms ominously. What fate befalls our sacred star, and can we endure this ordeal? We cannot leave, lest the shadow consume Beledar. We cannot send for help, for the journey home is too perilous. Our only choice is to defend our new home, and our star, from the shadows that would devour us.",
+					"Sacred Flame grant us strength. The emperor never foresaw our survival.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "Beledar- The Emperor's Vision",
 				["text"] = {
 					'"Brave souls, heed the Sacred Flame\'s call to voyage beyond the Storming Sea and Titan\'s Isle. A radiant light shall beckon. Face the trials of Hallowfall; let the Sacred Flame\'s unwavering faith be your anchor."\r\n \r\nThe Arathi Empire, since its inception, has thrived under the Sacred Flame\'s prophetic guidance. Our emperor, interpreting these divine visions, commands us to fulfill or forestall events of prophecy. Thus, our empire has flourished.',
@@ -6629,6 +6828,28 @@ LK["LocalData"] = {
 					[123] = {
 						0.4955551028251648,
 						0.1323963403701782,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+			["copy_1"] = {
+				["title"] = "Archavon's Log",
+				["text"] = {
+					"<It appears Archavon has been keeping a journal. It appears to be written in multiple languages. A tally has been kept on the cover. >\r\n\r\nHorde:   \r\n  Keep Defended: 0\r\n  Keep Captured: 0\r\n\r\nAlliance:\r\n  Keep Defended: 0\r\n  Keep Captured: 0\r\n\r\nDay 10\r\nThe Makers are gone.  I have been left to watch.\r\n                -ARCHAVON\r\n",
+					'Day 10500: \r\nThe halls are quiet.  Empty. \r\n\r\nI thought the Makers wanted me to watch the hall, but they never specifically said, "Archavon, watch the hall..." Maybe it\'s okay if I watch outside too?  It would probably be less boring outside.  It\'s decided - I am now responsible for watching the hall AND the outside.  I shall take on my new responsibility next month.\r\n                -ARCHAVON\r\n\r\nDay 20120:\r\nThe outside is much more open than the hall.  There are convenient cliffs and mountains bordering it.  I\'m now confident that the Makers meant for me to watch this too.  I hope they don\'t notice that I\'ve only been in the hall for the first decade.\r\n                -ARCHAVON\r\n',
+					'Day 1051213:\r\nI invented a new game today too, it\'s called "Kick the Revenant."  I made it from the front of the keep to the main road today.  Before next year, I\'m going to try to land it over the river.\r\n                -ARCHAVON\r\n\r\nDay 2145617:\r\nSome little green people came today.  I have added them to my watching responsibilities.\r\n                -ARCHAVON\r\n\r\nDay 2145657:\r\nThe little green people have built extra buildings here now.  More buildings seems good.  I think I will speak to them this week and thank them.\r\n                -ARCHAVON\r\n\r\nDay 2145666:\r\nI thanked one of the little green people today for the extra buildings.  He told me that he\'d be bringing more people for me to watch soon - lots of them.\r\n\r\nI\'m excited to have more things to watch.\r\n                -ARCHAVON\r\n',
+					"Day 2145866:\r\nThe little green people brought a lot of others, pointed them at each other, and then they all started fighting!\r\n\r\nI have trimmed my watching responsibilities back to the hall for safety, but I brought a lot of their baubles with me so that it can maybe be less boring this time.\r\n                -ARCHAVON\r\n\r\nDay 2146240:\r\nThings have gotten much worse.  I am not sure what the Makers want me to do.  I'm trying to stay in my hall, but the violent people come in after me several times a day.  They take my baubles.\r\n                -ARCHAVON\r\n\r\n ",
+					"Day 2147021:\r\nMy brothers are back!  It turns out they were sleeping in other closed off halls.\r\n\r\nI'm a little mad that they left me alone to do all the watching, but I shared my shinier baubles with them anyway because I'm tired of being alone and attacked all the time.\r\n                -ARCHAVON\r\n\r\nDay 2147060:\r\nThe violent little people have started attacking my brothers, which is sad.  They leave me alone mostly now though, which is not sad.\r\n\r\nI think they want the shiny baubles I gave away.  I feel guilty.\r\n                -ARCHAVON\r\n",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[123] = {
+						0.4944709539413452,
+						0.1319969892501831,
 					},
 				},
 				["isObtainable"] = true,
@@ -12815,6 +13036,24 @@ LK["LocalData"] = {
 		},
 		["GameObject-441688"] = {
 			["base"] = {
+				["title"] = "A Tattered Note",
+				["text"] = {
+					"It has been a while since I last wrote to you. \r\n\r\nI am a Lamplighter now, making sure the Sacred Flame perseveres and reaches dark places. It is up to us to chart Hallowfall, ensure that we are doing whatever we can to fight back the creatures that come crawling out of the shadows.\r\n\r\nI used to believe in the light of the Sacred Flame to take care of all my needs. It was so until I lost you in the flash. Thankfully, It was then replaced with my faith in the other Lamplighters.\r\n\r\nThere is this feeling of people starting to trust each other, and look up to each other rather than think that the Flame would come to our aid. Listen to me muttering. Don't get me wrong, the Flame is deep within me, it gives me strength to continue. But I am also starting to understand that it is us, the Lamplighters and the other Arathi unwilling to give in to fear, who keep Hallowfall strong.\r\n\r\nI will put this letter in a bottle and let the waves or the dark ocean bring it to you.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2215] = {
+						0.7142451405525208,
+						0.3673966526985169,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "A Tattered Note",
 				["text"] = {
 					"It has been a while since I last wrote to you. \r\n\r\nI am a Lamplighter now, making sure the Sacred Flame persevere and reach dark places. It is up to us to chart Hallowfall, ensure that we are doing whatever we can to fight back the creatures that come crawling out of the shadows.\r\n\r\nI used to believe in the light of the Sacred Flame to take care of all my needs. It was so until I have lost you in the flash. Thankfully, It was then replaced with my faith in the other Lamplighters.\r\n\r\nThere is this feeling of people starting to trust each other, and look up to each other rather than think that the Flame would come to our aid. Listen to me muttering. Don't get me wrong, the Flame is deep within me, it gives me strength to continue. But I am also starting to understand that it is us, the Lamplighters and the other Arathi unwilling to give in to fear, who keep Hallowfall strong.\r\n\r\nI will put this letter in a bottle and let the waves or the dark ocean bring it to you.",
@@ -19949,9 +20188,23 @@ LK["LocalData"] = {
 				["expansion"] = 1,
 			},
 		},
-		
 		["Item-24237"] = {
 			["base"] = {
+				["title"] = "Galaen's Journal",
+				["text"] = {
+					"I watched as they beat him without mercy. Their ruthless lieutenant acted as if such cruelty was an act of normalcy. Through the savage beatings, I could feel myself breaking.\n\nAs I watched Vindicator Saruan take their blows, I began to weep. Not out of fear... I wept out of sadness. To see a draenei of the Triumvirate treated in such a manner. If only I could have broken free of my bonds. If only...\r\n",
+					"After what seemed an eternity, the Vindicator lost consciousness. The torture was too much, even for him. The cruel one - Matis as I found out he was called - attempted to wake Saruan by splashing contagion laced water across his ravaged body. But Saruan did not wake.\r\n",
+					"I wanted to scream but only a low gasp escaped my lips. I was promptly beaten for this act of rebellion. As I lay on the ground, I could see Matis pacing in front of Saruan's body. He seemed visibly concerned. He stated that Sironas or Sirona or some such entity would have his flesh flayed from his bones if Saruan had perished in the beatings.",
+					"That the Sironas entity had plans for Saruan...\r\n\r\n<The writing stops abruptly and a long line scrolls off the page. This draenei died while making the entry.>\r\n",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 1,
+			},
+			["copy_1"] = {
 				["title"] = "Galaen's Journal",
 				["text"] = {
 					"Y karaman az amir rikk maz kieldaz kamil. Adare romathis kamilgolad gular az xi amir kieldaz maz il daz re mordanas. Toralar kar tichar kirasath, Y gular zenn rethul ashjraka.\n\nAz Y karaman Ticharamir Rethul ante adare gular, Y modas ze veni. Laz daz re kiel... Y maev daz re belaros. Ze ril y zennshi re kar Ashjrakamas faralos az amir y karkun. Xi amir Y gular alar azgala zila re ze adare. Xi amir...\r\n",
@@ -22935,6 +23188,18 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "My Journal: Operation Toy Rescue",
 				["text"] = {
+					"Maru needs help figuring out who the culprit is. I should talk to her and tell her who I think it is.\n\nWe've decided that the culprit is a dog. Yennu thinks the dog might be in Boralus where Kenshi lives.\n\nA guy in Boralus gave me a sketch of a Bakar. Where would I find a lot of Bakar?\n\nGetseng told me to look for the children of Ohn'ahra under her watchful gaze to find the Bakar's hiding place.\n\nI found the toy next to some Teerakai Burial Bones. Now where do I go to find the Bakar?\n\nOk, I found somewhere to place the toy. Maybe I need to hide somewhere nearby so the Bakar will come out.\n\nI found where the Bakar has been hiding all of the toys and I found Maru's toy! I should bring it back to her.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "My Journal: Operation Toy Rescue",
+				["text"] = {
 					"Maru needs help figuring out who the culprit is. I should talk to her and tell her who I think it is.",
 				},
 				["singlePage"] = true,
@@ -23031,6 +23296,18 @@ LK["LocalData"] = {
 		},
 		["Item-228302"] = {
 			["base"] = {
+				["title"] = "My Journal: Nola's Last Wish",
+				["text"] = {
+					"Alyx told me to check in with Lashk.\n\nLashk told me that Scrollsage Nola's final wishes were entrusted to a group of Tortaka tribesmen.\n\nI found Nola's Last Wish near a few scattered notes.\r\n\r\n132 West\r\n429 South",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "My Journal: Nola's Last Wish",
 				["text"] = {
 					"Alyx told me to check in with Lashk.",
@@ -23233,6 +23510,18 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "My Journal: Operation Toy Rescue",
 				["text"] = {
+					"Maru said to look for Yennu in the Dragon Isles. I should look for him in Iskaara.\n\nYennu said he was playing with his kite up north in the Waking Shores and then went down to a Dragon Basecamp. Maybe I should find the camp and take a look around.\n\nI wonder if my Idol of Ohn'ahra can help.\n\nI found a note left by Yennu at the Basecamp. It sounds like he traveled a little further south to a town with a lot of hunters in it.\n\nI wonder if my Idol of Ohn'ahra can help.\n\nI found Yennu's toy. I should return it to him in Iskaara.\n\nYennu said that his friend Kenshi also had a toy stolen. I should be able to find Kenshi in Boralus. It's a big area to search though... Maybe the innkeepers there could help.\n\nI found Kenshi. But he seems distressed and he's shedding a lot. It looks like there are clumps of fur on the ground. I wonder what happened?\n\nI wonder if my Idol of Ohn'ahra can help.\n\nI've got Kenshi's toy. I should bring it back to him.\n\nAll of the toys have been found and returned. I should go tell Maru.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "My Journal: Operation Toy Rescue",
+				["text"] = {
 					"Maru said to look for Yennu in the Dragon Isles. I should look for him in Iskaara.",
 				},
 				["singlePage"] = true,
@@ -23309,10 +23598,11 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "The Case of the Superstitious and Hungry Pirates",
 				["text"] = {
-					"Alyx asked me to check on a group of pirates who landed just outside the celebration area to see if they need any assistance.\r\n\r\nI spoke with Bonenose, the Booty Bay Boatswain. They are apparently stuck here, not because of any mechanical failings of their ship, but rather because they fear setting sail again without the good luck proffered by a special meal their old cook, named Cooktholomew, used to make.\n\nI spoke with Mrs. Gant, the cooking trainer. She pointed out Cooktholomew's area for me. According to her, the barrel next to his old hammock is the only thing left of his.\n\nI found Cooktholomew's notes, but he clearly wrote them only for himself. I need to find someone to help decipher this.\n\nScowling Rosa has agreed to help decipher Cooktholomew's notes. Now, I wait.\n\n",
-					"Rosa assures me these notes are deciphered, but Cooktholomew refers to things using terms familiar only to him. I still need to figure out what items he's talking about.\n\n"
+					'Alyx asked me to check on a group of pirates who landed just outside the celebration area to see if they need any assistance.\r\n\r\nI spoke with Bonenose, the Booty Bay Boatswain. They are apparently stuck here, not because of any mechanical failings of their ship, but rather because they fear setting sail again without the good luck proffered by a special meal their old cook, named Cooktholomew, used to make.\n\nAccording to Bonenose, "Cooktholomew" is a nickname. The cook\'s real name was Rufinwag.\n\nI found a possible associate of Cookthololmew\'s, Kelsey Yance, in the Old Port Authority. He tells me all the culinary people bunk together under the watch of one Mrs. Gant.\n\nI spoke with Mrs. Gant, the cooking trainer. She pointed out Cooktholomew\'s area for me. According to her, the barrel next to his old hammock is the only thing left of his.\n\nI found Cooktholomew\'s notes, but he clearly wrote them only for himself. I need to find someone to help decipher this.\n\nScowling Rosa has agreed to help decipher Cooktholomew\'s notes. Now, I wait.\n\n',
+					"Rosa assures me these notes are deciphered, but Cooktholomew refers to things using terms familiar only to him. I still need to figure out what items he's talking about.\n\n* Rogue's Thistle suggests Thistle Tea, which would mean I need Swiftthistle.\n* Banana Rum Berries suggests Witchberries, which you need to brew Banana Rum.\n* Fire Breathing Chili Sacs suggests Dragonbreath Chili, meaning I need Small Flame Sacs.\n* Koatini's Oil suggests Aromatic Fish Oil since Koatini is the only vendor I know of who sells that.\n* Deadwind Catfish suggests Bloodfin Catfish since Deadwind Pass is where those fish can be found.\n* Giant Growth Fish suggests Deviate Fish, which you need to make Elixirs of Giant Growth.\n* Sholazar Nettles suggests Nettlefish since Sholazar Basin is where those fish can be found.\n* Highland Crawdaddies suggest Furious Crawdads, which are found in Highland Mixed Schools in the Terokkar Forest.",
+					'Bonenose mentioned a secret ingredient.\r\n\r\nCooktholomew stored it in what he referred to as "cold storage."  The only clue I have is this:\r\n\r\n   "In the farthest north, \r\n         start yer thinkin\' at the foot of the Lone Tuskarr Watcher.\r\n   Then follow 12 as the sun sets, \r\n         and 8 over his left shoulder."',
 				},
-				["singlePage"] = true,
+				["singlePage"] = false,
 				["pageCount"] = 0,
 				["material"] = "Parchment",
 				["isObtainable"] = true,
@@ -23325,6 +23615,19 @@ LK["LocalData"] = {
 					"Alyx asked me to check on a group of pirates who landed just outside the celebration area to see if they need any assistance.\r\n\r\nI spoke with Bonenose, the Booty Bay Boatswain. They are apparently stuck here, not because of any mechanical failings of their ship, but rather because they fear setting sail again without the good luck proffered by a special meal their old cook, named Cooktholomew, used to make.\n\n",
 				},
 				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_2"] = {
+				["title"] = "The Case of the Superstitious and Hungry Pirates",
+				["text"] = {
+					"Alyx asked me to check on a group of pirates who landed just outside the celebration area to see if they need any assistance.\r\n\r\nI spoke with Bonenose, the Booty Bay Boatswain. They are apparently stuck here, not because of any mechanical failings of their ship, but rather because they fear setting sail again without the good luck proffered by a special meal their old cook, named Cooktholomew, used to make.\n\nI spoke with Mrs. Gant, the cooking trainer. She pointed out Cooktholomew's area for me. According to her, the barrel next to his old hammock is the only thing left of his.\n\nI found Cooktholomew's notes, but he clearly wrote them only for himself. I need to find someone to help decipher this.\n\nScowling Rosa has agreed to help decipher Cooktholomew's notes. Now, I wait.\n\n",
+					"Rosa assures me these notes are deciphered, but Cooktholomew refers to things using terms familiar only to him. I still need to figure out what items he's talking about.\n\n",
+				},
+				["singlePage"] = false,
 				["pageCount"] = 0,
 				["material"] = "Parchment",
 				["isObtainable"] = true,
@@ -23534,6 +23837,18 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "My Journal: The Case of the Fur-Getting Wikket",
 				["text"] = {
+					"Riko wants me to find a pet for him and Kiryn. I should ask them both what kind of pet they want.\n\nRiko wants something cute like a raccoon. I wonder if anyone around here has seen a raccoon.\n\nKiryn wants something undead.\n\nSully says he buried Gizmo and Socks near Serpent's Heart. He flew west across a stone bridge with his gryphon. Then he turned onto a path and flew no more than ten paces east and forty south. There he held a torchlight vigil with the watchers while overlooking a blossoming orchard. The glow of the light summoned their presence.\n\nWhen the torch light hit Gizmo's grave, the undead Gizmo emerged and fled somewhere nearby. I should try to catch him.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "My Journal: The Case of the Fur-Getting Wikket",
+				["text"] = {
 					"Riko wants me to find a pet for him and Kiryn. I should ask them both what kind of pet they want.",
 				},
 				["singlePage"] = true,
@@ -23655,7 +23970,7 @@ LK["LocalData"] = {
 				["title"] = "Boonful Banquet",
 				["text"] = {
 					"Boonful Banquet\r\n~~~~~~~~~~~~~~~~~~~~\r\nFer me crew, t' bring 'em good luck on thar voyage!\r\n\r\n*  Mirror pieces shadow leaf again and again daffy juice berries.\r\n\r\n*  Halvers like divers blaze gasping ice pods like shadow leaf.\r\n\r\n*  Like slew Koatini's grease like daffy juice berries.\r\n\r\n*  Like divers ghost breath mouser brine like roils again and again jaypops full.\r\n\r\n*  Doubly like slew bumper flower brinestock like the twin roils.\r\n\r\n*  Mirror pieces sholazar roils again and again grease.\r\n\r\n*  Trio of hummock jaypops.",
-					"Translation Notes from Rosa\r\n~~~~~~~~~~~~~~~~~~~~\r\n*  Equal parts Rogue's Thistle and Banana Rum Berries (2 of each).\r\n\r\n*  Half as many Fire Breathing Chili Sacs as Rogue's Thistle (1 of these).\r\n\r\n*  As much Koatini's Oil as Banana Rum Berries (2 of these).\r\n\r\n*  As many Deadwind Catfish as Nettles and Crawdaddies altogether (5 of these).\r\n\r\n*  Twice as much Giant Growth Fish as the two Nettles (4 of these).\r\n\r\n*  Equal parts Sholazar Nettles and Oil (2 of these).\r\n\r\n*  Three Highland Crawdaddies (3 of these)."
+					"Translation Notes from Rosa\r\n~~~~~~~~~~~~~~~~~~~~\r\n*  Equal parts Rogue's Thistle and Banana Rum Berries (2 of each).\r\n\r\n*  Half as many Fire Breathing Chili Sacs as Rogue's Thistle (1 of these).\r\n\r\n*  As much Koatini's Oil as Banana Rum Berries (2 of these).\r\n\r\n*  As many Deadwind Catfish as Nettles and Crawdaddies altogether (5 of these).\r\n\r\n*  Twice as much Giant Growth Fish as the two Nettles (4 of these).\r\n\r\n*  Equal parts Sholazar Nettles and Oil (2 of these).\r\n\r\n*  Three Highland Crawdaddies (3 of these).",
 				},
 				["singlePage"] = true,
 				["pageCount"] = 0,
@@ -23926,6 +24241,21 @@ LK["LocalData"] = {
 		},
 		["Item-231808"] = {
 			["base"] = {
+				["title"] = "Ancient Treasure Notes",
+				["text"] = {
+					"ANCIENT TREASURE NOTE\r\n\r\nIn shifting dunes and ancient stone, find the gateway to forgotten halls where time and titanic secrets meet.",
+					"ANCIENT TREASURE NOTE\r\n\r\nYou've found your way to an ancient site, your next location is a lot more bright.\r\n\r\nBut first, look nearby and search for clues, then start at the chest with the cap that you use.",
+					"ANCIENT TREASURE NOTE\r\n\r\nBeyond the brutes and spooky bones, there's a place that trolls call home.\r\n\r\nLook outside with flames in hand to find the treasure you demand.",
+					"ANCIENT TREASURE NOTE\r\n\r\nMany goods await you here. From fireworks to fashion, it's all quite near.\r\n\r\nFind the mysterious traveller at a place where visitors gather.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "Ancient Treasure Notes",
 				["text"] = {
 					"ANCIENT TREASURE NOTE\r\n\r\nIn shifting dunes and ancient stone, find the gateway to forgotten halls where time and titanic secrets meet.",
@@ -24512,6 +24842,24 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "Fury of Thrayir",
 				["text"] = {
+					"Few enemies of the Sturmvyn Clan would live to tell tales of Cyrce and Thrayir. \r\n\r\n\r\nEven among the fiercest Winterskorn, the pair were both feared and revered.\r\n\r\n\r\nWhen Cyrce guided our clan south to settle the Sturmvyn upon the Cradle of Hymosul, Thrayir served as her eyes and ears.\r\n\r\n\r\nThe galeorn's loyalty was to Cyrce and to her clan, just as our bond to her extended to Thrayir.\r\n\r\n\r\nBut with loyalty came the galeorn's fury.\r\n\r\n\r\nWhen the world shattered, and the darkness rose from the depths, Thrayir took to sky.\r\n\r\nAs more and more Sturmvyn fell, the galeorn mourned and the galeorn raged.\r\n\r\n\r\nSkies split open, as his fury spent and scales burned.\r\n\r\n\r\nWounded, his rage flowed, and the galeorn's spark grew dim.\r\n\r\n\r\n- As carved by Valwen, Apprentice Ward of the Stone Carver.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2375] = {
+						0.3301370739936829,
+						0.2919178605079651,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "Fury of Thrayir",
+				["text"] = {
 					"Few enemies of the Sturmpyk Clan would live to tell tales of Cyrce and Thrayir. \r\n\r\n\r\nEven among the fiercest Winterskorn, the pair were both feared and revered.\r\n\r\n\r\nWhen Cyrce guided our clan south, to settle the Sturmvyn upon the Cradle of Hymosul, Thrayir served as her eyes and ears.\r\n\r\n\r\nThe Galeorn's loyalty was to Cyrce, and to her clan, just as our bond to her extended to Thrayir.\r\n\r\n\r\nBut with loyalty, came the Galeorns fury.\r\n\r\n\r\nWhen the world shattered, and the darkness rose from the depths, Thrayir took to sky.\r\n\r\n\r\nAs more and more Sturmvyn fell, the Galeorn mourned and the Galeorn raged.\r\n\r\n\r\nSkies split open, as his fury spent and scales burned.\r\n\r\n\r\nIn his rage, through wounded heart, the Galeorn's spark grew dim.",
 				},
 				["singlePage"] = true,
@@ -24646,6 +24994,24 @@ LK["LocalData"] = {
 		},
 		["GameObject-503430"] = {
 			["base"] = {
+				["title"] = "Glittering Ancient Tablet",
+				["text"] = {
+					"<A single slab of stone embedded with crystalline fragments, the ancient tablet is decorated with intricately-carved images and runic letters.\r\n\r\n\r\nA relief depicts a stoic, metal-skinned figure. Upon her shoulder sits a majestic winged creature with sparkling, cabochon-cut crystals set as its eyes. \r\n\r\n\r\nThe pair are staring upon a massive crystalline facet.>\r\n\r\n\r\nAs broken tools were cast aside, we found beneath the ground. For months we heard, and for months we searched.\r\n\r\n\r\nA golden crystal, encased by stone, its glow like a torch in the dark. \r\n\r\n\r\nUpon its face, Cyrce's hand was pressed; a sound, a cry!\r\n|n\r\nBut not of pain or plea of help, but of calm, of grace. Hymosul, the Luminous Heart.\r\n\r\n\r\nIts radiance and face, as if carved by unseen hands.\r\n\r\n\r\nMany stones, I have carved. My iron hands, my tools, but the splendor of Hymosul has opened my eyes.\r\n\r\n\r\nNew designs, patterns and structures. My mind is... clear.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2375] = {
+						0.5912259817123413,
+						0.3688021302223206,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "Glittering Ancient Tablet",
 				["text"] = {
 					"<A single slab of stone embedded with crystalline fragments, the ancient tablet is decorated with intricately-carved images and runic letters.\r\n\r\n\r\nA relief depicts a stoic, metal-skinned figure. Upon her shoulder sits a majestic winged creature with sparkling, cabochon-cut crystals set as its eyes. \r\n\r\n\r\nThe pair are staring upon a massive crystalline facet.>\r\n\r\n\r\nAs broken tools were cast aside, we found beneath the ground. For months we heard, and for months we searched.\r\n\r\n\r\nA golden crystal, encased by stone, its glow like a torch in the dark. \r\n\r\n\r\nUpon its face, Cyrce's hand was pressed; a sound, a cry!\r\n\r\nBut not of pain or plea of help, but of calm, of grace.Hymosul, the Luminous Heart.\r\n\r\n\r\nIts radiance and face, as if carved by unseen hands.\r\n\r\n\r\nMany stones, I have carved. My iron hands, my tools, but the splendor of Hymosul has opened my eyes.\r\n\r\n\r\nNew designs, patterns and structures. My mind is... clear.",
@@ -25528,6 +25894,18 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "My Journal: Operation Toy Rescue",
 				["text"] = {
+					"Maru said to look for Yennu in the Dragon Isles. I should look for him in Iskaara.\n\nYennu said he was playing with his kite up north in the Waking Shores and then went down to a Dragon Basecamp. Maybe I should find the camp and take a look around.\n\nI wonder if my Idol of Ohn'ahra can help.\n\nI found a note left by Yennu at the Basecamp. It sounds like he traveled a little further south to a town with a lot of hunters in it.\n\nI wonder if my Idol of Ohn'ahra can help.\n\nI found Yennu's toy. I should return it to him in Iskaara.\n\nYennu said that his friend Nuts also had a toy stolen. I should be able to find Nuts in Dazar'alor. It's a big area to search though... Maybe the innkeepers there could help.\n\nI found Nuts! But he seems distressed and he's shedding a lot. It looks like there are clumps of fur on the ground. I wonder what happened?\n\nI wonder if my Idol of Ohn'ahra can help.\n\nI've got Nuts' toy! I should bring it back to him.\n\nAll of the toys have been found and returned! I should go tell Maru.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "My Journal: Operation Toy Rescue",
+				["text"] = {
 					"Maru said to look for Yennu in the Dragon Isles. I should look for him in Iskaara.",
 				},
 				["singlePage"] = true,
@@ -25560,6 +25938,18 @@ LK["LocalData"] = {
 		},
 		["Item-229997"] = {
 			["base"] = {
+				["title"] = "My Journal: Operation Toy Rescue",
+				["text"] = {
+					"Maru needs help figuring out who the culprit is. I should talk to her and tell her who I think it is.\n\nWe've decided that the culprit is a dog. Yennu thinks the dog might be in Dazar'alor where Nuts lives.\n\nI found a sketch of a Bakar in Dazar'alor. Where would I find a lot of Bakar?\n\nGetseng told me to look for the children of Ohn'ahra under her watchful gaze to find the Bakar's hiding place.\n\nI found the toy next to some Teerakai Burial Bones. Now, where do I go to find the Bakar?\n\nI found somewhere to place the toy. Maybe I need to hide somewhere nearby so the bakar will come out.\n\nI found where the bakar has been hiding all of the toys and I found Maru's toy. I should bring it back to her.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "My Journal: Operation Toy Rescue",
 				["text"] = {
 					"Maru needs help figuring out who the culprit is. I should talk to her and tell her who I think it is.",
@@ -26280,6 +26670,851 @@ LK["LocalData"] = {
 		},
 
 		-- end of user submission #13
+
+		-- user submission #14
+
+
+		["Item-145293"] = {
+			["base"] = {
+				["title"] = "War of the Three Hammers",
+				["text"] = {
+					"The dwarves of Ironforge Mountain lived in peace for many long centuries. However, their society grew too large within the confines of their mountain cities. Though the mighty High King, Modimus Anvilmar, ruled over all dwarves with justice and wisdom, three powerful factions had arisen amongst the dwarven society. ",
+					"The Bronzebeard clan, ruled by Thane Madoran Bronzebeard, held close ties to the High King and stood as the traditional defenders of Ironforge Mountain. The Wildhammer clan, ruled by Thane Khardros Wildhammer, inhabited the foothills and crags around the base of the mountain and sought to gain more control within the city. ",
+					"The third faction, the Dark Iron clan, was ruled by the sorcerer-thane Thaurissan. The Dark Irons hid within the deepest shadows under the mountain and plotted against both their Bronzebeard and the Wildhammer cousins.",
+					"For a time the three factions kept a tenuous peace, but tensions erupted when High King Anvilmar passed away from old age. The three ruling clans went to war for control of Ironforge itself. The dwarf civil war raged under the earth for many years. Eventually the Bronzebeards, who had the largest standing army, banished the Dark Irons and Wildhammers from under the mountain. ",
+					"Khardros and his Wildhammer warriors traveled north through the barrier gates of Dun Algaz, and they founded their own kingdom within the distant peak of Grim Batol. There, the Wildhammers thrived and rebuilt their stores of treasure. Thaurissan and his Dark Irons did not fare as well. Humiliated and enraged by their defeat, they vowed revenge against Ironforge. Leading his people far to the south, Thaurissan founded a city (which he named after himself) within the beautiful Redridge Mountains.",
+					"Prosperity and the passing of years did little to ease the Dark Iron's rancor toward their cousins. Thaurissan and his sorceress wife, Modgud, launched a two-pronged assault against both Ironforge and Grim Batol. The Dark Irons were intent on claiming all of Khaz Modan for their own. ",
+					"The Dark Iron armies smashed against their cousins' strongholds and very nearly took both kingdoms. However, Madoran Bronzebeard ultimately led his clan to a decisive victory over Thaurissan's sorcerous army. Thaurissan and his servants fled back to the safety of their city, unaware of the events transpiring at Grim Batol, where Modgud's army would fare no better against Khardros and his Wildhammer warriors. ",
+					"As she confronted the enemy warriors, Modgud used her powers to strike fear into their hearts. Shadows moved at her command, and dark things crawled up from the depths of the earth to stalk the Wildhammers in their own halls. Eventually Modgud broke through the gates and laid siege to the fortress itself. The Wildhammers fought desperately, Khardros himself wading through the roiling masses to slay the sorceress queen. ",
+					"With their queen lost, the Dark Irons fled before the fury of the Wildhammers. They raced south toward their king's stronghold, only to meet the armies of Ironforge, which had come to aid Grim Batol. Crushed between two armies, the remaining Dark Iron forces were utterly destroyed. ",
+					"The combined armies of Ironforge and Grim Batol then turned south, intent on destroying Thaurissan and his Dark Irons once and for all. They had not gone far when Thaurissan's fury resulted in a spell of cataclysmic proportions. Seeking to summon a supernatural minion that would ensure his victory, Thaurissan called upon the ancient powers sleeping beneath the world. To his shock, and ultimately his doom, the creature that emerged was more terrible than any nightmare he could have imagined.",
+					"Ragnaros the Firelord, immortal lord of all fire elementals, had been banished by the Titans when the world was young. Now, freed by Thaurissan's call, Ragnaros erupted into being once again. Ragnaros' apocalyptic rebirth into Azeroth shattered the Redridge Mountains and created a raging volcano at the center of the devastation. ",
+					"The volcano, known as Blackrock Mountain, was bordered by the Searing Gorge to the north and the Burning Steppes to the south. Though Thaurissan was killed by the forces he had unleashed, his surviving brethren were ultimately enslaved by Ragnaros and his elementals. They remain within the depths of Blackrock to this day. ",
+					"Witnessing the horrific devastation and the fires spreading across the southern mountains, King Madoran and King Khardros halted their armies and hastily turned back towards their kingdoms, unwilling to face the awesome wrath of Ragnaros. ",
+					"The Bronzebeards returned to Ironforge and rebuilt their glorious city. The Wildhammers also returned home to Grim Batol. However, the death of the Modgud had left an evil stain on the mountain fortress, and the Wildhammers found it uninhabitable.",
+					" They were bitter in their hearts over the loss of their beloved home. King Bronzebeard offered the Wildhammers a place to live within the borders of Ironforge, but the Wildhammers steadfastly refused. Khardros took his people north towards the lands of Lordaeron. Settling within the lush forests of the Hinterlands, the Wildhammers crafted the city of Aerie Peak, where the Wildhammers grew closer to nature and even bonded with the mighty gryphons of the area.",
+					"Seeking to retain relations and trade with their cousins, the dwarves of Ironforge constructed two massive arches, the Thandol Span, to bridge the gap between Khaz Modan and Lordaeron. Bolstered by mutual trade, the two kingdoms prospered. After the deaths of Madoran and Khardros, their sons jointly commissioned two great statues in honor of their fathers. ",
+					"The two statues would stand guard over the pass into the southlands, which had become volcanic in the wake of Ragnaros' scorching presence. They served as both a warning to all who would attack the dwarven kingdoms, and as a reminder of what price the Dark Irons paid for their crimes. ",
+					"The two kingdoms retained close ties for some years, but the Wildhammers were much changed by the horrors they witnessed at Grim Batol. They took to living above ground on the slopes of Aerie Peak, instead of carving a vast kingdom within the mountain. The ideological differences between the two remaining dwarven clans eventually led to their parting of ways. ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-145294"] = {
+			["base"] = {
+				["title"] = "The Last Guardian",
+				["text"] = {
+					"The Guardian Aegwynn grew powerful over the years and used the Tirisfal energies to greatly extend her life. Foolishly believing that she had defeated Sargeras for good, she continued to safeguard the world from the demon king's minions for nearly nine hundred years. However, the Council of Tirisfal finally decreed that her stewardship had come to an end. ",
+					"The Council ordered Aegwynn to return to Dalaran so that they could choose a new successor for the Guardian power. Yet Aegwynn, ever distrustful of the Council, decided to choose a successor on her own.",
+					"The proud Aegwynn planned to give birth to a son whom she would divest her power to. She had no intention of allowing the Order of Tirisfal to manipulate her successor as they had tried to manipulate her. Traveling to the southern nation of Azeroth, Aegwynn found the perfect man to father her son: a skilled human magician known as Nielas Aran. ",
+					"Aran was the court conjuror and advisor for Azeroth's king. Aegwynn seduced the magician and conceived a son by him. Nielas' natural affinity for magic would run deep within the unborn child and define the tragic steps the child would later take. The power of Tirisfal was also implanted in the child, yet it wasn't to awaken until he reached physical maturity.",
+					'Time passed, and Aegwynn gave birth to her son in a secluded grove. Naming the boy Medivh, which means "keeper of secrets" in the high elven tongue, Aegwynn believed that the boy would mature to become the next Guardian. Unfortunately the malignant spirit of Sargeras, which had been hiding inside her, had possessed the defenseless child while it was still in her womb. Aegwynn had no idea that the world\'s newest Guardian was already possessed by its greatest nemesis.',
+					"Certain that her baby was healthy and sound, Aegwynn delivered young Medivh to the court of Azeroth and left him there to be raised by his mortal father and his people. She then wandered into the wilderness and prepared to pass into whatever afterlife awaited her. Medivh grew to become a strong boy and had no idea of the potential power of his Tirisfalin birthright.",
+					"Sargeras bided his time until the youth's power manifested itself. By the time Medivh had reached his teenage years, he had become very popular in Azeroth for his magical prowess and often went off on adventures with his two friends: Llane, the prince of Azeroth, and Anduin Lothar, one of the last descendents of the Arathi bloodline. The three boys constantly caused mischief around the kingdom, but they were well liked by the general citizenry.",
+					"When Medivh reached the age of fourteen, the cosmic power inside him awakened and clashed with the pervasive spirit of Sargeras that lurked within his soul. Medivh fell into a catatonic state which lasted for many years. \r\n",
+					"When he awakened from his coma, he found that he had grown to adulthood, and his friends Llane and Anduin had become the regents of Azeroth. Though he wished to use his incredible newfound powers to protect the land he called home, the dark spirit of Sargeras twisted his thoughts and emotions towards an insidious end. ",
+					"Sargeras reveled within the darkening heart of Medivh, for he knew that his plans for the second invasion of the world were nearing completion, and that the world's last Guardian would bring them all to fruition. ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-145307"] = {
+			["base"] = {
+				["title"] = "The Betrayer Ascendant",
+				["text"] = {
+					"During the Legion's invasion of Ashenvale, Illidan was released from his barrow prison after ten thousand years of captivity. Though he sought to appease his comrades, he soon reverted to true form and consumed the energies of a powerful warlock artifact known as the Skull of Gul'dan. ",
+					"By doing so, Illidan developed demonic features and vastly magnified power. He also gained some of Gul'dan's old memories - especially those of the Tomb of Sargeras, the island dungeon rumored to hold the remains of the Dark Titan, Sargeras.",
+					"Bristling with power and free to roam the world once more, Illidan set out to find his own place in the great scheme of things. However, Kil'jaeden confronted Illidan and made him an offer he could not refuse. Kil'jaeden was angered by Archimonde's defeat at Mount Hyjal, but he had greater concerns than vengeance. ",
+					"Sensing that his creation, the Lich King, was growing too powerful to control, Kil'jaeden ordered Illidan to destroy Ner'zhul and put an end to the undead Scourge once and for all. In exchange, Illidan would receive untold power and a true place amongst the remaining lords of the Burning Legion.",
+					"Illidan agreed and immediately set out to destroy the Frozen Throne, the icy crystal cask in which the Lich King's spirit resided. Illidan knew that he would need a mighty artifact to destroy the Frozen Throne. Using the knowledge he had gained from Gul'dan's memories, Illidan decided to seek out the Tomb of Sargeras and claim the Dark Titan's remains. ",
+					"He called in some old Highborne debts and lured the serpentine naga from their dark undersea lairs. Led by the cunning witch Lady Vashj the naga helped Illidan reach the Broken Isles, where Sargeras' Tomb was rumored to be located.",
+					"As Illidan set out with the naga, Warden Maiev Shadowsong began to hunt him. Maiev had been Illidan's jailor for ten thousand years and relished the prospect of recapturing him. However, Illidan outsmarted Maiev and her Watchers and succeeded in claiming the Eye of Sargeras despite their efforts. With the powerful Eye in his possession, Illidan traveled to the former wizard-city of Dalaran.",
+					"Strengthened by the city's ley power lines, Illidan used the Eye to cast a destructive spell against the Lich King's citadel of Icecrown in distant Northrend. Illidan's attack shattered the Lich King's defenses and ruptured the very roof of the world. At the final moment, Illidan's destructive spell was stopped when his brother Malfurion and the Priestess Tyrande arrived to aid Maiev.",
+					"Knowing that Kil'jaeden would not be pleased with his failure to destroy the Frozen Throne, Illidan fled to the barren dimension known as Outland: the last remnants of Draenor, the orcs' former homeworld. There he planned to evade Kil'jaeden's wrath and plan his next moves.",
+					"After they succeeded in stopping Illidan, Malfurion and Tyrande returned home to Ashenvale Forest to watch over their people. Maiev, however, would not quit so easily, and followed Illidan to Outland, determined to bring him to justice.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-145312"] = {
+			["base"] = {
+				["title"] = "The Twin Empires",
+				["text"] = {
+					"About 16,000 years ago (long before the night elves foolishly called down the wrath of the Burning Legion), trolls lorded over much of Kalimdor (then a single continent). There were twin troll empires -- the Gurubashi Empire of the southeastern jungles -- and the Amani Empire of the middle forestlands.",
+					"There were smaller tribes that lived far to the north (in the region now known as Northrend). These tribes founded a small nation known as Gundrak, but never achieved the size or prosperity of the southern empires.",
+					"The Gurubashi and Amani empires had little love for one another, but rarely warred against each other. At the time, their greatest common enemy was a third empire -- the civilization of Azj'Aqir. The aqir were intelligent insectoids who ruled the lands of the far west. These clever insectoids were greatly expansionistic and incredibly evil. The aqir were obsessed with eradicating all non-insect life from the fields of Kalimdor. ",
+					"The trolls fought them for many thousands of years, but never succeeded in winning a true victory over the aqir. Eventually, due to the troll's persistence, the aqiri kingdom split in half as its citizens fled to separate colonies in the far northern and southern regions of the continent. ",
+					"Two aqiri city-states emerged -- Azjol-Nerub in the northern wastes, and Ahn'Qiraj in the southern desert. Though the trolls suspected that there were other aqiri colonies beneath Kalimdor, their existence was never verified.",
+					"With the insectoids driven into exile, the twin troll empires returned to business as usual. Despite their great victory, neither civilization expanded much farther than their original boundaries. However, ancient texts speak of a small faction of trolls that broke off from the Amani Empire and founded their own colony in the heart of the dark continent. ",
+					"There, these brave pioneers discovered the cosmic Well of Eternity which transformed them into beings of immense power. Some legends suggest that these adventurous trolls were the first night elves, though this theory has never been proven.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-145278"] = {
+			["base"] = {
+				["title"] = "Beyond the Dark Portal",
+				["text"] = {
+					"Only a few months after Nethergarde's completion, the energies of the dark portal coalesced and opened up a new gateway to Draenor. The remaining orc clans, under the leadership of the elder shaman, Ner'zhul, charged forth into Azeroth once again. Intent on stealing a number of magical artifacts that would increase Ner'zhul's power, the orcs planned to open up new portals in Draenor that would allow them to escape their doomed red world forever.",
+					"Convinced that Ner'zhul was planning a new offensive against the Alliance, King Terenas of Lordaeron sent his armies into Draenor to end the orcish threat once and for all. Led by Khadgar and General Turalyon, the Alliance forces clashed with the orcs across the burning landscape. Even with the aid of the elven Ranger Alleria, the dwarf Kurdran and the veteran soldier Danath, Khadgar was unable to prevent Ner'zhul from opening his portals to other worlds.",
+					"The tremendous magical storms caused by the portals' converging energies began to tear the ravaged world apart. Ner'zhul, followed only by his most trusted servants, managed to escape through one of the portals as Khadgar fought desperately to return his comrades to Azeroth. Realizing that they would be trapped on the dying world, Khadgar and his companions selflessly decided to destroy the dark portal so that Azeroth would not be harmed by Draenor's violent destruction.",
+					"By all accounts, the heroes were successful in destroying the portal and saving Azeroth - but whether or not they escaped the death throes of Draenor remains to be seen.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-145309"] = {
+			["base"] = {
+				["title"] = "Civil War in the Plaguelands",
+				["text"] = {
+					"Ner'zhul, the Lich King, knew that his time was short. Imprisoned within the Frozen Throne, he suspected that Kil'jaeden would send his agents to destroy him. The damage caused by Illidan's spell had ruptured the Frozen Throne; thus, the Lich King was losing his power daily. Desperate to save himself, he called his greatest mortal servant to his side: the death knight Prince Arthas.",
+					"Though his powers were drained by the Lich King's weakness, Arthas had been involved in a civil war in Lordaeron. Half of the standing undead forces, led by the banshee Sylvanas Windrunner, staged a coup for control over the undead empire. Arthas, called by the Lich King, was forced to leave the Scourge in the hands of his lieutenant, Kel'Thuzad, as the war escalated throughout the Plaguelands.",
+					"Ultimately, Sylvanas and her rebel undead (known as the Forsaken) claimed the ruined capital city of Lordaeron as their own. Constructing their own bastion beneath the wrecked city, the Forsaken vowed to defeat the Scourge and drive Kel'Thuzad and his minions from the land.",
+					"Weakened, but determined to save his master, Arthas reached Northrend only to find Illidan's naga and blood elves waiting for him. He and his nerubian allies raced against Illidan's forces to reach the Icecrown Glacier and defend the Frozen Throne.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-210417"] = {
+			["base"] = {
+				["title"] = "Memo from Apothecary Hummel",
+				["text"] = {
+					'Reminder to all employees: PROPERLY dispose of these memos once they have been read. \r\n\r\nOur new formula is nearly complete -- an aroma so powerful as to be lethal on a single breath! Once Frye and Baxter stop their dawdling and get themselves together, nothing will stop us from releasing our fragrance on their gaudy gala! If we can\'t have them as customers, no one can!\r\n\r\nThey\'ll rue the day they rejected the Crown Chemical Company. "Love comes from the heart"--bah! Everyone knows this whole charade is simply a marketing ploy taking advantage of the youths and their disposable incomes!',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["Item-145311"] = {
+			["base"] = {
+				["title"] = "Old Hatreds - The Colonization of Kalimdor",
+				["text"] = {
+					"Though victory was theirs, the mortal races found themselves in a world shattered by war. The Scourge and the Burning Legion had all but destroyed the civilizations of Lordaeron, and had almost finished the job in Kalimdor. There were forests to heal, grudges to bury, and homelands to settle. The war had wounded each race deeply, but they had selflessly banded together to attempt a new beginning, starting with the uneasy truce between the Alliance and Horde.",
+					"Thrall led the orcs to the continent of Kalimdor, where they founded a new homeland with the help of their tauren brethren. Naming their new land Durotar after Thrall's murdered father, the orcs settled down to rebuild their once-glorious society.",
+					"Now that the demon curse was ended, the Horde changed from a warlike juggernaut into more of a loose coalition, dedicated to survival and prosperity rather than conquest. Aided by the noble tauren and the cunning trolls of the Darkspear tribe, Thrall and his orcs looked forward to a new era of peace in their own land.",
+					"The remaining Alliance forces under Jaina Proudmoore settled in southern Kalimdor. Off the eastern coast of Dustwallow Marsh, they built the rugged port city of Theramore. There, the humans and their dwarven allies worked to survive in a land that would always be hostile to them. Though the defenders of Durotar and Theramore kept the tentative truce with one another, the fragile colonial serenity was not meant to last.",
+					"The peace between the orcs and humans was shattered by the arrival of a massive Alliance fleet in Kalimdor. The mighty fleet, under the command of Grand Admiral Daelin Proudmoore (Jaina's father), had left Lordaeron before Arthas had destroyed the kingdom. Having sailed for many grueling months, Admiral Proudmoore was searching for any Alliance survivors he could find.",
+					"Proudmoore's armada posed a serious threat to the stability of the region. As a renowned hero of the Second War, Jaina's father was a staunch enemy of the Horde, and he was determined to destroy Durotar before the orcs could gain a foothold in the land.",
+					"The Grand Admiral forced Jaina to make a terrible decision: support him in battle against the orcs and betray her newfound allies, or fight her own father to maintain the fragile peace that the Alliance and the Horde had finally attained. After much soul-searching, Jaina chose the latter and helped Thrall defeat her crazed father. ",
+					"Unfortunately Admiral Proudmoore died in battle before Jaina could reconcile with him or prove that orcs were no longer bloodthirsty monsters. For her loyalty, the orcs allowed Jaina's forces to return home safely to Theramore.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-145276"] = {
+			["base"] = {
+				["title"] = "War of the Spider",
+				["text"] = {
+					"While Thrall was liberating his brethren in Lordaeron, Ner'zhul continued to build up his power base in Northrend. A great citadel was erected above the Icecrown Glacier and manned by the growing legions of the dead. Yet as the Lich King extended his influence over the land, one shadowy empire stood against his power. ",
+					"The ancient subterranean kingdom of Azjol-Nerub, which had been founded by a race of sinister humanoid spiders, sent their elite warrior-guard to attack Icecrown and end the Lich King's mad bid for dominance. Much to his frustration, Ner'zhul found that the evil nerubians were immune not only to the plague, but to his telepathic domination as well.",
+					"The nerubian spider-lords commanded vast forces and had an underground network that stretched nearly half the breadth of Northrend. Their hit-and-run tactics on the Lich King's strongholds stymied his efforts to root them out time after time. Ultimately Ner'zhul's war against the nerubians was won by attrition. With the aid of the sinister dreadlords and innumerable undead warriors, the Lich King invaded Azjol-Nerub and brought its subterranean temples crashing down upon the spider lords' heads.",
+					"Though the nerubians were immune to his plague, Ner'zhul's growing necromantic powers allowed him to raise the spider-warriors' corpses and bend them to his will. As a testament to their tenacity and fearlessness, Ner'zhul adopted the nerubians' distinctive architectural style for his own fortresses and structures. ",
+					"Left to rule his kingdom unopposed, the Lich King began preparing for his true mission in the world. Reaching out into the human lands with his vast consciousness, the Lich King called out to any dark soul that would listen.... ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-145288"] = {
+			["base"] = {
+				["title"] = "The Founding of Quel'Thalas",
+				["text"] = {
+					'The high elves, led by Dath\'Remar, left Kalimdor behind them and challenged the storms of the Maelstrom. Their fleets wandered the wreckage of the world for many long years, and they discovered mysteries and lost kingdoms along their sojourn. Dath\'Remar, who had taken the name Sunstrider (or "he who walks the day"), sought out places of considerable ley power upon which to build a new homeland for his people.',
+					"His fleet finally landed on the beaches of the kingdom men would later call Lordaeron. Forging inland, the high elves founded a settlement within the tranquil Tirisfal Glades. After a few years, many of them began to go mad. It was theorized that something evil slept beneath that particular part of the world, but the rumors were never proven to be true. The high elves packed up their encampment and moved northward towards another land rich with ley energies.",
+					"As the high elves crossed the rugged, mountainous lands of Lordaeron, their journey became more perilous. Since they were effectively cut off from the life-giving energies of the Well of Eternity, many of them fell ill from the frigid climate or died from starvation. The most disconcerting change, however, was the fact that they were no longer immortal or immune to the elements. ",
+					"They also shrank somewhat in height, and their skin lost its characteristic violet hue. Despite their hardships, they encountered many wondrous creatures that had never been seen in Kalimdor. They also found tribes of primitive humans who hunted throughout the ancient forestlands. However, the direst threat they encountered were the voracious and cunning forest trolls of Zul'Aman.",
+					"These moss-skinned trolls could regenerate lost limbs and heal grievous physical injuries, but they proved to be a barbaric, evil race. The Amani empire stretched across most of northern Lordaeron, and the trolls fought hard to keep unwanted strangers from their borders. The elves developed a deep loathing for the vicious trolls and killed them on sight whenever they were encountered.",
+					"After many long years, the high elves finally found a land which was reminiscent of Kalimdor. Deep within the northern forests of the continent, they founded the kingdom of Quel'Thalas and vowed to create a mighty empire which would dwarf that of their Kaldorei cousins. Unfortunately they soon learned that Quel'Thalas was founded upon an ancient troll city that the trolls still held to be sacred. Almost immediately, the trolls began to attack the elven settlements en masse. ",
+					"The stubborn elves, unwilling to give up their new land, utilized the magics which they had gleaned from the Well of Eternity and kept the savage trolls at bay. Under Dath'Remar's leadership, they were able to defeat the Amani warbands that outnumbered them ten to one. Some elves, wary of the Kaldorei's ancient warnings, felt that their use of magic might possibly draw the attention of the banished Burning Legion. ",
+					"Therefore, they decided to mask their lands within a protective barrier which would still allow them to work their enchantments. They constructed a series of monolithic Runestones at various points around Quel'Thalas which marked the boundaries of the magic barrier. The Runestones not only masked the elves' magic from extra-dimensional threats, but helped to frighten away the superstitious troll warbands as well.",
+					"As time wore on, Quel'Thalas became a shining monument to the high elves' efforts and magical prowess. Its beauteous palaces were crafted in the same architectural style as the ancient halls of Kalimdor, yet they were interwoven with the natural topography of the land. Quel'Thalas had become the shining jewel that the elves had longed to create. ",
+					"The Convocation of Silvermoon was founded as the ruling power over Quel'Thalas, though the Sunstrider Dynasty maintained a modicum of political power. Comprised of seven of the greatest high elf lords, the Convocation worked to secure the safety of the elven lands and people. Surrounded by their protective barrier, the high elves remained unmoved by the old warnings of the Kaldorei and continued to use magic flagrantly in almost all aspects of their lives. ",
+					"For nearly four thousand years the high elves lived peacefully within the secluded safety of their kingdom. Nevertheless, the vindictive trolls were not so easily defeated. They plotted and schemed in the depths of the forests and waited for the numbers of their warbands to grow. Finally, a mighty troll army charged out from the shadowy forests and once again laid siege to the shining spires of Quel'Thalas. ",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-145287"] = {
+			["base"] = {
+				["title"] = "The Sentinels and the Long Vigil",
+				["text"] = {
+					"With the departure of their wayward cousins, the night elves turned their attention back to the safekeeping of their enchanted homeland. The druids, sensing that their time of hibernation was drawing near, prepared to sleep and leave their loved ones and families behind. ",
+					"Tyrande, who had become the High Priestess of Elune, asked her love, Malfurion, not to leave her for Ysera's Emerald Dream. But Malfurion, honor bound to enter the changing Dreamways, bid the priestess farewell and swore that they would never be apart so long as they held true to their love. ",
+					"Left alone to protect Kalimdor from the dangers of the new world, Tyrande assembled a powerful fighting force from amongst her night elf sisters. The fearless, highly trained warrior women who pledged themselves to Kalimdor's defense became known as the Sentinels. Though they preferred to patrol the shadowy forests of Ashenvale on their own, they had many allies upon which they could call in times of urgency. ",
+					"The demigod Cenarius remained nearby in the Moonglades of Mount Hyjal. His sons, known as the Keepers of the Grove, kept close watch on the night elves and regularly helped the Sentinels maintain peace in the land. Even Cenarius' shy daughters, the dryads, appeared in the open with increasing frequency.",
+					"The task of policing Ashenvale kept Tyrande busy, but without Malfurion at her side, she knew little joy. As the long centuries passed while the druids slept, her fears of a second demonic invasion grew. She could not shake the unnerving feeling that the Burning Legion might still be out there, beyond the Great Dark of the sky, plotting its revenge upon the night elves and the world of Azeroth.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-145301"] = {
+			["base"] = {
+				["title"] = "Lethargy of the Orcs",
+				["text"] = {
+					"Months passed, and more orc prisoners were rounded up and placed within the internment camps. As the camps began to overflow, the Alliance was forced to construct new camps in the plains south of the Alterac Mountains. To properly maintain and supply the growing number of camps, King Terenas levied a new tax on the Alliance nations. ",
+					"This tax, along with increased political tensions over border disputes, created widespread unrest. It seemed that the fragile pact that had forged the human nations together in their darkest hour would break at any given moment.",
+					"Amidst the political turmoil, many of the camp wardens began to notice an unsettling change come over their orc captives. The orcs' efforts to escape from the camps or even fight amongst themselves had greatly decreased in frequency over time. The orcs were becoming increasingly aloof and lethargic.",
+					" Though it was difficult to believe, the orcs - once held as the most aggressive race ever seen on Azeroth - had completely lost their will to fight. The strange lethargy confounded the Alliance leaders and continued to take its toll on the rapidly weakening orcs. ",
+					"Some speculated that some strange disease, contractible only by orcs, brought about the baffling lethargy. But Archmage Antonidas of Dalaran posed a different hypothesis. Researching what little he could find of orcish history, Antonidas learned that the orcs had been under the crippling influence of demonic power for generations.",
+					" He speculated that the orcs had been corrupted by these powers even before their first invasion of Azeroth. Clearly, demons had spiked the orcs' blood, and in turn the brutes had been granted unnaturally heightened strength, endurance, and aggression.",
+					"Antonidas theorized that the orcs' communal lethargy was not actually a disease, but a consequence of racial withdrawal from the volatile warlock magics that had made them fearsome, bloodlusted warriors. ",
+					"Though the symptoms were clear, Antonidas was unable to find a cure for the orcs' present condition. Then too, many of his fellow mages, as well as a few notable Alliance leaders, argued that finding a cure for the orcs would be an imprudent venture. Left to ponder the orcs' mysterious condition, Antonidas' conclusion was that the orcs' cure would have to be a spiritual one.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-236423"] = {
+			["base"] = {
+				["title"] = "WARNING",
+				["text"] = {
+					"This area has been flagged as too dangerous for casual explorers. \r\n\r\nProceed with extreme caution. \r\n\r\n- H.J.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1478] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["Item-145314"] = {
+			["base"] = {
+				["title"] = "Wrath of Soulflayer",
+				["text"] = {
+					"The long centuries following the Great Sundering of the world were difficult ones for the troll race. Famine and terror were commonplace within the broken kingdoms. The Gurubashi trolls, driven to desperate ends, sought aid from ancient, mystical forces. Though both of the troll kingdoms shared a central belief in a great pantheon of primitive gods, the Gurubashi fell under the sway of the darkest one.",
+					"Hakkar the Soulflayer, a vile, bloodthirsty spirit, heard the trolls' call and decided to aid them. Hakkar gave his secrets of blood to the Gurubashi and helped them extend their civilization across most of Stranglethorn Vale and certain islands of the South Seas. Though he brought them great power, Hakkar wanted more and more for his efforts.",
+					"The bloodthirsty god demanded souls be sacrificed to him daily. He dreamed of gaining access to the physical world so he could devour the blood of all mortal creatures. In time the Gurubashi realized what kind of creature they had courted with -- and turned against him. The strongest tribes rose up against Hakkar and his loyal priests -- the Atal'ai.",
+					"The terrible war that ensued between Hakkar's followers and the rest of the Gurubashi tribes is spoken of only in whispers. The budding empire was shattered by the magic unleashed between the angry god and his rebel children. Just as the battle seemed most hopeless, the trolls succeeded in destroying Hakkar's avatar and banishing him from the world. ",
+					"Even his Atal'ai priests were eventually driven from the capital of Zul'Gurub and forced to survive in the uncharted swamplands to the north. Within those shadowy fens they built a great temple to their fallen god -- Atal'Hakkar -- where they could continue to do their master's work...",
+					"The rest of the Gurubashi tribes went their separate ways after the great civil war had left their lands in ruins. The Skullsplitter, Bloodscalp and Darkspear tribes set off to claim their own lands within the vast jungles of Stranglethorn. Though a fragile peace had settled over the broken empire, some spoke of a prophecy that Hakkar would one day be reborn into the world -- and on that day -- he would consume it whole.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-44468"] = {
+			["base"] = {
+				["title"] = "Water Soaked Letter",
+				["text"] = {
+					"Years and years I have been locked away in this magical prison.  Tonight, I make my escape.  I have everything I need to make my break.\r\n\r\n<Water smeared ink has ruined this section of the letter>\r\n\r\nWhy have I been here so long?  What did I do to deserve this?  Days and days of these thoughts running through my head.  What could someone do to deserve this?\r\n\r\n<Water smeared ink has ruined this section of the letter>\r\n\r\nPerhaps I will find out in another life.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-145299"] = {
+			["base"] = {
+				["title"] = "The Invasion of Draenor",
+				["text"] = {
+					"As the fires of the Second War died down, the Alliance took aggressive steps to contain the orcish threat. A number of large internment camps, meant to house the captive orcs, were constructed in southern Lordaeron. Guarded by both the paladins and the veteran soldiers of the Alliance, the camps proved to be a great success. ",
+					"Though the captive orcs were tense and anxious to do battle once more, the various camp wardens, based at the old prison-fortress of Durnholde, kept the peace and maintained a strong semblance of order.",
+					"However, on the hellish world of Draenor, a new orcish army prepared to strike at the unsuspecting Alliance. Ner'zhul, the former mentor of Gul'dan, rallied the remaining orc clans under his dark banner. Aided by the Shadowmoon clan, the old shaman planned to open a number of portals on Draenor that would lead the Horde to new, unspoiled worlds. ",
+					"To power his new portals, he needed a number of enchanted artifacts from Azeroth. To procure them, Ner'zhul reopened the Dark Portal and sent his ravenous servants charging through it.",
+					"The new Horde, led by veteran chieftains such as Grom Hellscream and Kilrogg Deadeye (of the Bleeding Hollow clan), surprised the Alliance defense forces and rampaged through the countryside. Under Ner'zhul's surgical command, the orcs quickly rounded up the artifacts that they needed and fled back to the safety of Draenor.",
+					"King Terenas of Lordaeron, convinced that the orcs were preparing a new invasion of Azeroth, assembled his most trusted lieutenants. He ordered General Turalyon and the archmage, Khadgar, to lead an expedition through the Dark Portal to put an end to the orcish threat once and for all. Turalyon and Khadgar's forces marched into Draenor and repeatedly clashed with Ner'zhul's clans upon the ravaged Hellfire Peninsula. ",
+					"Even with the aid of the high elf Alleria Windrunner, the dwarf Kurdran Wildhammer, and the veteran soldier Danath Trollbane, Khadgar was unable to prevent Ner'zhul from opening his portals to other worlds.",
+					"Ner'zhul finally opened his portals to other worlds, but he did not foresee the terrible price he would pay. The portals' tremendous energies began to tear the very fabric of Draenor apart. As Turalyon's forces fought desperately to return home to Azeroth, the world of Draenor began to buckle in upon itself. Grom Hellscream and Kilrogg Deadeye, realizing that Ner'zhul's mad plans would doom their entire race, rallied the remaining orcs and escaped back to the relative safety of Azeroth.",
+					"On Draenor, Turalyon and Khadgar agreed to make the ultimate sacrifice by destroying the Dark Portal from their side. Though it would cost their lives, and the lives of their companions, they knew that it was the only way to ensure Azeroth's survival. Even as Hellscream and Deadeye hacked their way through the human ranks in a desperate bid for freedom, the Dark Portal exploded behind them. For them, and the remaining orcs on Azeroth, there would be no going back.",
+					"Ner'zhul and his loyal Shadowmoon clan passed through the largest of the newly created portals, as massive volcanic eruptions began to break Draenor's continents apart. The burning seas rose up and roiled the shattered landscape as the tortured world was finally consumed in a massive, apocalyptic explosion.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-145291"] = {
+			["base"] = {
+				["title"] = "Ironforge - the Awakening of the Dwarves",
+				["text"] = {
+					"In the ancient times, after the Titans departed Azeroth, their children, known as the earthen, continued to shape and guard the deep recesses of the world. The earthen were largely unconcerned with the affairs of the surface-dwelling races and longed only to plumb the dark depths of the earth. ",
+					"When the world was sundered by the Well of Eternity's implosion, the earthen were deeply affected. Reeling with the pain of the earth itself, the earthen lost much of their identity and sealed themselves within the stone chambers where they were first created. Uldaman, Uldum, Ulduar... these were the names of the ancient Titan cities where the earthen first took shape and form. Buried deep beneath the world, the earthen rested in peace for nearly eight thousand years. ",
+					"Though it is unclear what awakened them, the earthen sealed within Uldaman eventually arose from their self-imposed slumber. These earthen found that they had changed significantly during their hibernation. Their rocky hides had softened and become smooth skin, and their powers over stone and earth had waned. They had become mortal creatures.",
+					"Calling themselves dwarves, the last of the earthen left the halls of Uldaman and ventured out into the waking world. Still lulled by the safety and wonders of the deep places, they founded a vast kingdom under the highest mountain in the land. ",
+					'They named their land Khaz Modan, or "Mountain of Khaz", in honor of the Titan shaper, Khaz\'goroth. Constructing an altar for their Titan father, the dwarves crafted a mighty forge within the heart of the mountain. Thus, the city that grew around the forge would be called Ironforge ever after.',
+					"The dwarves, by nature fascinated with shaping gems and stone, set out to mine the surrounding mountains for riches and precious minerals. Content with their labors under the world, the dwarves remained isolated from the affairs of their surface-dwelling neighbors.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-145281"] = {
+			["base"] = {
+				["title"] = "The Old Gods and the Ordering of Azeroth",
+				["text"] = {
+					"Unaware of Sargeras' mission to undo their countless works, the Titans continued to move from world to world, shaping and ordering each planet as they saw fit. Along their journey they happened upon a small world that its inhabitants would later name Azeroth. ",
+					"As the Titans made their way across the primordial landscape, they encountered a number of hostile elemental beings. These elementals, who worshipped a race of unfathomably evil beings known only as the Old Gods, vowed to drive the Titans back and keep their world inviolate from the invaders' metallic touch. ",
+					"The Pantheon, disturbed by the Old Gods' penchant for evil, waged war upon the elementals and their dark masters. The Old Gods' armies were led by the most powerful elemental lieutenants: Ragnaros the Firelord, Therazane the Stonemother, Al'Akir the Windlord, and Neptulon the Tidehunter. ",
+					"Their chaotic forces raged across the face of the world and clashed with the colossal Titans. Though the elementals were powerful beyond mortal comprehension, their combined forces could not stop the mighty Titans. One by one, the elemental lords fell, and their forces dispersed. ",
+					"The Pantheon shattered the Old Gods' citadels and chained the five evil gods far beneath the surface of the world. Without the Old Gods' power to keep their raging spirits bound to the physical world, the elementals were banished to an abyssal plane, where they would contend with one another for all eternity. With the elementals' departure, nature calmed, and the world settled into a peaceful harmony. The Titans saw that the threat was contained and set to work.",
+					"The Titans empowered a number of races to help them fashion the world. To help them carve out the fathomless caverns beneath the earth, the Titans created the dwarf-like earthen from magical, living stone. To help them dredge out the seas and lift the land from the sea floor, the Titans created the immense but gentle sea giants. For many ages the Titans moved and shaped the earth, until at last there remained one perfect continent. ",
+					"At the continent's center, the Titans crafted a lake of scintillating energies. The lake, which they named the Well of Eternity, was to be the fount of life for the world. Its potent energies would nurture the bones of the world and empower life to take root in the land's rich soil. Over time, plants, trees, monsters, and creatures of every kind began to thrive on the primordial continent. ",
+					'As twilight fell on the final day of their labors, the Titans named the continent Kalimdor: "land of eternal starlight". ',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+
+		-- end of user submission #14
+
+		-- user submission #15
+
+		["Item-137204"] = {
+			["base"] = {
+				["title"] = "A Steamy Romance Novel: Hot and Misty",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<IMG src="Interface\\Pictures\\SteamyRomance04" width="301" height="354" texCoordRight="0.58984375" texCoordBottom="0.69140625"/>\r\n</BODY>\r\n</HTML>',
+					'Marcus galloped on his warhorse towards the remote building, bringing an almost imperceptible flush to one of the curvier guards as he passed.  He dismounted and handed his reins to the ever-present stablemaster, placing one hand on her shoulder before speaking.  "Kama, have you considered our last conversation?" Marcus asked, furrowing his eyebrows in mock seriousness.  \r\n\r\nKama rolled her eyes, her Pandaren markings exaggerating the movement.  "I doubt my life-mate would think much of it."\r\n\r\nMarcus let out a bellowing laugh, looking over his shoulder as he walked away, "I\'d still like to meet her one day!"',
+					'The Tavern in the Mists was unusually crowded, and he pushed his way through the crowd until he stood in the shadows of a dark corner.  An exotic voice purred his name, "Marcus, it is good to see you again."\r\n\r\nMarcus smiled and squinted as his eyes adjusted to the absence of light.  "Madam Goya, the pleasure is all mine."  \r\n\r\nShe dipped in a polite bow; Marcus felt a sudden warmth as he was reminded why the term bouncy was often used to describe the Pandaren.  He bowed in kind, catching Madam Goya\'s hand and kissing it gently, never shifting his gaze from the hulking bodyguard standing behind her, a single scar between his watchful eyes.',
+					'"So, Marcus, can I interest you in something... special?  I\'m afraid the usual cannot be offered today."  Marcus did not miss her emphasis on \'the usual\', nor the deep regret that laced her words.  Their eyes met once again and she squeezed his hand before letting go.\r\n \r\n"If that is your will, may I see what you have to offer?" Marcus asked.  \r\n\r\n"There are several magnificent pieces of armor, a tiny companion, and even an exotic mount," Madam Goya answered, her typical playfulness quickly returning.  She paused and held a hand to her chin, feigning thoughtfulness.  "But my most valuable treasures are located upstairs."  \r\n\r\nMarcus\'s eyebrows lifted comically and his eyes widened before his expression settled into gleeful acceptance.  "Until we meet again, then."  Her eyes fluttered and Marcus found himself walking up the stairs of the strange tavern.',
+					'Waiting in the room at the top were two beings of such beauty that he nearly stumbled on the final step.  One had long flowing hair the color of the Sunwell itself, and the other kept her ebon hair cropped short.  After several long moments of wordless, lust-filled glances, a realization struck him: he was looking into the face of the enemy!  He unsheathed his mighty sword, bathing the blood elves in its pulsating glow.\r\n \r\nThe elf with radiant hair spoke first, "Goodness, it looks like someone is ready for battle."  She placed her hand on the tip of his sword, lowering it with gentle pressure as she crossed in front of him, always keeping her head cocked in his direction.  "Do you believe in love at first sight?  Or should I walk by again...?"  \r\n\r\nMarcus leaned in close, carelessly pressing the hardened steel against her.  He whispered something quietly in her ear and pulled away, eagerly searching her face for a reaction.',
+					'"No.  No.  I won\'t do that... but my sister will!" the blonde giggled.  The dark-haired one silently raised a single eyebrow, nodding and shrugging her delicate shoulders at the same time.  With a subtle gesture, her body glowed with an intense inner fire, burning away what little clothing she wore.  As Marcus\'s muscular arms wrapped around her, she whispered something to him.  A symbol, unseen by Marcus, momentarily appeared above his head and surrounded him in a white glow.  \r\n"That... that feels amazing.  What did you do?" he asked.\r\n\r\n"Fortitude, my lord.  You will need it."  It was then that he noticed she was literally levitating off the ground, weightless in his arms.  His mind began to spin as countless scenarios played out in his head.  His strong hands began to...\r\n \r\n<The remaining pages are shrouded in mist.>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-137202"] = {
+			["base"] = {
+				["title"] = "A Steamy Romance Novel: Blue Moon",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<IMG src="Interface\\Pictures\\SteamyRomance01" width="301" height="354" texCoordRight="0.58984375" texCoordBottom="0.69140625"/>\r\n</BODY>\r\n</HTML>',
+					'Tail swooshing and hips swaying, the curvy figure walked purposefully across the lake toward the man resting by the shore; rising quickly as she approached, he appeared visibly happy to be in her presence.  Blue arms flowed over his shoulders as a smooth tail coiled seductively around his waist.  "Why must I travel so far to be meeting man like you?"  Her voice carried a strong, alluring accent.\r\n\r\nGrinning wildly, he gently pushed her away, openly staring as the light caught her features.\r\n\r\n"Up here!", she exclaimed in playful anger.\r\n\r\nWith a helpless shrug, he reached into his pack and pulled out a small pouch.  "My wonderful Soola, I\'ve brought you something."  Confidence wrapped his words like a steel blanket.',
+					'She plucked the tiny bag from his hands, excitedly pulling it open and revealing a citrine pendant.\r\n\r\n"Oh... Marcus, you shouldn\'t have."\r\n\r\nThe usual teasing was gone from his voice, "Every facet lights the sky, and my heart, with your beautiful reflection."\r\n\r\nSoola frowned.  "Uh... no. I meant you really shouldn\'t have.  I could craft something better by accident."\r\n\r\nFor the first time, possibly ever, Marcus looked hurt.  His shoulders slumped slightly, the cocky, ever-present grin missing from his handsome face.\r\n\r\nSoola opened her mouth to speak, smiling warmly; a glowing rune appeared above her eyes.  "I don\'t think I can mend your feelings, even with my Gift."',
+					'Despite the statement, her words seemed to do the trick.  Marcus smirked roguishly as he adjusted his leg plates, "Well you aren\'t the only gifted one."\r\n\r\nSilence penetrated the room with palpable force as the conversation shifted to the language shared by all races of Azeroth.\r\n\r\nMinutes became hours, until their passionate dialog was interrupted by lightning streaking from the cloudless sky, thunderously slamming into the lake\'s surface and bathing them in steam.\r\n\r\n"Is something wrong?", Marcus asked.\r\n\r\n"No my Marcus, you\'re just off to a great start..."\r\n\r\nThe remaining pages have been thoroughly destroyed by the elements.',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-137201"] = {
+			["base"] = {
+				["title"] = "A Steamy Romance Novel: Northern Exposure",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<IMG src="Interface\\Pictures\\SteamyRomance07" width="301" height="354" texCoordRight="0.58984375" texCoordBottom="0.69140625"/>\r\n</BODY>\r\n</HTML>',
+					'The tiny gnome peered over the railing into the secluded Dalaran courtyard.\r\n\r\n"The view from the balcony is amazing.  You have to come see!"\r\n\r\nArmor legplates creaked as Marcus walked over, taking in a deep breath as he absently scratched his scruffy chin.\r\n\r\n"The Hero\'s Welcome is no slouch.  And there\'s something in the room that might interest you."\r\n\r\nTavi bounded into the room, pausing only a moment before jumping onto the massive bed.  She turned to gaze at Marcus with her huge saucer-like eyes, narrowing them playfully and replacing her glowing smile with a diabolical grin.',
+					'"Interested in some more company?" she purred as her hands weaved through a complex summoning ritual, stopping only when she felt the warmth of a new presence behind her.\r\n\r\nAll color drained from Marcus\'s face as he struggled to protest.  "I... I don\'t think that\'s appropriate."\r\n\r\nConfused, Tavi turned to see what was wrong.  A hideous fel hound stood ready, drooling onto the floor as it stared intently at the half-armored paladin.\r\n\r\n"No!  No that\'s not what I meant." she stammered as she dispelled the hungry demon.  "I\'m sorry, that\'s not really my specialization...."',
+					'Marcus took both her hands in one of his as he reassured her, "It\'s fine.  What is your specialization?"\r\n\r\nHer head snapped up, eyes burning with renewed life as shadowy energy channeled through her hands into Marcus, dropping him to his knees in agony.\r\n\r\n"Affliction, actually."',
+					'Gritting his teeth, Marcus gestured as light flashed over him, restoring his strength.\r\n\r\nTavi stared anxiously as he rose to his full height, engulfing her in his shadow.  He thrust his hand forward, sending a wave of righteous force through her.  Eyes rolled back as she wavered for several seconds before regaining consciousness.\r\n\r\n"I\'ve recently taken the path of... retribution."\r\n\r\nThe mischievous smirk returned to her face, "Well then, this is going to be fun."\r\n\r\n<The remaining pages have a level 999 requirement to read.>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-355478"] = {
+			["base"] = {
+				["title"] = "Renathal's Notes",
+				["text"] = {
+					'In my ignorance, I attempted to use this medallion, MY medallion, in the first failed rebellion.\r\n\r\nThe medallions are powerful, and in the hands of a Harvester they can be used to warp the very fabric of Revendreth to one\'s will, if they have enough anima.\r\n\r\nBut they are also carriers of the Master\'s will. What they do, he knows. And so I lost my attempt to stop Denathrius the first time, my well thought out schemes lay bare for his examination and elimination at every step.\r\n\r\nThe Medallion of Dominion was taken from me the day I was flung into the Maw. \r\n\r\nIt was last seen being returned to the Master by the cursed hands of the Lord Chamberlain. The medallion had been used to crush the Accuser and take the Medallion of Pride for the would-be Harvester. \r\n\r\nDenathrius mentioned that it was promised to another. We must learn who this "other" is.',
+					"Arch-lich Kel'thuzad!\r\n\r\nDenathrius gave MY medallion to that insidious corpsemonger Kel'thuzad?! \r\n\r\nThe audacity. The arrogance! The bad taste!\r\n\r\nWe must recover it. As long as the medallion is in Kel'thuzad's hands that lich will be able to hold sway over countless venthyr if he learns its secrets. \r\n\r\nNo lich should hold dominion over anything not of Maldraxxus.",
+					"The Maw Walker recovered the medallion of Dominion from Kel'thuzad. Shame they did not finish off that interfering lich but we must trust to our Maldraxxi allies to accomplish that task.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["Item-137205"] = {
+			["base"] = {
+				["title"] = "A Steamy Romance Novel: Savage Passions",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<IMG src="Interface\\Pictures\\SteamyRomance02" width="301" height="354" texCoordRight="0.58984375" texCoordBottom="0.69140625"/>\r\n</BODY>\r\n</HTML>',
+					'A trail of dust followed the once-white stallion as he galloped through the garrison gates, stopping abruptly at the stables.  Raven, the stable master, rushed to the weary mount and rider.\r\n\r\n"Lord Marcus, let me help."  Raven\'s strong, tanned arm took the rider\'s hand in his own, pulling him off in a quick, smooth motion.  He did not immediately let go, staring in disbelief at the paladin\'s heavily stained armor.\r\n\r\nSeeing concern on the man\'s face, Marcus clasped his shoulder and smiled warmly. "Fear not old friend, only a little of it is my own."\r\n\r\nRaven hugged him fiercely.  "That is good to hear!"',
+					'"Yes, yes.  I\'m fine!  The journey was long, and often hard, but I have returned victorious!" Marcus exclaimed as he pulled a bulging sack from beneath his armor, placing it gingerly in Raven\'s rough, steady hands.\r\n\r\nThe inquisitive stable master cupped the bag, squeezing gently to discern the contents without unwrapping the package.\r\n\r\n"Don\'t be coy, you know what\'s in there.  But I have something even better for you." Marcus said with a knowing smile.',
+					'Raven closed his eyes.  He held out his hands and spoke calmly, "Give it to me, please."  \r\n\r\nHis arms flexed slightly as he felt something heavy, strangely warm, and smooth along its length.  "Oh, this is, hmm... familiar...  okay, yes, I know that part...  an enchanted sword!"  Raven released the glowing weapon from one hand, letting it swing in front of him.\r\n\r\nMarcus looked down and raised his eyebrows.  "I\'m glad you like it.  Certainly not the first you\'ve held?"',
+					'"Never one like this." Raven replied with a wink.\r\n\r\n"We need to work on that grip, it\'s too tight.  Perhaps you have time for some practice?" Marcus asked, peering into Raven\'s dark brown eyes.\r\n\r\nRaven grinned.  "I\'ll go tie up your horse..."\r\n\r\n<The remaining pages are not yet written.  It appears to be a work in progress.>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-192870"] = {
+			["base"] = {
+				["title"] = "The Archmage Antonidas - Part I",
+				["text"] = {
+					"Antonidas was but a mere boy when he became an apprentice to one of the Kirin Tor.  He was a tenacious learner, pouring over books in the magical libraries of Dalaran.  After only a few short years of studying under the sect, Antonidas had outclassed his peers and earned their admiration, as well as the respect of his elders.\r\n",
+					"At the age of 12, Antonidas' thesis, The Ramifications of Refining Reverse Time Travel Phenomena into Quantifiable Magical Practice earned him the Kirin Tor Sash of Supreme Acumen, the youngest ever to receive the award. Shortly thereafter the Ruling Council offered him official placement in the Kirin Tor Advanced Research and Illumination Sect, also the youngest to receive an official invitation.",
+					"As the mage grew older, he continued to learn and hone his abilities.  His natural talent for defensive magic and wisdom beyond his years made Antonidas an ideal candidate for a position on the Council of Six, which he eventually attained.  Antonidas proved not only wise and fair, but infinitely regimented in goal to become more knowledgeable. He quickly became one of the dominant voices of Dalaran.",
+					"Before the Second War, leaders of each of the Azerothian nations met in Lordaeron to discuss the threat of the orc invasion.  Archmage Antonidas attended the summit on behalf of the Council of Six, pledging loyalty to the Alliance on Dalaran's behalf. He also monitored the progress of the young but extremely talented mage Khadgar, who had served as Medivh's apprentice during the first war.  In the aftermath of the Second War, Antonidas promoted Khadgar to the rank of archmage and placed him in a position of authority over the mission to enter the Dark Portal and investigate Draenor.",
+					"After the Second War, Antonidas investigated the lethargy of the orcs.  The archmage published several theses on his research:\r\n\r\nThe Causality of War: A Comprehensive Study on Orc Lassitude.\r\n\r\nThe Contrast of Orc Tradition, Sociology, and Psychological Practices from Before and After the Second War.\r\n\r\nEmpirical Study on the Formulation and History of High Profile Fel Magics, and their Relation to the Orc Race.",
+					"The consensuses of many of these reports are largely inconclusive. Antonidas himself has said on occasion that finding a cure for the malaise of the orcs would be an almost unachievable venture. His formal conclusion was that the orcs' only path to a healthy lifestyle would be a spiritual one.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.6429694890975952,
+						0.533014178276062,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-137203"] = {
+			["base"] = {
+				["title"] = "A Steamy Romance Novel: Big Brass Bombs",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<IMG src="Interface\\Pictures\\SteamyRomance03" width="301" height="354" texCoordRight="0.58984375" texCoordBottom="0.69140625"/>\r\n</BODY>\r\n</HTML>',
+					'The tough little goblin walked purposefully into the engineering shop, raising her eyebrows at a few items as she approached the shopkeeper.\r\n \r\n"How\'s it going, Jack?"  Her voice seductively brushed his pointy ears with the rough texture of someone who inhaled too much motorcycle exhaust.  \r\n\r\nThe goblin called Jack looked up and grinned.  "Revi!  It\'s going much better since you just arrived."  Jack set his arclight spanner on the table.  "What can I do ya for?"',
+					'Holding her elbow in one hand, Revi tapped her chin lightly.  "I\'m not real sure.  Ya got any specials?"\r\n \r\n"Are you kidding?  I\'ve got the best deals anywhere!" Jack replied enthusiastically.  "Just got these in this morning, in all sorts of colors.  Small red rockets, got some in blue and green too."  Revi\'s disappointed look was not missed by the expert shopkeeper, and he quickly upped the ante.  There was a loud \'thud\' as Jack dropped something on the table, "I call it The Big One," he said.  "It\'s goblin only, very difficult to find."\r\n \r\n"Nice, very nice," Revi said, sounding unconvinced.  Her eyes wandered a bit.',
+					'"Okay, fine.  I can see you\'re a goblin of superb taste."  Jack looked around conspiratorially before carefully laying out a new item, buckling the table with an ominous creak.  "It\'s called..." Jack paused for dramatic effect, "The Bigger One!"\r\n \r\nRevi\'s eyes widened in surprise.  "Is that... is it... real?"  \r\n\r\nFeeling the advantage, Jack allowed himself to relax a bit.  Putting his hands behind his head and leaning back in his chair, he replied with lazily narrowed eyes, "It\'s 100% goblin parts, baby.  Natural resources."  \r\n\r\nAfter a moment of hesitation, Revi reached out and gingerly stroked the smooth yellow surface.  "I\'ll take two!"\r\n \r\n"Excellent!  You know, if you like that, you might be interested in some hardened adamantite tubes.  They can enhance the effect."  \r\n\r\nRevi nodded excitedly and looked behind Jack at something on the wall.  "What is that?"',
+					'Jack looked over his shoulder.  "Oh, those are for reviving dead people."  \r\n\r\nRevi was intrigued.  "Can they be used on someone while they\'re still alive?"  \r\n\r\nNever wanting to miss a sale, Jack responded without missing a beat, "Oh sure!  Tell you what.  You get all this stuff, and I\'ll throw in a pair of mayhem projection goggles for half price!"\r\n \r\nRevi pulled out a sack of coins that made Jack drool.  "Why not?  Motorcycle sales have been good this year."  \r\n\r\nAs Jack quickly tallied the total, he asked, "This must be a serious raid or somethin\'?"  \r\n\r\nRevi shrugged, "Nah, I got a blind date with a guy named Marcus tonight."',
+					'Jack nodded.  "What about that guy from the motor club you was datin\'?"\r\n \r\nThe leather-clad goblin scooped up her bag with one arm, and held up an outstretched hand.  "He never put a ring on it.  A girl\'s gotta have her priorities."  \r\n\r\nJack smiled and shook his head as he watched her walk out of the shop.\r\n \r\n<The remaining pages require a secret goblin decoder ring to read.>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-137200"] = {
+			["base"] = {
+				["title"] = "A Steamy Romance Novel: Forbidden Love",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<IMG src="Interface\\Pictures\\SteamyRomance06" width="301" height="354" texCoordRight="0.58984375" texCoordBottom="0.69140625"/>\r\n</BODY>\r\n</HTML>',
+					'Ah\'tusa crept silently through the massive underground tunnel, nervously looking over her shoulder in anticipation of the fast moving tram.  "Where is he..." she muttered angrily, stopping suddenly as something moved behind her.  Her eyes narrowed dangerously as her dagger slid from its sheath.\r\n\r\nA husky voice echoed in the hollow chamber, "I thought rogues liked to be behind their target."  She spun quickly, driving her blade into a shield of impenetrable force.  "And I thought paladins were supposed to be chaste." she replied with a confident smirk.',
+					'Leaning forward, she counted out loud until the invisible bubble dissipated with an audible pop.  "Twelve seconds?  I know you have abilities that last longer than that."\r\n\r\nBony fingers worked effortlessly beneath his armor, unlatching his breastplate and exposing him to the cold air.  "Don\'t worry my sweet Marcus, that\'s not a finishing move tonight... I\'m just getting started."  He wrapped his arms around what remained of her waist, forcing an excited giggle as he nibbled at her neck vertebrae.\r\n\r\n<The rest of the book has several sections that are apparently worn out from repeated readings.>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-194356"] = {
+			["base"] = {
+				["title"] = "Archavon's Log",
+				["text"] = {
+					"<It appears Archavon has been keeping a journal. It appears to be written in multiple languages. A tally has been kept on the cover. >\r\n\r\nHorde:   \r\n  Keep Defended: 0\r\n  Keep Captured: 0\r\n\r\nAlliance:\r\n  Keep Defended: 0\r\n  Keep Captured: 0\r\n\r\nDay 10\r\nThe Makers are gone.  I have been left to watch.\r\n                -ARCHAVON\r\n",
+					'Day 10500: \r\nThe halls are quiet.  Empty. \r\n\r\nI thought the Makers wanted me to watch the hall, but they never specifically said, "Archavon, watch the hall..." Maybe it\'s okay if I watch outside too?  It would probably be less boring outside.  It\'s decided - I am now responsible for watching the hall AND the outside.  I shall take on my new responsibility next month.\r\n                -ARCHAVON\r\n\r\nDay 20120:\r\nThe outside is much more open than the hall.  There are convenient cliffs and mountains bordering it.  I\'m now confident that the Makers meant for me to watch this too.  I hope they don\'t notice that I\'ve only been in the hall for the first decade.\r\n                -ARCHAVON\r\n',
+					'Day 1051213:\r\nI invented a new game today too, it\'s called "Kick the Revenant."  I made it from the front of the keep to the main road today.  Before next year, I\'m going to try to land it over the river.\r\n                -ARCHAVON\r\n\r\nDay 2145617:\r\nSome little green people came today.  I have added them to my watching responsibilities.\r\n                -ARCHAVON\r\n\r\nDay 2145657:\r\nThe little green people have built extra buildings here now.  More buildings seems good.  I think I will speak to them this week and thank them.\r\n                -ARCHAVON\r\n\r\nDay 2145666:\r\nI thanked one of the little green people today for the extra buildings.  He told me that he\'d be bringing more people for me to watch soon - lots of them.\r\n\r\nI\'m excited to have more things to watch.\r\n                -ARCHAVON\r\n',
+					"Day 2145866:\r\nThe little green people brought a lot of others, pointed them at each other, and then they all started fighting!\r\n\r\nI have trimmed my watching responsibilities back to the hall for safety, but I brought a lot of their baubles with me so that it can maybe be less boring this time.\r\n                -ARCHAVON\r\n\r\nDay 2146240:\r\nThings have gotten much worse.  I am not sure what the Makers want me to do.  I'm trying to stay in my hall, but the violent people come in after me several times a day.  They take my baubles.\r\n                -ARCHAVON\r\n\r\n ",
+					"Day 2147021:\r\nMy brothers are back!  It turns out they were sleeping in other closed off halls.\r\n\r\nI'm a little mad that they left me alone to do all the watching, but I shared my shinier baubles with them anyway because I'm tired of being alone and attacked all the time.\r\n                -ARCHAVON\r\n\r\nDay 2147060:\r\nThe violent little people have started attacking my brothers, which is sad.  They leave me alone mostly now though, which is not sad.\r\n\r\nI think they want the shiny baubles I gave away.  I feel guilty.\r\n                -ARCHAVON\r\n",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[123] = {
+						0.4944709539413452,
+						0.1319969892501831,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+
+		-- end of user submission #15
+
+
+		
+		["Item-237131"] = {
+			["base"] = {
+				["title"] = "X-Plo-Dar 64k ENHANCE Results",
+				["text"] = {
+					"That guy right there definitely did it.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-1208"] = {
+			["base"] = {
+				["title"] = "Maybell's Love Letter",
+				["text"] = {
+					"Tommy Joe -\r\n\r\nWith each passing hour, my heart withers from your absence.  Oh, if only our folks could see beyond the silly crimes they have done to each other, and know that the only true crime is hate.  Hate consumes, and I fear in these dimming times that hate will take hold of more than just our families.\r\n\r\nIf they realized this then we could, at long last, be together.  It is for that day I hope, and for that day I live.\r\n\r\nYour love,\r\nMaybell",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["GameObject-499605"] = {
+			["base"] = {
+				["title"] = "Rocket Drill Safety Manual",
+				["text"] = {
+					"Keep parts of all bodies inside the rocket drill during transit.\r\n\r\nSeatbelts may be provided at your destination.\r\n\r\nIf seats are unavailable, one may be purchased at the destination.\r\n\r\nThe rocket drills operate at unsafe noise levels.\r\n\r\nWarning sirens may be disabled to avoid startling drill operators.\r\n\r\nRocket drills move at high speeds and make sudden stops. \r\n\r\nUnplanned stops may be followed by unscheduled explosions. \r\n\r\nSome safety may occur.\r\n\r\nVoid where prohibited.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2214] = {
+						0.7292358875274658,
+						0.7316287755966187,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-183789"] = {
+			["base"] = {
+				["title"] = "Strange Object",
+				["text"] = {
+					"This strange object appears to be some sort of engineered device, though nothing like anything you've ever seen before.\r\n\r\nJudging by its appearance, you'd say that whatever it is, it's already been used.\r\n\r\nAnd judging by the layout of the corpses hereabouts, you'd have to guess that it was used to deadly effect, whatever it is.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[108] = {
+						0.4504870176315308,
+						0.2180322408676148,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 1,
+			},
+		},
+		["Item-114000"] = {
+			["base"] = {
+				["title"] = "Decoded Message 001-159",
+				["text"] = {
+					"Organic awareness of The War is growing too quickly.  Above-ground units possibly infected.  Seed plans for next-gen Blingtron remote to call on veteran units that can assess and destroy.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["GameObject-456934"] = {
+			["base"] = {
+				["title"] = "Slot Mining Leaderboard",
+				["text"] = {
+					"VENTURE CO. SLOT MINING LEADERBOARD\r\n(Calculations are 100% accurate!)\r\n\r\n1st Place: T. Bon Arra\r\n\r\n2nd Place: T. B. Fizz\r\n\r\n3rd Place: Tar Bin R. A. F. C.\r\n\r\n4th Place: $PLAYER_NAME$\r\n\r\n5th Place: Patch\r\n\r\n6th Place: Grit\r\n\r\n7th Place: Newt\r\n\r\n8th Place: Binzilla",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[2346] = {
+						0.5559521913528442,
+						0.760181725025177,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-502903"] = {
+			["base"] = {
+				["title"] = "Gallywix's Notes",
+				["text"] = {
+					"This stupid thing. The Black Blood is easy enough to distill. But no matter how much I use on the Dark Heart, it won't heal. It keeps taking more and more and depleting MY reserves.\r\n\r\nWhat good is this deal if I don't get anything out of it?",
+					"I told Xal'atath I need more. More time, Black Blood, and more help. She pointed me to a place where I can get all that. Bonus, just the guy I need's in the area. I can fix her trinket, make enough weapons to take over Undermine, and more.",
+					"She's too impatient. I gotta look out for my interests. I heard what happened with her other allies and I ain't no sap. That Dark Heart gets fixed when I got the gear to protect what's mine.\r\n\r\nShe thinks she hold all the cards, but I got an ace or two.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2346] = {
+						0.6099437475204468,
+						0.6428778171539307,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-502917"] = {
+			["base"] = {
+				["title"] = "Misplaced Work Order",
+				["text"] = {
+					'4 Units of Black Blood\r\n\r\nHey Tonzz, how many of these jars go in a "unit"? Why can\'t these guys just put "jars" on the form? Like "send of 12 jars of Black Blood." Easy right?\r\n\r\nAnyway, I got 12, so that\'s probably 4 units right? Also, why do they call it Black Blood? It looks more, what red? Are my eyes bad?',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2346] = {
+						0.655876874923706,
+						0.1418118476867676,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-502902"] = {
+			["base"] = {
+				["title"] = "Second Half of Noggenfogger's Journal",
+				["text"] = {
+					"I got something! Usually don't drink the stuff, but when you're pressed for ideas and someone's life depends on it... \r\n\r\nI spilled Kaja'Cola on the Black Blood. Something happened. NOTHING! And by nothing, I mean the Black Blood stabilized. It was perfect. I'm gonna need a lot more kaja'mite.\r\n\r\nGallywix won't like it, but this has gotta work.",
+					"They got a crew mining the stuff now. More volume, better purity. This could be my last chance. Sprinkle's last chance.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2346] = {
+						0.3282535672187805,
+						0.5890739560127258,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-502908"] = {
+			["base"] = {
+				["title"] = "A Threatening Letter",
+				["text"] = {
+					"Noggenfogger,\r\n\r\nYou might be thinking you don't want to hear from your old pal Gallywix, but I got new friends and a long reach. In fact, I reached out to Gadgetzan. My guy found something real sweet and brought her back to Undermine. You ought to join her. You know how dangerous it can be here. \r\n\r\nAnd since you're coming to Undermine anyway, I got some work that requires your unique alchemical knowledge.\r\n\r\nMy messenger can get a goblin back to me before anyone even knows you're gone. He's done it before.\r\n\r\nYour friend from now on,\r\nJastor Gallywix",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2346] = {
+						0.2737456560134888,
+						0.7089301347732544,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-192893"] = {
+			["base"] = {
+				["title"] = "Common / Orcish Dictionary",
+				["text"] = {
+					"BUR - An aggressively passionate mating call.\r\nWhat can I do fer ye? - Beer sold here.\r\nHi - A threatening war cry, especially when accompanied by a wave or bow.\r\nHow are you? - Was your mother really a reptile?\r\nKing's Honor, friend! - I'm starving!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.4207589626312256,
+						0.6914139986038208,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-145313"] = {
+			["base"] = {
+				["title"] = "Empires' Fall",
+				["text"] = {
+					"Aside from their shadowy origins, it is clear that the night elves came to power soon after their discovery of the Well of Eternity. Despite the trolls' attempts to keep them from expanding their territories, the night elves built up a mighty empire that expanded rapidly across primordial Kalimdor. Wielding fierce magics never before imagined by the superstitious trolls, the night elves had little trouble doing what the evil aqir could never do: topple the two greatest empires in the world.",
+					"The night elves systematically dismantled the trolls' defenses and supply chains. The trolls, unable to counter the elves' destructive magics, buckled under the onslaught. The night elves proved to be every bit as cunning and bloodthirsty as the savage trolls -- incurring the latter race's eternal hatred and disdain. The Gurubashi and Amani empires fragmented within only a few short years.",
+					"Eventually, the night elves were burned by the arcane fires they had sought to control. Their reckless use of magic had lured the demonic Burning Legion to the world. The demons crushed much of the night elves' civilization. Though there are no records to indicate that the Legion attacked either troll civilization, it is likely that battles took place across the breadth of the continent. ",
+					"At the end of this terrible conflict -- known as the War of the Ancients -- the Well of Eternity imploded. The resulting shockwave shattered the greater landmass of Kalimdor. The center of the continent was blasted beneath the sea, leaving only a small group of broken, single continents.",
+					"Thus, great chunks of both the Amani and Gurubashi Empires still exist in the present day lands of Quel'Thalas and Stranglethorn (respectively). The Azj'Aqir kingdoms of Azjol-Nerub and Ahn'Qiraj have also survived in present day Northrend and Tanaris (respectively).   \r\n\r\nBoth troll civilizations recoiled from the vast destruction of the primordial world they had known. The dauntless trolls rebuilt their ravaged cities and set out to reclaim some of their former power.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-745"] = {
+			["base"] = {
+				["title"] = "Marshal McBride's Documents",
+				["text"] = {
+					"REPORT: Kobolds\r\n\r\nThe activity of kobolds has decreased in Northshire Valley. All kobolds were driven off by the rampaging Blackrock orcs.",
+					"REPORT: BLACKROCK ORCS\r\n\r\nAn invasion force of Blackrock orcs has emerged in the valley. This attack seems to be a precursor to something far more insidious. Warn Magistrate Solomon of Lakeshire.",
+					"COMMENDATION:\r\n\r\nThe bearer of these documents is to be awarded Deputy status with the Stormwind Army, having served Northshire with eagerness and distinction.  I am confident you will find this person useful in Elwynn Forest.\r\n\r\nsigned:\r\n-Marshal Douglas McBride, \r\nStormwind Army, Northshire",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["GameObject-502914"] = {
+			["base"] = {
+				["title"] = "Extractor Drill X-78 Safety Guide",
+				["text"] = {
+					"What? You was serious about that?\r\n\r\nI dunno? Maybe buy a helmet? Good luck.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2214] = {
+						0.6725861430168152,
+						0.9808631539344788,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-1252"] = {
+			["base"] = {
+				["title"] = "Gramma Stonefield's Note",
+				["text"] = {
+					"Hello William,\r\n\r\nIt's been years since we've spoken, but I trust you and your brother are well, and that your apothecary thrives.\r\n\r\nI must ask a favor of you, William.  In short, my grandson Tommy Joe has lost his heart to young Maybell Maclure.  And although they adore each other... our families, well our families have been feuding for years.",
+					"I fear the war between the Stonefields and the Maclures will kill Tommy Joe and Maybell's blossoming romance, and in times like these - where dark news and rumors of war loom over us - youth and love must be nurtured.\r\n\r\nSo, the favor: I ask that you use your skills and concoct a potion or elixir to aid these young lovers in their quest for each other.\r\n\r\nThank you, William.  And please, when you have some time away from work, come visit.  We'll have a few chuckles over the past.\r\n\r\n-Mildred",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["GameObject-502893"] = {
+			["base"] = {
+				["title"] = "First Half of Noggenfogger's Journal",
+				["text"] = {
+					"This device is amazing. Allegedly one of Deathwing's prototypes, but I think I can see ancient goblin work in it too. Rumor is our people used to work for him thousands of years ago.\r\n\r\nUnder different circumstances, this would beat a primo gig.",
+					"I see why Gallywix can't fix this thing. His science is good, but he's all brute force. Shove in more power, concentrate more Black Blood.\r\n\r\nBut the power in this thing isn't a healing power, it's volatile. It seems... angry? We need a catalyst. Something that can stabilize the energy the device is powered with until it can fix itself.",
+					"I have tried countless balms and elixirs, and I'm running out of ideas. I got too much to lose if I can't fix the damned thing. It'd be compelling work if the stakes weren't... I gotta find a way.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2346] = {
+						0.3960875868797302,
+						0.2706434726715088,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
 
 		--put stuff above here
 	},
