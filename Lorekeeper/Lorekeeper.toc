@@ -35,6 +35,18 @@
 ## Title-zhTW: 知識守護者
 ## Notes-zhTW: 在自適應圖書館中收集和儲存遊戲內文本項目。
 
+## Category-enUS: Roleplay
+## Category-deDE: Rollenspiel
+## Category-esES: Juego de rol
+## Category-esMX: Juego de rol
+## Category-frFR: Jeu de rôle
+## Category-itIT: Gioco di Ruolo
+## Category-koKR: 롤플레잉
+## Category-ptBR: Interpretação de Papel
+## Category-ruRU: Ролевая игра
+## Category-zhCN: 角色扮演
+## Category-zhTW: 角色扮演
+
 
 
 Libs\LibDBIcon-1.0\LibStub\LibStub.lua
