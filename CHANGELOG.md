@@ -1,3 +1,7 @@
+# 0.2.8
+
+11.1.5 toc update & addon category
+
 # 0.2.7
 
 Localdata Update 10 - (17 personal entries + 9 Anonymous User 14 entries, 1 edit + 18 Anonymous User 15 entries, 21 edits)
