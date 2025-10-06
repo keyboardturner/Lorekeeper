@@ -1,3 +1,17 @@
+# 0.3.2
+
+Rearranged some code for the addon to work in 11.2.5
+
+11.2.5 toc update
+
+# 0.3.1
+
+Localdata Update 11 - (43 personal entries + 10 Anonymous User 16 entries + 1 Anonymous User 17 entry + 5 Anonymous User 18 entries + 51 Anonymous User 19 entries (German) )
+
+# 0.3.0
+
+11.2.0 toc update
+
 # 0.2.9
 
 11.1.7 toc update
