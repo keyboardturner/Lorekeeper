@@ -198,22 +198,6 @@ MailTextDisplayFrame.Type_ID:SetPoint("LEFT", MailTextDisplayFrame.NextPageButto
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 
-LoreKGUI.MailScrollBox = CreateFrame("Frame", nil, MailDisplayFrame, "WowScrollBoxList");
-local MailScrollBox = LoreKGUI.MailScrollBox;
-MailScrollBox:SetPoint("TOPLEFT", MailDisplayFrame, "TOPLEFT", 2, -25);
-MailScrollBox:SetPoint("BOTTOMRIGHT", MailDisplayFrame, "BOTTOMRIGHT", -2, 3);
-
-MailScrollBox.MailScrollBar = CreateFrame("EventFrame", nil, MailDisplayFrame, "MinimalScrollBar");
-local MailScrollBar = MailScrollBox.MailScrollBar;
-MailScrollBar:SetPoint("TOPLEFT", MailScrollBox, "TOPRIGHT", 7, 20);
-MailScrollBar:SetPoint("BOTTOMLEFT", MailScrollBox, "BOTTOMRIGHT", 7, 0);
-
-local MailDataProvider = CreateDataProvider();
-local MailScrollView = CreateScrollBoxListLinearView();
-MailScrollView:SetDataProvider(MailDataProvider);
-
-ScrollUtil.InitScrollBoxListWithScrollBar(MailScrollBox, MailScrollBar, MailScrollView);
-
 -- The 'button' argument is the frame that our data will inhabit in our list
 -- The 'data' argument will be the data table mentioned above
 local function MailInitializer(button, data)
@@ -238,7 +222,7 @@ local function MailInitializer(button, data)
 	if ItemEntryID then
 		icon_Q = select(5,C_Item.GetItemInfoInstant(ItemEntryID));
 	else
-		icon_Q = "Interface/ICONS/inv_letter_01" or "Interface/AddOns/Lorekeeper/Assets/Textures/TEMP";
+		icon_Q = allData[mailID]["icon"] or "Interface/ICONS/inv_letter_01" or "Interface/AddOns/Lorekeeper/Assets/Textures/TEMP";
 	end
 	--button:SetWidth(168);
 	--button:SetPoint(moveFrameXY(22,0));
@@ -306,12 +290,18 @@ local function MailInitializer(button, data)
 					rootDescription:CreateTitle(title)
 					if isFavorite then
 						rootDescription:CreateButton(LK["UnsetFavorite"], function()
+							if not LoreKMail_DB["mail"][mailID] then
+								LoreKMail_DB["mail"][mailID] = {};
+							end
 							LoreKMail_DB["mail"][mailID]["isFavorite"] = false;
 							LoreKGUI.PopulateMailList();
 							PlaySound(SOUNDKIT.UI_70_ARTIFACT_FORGE_APPEARANCE_LOCKED, "SFX");
 						end)
 					else
 						rootDescription:CreateButton(LK["SetFavorite"], function()
+							if not LoreKMail_DB["mail"][mailID] then
+								LoreKMail_DB["mail"][mailID] = {};
+							end
 							LoreKMail_DB["mail"][mailID]["isFavorite"] = true;
 							LoreKGUI.PopulateMailList();
 							PlaySound(SOUNDKIT.UI_70_ARTIFACT_FORGE_APPEARANCE_APPEARANCE_CHANGE, "SFX");
@@ -483,7 +473,27 @@ local function MailInitializer(button, data)
 	end);
 	button:RegisterForClicks("AnyUp", "AnyDown");
 end
+
+LoreKGUI.MailScrollBox = CreateFrame("Frame", nil, MailDisplayFrame, "WowScrollBoxList");
+local MailScrollBox = LoreKGUI.MailScrollBox;
+MailScrollBox:SetPoint("TOPLEFT", MailDisplayFrame, "TOPLEFT", 2, -25);
+MailScrollBox:SetPoint("BOTTOMRIGHT", MailDisplayFrame, "BOTTOMRIGHT", -2, 3);
+
+MailScrollBox.MailScrollBar = CreateFrame("EventFrame", nil, MailDisplayFrame, "MinimalScrollBar");
+local MailScrollBar = MailScrollBox.MailScrollBar;
+MailScrollBar:SetPoint("TOPLEFT", MailScrollBox, "TOPRIGHT", 7, 20);
+MailScrollBar:SetPoint("BOTTOMLEFT", MailScrollBox, "BOTTOMRIGHT", 7, 0);
+
+local MailDataProvider = CreateDataProvider();
+local MailScrollView = CreateScrollBoxListLinearView();
+
+ScrollUtil.InitScrollBoxListWithScrollBar(MailScrollBox, MailScrollBar, MailScrollView);
+
+-- Corrected initialization order
+MailScrollView:SetElementInitializer("Button", MailInitializer);
 MailScrollView:SetElementExtent(36);
+MailScrollView:SetDataProvider(MailDataProvider);
+
 
 function LoreKGUI:OnMailSelectionChanged(data, isSelected)
 	local f = self.MailScrollBox:FindFrame(data);
@@ -532,11 +542,20 @@ function LoreKGUI.PopulateMailList()
 			allData[id] = CopyTable(data);
 		end
 	end
-
-	MailScrollView:SetElementInitializer("Button", MailInitializer);
+	for id, data in pairs(Lorekeeper_API.LK["customItems"]) do
+		if allData[id] then
+			Mixin(allData[id], data);
+		else
+			allData[id] = CopyTable(data)
+		end
+	end
 
 	local proxy = {};
 	for id, data in pairs(allData) do
+		data.id = id;
+		tinsert(proxy, data);
+	end
+	for id, data in pairs(Lorekeeper_API.LK["customItems"]) do
 		data.id = id;
 		tinsert(proxy, data);
 	end
@@ -563,10 +582,10 @@ function LoreKGUI.OnMailTextChanged(editBox)
 
 	local matches = {};
 
-	for name, element in pairs(allData) do
+	for id, element in pairs(allData) do
 		local match = false;
 
-		if element and string.find(name:lower(), query:lower()) then
+		if element and string.find(element.nameRealm:lower(), query:lower()) then
 			match = true;
 		end
 

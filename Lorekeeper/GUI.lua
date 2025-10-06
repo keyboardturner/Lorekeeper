@@ -1293,22 +1293,6 @@ end
 --------------------------------------------------------------------------
 -- scrollBOX rework
 
-LoreKGUI.ItemScrollBox = CreateFrame("Frame", nil, ItemDisplayFrame, "WowScrollBoxList");
-local ItemScrollBox = LoreKGUI.ItemScrollBox;
-ItemScrollBox:SetPoint("TOPLEFT", ItemDisplayFrame, "TOPLEFT", 2, -25);
-ItemScrollBox:SetPoint("BOTTOMRIGHT", ItemDisplayFrame, "BOTTOMRIGHT", -2, 3);
-
-ItemScrollBox.ItemScrollBar = CreateFrame("EventFrame", nil, ItemDisplayFrame, "MinimalScrollBar");
-local ItemScrollBar = ItemScrollBox.ItemScrollBar;
-ItemScrollBar:SetPoint("TOPLEFT", ItemScrollBox, "TOPRIGHT", 7, 20);
-ItemScrollBar:SetPoint("BOTTOMLEFT", ItemScrollBox, "BOTTOMRIGHT", 7, 0);
-
-local ItemDataProvider = CreateDataProvider();
-local ItemScrollView = CreateScrollBoxListLinearView();
-ItemScrollView:SetDataProvider(ItemDataProvider);
-
-ScrollUtil.InitScrollBoxListWithScrollBar(ItemScrollBox, ItemScrollBar, ItemScrollView);
-
 -- The 'button' argument is the frame that our data will inhabit in our list
 -- The 'data' argument will be the data table mentioned above
 local function ItemInitializer(button, data)
@@ -1694,7 +1678,26 @@ local function ItemInitializer(button, data)
 	end);
 	button:RegisterForClicks("AnyUp", "AnyDown");
 end
+
+LoreKGUI.ItemScrollBox = CreateFrame("Frame", nil, ItemDisplayFrame, "WowScrollBoxList");
+local ItemScrollBox = LoreKGUI.ItemScrollBox;
+ItemScrollBox:SetPoint("TOPLEFT", ItemDisplayFrame, "TOPLEFT", 2, -25);
+ItemScrollBox:SetPoint("BOTTOMRIGHT", ItemDisplayFrame, "BOTTOMRIGHT", -2, 3);
+
+ItemScrollBox.ItemScrollBar = CreateFrame("EventFrame", nil, ItemDisplayFrame, "MinimalScrollBar");
+local ItemScrollBar = ItemScrollBox.ItemScrollBar;
+ItemScrollBar:SetPoint("TOPLEFT", ItemScrollBox, "TOPRIGHT", 7, 20);
+ItemScrollBar:SetPoint("BOTTOMLEFT", ItemScrollBox, "BOTTOMRIGHT", 7, 0);
+
+local ItemDataProvider = CreateDataProvider();
+local ItemScrollView = CreateScrollBoxListLinearView();
+
+ScrollUtil.InitScrollBoxListWithScrollBar(ItemScrollBox, ItemScrollBar, ItemScrollView);
+
+-- Correctly order the setup: Initializer/Factory first, then DataProvider.
+ItemScrollView:SetElementInitializer("Button", ItemInitializer);
 ItemScrollView:SetElementExtent(36);
+ItemScrollView:SetDataProvider(ItemDataProvider);
 
 
 function LoreKGUI:OnSelectionChanged(data, isSelected)
@@ -1755,8 +1758,6 @@ function LoreKGUI.PopulateList()
 			allData[id] = CopyTable(data);
 		end
 	end
-
-	ItemScrollView:SetElementInitializer("Button", ItemInitializer);
 
 	local proxy = {};
 	for id, data in pairs(allData) do

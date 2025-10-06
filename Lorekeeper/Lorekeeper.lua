@@ -494,6 +494,9 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 			};
 			if LK["LocalData"]["text"][key] and LK["LocalData"]["text"][key]["base"] and LK["LocalData"]["text"][key]["base"]["mapData"] then -- local map data is found
 				if not LK["LocalData"]["text"][key]["base"]["mapData"][map] then -- check if no data specific to map ID exists
+					if not LoreK_DB["text"][key]["base"]["mapData"] then
+						LoreK_DB["text"][key]["base"]["mapData"] = {}
+					end
 					LoreK_DB["text"][key]["base"]["mapData"][map] = coords;
 					if LoreK_DB.settings.debugAdvanced then
 						Print("Adding MapID data to SVs")
