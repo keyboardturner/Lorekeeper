@@ -1,3 +1,7 @@
+# 0.3.3
+
+Added nil check for mail to prevent throwing errors if no player mail has been saved previously
+
 # 0.3.2
 
 Rearranged some code for the addon to work in 11.2.5

@@ -201,6 +201,7 @@ MailTextDisplayFrame.Type_ID:SetPoint("LEFT", MailTextDisplayFrame.NextPageButto
 -- The 'button' argument is the frame that our data will inhabit in our list
 -- The 'data' argument will be the data table mentioned above
 local function MailInitializer(button, data)
+	if not data or not data.id then return end
 	local mailID = data.id;
 	local title = data.nameRealm;
 	if not title then
