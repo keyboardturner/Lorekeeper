@@ -507,7 +507,9 @@ end
 
 function LoreKGUI:OnFrameInitialized(frame, data)
 	local isSelected = self.SelectionBehavior:IsElementDataSelected(data);
-	frame.texSel:SetShown(isSelected);
+	if frame and frame.texSel then
+		frame.texSel:SetShown(isSelected);
+	end
 end
 
 LoreKGUI.MailSelectionBehavior = ScrollUtil.AddSelectionBehavior(MailScrollBox, SelectionBehaviorFlags.Intrusive);
@@ -543,11 +545,13 @@ function LoreKGUI.PopulateMailList()
 			allData[id] = CopyTable(data);
 		end
 	end
-	for id, data in pairs(Lorekeeper_API.LK["customItems"]) do
-		if allData[id] then
-			Mixin(allData[id], data);
-		else
-			allData[id] = CopyTable(data)
+	if LK["customItems"] and type(LK["customItems"]) == "table" then -- need to change later, it thinks it's a missing localization
+		for id, data in pairs(LK["customItems"]) do
+			if allData[id] then
+				Mixin(allData[id], data);
+			else
+				allData[id] = CopyTable(data)
+			end
 		end
 	end
 
@@ -556,9 +560,11 @@ function LoreKGUI.PopulateMailList()
 		data.id = id;
 		tinsert(proxy, data);
 	end
-	for id, data in pairs(Lorekeeper_API.LK["customItems"]) do
-		data.id = id;
-		tinsert(proxy, data);
+	if LK["customItems"] and type(LK["customItems"]) == "table"  then -- need to change later, it thinks it's a missing localization
+		for id, data in pairs(LK["customItems"]) do
+			data.id = id;
+			tinsert(proxy, data);
+		end
 	end
 
 	PopulateNewDataProvider(proxy);
@@ -586,7 +592,7 @@ function LoreKGUI.OnMailTextChanged(editBox)
 	for id, element in pairs(allData) do
 		local match = false;
 
-		if element and string.find(element.nameRealm:lower(), query:lower()) then
+		if element and element.nameRealm and string.find(element.nameRealm:lower(), query:lower()) then
 			match = true;
 		end
 

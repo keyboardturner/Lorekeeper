@@ -1,3 +1,7 @@
+# 0.3.4
+
+More nil check and fixes to mail for real this time
+
 # 0.3.3
 
 Added nil check for mail to prevent throwing errors if no player mail has been saved previously
