@@ -508,10 +508,15 @@ local function SetTabs(frame, numTabs, ...)
 			LoreKGUI.MailPanel = CreateFrame("Frame", nil, tab.content);
 			LoreKGUI.MailPanel:SetPoint("TOPLEFT", tab.content, "TOPLEFT", 0, 0);
 			LoreKGUI.MailPanel:SetPoint("BOTTOMRIGHT", tab.content, "BOTTOMRIGHT", 0, 0);
-
+			
 			tab:SetPoint("TOPLEFT", previousTab, "TOPRIGHT", 3, 0);
 		elseif i == 3 then
+			LoreKGUI.ItemsPanel = CreateFrame("Frame", nil, tab.content);
+			LoreKGUI.ItemsPanel:SetPoint("TOPLEFT", tab.content, "TOPLEFT", 0, 0);
+			LoreKGUI.ItemsPanel:SetPoint("BOTTOMRIGHT", tab.content, "BOTTOMRIGHT", 0, 0);
 
+			tab:SetPoint("TOPLEFT", previousTab, "TOPRIGHT", 3, 0);
+		elseif i == 4 then
 			LoreKGUI.SettingsPanel = CreateFrame("Frame", nil, tab.content);
 			LoreKGUI.SettingsPanel:SetPoint("TOPLEFT", tab.content, "TOPLEFT", 0, 0);
 			LoreKGUI.SettingsPanel:SetPoint("BOTTOMRIGHT", tab.content, "BOTTOMRIGHT", 0, 0);
@@ -531,43 +536,29 @@ local function SetTabs(frame, numTabs, ...)
 end
 
 -- Set up the tabs and content frames
-local content1, content2, content3 = SetTabs(LoreKGUI, 3, LK["Library"], LK["Mail"], LK["Settings"]);
-
-
---LoreKMainframeTab2:SetEnabled(false)
---LoreKMainframeTab3:SetEnabled(false)
+local content1, content2, content3, content4 = SetTabs(LoreKGUI, 4, LK["Library"], LK["Mail"], LK["Items"], LK["Settings"]);
 
 --LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
 --LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5)
 
-LoreKMainframeTab1:SetScript("OnEnter", function(self)
+LoreKMainframeTab3:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine(LK["Library"], 1, 1, 1);
-	GameTooltip:Show();
-end);
-LoreKMainframeTab1:SetScript("OnLeave", function()
-	GameTooltip:Hide();
-end);
-
-LoreKMainframeTab2:SetScript("OnEnter", function(self)
-	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine(LK["Mail"], 1, 1, 1);
-	--GameTooltip:AddLine(LK["NotYetAvailable"], 1, 0, 0) -- until GUI is implemented
-	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
+	GameTooltip:AddLine(LK["Items"], 1, 1, 1);
+	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Items") then
 		GameTooltip:AddLine(LK["AddonDisabled"], 1, 0, 0)
 	end
 	GameTooltip:Show();
 end);
-LoreKMainframeTab2:SetScript("OnLeave", function()
+LoreKMainframeTab3:SetScript("OnLeave", function()
 	GameTooltip:Hide();
 end);
 
-LoreKMainframeTab3:SetScript("OnEnter", function(self)
+LoreKMainframeTab4:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
 	GameTooltip:AddLine(LK["Settings"], 1, 1, 1);
 	GameTooltip:Show();
 end);
-LoreKMainframeTab3:SetScript("OnLeave", function()
+LoreKMainframeTab4:SetScript("OnLeave", function()
 	GameTooltip:Hide();
 end);
 
@@ -769,7 +760,224 @@ TextDisplayFrame.Type_ID:SetPoint("LEFT", TextDisplayFrame.NextPageButton, "RIGH
 --------------------------------------------------------------------------
 -- Variant Text Dropdown Soon(tm)
 
+TextDisplayFrame.VariantDropdown = CreateFrame("DropdownButton", nil, TextDisplayFrame, "WowStyle1DropdownTemplate");
+local VariantDropdown = TextDisplayFrame.VariantDropdown;
+VariantDropdown:SetPoint("TOPRIGHT", TextDisplayFrame, "TOPRIGHT", -75, 25);
+VariantDropdown:SetSize(130, 20);
+VariantDropdown:Hide();
 
+function TextDisplayFrame.GetSelectedTextData(itemID)
+	local variantKey = TextDisplayFrame.selectedVariant or "base";
+	
+	if variantKey == "base" then
+		return allData[itemID]["base"];
+	end
+
+	if allData[itemID] and allData[itemID][variantKey] then
+		return allData[itemID][variantKey];
+	end
+
+	return allData[itemID]["base"];
+end
+
+local function VariantDropdownSetup(dropdown, rootDescription)
+	local itemID = TextDisplayFrame.currentItemID;
+	if not itemID or not allData[itemID] then return end
+
+	rootDescription:CreateButton(LK["Base"], function()
+		TextDisplayFrame.selectedVariant = "base";
+		LoreKGUI.UpdateTextDisplay(itemID);
+		VariantDropdown.Text:SetText(LK["Base"]);
+	end);
+
+	local copies = {};
+	for k, v in pairs(allData[itemID]) do
+		if string.find(k, "copy_") then
+			table.insert(copies, k);
+		end
+	end
+	table.sort(copies);
+
+	for _, key in ipairs(copies) do
+		local index = key:match("copy_(%d+)");
+		rootDescription:CreateButton((LK["Variant"]) .. " " .. index, function()
+			TextDisplayFrame.selectedVariant = key;
+			LoreKGUI.UpdateTextDisplay(itemID);
+			VariantDropdown.Text:SetText((LK["Variant"]) .. " " .. index);
+		end);
+	end
+end
+
+VariantDropdown:SetupMenu(VariantDropdownSetup);
+
+
+
+function LoreKGUI.UpdateTextDisplay(itemID)
+	local data = TextDisplayFrame.GetSelectedTextData(itemID);
+	if not data then return end
+	
+	TextDisplayFrame.currentItemID = itemID;
+	local maxPages = 1;
+	local pageNum = 1;
+	local textTable = data["text"] or {};
+	
+	if #textTable == 0 then
+		TextScrollChild.textHTML:SetText("");
+		return;
+	end
+
+	local pageText = textTable[pageNum];
+	local textTitle = data["title"] or "Unknown";
+	local singlePage = data["singlePage"];
+	local material = data["material"] or "default";
+	
+	local isHidden = LoreK_DB["settings"]["hideUnread"];
+	local hasRead = false;
+	
+	if allData[itemID]["base"]["hasRead"] then
+		hasRead = true;
+	end
+
+	if material == "ParchmentLarge" then
+		TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["ParchmentLarge"]["H1"]:GetFont());
+		TextScrollChild.textHTML:SetFont("h2", ITEM_TEXT_FONTS["ParchmentLarge"]["H2"]:GetFont());
+		TextScrollChild.textHTML:SetFont("h3", ITEM_TEXT_FONTS["ParchmentLarge"]["H3"]:GetFont());
+		TextScrollChild.textHTML:SetFont("p", ITEM_TEXT_FONTS["ParchmentLarge"]["P"]:GetFont());
+		TextScrollChild.textHTML:SetTextColor("h1", 0, 0, 0, 1);
+		TextScrollChild.textHTML:SetTextColor("h2", 0, 0, 0, 1);
+		TextScrollChild.textHTML:SetTextColor("h3", 0, 0, 0, 1);
+		TextScrollChild.textHTML:SetTextColor("p", 0, 0, 0, 1);
+		LoreKGUI.SetFontSizeP();
+	else
+		TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["default"]["H1"]:GetFont());
+		TextScrollChild.textHTML:SetFont("h2", ITEM_TEXT_FONTS["default"]["H2"]:GetFont());
+		TextScrollChild.textHTML:SetFont("h3", ITEM_TEXT_FONTS["default"]["H3"]:GetFont());
+		TextScrollChild.textHTML:SetFont("p", ITEM_TEXT_FONTS["default"]["P"]:GetFont());
+		TextScrollChild.textHTML:SetTextColor("h1", 0, 0, 0, 1);
+		TextScrollChild.textHTML:SetTextColor("h2", 0, 0, 0, 1);
+		TextScrollChild.textHTML:SetTextColor("h3", 0, 0, 0, 1);
+		TextScrollChild.textHTML:SetTextColor("p", 0, 0, 0, 1);
+		LoreKGUI.SetFontSizeP();
+	end
+
+	TextDisplayFrame.PrevPageButton:Hide();
+	TextDisplayFrame.NextPageButton:Hide();
+	TextDisplayFrame.PrevPageButton:Disable();
+	TextDisplayFrame.NextPageButton:Disable();
+	TextDisplayFrame.PageNumber:SetText("");
+
+	LoreKGUI.SetColors();
+
+	if not singlePage and #textTable > 1 then
+		maxPages = #textTable;
+		local pageNumberText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
+
+		TextDisplayFrame.PrevPageButton:Show();
+		TextDisplayFrame.NextPageButton:Show();
+		TextDisplayFrame.PageNumber:SetText(pageNumberText);
+		TextDisplayFrame.NextPageButton:Enable();
+
+		TextDisplayFrame.PrevPageButton:SetScript("OnClick", function()
+			if pageNum ~= 1 then
+				pageNum = pageNum - 1;
+			end
+			if pageNum == 1 then
+				TextDisplayFrame.PrevPageButton:Disable();
+			end
+			TextDisplayFrame.NextPageButton:Enable();
+			PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
+
+			local currentData = TextDisplayFrame.GetSelectedTextData(itemID);
+			local txtTable = currentData["text"];
+			
+			local pageNumberText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, #txtTable);
+			local pText = txtTable[pageNum];
+			
+			local isHTML = string.lower(ReverseNameAndClass(pText)):find("<html>");
+			local HTMLbody;
+			if isHTML then
+				HTMLbody = string.gsub(ReverseNameAndClass(pText),"<BODY>","<BODY>".."<br />");
+			end
+
+			TextDisplayFrame.PageNumber:SetText(pageNumberText);
+			TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
+			if isHTML then
+				TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(pText), false);
+			else
+				TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(pText), false);
+			end
+		end)
+
+		TextDisplayFrame.NextPageButton:SetScript("OnClick", function()
+			local currentData = TextDisplayFrame.GetSelectedTextData(itemID);
+			local txtTable = currentData["text"];
+
+			if pageNum ~= #txtTable then
+				pageNum = pageNum + 1;
+			end
+			if pageNum == #txtTable then
+				TextDisplayFrame.NextPageButton:Disable();
+			end
+			TextDisplayFrame.PrevPageButton:Enable();
+			PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
+
+			local pageNumberText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, #txtTable);
+			local pText = txtTable[pageNum];
+
+			local isHTML = string.lower(ReverseNameAndClass(pText)):find("<html>");
+			local HTMLbody;
+			if isHTML then
+				HTMLbody = string.gsub(ReverseNameAndClass(pText),"<BODY>","<BODY>".."<br />");
+			end
+
+			TextDisplayFrame.PageNumber:SetText(pageNumberText);
+			TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
+			if isHTML then
+				TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(pText), false);
+			else
+				TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(pText), false);
+			end
+		end)
+	end
+
+	if isHidden and not hasRead then
+		TextScrollChild.textHTML:Hide();
+		TextDisplayFrame.PrevPageButton:Hide();
+		TextDisplayFrame.NextPageButton:Hide();
+	else
+		TextScrollChild.textHTML:Show();
+	end
+
+	TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
+	
+	if LoreK_DB.settings.debugAdvanced then
+		TextDisplayFrame.Type_ID:SetText(itemID, 1, 1, 1, 1, true);
+	else
+		TextDisplayFrame.Type_ID:SetText("", 1, 1, 1, 1, true);
+	end
+
+	local isHTML = string.lower(ReverseNameAndClass(pageText)):find("<html>");
+	local HTMLbody;
+	if isHTML then
+		HTMLbody = string.gsub(ReverseNameAndClass(pageText),"<BODY>","<BODY>".."<br />");
+	end
+	
+	if isHTML then
+		TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(pageText), false);
+	else
+		TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(pageText), false);
+	end
+
+	LoreKGUI.LibraryPanel.CopyTextEditBoxText = textTitle .. "\n\n";
+	for k, v in ipairs(textTable) do
+		if k ~= #textTable then
+			LoreKGUI.LibraryPanel.CopyTextEditBoxText = LoreKGUI.LibraryPanel.CopyTextEditBoxText .. string.format(PAGE_NUMBER_WITH_MAX, k, #textTable) .. "\n\n" .. v .. "\n\n";
+		else
+			LoreKGUI.LibraryPanel.CopyTextEditBoxText = LoreKGUI.LibraryPanel.CopyTextEditBoxText .. string.format(PAGE_NUMBER_WITH_MAX, k, #textTable) .. "\n\n" .. v;
+		end
+	end
+	LoreKGUI.LibraryPanel.CopyTextEditBox:SetText(LoreKGUI.LibraryPanel.CopyTextEditBoxText);
+end
 
 --------------------------------------------------------------------------
 -- Clean Data
@@ -1498,175 +1706,29 @@ local function ItemInitializer(button, data)
 			DeleteEntry:SetEnabled(true);
 			--selectionBehavior:SelectElementData(self:GetData())
 
-			local maxPages = 1;
-			local pageNum = 1;
-			local textTable = allData[itemID]["base"]["text"]
-			local pageText = textTable[pageNum]
-			local HTMLbody
-			local textTitle = allData[itemID]["base"]["title"];
-			local isHTML = string.lower(ReverseNameAndClass(pageText)):find("<html>");
-			local singlePage = allData[itemID]["base"]["singlePage"];
-			local material = allData[itemID]["base"]["material"] or "default";
-			local isHidden = LoreK_DB["settings"]["hideUnread"];
-			local hasRead = false;
-			if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] and LoreK_DB["text"][itemID]["base"]["hasRead"] then
-				if LoreK_DB["text"][itemID]["base"]["hasRead"] then
-					hasRead = true;
-				end
-			end
+			TextDisplayFrame.selectedVariant = "base";
+			TextDisplayFrame.currentItemID = itemID;
 
-			if LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"] and LK["LocalData"]["text"][itemID] then
-				if LoreK_DB["text"][itemID]["base"]["mapData"] and LK["LocalData"]["text"][itemID]["base"]["mapData"] then
-					for zingle, dingle in pairs(LoreK_DB["text"][itemID]["base"]["mapData"]) do -- find and delete duplicate mapData
-						if LK["LocalData"]["text"][itemID]["base"]["mapData"][zingle] then
-							LoreK_DB["text"][itemID]["base"]["mapData"][zingle] = nil;
-						end
-					end
-					if next(LoreK_DB["text"][itemID]["base"]["mapData"]) == nil then
-						LoreK_DB["text"][itemID]["base"]["mapData"] = nil
-						if LoreK_DB.settings.debugAdvanced then
-							Print("Cleaning up leftover duplicate mapData: "..textTitle)
-						end
+			local hasVariants = false;
+			if LoreK_DB["text"][itemID] then
+				for k in pairs(allData[itemID]) do
+					if string.find(k, "copy_") then
+						hasVariants = true;
+						break;
 					end
 				end
-				if LK.tCompareDeez(LoreK_DB["text"][itemID]["base"], LK["LocalData"]["text"][itemID]["base"]) then -- entry exists, but it's a copy of the LocalData, local data probably got updated, so clean SV bloat but preserve hasRead/isFavorite/mapData
-					LoreKGUI.CleanItemData(itemID);
-				end
 			end
 
-			if material == "ParchmentLarge" then
-				TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["ParchmentLarge"]["H1"]:GetFont());
-				TextScrollChild.textHTML:SetFont("h2", ITEM_TEXT_FONTS["ParchmentLarge"]["H2"]:GetFont());
-				TextScrollChild.textHTML:SetFont("h3", ITEM_TEXT_FONTS["ParchmentLarge"]["H3"]:GetFont());
-				TextScrollChild.textHTML:SetFont("p", ITEM_TEXT_FONTS["ParchmentLarge"]["P"]:GetFont());
-				TextScrollChild.textHTML:SetTextColor("h1", 0, 0, 0, 1);
-				TextScrollChild.textHTML:SetTextColor("h2", 0, 0, 0, 1);
-				TextScrollChild.textHTML:SetTextColor("h3", 0, 0, 0, 1);
-				TextScrollChild.textHTML:SetTextColor("p", 0, 0, 0, 1);
-				LoreKGUI.SetFontSizeP();
+			if hasVariants then
+				VariantDropdown:Show();
+				VariantDropdown.Text:SetText(LK["Base"]);
 			else
-				TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["default"]["H1"]:GetFont());
-				TextScrollChild.textHTML:SetFont("h2", ITEM_TEXT_FONTS["default"]["H2"]:GetFont());
-				TextScrollChild.textHTML:SetFont("h3", ITEM_TEXT_FONTS["default"]["H3"]:GetFont());
-				TextScrollChild.textHTML:SetFont("p", ITEM_TEXT_FONTS["default"]["P"]:GetFont());
-				TextScrollChild.textHTML:SetTextColor("h1", 0, 0, 0, 1);
-				TextScrollChild.textHTML:SetTextColor("h2", 0, 0, 0, 1);
-				TextScrollChild.textHTML:SetTextColor("h3", 0, 0, 0, 1);
-				TextScrollChild.textHTML:SetTextColor("p", 0, 0, 0, 1);
-				LoreKGUI.SetFontSizeP();
+				VariantDropdown:Hide();
 			end
 
-			TextDisplayFrame.PrevPageButton:Hide();
-			TextDisplayFrame.NextPageButton:Hide();
-			TextDisplayFrame.PrevPageButton:Disable();
-			TextDisplayFrame.NextPageButton:Disable();
-			TextDisplayFrame.PageNumber:SetText("");
+			LoreKGUI.UpdateTextDisplay(itemID);
 
-			LoreKGUI.SetColors()
-
-			if not singlePage then
-				maxPages = #allData[itemID]["base"]["text"];
-				local pageNumberText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
-
-				TextDisplayFrame.PrevPageButton:Show();
-				TextDisplayFrame.NextPageButton:Show();
-				TextDisplayFrame.PageNumber:SetText(pageNumberText);
-				TextDisplayFrame.NextPageButton:Enable();
-				TextDisplayFrame.PrevPageButton:SetScript("OnClick", function()
-					if pageNum ~= 1 then
-						pageNum = pageNum - 1;
-					end
-					if pageNum == 1 then
-						TextDisplayFrame.PrevPageButton:Disable();
-					end
-					TextDisplayFrame.NextPageButton:Enable();
-					PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
-
-					local pageNumberText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
-					local textTable = allData[itemID]["base"]["text"];
-					local pageText = textTable[pageNum]
-					local textTitle = allData[itemID]["base"]["title"] or UNKNOWN;
-					local isHTML = string.lower(ReverseNameAndClass(pageText)):find("<html>");
-					local singlePage = allData[itemID]["base"]["singlePage"];
-					if isHTML then
-						HTMLbody = string.gsub(ReverseNameAndClass(pageText),"<BODY>","<BODY>".."<br />");
-					end
-
-					TextDisplayFrame.PageNumber:SetText(pageNumberText);
-					TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
-					if isHTML then
-						TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(pageText), false);
-					else
-						TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(pageText), false);
-					end
-				end)
-				TextDisplayFrame.NextPageButton:SetScript("OnClick", function()
-					if pageNum ~= maxPages then
-						pageNum = pageNum + 1;
-					end
-					if pageNum == maxPages then
-						TextDisplayFrame.NextPageButton:Disable();
-					end
-					TextDisplayFrame.PrevPageButton:Enable();
-					PlaySound(SOUNDKIT.IG_ABILITY_PAGE_TURN, "SFX", false);
-
-					local pageNumberText = string.format(PAGE_NUMBER_WITH_MAX, pageNum, maxPages);
-					local textTable = allData[itemID]["base"]["text"];
-					local pageText = textTable[pageNum]
-					local textTitle = allData[itemID]["base"]["title"];
-					local isHTML = string.lower(ReverseNameAndClass(pageText)):find("<html>");
-					local singlePage = allData[itemID]["base"]["singlePage"];
-					if isHTML then
-						HTMLbody = string.gsub(ReverseNameAndClass(textTable[pageNum]),"<BODY>","<BODY>".."<br />");
-					end
-
-					TextDisplayFrame.PageNumber:SetText(pageNumberText);
-					TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
-					if isHTML then
-						TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(textTable[pageNum]), false);
-					else
-						TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(textTable[pageNum]), false);
-					end
-				end)
-			end
-
-			if isHidden and not hasRead then
-				TextScrollChild.textHTML:Hide();
-				TextDisplayFrame.PrevPageButton:Hide();
-				TextDisplayFrame.NextPageButton:Hide();
-			else
-				TextScrollChild.textHTML:Show();
-			end
-
-			TextScrollChild.textTitle:SetText(textTitle, 1, 1, 1, 1, true);
-			if LoreK_DB.settings.debugAdvanced then
-				TextDisplayFrame.Type_ID:SetText(itemID, 1, 1, 1, 1, true);
-			else
-				TextDisplayFrame.Type_ID:SetText("", 1, 1, 1, 1, true);
-			end
-			if isHTML then
-				HTMLbody = string.gsub(ReverseNameAndClass(textTable[pageNum]),"<BODY>","<BODY>".."<br />");
-			end
-			if isHTML then
-				TextScrollChild.textHTML:SetText(HTMLbody or ReverseNameAndClass(textTable[pageNum]), false);
-			else
-				TextScrollChild.textHTML:SetText("\n"..ReverseNameAndClass(textTable[pageNum]), false);
-			end
-
-			-- Set the title once before the loop
-			LoreKGUI.LibraryPanel.CopyTextEditBoxText = textTitle .. "\n\n";
-
-			-- Loop over the table of text and append the page number and content
-			for k, v in ipairs(textTable) do
-				-- Append the page number and the page text to the existing text
-				if k ~= #textTable then
-					LoreKGUI.LibraryPanel.CopyTextEditBoxText = LoreKGUI.LibraryPanel.CopyTextEditBoxText .. string.format(PAGE_NUMBER_WITH_MAX, k, #textTable) .. "\n\n" .. v .. "\n\n";
-				else
-					LoreKGUI.LibraryPanel.CopyTextEditBoxText = LoreKGUI.LibraryPanel.CopyTextEditBoxText .. string.format(PAGE_NUMBER_WITH_MAX, k, #textTable) .. "\n\n" .. v;
-				end
-			end
-			LoreKGUI.LibraryPanel.CopyTextEditBox:SetText(LoreKGUI.LibraryPanel.CopyTextEditBoxText);
-
+			local icon_Q = data.base.icon;
 			TRP3Button.entryID = itemID
 			if type(icon_Q) == "number" then 
 				TRP3Button.iconID = icon_Q

@@ -21,6 +21,7 @@ ignore:
   - README.md
 
 move-folders:
+  Lorekeeper/Lorekeeper_Items: Lorekeeper_Items
   Lorekeeper/Lorekeeper_Mail: Lorekeeper_Mail
   Lorekeeper/Lorekeeper: Lorekeeper
 

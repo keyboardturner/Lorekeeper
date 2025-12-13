@@ -1,0 +1,46 @@
+## Interface: 110207
+## Title: Lorekeeper_Items
+## Notes: Lorekeeper plugin to save quest and flavor items.
+## Author: Keyboardturner
+## Version: @project-version@
+## IconTexture: Interface/Icons/ui_itemupgrade
+## SavedVariables: LoreKItems_DB
+## Dependencies: Lorekeeper
+
+## Title-enUS: Lorekeeper_Items
+## Notes-enUS: Lorekeeper plugin to save quest and flavor items.
+## Title-frFR: Lorekeeper_Items
+## Notes-frFR: 
+## Title-esES: Lorekeeper_Items
+## Notes-esES: 
+## Title-esMX: Lorekeeper_Items
+## Notes-esMX: 
+## Title-deDE: Lorekeeper_Items
+## Notes-deDE: 
+## Title-itIT: Lorekeeper_Items
+## Notes-itIT: 
+## Title-ptBR: Lorekeeper_Items
+## Notes-ptBR: 
+## Title-ruRU:  (Lorekeeper_Items)
+## Notes-ruRU: 
+## Title-koKR:  (Lorekeeper_Items)
+## Notes-koKR: 
+## Title-zhCN:  (Lorekeeper_Items)
+## Notes-zhCN: 
+## Title-zhTW:  (Lorekeeper_Items)
+## Notes-zhTW: 
+
+## Category-enUS: Roleplay
+## Category-deDE: Rollenspiel
+## Category-esES: Juego de rol
+## Category-esMX: Juego de rol
+## Category-frFR: Jeu de rôle
+## Category-itIT: Gioco di Ruolo
+## Category-koKR: 롤플레잉
+## Category-ptBR: Interpretação de Papel
+## Category-ruRU: Ролевая игра
+## Category-zhCN: 角色扮演
+## Category-zhTW: 角色扮演
+
+LocalData.lua
+Lorekeeper_Items.lua

@@ -540,17 +540,43 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 								Print("Detected exact copy in SVs, no changes made: "..activeContext.title)
 							end
 						else
-							for k, v in pairs(LoreK_DB["text"][key]) do
-								if LK.tCompareDeez(v, activeContext) then
-									if LoreK_DB.settings.debugAdvanced then
-										Print("Detected exact copy between SVs and LocalData, deleting extra SV data: ".."("..k..")"..activeContext.title)
+							local matchFound = false
+							
+							if LK.tCompareDeez(LoreK_DB["text"][key]["base"], activeContext) then
+								matchFound = true
+							end
+
+							if not matchFound then
+								for k, v in pairs(LoreK_DB["text"][key]) do
+									if string.find(k, "copy_") then
+										if LK.tCompareDeez(v, activeContext) then
+											matchFound = true
+											break
+										end
 									end
-									LoreK_DB["text"][key][k] = nil;
-								else
-									LoreK_DB["text"][key]["copy_"..( tablelength(LoreK_DB["text"][key]) )] = CopyTable(activeContext) -- produce a copy
-									if LoreK_DB.settings.debugAdvanced then
-										Print("Detected changes in text, a copy of the old has been made: "..activeContext.title)
+								end
+							end
+
+							if matchFound then
+								if LoreK_DB.settings.debugAdvanced then
+									Print("Detected exact copy in SVs, no changes made: "..activeContext.title)
+								end
+							else
+								local highestIndex = 0
+								for k, v in pairs(LoreK_DB["text"][key]) do
+									if string.find(k, "copy_") then
+										local index = tonumber(string.match(k, "copy_(%d+)"))
+										if index and index > highestIndex then
+											highestIndex = index
+										end
 									end
+								end
+								
+								local newKey = "copy_" .. (highestIndex + 1)
+								LoreK_DB["text"][key][newKey] = CopyTable(activeContext)
+								
+								if LoreK_DB.settings.debugAdvanced then
+									Print("Detected new variant, saved as "..newKey..": "..activeContext.title)
 								end
 							end
 						end
