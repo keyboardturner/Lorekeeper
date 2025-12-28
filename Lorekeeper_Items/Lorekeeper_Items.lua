@@ -2,8 +2,10 @@ local _, LK = ...
 
 if not Lorekeeper_API or not Lorekeeper_API.LK then return end
 
+
+local LK = Lorekeeper_API.LK
+
 local LoreKGUI = Lorekeeper_API.LK.LoreKGUI
-local LK_Local = Lorekeeper_API.LK 
 
 local MAX_EXPANSION_ID = LE_EXPANSION_LEVEL_CURRENT
 local MAX_QUALITY_ID = 8
