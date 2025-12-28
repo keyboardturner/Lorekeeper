@@ -466,7 +466,11 @@ local function Tab_OnClick(self)
 		else
 			Lorekeeper_API.SetUpMailColorsAndTextures();
 		end
+		if C_AddOns.IsAddOnLoaded("Lorekeeper_Cinematics") and Lorekeeper_API.SetUpCinematicsColorsAndTextures then
+			Lorekeeper_API.SetUpCinematicsColorsAndTextures();
+		end
 	end
+
 end
 
 -- Function to set up tabs and their associated content frames
@@ -517,6 +521,12 @@ local function SetTabs(frame, numTabs, ...)
 
 			tab:SetPoint("TOPLEFT", previousTab, "TOPRIGHT", 3, 0);
 		elseif i == 4 then
+			LoreKGUI.CinematicsPanel = CreateFrame("Frame", nil, tab.content);
+			LoreKGUI.CinematicsPanel:SetPoint("TOPLEFT", tab.content, "TOPLEFT", 0, 0);
+			LoreKGUI.CinematicsPanel:SetPoint("BOTTOMRIGHT", tab.content, "BOTTOMRIGHT", 0, 0);
+
+			tab:SetPoint("TOPLEFT", previousTab, "TOPRIGHT", 3, 0);
+		elseif i == 5 then
 			LoreKGUI.SettingsPanel = CreateFrame("Frame", nil, tab.content);
 			LoreKGUI.SettingsPanel:SetPoint("TOPLEFT", tab.content, "TOPLEFT", 0, 0);
 			LoreKGUI.SettingsPanel:SetPoint("BOTTOMRIGHT", tab.content, "BOTTOMRIGHT", 0, 0);
@@ -536,7 +546,7 @@ local function SetTabs(frame, numTabs, ...)
 end
 
 -- Set up the tabs and content frames
-local content1, content2, content3, content4 = SetTabs(LoreKGUI, 4, LK["Library"], LK["Mail"], LK["Items"], LK["Settings"]);
+local content1, content2, content3, content4, content5 = SetTabs(LoreKGUI, 5, LK["Library"], LK["Mail"], LK["Items"], LK["Cinematics"], LK["Settings"]);
 
 --LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
 --LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5)

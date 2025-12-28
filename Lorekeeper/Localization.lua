@@ -120,7 +120,18 @@ if LOCALE == "enUS" then
 	LK["SpecialThanks"] = "Thank you to these wonderful people who contributed to this addon!"
 	LK["LoreKeeperMinMap"] = "Click to toggle Lorekeeper journal.|nRight-click to hide this icon."
 	LK["LoreKeeperCompartmentTT"] = "Click to toggle Lorekeeper journal."
-	LK["ToggleMinimapIcon"] = "Show Minimap Icon";
+	LK["ToggleMinimapIcon"] = "Show Minimap Icon"
+	LK["Items"] = ITEMS
+	LK["Cinematics"] = CINEMATICS
+	LK["Expansion"] = EXPANSION_FILTER_TEXT
+	LK["Description"] = DESCRIPTION
+	LK["QuestItem"] = ITEM_BIND_QUEST
+	LK["QuestItems"] = BAG_FILTER_QUEST_ITEMS
+	LK["CraftingReagent"] = PROFESSIONS_USED_IN_COOKING
+	LK["Type"] = TYPE
+	LK["Other"] = OTHER
+	LK["Quality"] = QUALITY
+
 return end
 
 if LOCALE == "esES" or LOCALE == "esMX" then
@@ -221,6 +232,16 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["LoreKeeperMinMap"] = "Haz clic para alternar el diario del Lorekeeper.|nHaz clic derecho para ocultar este icono."
 	LK["LoreKeeperCompartmentTT"] = "Haz clic para alternar el diario del Lorekeeper."
 	LK["ToggleMinimapIcon"] = "Mostrar icono del minimapa"
+	LK["Items"] = ITEMS
+	LK["Cinematics"] = CINEMATICS
+	LK["Expansion"] = EXPANSION_FILTER_TEXT
+	LK["Description"] = DESCRIPTION
+	LK["QuestItem"] = ITEM_BIND_QUEST
+	LK["QuestItems"] = BAG_FILTER_QUEST_ITEMS
+	LK["CraftingReagent"] = PROFESSIONS_USED_IN_COOKING
+	LK["Type"] = TYPE
+	LK["Other"] = OTHER
+	LK["Quality"] = QUALITY
 
 return end
 
@@ -322,6 +343,16 @@ if LOCALE == "deDE" then
 	LK["LoreKeeperMinMap"] = "Klicken, um das Tagebuch des Lorekeepers umzuschalten.|nRechtsklicken, um dieses Symbol zu verbergen."
 	LK["LoreKeeperCompartmentTT"] = "Klicken, um das Tagebuch des Lorekeepers umzuschalten."
 	LK["ToggleMinimapIcon"] = "Minikarten-Symbol anzeigen"
+	LK["Items"] = ITEMS
+	LK["Cinematics"] = CINEMATICS
+	LK["Expansion"] = EXPANSION_FILTER_TEXT
+	LK["Description"] = DESCRIPTION
+	LK["QuestItem"] = ITEM_BIND_QUEST
+	LK["QuestItems"] = BAG_FILTER_QUEST_ITEMS
+	LK["CraftingReagent"] = PROFESSIONS_USED_IN_COOKING
+	LK["Type"] = TYPE
+	LK["Other"] = OTHER
+	LK["Quality"] = QUALITY
 
 return end
 
@@ -423,6 +454,16 @@ if LOCALE == "frFR" then
 	LK["LoreKeeperMinMap"] = "Cliquez pour basculer le journal du Lorekeeper.|nClic droit pour masquer cette icône."
 	LK["LoreKeeperCompartmentTT"] = "Cliquez pour basculer le journal du Lorekeeper."
 	LK["ToggleMinimapIcon"] = "Afficher l'icône de la minicarte"
+	LK["Items"] = ITEMS
+	LK["Cinematics"] = CINEMATICS
+	LK["Expansion"] = EXPANSION_FILTER_TEXT
+	LK["Description"] = DESCRIPTION
+	LK["QuestItem"] = ITEM_BIND_QUEST
+	LK["QuestItems"] = BAG_FILTER_QUEST_ITEMS
+	LK["CraftingReagent"] = PROFESSIONS_USED_IN_COOKING
+	LK["Type"] = TYPE
+	LK["Other"] = OTHER
+	LK["Quality"] = QUALITY
 
 return end
 
@@ -524,6 +565,16 @@ if LOCALE == "itIT" then
 	LK["LoreKeeperMinMap"] = "Clicca per aprire il diario di Lorekeeper.|nFai clic destro per nascondere questa icona."
 	LK["LoreKeeperCompartmentTT"] = "Clicca per aprire il diario di Lorekeeper."
 	LK["ToggleMinimapIcon"] = "Mostra icona della minimappa"
+	LK["Items"] = ITEMS
+	LK["Cinematics"] = CINEMATICS
+	LK["Expansion"] = EXPANSION_FILTER_TEXT
+	LK["Description"] = DESCRIPTION
+	LK["QuestItem"] = ITEM_BIND_QUEST
+	LK["QuestItems"] = BAG_FILTER_QUEST_ITEMS
+	LK["CraftingReagent"] = PROFESSIONS_USED_IN_COOKING
+	LK["Type"] = TYPE
+	LK["Other"] = OTHER
+	LK["Quality"] = QUALITY
 
 return end
 
@@ -625,6 +676,16 @@ if LOCALE == "ptBR" then
 	LK["LoreKeeperMinMap"] = "Clique para alternar o diário do Lorekeeper.|nClique com o botão direito para ocultar este ícone."
 	LK["LoreKeeperCompartmentTT"] = "Clique para alternar o diário do Lorekeeper."
 	LK["ToggleMinimapIcon"] = "Mostrar ícone do minimapa"
+	LK["Items"] = ITEMS
+	LK["Cinematics"] = CINEMATICS
+	LK["Expansion"] = EXPANSION_FILTER_TEXT
+	LK["Description"] = DESCRIPTION
+	LK["QuestItem"] = ITEM_BIND_QUEST
+	LK["QuestItems"] = BAG_FILTER_QUEST_ITEMS
+	LK["CraftingReagent"] = PROFESSIONS_USED_IN_COOKING
+	LK["Type"] = TYPE
+	LK["Other"] = OTHER
+	LK["Quality"] = QUALITY
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -728,6 +789,16 @@ if LOCALE == "ruRU" then
 	LK["LoreKeeperMinMap"] = "Нажмите, чтобы переключить журнал Хранителя знаний.|nЩелкните правой кнопкой, чтобы скрыть эту иконку."
 	LK["LoreKeeperCompartmentTT"] = "Нажмите, чтобы переключить журнал Хранителя знаний."
 	LK["ToggleMinimapIcon"] = "Показать значок миникарты"
+	LK["Items"] = ITEMS
+	LK["Cinematics"] = CINEMATICS
+	LK["Expansion"] = EXPANSION_FILTER_TEXT
+	LK["Description"] = DESCRIPTION
+	LK["QuestItem"] = ITEM_BIND_QUEST
+	LK["QuestItems"] = BAG_FILTER_QUEST_ITEMS
+	LK["CraftingReagent"] = PROFESSIONS_USED_IN_COOKING
+	LK["Type"] = TYPE
+	LK["Other"] = OTHER
+	LK["Quality"] = QUALITY
 
 
 return end
@@ -830,6 +901,16 @@ if LOCALE == "koKR" then
 	LK["LoreKeeperMinMap"] = "클릭하여 지식의 수호자 일지를 전환하세요.|n오른쪽 클릭하여 이 아이콘을 숨깁니다."
 	LK["LoreKeeperCompartmentTT"] = "클릭하여 지식의 수호자 일지를 전환하세요."
 	LK["ToggleMinimapIcon"] = "미니맵 아이콘 표시"
+	LK["Items"] = ITEMS
+	LK["Cinematics"] = CINEMATICS
+	LK["Expansion"] = EXPANSION_FILTER_TEXT
+	LK["Description"] = DESCRIPTION
+	LK["QuestItem"] = ITEM_BIND_QUEST
+	LK["QuestItems"] = BAG_FILTER_QUEST_ITEMS
+	LK["CraftingReagent"] = PROFESSIONS_USED_IN_COOKING
+	LK["Type"] = TYPE
+	LK["Other"] = OTHER
+	LK["Quality"] = QUALITY
 
 
 return end
@@ -932,6 +1013,16 @@ if LOCALE == "zhCN" then
 	LK["LoreKeeperMinMap"] = "点击以切换知识守护者日志。|n右键点击隐藏此图标。"
 	LK["LoreKeeperCompartmentTT"] = "点击以切换知识守护者日志。"
 	LK["ToggleMinimapIcon"] = "显示小地图图标"
+	LK["Items"] = ITEMS
+	LK["Cinematics"] = CINEMATICS
+	LK["Expansion"] = EXPANSION_FILTER_TEXT
+	LK["Description"] = DESCRIPTION
+	LK["QuestItem"] = ITEM_BIND_QUEST
+	LK["QuestItems"] = BAG_FILTER_QUEST_ITEMS
+	LK["CraftingReagent"] = PROFESSIONS_USED_IN_COOKING
+	LK["Type"] = TYPE
+	LK["Other"] = OTHER
+	LK["Quality"] = QUALITY
 
 
 return end
@@ -1034,6 +1125,16 @@ if LOCALE == "zhTW" then
 	LK["LoreKeeperMinMap"] = "點擊以切換知識守護者日誌。|n右鍵點擊隱藏此圖標。"
 	LK["LoreKeeperCompartmentTT"] = "點擊以切換知識守護者日誌。"
 	LK["ToggleMinimapIcon"] = "顯示小地圖圖標"
+	LK["Items"] = ITEMS
+	LK["Cinematics"] = CINEMATICS
+	LK["Expansion"] = EXPANSION_FILTER_TEXT
+	LK["Description"] = DESCRIPTION
+	LK["QuestItem"] = ITEM_BIND_QUEST
+	LK["QuestItems"] = BAG_FILTER_QUEST_ITEMS
+	LK["CraftingReagent"] = PROFESSIONS_USED_IN_COOKING
+	LK["Type"] = TYPE
+	LK["Other"] = OTHER
+	LK["Quality"] = QUALITY
 
 
 return end
