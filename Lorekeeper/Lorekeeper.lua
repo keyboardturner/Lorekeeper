@@ -531,7 +531,6 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		end
 		if LoreK_DB["text"][key] then
 			if LoreK_DB["text"][key]["base"] then
-				if LK["LocalData"]["text"] then print("localdata text exists") else print("it doesn't exist, wtf?") end
 				if not LK["LocalData"]["text"][key] or not (LK["LocalData"]["text"][key] and LK["LocalData"]["text"][key]["base"]) then
 					if LoreK_DB["text"][key] and LoreK_DB["text"][key]["base"] and LoreK_DB["text"][key]["base"]["text"] then -- does entry exist in SVs (with text)
 						if LK.tCompareDeez(LoreK_DB["text"][key]["base"], activeContext) then -- is it an exact match
