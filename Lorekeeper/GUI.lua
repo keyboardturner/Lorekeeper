@@ -466,8 +466,15 @@ local function Tab_OnClick(self)
 		else
 			Lorekeeper_API.SetUpMailColorsAndTextures();
 		end
+		if not C_AddOns.IsAddOnLoaded("Lorekeeper_Items") then
+			LoreKMainframeTab3:SetEnabled(false);
+			LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5);
+		end
 		if C_AddOns.IsAddOnLoaded("Lorekeeper_Cinematics") and Lorekeeper_API.SetUpCinematicsColorsAndTextures then
 			Lorekeeper_API.SetUpCinematicsColorsAndTextures();
+		else
+			LoreKMainframeTab4:SetEnabled(false);
+			LoreKMainframeTab4.Text:SetTextColor(.5,.5,.5);
 		end
 	end
 
@@ -551,9 +558,19 @@ local content1, content2, content3, content4, content5 = SetTabs(LoreKGUI, 5, LK
 --LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
 --LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5)
 
+LoreKMainframeTab2:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(self, "ANCHOR_TOP");
+	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
+		GameTooltip:AddLine(LK["AddonDisabled"], 1, 0, 0)
+	end
+	GameTooltip:Show();
+end);
+LoreKMainframeTab2:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
+
 LoreKMainframeTab3:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine(LK["Items"], 1, 1, 1);
 	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Items") then
 		GameTooltip:AddLine(LK["AddonDisabled"], 1, 0, 0)
 	end
@@ -565,7 +582,9 @@ end);
 
 LoreKMainframeTab4:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine(LK["Settings"], 1, 1, 1);
+	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Cinematics") then
+		GameTooltip:AddLine(LK["AddonDisabled"], 1, 0, 0)
+	end
 	GameTooltip:Show();
 end);
 LoreKMainframeTab4:SetScript("OnLeave", function()
@@ -2741,6 +2760,14 @@ function LoreKGUI.Initialize(self, event, arg1)
 		if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
 			LoreKMainframeTab2:SetEnabled(false);
 			LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5);
+		end
+		if not C_AddOns.IsAddOnLoaded("Lorekeeper_Items") then
+			LoreKMainframeTab3:SetEnabled(false);
+			LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5);
+		end
+		if not C_AddOns.IsAddOnLoaded("Lorekeeper_Cinematics") then
+			LoreKMainframeTab4:SetEnabled(false);
+			LoreKMainframeTab4.Text:SetTextColor(.5,.5,.5);
 		end
 	end
 end

@@ -129,14 +129,24 @@ local function MigrateQuestItems()
 	if not LoreKItems_DB then LoreKItems_DB = { ["items"] = {} } end
 	if not LoreKItems_DB["items"] then LoreKItems_DB["items"] = {} end
 
-	for itemID, data in pairs(LoreK_DB["questItems"]) do
-		if not LoreKItems_DB["items"][itemID] then
-			LoreKItems_DB["items"][itemID] = {
-				id = itemID,
-				dateObtained = data.dateObtained or date("%Y-%m-%d"), 
-				isQuestItem = data.isQuestItem, 
-			}
-			StoreItemData(itemID)
+	if LoreK_DB["questItems"] then
+		local count = 0
+		for itemID, data in pairs(LoreK_DB["questItems"]) do
+			if not LoreKItems_DB["items"][itemID] then
+				LoreKItems_DB["items"][itemID] = {
+					id = itemID,
+					dateObtained = data.dateObtained or date("%Y-%m-%d"), 
+					isQuestItem = data.isQuestItem, 
+				}
+				StoreItemData(itemID)
+				count = count + 1
+			end
+		end
+		
+		LoreK_DB["questItems"] = nil
+
+		if count > 0 and LoreK_DB.settings and LoreK_DB.settings.debugAdvanced then
+			print(string.format("|cFFFFF569Lorekeeper:|r Migrated %d quest items and cleaned LoreK_DB.", count))
 		end
 	end
 end

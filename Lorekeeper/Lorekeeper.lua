@@ -273,7 +273,6 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					},
 				},
 				text = {},
-				questItems = {},
 			};
 		end
 
@@ -465,7 +464,6 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					},
 				},
 				text = {},
-				questItems = {},
 			};
 		end
 
@@ -642,42 +640,6 @@ Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_BEGIN");
 Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_READY");
 Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_CLOSED");
 Lorekeeper.Initialize:SetScript("OnEvent", Lorekeeper.Initialize.Events);
-
-
---------------------------------------------------------------------------
---------------------------------------------------------------------------
- -- Quest Item Collector
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-
-local LJ = CreateFrame("Frame");
-LJ:RegisterEvent("CHAT_MSG_LOOT");
-
-function LJ:OnEvent(event, arg1)
-	if event == "CHAT_MSG_LOOT" then
-		local itemID = arg1:match("item:(%d+):");
-		itemID = tonumber(itemID);
-		if not itemID then return end -- Blizzard, why do you loot spells when you gain anima powers?
-		local classID = select(6, C_Item.GetItemInfoInstant(itemID));
-		if classID and classID == 12 then
-			if not LoreK_DB["questItems"] then
-				LoreK_DB["questItems"] = {};
-			end
-			if not LoreK_DB["questItems"][itemID] then
-				LoreK_DB["questItems"][itemID] = {
-					isQuestItem = true,
-					isDiscovered = true,
-				};
-				if LoreK_DB.settings.debugAdvanced then
-					Print("Quest item stored: " .. itemID)
-				end
-			end
-		end
-	end
-end
-
-LJ:SetScript("OnEvent", LJ.OnEvent)
-
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
