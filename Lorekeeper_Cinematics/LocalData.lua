@@ -13,8 +13,6 @@ local LOCALE = GetLocale()
 local PATH = "Interface\\AddOns\\Lorekeeper_Cinematics\\Assets\\Textures\\" -- batch
 
 
-if not LK["LocalData"] then return end
-
 LK["LocalData"]["cinematics"] = {
 	[10] = {
 		["name"] = "wow_intro",

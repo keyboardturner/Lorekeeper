@@ -12,8 +12,6 @@ local LOCALE = GetLocale()
 
 if LOCALE == "enUS" then
 
-if not LK["LocalData"] then return end
-
 LK["LocalData"]["questItems"] = {
 	[237022] = {
 		["itemName"] = "Discarded Items",
