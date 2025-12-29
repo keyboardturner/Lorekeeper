@@ -41704,12 +41704,20 @@ LK["LocalData"]["questItems"] = {
 	},
 };
 
-
-
 end
 
-if LOCALE == "esES" or LOCALE == "esMX" then
-	-- Spanish text data goes here
+if LOCALE == "esMX" then
+	-- Spanish (Mexico) text data goes here
+
+LK["LocalData"] = {
+
+};
+
+
+return end
+
+if LOCALE == "esES" then
+	-- Spanish (Spain) text data goes here
 
 LK["LocalData"] = {
 

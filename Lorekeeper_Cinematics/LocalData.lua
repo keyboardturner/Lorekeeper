@@ -2324,6 +2324,7 @@ LK["LocalData"]["cinematics"] = {
 };
 
 if LOCALE == "enUS" then
+-- Localized English stuff
 
 local Subtitles = {
 	["wow_intro"] = [[
@@ -2877,4 +2878,101 @@ for index, data in pairs(LK["LocalData"]["cinematics"]) do
 	end
 end
 
-end
+return end
+
+
+
+if LOCALE == "esMX" then
+	-- Spanish (Mexico) text data goes here
+
+LK["LocalData"] = {
+
+};
+
+
+return end
+
+if LOCALE == "esES" then
+	-- Spanish (Spain) text data goes here
+
+LK["LocalData"] = {
+
+};
+
+
+return end
+
+if LOCALE == "deDE" then
+	-- German text data go here
+
+LK["LocalData"] = {
+
+};
+
+return end
+
+if LOCALE == "frFR" then
+	-- French text data go here
+
+LK["LocalData"] = {
+
+};
+
+return end
+
+if LOCALE == "itIT" then
+	-- French text data go here
+
+LK["LocalData"] = {
+
+};
+
+return end
+
+if LOCALE == "ptBR" then
+	-- Brazilian Portuguese text data go here
+
+LK["LocalData"] = {
+
+};
+
+-- Note that the EU Portuguese WoW client also
+-- uses the Brazilian Portuguese locale code.
+return end
+
+if LOCALE == "ruRU" then
+	-- Russian text data go here
+
+LK["LocalData"] = {
+
+};
+
+return end
+
+if LOCALE == "koKR" then
+	-- Korean text data go here
+
+LK["LocalData"] = {
+
+};
+
+return end
+
+if LOCALE == "zhCN" then
+	-- Simplified Chinese text data go here
+
+LK["LocalData"] = {
+
+};
+
+return end
+
+if LOCALE == "zhTW" then
+	-- Traditional Chinese text data go here
+
+LK["LocalData"] = {
+
+};
+
+return end
+
