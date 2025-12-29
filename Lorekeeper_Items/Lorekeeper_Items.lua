@@ -81,8 +81,7 @@ local function StoreItemData(itemID, callback)
 
 		if not LoreKItems_DB["items"][itemID] then
 			LoreKItems_DB["items"][itemID] = { 
-				id = itemID, 
-				dateObtained = date("%Y-%m-%d") 
+				id = itemID,
 			}
 		end
 
@@ -134,8 +133,7 @@ local function MigrateQuestItems()
 		for itemID, data in pairs(LoreK_DB["questItems"]) do
 			if not LoreKItems_DB["items"][itemID] then
 				LoreKItems_DB["items"][itemID] = {
-					id = itemID,
-					dateObtained = data.dateObtained or date("%Y-%m-%d"), 
+					id = itemID, 
 					isQuestItem = data.isQuestItem, 
 				}
 				StoreItemData(itemID)
@@ -162,7 +160,6 @@ local function ScanCustomItems()
 			if not inLocal then
 				LoreKItems_DB["items"][itemID] = {
 					id = itemID,
-					dateObtained = date("%Y-%m-%d"),
 					source = "CustomText"
 				}
 				StoreItemData(itemID)
@@ -240,7 +237,6 @@ function LJ_Items:OnEvent(event, arg1)
 			if not LoreKItems_DB["items"][itemID] then
 				LoreKItems_DB["items"][itemID] = {
 					id = itemID,
-					dateObtained = date("%Y-%m-%d"),
 				}
 				StoreItemData(itemID, function() 
 					if LoreKGUI:IsVisible() then
