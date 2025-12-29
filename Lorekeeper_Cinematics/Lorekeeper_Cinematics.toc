@@ -4,7 +4,6 @@
 ## Author: Keyboardturner
 ## Version: @project-version@
 ## IconTexture: Interface/Icons/inv_misc_ selfiecamera_01
-## SavedVariables: LoreKItems_DB
 ## Dependencies: Lorekeeper
 
 ## Title-enUS: Lorekeeper_Cinematics
