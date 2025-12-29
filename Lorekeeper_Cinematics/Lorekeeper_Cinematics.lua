@@ -290,6 +290,7 @@ end);
 local function CinematicInitializer(button, data)
 	local title = data.description;
 	if not title then return end
+	local faction = data.faction
 
 	button.tex = button.tex or button:CreateTexture(nil, "OVERLAY", nil, 0);
 	button.tex:SetPoint("TOPLEFT", button, "TOPLEFT", button:GetHeight()*2+2, 0);
@@ -304,6 +305,19 @@ local function CinematicInitializer(button, data)
 	button.texSel = button.texSel or button:CreateTexture(nil, "OVERLAY", nil, 3);
 	button.texSel:SetAllPoints(button.tex);
 	button.texSel:SetAtlas("PetList-ButtonSelect");
+
+	button.factionTex = button.factionTex or button:CreateTexture(nil, "OVERLAY", nil, 2);
+	button.factionTex:SetPoint("RIGHT", button, "RIGHT", -2, 0);
+	button.factionTex:SetSize(button:GetHeight(), button:GetHeight());
+	button.factionTex:Hide();
+
+	if faction == "horde" then
+		button.factionTex:SetAtlas("MountJournalIcons-Horde");
+		button.factionTex:Show();
+	elseif faction == "alliance" then
+		button.factionTex:SetAtlas("MountJournalIcons-Alliance");
+		button.factionTex:Show();
+	end
 	
 	button.textFont = button.textFont or button:CreateFontString(nil, "OVERLAY");
 	button.textFont:SetFontObject("GameTooltipTextSmall");

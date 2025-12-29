@@ -62,8 +62,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 1,
 		["patch"] = "2.5.4",
 		["thumb"] = {
-			["batch"] = 1,
-			["coords"] = 9,
+			["batch"] = 100,
+			["coords"] = 1,
 		},
 	},
 	[32] = {
@@ -74,8 +74,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 1,
 		["patch"] = "2.5.4",
 		["thumb"] = {
-			["batch"] = 1,
-			["coords"] = 9,
+			["batch"] = 100,
+			["coords"] = 2,
 		},
 	},
 	[40] = {
@@ -95,11 +95,11 @@ LK["LocalData"]["cinematics"] = {
 		["id"] = nil,
 		["link"] = "https://youtu.be/WhREhLx4czo",
 		["description"] = "Lore in Short: Arthas Menethil",
-		["expansion"] = 1,
+		["expansion"] = 2,
 		["patch"] = "3.4.3",
 		["thumb"] = {
-			["batch"] = 1,
-			["coords"] = 5,
+			["batch"] = 100,
+			["coords"] = 3,
 		},
 	},
 	[50] = {
@@ -149,6 +149,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 1,
 			["coords"] = 6,
 		},
+		["faction"] = "alliance",
 	},
 	[90] = {
 		["name"] = "goblin",
@@ -161,6 +162,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 1,
 			["coords"] = 7,
 		},
+		["faction"] = "horde",
 	},
 	[100] = {
 		["name"] = "dsi_act1",
@@ -231,8 +233,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 5,
 		["patch"] = "5.0.4",
 		["thumb"] = {
-			["batch"] = 2,
-			["coords"] = 9,
+			["batch"] = 100,
+			["coords"] = 16,
 		},
 	},
 
@@ -271,6 +273,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 1,
 			["coords"] = 18,
 		},
+		["faction"] = "alliance",
 	},
 	[180] = {
 		["name"] = "mop_wrh",
@@ -283,6 +286,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 1,
 			["coords"] = 19,
 		},
+		["faction"] = "horde",
 	},
 	[190] = {
 		["name"] = "mop_jade_crash",
@@ -295,6 +299,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 1,
 			["coords"] = 20,
 		},
+		["faction"] = "horde",
 	},
 	[200] = {
 		["name"] = "mop_jade",
@@ -319,6 +324,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 1,
 			["coords"] = 21,
 		},
+		["faction"] = "alliance",
 	},
 	[220] = {
 		["name"] = "mop_hsl",
@@ -331,6 +337,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 1,
 			["coords"] = 22,
 		},
+		["faction"] = "horde",
 	},
 
 	[221] = {
@@ -341,8 +348,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 4,
 		["patch"] = "5.3.0",
 		["thumb"] = {
-			["batch"] = 1,
-			["coords"] = 14,
+			["batch"] = 100,
+			["coords"] = 4,
 		},
 	},
 	[222] = {
@@ -353,8 +360,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 4,
 		["patch"] = "5.3.0",
 		["thumb"] = {
-			["batch"] = 1,
-			["coords"] = 14,
+			["batch"] = 100,
+			["coords"] = 5,
 		},
 	},
 	[223] = {
@@ -365,8 +372,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 4,
 		["patch"] = "5.3.0",
 		["thumb"] = {
-			["batch"] = 1,
-			["coords"] = 14,
+			["batch"] = 100,
+			["coords"] = 6,
 		},
 	},
 	[224] = {
@@ -377,8 +384,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 4,
 		["patch"] = "5.3.0",
 		["thumb"] = {
-			["batch"] = 1,
-			["coords"] = 14,
+			["batch"] = 100,
+			["coords"] = 7,
 		},
 	},
 	[225] = {
@@ -389,8 +396,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 4,
 		["patch"] = "5.3.0",
 		["thumb"] = {
-			["batch"] = 1,
-			["coords"] = 14,
+			["batch"] = 100,
+			["coords"] = 8,
 		},
 	},
 	[226] = {
@@ -401,8 +408,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 4,
 		["patch"] = "5.3.0",
 		["thumb"] = {
-			["batch"] = 1,
-			["coords"] = 14,
+			["batch"] = 100,
+			["coords"] = 9,
 		},
 	},
 
@@ -417,6 +424,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 1,
 			["coords"] = 23,
 		},
+		["faction"] = "horde",
 	},
 	[240] = {
 		["name"] = "oro_alliance",
@@ -429,6 +437,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 1,
 			["coords"] = 24,
 		},
+		["faction"] = "alliance",
 	},
 	[250] = {
 		["name"] = "wod_mainintro",
@@ -452,8 +461,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 5,
 		["patch"] = "6.0.2",
 		["thumb"] = {
-			["batch"] = 2,
-			["coords"] = 9,
+			["batch"] = 100,
+			["coords"] = 10,
 		},
 	},
 	[252] = {
@@ -464,8 +473,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 5,
 		["patch"] = "6.0.2",
 		["thumb"] = {
-			["batch"] = 2,
-			["coords"] = 9,
+			["batch"] = 100,
+			["coords"] = 11,
 		},
 	},
 	[253] = {
@@ -476,8 +485,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 5,
 		["patch"] = "6.0.2",
 		["thumb"] = {
-			["batch"] = 2,
-			["coords"] = 9,
+			["batch"] = 100,
+			["coords"] = 12,
 		},
 	},
 	[254] = {
@@ -488,8 +497,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 5,
 		["patch"] = "6.0.2",
 		["thumb"] = {
-			["batch"] = 2,
-			["coords"] = 9,
+			["batch"] = 100,
+			["coords"] = 13,
 		},
 	},
 	[255] = {
@@ -500,8 +509,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 5,
 		["patch"] = "6.0.2",
 		["thumb"] = {
-			["batch"] = 2,
-			["coords"] = 9,
+			["batch"] = 100,
+			["coords"] = 14,
 		},
 	},
 
@@ -540,6 +549,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 2,
 			["coords"] = 3,
 		},
+		["faction"] = "horde",
 	},
 	[290] = {
 		["name"] = "wod_gar_horde_tier1-2",
@@ -552,6 +562,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 2,
 			["coords"] = 4,
 		},
+		["faction"] = "horde",
 	},
 	[300] = {
 		["name"] = "wod_gar_horde_tier2-3",
@@ -564,6 +575,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 2,
 			["coords"] = 5,
 		},
+		["faction"] = "horde",
 	},
 	[310] = {
 		["name"] = "wod_gar_alliance_tier0-1",
@@ -576,6 +588,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 2,
 			["coords"] = 6,
 		},
+		["faction"] = "alliance",
 	},
 	[320] = {
 		["name"] = "wod_gar_alliance_tier1-2",
@@ -588,6 +601,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 2,
 			["coords"] = 7,
 		},
+		["faction"] = "alliance",
 	},
 	[330] = {
 		["name"] = "wod_gar_alliance_tier2-3",
@@ -600,6 +614,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 2,
 			["coords"] = 8,
 		},
+		["faction"] = "alliance",
 	},
 
 	[340] = {
@@ -673,6 +688,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 2,
 			["coords"] = 11,
 		},
+		["faction"] = "horde",
 	},
 	[400] = {
 		["name"] = "wod_gar_shipyard_lj_a",
@@ -685,6 +701,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 2,
 			["coords"] = 12,
 		},
+		["faction"] = "alliance",
 	},
 	[410] = {
 		["name"] = "wod_hfi",
@@ -719,8 +736,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 6,
 		["patch"] = "6.0.2",
 		["thumb"] = {
-			["batch"] = 2,
-			["coords"] = 16,
+			["batch"] = 100,
+			["coords"] = 17,
 		},
 	},
 
@@ -752,7 +769,7 @@ LK["LocalData"]["cinematics"] = {
 		["name"] = "legion_hrb_k",
 		["id"] = 477,
 		--["link"] = "",
-		["description"] = "Harbingers:Khadgar",
+		["description"] = "Harbingers: Khadgar",
 		["expansion"] = 6,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
@@ -819,6 +836,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 3,
 			["coords"] = 1,
 		},
+		["faction"] = "alliance",
 	},
 	[510] = {
 		["name"] = "legion_bs_h",
@@ -831,6 +849,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 3,
 			["coords"] = 2,
 		},
+		["faction"] = "horde",
 	},
 	[520] = {
 		["name"] = "legion_org_vs",
@@ -843,6 +862,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 2,
 			["coords"] = 20,
 		},
+		["faction"] = "horde",
 	},
 	[530] = {
 		["name"] = "legion_val_yx",
@@ -980,13 +1000,14 @@ LK["LocalData"]["cinematics"] = {
 		["name"] = "legion_72_ars",
 		["id"] = 636,
 		--["link"] = "",
-		["description"] = "Alliance A Found Memento: Raising a King",
+		["description"] = "A Found Memento: Raising a King",
 		["expansion"] = 6,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
 			["batch"] = 3,
 			["coords"] = 7,
 		},
+		["faction"] = "alliance",
 	},
 	[650] = {
 		["name"] = "legion_72_tsf",
@@ -1071,6 +1092,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 3,
 			["coords"] = 15,
 		},
+		["faction"] = "alliance",
 	},
 	[720] = {
 		["name"] = "legion_735_eph",
@@ -1083,6 +1105,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 3,
 			["coords"] = 16,
 		},
+		["faction"] = "horde",
 	},
 	[730] = {
 		["name"] = "bfa_800_sv",
@@ -1117,8 +1140,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 7,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
-			["batch"] = 3,
-			["coords"] = 17,
+			["batch"] = 100,
+			["coords"] = 18,
 		},
 	},
 
@@ -1157,6 +1180,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 3,
 			["coords"] = 20,
 		},
+		["faction"] = "horde",
 	},
 	[780] = {
 		["name"] = "bfa_800_ltc_a",
@@ -1169,6 +1193,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 3,
 			["coords"] = 19,
 		},
+		["faction"] = "alliance",
 	},
 
 	[781] = {
@@ -1179,8 +1204,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 7,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
-			["batch"] = 3,
-			["coords"] = 17,
+			["batch"] = 100,
+			["coords"] = 19,
 		},
 	},
 
@@ -1195,6 +1220,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 3,
 			["coords"] = 22,
 		},
+		["faction"] = "horde",
 	},
 	[800] = {
 		["name"] = "bfa_800_zia",
@@ -1207,78 +1233,85 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 3,
 			["coords"] = 23,
 		},
+		["faction"] = "alliance",
 	},
 	[810] = {
 		["name"] = "bfa_800_jnm",
 		["id"] = 860,
 		--["link"] = "",
-		["description"] = "Alliance Jaina's Nightmare",
+		["description"] = "Jaina's Nightmare",
 		["expansion"] = 7,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
 			["batch"] = 3,
 			["coords"] = 25,
 		},
+		["faction"] = "alliance",
 	},
 	[820] = {
 		["name"] = "bfa_800_kta",
 		["id"] = 859,
 		--["link"] = "",
-		["description"] = "Alliance Arrival to Kul Tiras",
+		["description"] = "Arrival to Kul Tiras",
 		["expansion"] = 7,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
 			["batch"] = 3,
 			["coords"] = 24,
 		},
+		["faction"] = "alliance",
 	},
 	[830] = {
 		["name"] = "bfa_800_rot",
 		["id"] = 865,
 		--["link"] = "",
-		["description"] = "Alliance Realm of Torment",
+		["description"] = "Realm of Torment",
 		["expansion"] = 7,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
 			["batch"] = 4,
 			["coords"] = 2,
 		},
+		["faction"] = "alliance",
 	},
 	[840] = {
 		["name"] = "bfa_800_ktf",
 		["id"] = 864,
 		--["link"] = "",
-		["description"] = "Alliance The Return of Hope: Kul Tiras",
+		["description"] = "The Return of Hope: Kul Tiras",
 		["expansion"] = 7,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
 			["batch"] = 4,
 			["coords"] = 1,
 		},
+		["faction"] = "alliance",
 	},
 	[850] = {
 		["name"] = "bfa_800_bar",
 		["id"] = 862,
 		--["link"] = "",
-		["description"] = "Horde Rastakhan's Deal with Bwonsamdi",
+		["description"] = "Rastakhan's Deal with Bwonsamdi",
 		["expansion"] = 7,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
 			["batch"] = 3,
 			["coords"] = 27,
 		},
+		["faction"] = "horde",
 	},
 	[860] = {
 		["name"] = "bfa_800_zcf",
 		["id"] = 863,
 		--["link"] = "",
-		["description"] = "Horde The Threat Within: Zandalar",
+		["description"] = "The Threat Within: Zandalar",
 		["expansion"] = 7,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
 			["batch"] = 3,
 			["coords"] = 28,
 		},
+		["faction"] = "horde",
 	},
 	[870] = {
 		["name"] = "bfa_810_tod",
@@ -1308,13 +1341,14 @@ LK["LocalData"]["cinematics"] = {
 		["name"] = "bfa_810_dor",
 		["id"] = 875,
 		--["link"] = "",
-		["description"] = "Horde The Death of Rastakhan",
+		["description"] = "The Death of Rastakhan",
 		["expansion"] = 7,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
 			["batch"] = 4,
 			["coords"] = 5,
 		},
+		["faction"] = "horde",
 	},
 	[900] = {
 		["name"] = "bfa_815_dpr",
@@ -1337,8 +1371,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 7,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
-			["batch"] = 3,
-			["coords"] = 17,
+			["batch"] = 100,
+			["coords"] = 20,
 		},
 	},
 
@@ -1358,25 +1392,27 @@ LK["LocalData"]["cinematics"] = {
 		["name"] = "bfa_820_enc_262_a",
 		["id"] = 883,
 		--["link"] = "",
-		["description"] = "Alliance Rise of Azshara Now Live",
+		["description"] = "Rise of Azshara",
 		["expansion"] = 7,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
 			["batch"] = 4,
 			["coords"] = 13,
 		},
+		["faction"] = "alliance",
 	},
 	[930] = {
 		["name"] = "bfa_820_enc_262_h",
 		["id"] = 894,
 		--["link"] = "",
-		["description"] = "Horde Rise of Azshara Now Live",
+		["description"] = "Rise of Azshara",
 		["expansion"] = 7,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
 			["batch"] = 4,
 			["coords"] = 14,
 		},
+		["faction"] = "horde",
 	},
 	[940] = {
 		["name"] = "bfa_820_enc_261",
@@ -1473,6 +1509,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 4,
 			["coords"] = 12,
 		},
+		["faction"] = "alliance",
 	},
 	[1002] = {
 		["name"] = "shadowlands_901_nph",
@@ -1485,6 +1522,7 @@ LK["LocalData"]["cinematics"] = {
 			["batch"] = 4,
 			["coords"] = 20,
 		},
+		["faction"] = "horde",
 	},
 	[1010] = {
 		["name"] = "shadowlands_901_si",
@@ -2060,8 +2098,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 10,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
-			["batch"] = 6,
-			["coords"] = 13,
+			["batch"] = 100,
+			["coords"] = 15,
 		},
 	},
 
@@ -2112,8 +2150,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 10,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
-			["batch"] = 6,
-			["coords"] = 17,
+			["batch"] = 100,
+			["coords"] = 21,
 		},
 	},
 
@@ -2261,8 +2299,8 @@ LK["LocalData"]["cinematics"] = {
 		["expansion"] = 11,
 		["patch"] = "PLACEHOLDER_VALUE",
 		["thumb"] = {
-			["batch"] = 3,
-			["coords"] = 17,
+			["batch"] = 100,
+			["coords"] = 22,
 		},
 	},
 
