@@ -146,6 +146,97 @@ TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["default"]["H1"]:GetFont(
 TextScrollChild.textHTML:SetFont("p", ITEM_TEXT_FONTS["default"]["P"]:GetFont());
 TextScrollChild.textHTML:SetJustifyH("p", "LEFT");
 
+local LK_CopyBoxMixin = {}
+
+function LK_CopyBoxMixin:OnLoad()
+	self:SetAutoFocus(false)
+	self:SetFontObject("ChatFontNormal")
+	self:SetTextInsets(5, 5, 0, 0)
+
+	self.Label = self:CreateFontString(nil, "ARTWORK", "GameFontWhiteSmall")
+	self.Label:SetJustifyH("LEFT")
+	self.Label:SetText("")
+	self.Label:SetWordWrap(false)
+	self.Label:SetPoint("BOTTOMLEFT", self, "TOPLEFT", 0, 2)
+	self.Label:SetPoint("BOTTOMRIGHT", self, "TOPRIGHT", 0, 2)
+
+	self:SetScript("OnEnterPressed", self.OnEnterPressed)
+	self:SetScript("OnKeyDown", self.OnKeyDown)
+	self:SetScript("OnTextChanged", self.OnTextChanged)
+	self:SetScript("OnEscapePressed", self.ClearFocus)
+end
+
+function LK_CopyBoxMixin:SetLabel(text)
+	self.Label:SetText(text)
+	self.Label:Show()
+end
+
+function LK_CopyBoxMixin:OnEnterPressed()
+	self:ClearFocus()
+end
+
+function LK_CopyBoxMixin:OnKeyDown(key)
+	if IsControlKeyDown() and (key == "C" or key == "X") then
+		PlaySound(SOUNDKIT.TUTORIAL_POPUP)
+		
+		C_Timer.After(0.1, function() 
+			self:ClearFocus() 
+		end)
+	end
+end
+
+function LK_CopyBoxMixin:OnTextChanged(userInput)
+	if userInput then
+		self:SetText(self.contentString or "")
+		self:HighlightText()
+	else
+		self.contentString = self:GetText()
+	end
+end
+
+local function CreateLKCopyBox(parent, width)
+	local copyBox = CreateFrame("EditBox", nil, parent, "InputBoxTemplate")
+	copyBox:SetSize(width or 200, 20)
+	
+	Mixin(copyBox, LK_CopyBoxMixin)
+	copyBox:OnLoad()
+	
+	return copyBox
+end
+
+local LinkFrame = CreateFrame("Frame", "LoreKCinematics_LinkFrame", UIParent)
+LinkFrame:SetSize(400, 120)
+LinkFrame:SetPoint("CENTER")
+LinkFrame:SetFrameStrata("DIALOG")
+LinkFrame:Hide()
+
+LinkFrame.Bg = LinkFrame:CreateTexture(nil, "BACKGROUND")
+LinkFrame.Bg:SetAllPoints()
+LinkFrame.Bg:SetColorTexture(0, 0, 0, 0.9)
+
+LinkFrame.Border = CreateFrame("Frame", nil, LinkFrame, "DialogBorderTemplate")
+
+LinkFrame.Title = LinkFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+LinkFrame.Title:SetPoint("TOP", 0, -15)
+LinkFrame.Title:SetText("External Link")
+
+LinkFrame.CopyBox = CreateLKCopyBox(LinkFrame, 350)
+LinkFrame.CopyBox:SetPoint("CENTER", 0, 10)
+LinkFrame.CopyBox:SetLabel("Press Ctrl+C to copy link")
+
+LinkFrame.CloseBtn = CreateFrame("Button", nil, LinkFrame, "UIPanelButtonTemplate")
+LinkFrame.CloseBtn:SetSize(100, 25)
+LinkFrame.CloseBtn:SetPoint("BOTTOM", 0, 15)
+LinkFrame.CloseBtn:SetText(CLOSE or "Close")
+LinkFrame.CloseBtn:SetScript("OnClick", function() LinkFrame:Hide() end)
+
+local function ShowLinkWindow(link)
+	LinkFrame:Show()
+	LinkFrame.CopyBox:SetText(link)
+	LinkFrame.CopyBox:SetFocus()
+	LinkFrame.CopyBox:HighlightText()
+end
+
 CineTextFrame.PlayButton = CreateFrame("Button", nil, CineTextFrame, "SharedButtonTemplate");
 local PlayButton = CineTextFrame.PlayButton;
 PlayButton:SetPoint("BOTTOM", CineTextFrame, "BOTTOM", 0, 10);
@@ -167,13 +258,32 @@ local function UpdateRightPane(data)
 	local desc = data.subtitles or "";
 	TextScrollChild.textHTML:SetText(desc);
 	
-	PlayButton:Enable();
+	if data.id then
+		PlayButton:SetText(PLAY_MOVIE_PREPEND);
+		PlayButton:Enable();
+	elseif data.link then
+		PlayButton:SetText(BROWSER_COPY_LINK);
+		PlayButton:Enable();
+	else
+		PlayButton:SetText(PLAY_MOVIE_PREPEND);
+		PlayButton:Disable();
+	end
+end
+
+local function PlayOrLink()
+	if not currentSelection then return end
+
+	if currentSelection.id then
+		MovieFrame_PlayMovie(MovieFrame, currentSelection.id);
+	elseif currentSelection.link then
+		ShowLinkWindow(currentSelection.link);
+	else
+		return;
+	end
 end
 
 PlayButton:SetScript("OnClick", function()
-	if currentSelection and currentSelection.id then
-		MovieFrame_PlayMovie(MovieFrame, currentSelection.id);
-	end
+	PlayOrLink();
 end);
 
 
