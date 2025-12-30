@@ -8,26 +8,26 @@
 
 ## Title-enUS: Lorekeeper_Cinematics
 ## Notes-enUS: Lorekeeper plugin to browse the ingame cinematics.
-## Title-frFR: Lorekeeper_Cinematics
-## Notes-frFR: 
-## Title-esES: Lorekeeper_Cinematics
-## Notes-esES: 
-## Title-esMX: Lorekeeper_Cinematics
-## Notes-esMX: 
-## Title-deDE: Lorekeeper_Cinematics
-## Notes-deDE: 
-## Title-itIT: Lorekeeper_Cinematics
-## Notes-itIT: 
-## Title-ptBR: Lorekeeper_Cinematics
-## Notes-ptBR: 
-## Title-ruRU:  (Lorekeeper_Cinematics)
-## Notes-ruRU: 
-## Title-koKR:  (Lorekeeper_Cinematics)
-## Notes-koKR: 
-## Title-zhCN:  (Lorekeeper_Cinematics)
-## Notes-zhCN: 
-## Title-zhTW:  (Lorekeeper_Cinematics)
-## Notes-zhTW: 
+## Title-esES: Lorekeeper_Cinemáticas
+## Notes-esES: Complemento de Lorekeeper para explorar las cinemáticas del juego.
+## Title-esMX: Lorekeeper_Cinemáticas
+## Notes-esMX: Complemento de Lorekeeper para explorar las cinemáticas del juego.
+## Title-deDE: Lorekeeper_Zwischensequenzen
+## Notes-deDE: Lorekeeper-Plugin zum Durchsuchen der Ingame-Zwischensequenzen.
+## Title-frFR: Lorekeeper_Cinématiques
+## Notes-frFR: Extension Lorekeeper pour parcourir les cinématiques en jeu.
+## Title-itIT: Lorekeeper_Cinematismi
+## Notes-itIT: Plugin di Lorekeeper per esplorare le cinematiche di gioco.
+## Title-ptBR: Lorekeeper_Cinemáticas
+## Notes-ptBR: Plugin do Lorekeeper para navegar pelas cinemáticas do jogo.
+## Title-ruRU: Хранитель Знаний_Синематики (Lorekeeper_Cinematics)
+## Notes-ruRU: Плагин Хранитель Знаний для просмотра внутриигровых синематиков.
+## Title-koKR: 지식의 수호자_시네마틱 (Lorekeeper_Cinematics)
+## Notes-koKR: 게임 내 시네마틱을 탐색할 수 있는 지식의 수호자 플러그인입니다.
+## Title-zhCN: 知识守护者_过场动画 (Lorekeeper_Cinematics)
+## Notes-zhCN: 用于浏览游戏内过场动画的 知识守护者 插件。
+## Title-zhTW: 知識守護者_過場動畫 (Lorekeeper_Cinematics)
+## Notes-zhTW: 用於瀏覽遊戲內過場動畫的 知識守護者 外掛。
 
 ## Category-enUS: Roleplay
 ## Category-deDE: Rollenspiel

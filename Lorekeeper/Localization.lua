@@ -29,6 +29,7 @@ if LOCALE == "enUS" then
 	LK["LoreKIntro"] = "Type /lorekeeper to open the journal."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
+	LK["SlashLoreK3"] = "lorekeeper" -- non-localized slash
 	LK["ReplaceMats"] = "Replace Materials"
 	LK["ReplaceMatsTT"] = "The background material will be replaced, providing different background options than the default parchment."
 	LK["FogOfLore"] = "Fog of Lore"
@@ -131,6 +132,11 @@ if LOCALE == "enUS" then
 	LK["Type"] = TYPE
 	LK["Other"] = OTHER
 	LK["Quality"] = QUALITY
+	LK["EnterFlavorText"] = "Enter custom flavor text for %s:"
+	LK["TOC_LoreKItems_Title"] = "Lorekeeper_Items"
+	LK["TOC_LoreKItems_Notes"] = "Lorekeeper plugin to save quest and flavor items."
+	LK["TOC_LoreKCinematics_Title"] = "Lorekeeper_Cinematics"
+	LK["TOC_LoreKCinematics_Notes"] = "Lorekeeper plugin to browse the ingame cinematics."
 
 return end
 
@@ -140,6 +146,7 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["LoreKIntro"] = "Escribe /lorekeeper para abrir el diario."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
+	LK["SlashLoreK3"] = "lorekeeper" -- non-localized slash
 	LK["ReplaceMats"] = "Reemplazar Materiales"
 	LK["ReplaceMatsTT"] = "El material de fondo se reemplazará, proporcionando diferentes opciones de fondo además del pergamino predeterminado."
 	LK["FogOfLore"] = "Niebla del Saber"
@@ -242,6 +249,11 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["Type"] = TYPE
 	LK["Other"] = OTHER
 	LK["Quality"] = QUALITY
+	LK["EnterFlavorText"] = "Introduce texto descriptivo personalizado para %s:"
+	LK["TOC_LoreKItems_Title"] = "Lorekeeper_Objetos"
+	LK["TOC_LoreKItems_Notes"] = "Complemento de Lorekeeper para guardar objetos de misión y de ambientación."
+	LK["TOC_LoreKCinematics_Title"] = "Lorekeeper_Cinemáticas"
+	LK["TOC_LoreKCinematics_Notes"] = "Complemento de Lorekeeper para explorar las cinemáticas del juego."
 
 return end
 
@@ -251,6 +263,7 @@ if LOCALE == "deDE" then
 	LK["LoreKIntro"] = "Geben Sie /lorekeeper ein, um das Tagebuch zu öffnen."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
+	LK["SlashLoreK3"] = "lorekeeper" -- non-localized slash
 	LK["ReplaceMats"] = "Materialien ersetzen"
 	LK["ReplaceMatsTT"] = "Das Hintergrundmaterial wird ersetzt und bietet andere Hintergrundoptionen als das Standardpergament."
 	LK["FogOfLore"] = "Nebel des Wissens"
@@ -353,6 +366,11 @@ if LOCALE == "deDE" then
 	LK["Type"] = TYPE
 	LK["Other"] = OTHER
 	LK["Quality"] = QUALITY
+	LK["EnterFlavorText"] = "Benutzerdefinierten Beschreibungstext für %s eingeben:"
+	LK["TOC_LoreKItems_Title"] = "Lorekeeper_Gegenstände"
+	LK["TOC_LoreKItems_Notes"] = "Lorekeeper-Plugin zum Speichern von Quest- und Atmosphärengegenständen."
+	LK["TOC_LoreKCinematics_Title"] = "Lorekeeper_Zwischensequenzen"
+	LK["TOC_LoreKCinematics_Notes"] = "Lorekeeper-Plugin zum Durchsuchen der Ingame-Zwischensequenzen."
 
 return end
 
@@ -362,6 +380,7 @@ if LOCALE == "frFR" then
 	LK["LoreKIntro"] = "Tapez /lorekeeper pour ouvrir le journal."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
+	LK["SlashLoreK3"] = "lorekeeper" -- non-localized slash
 	LK["ReplaceMats"] = "Remplacer les Matériaux"
 	LK["ReplaceMatsTT"] = "Le matériau de fond sera remplacé, offrant des options de fond différentes du parchemin par défaut."
 	LK["FogOfLore"] = "Brume du Savoir"
@@ -464,6 +483,11 @@ if LOCALE == "frFR" then
 	LK["Type"] = TYPE
 	LK["Other"] = OTHER
 	LK["Quality"] = QUALITY
+	LK["EnterFlavorText"] = "Entrez un texte descriptif personnalisé pour %s :"
+	LK["TOC_LoreKItems_Title"] = "Lorekeeper_Objets"
+	LK["TOC_LoreKItems_Notes"] = "Extension Lorekeeper pour sauvegarder les objets de quête et d’ambiance."
+	LK["TOC_LoreKCinematics_Title"] = "Lorekeeper_Cinématiques"
+	LK["TOC_LoreKCinematics_Notes"] = "Extension Lorekeeper pour parcourir les cinématiques en jeu."
 
 return end
 
@@ -473,6 +497,7 @@ if LOCALE == "itIT" then
 	LK["LoreKIntro"] = "Digita /lorekeeper per aprire il diario."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
+	LK["SlashLoreK3"] = "lorekeeper" -- non-localized slash
 	LK["ReplaceMats"] = "Sostituisci Materiali"
 	LK["ReplaceMatsTT"] = "Il materiale di sfondo verrà sostituito, offrendo diverse opzioni di sfondo rispetto alla pergamena predefinita."
 	LK["FogOfLore"] = "Nebbia del Sapere"
@@ -575,6 +600,11 @@ if LOCALE == "itIT" then
 	LK["Type"] = TYPE
 	LK["Other"] = OTHER
 	LK["Quality"] = QUALITY
+	LK["EnterFlavorText"] = "Inserisci testo descrittivo personalizzato per %s:"
+	LK["TOC_LoreKItems_Title"] = "Lorekeeper_Oggetti"
+	LK["TOC_LoreKItems_Notes"] = "Plugin di Lorekeeper per salvare oggetti di missione e di ambientazione."
+	LK["TOC_LoreKCinematics_Title"] = "Lorekeeper_Cinematismi"
+	LK["TOC_LoreKCinematics_Notes"] = "Plugin di Lorekeeper per esplorare le cinematiche di gioco."
 
 return end
 
@@ -584,6 +614,7 @@ if LOCALE == "ptBR" then
 	LK["LoreKIntro"] = "Digite /lorekeeper para abrir o diário."
 	LK["SlashLoreK1"] = "lorekeeper"
 	LK["SlashLoreK2"] = "lorek"
+	LK["SlashLoreK3"] = "lorekeeper" -- non-localized slash
 	LK["ReplaceMats"] = "Substituir Materiais"
 	LK["ReplaceMatsTT"] = "O material de fundo será substituído, oferecendo diferentes opções de fundo além do pergaminho padrão."
 	LK["FogOfLore"] = "Névoa da Tradição"
@@ -686,6 +717,11 @@ if LOCALE == "ptBR" then
 	LK["Type"] = TYPE
 	LK["Other"] = OTHER
 	LK["Quality"] = QUALITY
+	LK["EnterFlavorText"] = "Insira um texto descritivo personalizado para %s:"
+	LK["TOC_LoreKItems_Title"] = "Lorekeeper_Itens"
+	LK["TOC_LoreKItems_Notes"] = "Plugin do Lorekeeper para salvar itens de missão e de ambientação."
+	LK["TOC_LoreKCinematics_Title"] = "Lorekeeper_Cinemáticas"
+	LK["TOC_LoreKCinematics_Notes"] = "Plugin do Lorekeeper para navegar pelas cinemáticas do jogo."
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -697,6 +733,7 @@ if LOCALE == "ruRU" then
 	LK["LoreKIntro"] = "Введите /lorekeeper, чтобы открыть журнал."
 	LK["SlashLoreK1"] = "хранительзнаний"
 	LK["SlashLoreK2"] = "хранительз"
+	LK["SlashLoreK3"] = "lorekeeper" -- non-localized slash
 	LK["ReplaceMats"] = "Заменить Материалы"
 	LK["ReplaceMatsTT"] = "Фоновый материал будет заменен, предлагая другие варианты фона, кроме стандартного пергамента."
 	LK["FogOfLore"] = "Туман Знаний"
@@ -799,6 +836,11 @@ if LOCALE == "ruRU" then
 	LK["Type"] = TYPE
 	LK["Other"] = OTHER
 	LK["Quality"] = QUALITY
+	LK["EnterFlavorText"] = "Введите пользовательский описательный текст для %s:"
+	LK["TOC_LoreKItems_Title"] = "Хранитель Знаний_Предметы (Lorekeeper_Items)"
+	LK["TOC_LoreKItems_Notes"] = "Плагин Хранитель Знаний для сохранения заданий и предметов атмосферы."
+	LK["TOC_LoreKCinematics_Title"] = "Хранитель Знаний_Синематики (Lorekeeper_Cinematics)"
+	LK["TOC_LoreKCinematics_Notes"] = "Плагин Хранитель Знаний для просмотра внутриигровых синематиков."
 
 
 return end
@@ -809,6 +851,7 @@ if LOCALE == "koKR" then
 	LK["LoreKIntro"] = "일지를 열려면 /지식수호자 를 입력하세요."
 	LK["SlashLoreK1"] = "지식수호자"
 	LK["SlashLoreK2"] = "지식수"
+	LK["SlashLoreK3"] = "lorekeeper" -- non-localized slash
 	LK["ReplaceMats"] = "재료 교체"
 	LK["ReplaceMatsTT"] = "배경 재료가 교체되며, 기본 양피지와 다른 배경 옵션이 제공됩니다."
 	LK["FogOfLore"] = "지식의 안개"
@@ -911,6 +954,11 @@ if LOCALE == "koKR" then
 	LK["Type"] = TYPE
 	LK["Other"] = OTHER
 	LK["Quality"] = QUALITY
+	LK["EnterFlavorText"] = "%s에 대한 사용자 지정 풍미 텍스트를 입력하세요:"
+	LK["TOC_LoreKItems_Title"] = "지식의 수호자_아이템 (Lorekeeper_Items)"
+	LK["TOC_LoreKItems_Notes"] = "퀘스트 및 풍미 아이템을 저장하는 지식의 수호자 플러그인입니다."
+	LK["TOC_LoreKCinematics_Title"] = "지식의 수호자_시네마틱 (Lorekeeper_Cinematics)"
+	LK["TOC_LoreKCinematics_Notes"] = "게임 내 시네마틱을 탐색할 수 있는 지식의 수호자 플러그인입니다."
 
 
 return end
@@ -921,6 +969,7 @@ if LOCALE == "zhCN" then
 	LK["LoreKIntro"] = "输入 /知识守护者 打开日志。"
 	LK["SlashLoreK1"] = "知识守护者"
 	LK["SlashLoreK2"] = "知识守"
+	LK["SlashLoreK3"] = "lorekeeper" -- non-localized slash
 	LK["ReplaceMats"] = "更换材料"
 	LK["ReplaceMatsTT"] = "背景材料将被替换，提供与默认羊皮纸不同的背景选项。"
 	LK["FogOfLore"] = "知识之雾"
@@ -1023,6 +1072,11 @@ if LOCALE == "zhCN" then
 	LK["Type"] = TYPE
 	LK["Other"] = OTHER
 	LK["Quality"] = QUALITY
+	LK["EnterFlavorText"] = "为 %s 输入自定义风味文本："
+	LK["TOC_LoreKItems_Title"] = "知识守护者_物品 (Lorekeeper_Items)"
+	LK["TOC_LoreKItems_Notes"] = "用于保存任务和风味物品的 知识守护者 插件。"
+	LK["TOC_LoreKCinematics_Title"] = "知识守护者_过场动画 (Lorekeeper_Cinematics)"
+	LK["TOC_LoreKCinematics_Notes"] = "用于浏览游戏内过场动画的 知识守护者 插件。"
 
 
 return end
@@ -1033,6 +1087,7 @@ if LOCALE == "zhTW" then
 	LK["LoreKIntro"] = "輸入 /知識守護者 打開日誌。"
 	LK["SlashLoreK1"] = "知識守護者"
 	LK["SlashLoreK2"] = "知識守"
+	LK["SlashLoreK3"] = "lorekeeper" -- non-localized slash
 	LK["ReplaceMats"] = "更換材料"
 	LK["ReplaceMatsTT"] = "背景材料將被替換，提供與默認羊皮紙不同的背景選項。"
 	LK["FogOfLore"] = "知識之霧"
@@ -1135,6 +1190,11 @@ if LOCALE == "zhTW" then
 	LK["Type"] = TYPE
 	LK["Other"] = OTHER
 	LK["Quality"] = QUALITY
+	LK["EnterFlavorText"] = "為 %s 輸入自訂風味文字："
+	LK["TOC_LoreKItems_Title"] = "知識守護者_物品 (Lorekeeper_Items)"
+	LK["TOC_LoreKItems_Notes"] = "用於儲存任務與風味物品的 知識守護者 外掛。"
+	LK["TOC_LoreKCinematics_Title"] = "知識守護者_過場動畫 (Lorekeeper_Cinematics)"
+	LK["TOC_LoreKCinematics_Notes"] = "用於瀏覽遊戲內過場動畫的 知識守護者 外掛。"
 
 
 return end

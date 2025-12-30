@@ -170,9 +170,9 @@ local function ScanCustomItems()
 end
 
 StaticPopupDialogs["LOREKEEPER_ADD_CUSTOM_LIT"] = {
-	text = "Enter custom flavor text for %s:",
-	button1 = "Save",
-	button2 = "Cancel",
+	text = LK["EnterFlavorText"],
+	button1 = SAVE,
+	button2 = CANCEL,
 	hasEditBox = true,
 	OnAccept = function(self, data)
 		local text = self.EditBox:GetText()

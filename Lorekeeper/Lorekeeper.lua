@@ -355,6 +355,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 
 		SLASH_LOREKEEPER1 = "/".. LK["SlashLoreK1"]
 		SLASH_LOREKEEPER2 = "/".. LK["SlashLoreK2"]
+		SLASH_LOREKEEPER2 = "/".. LK["SlashLoreK3"]
 		SlashCmdList.LOREKEEPER = HandleSlashCommands;
 
 		Print(LK["LoreKIntro"])
