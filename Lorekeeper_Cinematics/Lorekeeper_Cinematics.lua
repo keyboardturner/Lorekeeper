@@ -273,11 +273,11 @@ local function UpdateRightPane(data)
 		PlayButton:Disable();
 	end
 
-	if LoreK_DB.settings.debugAdvanced then
+	if LoreK_DB.settings.debugAdvanced and data.name then
 		if data.id then
-			CineTextFrame.Type_ID:SetText("movieID-"..data.id)
+			CineTextFrame.Type_ID:SetText("movieID-"..data.id.."_"..data.name)
 		elseif data.link then
-			CineTextFrame.Type_ID:SetText("Custom")
+			CineTextFrame.Type_ID:SetText("Custom-"..data.name)
 		end
 	else
 		CineTextFrame.Type_ID:SetText("")
