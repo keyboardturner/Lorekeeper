@@ -3,6 +3,7 @@ if not C_AddOns.IsAddOnLoaded("Lorekeeper") then
 end
 
 local _, LK = ...
+local LK = Lorekeeper_API.LK
 local LoreKGUI = Lorekeeper_API.LK.LoreKGUI
 local PATH = "Interface\\AddOns\\Lorekeeper_Cinematics\\Assets\\Textures\\"
 
