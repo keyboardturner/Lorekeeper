@@ -25,11 +25,21 @@ for i = 0, MAX_EXPANSION_ID do ItemsFilters.expansions[i] = true end
 for i = 0, MAX_QUALITY_ID do ItemsFilters.qualities[i] = true end
 
 
-local function GetItemFlavorText(itemID)
-	if not itemID then return "" end
+local function GetItemFlavorText(itemID, ignoreCustom)
+	if not itemID then return end
 
-	if LitDB and LitDB.CustomTexts and LitDB.CustomTexts[tostring(itemID)] then
-		return LitDB.CustomTexts[tostring(itemID)]
+	if not ignoreCustom then
+		if LitDB and LitDB.CustomTexts and LitDB.CustomTexts[tostring(itemID)] then
+			return LitDB.CustomTexts[tostring(itemID)]
+		end
+
+		if _G.LoreItemTooltips_Database and _G.LoreItemTooltips_Database[tostring(itemID)] then
+			local text = _G.LoreItemTooltips_Database[tostring(itemID)]
+			if type(text) == "number" and _G.LoreItemTooltips_Database[tostring(text)] then
+				return _G.LoreItemTooltips_Database[tostring(text)]
+			end
+			return text
+		end
 	end
 
 	if LK["LocalData"] and LK["LocalData"]["questItems"] and LK["LocalData"]["questItems"][itemID] then
@@ -39,28 +49,26 @@ local function GetItemFlavorText(itemID)
 		end
 	end
 
-	if _G.LoreItemTooltips_Database and _G.LoreItemTooltips_Database[tostring(itemID)] then
-		local text = _G.LoreItemTooltips_Database[tostring(itemID)]
-		if type(text) == "number" and _G.LoreItemTooltips_Database[tostring(text)] then
-			return _G.LoreItemTooltips_Database[tostring(text)]
-		end
-		return text
-	end
-
 	local tooltipData = C_TooltipInfo.GetItemByID(itemID)
-	if not tooltipData then return "" end
+	if not tooltipData then return end
 
 	for _, line in ipairs(tooltipData.lines) do
 		if line.leftText and line.leftColor then
-			if line.leftColor.r > 0.9 and line.leftColor.g > 0.8 and line.leftColor.b < 0.2 then
-				return line.leftText
-			end
-			if string.match(line.leftText, "^[\"'].+[\"']$") then
-				return line.leftText
+			local text = line.leftText
+			
+			local isCollectionText = string.find(text, COLLECTED) or string.find(text, "%(%d+/%d+%)")
+			
+			if not isCollectionText then
+				if line.leftColor.r > 0.9 and line.leftColor.g > 0.8 and line.leftColor.b < 0.2 then
+					return text
+				end
+				if string.match(text, "^[\"'].+[\"']$") then
+					return text
+				end
 			end
 		end
 	end
-	return "" 
+	return
 end
 
 local function StoreItemData(itemID, callback)
@@ -77,7 +85,7 @@ local function StoreItemData(itemID, callback)
 	item:ContinueOnItemLoad(function()
 		local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expansionID, setID, isCraftingReagent = C_Item.GetItemInfo(itemID)
 		
-		local description = GetItemFlavorText(itemID)
+		local description = GetItemFlavorText(itemID, true)
 
 		if not LoreKItems_DB["items"][itemID] then
 			LoreKItems_DB["items"][itemID] = { 
@@ -105,15 +113,8 @@ local function CleanupStoredData()
 	local count = 0
 	for itemID, data in pairs(LoreKItems_DB["items"]) do
 		if LK["LocalData"]["questItems"][itemID] then
-			if data.itemName or data.itemTexture then
-				data.itemName = nil
-				data.itemQuality = nil
-				data.itemTexture = nil
-				data.expansionID = nil
-				data.isCraftingReagent = nil
-				data.itemDescription = nil
-				count = count + 1
-			end
+			LoreKItems_DB["items"][itemID] = nil
+			count = count + 1
 		end
 	end
 	
@@ -175,10 +176,16 @@ StaticPopupDialogs["LOREKEEPER_ADD_CUSTOM_LIT"] = {
 	hasEditBox = true,
 	OnAccept = function(self, data)
 		local text = self.EditBox:GetText()
+		text = text:match("^%s*(.-)%s*$")
 		if LitDB and LitDB.CustomTexts then
-			LitDB.CustomTexts[tostring(data.id)] = text
+			if text ~= "" then
+				LitDB.CustomTexts[tostring(data.id)] = text
+			else
+				LitDB.CustomTexts[tostring(data.id)] = nil
+			end
+			
 			StoreItemData(data.id, function()
-			LoreKGUI.RefreshItemsText(data.id)
+				LoreKGUI.RefreshItemsText(data.id)
 			end)
 		else
 			print("|cFFFFF569Lorekeeper:|r LoreItemTooltips (LitDB) not found.")
@@ -186,10 +193,17 @@ StaticPopupDialogs["LOREKEEPER_ADD_CUSTOM_LIT"] = {
 	end,
 	EditBoxOnEnterPressed = function(self, data)
 		local text = self:GetParent().EditBox:GetText()
+		text = text:match("^%s*(.-)%s*$")
+		
 		 if LitDB and LitDB.CustomTexts then
-			LitDB.CustomTexts[tostring(data.id)] = text
+			if text ~= "" then
+				LitDB.CustomTexts[tostring(data.id)] = text
+			else
+				LitDB.CustomTexts[tostring(data.id)] = nil
+			end
+			
 			StoreItemData(data.id, function()
-			LoreKGUI.RefreshItemsText(data.id)
+				LoreKGUI.RefreshItemsText(data.id)
 			end)
 		end
 		self:GetParent():Hide()
@@ -285,10 +299,10 @@ ItemsTextDisplayFrame.FlavorText:SetJustifyV("TOP")
 ItemsTextDisplayFrame.FlavorText:SetTextColor(0.2, 0.15, 0.1, 1)
 ItemsTextDisplayFrame.FlavorText:SetText("")
 
-ItemsTextDisplayFrame.AddTextButton = CreateFrame("Button", nil, ItemsTextDisplayFrame, "UIPanelButtonTemplate")
-ItemsTextDisplayFrame.AddTextButton:SetPoint("BOTTOMRIGHT", ItemsTextDisplayFrame, "BOTTOMRIGHT", -10, 10)
-ItemsTextDisplayFrame.AddTextButton:SetSize(120, 22)
-ItemsTextDisplayFrame.AddTextButton:SetText("Edit Custom Text")
+ItemsTextDisplayFrame.AddTextButton = CreateFrame("Button", nil, ItemsTextDisplayFrame, "SharedButtonTemplate")
+ItemsTextDisplayFrame.AddTextButton:SetPoint("BOTTOM", ItemsTextDisplayFrame, "BOTTOM", 0, 10)
+ItemsTextDisplayFrame.AddTextButton:SetSize(100, 25)
+ItemsTextDisplayFrame.AddTextButton:SetText(EDIT)
 ItemsTextDisplayFrame.AddTextButton:SetScript("OnClick", function()
 	if ItemsTextDisplayFrame.currentItemID then
 		local itemID = ItemsTextDisplayFrame.currentItemID
@@ -360,10 +374,24 @@ function LoreKGUI.RefreshItemsText(itemID)
 	if flavorText and flavorText ~= "" then
 		ItemsTextDisplayFrame.FlavorText:SetText(flavorText:gsub('^"',''):gsub('"$',''))
 	else
-		ItemsTextDisplayFrame.FlavorText:SetText(LK["NoDescription"] or "No description available.")
+		ItemsTextDisplayFrame.FlavorText:SetText("")
 	end
 	
-	ItemsTextDisplayFrame.AddTextButton:Enable()
+	if LitDB then
+		local inStaticLIT = _G.LoreItemTooltips_Database and _G.LoreItemTooltips_Database[tostring(itemID)]
+		local inCustomLIT = LitDB.CustomTexts and LitDB.CustomTexts[tostring(itemID)]
+
+		local hasBaseOrLocalText = GetItemFlavorText(itemID, true)
+
+		if (inStaticLIT or hasBaseOrLocalText) and not inCustomLIT then
+			ItemsTextDisplayFrame.AddTextButton:Hide()
+		else
+			ItemsTextDisplayFrame.AddTextButton:Show()
+			ItemsTextDisplayFrame.AddTextButton:Enable()
+		end
+	else
+		ItemsTextDisplayFrame.AddTextButton:Hide()
+	end
 end
 
 local function ItemsInitializer(button, data)
@@ -396,7 +424,7 @@ local function ItemsInitializer(button, data)
 			itemTexture = infoTexture
 			StoreItemData(itemID)
 		else
-			itemName = "Loading..."
+			itemName = LFG_LIST_LOADING
 			itemTexture = 134400
 		end
 	end
@@ -456,7 +484,7 @@ local function ItemsInitializer(button, data)
 	button:SetScript("OnClick", function(self, btn)
 		LoreKGUI.ItemsSelectionBehavior:Select(self)
 		
-		if itemName == "Loading..." then
+		if itemName == LFG_LIST_LOADING then
 			StoreItemData(itemID, function()
 				LoreKGUI.RefreshItemsText(itemID)
 				local freshName = C_Item.GetItemInfo(itemID)
