@@ -401,7 +401,7 @@ LK["LocalData"]["cinematics"] = {
 		},
 	},
 	[226] = {
-		["name"] = "wow_bos_ptv",
+		["name"] = "wow_bos_pts",
 		["id"] = nil,
 		["link"] = "https://youtu.be/EREaWhXj4_Q",
 		["description"] = "The Burdens of Shaohao: The Sundering",
@@ -2854,9 +2854,706 @@ to my prize!
 00:02:14,200 --> 00:02:15,967
 [orchestral music crescendos]
 
-]]
+]],
 
-}
+	["wow_lis_tbl"] = [[
+Sargeras believed the only way to spare the universe from the void lords was to purge it of all life. The fallen titan and his armies set forth upon their first planet, extinguishing entire species without mercy. As news of the devastation spread, Sargeras was confronted by his former student, Aggramar. When Aggramar's words would not sway the Legion's leader, swords were drawn. Blow after blow, the duel raged between the powerful titans until their weapons shattered. Wounded, Aggramar returned to the Pantheon to report on Sargeras' betrayal, and the coming war. As the Pantheon prepared to fight back, the other titans pleaded with Sargeras to stand down. Sargeras refused, attacked Aggramar and charged his demons forward. The Burning Legion's might was unmatched, and it consumed the Pantheon in an apocalyptic felstorm. Furthering his ambition, the victorious Sargeras visited three leaders of the eredar, promising them power and knowledge in exchange for loyalty. Archimonde and Kil'jaeden joined the Legion. The third, Velen, saw the horrors ahead and fled with his people, who would become known as the draenei. Sargeras and the Burning Legion made chase, hunting down the exiles and setting their sights on Azeroth.
+]],
+
+	["wow_lis_tdp"] = [[
+On Draenor, the Burning Legion found agents in the orcish Horde, manipulating them to conquer the planet. The Horde bled their prisoners' life essence in order to power a colossal portal. And through this passage, the invasion of Azeroth began. The First and Second War wrought devastation across the world. The Alliance eventually pushed the Horde back and attempted to destroy the gateway. In an enormous explosion, their plan backfired, ripping a tear in reality and further linking their worlds together. Two years after the Second War, the shaman Ner'zhul ordered the orcs on Draenor through this tear to gather artifacts, including the Skull of Gul'dan. Ner'zhul used their powers to open countless portals to other worlds. Overwhelmed by the magical strain, Draenor shattered, becoming Outland. Before Draenor was torn apart, the Alliance sent an expedition through the rift led by some of its greatest heroes. To spare Azeroth from destruction, they severed the portal between worlds, an act of sacrifice that trapped the heroes in the broken world now known as... Outland.
+]],
+
+	["wow_lis_art"] = [[
+Arthas Menethil, son of King Terenas Menethil II, the ruler of Lordaeron. As a promising young paladin, Arthas was trained in combat by Muradin Bronzebeard and learned the ways of the Light under Uther the Lightbringer. Soon after his induction into the Knights of the Silver Hand, a plague gripped the northlands of Lordaeron. I joined Arthas to help investigate an insidious disease that caused the dead to rise again. After fighting the infected undead, we encountered the necromancer Kel'Thuzad and discovered his plans to infect outlying villages under the orders of the dreadlord Mal'Ganis. We set out to stop the demon before he could reach his next target: the city of Stratholme. But we arrived too late. The citizens had already consumed poisoned grain that would doom them to rise into undeath. To stop the plague from spreading further, Arthas ordered his knights to purge the entire city. Uther and I were horrified and refused to obey his cruel command. Those who remained loyal to Arthas joined him and began the Culling of Stratholme. Arthas sought vengeance upon Mal'Ganis, but the demon slipped away to the frozen land of Northrend.
+
+While leading his forces in pursuit of Mal'Ganis, Arthas came upon his former mentor Muradin searching for a powerful blade called Frostmourne. When the sword was found, Muradin read its inscription and warned the prince that the weapon was cursed. But Arthas believed that the blade would give him the power to save his people. When the weapon broke free, a shard of ice struck Muradin down. Heeding the call of Frostmourne, Arthas claimed the sword and left Muradin for dead. With Frostmourne in hand, Arthas confronted Mal'Ganis, who told him the voice he was now hearing was that of the Lich King, Ner'zhul. Obeying his new master, Arthas slew the dreadlord and abandoned his troops as he pushed deeper into the frozen north.
+
+When Arthas returned to Lordaeron, the kingdom rejoiced at the homecoming of its beloved prince. But that joy turned to ashes when Arthas entered the throne room and ran the accursed blade through his father's heart. Arthas scourged the land in the name of the Lich King Ner'zhul. To reach the throne of his master, Arthas had to face Illidan Stormrage. After a grueling battle, the victorious Arthas ascended to the Frozen Throne. He drove his blade through the ice, releasing the spirit of Ner'zhul from its icy prison. The two beings merged into one and became the true Lich King. Should he rise again from the frozen north, all of Azeroth will face his wrath.
+]],
+
+	["dsi_act4"] = [[
+00:00:11:26 - 00:00:15:05
+I can feel the elements awakening;
+
+00:00:16:08 - 00:00:17:15
+rejoicing...
+
+00:00:18:16 - 00:00:22:10
+the Cataclysm is over.
+
+00:00:23:07 - 00:00:30:08
+The champions who fought at our side assured the survival of our world...
+
+00:00:30:15 - 00:00:35:19
+but now we must see it, with mortal eyes
+
+00:00:37:01 - 00:00:42:04
+We dragon aspects have fulfilled our great purpose
+
+00:00:42:26 - 00:00:44:23
+and our ancient power...
+
+00:00:45:14 - 00:00:46:25
+is expended.
+
+00:00:47:16 - 00:00:53:18
+But though our day draws to an end, life endures...
+
+00:00:54:14 - 00:00:58:16
+and new generations will be born. 
+
+00:00:59:14 - 00:01:04:26
+Today's victory belongs to all who stood against the shadow.
+
+00:01:05:26 - 00:01:09:12
+You are Azeroth's true Guardians...
+
+00:01:10:02 - 00:01:14:14
+And the future of this world is in your hands...
+
+00:01:16:02 - 00:01:21:01
+For the dawning of the age of mortals has begun. 
+
+]],
+
+	["wow_intro_mop"] = [[
+00:00:07:22 - 00:00:09:11
+To ask why we fight…
+
+00:00:10:09 - 00:00:12:18
+… is to ask why the leaves fall.
+
+00:00:15:03 - 00:00:16:13
+It is in their nature.
+
+00:00:18:17 - 00:00:22:07
+Perhaps, there is a better question.
+
+00:03:07:01 - 00:03:08:15
+Why do we fight?
+
+00:03:08:16 - 00:03:12:09
+To protect Home, and Family…
+
+00:03:12:10 - 00:03:17:06
+To preserve Balance, and bring Harmony
+
+00:03:21:23 - 00:03:26:01
+For my kind, the true question is:
+
+00:03:27:15 - 00:03:31:05
+What is worth fighting for?
+
+]],
+
+	["wow_cgi_bu"] = [[
+
+0:16
+[Music]
+
+0:25
+So... It was a bear?
+
+0:30
+In a HAT!
+
+0:48
+[Music]
+
+]],
+
+	["mop_gse"] = [[
+00:00:26:14 - 00:00:28:03
+Aysa?
+
+00:00:34:11 - 00:00:36:06
+He's dying...
+
+00:00:36:07 - 00:00:40:15
+His wounds can be healed...
+
+00:00:41:20 - 00:00:48:10
+I hope you can forgive yourself for what you have done to him.
+]],
+
+	["mop_wra"] = [[
+00:00:02:20 - 00:00:06:08
+We've made a thorough inspection of the wreckage, Your Majesty.
+
+00:00:06:10 - 00:00:10:00
+There is no sign of Admiral Taylor or his ship.
+
+00:00:10:01 - 00:00:12:00
+Two hundred ships at my disposal,
+
+00:00:12:01 - 00:00:16:03
+yet the one carrying my SON goes missing!
+
+00:00:16:03 - 00:00:19:27
+What of their last message? Show me whatever you have!
+
+00:00:19:28 - 00:00:25:00
+...we have been drawn off course...Horde airfleet...many casualties...
+
+00:00:25:01 - 00:00:30:15
+shipwrecked...on an uncharted isle...but the White Pawn is accounted for.
+
+00:00:30:16 - 00:00:33:15
+Repeat: The White Pawn is safe.
+
+00:00:33:16 - 00:00:35:00
+Anduin...
+
+00:00:35:01 - 00:00:39:12
+...surprise attack! Requesting immediate--If anyone's receiving--
+
+00:00:40:00 - 00:00:42:25
+Sir, the Seventh Fleet has already been dispatched,
+
+00:00:42:26 - 00:00:44:05
+but it could take weeks before it--
+
+00:00:44:06 - 00:00:45:25
+There's no time to waste!
+
+00:00:45:26 - 00:00:50:08
+We'll send a small, elite force to secure this new land
+
+00:00:50:09 - 00:00:53:12
+and bring back my SON!
+
+]],
+
+	["mop_wrh"] = [[
+00:00:03:00 - 00:00:06:07
+I am pleased to report that the battle at sea goes well, Warchief.
+
+00:00:07:10 - 00:00:12:10
+Our forces report decisive victories off the coast of Tanaris and Tol Barad.
+
+00:00:13:05 - 00:00:18:25
+Alliance blood spills. This pleases me, General.
+
+00:00:19:10 - 00:00:24:06
+There is more... I've received word that our southern fleet engaged an Alliance envoy.
+
+00:00:25:10 - 00:00:28:01
+We chased the royal flagship until it ran aground...
+
+00:00:28:05 - 00:00:30:15
+Aground? Where?!
+
+00:00:31:00 - 00:00:36:29
+Apparently, they found a massive uncharted landmass, shrouded, by dense mists...
+
+00:00:37:05 - 00:00:41:15
+And you let the ALLIANCE get there first?!  Redirect the invasion fleet!
+
+00:00:42:16 - 00:00:45:07
+General, YOU and your best veterans will pave our way...
+
+00:00:46:00 - 00:00:50:07
+STORM the shore and PAINT THIS NEW CONTINENT RED!
+
+]],
+
+	["mop_jade"] = [[
+00:00:36:23 - 00:00:46:10
+A message must lie within... what fate did the emperor foresee?
+
+]],
+
+
+-- pulled from https://www.reddit.com/r/wow/comments/1khk1d/full_transcript_for_the_burdens_of_shaohao_series/
+	["wow_bos_ptv"] = [[
+Ten thousand years ago, all the continents of Azeroth were as one. It is said that all the rivers in the world flowed to one magical place: This was the ancient empire of Pandaria, nestled in the most fertile of river valleys at the far end of the world.
+
+Behold, the last Emperor on the day of his coronation. His name was Shaohao.
+
+Young Shaohao was born to be Emperor, and wanted for nothing. The wealth of the great Pandaren empire was his to command. All Pandaren Emperors begin their reign by consulting with the great Jinyu elders. It was said that the Jinyu could talk to the rivers, that they could hear whispers of the future in the rippling waves. The great Waterspeaker closed his eyes and listened to the rivers. He listened for the Emperor's long life and prosperous realm, but he heard something else entirely. The wise old Jinyu saw a faraway land, a kingdom of Elves grown bold in their arrogance. He saw a pit of fire, a great maw opening upon countless horrors. Numberless demons were about to pour forth onto Azeroth, rending the land, corrupting all they touched. Even if the demons were defeated, the world would be forever broken, the continents forever shattered.
+
+Emperor Shaohao watched in disbelief as the Jinyu Waterspeaker reeled from the terror of his vision. "What did you see?", Shaohao asked. "Long life... prosperous realm?"
+
+But the future held neither for the last Emperor of the Pandaren. No, young Shaohao could not rest on the riches of his Empire. If he was to save his land, and his people, he would be called to do something great. He would embark on an epic journey, he would sacrifice all that he was.
+
+This is his story.
+]],
+
+	["wow_bos_pod"] = [[
+The horrible vision of the Sundering weighed heavily on Emperor Shaohao. Cold and alone, he ascended Mount Neverest, seeking wisdom from the Jade Serpent.
+
+"What troubles you, young Emperor?" The spirit of wisdom asked.
+
+Shaohao replied "Countless demons will soon pour over Azeroth! What must I do to save my kingdom?"
+
+The Jade Serpent answered: "Seek out the heart of Pandaria, for the answer lies within."
+
+"But how can I find it?" the Emperor protested.
+
+"Your emotions cloud you," said the Serpent. "Free yourself of these burdens, let the land be your teacher."
+
+But the Emperor did not understand.
+
+He sulked back to his home in the Jade Forest. As he travelled, he commiserated with his old friend, the Monkey King. "I was to have a long life! A prosperous realm!" the Emperor cried. "I cannot do this!"
+
+"Relax," said the Monkey King. "We are in this together!" As he spoke, the four winds began to howl. A great gust blew the Monkey King away!
+
+The Monkey King laughed, and called out above the roaring storm. "Sorry! You can't fight fate!"
+
+The Emperor cried out for his friend. "No, wait! I cannot do this alone!"
+
+And in that moment, all of Shaohao's uncertainty was manifest in a terrible dark energy: The Sha of Doubt. The more the Emperor struggled, the more he weakened - the Sha would surely overtake him!
+
+Then, Shaohao remembered the wisdom of the Jade Serpent, and he looked to the land for answers. Nearby, the bamboo of the Jade Forest was also threatened: the reeds that stood rigid against the gale broke under its force. But the reeds that bent with the wind endured the storm, and prospered in the rain. Shaohao realised the lesson of the reed, and when he turned his back to the Sha, suddenly all his doubts vanished. He knew he could be more than just Emperor.
+
+The Four Winds carried the laughing Monkey King over the valley, and through the Wilds. The Emperor's faith led him onward, to save his friend - and to stop the terrible Sundering the Waterspeaker had foreseen. 
+]],
+
+	["wow_bos_ptd"] = [[
+Emperor Shaohao, free of doubt, pursued his friend the Monkey King. With the wind at his back, Shaohao ran, but in his haste, the Emperor stumbled into the dense and untamed swamps of the Krasarang Wilds.
+
+"No!" The Emperor cried out. He fought to free himself, but only sank further. The more the Emperor worried, the deeper he sank. His worries had taken form: The Sha of Despair.
+
+Shaohao cried out, "Help!"
+
+Far above, the majestic Red Crane of Hope soared. "Why do you struggle so?" the Crane asked.
+
+"I have lost my friend, my kingdom!" Shaohao cried. "It is hopeless!"
+
+"Your friend is not lost," the Crane replied. "You are."
+
+Again, Shaohao looked to Pandaria for the answer. He saw the great tree growing in the middle of the swamp. The branches reached for the heavens, but its roots stretched deep into the Earth. Shaohao's feet found purchase - with hope in his heart, the Emperor reached upward, and the grip of despair loosened.
+
+"I must never forget who I am," he said. "I am the Emperor, and I will save this land."
+]],
+
+	["wow_bos_ptf"] = [[
+Shaohao could hear the Monkey King's laughter on the wind, but it came from the West, beyond the Serpent's Spine wall. This was the land of the Mantid: Mortal enemy of all Pandaren.
+
+"I cannot do this!" Shaohao decided. Trembling, the Emperor turned to leave.
+
+"Where are you going?" asked a voice.
+
+"I'm afraid to go on," said the Emperor. Looking into the Wastes, he saw a great, black Ox.
+
+"Just follow your feet," the black Ox said. "They will know the way."
+
+Shaohao descended the wall, and crept through the strange realm. To the Emperor, it was a waking nightmare, but his feet led the way. Soon, he heard, a dreadful sound. Three vile Mantid warriors argued how they would split up and devour their prize, the Monkey King!
+
+Shaohao was paralysed with terror. The insidious Sha of Fear held him in place. The voice of the Ox came to Shaohao, saying "You must not let your fear control you, my Emperor, you must control your fear!"
+
+Shaohao looked once again to the land for answers. The great Kypari trees of the Townlong Steppes were legendary for their sap. In one bead of amber, Shaohao found his answer.
+
+"I will not be paralysed by fear!" the Emperor proclaimed. Shaohao hurled his weight against the nearest tree, and giant globs of sap reigned down from above! And now it was the Mantid who were held fast, as they struggled against the sap. The Emperor had saved his friend.
+
+As they fled, the Monkey King was overwhelmed by doubt. "Emperor, we cannot do this alone!" he cried. "You should create an army to crush the Mantid once and for all!"
+
+Free of his doubts, and master of his fears, the Emperor was more confident than ever. "No," said Shaohao. "The storm that burns the sky comes for the Mantid as well. We need an army to crush a Legion."
+]],
+
+	["wow_bos_pfa"] = [[
+The Last Emperor of Pandaria faced a terrible fortune, a burning legion set to tear the world asunder. He had cast away his doubt, despair and fear. Now, confidence brimming, he would build an army.
+
+High atop the peaks of Kun-Lai summit, the one hundred greatest warriors of Pandaria perfected their arts under the watchful eye of the White Tiger, the spirit of strength.
+
+"I need an army!" Shaohao announced. "I have come for my warriors!"
+
+But the White Tiger recognised a great darkness within the brash Emperor.
+
+"Why do you fight?" the Tiger asked. Shaohao bristled.
+
+"To destroy demon hordes! To crush those who oppose me!"
+
+"No. That is no reason to fight," the Tiger said. "You are indeed fearless, but still, you are burdened." The Emperor scoffed, so the White Tiger issued a challenge.
+
+"Take this staff, and if you can touch any one of my Warriors, they are yours to command."
+
+Spurred on by the howls of the Monkey King, the Emperor spun about, thrusting and swinging the staff - but the warriors easily dodged his every blow. Furious, Shaohao roared. The sum of all his rage, the Sha of Anger, burst forth!
+
+The Emperor fumed, and broke the staff over his knee. Violence and hatred erupted.
+
+"You see now why you are not ready to lead?" the White Tiger proclaimed. "Your anger does not empower you: It makes you weak."
+
+Defenceless, Shaohao faced the darkness he had created. As one, the Sha struck out...
+
+But, as the smoke cleared, the Emperor stood unharmed. The shape of a mighty warrior lay broken at his feet. A warrior who had paid the ultimate price to save his Emperor.
+
+Shaohao's heart swelled, as he knelt humbly before the White Tiger. "My rage exacted a heavy toll," the Emperor said. "A single sacrifice has shown me the power of fellowship, of love... of peace."
+
+The White Tiger nodded. "Again, I ask: Why do you fight?"
+
+"For home, and family." Shaohao replied. "For the people I protect. For them, I would give my final breath. Thank you, White Tiger."
+
+Relieved at last of all his burdens, the Emperor rose. "Come, Monkey King! We must go to the heart of Pandaria, before all is lost!"
+
+As the Emperor and his friend set out, the skies grew black - for the time of the Sundering had come.
+]],
+
+	["wow_bos_pts"] = [[
+And so Shaohao came to the heart of the land, the sacred Vale within the centre of his empire. Purged of all his burdens, the Emperor radiated with enlightenment. Inside the Vale, his people huddled for shelter. They knew that the end of the world had come, and they cried out for the Emperor to save them.
+
+"People of Pandaria!" Shaohao declared, "Stay calm. Focus your minds, and together we will make it through this."
+
+But his people did not understand. As Shaohao gazed upon their faces, he saw the burdens that he had overcome. He recognised Doubt and Despair. He saw his people frozen in Fear, or trembling in Anger. And he knew that they had little time to learn what he had learned.
+
+"Time... my people need Time!" The Emperor realised. And in that moment, the Emperor recalled the lesson of the Jade Serpent:
+
+"Seek out the heart of Pandaria, for the Answer lies within."
+
+As Shaohao reflected on his journey, he looked to the land, and saw a single blossom in the wind. "No matter the burdens I faced," he thought, "The land provided guidance. But the truest answers always came from within." And then, it became clear...
+
+"I was to have a long life, and a prosperous realm. But I am more than just Emperor. I now know what I must do... for I am the Heart of Pandaria."
+
+"People of Pandaria!" Shaohao proclaimed. "You are not yet ready to face the storm that comes for you, and I cannot stop it. But you will weather this storm, and many more - for I will give you the time to learn the lessons that I have learned."
+
+And then, the last Emperor of Pandaria sacrificed all that he was, and all that he would be, and gave his final breath to become one with the land. A dense mist surrounded and protected his empire, and while the rest of the world broke apart in the fury of the Sundering, Pandaria set itself free. Hidden by the Emperor's breath, it drifted out to sea like a blossom on the wind.
+
+The trees in the Vale have never stopped blossoming, and in time, we Pandaren learned to live as our Emperor lived. His lessons endured in the temples of his land. And from the snowy peaks of Kun-Lai Summit, he watches over us - and it is said, that if we listen very closely, he speaks to us still... through the Mists.
+
+These are the Emperor's gifts to us. And this is Pandaria!
+]],
+
+	["oro_horde"] = [[
+00:00:05:14 - 00:00:09:26
+You disappoint me, Garrosh.
+
+00:00:11:19 - 00:00:17:10
+You are not worthy of your father’s legacy.
+
+00:00:21:02 - 00:00:24:29
+His punishment is not for you alone to decide.
+
+00:00:25:13 - 00:00:28:22
+I won’t let you take him.
+
+00:00:28:29 - 00:00:33:06
+We have all suffered from his atrocities.
+
+00:00:33:18 - 00:00:37:16
+My people, more than any other.
+
+00:00:38:00 - 00:00:42:03
+Let him stand trial in Pandaria.
+
+00:00:42:11 - 00:00:46:26
+There, we will mete out justice for all.
+
+00:00:57:02 - 00:01:02:10
+The Horde needs its true Warchief now, more than ever.
+
+00:01:03:02 - 00:01:09:28
+Yes, but It was you that held the Horde together during this madness.
+
+00:01:10:09 - 00:01:14:20
+It was you that protected our honor.
+
+00:01:15:07 - 00:01:23:26
+From this day forward, Vol’jin - If you lead, I will follow.
+
+00:01:25:02 - 00:01:28:02
+I am not worthy…
+
+00:01:34:10 - 00:01:37:11
+But I will give my all.
+
+00:01:38:01 - 00:01:40:02
+For the Horde.
+
+00:01:42:15 - 00:01:45:19
+I will speak to your Warchief!
+
+00:01:51:11 - 00:01:54:10
+I speak for the Horde.
+
+00:01:59:16 - 00:02:01:03
+Very well.
+
+00:02:01:18 - 00:02:05:13
+The Horde has committed heinous crimes, Vol’jin.
+
+00:02:10:28 - 00:02:15:10
+But some among you fought against Garrosh’s tyranny.
+
+00:02:16:01 - 00:02:20:25
+For that, I am willing to end this bloodshed.
+
+00:02:21:15 - 00:02:23:15
+But know this…
+
+00:02:24:09 - 00:02:29:19
+If your Horde fails to uphold honor, as Garrosh did…
+
+00:02:32:05 - 00:02:34:25
+We will end you.
+
+]],
+
+	["oro_alliance"] = [[
+00:00:05:14 - 00:00:09:26
+You disappoint me, Garrosh.
+
+00:00:11:19 - 00:00:17:10
+You are not worthy of your father’s legacy.
+
+00:00:21:02 - 00:00:24:29
+His punishment is not for you alone to decide.
+
+00:00:25:13 - 00:00:28:22
+I won’t let you take him.
+
+00:00:28:29 - 00:00:33:06
+We have all suffered from his atrocities.
+
+00:00:33:18 - 00:00:37:16
+My people, more than any other.
+
+00:00:38:00 - 00:00:42:03
+Let him stand trial in Pandaria.
+
+00:00:42:11 - 00:00:46:26
+There, we will mete out justice for all.
+
+00:00:56:05 - 00:00:58:15
+Ugh … Look at them.
+
+00:00:59:03 - 00:01:04:25
+Already they plot against us. Seize this moment, Varian.
+ 
+00:01:05:11 - 00:01:07:25
+Dismantle the Horde.
+
+00:01:08:24 - 00:01:10:02
+Guardsmen!
+
+00:01:14:23 - 00:01:17:25
+Father – what are you doing?
+
+00:01:18:15 - 00:01:21:02
+What a king must do.
+
+00:01:21:25 - 00:01:24:29
+I will speak to your Warchief!
+
+00:01:30:21 - 00:01:33:20
+I speak for the Horde.
+
+00:01:38:28 - 00:01:40:14
+Very well.
+
+00:01:41:01 - 00:01:44:24
+The Horde has committed heinous crimes, Vol’jin.
+
+00:01:50:08 - 00:01:54:20
+But some among you fought against Garrosh’s tyranny.
+
+00:01:55:11 - 00:02:00:05
+For that, I am willing to end this bloodshed.
+
+00:02:00:26 - 00:02:02:25
+But know this…
+
+00:02:03:19 - 00:02:08:29
+If your Horde fails to uphold honor, as Garrosh did…
+
+00:02:09:10 - 00:02:13:20
+We will end you.
+]],
+
+	["wod_mainintro"] = [[
+00:00:37:10 - 00:00:40:05
+Drink, Hellscream.
+
+00:00:41:10 - 00:00:44:06
+Claim your destiny.
+
+00:00:44:27 - 00:00:49:07
+You will all be conquerors.
+
+00:00:51:13 - 00:00:57:30
+And what, Gul'dan, must we give in return?
+
+00:01:01:08 - 00:01:03:18
+Everything.
+
+00:01:14:17 - 00:01:20:06
+You would reject this gift?
+
+00:01:32:01 - 00:01:36:29
+And did you bring these mongrels here
+
+00:01:39:07 - 00:01:44:07
+just to watch you DIE?
+
+00:01:56:25 - 00:01:57:28
+NOW!
+
+00:03:10:22 - 00:03:15:19
+This was not our destiny.
+
+00:03:17:11 - 00:03:19:14
+Times change.
+
+00:03:37:29 - 00:03:41:18
+We will never be slaves!
+
+00:03:50:01 - 00:03:54:24
+But we WILL be conquerors.
+]],
+
+	["wow_low_kar"] = [[
+Maraad: King Varian. The hour grows late. You must sign the declaration of war.
+Varian: I was just a child when my father rushed to confront this same evil. He didn't understand these... warlords at all. That mistake cost him his life, and brought this kingdom to ruin.
+Maraad: You are not your father.
+Varian: I know. But how can I succeed, where he failed?
+Maraad: You can start by trusting my counsel. I have faced them before.
+Varian: On Draenor... you were there, all those years ago.
+Maraad: Yes. Believe me, they are not invincible.
+Varian: Then tell me of them, Maraad. Tell me everything.
+Maraad: Very well.
+Maraad: Kargath had no clan. He was raised a slave. The ogres' cruelty was intolerable. So he sought a way out. The arena! One hundred orc lives was the prize for freedom. Fight. Kill. Salute! Kargath was unstoppable, and the day of his final fight had come. One last kill, and it was over. One hundred lives. Kargath had earned his reward, like every champion before him. Buried beneath the arena. The promise of freedom  —  nothing but a lie.
+Maraad: But Kargath would be chained no longer.
+Kargath: Take your vengeance.
+Maraad: Bound by vengeance, their name would be spoken in fear!
+Maraad: This was the birth of the Shattered Hand.
+]],
+
+	["wow_low_gro"] = [[
+Maraad: I understand your hesitation, my king. This mission will take great resolve. There will be lives lost.
+Varian: There are always lives lost. But marching our forces blindly into Draenor...
+Maraad: ... poses unthinkable danger, yes. But you must have the fortitude to face whatever awaits us on the other side. I assure you, our enemy's will is unwavering.
+Maraad: Let me tell you of their leader. A warlord whose defiance in the face of death became legend.
+Ogre warlord: Grommash. Mighty warrior. Brought to heel at last. You are weak. Say it!
+Ogre warlord: Is that all? To think you once struck fear into my people.
+Maraad: Grommash had begun leading raids deeper and deeper into ogre lands. He and his clan, the Warsong, were insatiable and relentless. It was only a matter of time until the ogres retaliated. Among the victims of their retribution was Grommash's mate, Golka.
+Golka: I am done. Give me the warrior's death I deserve.
+Grommash: No. You will not be broken. A true Warsong spits in the face of death.
+Golka: Don't you see? It's too late! End it!
+Grommash: So many of my warriors bent like weeds, and now you. You are a wolf... with no teeth.
+Grommash: All of you!
+Ogre warlord: Look at you. The days have not been kind. Say the word, and I will kill you quickly. I admire your spirit, but I will break it.
+Maraad: Grommash knew the ogres could not have gotten far. He called upon his forces to hunt them down, but for many of the Warsong, the cost had already been too high.
+Grommash: Bury your weak. I will show you what it means to be Warsong.
+Maraad: Once again, Grommash struck deep into ogre lands. This time, however, the ogre warlord and his armies were waiting.
+Ogre warlord: Your warriors. They begged for death. Your lands are mine. Your body is broken. You have nothing left! Say the word, and I will end your suffering. .
+Ogre warlord: Yes...?
+Maraad: He was certain that Grommash had given up, was ready to die. The body, afterall, had so grown so weak, had become so thin.
+Ogre warlord: Say it.
+Grommash (barely audible): This... wolf...
+Ogre warlord: Say the word, and it's over.
+Grommash: This... wolf... still has teeth.
+Maraad: From that day forward, the Warsong rallied to the banner of Grommash Hellscream   —   the warlord with the iron will.
+]],
+
+	["wow_low_dur"] = [[
+Maraad: You cannot hesitate my king. The Iron Horde must be stopped.
+Varian: You speak only of their savagery, but surely they are not all monsters.
+Maraad: There was one... Durotan. His clan prided itself on suppressing rage, for they knew that those who succumb to the beast within become their own greatest enemy.
+The clan was named for its kinship with the snow white frostwolves. Together they hunted the mighty clefthoof.
+Every winter, the clefthoof would migrate and the clan would follow. But one year, when durotan was very young,
+Durotan: Mother, they're leaving. You've got to wake up!
+Maraad: His mother, Gaia, had been bitten by a drift lurker. Those who suffered its bite fell into a deep sleep and few had ever awakened.
+Ga'nar: We could do no more for her if we don't go, the entire clan starves. Or worse the Garn will be hungry.
+Durotan: You want them to feed on our mother? Father wouldn't leave her Ga'nar, and neither will I.
+Ga'nar: Father would know we can't carry our dead with us.
+Durotan: She's not dead!
+Ga'nar: Calm yourself brother! you know what your anger can lead to. While the others are gone I speak for the clan. We leave, now!
+Durotan: I'm. Not. Going!
+
+Maraad: Days passed. Durotan remembered the lessons his mother had taught him. And with the aid of Gaia's old wolf Stormfang, they survived.
+Durotan: Mother winter is setting in. You have to wake up. Wake up.
+
+Maraad: Orc can beast alike feared the Garn. Great black wolves. Among the most vicious and cunning predators on draenor.
+Maraad: Durotan and Stormfang killed the lone wolf, but durotan knew that the Garn hunted in packs and with the setting of the sun, they would attack. he prepared to make his final stand.
+Durotan: Mother, they're coming for us. You have to wake up.
+
+Maraad: Outnumbered and surrounded, Durotan fought. He fought not just the Garn, but the rising tide of rage within him. Durotan was driven to the brink, and In the heat of battle, bloodlust claimed him. Anything that moved, he killed.
+Gaia: Durotan... Is it you? Durotan, Durotan?
+Durotan: Mother... what? No... no...
+Gaia: I can see that you shed blood to protect me.
+but I would rather have died than know my son had become a
+beast.
+
+Maraad: Durotan wore Stormfang's fur until the end of his days - a constant reminder of the old wolf's courage and loyalty. But, a reminder also that even the most noble Of Orcs may fall prey to the savagery within.
+]],
+
+	["wow_low_kil"] = [[
+Maraad: Taking the fight to our enemy may be the only option left to stop history from repeating. This very city was nearly burned to the ground by the same warlords we face.
+Varian: Don't lecture me Maraad. I was there. I lived it. The only thing that got my people through those dark days was their faith in the Light.
+M: Faith is a powerful weapon.
+V: So I'm told. the Alliance has the Light from which to draw its strength. What steels this Iron Horde in its darkest hours?
+M: One clan, the Bleeding Hollow, finds truth in the surety of their deaths. They are led by an orc
+named Kilrogg.
+
+M: Kilrogg's clan once ruled over the jungles. Until the Arakkoa came.
+Maraad: to survive, the clan went into hiding. living each day consumed by fear. their Chieftain even forbade them to stray beyond the borders of their forest refuge.
+Maraad: For years, disease had eaten away at the once-mighty warrior's flesh, and as he faded, so too did the clan's hope for the future.
+Kilrogg: Father, one day the stream will dry up.
+Father: Then we will find a way to carry on.
+Kilrogg: Like this?
+Look at us. We were never meant to live this way, jumping every time the wind blows.
+Father: Every chieftain must make hard choices for the good of the clan.
+Kilrogg: Is this the death you saw then?
+KK: No. This is not the death I saw, but perhaps it is time you finally saw your own. Go, face your destiny.
+
+Maraad: Kilrogg was bound by the legacy of his father, and ruled by ancient tradition. Those who would one day become chieftain perform the most sacred of rituals. They would sacrifice an eye for a vision of their own death.
+Maraad: Sometimes the vision would show much more. Kilrogg saw his clan not as they were, but as they could be. Crushing their enemies in a tide of savage bloodlust, and Kilrogg was one of them - his determination unwavering. Even when death finally came for him, he did not fear what he saw... He welcomed it.
+
+Father: So tell me of your vision my son.
+Kilrogg: I saw our clan, strong and proud. Victorious against our enemies, a glorious vision of the future.
+Father: Why then, do you seem so troubled?
+Kilrogg: Because you were not a part of it.
+Kilrogg: You were right every chieftain must make hard choices. For the good of the clan
+Father: At last... this, this is the death I saw.
+
+]],
+
+	["wow_low_mar"] = [[
+Maraad: You now know their leaders. You know what forged them into the monstrosities they have become. Put your seal on that order, and I will be the first to answer the call.
+Varian: Why are you so eager for this fight,
+Maraad? For a paladin, you seem as bloodthirsty as the enemy.
+Maraad: It is not blood I seek. When you look at me, what do you see?
+Varian: I see a paragon, a champion of the Light.
+Maraad: What you cannot see is the burden I carry each day.
+
+Maraad: I was there during the assault on Shattrath City, our beloved dwelling of Light under siege by a relentless army of demon-corrupted orcs.
+Maraad: I witnessed countless acts of brutality, unspeakable horrors from atop the wall.
+Exarch: Maraad. Maraad! Maraad! Take the last group of refugees to safety. Go now.
+
+Maraad: Yes,Exarch.
+
+Maraad: I did as I was commanded. I gathered the refugees, led them away from battle. And then, I saw... him.
+It was my charge to see the refugees to safety. Yet the horrors I have witnessed, the suffering. Despite all my vows, vengeance burned in my heart.
+
+Maraad: Take the path through the tunnel. I'll rejoin you when I can.
+Draenei: We have no weapons!
+Maraad: The path is safe. The light will be with you. Now go.
+
+Maraad: I will avenge the countless draenei who have perished!
+
+Maraad: I struck out to find the refugees.
+Maraad: My heart fell. The path had not been safe... The Light that I promised would be with them had forsaken them instead. Just as I had.
+
+Maraad: I know I may not return. But if there is even the barest chance of preventing the atrocities I witnessed from happening again, then I offer myself gladly.
+
+Varian: We are all haunted by the past, Maraad. Few of us ever get the opportunity to change it.
+
+Varian: Summon our champions. Make ready for war. Azeroth needs its heroes now more than ever.
+
+]],
+
+
+
+
+
+
+
+
+
+
+
+
+};
 
 local Descriptions = {
 	["wow_intro"]    = "Seasons of War Cinematic Trailer",
@@ -2864,7 +3561,7 @@ local Descriptions = {
 	["wow_intro_bc"] = "The Burning Crusade Cinematic Trailer",
 	["wow_intro_lk"] = "Wrath of the Lich King Cinematic Trailer",
 	["wow_wrathgate"]= "The Wrathgate",
-}
+};
 
 for index, data in pairs(LK["LocalData"]["cinematics"]) do
 	local key = data.name
