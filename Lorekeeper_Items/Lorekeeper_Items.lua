@@ -320,6 +320,7 @@ ItemsTextDisplayFrame.AddTextButton:SetScript("OnClick", function()
 	end
 end)
 ItemsTextDisplayFrame.AddTextButton:Disable()
+ItemsTextDisplayFrame.AddTextButton:Hide()
 
 function Lorekeeper_API.SetUpItemsColorsAndTextures()
 	if not LoreK_DB or not LoreK_DB["settings"] or not LoreK_DB["settings"]["colors"] then return end
@@ -377,7 +378,7 @@ function LoreKGUI.RefreshItemsText(itemID)
 		ItemsTextDisplayFrame.FlavorText:SetText("")
 	end
 	
-	if LitDB then
+	if LitDB and LoreItemTooltips_Database then
 		local inStaticLIT = LoreItemTooltips_Database and LoreItemTooltips_Database[tostring(itemID)]
 		local inCustomLIT = LitDB.CustomTexts and LitDB.CustomTexts[tostring(itemID)]
 
