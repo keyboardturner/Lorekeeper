@@ -8,6 +8,7 @@
  - Added integration with LoreItemTooltips addon
    - Entries provided by LoreItemTooltips will display their text in the text panel of the Items tab.
    - While enabled, entries without flavor text provided by the game or by the addon will allow an editbox input to allow custom entries for LoreItemTooltips. This should make it easier to add items in long term (and no longer rely on a google form).
+ - A new "Variants" dropdown has been added to include the the Base and Variant versions of an entry.
 
 
 # 0.3.5
