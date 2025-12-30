@@ -322,6 +322,9 @@ end)
 ItemsTextDisplayFrame.AddTextButton:Disable()
 ItemsTextDisplayFrame.AddTextButton:Hide()
 
+ItemsTextDisplayFrame.Type_ID = ItemsTextDisplayFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
+ItemsTextDisplayFrame.Type_ID:SetPoint("BOTTOMRIGHT", LoreKMainframe, "BOTTOMRIGHT", -15, 5)
+
 function Lorekeeper_API.SetUpItemsColorsAndTextures()
 	if not LoreK_DB or not LoreK_DB["settings"] or not LoreK_DB["settings"]["colors"] then return end
 
@@ -392,6 +395,12 @@ function LoreKGUI.RefreshItemsText(itemID)
 		end
 	else
 		ItemsTextDisplayFrame.AddTextButton:Hide()
+	end
+
+	if LoreK_DB.settings.debugAdvanced and itemID then
+		ItemsTextDisplayFrame.Type_ID:SetText("itemID-"..itemID)
+	else
+		ItemsTextDisplayFrame.Type_ID:SetText("")
 	end
 end
 
@@ -588,10 +597,21 @@ function LoreKGUI.PopulateItemsList()
 	end
 
 	if LoreItemTooltips_Database then
-		for idStr, _ in pairs(LoreItemTooltips_Database) do
+		for idStr, text in pairs(LoreItemTooltips_Database) do
 			local id = tonumber(idStr)
 			if id and not seen[id] then
-				if query == "" then 
+				local itemName, _, itemQuality, _, _, _, _, _, _, _, _, _, _, _, expansionID, _, isCraftingReagent = C_Item.GetItemInfo(id)
+				
+				local tempData = {
+					itemName = itemName,
+					itemQuality = itemQuality,
+					expansionID = expansionID,
+					isCraftingReagent = isCraftingReagent,
+					itemDescription = text,
+					isQuestItem = false 
+				}
+
+				if checkFilters(id, tempData) then 
 					tinsert(items, { id = id }) 
 					seen[id] = true
 					StoreItemData(id)

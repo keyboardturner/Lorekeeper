@@ -783,8 +783,8 @@ TextDisplayFrame.NextPageButton:Disable();
 TextDisplayFrame.PrevPageButton:Hide();
 TextDisplayFrame.NextPageButton:Hide();
 TextDisplayFrame.Type_ID = TextDisplayFrame:CreateFontString(nil, "OVERLAY");
-TextDisplayFrame.Type_ID:SetFontObject("GameFontHighlightLarge"); -- make into option later
-TextDisplayFrame.Type_ID:SetPoint("LEFT", TextDisplayFrame.NextPageButton, "RIGHT", 15, 0);
+TextDisplayFrame.Type_ID:SetFontObject("GameFontHighlightLarge");
+TextDisplayFrame.Type_ID:SetPoint("BOTTOMRIGHT", LoreKMainframe, "BOTTOMRIGHT", -15, 5);
 
 --------------------------------------------------------------------------
 -- Variant Text Dropdown Soon(tm)

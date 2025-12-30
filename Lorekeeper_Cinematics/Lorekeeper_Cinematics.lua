@@ -244,6 +244,9 @@ PlayButton:SetSize(140, 25);
 PlayButton:SetText(PLAY_MOVIE_PREPEND);
 PlayButton:Disable();
 
+CineTextFrame.Type_ID = CineTextFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
+CineTextFrame.Type_ID:SetPoint("BOTTOMRIGHT", LoreKMainframe, "BOTTOMRIGHT", -15, 5)
+
 
 local currentSelection = nil;
 
@@ -267,6 +270,16 @@ local function UpdateRightPane(data)
 	else
 		PlayButton:SetText(PLAY_MOVIE_PREPEND);
 		PlayButton:Disable();
+	end
+
+	if LoreK_DB.settings.debugAdvanced then
+		if data.id then
+			CineTextFrame.Type_ID:SetText("movieID-"..data.id)
+		elseif data.link then
+			CineTextFrame.Type_ID:SetText("Custom")
+		end
+	else
+		CineTextFrame.Type_ID:SetText("")
 	end
 end
 
