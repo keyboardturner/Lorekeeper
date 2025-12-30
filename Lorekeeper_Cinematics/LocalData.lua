@@ -91,7 +91,7 @@ LK["LocalData"]["cinematics"] = {
 		},
 	},
 	[41] = {
-		["name"] = "wow_lis_tdp",
+		["name"] = "wow_lis_art",
 		["id"] = nil,
 		["link"] = "https://youtu.be/WhREhLx4czo",
 		["description"] = "Lore in Short: Arthas Menethil",
