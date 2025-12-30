@@ -2046,14 +2046,14 @@ local function FilterHandler(owner, rootDescription)
 
 	rootDescription:CreateDivider();
 
-	rootDescription:CreateCheckbox(LK["HasMapData"] or "Has Map Data", function() return SVSettings.onlyMapData; end, function()
+	rootDescription:CreateCheckbox(LK["HasMapLocation"], function() return SVSettings.onlyMapData; end, function()
 		SVSettings.onlyMapData = not SVSettings.onlyMapData;
 		LoreKGUI.PopulateList();
 	end);
 
 	rootDescription:CreateDivider();
 
-	local classButton = rootDescription:CreateButton(CLASS or "Class");
+	local classButton = rootDescription:CreateButton(CLASS);
 	
 	if not SVSettings.filterClass then SVSettings.filterClass = "ALL" end
 
@@ -2077,14 +2077,14 @@ local function FilterHandler(owner, rootDescription)
 		end
 	end
 
-	local expButton = rootDescription:CreateButton(EXPANSION_FILTER_TEXT or "Expansion");
+	local expButton = rootDescription:CreateButton(EXPANSION_FILTER_TEXT);
 	
 	if not SVSettings.expansion then SVSettings.expansion = {} end
 
 	for i = 0, LE_EXPANSION_LEVEL_CURRENT do
 		if SVSettings.expansion[i] == nil then SVSettings.expansion[i] = true end
 
-		local expName = _G["EXPANSION_NAME"..i] or ("Expansion " .. i)
+		local expName = _G["EXPANSION_NAME"..i] or (EXPANSION_FILTER_TEXT .. " " .. i)
 		
 		expButton:CreateCheckbox(expName, function()
 			return SVSettings.expansion[i];

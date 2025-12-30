@@ -141,6 +141,7 @@ if LOCALE == "enUS" then
 	LK["Base"] = "Base"
 	LK["Variant"] = "Variant"
 	LK["Saved"] = "Saved"
+	LK["HasMapLocation"] = "Has Map Location"
 
 return end
 
@@ -262,6 +263,7 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["Base"] = "Base"
 	LK["Variant"] = "Variante"
 	LK["Saved"] = "Guardado"
+	LK["HasMapLocation"] = "Tiene ubicación en el mapa"
 
 return end
 
@@ -383,6 +385,7 @@ if LOCALE == "deDE" then
 	LK["Base"] = "Basis"
 	LK["Variant"] = "Variante"
 	LK["Saved"] = "Gespeichert"
+	LK["HasMapLocation"] = "Hat eine Kartenposition"
 
 return end
 
@@ -504,6 +507,7 @@ if LOCALE == "frFR" then
 	LK["Base"] = "Base"
 	LK["Variant"] = "Variante"
 	LK["Saved"] = "Enregistré"
+	LK["HasMapLocation"] = "Possède un emplacement sur la carte"
 
 return end
 
@@ -625,6 +629,7 @@ if LOCALE == "itIT" then
 	LK["Base"] = "Base"
 	LK["Variant"] = "Variante"
 	LK["Saved"] = "Salvato"
+	LK["HasMapLocation"] = "Ha una posizione sulla mappa"
 
 return end
 
@@ -746,6 +751,7 @@ if LOCALE == "ptBR" then
 	LK["Base"] = "Base"
 	LK["Variant"] = "Variante"
 	LK["Saved"] = "Salvo"
+	LK["HasMapLocation"] = "Possui localização no mapa"
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -869,6 +875,7 @@ if LOCALE == "ruRU" then
 	LK["Base"] = "Базовый"
 	LK["Variant"] = "Вариант"
 	LK["Saved"] = "Сохранено"
+	LK["HasMapLocation"] = "Имеет местоположение на карте"
 
 
 return end
@@ -991,6 +998,7 @@ if LOCALE == "koKR" then
 	LK["Base"] = "기본"
 	LK["Variant"] = "변형"
 	LK["Saved"] = "저장됨"
+	LK["HasMapLocation"] = "지도 위치 있음"
 
 
 return end
@@ -1113,6 +1121,7 @@ if LOCALE == "zhCN" then
 	LK["Base"] = "基础"
 	LK["Variant"] = "变体"
 	LK["Saved"] = "已保存"
+	LK["HasMapLocation"] = "有地图位置"
 
 
 return end
@@ -1235,6 +1244,7 @@ if LOCALE == "zhTW" then
 	LK["Base"] = "基础"
 	LK["Variant"] = "变体"
 	LK["Saved"] = "已儲存"
+	LK["HasMapLocation"] = "有地圖位置"
 
 
 return end
