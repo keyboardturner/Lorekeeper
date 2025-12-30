@@ -1,0 +1,45 @@
+## Interface: 110207
+## Title: Lorekeeper_Cinematics
+## Notes: Lorekeeper plugin to browse the ingame cinematics.
+## Author: Keyboardturner
+## Version: @project-version@
+## IconTexture: Interface/Icons/inv_misc_ selfiecamera_01
+## Dependencies: Lorekeeper
+
+## Title-enUS: Lorekeeper_Cinematics
+## Notes-enUS: Lorekeeper plugin to browse the ingame cinematics.
+## Title-esES: Lorekeeper_Cinemáticas
+## Notes-esES: Complemento de Lorekeeper para explorar las cinemáticas del juego.
+## Title-esMX: Lorekeeper_Cinemáticas
+## Notes-esMX: Complemento de Lorekeeper para explorar las cinemáticas del juego.
+## Title-deDE: Lorekeeper_Zwischensequenzen
+## Notes-deDE: Lorekeeper-Plugin zum Durchsuchen der Ingame-Zwischensequenzen.
+## Title-frFR: Lorekeeper_Cinématiques
+## Notes-frFR: Extension Lorekeeper pour parcourir les cinématiques en jeu.
+## Title-itIT: Lorekeeper_Cinematismi
+## Notes-itIT: Plugin di Lorekeeper per esplorare le cinematiche di gioco.
+## Title-ptBR: Lorekeeper_Cinemáticas
+## Notes-ptBR: Plugin do Lorekeeper para navegar pelas cinemáticas do jogo.
+## Title-ruRU: Хранитель Знаний_Синематики (Lorekeeper_Cinematics)
+## Notes-ruRU: Плагин Хранитель Знаний для просмотра внутриигровых синематиков.
+## Title-koKR: 지식의 수호자_시네마틱 (Lorekeeper_Cinematics)
+## Notes-koKR: 게임 내 시네마틱을 탐색할 수 있는 지식의 수호자 플러그인입니다.
+## Title-zhCN: 知识守护者_过场动画 (Lorekeeper_Cinematics)
+## Notes-zhCN: 用于浏览游戏内过场动画的 知识守护者 插件。
+## Title-zhTW: 知識守護者_過場動畫 (Lorekeeper_Cinematics)
+## Notes-zhTW: 用於瀏覽遊戲內過場動畫的 知識守護者 外掛。
+
+## Category-enUS: Roleplay
+## Category-deDE: Rollenspiel
+## Category-esES: Juego de rol
+## Category-esMX: Juego de rol
+## Category-frFR: Jeu de rôle
+## Category-itIT: Gioco di Ruolo
+## Category-koKR: 롤플레잉
+## Category-ptBR: Interpretação de Papel
+## Category-ruRU: Ролевая игра
+## Category-zhCN: 角色扮演
+## Category-zhTW: 角色扮演
+
+LocalData.lua
+Lorekeeper_Cinematics.lua

@@ -192,8 +192,8 @@ MailTextDisplayFrame.NextPageButton:Disable();
 MailTextDisplayFrame.PrevPageButton:Hide();
 MailTextDisplayFrame.NextPageButton:Hide();
 MailTextDisplayFrame.Type_ID = MailTextDisplayFrame:CreateFontString(nil, "OVERLAY");
-MailTextDisplayFrame.Type_ID:SetFontObject("GameFontHighlightLarge"); -- make into option later
-MailTextDisplayFrame.Type_ID:SetPoint("LEFT", MailTextDisplayFrame.NextPageButton, "RIGHT", 15, 0);
+MailTextDisplayFrame.Type_ID:SetFontObject("GameFontHighlightLarge");
+MailTextDisplayFrame.Type_ID:SetPoint("BOTTOMRIGHT", LoreKMainframe, "BOTTOMRIGHT", -15, 5);
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------

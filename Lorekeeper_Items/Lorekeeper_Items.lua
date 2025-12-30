@@ -2,14 +2,44 @@ local _, LK = ...
 
 if not Lorekeeper_API or not Lorekeeper_API.LK then return end
 
+
+local LK = Lorekeeper_API.LK
+
 local LoreKGUI = Lorekeeper_API.LK.LoreKGUI
-local LK_Local = Lorekeeper_API.LK 
 
-local function GetItemFlavorText(itemID)
-	if not itemID then return "" end
+local MAX_EXPANSION_ID = LE_EXPANSION_LEVEL_CURRENT
+local MAX_QUALITY_ID = 8
 
-	if LitDB and LitDB.CustomTexts and LitDB.CustomTexts[tostring(itemID)] then
-		return LitDB.CustomTexts[tostring(itemID)]
+local ItemsFilters = {
+	onlyDescription = false,
+	expansions = {},
+	qualities = {},
+	types = {
+		quest = true,
+		reagent = true,
+		other = true,
+	}
+}
+
+for i = 0, MAX_EXPANSION_ID do ItemsFilters.expansions[i] = true end
+for i = 0, MAX_QUALITY_ID do ItemsFilters.qualities[i] = true end
+
+
+local function GetItemFlavorText(itemID, ignoreCustom)
+	if not itemID then return end
+
+	if not ignoreCustom then
+		if LitDB and LitDB.CustomTexts and LitDB.CustomTexts[tostring(itemID)] then
+			return LitDB.CustomTexts[tostring(itemID)]
+		end
+
+		if LoreItemTooltips_Database and LoreItemTooltips_Database[tostring(itemID)] then
+			local text = LoreItemTooltips_Database[tostring(itemID)]
+			if type(text) == "number" and LoreItemTooltips_Database[tostring(text)] then
+				return LoreItemTooltips_Database[tostring(text)]
+			end
+			return text
+		end
 	end
 
 	if LK["LocalData"] and LK["LocalData"]["questItems"] and LK["LocalData"]["questItems"][itemID] then
@@ -19,28 +49,26 @@ local function GetItemFlavorText(itemID)
 		end
 	end
 
-	if _G.LoreItemTooltips_Database and _G.LoreItemTooltips_Database[tostring(itemID)] then
-		local text = _G.LoreItemTooltips_Database[tostring(itemID)]
-		if type(text) == "number" and _G.LoreItemTooltips_Database[tostring(text)] then
-			return _G.LoreItemTooltips_Database[tostring(text)]
-		end
-		return text
-	end
-
 	local tooltipData = C_TooltipInfo.GetItemByID(itemID)
-	if not tooltipData then return "" end
+	if not tooltipData then return end
 
 	for _, line in ipairs(tooltipData.lines) do
 		if line.leftText and line.leftColor then
-			if line.leftColor.r > 0.9 and line.leftColor.g > 0.8 and line.leftColor.b < 0.2 then
-				return line.leftText
-			end
-			if string.match(line.leftText, "^[\"'].+[\"']$") then
-				return line.leftText
+			local text = line.leftText
+			
+			local isCollectionText = string.find(text, COLLECTED) or string.find(text, "%(%d+/%d+%)")
+			
+			if not isCollectionText then
+				if line.leftColor.r > 0.9 and line.leftColor.g > 0.8 and line.leftColor.b < 0.2 then
+					return text
+				end
+				if string.match(text, "^[\"'].+[\"']$") then
+					return text
+				end
 			end
 		end
 	end
-	return "" 
+	return
 end
 
 local function StoreItemData(itemID, callback)
@@ -57,12 +85,11 @@ local function StoreItemData(itemID, callback)
 	item:ContinueOnItemLoad(function()
 		local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expansionID, setID, isCraftingReagent = C_Item.GetItemInfo(itemID)
 		
-		local description = GetItemFlavorText(itemID)
+		local description = GetItemFlavorText(itemID, true)
 
 		if not LoreKItems_DB["items"][itemID] then
 			LoreKItems_DB["items"][itemID] = { 
-				id = itemID, 
-				dateObtained = date("%Y-%m-%d") 
+				id = itemID,
 			}
 		end
 
@@ -86,15 +113,8 @@ local function CleanupStoredData()
 	local count = 0
 	for itemID, data in pairs(LoreKItems_DB["items"]) do
 		if LK["LocalData"]["questItems"][itemID] then
-			if data.itemName or data.itemTexture then
-				data.itemName = nil
-				data.itemQuality = nil
-				data.itemTexture = nil
-				data.expansionID = nil
-				data.isCraftingReagent = nil
-				data.itemDescription = nil
-				count = count + 1
-			end
+			LoreKItems_DB["items"][itemID] = nil
+			count = count + 1
 		end
 	end
 	
@@ -109,14 +129,23 @@ local function MigrateQuestItems()
 	if not LoreKItems_DB then LoreKItems_DB = { ["items"] = {} } end
 	if not LoreKItems_DB["items"] then LoreKItems_DB["items"] = {} end
 
-	for itemID, data in pairs(LoreK_DB["questItems"]) do
-		if not LoreKItems_DB["items"][itemID] then
-			LoreKItems_DB["items"][itemID] = {
-				id = itemID,
-				dateObtained = data.dateObtained or date("%Y-%m-%d"), 
-				isQuestItem = data.isQuestItem, 
-			}
-			StoreItemData(itemID)
+	if LoreK_DB["questItems"] then
+		local count = 0
+		for itemID, data in pairs(LoreK_DB["questItems"]) do
+			if not LoreKItems_DB["items"][itemID] then
+				LoreKItems_DB["items"][itemID] = {
+					id = itemID, 
+					isQuestItem = data.isQuestItem, 
+				}
+				StoreItemData(itemID)
+				count = count + 1
+			end
+		end
+		
+		LoreK_DB["questItems"] = nil
+
+		if count > 0 and LoreK_DB.settings and LoreK_DB.settings.debugAdvanced then
+			print(string.format("|cFFFFF569Lorekeeper:|r Migrated %d quest items and cleaned LoreK_DB.", count))
 		end
 	end
 end
@@ -132,7 +161,6 @@ local function ScanCustomItems()
 			if not inLocal then
 				LoreKItems_DB["items"][itemID] = {
 					id = itemID,
-					dateObtained = date("%Y-%m-%d"),
 					source = "CustomText"
 				}
 				StoreItemData(itemID)
@@ -142,41 +170,54 @@ local function ScanCustomItems()
 end
 
 StaticPopupDialogs["LOREKEEPER_ADD_CUSTOM_LIT"] = {
-  text = "Enter custom flavor text for %s:",
-  button1 = "Save",
-  button2 = "Cancel",
-  hasEditBox = true,
-  OnAccept = function(self, data)
-	  local text = self.EditBox:GetText()
-	  if LitDB and LitDB.CustomTexts then
-		  LitDB.CustomTexts[tostring(data.id)] = text
-		  StoreItemData(data.id, function()
-			LoreKGUI.RefreshItemsText(data.id)
-		  end)
-	  else
-		  print("|cFFFFF569Lorekeeper:|r LoreItemTooltips (LitDB) not found.")
-	  end
-  end,
-  EditBoxOnEnterPressed = function(self, data)
-	  local text = self:GetParent().EditBox:GetText()
-	   if LitDB and LitDB.CustomTexts then
-		  LitDB.CustomTexts[tostring(data.id)] = text
-		  StoreItemData(data.id, function()
-			LoreKGUI.RefreshItemsText(data.id)
-		  end)
-	  end
-	  self:GetParent():Hide()
-  end,
-  OnShow = function(self, data)
-	  if LitDB and LitDB.CustomTexts and LitDB.CustomTexts[tostring(data.id)] then
-		  self.EditBox:SetText(LitDB.CustomTexts[tostring(data.id)])
-	  end
-	  self.EditBox:SetFocus()
-  end,
-  timeout = 0,
-  whileDead = true,
-  hideOnEscape = true,
-  preferredIndex = 3,
+	text = LK["EnterFlavorText"],
+	button1 = SAVE,
+	button2 = CANCEL,
+	hasEditBox = true,
+	OnAccept = function(self, data)
+		local text = self.EditBox:GetText()
+		text = text:match("^%s*(.-)%s*$")
+		if LitDB and LitDB.CustomTexts then
+			if text ~= "" then
+				LitDB.CustomTexts[tostring(data.id)] = text
+			else
+				LitDB.CustomTexts[tostring(data.id)] = nil
+			end
+			
+			StoreItemData(data.id, function()
+				LoreKGUI.RefreshItemsText(data.id)
+			end)
+		else
+			print("|cFFFFF569Lorekeeper:|r LoreItemTooltips (LitDB) not found.")
+		end
+	end,
+	EditBoxOnEnterPressed = function(self, data)
+		local text = self:GetParent().EditBox:GetText()
+		text = text:match("^%s*(.-)%s*$")
+		
+		 if LitDB and LitDB.CustomTexts then
+			if text ~= "" then
+				LitDB.CustomTexts[tostring(data.id)] = text
+			else
+				LitDB.CustomTexts[tostring(data.id)] = nil
+			end
+			
+			StoreItemData(data.id, function()
+				LoreKGUI.RefreshItemsText(data.id)
+			end)
+		end
+		self:GetParent():Hide()
+	end,
+	OnShow = function(self, data)
+		if LitDB and LitDB.CustomTexts and LitDB.CustomTexts[tostring(data.id)] then
+			self.EditBox:SetText(LitDB.CustomTexts[tostring(data.id)])
+		end
+		self.EditBox:SetFocus()
+	end,
+	timeout = 0,
+	whileDead = true,
+	hideOnEscape = true,
+	preferredIndex = 3,
 }
 
 local LJ_Items = CreateFrame("Frame")
@@ -193,6 +234,10 @@ function LJ_Items:OnEvent(event, arg1)
 		MigrateQuestItems()
 		ScanCustomItems()
 		LoreKGUI.PopulateItemsList()
+
+		if Lorekeeper_API.SetUpItemsColorsAndTextures then
+			Lorekeeper_API.SetUpItemsColorsAndTextures()
+		end
 	end
 
 	if event == "CHAT_MSG_LOOT" then
@@ -206,7 +251,6 @@ function LJ_Items:OnEvent(event, arg1)
 			if not LoreKItems_DB["items"][itemID] then
 				LoreKItems_DB["items"][itemID] = {
 					id = itemID,
-					dateObtained = date("%Y-%m-%d"),
 				}
 				StoreItemData(itemID, function() 
 					if LoreKGUI:IsVisible() then
@@ -237,16 +281,18 @@ ItemsTextDisplayFrame.bg:SetAtlas("QuestBG-Parchment")
 
 ItemsTextDisplayFrame.TitleBackdrop = CreateFrame("Frame", nil, ItemsTextDisplayFrame)
 local TitleBackdrop = ItemsTextDisplayFrame.TitleBackdrop
-TitleBackdrop:SetPoint("TOP", ItemsTextDisplayFrame, "TOP", 0, -15)
-TitleBackdrop:SetWidth(ItemsTextDisplayFrame:GetWidth()-20)
+TitleBackdrop:SetPoint("TOP", ItemsTextDisplayFrame, "TOP", 0, -4)
+TitleBackdrop:SetWidth(ItemsTextDisplayFrame:GetWidth()-7)
 TitleBackdrop:SetHeight(48)
 TitleBackdrop.tex = TitleBackdrop:CreateTexture()
 TitleBackdrop.tex:SetAllPoints(true)
 TitleBackdrop.tex:SetAtlas("StoryHeader-BG")
 
 ItemsTextDisplayFrame.ItemTitle = TitleBackdrop:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
-ItemsTextDisplayFrame.ItemTitle:SetPoint("CENTER", TitleBackdrop, "CENTER", 0, 2)
-ItemsTextDisplayFrame.ItemTitle:SetText("Select an Item")
+ItemsTextDisplayFrame.ItemTitle:SetPoint("TOPLEFT", TitleBackdrop, "TOPLEFT", 7, -8);
+ItemsTextDisplayFrame.ItemTitle:SetPoint("BOTTOMRIGHT", TitleBackdrop, "BOTTOMRIGHT", -7, 5);
+ItemsTextDisplayFrame.ItemTitle:SetJustifyH("CENTER");
+ItemsTextDisplayFrame.ItemTitle:SetJustifyV("MIDDLE");
 
 ItemsTextDisplayFrame.FlavorText = ItemsTextDisplayFrame:CreateFontString(nil, "OVERLAY", "QuestFont_Huge")
 ItemsTextDisplayFrame.FlavorText:SetPoint("TOPLEFT", TitleBackdrop, "BOTTOMLEFT", 20, -50)
@@ -256,10 +302,10 @@ ItemsTextDisplayFrame.FlavorText:SetJustifyV("TOP")
 ItemsTextDisplayFrame.FlavorText:SetTextColor(0.2, 0.15, 0.1, 1)
 ItemsTextDisplayFrame.FlavorText:SetText("")
 
-ItemsTextDisplayFrame.AddTextButton = CreateFrame("Button", nil, ItemsTextDisplayFrame, "UIPanelButtonTemplate")
-ItemsTextDisplayFrame.AddTextButton:SetPoint("BOTTOMRIGHT", ItemsTextDisplayFrame, "BOTTOMRIGHT", -10, 10)
-ItemsTextDisplayFrame.AddTextButton:SetSize(120, 22)
-ItemsTextDisplayFrame.AddTextButton:SetText("Edit Custom Text")
+ItemsTextDisplayFrame.AddTextButton = CreateFrame("Button", nil, ItemsTextDisplayFrame, "SharedButtonTemplate")
+ItemsTextDisplayFrame.AddTextButton:SetPoint("BOTTOM", ItemsTextDisplayFrame, "BOTTOM", 0, 10)
+ItemsTextDisplayFrame.AddTextButton:SetSize(100, 25)
+ItemsTextDisplayFrame.AddTextButton:SetText(EDIT)
 ItemsTextDisplayFrame.AddTextButton:SetScript("OnClick", function()
 	if ItemsTextDisplayFrame.currentItemID then
 		local itemID = ItemsTextDisplayFrame.currentItemID
@@ -277,11 +323,42 @@ ItemsTextDisplayFrame.AddTextButton:SetScript("OnClick", function()
 	end
 end)
 ItemsTextDisplayFrame.AddTextButton:Disable()
+ItemsTextDisplayFrame.AddTextButton:Hide()
 
+ItemsTextDisplayFrame.Type_ID = ItemsTextDisplayFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
+ItemsTextDisplayFrame.Type_ID:SetPoint("BOTTOMRIGHT", LoreKMainframe, "BOTTOMRIGHT", -15, 5)
+
+function Lorekeeper_API.SetUpItemsColorsAndTextures()
+	if not LoreK_DB or not LoreK_DB["settings"] or not LoreK_DB["settings"]["colors"] then return end
+
+	local colors = LoreK_DB["settings"]["colors"]
+	
+	if LoreK_DB["settings"]["overrideMaterials"] and LoreK_DB["settings"]["material"] then
+		ItemsTextDisplayFrame.bg:SetAtlas(LoreK_DB["settings"]["material"])
+	else
+		ItemsTextDisplayFrame.bg:SetAtlas("QuestBG-Parchment")
+	end
+
+	ItemsTextDisplayFrame.bg:SetVertexColor(ColorMixin.GetRGBA(colors["parchment"]))
+	
+	if TitleBackdrop.tex then
+		TitleBackdrop.tex:SetVertexColor(ColorMixin.GetRGBA(colors["title"]))
+	end
+	
+	if ItemsTextDisplayFrame.ItemTitle then
+		ItemsTextDisplayFrame.ItemTitle:SetTextColor(ColorMixin.GetRGBA(colors["titleText"]))
+	end
+	
+	if ItemsTextDisplayFrame.FlavorText then
+		ItemsTextDisplayFrame.FlavorText:SetTextColor(ColorMixin.GetRGBA(colors["p"]))
+	end
+end
 
 function LoreKGUI.RefreshItemsText(itemID)
 	if not itemID then return end
 	
+	Lorekeeper_API.SetUpItemsColorsAndTextures()
+
 	StoreItemData(itemID, function()
 	end)
 
@@ -304,10 +381,30 @@ function LoreKGUI.RefreshItemsText(itemID)
 	if flavorText and flavorText ~= "" then
 		ItemsTextDisplayFrame.FlavorText:SetText(flavorText:gsub('^"',''):gsub('"$',''))
 	else
-		ItemsTextDisplayFrame.FlavorText:SetText(LK["NoDescription"] or "No description available.")
+		ItemsTextDisplayFrame.FlavorText:SetText("")
 	end
 	
-	ItemsTextDisplayFrame.AddTextButton:Enable()
+	if LitDB and LoreItemTooltips_Database then
+		local inStaticLIT = LoreItemTooltips_Database and LoreItemTooltips_Database[tostring(itemID)]
+		local inCustomLIT = LitDB.CustomTexts and LitDB.CustomTexts[tostring(itemID)]
+
+		local hasBaseOrLocalText = GetItemFlavorText(itemID, true)
+
+		if (inStaticLIT or hasBaseOrLocalText) and not inCustomLIT then
+			ItemsTextDisplayFrame.AddTextButton:Hide()
+		else
+			ItemsTextDisplayFrame.AddTextButton:Show()
+			ItemsTextDisplayFrame.AddTextButton:Enable()
+		end
+	else
+		ItemsTextDisplayFrame.AddTextButton:Hide()
+	end
+
+	if LoreK_DB.settings.debugAdvanced and itemID then
+		ItemsTextDisplayFrame.Type_ID:SetText("itemID-"..itemID)
+	else
+		ItemsTextDisplayFrame.Type_ID:SetText("")
+	end
 end
 
 local function ItemsInitializer(button, data)
@@ -340,7 +437,7 @@ local function ItemsInitializer(button, data)
 			itemTexture = infoTexture
 			StoreItemData(itemID)
 		else
-			itemName = "Loading..."
+			itemName = LFG_LIST_LOADING
 			itemTexture = 134400
 		end
 	end
@@ -400,7 +497,7 @@ local function ItemsInitializer(button, data)
 	button:SetScript("OnClick", function(self, btn)
 		LoreKGUI.ItemsSelectionBehavior:Select(self)
 		
-		if itemName == "Loading..." then
+		if itemName == LFG_LIST_LOADING then
 			StoreItemData(itemID, function()
 				LoreKGUI.RefreshItemsText(itemID)
 				local freshName = C_Item.GetItemInfo(itemID)
@@ -451,30 +548,77 @@ ScrollUtil.AddInitializedFrameCallback(ItemsScrollBox, LoreKGUI.OnItemsFrameInit
 function LoreKGUI.PopulateItemsList()
 	local items = {}
 	local seen = {}
+	
+	local query = LoreKGUI.ItemsSearchBox:GetText():lower()
+
+	local function checkFilters(id, data)
+		local name = data.itemName or ""
+		if not name:lower():find(query) then return false end
+		
+		if ItemsFilters.onlyDescription then
+			if not data.itemDescription or data.itemDescription == "" then return false end
+		end
+		
+		local expID = data.expansionID or 0
+		if not ItemsFilters.expansions[expID] then return false end
+
+		local qualID = data.itemQuality or 1
+		if not ItemsFilters.qualities[qualID] then return false end
+		
+		local isQuest = data.isQuestItem
+		local isReagent = data.isCraftingReagent
+		
+		if isQuest then
+			if not ItemsFilters.types.quest then return false end
+		elseif isReagent then
+			if not ItemsFilters.types.reagent then return false end
+		else
+			if not ItemsFilters.types.other then return false end
+		end
+
+		return true
+	end
 
 	if LK["LocalData"] and LK["LocalData"]["questItems"] then
 		for id, data in pairs(LK["LocalData"]["questItems"]) do
-			tinsert(items, { id = id }) 
-			seen[id] = true
+			if checkFilters(id, data) then
+				tinsert(items, { id = id }) 
+				seen[id] = true
+			end
 		end
 	end
 
 	if LoreKItems_DB and LoreKItems_DB["items"] then
 		for id, data in pairs(LoreKItems_DB["items"]) do
 			if not seen[id] then
-				tinsert(items, data)
-				seen[id] = true
+				if checkFilters(id, data) then
+					tinsert(items, data)
+					seen[id] = true
+				end
 			end
 		end
 	end
 
-	if _G.LoreItemTooltips_Database then
-		for idStr, _ in pairs(_G.LoreItemTooltips_Database) do
+	if LoreItemTooltips_Database then
+		for idStr, text in pairs(LoreItemTooltips_Database) do
 			local id = tonumber(idStr)
 			if id and not seen[id] then
-				tinsert(items, { id = id }) 
-				seen[id] = true
-				StoreItemData(id)
+				local itemName, _, itemQuality, _, _, _, _, _, _, _, _, _, _, _, expansionID, _, isCraftingReagent = C_Item.GetItemInfo(id)
+				
+				local tempData = {
+					itemName = itemName,
+					itemQuality = itemQuality,
+					expansionID = expansionID,
+					isCraftingReagent = isCraftingReagent,
+					itemDescription = text,
+					isQuestItem = false 
+				}
+
+				if checkFilters(id, tempData) then 
+					tinsert(items, { id = id }) 
+					seen[id] = true
+					StoreItemData(id)
+				end
 			end
 		end
 	end
@@ -486,34 +630,71 @@ function LoreKGUI.PopulateItemsList()
 end
 
 LoreKGUI.ItemsSearchBox = CreateFrame("EditBox", "LoreKItemsSearchBox", ItemsDisplayFrame, "SearchBoxTemplate")
-LoreKGUI.ItemsSearchBox:SetSize(190, 20)
+LoreKGUI.ItemsSearchBox:SetSize(105, 20)
 LoreKGUI.ItemsSearchBox:SetPoint("TOPLEFT", ItemsDisplayFrame, "TOPLEFT", 10, -5)
 LoreKGUI.ItemsSearchBox:SetAutoFocus(false)
 
 LoreKGUI.ItemsSearchBox:HookScript("OnTextChanged", function(self)
-	local query = self:GetText():lower()
-	local matches = {}
-	local seen = {}
-	
-	local function checkAndAdd(id, nameObj)
-		if not seen[id] and nameObj and nameObj:lower():find(query) then
-			tinsert(matches, { id = id })
-			seen[id] = true
-		end
-	end
-
-	if LK["LocalData"] and LK["LocalData"]["questItems"] then
-		for id, data in pairs(LK["LocalData"]["questItems"]) do
-			checkAndAdd(id, data.itemName)
-		end
-	end
-
-	if LoreKItems_DB and LoreKItems_DB["items"] then
-		for id, data in pairs(LoreKItems_DB["items"]) do
-			checkAndAdd(id, data.itemName)
-		end
-	end
-	
-	ItemsDataProvider = CreateDataProvider(matches)
-	ItemsScrollView:SetDataProvider(ItemsDataProvider)
+	LoreKGUI.PopulateItemsList()
 end)
+
+LoreKGUI.ItemsFilterDropdown = CreateFrame("DropdownButton", nil, ItemsDisplayFrame, "WowStyle1FilterDropdownTemplate")
+LoreKGUI.ItemsFilterDropdown.Text:SetText(LK["filter"])
+LoreKGUI.ItemsFilterDropdown:SetPoint("LEFT", LoreKGUI.ItemsSearchBox, "RIGHT", 3, 0)
+LoreKGUI.ItemsFilterDropdown:SetSize(80, 20)
+
+local function ItemsFilterHandler(owner, rootDescription)
+	
+	rootDescription:CreateCheckbox(LK["Description"], function()
+		return ItemsFilters.onlyDescription
+	end, function()
+		ItemsFilters.onlyDescription = not ItemsFilters.onlyDescription
+		LoreKGUI.PopulateItemsList()
+	end)
+
+	local typeMenu = rootDescription:CreateButton(LK["Type"])
+	typeMenu:CreateCheckbox(LK["QuestItem"], function()
+		return ItemsFilters.types.quest
+	end, function()
+		ItemsFilters.types.quest = not ItemsFilters.types.quest
+		LoreKGUI.PopulateItemsList()
+	end)
+	
+	typeMenu:CreateCheckbox(LK["CraftingReagent"], function()
+		return ItemsFilters.types.reagent
+	end, function()
+		ItemsFilters.types.reagent = not ItemsFilters.types.reagent
+		LoreKGUI.PopulateItemsList()
+	end)
+	
+	typeMenu:CreateCheckbox(LK["Other"], function()
+		return ItemsFilters.types.other
+	end, function()
+		ItemsFilters.types.other = not ItemsFilters.types.other
+		LoreKGUI.PopulateItemsList()
+	end)
+
+	local qualMenu = rootDescription:CreateButton(LK["Quality"])
+	for i = 0, MAX_QUALITY_ID do
+		local qName = _G["ITEM_QUALITY"..i.."_DESC"] or (LK["Quality"]..i)
+		qualMenu:CreateCheckbox(qName, function()
+			return ItemsFilters.qualities[i]
+		end, function()
+			ItemsFilters.qualities[i] = not ItemsFilters.qualities[i]
+			LoreKGUI.PopulateItemsList()
+		end)
+	end
+
+	local expMenu = rootDescription:CreateButton(LK["Expansion"])
+	for i = 0, MAX_EXPANSION_ID do
+		local eName = _G["EXPANSION_NAME"..i] or (LK["Expansion"]..i)
+		expMenu:CreateCheckbox(eName, function()
+			return ItemsFilters.expansions[i]
+		end, function()
+			ItemsFilters.expansions[i] = not ItemsFilters.expansions[i]
+			LoreKGUI.PopulateItemsList()
+		end)
+	end
+end
+
+LoreKGUI.ItemsFilterDropdown:SetupMenu(ItemsFilterHandler)
