@@ -1,3 +1,15 @@
+# 0.3.6
+
+ - Localdata Update 12 - Added 49 personal Library entries.
+ - Added Cinematics & Items tabs
+   - Cinematics will display all cinematics in the game in chronological order, as well as links to out-of-game cinematics on official youtube pages. Cinematics are assigned by expansion and faction.
+   - Quest & certain flavor items are automatically collected and stored. Items filters include Quest, Crafting Reagent, Quality, and Expansion. Quest item data collection is no longer handled by the core addon and instead by the new Lorekeeper_Items plugin.
+ - Filters in main Library tab have been improved to include specific class filters, expansion, and Map Location.
+ - Added integration with LoreItemTooltips addon
+   - Entries provided by LoreItemTooltips will display their text in the text panel of the Items tab.
+   - While enabled, entries without flavor text provided by the game or by the addon will allow an editbox input to allow custom entries for LoreItemTooltips. This should make it easier to add items in long term (and no longer rely on a google form).
+
+
 # 0.3.5
 
 11.2.7 toc update
