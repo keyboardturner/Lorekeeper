@@ -576,6 +576,15 @@ LK["LocalData"] = {
 				["isFinalVersion"] = false,
 				["expansion"] = 6,
 			},
+			["copy_2"] = {
+				["title"] = "Tome of Blighted Implements",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Tome of Blighted Implements</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-warlock-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Mile Raitheborne, Head Researcher of the Council of Six.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+			},
 		},
 		["GameObject-385586"] = {
 			["base"] = {
@@ -12333,6 +12342,15 @@ LK["LocalData"] = {
 				["isClassSpecific"] = 7, -- shaman
 				["expansion"] = 6,
 			},
+			["copy_1"] = {
+				["title"] = "Words of Wind and Earth",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Words of Wind and Earth</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-shaman-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Gorma of the Earthen Ring.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+			},
 		},
 		["Item-162571"] = {
 			["base"] = {
@@ -19566,6 +19584,15 @@ LK["LocalData"] = {
 				["isClassSpecific"] = 10,
 				["expansion"] = 6,
 			},
+			["copy_1"] = {
+				["title"] = "The Chronicle of Ages",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">The Chronicle of Ages</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-monk-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by the chroniclers of the Broken Temple.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+			},
 		},
 		["GameObject-192880"] = {
 			["base"] = {
@@ -19727,6 +19754,15 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = 1,
 				["expansion"] = 6,
+			},
+			["copy_1"] = {
+				["title"] = "Saga of the Valarjar",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Saga of the Valarjar</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-warrior-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">Etched by Fjornson, stonecarver of the Valarjar.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
 			},
 		},
 		["GameObject-192713"] = {
@@ -21150,6 +21186,22 @@ LK["LocalData"] = {
 				["isClassSpecific"] = false,
 				["expansion"] = 9,
 			},
+			["copy_1"] = {
+				["title"] = "Translated Correspondence of Black Dragons",
+				["text"] = {
+					"What follows are translations of correspondence between the black dragon Adamanthia and Neltharion, the Aspect of Earth.\r\n\r\nAt the time of this translation, I can confirm that neither I nor any dracthyr I have spoken to or are able to fully remember Adamanthia. We have only fragments. Her origins and identity are mysterious. Yet we feel drawn to her for reasons beyond recollection.\r\n\r\nIt is as if she holds a part of us in her, sustained in more than just memory.\r\n\r\nNow you may peruse her words in this humble volume. May this transcription help spark memories for worthy dracthyr who read it.\r\n\r\n-- Zazulithan\r\nDracthyr Archivist",
+					"Transcription of Receiving Stone: Final Warning\r\n\r\nThis is your final warning, Adamanthia. If you continue in your defiance, you will become an example to all who foolishly entertain such asinine aspirations.\r\n\r\nYour suffering will span millennia. Even death will not release you. Any who look upon you will gaze upon your torment and despair. Cease this folly, or retribution awaits you.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2151] = {
+						0.3545786738395691,
+						0.5870685577392578,
+					},
+				},
+			},
 		},
 		["GameObject-245384"] = {
 			["base"] = {
@@ -21418,6 +21470,15 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = 5,
 				["expansion"] = 6,
+			},
+			["copy_1"] = {
+				["title"] = "Word of the Conclave",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Word of the Conclave</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-priest-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Juvess, historian of the Conclave.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
 			},
 		},
 		["GameObject-381736"] = {
@@ -21759,6 +21820,33 @@ LK["LocalData"] = {
 				["isObtainable"] = true,
 				["isClassSpecific"] = 2,
 				["expansion"] = 6,
+			},
+			["copy_2"] = {
+				["title"] = "Libram of Ancient Kings",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Libram of Ancient Kings</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-paladin-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Sister Elda, Head Archivist.</p>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<p></p>\r\n<IMG src="Interface\\Pictures\\artifactbook-paladin-ashbringer" align="center"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="145"/>\r\n<H3 align="center">Ashbringer</H3>\r\n<BR/>\r\n<P>\r\nYou now possess one of the most iconic and renowned weapons ever created.\r\n<BR/><BR/>\r\nOnce the bane of the undead (then, for a time, one of the Scourge\'s greatest assets), the Ashbringer has been instrumental in the rise and fall of lords, empires, and kings, living and undead alike. It has stood for both good and evil, and now it rests within your hands. \r\n<BR/><BR/>\r\nWield it well.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part One</H2>\r\n<HR/>\r\n<P>\r\nFew known artifacts or relics are capable of rivaling the Ashbringer\'s legendary pedigree. \r\n<BR/><BR/>\r\nIts origins have been traced to the Second War between orcs and humans. There, on the field of battle, the renowned highlord Alexandros Mograine came into possession of a dark orb. \r\n<BR/><BR/>\r\nThough Alexandros considered the artifact to be a living embodiment of shadow, he also believed that it might one day be forged into a weapon of righteousness. \r\n<BR/><BR/>\r\nAlexandros\'s vision would become a reality, and that weapon would become the Ashbringer.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Two</H2>\r\n<HR/>\r\n<P>\r\nIt is said that deep within the hallowed halls of Ironforge, the Ashbringer was crafted by the dwarf king Magni Bronzebeard, a peerless weaponsmith. \r\n<BR/><BR/>\r\nFor King Magni, it was a dark time; he grieved over the recent loss of his brother Muradin.\r\n<BR/><BR/>\r\nLegend holds that King Magni infused the full weight of his rage and sorrow into the Ashbringer\'s forging, resulting in a weapon of untold vengeance and devastation.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Three</H2>\r\n<HR/>\r\n<P>\r\nSo it is written, that when confronted by undead forces, Highlord Alexandros Mograine dispatched them with ease. The blade in his hand felt like an extension of his own flesh, a beautifully lethal instrument of pure destruction.\r\n<BR/><BR/>\r\nAnd as it carved a swath through his Scourge enemies, this new weapon left naught in the aftermath but charred bone and swirling ash.\r\n<BR/><BR/>\r\nThus was the Ashbringer given its name.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Four</H2>\r\n<HR/>\r\n<P>\r\nIn the hands of Alexandros Mograine, the Ashbringer rained unparalleled fury upon the marauding Scourge armies, decimating the undead in numbers beyond reckoning. \r\n<BR/><BR/>\r\nSo it was that over the course of time, the man and the weapon seemed as one. Ashbringer became a name of legend, attributed not just to the fearsome blade but also to the relentless knight who wielded it.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Five</H2>\r\n<HR/>\r\n<P>\r\nFrom the testimony of Fairbanks, advisor to Highlord Alexandros Mograine, shortly before his execution:\r\n<BR/><BR/>\r\n"It was outside of Stratholme that we were surrounded by undead. Their numbers were unfathomable. Wave after wave washed over us... and yet Alexandros stood tall, unbowed and unbroken, a rock for them to break against.\r\n<BR/><BR/>\r\n"Alexandros\'s end came not from the undead but from his own son-the treacherous one, Renault, who took up the Ashbringer and stabbed his father in the back."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Six</H2>\r\n<HR/>\r\n<P>\r\nA recounting of the battle at Naxxramas by Darion Mograine, as told to Atticus Krohl:\r\n<BR/><BR/>\r\n"Deep within the floating undead citadel of Naxxramas, I discovered what had truly become of my father. Alexandros\'s spirit had been tortured and broken; he had been raised as a death knight to defend the very Scourge that he had once labored to destroy. \r\n<BR/><BR/>\r\n"They had scoured from him all that was good, leaving behind only a bitter, rotten shell. In defense of my own life, I was forced to end his cursed existence, or so I thought. \r\n<BR/><BR/>\r\n"The blade you see, the Ashbringer... it spoke to me in my father\'s voice."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Seven</H2>\r\n<HR/>\r\n<P>\r\nFrom the Liber Monasterium:\r\n<BR/><BR/>\r\n"And so it was that Darion Mograine, driven by the voice of his father, bore the Ashbringer to the Scarlet Monastery, where he learned of his brother Renault\'s treachery.\r\n<BR/><BR/>\r\n"The vengeful phantom of Alexandros Mograine manifested out of the Ashbringer. Renault begged for forgiveness, and he was dealt a vicious sweep of the corrupted blade, separating his head from his shoulders. \r\n<BR/><BR/>\r\n"\'You are forgiven,\' was Alexandros\'s reply."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Eight</H2>\r\n<HR/>\r\n<P>\r\nAn excerpt from The Battle for Light\'s Hope:\r\n<BR/><BR/>\r\n"The Argent Dawn amassed at Light\'s Hope Chapel against the swarming multitudes of Scourge. Battle was joined, and though each and every one of us fought bravely, it seemed there could be no hope of victory.\r\n<BR/><BR/>\r\n"In our darkest hour, in an effort to free his father\'s condemned soul, Darion Mograine plunged the Ashbringer into his own chest. \r\n<BR/><BR/>\r\n"It was then that the souls of the myriad champions buried beneath Light\'s Hope lashed out in a devastating blast of purest Light. In that instant, our enemies were undone."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Nine</H2>\r\n<HR/>\r\n<P>\r\nThere are scores of firsthand accounts of the Second Battle for Light\'s Hope Chapel. They differ in some ways, but on many points, they correspond. What is known is that several years after his sacrifice at the first Battle for Light\'s Hope, Darion Mograine returned... this time as would-be conqueror, a death knight in the Lich King\'s service.\r\n<BR/><BR/>\r\nHe faced off against his onetime ally, a former Knight of the Silver Hand, Tirion Fordring. Ultimately Darion was subdued even as the dreaded Lich King himself, Arthas, appeared on the battlefield. \r\n<BR/><BR/>\r\nIn an apparent act of contrition, Darion threw the Ashbringer to Tirion, who purified it with his touch. Tirion then focused his full efforts on the Lich King, who was forced to retreat after a single mighty blow from the uncorrupted Ashbringer.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Ten</H2>\r\n<HR/>\r\n<P>\r\nIn the aftermath of the Second Battle for Light\'s Hope, the Ashbringer remained in the possession of Tirion Fordring, highlord of the Argent Crusade. In order to draw out the greatest champions of Azeroth, Tirion instituted a contest of strength and battle prowess known as the Argent Tournament.\r\n<BR/><BR/>\r\nIn time, Tirion\'s Argent Crusade successfully breached the main gate of the Lich King\'s stronghold of Icecrown Citadel. As they laid siege to Icecrown\'s defenses, the highlord created a pact with Darion Mograine and his Knights of the Ebon Blade, resulting in the Ashen Verdict-a united order bent on destroying the Lich King.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Eleven</H2>\r\n<HR/>\r\n<P>\r\nThe final assault on Icecrown Citadel now ranks among the most legendary military campaigns in recent memory.\r\n<BR/><BR/>\r\nMarching alongside some of the greatest champions of Azeroth, Tirion Fordring continued his crusade against the Scourge, staging an all-out attack on the Lich King\'s seat of power. \r\n<BR/><BR/>\r\nThere, Tirion once again confronted Arthas, and all fell silent as the clash of steel rang out across the icy wastes. At the culmination of a fevered battle, the Ashbringer shattered Arthas\'s infamous sword, Frostmourne, in a single blow. \r\n<BR/><BR/>\r\nArthas was defeated at last, and the purified Ashbringer took its place among the most celebrated and renowned weapons in all of Azeroth\'s history.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[24] = {
+						0.4298949241638184,
+						0.569761335849762,
+					},
+				},
 			},
 		},
 		["GameObject-245380"] = {
@@ -29076,7 +29164,7 @@ LK["LocalData"] = {
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
-				["expansion"] = TEMP,
+				["expansion"] = 10,
 			},
 		},
 		["GameObject-338481"] = {
@@ -29122,6 +29210,945 @@ LK["LocalData"] = {
 
 		-- end of user submission #18
 
+
+		["GameObject-312345"] = {
+			["base"] = {
+				["title"] = "Official-Looking Note",
+				["text"] = {
+					"<A hastily scribbled note, this appears to have been intended for the captain of the guards.>\r\n\r\nOur spies report the possibility of an attack.\r\n\r\nDouble the patrols between here and Burning Steppes tonight. Pull your guards from other duties if you must.\r\n\r\n- Shaw",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[49] = {
+						0.2586659789085388,
+						0.3977053165435791,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-252347"] = {
+			["base"] = {
+				["title"] = "Wanted: Dead!",
+				["text"] = {
+					'<HTML><BODY>\r\n<H2 align="center">Wanted: Dead!</H2>\r\n<BR/>\r\n<p>Taoshi and $PLAYER_NAME$ are hereby wanted dead for conspiracy with the Burning Legion and crimes against the Alliance.\r\n<BR/><BR/>\r\nA sizable reward will be granted upon proof of death delivered to any SI:7 agent.\r\n<BR/><BR/>\r\nFor the Alliance! For King Anduin!\r\n<BR/><BR/><BR/>\r\nMaster Mathias Shaw\r\n<BR/>\r\nLeader of SI:7</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[84] = {
+						0.6290848255157471,
+						0.7139483690261841,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 4,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-291202"] = {
+			["base"] = {
+				["title"] = "Grave Plaque",
+				["text"] = {
+					"Marshal M. Valentine\r\n\r\nBrave hero of the Second War.\r\n\r\nThrough your death, Kul Tiras sailed to victory.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[896] = {
+						0.6112194061279297,
+						0.488086462020874,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-386047"] = {
+			["base"] = {
+				["title"] = "Spoons and Forks",
+				["text"] = {
+					"Contained here are recipes from the many clans of Draenor, collected by Barasha the Bold, daughter of Rokara. \r\n\r\nMay we forever be willing to put down both our axes and our grudges when called to the communal table for a warm meal.\r\n\r\n(With notes by Torka, son of Largosh.)",
+					"Spicy Seared Talbuk Steak\r\nFrom the Warsong Clan\r\n\r\nMake a dry rub by combining ground peppercorns, flaked sea salt, and dried, crushed Gor'gor roots.\r\n\r\nThoroughly coat your talbuk steak on both sides with the dry rub. Let rest for up to 2 hours.\r\n\r\nSear your steak on a very hot stone for 3-7 minutes per side, depending on the thickness of the cut and desired doneness.\r\n\r\nServe with mashed tubers and roc-blood gravy.\r\n\r\n(Note from Torka: The Warsong clan is renowned for their spicy dishes. So hot you can't help but belt out a battlecry! Unfortunately, the Gor'gor plant, which once grew near the Throne of the Elements, is extinct. Luckily, the Zandalari trolls grow hot peppers in the jungles near Zuldazar, which I believe would be a fine substitution. As far as I know, Gorgrond Peppercorn trees still grow in areas of the Blade's Edge Mountains!)",
+					"Grilled Shade Salmon\r\nFrom the Shadowmoon Clan\r\n\r\nCut shade salmon into thick steaks. Liberally apply salt, spice and cooking oil to the flesh, then grill over an open fire, 3-4 minutes per side.\r\n\r\nGarnish with squeezed moonfruit juice and crushed starflowers. Serve with steamed umbracaps.\r\n\r\nIt is imperative that your fish steaks are freshly caught! Shade Salmon, while a delicacy, is touched by the shadows, and will become toxic if left out in the sun for too long.\r\n\r\n(Note from Torka: Unfortunately, Shadowmoon Valley was completely destroyed, so all of these ingredients will have to be replaced to capture the spirit of this recipe. I recall moonfruit being both sweet and sour, something we can replicate with lemons, grown on the Echo Isles by our Darkspear friends, and a little sugar. The Southfury river nearby has its own kind of salmon, and luckily, the Azeroth kind aren't cursed with void magic!)",
+					"Curried Botani and Lobstrok Stew\r\nFrom the Laughing Skull Clan\r\n\r\nIn a large stew pot or cauldron, boil lobstrok pieces, still in their shells,  in salted water for 20 minutes. Lower heat, then add curry spices and fenugreek. Open botani brain, and scrape the meat from the hard shell into the stew in large chunks. Simmer together until the botani brain is soft enough to easily pierce with a fork. \r\n\r\nBe sure not to open your botani head until you are ready to begin the cooking, as the brains can dry out quickly once the hard shell is cracked.\r\n\r\n(Note from Torka: Laughing Skull cuisine was notable for its complex spices and unusual ingredients sourced from the island of Farahlon, often including sentient creatures! I believe we can replace these with similar enough plants and animals from Azeroth, like the crabs found on the Durotar coast, and coconuts native to Un'goro Crater. Though Farahlon is long gone, some of the native life has been preserved in the Eco-Domes in Netherstorm!)",
+					"Feast for the Ancestors\r\n\r\nThe center piece of every Kosh'harg is a great feast placed at an altar within view of Oshu'gun, meant to draw the spirits of our ancestors to the celebration.\r\n\r\nEvery clan present at the Kosh'harg may contribute a meal of their own making to the feast, to bring honor to themselves in the eyes of the ancestors. Sometimes, specific favorite foods of those passed are placed, in order to summon them and receive their wisdom.\r\n\r\nAlong with food, barrels of ale or other alcohol is also traditional. The most important thing is that the ancestors feel included in the festivity as a whole.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					{
+						0.5079839825630188,
+						0.4277495741844177,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-253452"] = {
+			["base"] = {
+				["title"] = "Beginner's Guide to Dimensional Rifting Ch. 1  - Navigating Through Time",
+				["text"] = {
+					"<Penned by the skilled hand of Mentithus Leytracker>",
+					"Unlike the immortal realm of the Emerald Dream, the mortal world of Azeroth is shaped by the ravages of time. Time comes in many forms to the physical world, battles, weather, disaster and just life being lived.\r\n\r\nWhat does this mean to the Dimensional Rifter? \r\n\r\nYou must be vigilant and let the ley fluctuations in the Ley Lines tell you when a destination point has moved, is on unsteady ground or just under a pile of rubble.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[630] = {
+						0.6808328628540039,
+						0.5111560821533203,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-247864"] = {
+			["base"] = {
+				["title"] = "Ancient Neltharion Tablets",
+				["text"] = {
+					"Ashj veni Y, Amanalar, amir ur daz kazile, kar ashjrakamas raka nagasraka no maladath no te maez, Ashjrethul, Refir Rakkas ur Amanare.\r\n\r\nRaka rakkan kamil lok maladath toralar za toralar daz amanalar zenn y rethule laz. Te maez enkilzar raka modas xi daz ashjraka aman ur zar kiel me kamil, shi ze ruk xi veni veni modas, me laz rikk, aman orah mishunadare y thorje sorankar.\r\n\r\nRefir me daz revola ur lok azgala me revola ticharamir. Me kar arakal enkilzar shi amir aman kamilgolad ticharamir.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[650] = {
+						0.5289555788040161,
+						0.757882833480835,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-251118"] = {
+			["base"] = {
+				["title"] = "Ancient Highborne Tome",
+				["text"] = {
+					"THE WRATH OF THE QUEEN\r\n\r\nFarondis' plan was bold, but simple: destroy the Well of Eternity in Zin-Azshari. Doing so would close the portal to Sargeras' realm and stem the tide of evil before it even started. In order to accomplish this task, he would use the power of an artifact stored deep within Nar'thalas Academy: The Tidestone of Golganneth.\r\n\r\nUnfortunately, the queen's influence in Farondis' palace was already deep-seated. Vandros, a young noble in Farondis' court, caught word of Farondis' plans to defy the Queen, and reported the insurrection to Queen Azshara herself.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[630] = {
+						0.5190813541412354,
+						0.4493106603622437,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-253453"] = {
+			["base"] = {
+				["title"] = "Beginner's Guide to Dimensional Rifting Ch. 2  - Holy Places to Many",
+				["text"] = {
+					"<Penned by the skilled hand of Mentithus Leytracker>",
+					"Many of the civilized races of Kalimdor congregate near powerful Ley Line nexus'. Based on my studies there is a natural pull for many of the denizens of this world.\r\n\r\nIn your travels you will encounter many temples, ruins, or cities located along the Ley Lines. These are also often good points to become more familiar with the art.\r\n\r\nTake heed though, not all peoples will be happy with you treading on what they believe to be sacred ground. And living too near some Ley Lines make denizens even more dangerous.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[630] = {
+						0.5525233745574951,
+						0.7155230641365051,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-278923"] = {
+			["base"] = {
+				["title"] = "Umbric's Notes - Andilien Estate",
+				["text"] = {
+					"It seems we are not the first of our people seeking to harness the void. I have found notebooks belonging to one whose very name is a curse... Dar'Khan Drathir.\r\n\r\nIt was Drathir's betrayal that allowed Arthas to corrupt the Sunwell... and left our kingdom in ruins. For the first time, I see why Rommath opposes our course of study.\r\n\r\nNevertheless, I believe this knowledge can be used for good. The bulk of Drathir's research was conducted at Dawnstar Spire. That is where we must go.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[95] = {
+						0.4687491059303284,
+						0.5500998497009277,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-251115"] = {
+			["base"] = {
+				["title"] = "Ancient Highborne Tome",
+				["text"] = {
+					"THE FATE OF AZSUNA\r\n\r\nAzshara wasted no time in punishing Farondis and his people. In a frightening display of arcane power, she destroyed the Tidestone of Golganneth, and in doing so, released a wave of dark energy over all of Azsuna and its inhabitants.\r\n\r\nSince that day, the elves of Azsuna have been unable to experience the release of death. Their spirits - our spirits - wander the land indefinitely... all because of our prince's unwise allegiances.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[630] = {
+						0.5294390916824341,
+						0.4374949932098389,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-253458"] = {
+			["base"] = {
+				["title"] = "Beginner's Guide to Dimensional Rifting Ch. 7  - Our Legacy",
+				["text"] = {
+					"<Penned by the trembling hand of Mentithus Leytracker>",
+					"The energy of the Ley Lines is pure power and with it we can do oh so much. Our civilization has been drawn to this energy since we first took refuge in the dark forests and warrens.\r\n\r\nI believe it is inevitable that our people will find more of these great and powerful nexus points to develop into a dominant and weakness free society. \r\n\r\nYour path to a Dimensional Rifter will hopefully take you to the pinnacle of our great society.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[630] = {
+						0.5570900440216064,
+						0.4824352264404297,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-253455"] = {
+			["base"] = {
+				["title"] = "Beginner's Guide to Dimensional Rifting Ch. 4  - Risks and Rewards",
+				["text"] = {
+					"<Penned by the skilled hand of Mentithus Leytracker>",
+					"Take heed dear traveler. Many places overwhelmed with Ley Line energy can be deadly to the beginning Dimensional Rifter.\r\n\r\nIn places like these the sheer number of rifts create instability and the potential for important belongings to be severed from your person. \r\n\r\nTake heed and make sure to keep everything with you and you will often find immense rewards.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[630] = {
+						0.5835483074188232,
+						0.1234343647956848,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-62932"] = {
+			["base"] = {
+				["title"] = "Daily Report - Hillsbrad Foothills",
+				["text"] = {
+					"Daily Report - Hillsbrad Foothills\r\n\r\nSouthshore Under Attack - Worgen Activity Increasing\r\n\r\nReports of worgen activity from the south, specifically around Southshore, are increasing in frequency. Our scouts indicate that the terrorist known as Ivar Bloodfang and his renegades are responsible for these recent attacks against our citizens.\r\n\r\nRecommendation: Send capable heroes to investigate.",
+					'Trouble at the Sludge Fields\r\n\r\nThe area formerly known as Hillsbrad Fields - now known as the Sludge Fields, located in southwestern Hillsbrad - has seen a sharp rise in "accidents." Reports from Warden Stillwater indicate possible contagion outbreak.\r\n\r\nRecommendation: Send capable heroes to investigate.',
+					"Azurelode Spider Farm Productivity Issues\r\n\r\nOur spider domestication operations in the area near Azurelode Mine, located in the southwest region of Hillsbrad, are seeing extremely low production numbers. Spider-Handler Sarus and Captain Keyton have requested assistance.\r\n\r\nRecommendation: Send capable heroes to investigate.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["GameObject-245786"] = {
+			["base"] = {
+				["title"] = "Relic Box",
+				["text"] = {
+					'The box contains various magical looking trinkets and baubles.\r\n\r\nUpon closer inspection, these "relics" appear to be nothing more than clever forgeries.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-558112"] = {
+			["base"] = {
+				["title"] = "The Facets of K'aresh",
+				["text"] = {
+					"Merciless K'aresh of the Wastelands\r\n\r\nWhen K'aresh emerged from the Great Dark Beyond, there was nothing but sand and wind. The air was rank and no seed found purchase within the soil. No creature scampered upon the sand, or took flight upon the wing. K'aresh was barren and alone. This was the beginning of K'aresh, and so it shall be his end. K'aresh has grown more generous, but Merciless K'aresh remains to test us, to remind us of what we can lose should we waste what he has given us. We must know how far it is possible to fall.",
+					"Untamed K'aresh of the Wilds\r\n\r\nK'aresh was not happy with his isolation. He longed for the company of beasts, he desired the sight of green and blue upon the land, he wanted the diversity of sensation. So K'aresh brought forth the wilds--nature in all its abundance and danger. Beasts of fur, fin, and feathers. Plants that grow and creep and spread through fruit, seed, or bramble. The gift of life and freedom was the first and most precious of the gifts that K'aresh bestowed upon us.",
+					"Innovative K'aresh of the City\r\n\r\nWith the land, sky, and sea filled with the beasts and plants, K'aresh longed for more, so he created a creature that could make him more. More sounds, more smells, more sights, more of whatever K'aresh could imagine, and more of things K'aresh could not yet envision. So K'aresh created people. People to tame the Untamed, to cross the Merciless wastes, to sing, to paint, to make magic, to create the new. K'aresh created the first people and gave them nothing but the wastes, the wilds, and the song of innovation. The people were too merciful for the wastes, and too tame for the wilds, thus they created their own domain, the city. K'aresh was pleased with the first of the gifts he received.",
+					"Austere K'aresh of the Exchange\r\n\r\nAs the new people of K'aresh grew in power, they grew in number and destroyed the wastes and the wilds to build their cities. They threatened to overwhelm K'aresh's creation with their own. They fought, stole, took, lied, and consumed all they could. The greatest of K'aresh's creation threatened to become a devouring beast--to end K'aresh itself. K'aresh loved all his creations: the wilds, the wastes, and the innovative creatures of the city. To save them from their own power, he created his final gift: the Exchange--death, transformation, and oaths. K'aresh gifted the people with death, so their lives had purpose and rhythm in his song. He gifted them the magic of transformation, so through death they are not lost but instead changed and reborn. He gave people the oath, so that they may define their purpose--to share it boldly with others, and honor K'aresh with a life well and honestly lived.",
+					"Silent K'aresh of the End\r\n\r\nAll songs grow silent. So it will be with K'aresh. When the last city wall crumbles, when the beasts and plants of the wilds perish, when there is no more innovation or ideas of the people of K'aresh. Then there will be the final facet of beloved K'aresh. All will be silent--all will be at peace. But that is not today. Today we live. Today we struggle against the merciless wastes, the untamed wilds, the innovation that does not go our way, and we measure our deeds against the Exchange to see if we have honored K'aresh. One day, the song of K'aresh will be silenced, but today my soul is bolstered by the facets of his voice.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2371] = {
+						0.7214224338531494,
+						0.2943284511566162,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-278922"] = {
+			["base"] = {
+				["title"] = "Umbric's Notes - Sanctum of the Moon",
+				["text"] = {
+					"Our void experiments are proceeding well. I am certain we are on the cusp of a breakthrough... despite Rommath's small-minded protests.\r\n\r\nThe grand magister must understand that this power is crucial to the defense of Silvermoon. Never again shall the sin'dorei fall prey to our enemies!\r\n\r\nUnfortunately, it seems our research has reached an impasse. I believe there is knowledge at the Andilien Estate that will springboard us forward.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[95] = {
+						0.3360458016395569,
+						0.3445334434509277,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-251113"] = {
+			["base"] = {
+				["title"] = "Ancient Highborne Tome",
+				["text"] = {
+					"THE DEFIANCE OF FARONDIS\r\n\r\nQueen Azshara's pact with the demon lord Sargeras went mostly uncontested by her subjects. One of the few that dared to defy her was Prince Farondis.\r\n\r\nAs one of the queen's trusted advisors, Farondis was in regular contact with the Highborne of Zin-Azshari, but his palace in Azsuna was several leagues away from the elven capital. As such, he was able to witness Sargeras' influence on the Highborne court without falling sway to the demons' temptation.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[630] = {
+						0.529961347579956,
+						0.4378400444984436,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-309914"] = {
+			["base"] = {
+				["title"] = "Plaque",
+				["text"] = {
+					"In honor of those whose blood was shed to secure the survival of our people.\r\n \r\nThough the Eternal Sun may set on our darkest day,\r\n\r\nIt rises again with coming of the dawn.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[95] = {
+						0.4771544933319092,
+						0.8400790095329285,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-60977"] = {
+			["base"] = {
+				["title"] = "Orders from High Command",
+				["text"] = {
+					"Zaren,\r\n\r\nYour first objective is to take and hold the Cathedral Quarter of Gilneas City. From there I want you to work with Lord Crowley's worgen to push forward into enemy territory. Take out their near outposts and cut their lines of communication.\r\n\r\nKing Wrynn has assured me that a full armada of warships is en route and should be arriving any day. Once the rest of the fleet is here, we will launch an all out assault on Forsaken Forward Command and beat those worthless maggots back into Silverpine Forest\r\n\r\nOnce Gilneas is securely in Alliance control, we will begin preparations for retaking Lordaeron.\r\n\r\nFor the glory of the Alliance!\r\n\r\n-High Commander Halford Wyrmbane\r\n\r\nP.S. We will launch a signal flare when we are ready to attack Forsaken Forward Command. Keep your soldiers on high alert.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 3,
+			},
+		},
+		["GameObject-310663"] = {
+			["base"] = {
+				["title"] = "Old Lock",
+				["text"] = {
+					"This lock is old and heavily rusted.\r\n\r\nScrape marks and flecks of loose rust are present around the keyhole and moving parts.\r\n\r\nIt has been recently used.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[37] = {
+						0.2862594723701477,
+						0.6135473251342773,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-271014"] = {
+			["base"] = {
+				["title"] = "Tarkaj's Warblade",
+				["text"] = {
+					"Covered with fresh blood, this blade has seen recent battle.\r\n\r\nWith no corpse nearby, it appears whomever wielded it managed to escape.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[864] = {
+						0.5462815761566162,
+						0.3940874934196472,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-280349"] = {
+			["base"] = {
+				["title"] = "The Word of Zul II",
+				["text"] = {
+					"Followers, hear me.\r\n \r\nWhen I journeyed to Pandaria, we attempted an ancient and forbidden ritual. \r\n\r\nWe awakened Lei Shen, the Thunder King of the mogu. He had been dead for many ages. \r\n\r\nIn doing so, I learned the ancient ways to return an ancient king to life, and learned how to control them.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[862] = {
+						0.4905438423156738,
+						0.4064155220985413,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-158936"] = {
+			["base"] = {
+				["title"] = "Rakera's Journal",
+				["text"] = {
+					"Day 1\r\n\r\nI write this as I sit in a cage with a dozen other exiles, travelin' to da sands where we will live out our days, however numbered they may be. \r\n\r\nThe air, heavy with heat, tells me we're close.",
+					"Day 2\r\n\r\nThe sun has set across da dunes, providing some relief from da heat that has made many delirious. \r\n\r\nIn a sun-stricken stupor, one among us began ramblin' about a temple to da south dat welcomes exiles. \r\n\r\nI doubt he will make it through da night.",
+					"Day 3 \r\n\r\nOur camp was attacked in da middle of da night by one among us. \r\n\r\nUnarmed and befuddled by sleep, we were unable ta defend ourselves. \r\n\r\nI fought off the traitor, but it was too late; the survivors had scattered, each now forced ta navigate this unforgiving terrain alone.",
+					"Day 4\r\n\r\nI won't survive much longer without food or water. \r\n\r\nAfter travelin' in circles for most of da day, I decided my only option was ta follow da advice of a ramblin' madman and head south toward da promise of shelter.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-268875"] = {
+			["base"] = {
+				["title"] = "Thoughts in the Lonely Night",
+				["text"] = {
+					"Beside my bed in a pool of darkness\r\nI see your blood upon the ground.\r\n\r\nI lift my eyes and see the stars,\r\nand search for my cherished friend.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[371] = {
+						0.2341905832290649,
+						0.3519377112388611,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-280641"] = {
+			["base"] = {
+				["title"] = "Umbric's Notes - Dawnstar Spire",
+				["text"] = {
+					"Drathir's quest for power led him to seek the fragments of an ancient world, one teetering on the brink of the Void itself.\r\n\r\nHis notes said it existed within a rift in the very fabric of reality. He never found this place... but I have succeeded where he failed. The way will soon be open to us!\r\n\r\nDrathir believed this site held an ancient object of unspeakable might. Perhaps this will be the key that allows us to gain control over the shadows.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[95] = {
+						0.7963547706604004,
+						0.1961716413497925,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-273775"] = {
+			["base"] = {
+				["mapData"] = {
+					[882] = {
+						0.625309944152832,
+						0.4603756070137024,
+					},
+				},
+				["pageCount"] = 0,
+				["title"] = "Well-Preserved Tome",
+				["material"] = "Parchment",
+				["text"] = {
+					'"The Triad"\r\n\r\nAugari are we and this is our task.\r\n\r\nOur hands bear the answers if only you ask.\r\n\r\nTwo together can open the way.\r\n\r\nThree at one time will keep you at bay.',
+				},
+				["singlePage"] = true,
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-265509"] = {
+			["base"] = {
+				["title"] = "Broken Telemancy Beacon",
+				["text"] = {
+					"The Telemancy Beacon lies in several pieces. A faint buzzing sound emanates from the cracked crystal core.\r\n\r\nOculeth's voice is audible through the noise, but the words are too indistinct to make out.\r\n\r\nWhoever destroyed this beacon intended to cut off all contact with the outside world.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[680] = {
+						0.4771037101745606,
+						0.8128442764282227,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-251117"] = {
+			["base"] = {
+				["title"] = "Ancient Highborne Tome",
+				["text"] = {
+					"THE DEFIANCE OF FARONDIS\r\n\r\nQueen Azshara's pact with the demon lord Sargeras went mostly uncontested by her subjects. One of the few that dared to defy her was Prince Farondis.\r\n\r\nAs one of the queen's trusted advisors, Farondis was in regular contact with the Highborne of Zin-Azshari, but his palace in Azsuna was several leagues away from the elven capital. As such, he was able to witness Sargeras' influence on the Highborne court without falling sway to the demons' temptation.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[630] = {
+						0.5189982652664185,
+						0.4489219188690186,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-251121"] = {
+			["base"] = {
+				["title"] = "Ancient Highborne Tome",
+				["text"] = {
+					"THE WRATH OF THE QUEEN\r\n\r\nFarondis' plan was bold, but simple: destroy the Well of Eternity in Zin-Azshari. Doing so would close the portal to Sargeras' realm and stem the tide of evil before it even started. In order to accomplish this task, he would use the power of an artifact stored deep within Nar'thalas Academy: The Tidestone of Golganneth.\r\n\r\nUnfortunately, the queen's influence in Farondis' palace was already deep-seated. Vandros, a young noble in Farondis' court, caught word of Farondis' plans to defy the Queen, and reported the insurrection to Queen Azshara herself.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[630] = {
+						0.519949197769165,
+						0.4369001984596252,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-133760"] = {
+			["base"] = {
+				["title"] = "Bloodstained Note",
+				["text"] = {
+					"BEWARE\n\n.st.... ...ito.\n\n..cri..... to d......\n\n<The bottom half of the page is covered in dried blood>.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-233799"] = {
+			["base"] = {
+				["title"] = "Submerged Bottle",
+				["text"] = {
+					"<Within the bottle is an old scroll, brittle and crumbling with age. There is a drawing of a tall building, with writing underneath.>\r\n\r\nWestern temple.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-244985"] = {
+			["base"] = {
+				["title"] = "Tome of Fel Secrets",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Tome of Fel Secrets</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-demonhunter-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Vahu of the Illidari.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[721] = {
+						0.5871134996414185,
+						0.7683025598526001,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 12,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-291129"] = {
+			["base"] = {
+				["title"] = "Grave Plaque",
+				["text"] = {
+					"Here lies Samuel Coulter\r\n\r\nYou will always be the best of us.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[896] = {
+						0.6188102960586548,
+						0.4784030318260193,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-253456"] = {
+			["base"] = {
+				["title"] = "Beginner's Guide to Dimensional Rifting Ch. 5  - Finding Others Along the Way",
+				["text"] = {
+					"<Penned by the skilled hand of Mentithus Leytracker>",
+					"Remember you are not the only one that can run along the Ley Lines or tap into their power.\r\n\r\nRemember that while you of course are doing this for pure learning alone, others may be up to more nefarious ends. \r\n\r\nDo tread carefully and always look out for bears.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[630] = {
+						0.5313522815704346,
+						0.2199146747589111,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-290996"] = {
+			["base"] = {
+				["title"] = "Temple of Rezan Map",
+				["text"] = {
+					"<The map shows the movement of forces up the coast from Zeb'ahari to the Temple of Rezan.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[862] = {
+						0.8127406239509583,
+						0.1977998614311218,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-152101"] = {
+			["base"] = {
+				["text"] = {
+					"Faithful Servant,\r\n\r\nI have returned, as promised. The time has come to recall our brothers and sisters that sailed with me into exile during the Cataclysm. The time has come to once again unite the Zandalari under a single banner.\r\n\r\nYou each have your tasks, see to them. \r\n\r\nYour Prophet,\r\nZul\r\n\r\n\r\nOh, and as for $PLAYER_NAME$, know that I forsaw you reading this.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["title"] = "The Word of Zul",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-246808"] = {
+			["base"] = {
+				["title"] = "Experiment Instructions",
+				["text"] = {
+					"$PLAYER_NAME$,\r\n\r\nYou have much work ahead of you so I'll be brief.\r\n\r\nIn addition to an overall greater danger in this timeline, certain enemies will be empowered with one, two, or even four experimental changes.\r\n\r\nShould this timeline prove too difficult, you may use the research console at our Infinite Bazaar near Dalaran to exit the experiment. I have also ensured safe passage in the event of your untimely demise--you will understand should ill fate befall you.\r\n\r\nBest of luck,\r\nEternus",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-280350"] = {
+			["base"] = {
+				["title"] = "The Word of Zul III",
+				["text"] = {
+					"Followers, hear me. \r\n\r\nIf our King Rastakhan be of no use, and his god Rezan be of no use, then it falls to us to replace them. \r\n\r\nHigh atop Mount Mugamba be an ancient city, Atal'Dazar, the sacred resting place of dead kings. There we shall find a true king: Dazar. \r\n\r\nWith the power I wield, we shall return Dazar to his seat of glory as king of Zandalar!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[862] = {
+						0.4881039261817932,
+						0.4275732636451721,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-246584"] = {
+			["base"] = {
+				["title"] = "A Steamy Romance Novel: Devouring Love",
+				["text"] = {
+					'Jadzod leaned back against the void-scarred rock and held up a wrapped hand to cover their exposed face.\r\n \r\n"P-please! I don\'t want you to see me like this," Jadzod stammered. Before the war, they had admired Aez\'zoozoo in secret. He was a dashing technomancer, whose handsome face stood out among his bookish peers. Jadzod had worked in the family cafe in the city of Ma\'nussa. They served Aez\'zoozoo breakfast for the entire year that he taught at the symposium. "I want you to remember me as I was, when we were alive. Before..."\r\n\r\n"Before the world ended?" said Aez\'zoozoo in a sultry voice that echoed as if it was being said in a metal bucket.',
+					'No one was really sure how they could talk now that they had changed. Aez\'zoozoo had become famous among the survivors in the area for his spirited debates that debunked every wrong idea running counter to the established doctrine of matter to energy transmogrification. Only two things eluded the young technomancer--why exposure to Dimensius had caused such a radical transformation of their bodies, and how his feelings for Jadzod could be so overwhelming.\r\n \r\n"My darling," continued Aez\'zoozoo, gently caressing Jadzod\'s hand and moving it away from the opening in the wraps so they could see the interplay of arcane interference patterns, and the swirl of energy field states. "You have never looked so beautiful in my eyes."',
+					'This was true. Aez\'zoozoo barely gave Jadzod a second look when they were flesh. In all truth, he had trouble even remembering what they might have looked like. Aez\'zoozoo was certain that Jadzod was not the owner of the cafe--that was their uncle. But now, in the ruins of the world, they had become quite interesting, and not just for being one of the few survivors on this chunk of rock.\r\n \r\n"I\'m just energy wrapped in rune-covered fabric." Jadzod was surprised at how emotional the thought of losing their body made them. They struggled not to show any distress to Aez\'zoozoo to ruin this moment--a feat easily accomplished by virtue of not having any discernable facial features for the emotions to play out on.',
+					'"To me you are radiant." Aez\'zoozoo felt that they were being poetically honest, even if he was technically incorrect. K\'areshi ethereals were made of arcane energy, while radiance was often used to describe the energies associated with the Light. But his last partner had lectured him extensively about how going into such technicalities was a real turn-off, both during and after attempts at being romantic.\r\n \r\n"Kiss me, Aez\'zoozoo!" cried Jadzod, lost in the moment. Aez\'zoozoo pulled away the bindings from where his lips were and let his emotions guide him.\r\n \r\nZap. Zap! ZAP!',
+					'"Ouch! Stop!" cried Jadzod.\r\n \r\nThe air smelled strongly of ozone, and the two ethereals disentangled themselves quickly to rewrap their faces. Both of them felt the stinging pain. Jadzod was heartbroken, while Aez\'zoozoo was plagued by one all-consuming thought: "Without a head, how can it ache?"',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-474815"] = {
+			["base"] = {
+				["title"] = "Weapon Rack",
+				["text"] = {
+					"<The leader's weapon rack stands empty.\r\n\r\nHow long ago was he here? Is he still nearby?\r\n\r\nYou should hurry!>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2371] = {
+						0.5531351566314697,
+						0.2415010333061218,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-233794"] = {
+			["base"] = {
+				["title"] = "Battered Book",
+				["text"] = {
+					"<After carefully opening the cover, you find that most of the pages are illegible. However, there is a hastily scrawled note in more recent ink on a page towards the back.>\r\n\r\nIt seems clearer than ever that the map indicates the eco-dome. The rolling waterfalls and the rock overhangs gave it away. I will search the pools therein.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-291203"] = {
+			["base"] = {
+				["title"] = "Grave Plaque",
+				["text"] = {
+					"Beloved Lady Victoria Snyder\r\n\r\nMay her memory be eternal.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[896] = {
+						0.6032289266586304,
+						0.4503464698791504,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-251122"] = {
+			["base"] = {
+				["title"] = "Ancient Highborne Tome",
+				["text"] = {
+					"THE FATE OF AZSUNA\r\n\r\nAzshara wasted no time in punishing Farondis and his people. In a frightening display of arcane power, she destroyed the Tidestone of Golganneth, and in doing so, released a wave of dark energy over all of Azsuna and its inhabitants.\r\n\r\nSince that day, the elves of Azsuna have been unable to experience the release of death. Their spirits - our spirits - wander the land indefinitely... all because of our prince's unwise allegiances.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[630] = {
+						0.5198081731796265,
+						0.436738908290863,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-253454"] = {
+			["base"] = {
+				["title"] = "Beginner's Guide to Dimensional Rifting Ch. 3  - Water, Just Water",
+				["text"] = {
+					"<Penned by the skilled hand of Mentithus Leytracker>",
+					"Water is a glorious thing in this world, yet it now covers a great deal of it. And so it becomes an increasingly dangerous threat to would-be Dimensional Rifters.\r\n\r\nFeel the variations in the Ley Lines as they approach the water's edge and you will be able to determine where to best exit. \r\n\r\nTake heed and you will always keep your head above water.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[630] = {
+						0.3336842060089111,
+						0.1117655634880066,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-253457"] = {
+			["base"] = {
+				["title"] = "Beginner's Guide to Dimensional Rifting Ch. 6  - Pent up Energy",
+				["text"] = {
+					"<Penned by the slightly shaking hand of Mentithus Leytracker>",
+					"The Ley Lines of this world are truly magnificent and powerful. The energy pent up and raw. \r\n\r\nDo be wary as this energy can build and build if the flow is restricted. It is an amazing yet dreadful sight to see a Ley Fissure erupt. \r\n\r\nOn the other hand, these points do become an easy access point for travel and further study.",
+				},
+				["material"] = "default",
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["mapData"] = {
+					[630] = {
+						0.6109779477119446,
+						0.462371826171875,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-139779"] = {
+			["base"] = {
+				["title"] = "Absolon's Letter",
+				["text"] = {
+					"Dearest Noressa,\r\n\r\nI write to tell you that I am still alive. The kindness of the very stranger before you spared me an exile's fate. Treat them well.\r\n\r\nRegarding our daughter... forgive me, I could not find her. All evidence suggests she succumbed to life outside the Shield. Words cannot express my grief.\r\n\r\nI cannot tell you where I am, nor can I return to you. This is a difficult, trying time for our people but I must stress to you: there IS still hope. I cannot risk exposing my saviors, but help is coming. Just hold on.\r\n\r\nLove,\r\n\r\nAbsolon",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-474813"] = {
+			["base"] = {
+				["title"] = "Camp Ledger",
+				["text"] = {
+					"I have completed my inspection and find the state of the camp wanting. This will not do if the Nexus-King or our august lady should visit.\r\n\r\nTrust me when I say, I am not so forgiving as my predecessor.\r\n\r\nI have also noticed a disturbance up on the southern ridge. I should not need to tell you this, but send a patrol immediately!\r\n\r\n--Shadowlord Vesheen",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2371] = {
+						0.5536007881164551,
+						0.2654603719711304,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-280348"] = {
+			["base"] = {
+				["title"] = "The Word of Zul I",
+				["text"] = {
+					"Followers, hear me. \r\n\r\nI have journeyed far in these last few years and learned much.\r\n\r\nI witnessed the Drakkari, proud empire of the north, fall to the might of the undead scourge. \r\n\r\nAs they fell, they consumed their gods in near forgotten rituals, stealing untold amounts of power to be used for their own purposes.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[862] = {
+						0.4880831837654114,
+						0.3940042853355408,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-291205"] = {
+			["base"] = {
+				["title"] = "Grave Plaque",
+				["text"] = {
+					"Uncompromising Lord Dylan McCreary\r\n\r\nFirst of his name, first in our hearts.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[896] = {
+						0.5956788659095764,
+						0.4729247093200684,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
 
 
 

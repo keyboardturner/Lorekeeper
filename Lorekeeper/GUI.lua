@@ -1942,18 +1942,52 @@ function LoreKGUI.OnTextChanged(editBox)
 
 	for _, element in pairs(allData) do
 		local match = false;
+		local base = element["base"]
+		
+		-- Search Text Match
+		if base["title"] and string.find(base["title"]:lower(), query:lower()) then
+			
+			-- Basic State Filters (Hidden, Unobtainable, Class Specific)
+			local stateMatch = true
+			
+			-- Check Hidden
+			if base["isHidden"] and not SVSettings.showHidden then stateMatch = false end
+			
+			-- Check Unobtainable
+			if (base["isObtainable"] == false) and not SVSettings.showUnobtainable then stateMatch = false end
+			
+			-- Check Collection Status
+			if base["hasRead"] and not SVSettings.showCollected then stateMatch = false end
+			if (not base["hasRead"]) and not SVSettings.showUnread then stateMatch = false end
 
-		if element["base"]["title"] and string.find(element["base"]["title"]:lower(), query:lower()) then
-			if SVSettings.showCollected and element["base"]["hasRead"] and not element["base"]["isHidden"] and not (element["base"]["isObtainable"] == false) and not element["base"]["isClassSpecific"] then
-				match = true;
-			elseif SVSettings.showUnread and (not element["base"]["hasRead"]) and not (element["base"]["isObtainable"] == false) and not element["base"]["isClassSpecific"] then
-				match = true;
-			elseif SVSettings.showHidden and element["base"]["isHidden"] then
-				match = true;
-			elseif SVSettings.showClassrestricted and element["base"]["isClassSpecific"] then
-				match = true;
-			elseif SVSettings.showUnobtainable and (element["base"]["isObtainable"] == false) then
-				match = true;
+			-- Check Class Specific
+			if base["isClassSpecific"] and not SVSettings.showClassrestricted then stateMatch = false end
+
+			-- Specific Class
+			if SVSettings.filterClass and SVSettings.filterClass ~= "ALL" then
+				-- If the item's class ID does not strictly match the filter, hide it
+				-- This hides other classes AND generic items (where isClassSpecific is false)
+				if base["isClassSpecific"] ~= SVSettings.filterClass then
+					stateMatch = false
+				end
+			end
+
+			-- Expansion
+			-- If expansion is nil (SavedVariables/Custom), we always show it
+			if base["expansion"] then
+				local expID = base["expansion"]
+				if SVSettings.expansion and SVSettings.expansion[expID] == false then
+					stateMatch = false
+				end
+			end
+
+			-- Map Data
+			if SVSettings.onlyMapData and not base["mapData"] then
+				stateMatch = false
+			end
+
+			if stateMatch then
+				match = true
 			end
 		end
 
@@ -1980,71 +2014,85 @@ LoreKGUI.FilterDropdown:SetSize(80, 20);
 local function FilterHandler(owner, rootDescription)
 	local SVSettings = LoreK_DB["settings"]["searchMenu"]
 	--rootDescription:CreateTitle("Filter Options");
+	
+	rootDescription:CreateTitle(LK["filter"] or "Filters");
+	
+	rootDescription:CreateCheckbox(LK["Collected"], function() return SVSettings.showCollected; end, function()
+		SVSettings.showCollected = not SVSettings.showCollected;
+		LoreKGUI.PopulateList();
+	end);
 
-	local checkbox1 = rootDescription:CreateCheckbox(LK["Collected"], function()
-		return SVSettings.showCollected;
-	end,
-	function(selected)
-		if SVSettings.showCollected then
-			SVSettings.showCollected = false;
-		else
-			SVSettings.showCollected = true;
+	rootDescription:CreateCheckbox(LK["NotCollected"], function() return SVSettings.showUnread; end, function()
+		SVSettings.showUnread = not SVSettings.showUnread;
+		LoreKGUI.PopulateList();
+	end);
+
+	rootDescription:CreateDivider();
+
+	rootDescription:CreateCheckbox(LK["Hidden"], function() return SVSettings.showHidden; end, function()
+		SVSettings.showHidden = not SVSettings.showHidden;
+		LoreKGUI.PopulateList();
+	end);
+
+	rootDescription:CreateCheckbox(LK["Unobtainable"], function() return SVSettings.showUnobtainable; end, function()
+		SVSettings.showUnobtainable = not SVSettings.showUnobtainable;
+		LoreKGUI.PopulateList();
+	end);
+
+	rootDescription:CreateCheckbox(LK["ClassRestricted"], function() return SVSettings.showClassrestricted; end, function()
+		SVSettings.showClassrestricted = not SVSettings.showClassrestricted;
+		LoreKGUI.PopulateList();
+	end);
+
+	rootDescription:CreateDivider();
+
+	rootDescription:CreateCheckbox(LK["HasMapData"] or "Has Map Data", function() return SVSettings.onlyMapData; end, function()
+		SVSettings.onlyMapData = not SVSettings.onlyMapData;
+		LoreKGUI.PopulateList();
+	end);
+
+	rootDescription:CreateDivider();
+
+	local classButton = rootDescription:CreateButton(CLASS or "Class");
+	
+	if not SVSettings.filterClass then SVSettings.filterClass = "ALL" end
+
+	local function IsClassSelected(val)
+		return SVSettings.filterClass == val;
+	end
+
+	local function SetClassFilter(val)
+		SVSettings.filterClass = val;
+		LoreKGUI.PopulateList();
+	end
+
+	classButton:CreateRadio(ALL, IsClassSelected, SetClassFilter, "ALL");
+	
+	for i = 1, GetNumClasses() do
+		local className, classFile, classID = GetClassInfo(i)
+		if classFile then
+			local text = "|c"..RAID_CLASS_COLORS[classFile].colorStr .. className .. "|r"
+			-- Changed last argument from classFile to classID
+			classButton:CreateRadio(text, IsClassSelected, SetClassFilter, classID);
 		end
-		LoreKGUI.PopulateList();
-	end);
+	end
 
-	local checkbox1 = rootDescription:CreateCheckbox(LK["NotCollected"], function()
-		return SVSettings.showUnread;
-	end,
-	function(selected)
-		if SVSettings.showUnread then
-			SVSettings.showUnread = false;
-		else
-			SVSettings.showUnread = true;
-		end
-		LoreKGUI.PopulateList();
-	end);
+	local expButton = rootDescription:CreateButton(EXPANSION_FILTER_TEXT or "Expansion");
+	
+	if not SVSettings.expansion then SVSettings.expansion = {} end
 
-	local checkbox2 = rootDescription:CreateCheckbox(LK["Hidden"], function()
-		return SVSettings.showHidden;
-	end,
-	function(selected)
-		if SVSettings.showHidden then
-			SVSettings.showHidden = false;
-		else
-			SVSettings.showHidden = true;
-		end
-		LoreKGUI.PopulateList();
-	end);
-	local checkbox3 = rootDescription:CreateCheckbox(LK["ClassRestricted"], function()
-		return SVSettings.showClassrestricted;
-	end,
-	function(selected)
-		if SVSettings.showClassrestricted then
-			SVSettings.showClassrestricted = false;
-		else
-			SVSettings.showClassrestricted = true;
-		end;
-		LoreKGUI.PopulateList();
-	end);
-	local checkbox4 = rootDescription:CreateCheckbox(LK["Unobtainable"], function()
-		return SVSettings.showUnobtainable;
-	end,
-	function(selected)
-		if SVSettings.showUnobtainable then
-			SVSettings.showUnobtainable = false;
-		else
-			SVSettings.showUnobtainable = true;
-		end;
-		LoreKGUI.PopulateList();
-	end);
+	for i = 0, LE_EXPANSION_LEVEL_CURRENT do
+		if SVSettings.expansion[i] == nil then SVSettings.expansion[i] = true end
 
-	-- Optionally, set selection ignored so it doesn't affect dropdown selection text
-	checkbox1:SetSelectionIgnored();
-	checkbox2:SetSelectionIgnored();
-	checkbox3:SetSelectionIgnored();
-	checkbox4:SetSelectionIgnored();
-
+		local expName = _G["EXPANSION_NAME"..i] or ("Expansion " .. i)
+		
+		expButton:CreateCheckbox(expName, function()
+			return SVSettings.expansion[i];
+		end, function()
+			SVSettings.expansion[i] = not SVSettings.expansion[i];
+			LoreKGUI.PopulateList();
+		end);
+	end
 end
 
 --------------------------------------------------------------------------
@@ -2770,6 +2818,18 @@ function LoreKGUI.Initialize(self, event, arg1)
 		if LoreK_DB["settings"]["holidayThemes"] == nil then
 			LoreK_DB["settings"]["holidayThemes"] = true;
 		end
+		if LoreK_DB["settings"]["searchMenu"].onlyMapData == nil then
+             LoreK_DB["settings"]["searchMenu"].onlyMapData = false
+        end
+        if LoreK_DB["settings"]["searchMenu"].filterClass == nil then
+             LoreK_DB["settings"]["searchMenu"].filterClass = "ALL"
+        end
+        if not LoreK_DB["settings"]["searchMenu"].expansion then
+             LoreK_DB["settings"]["searchMenu"].expansion = {}
+             for i = 0, LE_EXPANSION_LEVEL_CURRENT do
+                 LoreK_DB["settings"]["searchMenu"].expansion[i] = true
+             end
+        end
 		TTSSettings.QueuePages_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["queuePages"]);
 		TTSSettings.PhoneticReplace_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["phonetics"]);
 		TTSSettings.VolumeSlider.Slider:SetValue(LoreK_DB["settings"]["TTSSettings"]["volume"]);
