@@ -33,10 +33,10 @@ local function GetItemFlavorText(itemID, ignoreCustom)
 			return LitDB.CustomTexts[tostring(itemID)]
 		end
 
-		if _G.LoreItemTooltips_Database and _G.LoreItemTooltips_Database[tostring(itemID)] then
-			local text = _G.LoreItemTooltips_Database[tostring(itemID)]
-			if type(text) == "number" and _G.LoreItemTooltips_Database[tostring(text)] then
-				return _G.LoreItemTooltips_Database[tostring(text)]
+		if LoreItemTooltips_Database and LoreItemTooltips_Database[tostring(itemID)] then
+			local text = LoreItemTooltips_Database[tostring(itemID)]
+			if type(text) == "number" and LoreItemTooltips_Database[tostring(text)] then
+				return LoreItemTooltips_Database[tostring(text)]
 			end
 			return text
 		end
@@ -378,7 +378,7 @@ function LoreKGUI.RefreshItemsText(itemID)
 	end
 	
 	if LitDB then
-		local inStaticLIT = _G.LoreItemTooltips_Database and _G.LoreItemTooltips_Database[tostring(itemID)]
+		local inStaticLIT = LoreItemTooltips_Database and LoreItemTooltips_Database[tostring(itemID)]
 		local inCustomLIT = LitDB.CustomTexts and LitDB.CustomTexts[tostring(itemID)]
 
 		local hasBaseOrLocalText = GetItemFlavorText(itemID, true)
@@ -586,8 +586,8 @@ function LoreKGUI.PopulateItemsList()
 		end
 	end
 
-	if _G.LoreItemTooltips_Database then
-		for idStr, _ in pairs(_G.LoreItemTooltips_Database) do
+	if LoreItemTooltips_Database then
+		for idStr, _ in pairs(LoreItemTooltips_Database) do
 			local id = tonumber(idStr)
 			if id and not seen[id] then
 				if query == "" then 

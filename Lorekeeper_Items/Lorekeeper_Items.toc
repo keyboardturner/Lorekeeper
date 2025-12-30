@@ -6,6 +6,7 @@
 ## IconTexture: Interface/Icons/ui_itemupgrade
 ## SavedVariables: LoreKItems_DB
 ## Dependencies: Lorekeeper
+## OptionalDeps: LoreItemTooltips
 
 ## Title-enUS: Lorekeeper_Items
 ## Notes-enUS: Lorekeeper plugin to save quest and flavor items.
