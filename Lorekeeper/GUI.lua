@@ -791,7 +791,7 @@ TextDisplayFrame.Type_ID:SetPoint("BOTTOMRIGHT", LoreKMainframe, "BOTTOMRIGHT", 
 
 TextDisplayFrame.VariantDropdown = CreateFrame("DropdownButton", nil, TextDisplayFrame, "WowStyle1DropdownTemplate");
 local VariantDropdown = TextDisplayFrame.VariantDropdown;
-VariantDropdown:SetPoint("TOPRIGHT", TextDisplayFrame, "TOPRIGHT", -75, 25);
+VariantDropdown:SetPoint("TOPRIGHT", TextDisplayFrame, "TOPRIGHT", -82.5, 22.5);
 VariantDropdown:SetSize(130, 20);
 VariantDropdown:Hide();
 
@@ -799,7 +799,16 @@ function TextDisplayFrame.GetSelectedTextData(itemID)
 	local variantKey = TextDisplayFrame.selectedVariant or "base";
 	
 	if variantKey == "base" then
+		if LK["LocalData"] and LK["LocalData"]["text"] and LK["LocalData"]["text"][itemID] then
+			return LK["LocalData"]["text"][itemID]["base"];
+		end
 		return allData[itemID]["base"];
+	end
+
+	if variantKey == "saved" then
+		if allData[itemID] and allData[itemID]["base"] then
+			return allData[itemID]["base"];
+		end
 	end
 
 	if allData[itemID] and allData[itemID][variantKey] then
@@ -813,11 +822,24 @@ local function VariantDropdownSetup(dropdown, rootDescription)
 	local itemID = TextDisplayFrame.currentItemID;
 	if not itemID or not allData[itemID] then return end
 
-	rootDescription:CreateButton(LK["Base"], function()
-		TextDisplayFrame.selectedVariant = "base";
+	local function IsSelected(variantKey)
+		return TextDisplayFrame.selectedVariant == variantKey;
+	end
+
+	local function SetSelected(variantKey)
+		TextDisplayFrame.selectedVariant = variantKey;
 		LoreKGUI.UpdateTextDisplay(itemID);
-		VariantDropdown.Text:SetText(LK["Base"]);
-	end);
+	end
+
+	local hasLocal = LK["LocalData"] and LK["LocalData"]["text"] and LK["LocalData"]["text"][itemID];
+	local svData = LoreK_DB["text"] and LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"];
+	local hasSavedText = svData and svData["text"];
+
+	if hasLocal then
+		rootDescription:CreateRadio(LK["Base"], IsSelected, SetSelected, "base");
+	elseif hasSavedText then
+		rootDescription:CreateRadio(LK["Base"], IsSelected, SetSelected, "saved");
+	end
 
 	local copies = {};
 	for k, v in pairs(allData[itemID]) do
@@ -829,10 +851,17 @@ local function VariantDropdownSetup(dropdown, rootDescription)
 
 	for _, key in ipairs(copies) do
 		local index = key:match("copy_(%d+)");
-		rootDescription:CreateButton((LK["Variant"]) .. " " .. index, function()
-			TextDisplayFrame.selectedVariant = key;
-			LoreKGUI.UpdateTextDisplay(itemID);
-			VariantDropdown.Text:SetText((LK["Variant"]) .. " " .. index);
+		rootDescription:CreateRadio((LK["Variant"]) .. " " .. index, IsSelected, SetSelected, key);
+	end
+	
+	if hasLocal and hasSavedText then
+		local svButton = rootDescription:CreateRadio(LK["Saved"] or "Saved", IsSelected, SetSelected, "saved");
+		
+		svButton:AddInitializer(function(button, description, menu)
+			local rightTexture = button:AttachTexture();
+			rightTexture:SetAtlas("UI_Editor_Eye_Icon");
+			rightTexture:SetSize(16, 16);
+			rightTexture:SetPoint("RIGHT");
 		end);
 	end
 end
@@ -1733,24 +1762,32 @@ local function ItemInitializer(button, data)
 
 			PlaySound(SOUNDKIT.UI_JOURNEYS_OPEN_LORE_BOOK, "SFX", true);
 			DeleteEntry:SetEnabled(true);
-			--selectionBehavior:SelectElementData(self:GetData())
-
-			TextDisplayFrame.selectedVariant = "base";
+			
 			TextDisplayFrame.currentItemID = itemID;
 
-			local hasVariants = false;
+			local hasLocal = LK["LocalData"] and LK["LocalData"]["text"] and LK["LocalData"]["text"][itemID];
+			local svData = LoreK_DB["text"] and LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"];
+			local hasSavedText = svData and svData["text"];
+			local hasCopies = false;
+
 			if LoreK_DB["text"][itemID] then
 				for k in pairs(allData[itemID]) do
 					if string.find(k, "copy_") then
-						hasVariants = true;
+						hasCopies = true;
 						break;
 					end
 				end
 			end
 
-			if hasVariants then
+			if hasSavedText then
+				TextDisplayFrame.selectedVariant = "saved";
+			else
+				TextDisplayFrame.selectedVariant = "base";
+			end
+
+			if hasCopies or (hasLocal and hasSavedText) then
 				VariantDropdown:Show();
-				VariantDropdown.Text:SetText(LK["Base"]);
+				VariantDropdown:GenerateMenu();
 			else
 				VariantDropdown:Hide();
 			end
