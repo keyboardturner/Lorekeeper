@@ -273,7 +273,6 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					},
 				},
 				text = {},
-				questItems = {},
 			};
 		end
 
@@ -356,6 +355,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 
 		SLASH_LOREKEEPER1 = "/".. LK["SlashLoreK1"]
 		SLASH_LOREKEEPER2 = "/".. LK["SlashLoreK2"]
+		SLASH_LOREKEEPER3 = "/".. LK["SlashLoreK3"]
 		SlashCmdList.LOREKEEPER = HandleSlashCommands;
 
 		Print(LK["LoreKIntro"])
@@ -465,7 +465,6 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					},
 				},
 				text = {},
-				questItems = {},
 			};
 		end
 
@@ -533,8 +532,8 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		end
 		if LoreK_DB["text"][key] then
 			if LoreK_DB["text"][key]["base"] then
-				if not LK["LocalData"]["text"][key] or not LK["LocalData"]["text"][key]["base"] then
-					if LoreK_DB["text"][key]["base"]["text"] then -- does entry exist in SVs (with text)
+				if not LK["LocalData"]["text"][key] or not (LK["LocalData"]["text"][key] and LK["LocalData"]["text"][key]["base"]) then
+					if LoreK_DB["text"][key] and LoreK_DB["text"][key]["base"] and LoreK_DB["text"][key]["base"]["text"] then -- does entry exist in SVs (with text)
 						if LK.tCompareDeez(LoreK_DB["text"][key]["base"], activeContext) then -- is it an exact match
 							if LoreK_DB.settings.debugAdvanced then
 								Print("Detected exact copy in SVs, no changes made: "..activeContext.title)
@@ -544,7 +543,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 							
 							if LK.tCompareDeez(LoreK_DB["text"][key]["base"], activeContext) then
 								matchFound = true
-							end
+							end 
 
 							if not matchFound then
 								for k, v in pairs(LoreK_DB["text"][key]) do
@@ -642,42 +641,6 @@ Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_BEGIN");
 Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_READY");
 Lorekeeper.Initialize:RegisterEvent("ITEM_TEXT_CLOSED");
 Lorekeeper.Initialize:SetScript("OnEvent", Lorekeeper.Initialize.Events);
-
-
---------------------------------------------------------------------------
---------------------------------------------------------------------------
- -- Quest Item Collector
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-
-local LJ = CreateFrame("Frame");
-LJ:RegisterEvent("CHAT_MSG_LOOT");
-
-function LJ:OnEvent(event, arg1)
-	if event == "CHAT_MSG_LOOT" then
-		local itemID = arg1:match("item:(%d+):");
-		itemID = tonumber(itemID);
-		if not itemID then return end -- Blizzard, why do you loot spells when you gain anima powers?
-		local classID = select(6, C_Item.GetItemInfoInstant(itemID));
-		if classID and classID == 12 then
-			if not LoreK_DB["questItems"] then
-				LoreK_DB["questItems"] = {};
-			end
-			if not LoreK_DB["questItems"][itemID] then
-				LoreK_DB["questItems"][itemID] = {
-					isQuestItem = true,
-					isDiscovered = true,
-				};
-				if LoreK_DB.settings.debugAdvanced then
-					Print("Quest item stored: " .. itemID)
-				end
-			end
-		end
-	end
-end
-
-LJ:SetScript("OnEvent", LJ.OnEvent)
-
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------

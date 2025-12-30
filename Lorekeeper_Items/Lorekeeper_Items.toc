@@ -6,29 +6,30 @@
 ## IconTexture: Interface/Icons/ui_itemupgrade
 ## SavedVariables: LoreKItems_DB
 ## Dependencies: Lorekeeper
+## OptionalDeps: LoreItemTooltips
 
 ## Title-enUS: Lorekeeper_Items
 ## Notes-enUS: Lorekeeper plugin to save quest and flavor items.
-## Title-frFR: Lorekeeper_Items
-## Notes-frFR: 
-## Title-esES: Lorekeeper_Items
-## Notes-esES: 
-## Title-esMX: Lorekeeper_Items
-## Notes-esMX: 
-## Title-deDE: Lorekeeper_Items
-## Notes-deDE: 
-## Title-itIT: Lorekeeper_Items
-## Notes-itIT: 
-## Title-ptBR: Lorekeeper_Items
-## Notes-ptBR: 
-## Title-ruRU:  (Lorekeeper_Items)
-## Notes-ruRU: 
-## Title-koKR:  (Lorekeeper_Items)
-## Notes-koKR: 
-## Title-zhCN:  (Lorekeeper_Items)
-## Notes-zhCN: 
-## Title-zhTW:  (Lorekeeper_Items)
-## Notes-zhTW: 
+## Title-esES: Lorekeeper_Objetos
+## Notes-esES: Complemento de Lorekeeper para guardar objetos de misión y de ambientación.
+## Title-esMX: Lorekeeper_Objetos
+## Notes-esMX: Complemento de Lorekeeper para guardar objetos de misión y de ambientación.
+## Title-deDE: Lorekeeper_Gegenstände
+## Notes-deDE: Lorekeeper-Plugin zum Speichern von Quest- und Atmosphärengegenständen.
+## Title-frFR: Lorekeeper_Objets
+## Notes-frFR: Extension Lorekeeper pour parcourir les cinématiques en jeu.
+## Title-itIT: Lorekeeper_Oggetti
+## Notes-itIT: Plugin di Lorekeeper per salvare oggetti di missione e di ambientazione.
+## Title-ptBR: Lorekeeper_Itens
+## Notes-ptBR: Plugin do Lorekeeper para salvar itens de missão e de ambientação.
+## Title-ruRU: Хранитель Знаний_Предметы (Lorekeeper_Items)
+## Notes-ruRU: Плагин Хранитель Знаний для сохранения заданий и предметов атмосферы.
+## Title-koKR: 지식의 수호자_아이템 (Lorekeeper_Items)
+## Notes-koKR: 퀘스트 및 풍미 아이템을 저장하는 지식의 수호자 플러그인입니다.
+## Title-zhCN: 知识守护者_物品 (Lorekeeper_Items)
+## Notes-zhCN: 用于保存任务和风味物品的 知识守护者 插件。
+## Title-zhTW: 知識守護者_物品 (Lorekeeper_Items)
+## Notes-zhTW: 用於儲存任務與風味物品的 知識守護者 外掛。
 
 ## Category-enUS: Roleplay
 ## Category-deDE: Rollenspiel

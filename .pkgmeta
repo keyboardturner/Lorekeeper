@@ -22,6 +22,7 @@ ignore:
 
 move-folders:
   Lorekeeper/Lorekeeper_Items: Lorekeeper_Items
+  Lorekeeper/Lorekeeper_Cinematics: Lorekeeper_Cinematics
   Lorekeeper/Lorekeeper_Mail: Lorekeeper_Mail
   Lorekeeper/Lorekeeper: Lorekeeper
 

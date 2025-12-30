@@ -466,7 +466,18 @@ local function Tab_OnClick(self)
 		else
 			Lorekeeper_API.SetUpMailColorsAndTextures();
 		end
+		if not C_AddOns.IsAddOnLoaded("Lorekeeper_Items") then
+			LoreKMainframeTab3:SetEnabled(false);
+			LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5);
+		end
+		if C_AddOns.IsAddOnLoaded("Lorekeeper_Cinematics") and Lorekeeper_API.SetUpCinematicsColorsAndTextures then
+			Lorekeeper_API.SetUpCinematicsColorsAndTextures();
+		else
+			LoreKMainframeTab4:SetEnabled(false);
+			LoreKMainframeTab4.Text:SetTextColor(.5,.5,.5);
+		end
 	end
+
 end
 
 -- Function to set up tabs and their associated content frames
@@ -517,6 +528,12 @@ local function SetTabs(frame, numTabs, ...)
 
 			tab:SetPoint("TOPLEFT", previousTab, "TOPRIGHT", 3, 0);
 		elseif i == 4 then
+			LoreKGUI.CinematicsPanel = CreateFrame("Frame", nil, tab.content);
+			LoreKGUI.CinematicsPanel:SetPoint("TOPLEFT", tab.content, "TOPLEFT", 0, 0);
+			LoreKGUI.CinematicsPanel:SetPoint("BOTTOMRIGHT", tab.content, "BOTTOMRIGHT", 0, 0);
+
+			tab:SetPoint("TOPLEFT", previousTab, "TOPRIGHT", 3, 0);
+		elseif i == 5 then
 			LoreKGUI.SettingsPanel = CreateFrame("Frame", nil, tab.content);
 			LoreKGUI.SettingsPanel:SetPoint("TOPLEFT", tab.content, "TOPLEFT", 0, 0);
 			LoreKGUI.SettingsPanel:SetPoint("BOTTOMRIGHT", tab.content, "BOTTOMRIGHT", 0, 0);
@@ -536,14 +553,24 @@ local function SetTabs(frame, numTabs, ...)
 end
 
 -- Set up the tabs and content frames
-local content1, content2, content3, content4 = SetTabs(LoreKGUI, 4, LK["Library"], LK["Mail"], LK["Items"], LK["Settings"]);
+local content1, content2, content3, content4, content5 = SetTabs(LoreKGUI, 5, LK["Library"], LK["Mail"], LK["Items"], LK["Cinematics"], LK["Settings"]);
 
 --LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5)
 --LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5)
 
+LoreKMainframeTab2:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(self, "ANCHOR_TOP");
+	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
+		GameTooltip:AddLine(LK["AddonDisabled"], 1, 0, 0)
+	end
+	GameTooltip:Show();
+end);
+LoreKMainframeTab2:SetScript("OnLeave", function()
+	GameTooltip:Hide();
+end);
+
 LoreKMainframeTab3:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine(LK["Items"], 1, 1, 1);
 	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Items") then
 		GameTooltip:AddLine(LK["AddonDisabled"], 1, 0, 0)
 	end
@@ -555,7 +582,9 @@ end);
 
 LoreKMainframeTab4:SetScript("OnEnter", function(self)
 	GameTooltip:SetOwner(self, "ANCHOR_TOP");
-	GameTooltip:AddLine(LK["Settings"], 1, 1, 1);
+	if not C_AddOns.IsAddOnLoaded("Lorekeeper_Cinematics") then
+		GameTooltip:AddLine(LK["AddonDisabled"], 1, 0, 0)
+	end
 	GameTooltip:Show();
 end);
 LoreKMainframeTab4:SetScript("OnLeave", function()
@@ -754,15 +783,15 @@ TextDisplayFrame.NextPageButton:Disable();
 TextDisplayFrame.PrevPageButton:Hide();
 TextDisplayFrame.NextPageButton:Hide();
 TextDisplayFrame.Type_ID = TextDisplayFrame:CreateFontString(nil, "OVERLAY");
-TextDisplayFrame.Type_ID:SetFontObject("GameFontHighlightLarge"); -- make into option later
-TextDisplayFrame.Type_ID:SetPoint("LEFT", TextDisplayFrame.NextPageButton, "RIGHT", 15, 0);
+TextDisplayFrame.Type_ID:SetFontObject("GameFontHighlightLarge");
+TextDisplayFrame.Type_ID:SetPoint("BOTTOMRIGHT", LoreKMainframe, "BOTTOMRIGHT", -15, 5);
 
 --------------------------------------------------------------------------
 -- Variant Text Dropdown Soon(tm)
 
 TextDisplayFrame.VariantDropdown = CreateFrame("DropdownButton", nil, TextDisplayFrame, "WowStyle1DropdownTemplate");
 local VariantDropdown = TextDisplayFrame.VariantDropdown;
-VariantDropdown:SetPoint("TOPRIGHT", TextDisplayFrame, "TOPRIGHT", -75, 25);
+VariantDropdown:SetPoint("TOPRIGHT", TextDisplayFrame, "TOPRIGHT", -82.5, 22.5);
 VariantDropdown:SetSize(130, 20);
 VariantDropdown:Hide();
 
@@ -770,7 +799,16 @@ function TextDisplayFrame.GetSelectedTextData(itemID)
 	local variantKey = TextDisplayFrame.selectedVariant or "base";
 	
 	if variantKey == "base" then
+		if LK["LocalData"] and LK["LocalData"]["text"] and LK["LocalData"]["text"][itemID] then
+			return LK["LocalData"]["text"][itemID]["base"];
+		end
 		return allData[itemID]["base"];
+	end
+
+	if variantKey == "saved" then
+		if allData[itemID] and allData[itemID]["base"] then
+			return allData[itemID]["base"];
+		end
 	end
 
 	if allData[itemID] and allData[itemID][variantKey] then
@@ -784,11 +822,24 @@ local function VariantDropdownSetup(dropdown, rootDescription)
 	local itemID = TextDisplayFrame.currentItemID;
 	if not itemID or not allData[itemID] then return end
 
-	rootDescription:CreateButton(LK["Base"], function()
-		TextDisplayFrame.selectedVariant = "base";
+	local function IsSelected(variantKey)
+		return TextDisplayFrame.selectedVariant == variantKey;
+	end
+
+	local function SetSelected(variantKey)
+		TextDisplayFrame.selectedVariant = variantKey;
 		LoreKGUI.UpdateTextDisplay(itemID);
-		VariantDropdown.Text:SetText(LK["Base"]);
-	end);
+	end
+
+	local hasLocal = LK["LocalData"] and LK["LocalData"]["text"] and LK["LocalData"]["text"][itemID];
+	local svData = LoreK_DB["text"] and LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"];
+	local hasSavedText = svData and svData["text"];
+
+	if hasLocal then
+		rootDescription:CreateRadio(LK["Base"], IsSelected, SetSelected, "base");
+	elseif hasSavedText then
+		rootDescription:CreateRadio(LK["Base"], IsSelected, SetSelected, "saved");
+	end
 
 	local copies = {};
 	for k, v in pairs(allData[itemID]) do
@@ -800,10 +851,17 @@ local function VariantDropdownSetup(dropdown, rootDescription)
 
 	for _, key in ipairs(copies) do
 		local index = key:match("copy_(%d+)");
-		rootDescription:CreateButton((LK["Variant"]) .. " " .. index, function()
-			TextDisplayFrame.selectedVariant = key;
-			LoreKGUI.UpdateTextDisplay(itemID);
-			VariantDropdown.Text:SetText((LK["Variant"]) .. " " .. index);
+		rootDescription:CreateRadio((LK["Variant"]) .. " " .. index, IsSelected, SetSelected, key);
+	end
+	
+	if hasLocal and hasSavedText then
+		local svButton = rootDescription:CreateRadio(LK["Saved"] or "Saved", IsSelected, SetSelected, "saved");
+		
+		svButton:AddInitializer(function(button, description, menu)
+			local rightTexture = button:AttachTexture();
+			rightTexture:SetAtlas("UI_Editor_Eye_Icon");
+			rightTexture:SetSize(16, 16);
+			rightTexture:SetPoint("RIGHT");
 		end);
 	end
 end
@@ -1704,24 +1762,32 @@ local function ItemInitializer(button, data)
 
 			PlaySound(SOUNDKIT.UI_JOURNEYS_OPEN_LORE_BOOK, "SFX", true);
 			DeleteEntry:SetEnabled(true);
-			--selectionBehavior:SelectElementData(self:GetData())
-
-			TextDisplayFrame.selectedVariant = "base";
+			
 			TextDisplayFrame.currentItemID = itemID;
 
-			local hasVariants = false;
+			local hasLocal = LK["LocalData"] and LK["LocalData"]["text"] and LK["LocalData"]["text"][itemID];
+			local svData = LoreK_DB["text"] and LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"];
+			local hasSavedText = svData and svData["text"];
+			local hasCopies = false;
+
 			if LoreK_DB["text"][itemID] then
 				for k in pairs(allData[itemID]) do
 					if string.find(k, "copy_") then
-						hasVariants = true;
+						hasCopies = true;
 						break;
 					end
 				end
 			end
 
-			if hasVariants then
+			if hasSavedText then
+				TextDisplayFrame.selectedVariant = "saved";
+			else
+				TextDisplayFrame.selectedVariant = "base";
+			end
+
+			if hasCopies or (hasLocal and hasSavedText) then
 				VariantDropdown:Show();
-				VariantDropdown.Text:SetText(LK["Base"]);
+				VariantDropdown:GenerateMenu();
 			else
 				VariantDropdown:Hide();
 			end
@@ -1876,18 +1942,52 @@ function LoreKGUI.OnTextChanged(editBox)
 
 	for _, element in pairs(allData) do
 		local match = false;
+		local base = element["base"]
+		
+		-- Search Text Match
+		if base["title"] and string.find(base["title"]:lower(), query:lower()) then
+			
+			-- Basic State Filters (Hidden, Unobtainable, Class Specific)
+			local stateMatch = true
+			
+			-- Check Hidden
+			if base["isHidden"] and not SVSettings.showHidden then stateMatch = false end
+			
+			-- Check Unobtainable
+			if (base["isObtainable"] == false) and not SVSettings.showUnobtainable then stateMatch = false end
+			
+			-- Check Collection Status
+			if base["hasRead"] and not SVSettings.showCollected then stateMatch = false end
+			if (not base["hasRead"]) and not SVSettings.showUnread then stateMatch = false end
 
-		if element["base"]["title"] and string.find(element["base"]["title"]:lower(), query:lower()) then
-			if SVSettings.showCollected and element["base"]["hasRead"] and not element["base"]["isHidden"] and not (element["base"]["isObtainable"] == false) and not element["base"]["isClassSpecific"] then
-				match = true;
-			elseif SVSettings.showUnread and (not element["base"]["hasRead"]) and not (element["base"]["isObtainable"] == false) and not element["base"]["isClassSpecific"] then
-				match = true;
-			elseif SVSettings.showHidden and element["base"]["isHidden"] then
-				match = true;
-			elseif SVSettings.showClassrestricted and element["base"]["isClassSpecific"] then
-				match = true;
-			elseif SVSettings.showUnobtainable and (element["base"]["isObtainable"] == false) then
-				match = true;
+			-- Check Class Specific
+			if base["isClassSpecific"] and not SVSettings.showClassrestricted then stateMatch = false end
+
+			-- Specific Class
+			if SVSettings.filterClass and SVSettings.filterClass ~= "ALL" then
+				-- If the item's class ID does not strictly match the filter, hide it
+				-- This hides other classes AND generic items (where isClassSpecific is false)
+				if base["isClassSpecific"] ~= SVSettings.filterClass then
+					stateMatch = false
+				end
+			end
+
+			-- Expansion
+			-- If expansion is nil (SavedVariables/Custom), we always show it
+			if base["expansion"] then
+				local expID = base["expansion"]
+				if SVSettings.expansion and SVSettings.expansion[expID] == false then
+					stateMatch = false
+				end
+			end
+
+			-- Map Data
+			if SVSettings.onlyMapData and not base["mapData"] then
+				stateMatch = false
+			end
+
+			if stateMatch then
+				match = true
 			end
 		end
 
@@ -1914,71 +2014,85 @@ LoreKGUI.FilterDropdown:SetSize(80, 20);
 local function FilterHandler(owner, rootDescription)
 	local SVSettings = LoreK_DB["settings"]["searchMenu"]
 	--rootDescription:CreateTitle("Filter Options");
+	
+	rootDescription:CreateTitle(LK["filter"] or "Filters");
+	
+	rootDescription:CreateCheckbox(LK["Collected"], function() return SVSettings.showCollected; end, function()
+		SVSettings.showCollected = not SVSettings.showCollected;
+		LoreKGUI.PopulateList();
+	end);
 
-	local checkbox1 = rootDescription:CreateCheckbox(LK["Collected"], function()
-		return SVSettings.showCollected;
-	end,
-	function(selected)
-		if SVSettings.showCollected then
-			SVSettings.showCollected = false;
-		else
-			SVSettings.showCollected = true;
+	rootDescription:CreateCheckbox(LK["NotCollected"], function() return SVSettings.showUnread; end, function()
+		SVSettings.showUnread = not SVSettings.showUnread;
+		LoreKGUI.PopulateList();
+	end);
+
+	rootDescription:CreateDivider();
+
+	rootDescription:CreateCheckbox(LK["Hidden"], function() return SVSettings.showHidden; end, function()
+		SVSettings.showHidden = not SVSettings.showHidden;
+		LoreKGUI.PopulateList();
+	end);
+
+	rootDescription:CreateCheckbox(LK["Unobtainable"], function() return SVSettings.showUnobtainable; end, function()
+		SVSettings.showUnobtainable = not SVSettings.showUnobtainable;
+		LoreKGUI.PopulateList();
+	end);
+
+	rootDescription:CreateCheckbox(LK["ClassRestricted"], function() return SVSettings.showClassrestricted; end, function()
+		SVSettings.showClassrestricted = not SVSettings.showClassrestricted;
+		LoreKGUI.PopulateList();
+	end);
+
+	rootDescription:CreateDivider();
+
+	rootDescription:CreateCheckbox(LK["HasMapLocation"], function() return SVSettings.onlyMapData; end, function()
+		SVSettings.onlyMapData = not SVSettings.onlyMapData;
+		LoreKGUI.PopulateList();
+	end);
+
+	rootDescription:CreateDivider();
+
+	local classButton = rootDescription:CreateButton(CLASS);
+	
+	if not SVSettings.filterClass then SVSettings.filterClass = "ALL" end
+
+	local function IsClassSelected(val)
+		return SVSettings.filterClass == val;
+	end
+
+	local function SetClassFilter(val)
+		SVSettings.filterClass = val;
+		LoreKGUI.PopulateList();
+	end
+
+	classButton:CreateRadio(ALL, IsClassSelected, SetClassFilter, "ALL");
+	
+	for i = 1, GetNumClasses() do
+		local className, classFile, classID = GetClassInfo(i)
+		if classFile then
+			local text = "|c"..RAID_CLASS_COLORS[classFile].colorStr .. className .. "|r"
+			-- Changed last argument from classFile to classID
+			classButton:CreateRadio(text, IsClassSelected, SetClassFilter, classID);
 		end
-		LoreKGUI.PopulateList();
-	end);
+	end
 
-	local checkbox1 = rootDescription:CreateCheckbox(LK["NotCollected"], function()
-		return SVSettings.showUnread;
-	end,
-	function(selected)
-		if SVSettings.showUnread then
-			SVSettings.showUnread = false;
-		else
-			SVSettings.showUnread = true;
-		end
-		LoreKGUI.PopulateList();
-	end);
+	local expButton = rootDescription:CreateButton(EXPANSION_FILTER_TEXT);
+	
+	if not SVSettings.expansion then SVSettings.expansion = {} end
 
-	local checkbox2 = rootDescription:CreateCheckbox(LK["Hidden"], function()
-		return SVSettings.showHidden;
-	end,
-	function(selected)
-		if SVSettings.showHidden then
-			SVSettings.showHidden = false;
-		else
-			SVSettings.showHidden = true;
-		end
-		LoreKGUI.PopulateList();
-	end);
-	local checkbox3 = rootDescription:CreateCheckbox(LK["ClassRestricted"], function()
-		return SVSettings.showClassrestricted;
-	end,
-	function(selected)
-		if SVSettings.showClassrestricted then
-			SVSettings.showClassrestricted = false;
-		else
-			SVSettings.showClassrestricted = true;
-		end;
-		LoreKGUI.PopulateList();
-	end);
-	local checkbox4 = rootDescription:CreateCheckbox(LK["Unobtainable"], function()
-		return SVSettings.showUnobtainable;
-	end,
-	function(selected)
-		if SVSettings.showUnobtainable then
-			SVSettings.showUnobtainable = false;
-		else
-			SVSettings.showUnobtainable = true;
-		end;
-		LoreKGUI.PopulateList();
-	end);
+	for i = 0, LE_EXPANSION_LEVEL_CURRENT do
+		if SVSettings.expansion[i] == nil then SVSettings.expansion[i] = true end
 
-	-- Optionally, set selection ignored so it doesn't affect dropdown selection text
-	checkbox1:SetSelectionIgnored();
-	checkbox2:SetSelectionIgnored();
-	checkbox3:SetSelectionIgnored();
-	checkbox4:SetSelectionIgnored();
-
+		local expName = _G["EXPANSION_NAME"..i] or (EXPANSION_FILTER_TEXT .. " " .. i)
+		
+		expButton:CreateCheckbox(expName, function()
+			return SVSettings.expansion[i];
+		end, function()
+			SVSettings.expansion[i] = not SVSettings.expansion[i];
+			LoreKGUI.PopulateList();
+		end);
+	end
 end
 
 --------------------------------------------------------------------------
@@ -2704,6 +2818,18 @@ function LoreKGUI.Initialize(self, event, arg1)
 		if LoreK_DB["settings"]["holidayThemes"] == nil then
 			LoreK_DB["settings"]["holidayThemes"] = true;
 		end
+		if LoreK_DB["settings"]["searchMenu"].onlyMapData == nil then
+             LoreK_DB["settings"]["searchMenu"].onlyMapData = false
+        end
+        if LoreK_DB["settings"]["searchMenu"].filterClass == nil then
+             LoreK_DB["settings"]["searchMenu"].filterClass = "ALL"
+        end
+        if not LoreK_DB["settings"]["searchMenu"].expansion then
+             LoreK_DB["settings"]["searchMenu"].expansion = {}
+             for i = 0, LE_EXPANSION_LEVEL_CURRENT do
+                 LoreK_DB["settings"]["searchMenu"].expansion[i] = true
+             end
+        end
 		TTSSettings.QueuePages_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["queuePages"]);
 		TTSSettings.PhoneticReplace_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["phonetics"]);
 		TTSSettings.VolumeSlider.Slider:SetValue(LoreK_DB["settings"]["TTSSettings"]["volume"]);
@@ -2731,6 +2857,14 @@ function LoreKGUI.Initialize(self, event, arg1)
 		if not C_AddOns.IsAddOnLoaded("Lorekeeper_Mail") then
 			LoreKMainframeTab2:SetEnabled(false);
 			LoreKMainframeTab2.Text:SetTextColor(.5,.5,.5);
+		end
+		if not C_AddOns.IsAddOnLoaded("Lorekeeper_Items") then
+			LoreKMainframeTab3:SetEnabled(false);
+			LoreKMainframeTab3.Text:SetTextColor(.5,.5,.5);
+		end
+		if not C_AddOns.IsAddOnLoaded("Lorekeeper_Cinematics") then
+			LoreKMainframeTab4:SetEnabled(false);
+			LoreKMainframeTab4.Text:SetTextColor(.5,.5,.5);
 		end
 	end
 end

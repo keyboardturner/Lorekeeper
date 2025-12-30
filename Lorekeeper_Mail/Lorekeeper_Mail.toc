@@ -21,13 +21,13 @@
 ## Notes-itIT: Plugin di Lorekeeper per salvare gli oggetti di posta e conservarli separatamente dalla biblioteca.
 ## Title-ptBR: Lorekeeper_Mail
 ## Notes-ptBR: Plugin Lorekeeper para salvar itens de correio e mantê-los armazenados separadamente da biblioteca.
-## Title-ruRU: Хранитель Знаний_Почта
+## Title-ruRU: Хранитель Знаний_Почта (Lorekeeper_Mail)
 ## Notes-ruRU: Плагин Lorekeeper для сохранения почтовых предметов и их хранения отдельно от библиотеки.
-## Title-koKR: 지식의 수호자_우편
+## Title-koKR: 지식의 수호자_우편 (Lorekeeper_Mail
 ## Notes-koKR: 우편물을 저장하고 라이브러리와 별도로 보관하는 Lorekeeper 플러그인입니다.
-## Title-zhCN: 知识守护者_邮件
+## Title-zhCN: 知识守护者_邮件 (Lorekeeper_Mail)
 ## Notes-zhCN: Lorekeeper插件，用于保存邮件并将其与图书馆分开存储。
-## Title-zhTW: 知識守護者_郵件
+## Title-zhTW: 知識守護者_郵件 (Lorekeeper_Mail)
 ## Notes-zhTW: Lorekeeper插件，用於保存郵件並將其與圖書館分開存儲。
 
 ## Category-enUS: Roleplay
