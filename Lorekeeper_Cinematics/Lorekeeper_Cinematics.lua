@@ -218,16 +218,16 @@ LinkFrame.Border = CreateFrame("Frame", nil, LinkFrame, "DialogBorderTemplate")
 
 LinkFrame.Title = LinkFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 LinkFrame.Title:SetPoint("TOP", 0, -15)
-LinkFrame.Title:SetText("External Link")
+LinkFrame.Title:SetText(BROWSER_COPY_LINK)
 
 LinkFrame.CopyBox = CreateLKCopyBox(LinkFrame, 350)
 LinkFrame.CopyBox:SetPoint("CENTER", 0, 10)
-LinkFrame.CopyBox:SetLabel("Press Ctrl+C to copy link")
+LinkFrame.CopyBox:SetLabel(LK["CopyExternalLink"])
 
 LinkFrame.CloseBtn = CreateFrame("Button", nil, LinkFrame, "UIPanelButtonTemplate")
 LinkFrame.CloseBtn:SetSize(100, 25)
 LinkFrame.CloseBtn:SetPoint("BOTTOM", 0, 15)
-LinkFrame.CloseBtn:SetText(CLOSE or "Close")
+LinkFrame.CloseBtn:SetText(CLOSE)
 LinkFrame.CloseBtn:SetScript("OnClick", function() LinkFrame:Hide() end)
 
 local function ShowLinkWindow(link)

@@ -137,6 +137,7 @@ if LOCALE == "enUS" then
 	LK["TOC_LoreKItems_Notes"] = "Lorekeeper plugin to save quest and flavor items."
 	LK["TOC_LoreKCinematics_Title"] = "Lorekeeper_Cinematics"
 	LK["TOC_LoreKCinematics_Notes"] = "Lorekeeper plugin to browse the ingame cinematics."
+	LK["CopyExternalLink"] = "Copy external link (control-c)"
 
 return end
 
@@ -254,6 +255,7 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["TOC_LoreKItems_Notes"] = "Complemento de Lorekeeper para guardar objetos de misión y de ambientación."
 	LK["TOC_LoreKCinematics_Title"] = "Lorekeeper_Cinemáticas"
 	LK["TOC_LoreKCinematics_Notes"] = "Complemento de Lorekeeper para explorar las cinemáticas del juego."
+	LK["CopyExternalLink"] = "Copiar enlace externo (control-c)"
 
 return end
 
@@ -371,6 +373,7 @@ if LOCALE == "deDE" then
 	LK["TOC_LoreKItems_Notes"] = "Lorekeeper-Plugin zum Speichern von Quest- und Atmosphärengegenständen."
 	LK["TOC_LoreKCinematics_Title"] = "Lorekeeper_Zwischensequenzen"
 	LK["TOC_LoreKCinematics_Notes"] = "Lorekeeper-Plugin zum Durchsuchen der Ingame-Zwischensequenzen."
+	LK["CopyExternalLink"] = "Externen Link kopieren (control-c)"
 
 return end
 
@@ -488,6 +491,7 @@ if LOCALE == "frFR" then
 	LK["TOC_LoreKItems_Notes"] = "Extension Lorekeeper pour sauvegarder les objets de quête et d’ambiance."
 	LK["TOC_LoreKCinematics_Title"] = "Lorekeeper_Cinématiques"
 	LK["TOC_LoreKCinematics_Notes"] = "Extension Lorekeeper pour parcourir les cinématiques en jeu."
+	LK["CopyExternalLink"] = "Copier le lien externe (control-c)"
 
 return end
 
@@ -605,6 +609,7 @@ if LOCALE == "itIT" then
 	LK["TOC_LoreKItems_Notes"] = "Plugin di Lorekeeper per salvare oggetti di missione e di ambientazione."
 	LK["TOC_LoreKCinematics_Title"] = "Lorekeeper_Cinematismi"
 	LK["TOC_LoreKCinematics_Notes"] = "Plugin di Lorekeeper per esplorare le cinematiche di gioco."
+	LK["CopyExternalLink"] = "Copia collegamento esterno (control-c)"
 
 return end
 
@@ -722,6 +727,7 @@ if LOCALE == "ptBR" then
 	LK["TOC_LoreKItems_Notes"] = "Plugin do Lorekeeper para salvar itens de missão e de ambientação."
 	LK["TOC_LoreKCinematics_Title"] = "Lorekeeper_Cinemáticas"
 	LK["TOC_LoreKCinematics_Notes"] = "Plugin do Lorekeeper para navegar pelas cinemáticas do jogo."
+	LK["CopyExternalLink"] = "Copiar link externo (control-c)"
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -841,6 +847,7 @@ if LOCALE == "ruRU" then
 	LK["TOC_LoreKItems_Notes"] = "Плагин Хранитель Знаний для сохранения заданий и предметов атмосферы."
 	LK["TOC_LoreKCinematics_Title"] = "Хранитель Знаний_Синематики (Lorekeeper_Cinematics)"
 	LK["TOC_LoreKCinematics_Notes"] = "Плагин Хранитель Знаний для просмотра внутриигровых синематиков."
+	LK["CopyExternalLink"] = "Скопировать внешнюю ссылку (control-c)"
 
 
 return end
@@ -959,6 +966,7 @@ if LOCALE == "koKR" then
 	LK["TOC_LoreKItems_Notes"] = "퀘스트 및 풍미 아이템을 저장하는 지식의 수호자 플러그인입니다."
 	LK["TOC_LoreKCinematics_Title"] = "지식의 수호자_시네마틱 (Lorekeeper_Cinematics)"
 	LK["TOC_LoreKCinematics_Notes"] = "게임 내 시네마틱을 탐색할 수 있는 지식의 수호자 플러그인입니다."
+	LK["CopyExternalLink"] = "외부 링크 복사 (control-c)"
 
 
 return end
@@ -1077,6 +1085,7 @@ if LOCALE == "zhCN" then
 	LK["TOC_LoreKItems_Notes"] = "用于保存任务和风味物品的 知识守护者 插件。"
 	LK["TOC_LoreKCinematics_Title"] = "知识守护者_过场动画 (Lorekeeper_Cinematics)"
 	LK["TOC_LoreKCinematics_Notes"] = "用于浏览游戏内过场动画的 知识守护者 插件。"
+	LK["CopyExternalLink"] = "复制外部链接（control-c）"
 
 
 return end
@@ -1195,6 +1204,7 @@ if LOCALE == "zhTW" then
 	LK["TOC_LoreKItems_Notes"] = "用於儲存任務與風味物品的 知識守護者 外掛。"
 	LK["TOC_LoreKCinematics_Title"] = "知識守護者_過場動畫 (Lorekeeper_Cinematics)"
 	LK["TOC_LoreKCinematics_Notes"] = "用於瀏覽遊戲內過場動畫的 知識守護者 外掛。"
+	LK["CopyExternalLink"] = "複製外部連結（control-c）"
 
 
 return end
