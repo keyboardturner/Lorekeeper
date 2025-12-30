@@ -289,7 +289,10 @@ TitleBackdrop.tex:SetAllPoints(true)
 TitleBackdrop.tex:SetAtlas("StoryHeader-BG")
 
 ItemsTextDisplayFrame.ItemTitle = TitleBackdrop:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
-ItemsTextDisplayFrame.ItemTitle:SetPoint("CENTER", TitleBackdrop, "CENTER", 0, 2)
+ItemsTextDisplayFrame.ItemTitle:SetPoint("TOPLEFT", TitleBackdrop, "TOPLEFT", 7, -8);
+ItemsTextDisplayFrame.ItemTitle:SetPoint("BOTTOMRIGHT", TitleBackdrop, "BOTTOMRIGHT", -7, 5);
+ItemsTextDisplayFrame.ItemTitle:SetJustifyH("CENTER");
+ItemsTextDisplayFrame.ItemTitle:SetJustifyV("MIDDLE");
 
 ItemsTextDisplayFrame.FlavorText = ItemsTextDisplayFrame:CreateFontString(nil, "OVERLAY", "QuestFont_Huge")
 ItemsTextDisplayFrame.FlavorText:SetPoint("TOPLEFT", TitleBackdrop, "BOTTOMLEFT", 20, -50)
