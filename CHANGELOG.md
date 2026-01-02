@@ -1,3 +1,7 @@
+# 0.3.7
+
+Fixed cinematic expansion flag for "Bottoms Up"
+
 # 0.3.6
 
  - Localdata Update 12 - Added 49 personal Library entries.
