@@ -16030,45 +16030,6 @@ Not while we draw breath.
 [soft, ethereal vocalizing]
 [music fades out]
 ]],
-	[""] = [[
-
-]],
-	[""] = [[
-
-]],
-	[""] = [[
-
-]],
-	[""] = [[
-
-]],
-	[""] = [[
-
-]],
-	[""] = [[
-
-]],
-	[""] = [[
-
-]],
-	[""] = [[
-
-]],
-	[""] = [[
-
-]],
-	[""] = [[
-
-]],
-
-
-
-
-
-
-
-
-
 
 
 
@@ -16101,9 +16062,25 @@ return end
 if LOCALE == "esMX" then
 	-- Spanish (Mexico) text data goes here
 
-LK["LocalData"]["cinematics"] = {
-
+local Subtitles = {
+	-- Spanish subs here
 };
+
+local Descriptions = {
+	-- Spanish cinematic titles here
+};
+
+for index, data in pairs(LK["LocalData"]["cinematics"]) do
+	local key = data.name
+	
+	if Descriptions[key] then
+		data.description = Descriptions[key]
+	end
+
+	if Subtitles[key] then
+		data.subtitles = Subtitles[key]
+	end
+end
 
 
 return end
@@ -16111,9 +16088,25 @@ return end
 if LOCALE == "esES" then
 	-- Spanish (Spain) text data goes here
 
-LK["LocalData"]["cinematics"] = {
-
+local Subtitles = {
+	-- Spanish subs here
 };
+
+local Descriptions = {
+	-- Spanish cinematic titles here
+};
+
+for index, data in pairs(LK["LocalData"]["cinematics"]) do
+	local key = data.name
+	
+	if Descriptions[key] then
+		data.description = Descriptions[key]
+	end
+
+	if Subtitles[key] then
+		data.subtitles = Subtitles[key]
+	end
+end
 
 
 return end
@@ -16121,36 +16114,100 @@ return end
 if LOCALE == "deDE" then
 	-- German text data go here
 
-LK["LocalData"]["cinematics"] = {
-
+local Subtitles = {
+	-- German subs here
 };
+
+local Descriptions = {
+	-- German cinematic titles here
+};
+
+for index, data in pairs(LK["LocalData"]["cinematics"]) do
+	local key = data.name
+	
+	if Descriptions[key] then
+		data.description = Descriptions[key]
+	end
+
+	if Subtitles[key] then
+		data.subtitles = Subtitles[key]
+	end
+end
 
 return end
 
 if LOCALE == "frFR" then
 	-- French text data go here
 
-LK["LocalData"]["cinematics"] = {
-
+local Subtitles = {
+	-- French subs here
 };
+
+local Descriptions = {
+	-- French cinematic titles here
+};
+
+for index, data in pairs(LK["LocalData"]["cinematics"]) do
+	local key = data.name
+	
+	if Descriptions[key] then
+		data.description = Descriptions[key]
+	end
+
+	if Subtitles[key] then
+		data.subtitles = Subtitles[key]
+	end
+end
 
 return end
 
 if LOCALE == "itIT" then
 	-- French text data go here
 
-LK["LocalData"]["cinematics"] = {
-
+local Subtitles = {
+	-- Italian subs here
 };
+
+local Descriptions = {
+	-- Italian cinematic titles here
+};
+
+for index, data in pairs(LK["LocalData"]["cinematics"]) do
+	local key = data.name
+	
+	if Descriptions[key] then
+		data.description = Descriptions[key]
+	end
+
+	if Subtitles[key] then
+		data.subtitles = Subtitles[key]
+	end
+end
 
 return end
 
 if LOCALE == "ptBR" then
 	-- Brazilian Portuguese text data go here
 
-LK["LocalData"]["cinematics"] = {
-
+local Subtitles = {
+	-- Portuguese subs here
 };
+
+local Descriptions = {
+	-- Portuguese cinematic titles here
+};
+
+for index, data in pairs(LK["LocalData"]["cinematics"]) do
+	local key = data.name
+	
+	if Descriptions[key] then
+		data.description = Descriptions[key]
+	end
+
+	if Subtitles[key] then
+		data.subtitles = Subtitles[key]
+	end
+end
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -16159,16 +16216,32 @@ return end
 if LOCALE == "ruRU" then
 	-- Russian text data go here
 
-LK["LocalData"]["cinematics"] = {
-
+local Subtitles = {
+	-- Russian subs here
 };
+
+local Descriptions = {
+	-- Russian cinematic titles here
+};
+
+for index, data in pairs(LK["LocalData"]["cinematics"]) do
+	local key = data.name
+	
+	if Descriptions[key] then
+		data.description = Descriptions[key]
+	end
+
+	if Subtitles[key] then
+		data.subtitles = Subtitles[key]
+	end
+end
 
 return end
 
 if LOCALE == "koKR" then
 	-- Korean text data go here
 
-LK["LocalData"]["cinematics"] = {
+local Subtitles = {
 
 	["bfa_800_ltc_h"] = [[
 00:00:11:21 - 00:00:14:28
@@ -16396,23 +16469,71 @@ LK["LocalData"]["cinematics"] = {
 
 };
 
+local Descriptions = {
+	-- Korean cinematic titles here
+};
+
+for index, data in pairs(LK["LocalData"]["cinematics"]) do
+	local key = data.name
+	
+	if Descriptions[key] then
+		data.description = Descriptions[key]
+	end
+
+	if Subtitles[key] then
+		data.subtitles = Subtitles[key]
+	end
+end
+
 return end
 
 if LOCALE == "zhCN" then
 	-- Simplified Chinese text data go here
 
-LK["LocalData"]["cinematics"] = {
-
+local Subtitles = {
+	-- Simplified Chinese subs here
 };
+
+local Descriptions = {
+	-- Simplified Chinese cinematic titles here
+};
+
+for index, data in pairs(LK["LocalData"]["cinematics"]) do
+	local key = data.name
+	
+	if Descriptions[key] then
+		data.description = Descriptions[key]
+	end
+
+	if Subtitles[key] then
+		data.subtitles = Subtitles[key]
+	end
+end
 
 return end
 
 if LOCALE == "zhTW" then
 	-- Traditional Chinese text data go here
 
-LK["LocalData"]["cinematics"] = {
-
+local Subtitles = {
+	-- Traditional Chinese subs here
 };
+
+local Descriptions = {
+	-- Traditional Chinese cinematic titles here
+};
+
+for index, data in pairs(LK["LocalData"]["cinematics"]) do
+	local key = data.name
+	
+	if Descriptions[key] then
+		data.description = Descriptions[key]
+	end
+
+	if Subtitles[key] then
+		data.subtitles = Subtitles[key]
+	end
+end
 
 return end
 

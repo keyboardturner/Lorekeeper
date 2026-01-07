@@ -1,3 +1,7 @@
+# 0.3.8
+
+Prevented cinematics table from absolute calamity if the game client was not in English (cinematic titles will still be in english for non-english clients, this data is not pulled from in game and is a lot of work)
+
 # 0.3.7
 
 Fixed cinematic expansion flag for "Bottoms Up"
