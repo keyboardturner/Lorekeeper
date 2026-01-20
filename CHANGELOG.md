@@ -1,3 +1,9 @@
+# 0.3.9
+
+Added a cinematic movie detection, allowing newly discovered cinematics to be placed into the Cinematics tab list.
+
+12.0.0 toc update
+
 # 0.3.8
 
 Prevented cinematics table from absolute calamity if the game client was not in English (cinematic titles will still be in english for non-english clients, this data is not pulled from in game and is a lot of work)
