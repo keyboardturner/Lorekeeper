@@ -450,19 +450,33 @@ end
 LoreKGUI.CinematicsFilterDropdown:SetupMenu(CinematicsFilterHandler);
 
 function LoreKGUI.PopulateCinematicsList()
-	local cineData = Lorekeeper_API.LK["LocalData"]["cinematics"];
-	if not cineData then return end
-
+	local allData = {}
+	local cineData = Lorekeeper_API.LK["LocalData"]["cinematics"]
+	local savedData = LoreKCinematics_DB or {}
+	
+	if cineData then
+		for index, data in pairs(cineData) do
+			local item = CopyTable(data)
+			item.sortIndex = index;
+			tinsert(allData, item);
+		end
+	end
+	
+	if savedData then
+		for i, data in ipairs(savedData) do
+			local item = CopyTable(data)
+			item.sortIndex = data.sortIndex or (10000 + i)
+			tinsert(allData, item)
+		end
+	end
+	
 	local query = LoreKGUI.CinematicsSearchBox:GetText();
 	query = escapePattern(query):lower();
 
 	local proxy = {};
-	for index, data in pairs(cineData) do
-		local matchSearch = false
-		if data.description and string.find(data.description:lower(), query) then
-			matchSearch = true
-		end
-
+	for _, data in pairs(allData) do
+		local matchSearch = (query == "") or (data.description and string.find(data.description:lower(), query))
+		
 		local matchExpansion = false
 		local expansionID = data.expansion or 0
 		if CinematicsFilters[expansionID] then
@@ -470,7 +484,6 @@ function LoreKGUI.PopulateCinematicsList()
 		end
 
 		if matchSearch and matchExpansion then
-			data.sortIndex = index;
 			tinsert(proxy, data);
 		end
 	end
@@ -484,17 +497,68 @@ function LoreKGUI.PopulateCinematicsList()
 	CineScrollView:SetDataProvider(CineDataProvider);
 end
 
+local function CleanupSavedCinematics()
+	if not LoreKCinematics_DB or not Lorekeeper_API.LK["LocalData"]["cinematics"] then return end
+	
+	local cineData = Lorekeeper_API.LK["LocalData"]["cinematics"]
+	
+	for i = #LoreKCinematics_DB, 1, -1 do
+		local savedMovieID = LoreKCinematics_DB[i].id
+		
+		for _, officialData in pairs(cineData) do
+			if officialData.id == savedMovieID then
+				tremove(LoreKCinematics_DB, i)
+				break
+			end
+		end
+	end
+end
 
-local function OnAddonLoad(self, event, arg1)
+local function OnEvent(self, event, arg1)
 	if event == "ADDON_LOADED" and arg1 == "Lorekeeper_Cinematics" then
+		if not LoreKCinematics_DB then LoreKCinematics_DB = {} end
+		
+		CleanupSavedCinematics()
+		
 		LoreKGUI.PopulateCinematicsList();
 		Lorekeeper_API.SetUpCinematicsColorsAndTextures();
+		
+	elseif event == "PLAY_MOVIE" then
+		local movieID = arg1
+		local cineData = Lorekeeper_API.LK["LocalData"]["cinematics"]
+		local isKnown = false
+
+		if cineData then
+			for _, data in pairs(cineData) do
+				if data.id == movieID then isKnown = true break end
+			end
+		end
+
+		if not isKnown then
+			for _, data in pairs(LoreKCinematics_DB) do
+				if data.id == movieID then isKnown = true break end
+			end
+		end
+
+		if not isKnown then
+			local newEntry = {
+				id = movieID,
+				description = "Discovered Movie (" .. movieID .. ")",
+				name = "Discovered-" .. movieID,
+				expansion = GetExpansionLevel(),
+				thumb = { batch = 1000, coords = 1 } 
+			}
+			tinsert(LoreKCinematics_DB, newEntry)
+			
+			LoreKGUI.PopulateCinematicsList()
+		end
 	end
 end
 
 local f = CreateFrame("Frame")
 f:RegisterEvent("ADDON_LOADED")
-f:SetScript("OnEvent", OnAddonLoad)
+f:RegisterEvent("PLAY_MOVIE")
+f:SetScript("OnEvent", OnEvent)
 
 MovieFrame:HookScript("OnHide", function(self)
 	if SubtitlesFrame then

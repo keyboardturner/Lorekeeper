@@ -1,4 +1,4 @@
-## Interface: 110207
+## Interface: 110207, 120000
 ## Title: Lorekeeper_Mail
 ## Notes: Lorekeeper plugin to save mail items and keep them stored separately from the library.
 ## Author: Keyboardturner

@@ -1,4 +1,4 @@
-## Interface: 110207
+## Interface: 110207, 120000
 ## Title: Lorekeeper_Items
 ## Notes: Lorekeeper plugin to save quest and flavor items.
 ## Author: Keyboardturner

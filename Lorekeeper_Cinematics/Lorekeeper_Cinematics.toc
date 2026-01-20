@@ -1,9 +1,10 @@
-## Interface: 110207
+## Interface: 110207, 120000
 ## Title: Lorekeeper_Cinematics
 ## Notes: Lorekeeper plugin to browse the ingame cinematics.
 ## Author: Keyboardturner
 ## Version: @project-version@
 ## IconTexture: Interface/Icons/inv_misc_ selfiecamera_01
+## SavedVariables: LoreKCinematics_DB
 ## Dependencies: Lorekeeper
 
 ## Title-enUS: Lorekeeper_Cinematics
