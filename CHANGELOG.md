@@ -1,3 +1,7 @@
+# 0.4.0
+
+Add /read setting prevention for combat
+
 # 0.3.9
 
 Added a cinematic movie detection, allowing newly discovered cinematics to be placed into the Cinematics tab list.

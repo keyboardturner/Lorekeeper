@@ -2871,13 +2871,35 @@ end
 
 LoreKGUI.Events:SetScript("OnEvent", LoreKGUI.Initialize);
 
-function LoreKGUI.Script_OnShow()
-	PlaySound(SOUNDKIT.IG_SPELLBOOK_OPEN, "SFX");
-	if LoreK_DB["settings"]["slashRead"] then
-		DoEmote("READ", nil, true);
+local function IsBusy()
+	if C_InstanceEncounter and C_InstanceEncounter.IsEncounterInProgress and C_InstanceEncounter.IsEncounterInProgress() then
+		return true
+	end
+	
+	if UnitAffectingCombat("player") then 
+		return true 
 	end
 
+	if UnitInVehicle("player") then
+		return true
+	end
+
+	return false
+end
+
+function LoreKGUI.Script_OnShow()
+	PlaySound(SOUNDKIT.IG_SPELLBOOK_OPEN, "SFX");
+
 	ToggleHolidays();
+	
+	if IsBusy() then return end
+	if LoreK_DB["settings"]["slashRead"] then
+		if C_ChatInfo and C_ChatInfo.PerformEmote then
+			C_ChatInfo.PerformEmote("READ", "player", true);
+		else
+			DoEmote("READ", "player");
+		end
+	end
 end
 function LoreKGUI.Script_OnHide()
 	PlaySound(SOUNDKIT.IG_SPELLBOOK_CLOSE, "SFX");
