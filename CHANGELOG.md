@@ -1,3 +1,7 @@
+# 0.4.1
+
+Prevent secret value error in Lorekeeper_Items
+
 # 0.4.0
 
 Add /read setting prevention for combat
