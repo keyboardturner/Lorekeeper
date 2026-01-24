@@ -241,6 +241,7 @@ function LJ_Items:OnEvent(event, arg1)
 	end
 
 	if event == "CHAT_MSG_LOOT" then
+		if issecretvalue(arg1) then return end
 		local itemID = arg1:match("item:(%d+):")
 		itemID = tonumber(itemID)
 		if not itemID then return end
