@@ -1728,9 +1728,23 @@ LK["LocalData"]["cinematics"] = {
 			["coords"] = 10,
 		},
 	},
-	[1180] = {
+	--[[
+	[1180] = { -- may be a duplicate, ingame cinematic sniffer caught 952
 		["name"] = "shadowlands_910_jar",
 		["id"] = 950,
+		--["link"] = "",
+		["description"] = "Sanctum of Domination Raid Finale",
+		["expansion"] = 8,
+		["patch"] = "PLACEHOLDER_VALUE",
+		["thumb"] = {
+			["batch"] = 5,
+			["coords"] = 8,
+		},
+	},
+	]]
+	[1180] = {
+		["name"] = "shadowlands_910_jar",
+		["id"] = 952,
 		--["link"] = "",
 		["description"] = "Sanctum of Domination Raid Finale",
 		["expansion"] = 8,
