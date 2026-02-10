@@ -2307,7 +2307,7 @@ LK["LocalData"]["cinematics"] = {
 
 	[1591] = {
 		["name"] = "wow_cgi_int",
-		["id"] = nil,
+		["id"] = 1051,
 		["link"] = "https://youtu.be/SiIjThwKLaE",
 		["description"] = "Intercession",
 		["expansion"] = 11,
