@@ -1,5 +1,7 @@
 # 0.4.2
 
+Added play function for Intercession cinematic
+
 12.0.1 toc update
 
 # 0.4.1
