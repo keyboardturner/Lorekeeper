@@ -1,3 +1,7 @@
+# 0.4.2
+
+12.0.1 toc update
+
 # 0.4.1
 
 Prevent secret value error in Lorekeeper_Items
