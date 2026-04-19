@@ -1,3 +1,7 @@
+# 0.4.3
+
+12.0.5 toc update
+
 # 0.4.2
 
 Added play function for Intercession cinematic
