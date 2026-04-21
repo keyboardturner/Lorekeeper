@@ -286,6 +286,28 @@ LoreKGUI:SetFrameStrata("MEDIUM");
 LoreKGUI:Hide();
 LoreKGUI:SetScript("OnMouseDown", function(self) self:SetToplevel(true); end);
 
+LoreKGUI:SetResizable(true);
+
+LoreKGUI:SetResizeBounds(703, 606, 1618, 883); 
+
+LoreKGUI.resizeHandle = CreateFrame("Button", nil, LoreKGUI);
+LoreKGUI.resizeHandle:SetPoint("BOTTOMRIGHT", LoreKGUI, "BOTTOMRIGHT", 10, -8);
+LoreKGUI.resizeHandle:SetSize(64, 64);
+
+LoreKGUI.resizeHandle:SetNormalAtlas("damagemeters-scalehandle");
+LoreKGUI.resizeHandle:SetPushedAtlas("damagemeters-scalehandle-pressed");
+LoreKGUI.resizeHandle:SetHighlightAtlas("damagemeters-scalehandle-hover");
+
+LoreKGUI.resizeHandle:SetScript("OnMouseDown", function(self, button)
+	if button == "LeftButton" then
+		LoreKGUI:StartSizing("BOTTOMRIGHT");
+	end
+end);
+
+LoreKGUI.resizeHandle:SetScript("OnMouseUp", function(self, button)
+	LoreKGUI:StopMovingOrSizing();
+end);
+
 local HolidaysTheme = {};
 HolidaysTheme.Header = CreateFrame("Frame", nil, LoreKGUI);
 HolidaysTheme.Header.Resize = .56
@@ -699,8 +721,26 @@ moveFrameXY(TextScrollFrame.ScrollBar, "BOTTOMLEFT", "BOTTOMRIGHT", 0, -47);
 
 TextDisplayFrame.TextScrollChild = CreateFrame("Frame", "LoreKTextScrollChild", TextScrollFrame);
 local TextScrollChild = TextDisplayFrame.TextScrollChild;
-TextScrollChild:SetSize(TextScrollFrame:GetWidth()-10, 1); -- Height will adjust based on content
+TextScrollChild:SetHeight(1);
 TextScrollFrame:SetScrollChild(TextScrollChild);
+
+local _origSetText
+
+--horrible thing i had to do to make the text actually resize with the frame
+TextScrollFrame:SetScript("OnSizeChanged", function(self, width, height)
+	local childWidth = width - 10;
+	TextScrollChild:SetWidth(childWidth);
+	if TextScrollChild.textHTML then
+		TextScrollChild.textHTML:SetWidth(childWidth - 20);
+		if TextScrollChild.textHTML._lastText then
+			_origSetText(
+				TextScrollChild.textHTML,
+				TextScrollChild.textHTML._lastText,
+				unpack(TextScrollChild.textHTML._lastTextArgs)
+			);
+		end
+	end
+end);
 
 --[[-- mess with later, this isn't the proper way to hide scrollbar when nothing can be scrolled
 local anchorsWithScrollBar = {
@@ -721,8 +761,8 @@ ScrollUtil.AddManagedScrollBarVisibilityBehavior(TextScrollFrame, TextScrollFram
 
 TextDisplayFrame.TitleBackdrop = CreateFrame("Frame", nil, TextDisplayFrame);
 local TitleBackdrop = TextDisplayFrame.TitleBackdrop;
-TitleBackdrop:SetPoint("BOTTOM", TextScrollFrame, "TOP", -11.5,3);
-TitleBackdrop:SetWidth(TextScrollFrame:GetWidth()+20);
+TitleBackdrop:SetPoint("BOTTOMLEFT", TextScrollFrame, "TOPLEFT", -21.5, 3);
+TitleBackdrop:SetPoint("BOTTOMRIGHT", TextScrollFrame, "TOPRIGHT", -1.5, 3);
 TitleBackdrop:SetHeight(48);
 TitleBackdrop.tex = TitleBackdrop:CreateTexture(nil, "ARTWORK", nil, 1);
 TitleBackdrop.tex:SetAllPoints(true);
@@ -761,7 +801,15 @@ TextScrollChild.textTitle:SetJustifyV("MIDDLE");
 TextScrollChild.textHTML = CreateFrame("SimpleHTML", nil, TextDisplayFrame.TextScrollChild);
 TextScrollChild.textHTML:SetPoint("TOP", TextScrollChild, "TOP", 0, 0);
 TextScrollChild.textHTML:SetPoint("BOTTOM", TextScrollChild, "BOTTOM", 0, 0);
-TextScrollChild.textHTML:SetWidth(TextScrollChild:GetWidth()-50);
+
+--horrible thing i had to do to make the text actually resize with the frame
+_origSetText = TextScrollChild.textHTML.SetText;
+TextScrollChild.textHTML.SetText = function(self, text, ...)
+	self._lastText = text;
+	self._lastTextArgs = { ... };
+	return _origSetText(self, text, ...);
+end;
+
 
 -- Set the font for different HTML tags
 TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["default"]["H1"]:GetFont());
@@ -2819,17 +2867,17 @@ function LoreKGUI.Initialize(self, event, arg1)
 			LoreK_DB["settings"]["holidayThemes"] = true;
 		end
 		if LoreK_DB["settings"]["searchMenu"].onlyMapData == nil then
-             LoreK_DB["settings"]["searchMenu"].onlyMapData = false
-        end
-        if LoreK_DB["settings"]["searchMenu"].filterClass == nil then
-             LoreK_DB["settings"]["searchMenu"].filterClass = "ALL"
-        end
-        if not LoreK_DB["settings"]["searchMenu"].expansion then
-             LoreK_DB["settings"]["searchMenu"].expansion = {}
-             for i = 0, LE_EXPANSION_LEVEL_CURRENT do
-                 LoreK_DB["settings"]["searchMenu"].expansion[i] = true
-             end
-        end
+			 LoreK_DB["settings"]["searchMenu"].onlyMapData = false
+		end
+		if LoreK_DB["settings"]["searchMenu"].filterClass == nil then
+			 LoreK_DB["settings"]["searchMenu"].filterClass = "ALL"
+		end
+		if not LoreK_DB["settings"]["searchMenu"].expansion then
+			 LoreK_DB["settings"]["searchMenu"].expansion = {}
+			 for i = 0, LE_EXPANSION_LEVEL_CURRENT do
+				 LoreK_DB["settings"]["searchMenu"].expansion[i] = true
+			 end
+		end
 		TTSSettings.QueuePages_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["queuePages"]);
 		TTSSettings.PhoneticReplace_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["phonetics"]);
 		TTSSettings.VolumeSlider.Slider:SetValue(LoreK_DB["settings"]["TTSSettings"]["volume"]);
