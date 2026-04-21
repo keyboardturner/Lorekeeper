@@ -4,6 +4,8 @@
 
 Updated Cinematic data
 
+Updated Items data
+
 Adjusted frame to be resizable
 
 # 0.4.2
