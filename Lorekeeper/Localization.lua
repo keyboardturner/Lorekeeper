@@ -47,18 +47,26 @@ if LOCALE == "enUS" then
 	LK["AddonDisabled"] = "Plugin AddOn is disabled."
 	LK["ColorPicker"] = COLOR_PICKER
 	LK["SampleText"] = [[
-<html>
-<body>
-<br />
-<h1 align="center">Header 1</h1>
-<p>This is a paragraph under header 1.</p>
-<h2 align="right">Header 2</h2>
-<p>This is a paragraph under header 2.</p>
-<h3>Header 3</h3>
-<p>This is a paragraph under header 3.</p>
-<p align="center">This paragraph is centered under header 3.</p>
-</body>
-</html>
+<HTML><BODY>
+<BR/>
+<H1 align="center">Header 1</H1>
+<HR/>
+<P>
+This is a paragraph under header 1.
+</P>
+<H2 align="right">Header 2</H2>
+<HR/>
+<P>
+This is a paragraph under header 2.
+</P>
+<H3>Header 3</H3>
+<HR/>
+<P>
+This is a paragraph under header 3.
+</P>
+<P align="center">This paragraph is centered under header 3.</P>
+</BODY>
+</HTML>
 ]]
 	LK["SampleTitle"] = "Placeholder Title"
 	LK["TextMaterial"] = "Material"

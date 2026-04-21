@@ -2207,34 +2207,37 @@ CopyTextFrame:Hide();
 
 
 LoreKGUI.OptionsDisplayFrame = CreateFrame("Frame", nil, LoreKGUI.SettingsPanel, "InsetFrameTemplate3");
-LoreKGUI.OptionsDisplayFrame:SetWidth(230);
+LoreKGUI.OptionsDisplayFrame:SetWidth(210);
 LoreKGUI.OptionsDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.SettingsPanel, "TOPLEFT", 0, -65);
 LoreKGUI.OptionsDisplayFrame:SetPoint("BOTTOMLEFT", LoreKGUI.SettingsPanel, "BOTTOMLEFT", 0, 30);
 
 LoreKGUI.SettingsDisplayFrame = CreateFrame("Frame", nil, LoreKGUI.SettingsPanel, "InsetFrameTemplate4");
 local SettingsDisplayFrame = LoreKGUI.SettingsDisplayFrame;
-SettingsDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.SettingsPanel, "TOPLEFT", 0, -65);
-SettingsDisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI.SettingsPanel, "BOTTOMRIGHT",-20, 30);
+SettingsDisplayFrame:SetPoint("TOPLEFT", LoreKGUI.OptionsDisplayFrame, "TOPRIGHT", 19, 0);
+SettingsDisplayFrame:SetPoint("BOTTOMRIGHT", LoreKGUI.SettingsPanel, "BOTTOMRIGHT", -20, 30);
+
 SettingsDisplayFrame.tex = SettingsDisplayFrame:CreateTexture()
-SettingsDisplayFrame.tex:SetPoint("TOPLEFT", SettingsDisplayFrame, "TOPLEFT", 2, -2);
-SettingsDisplayFrame.tex:SetPoint("BOTTOMRIGHT", SettingsDisplayFrame, "BOTTOMRIGHT", -2, 2);
+SettingsDisplayFrame.tex:SetPoint("TOPLEFT", SettingsDisplayFrame, "TOPLEFT", 3, -3);
+SettingsDisplayFrame.tex:SetPoint("BOTTOMRIGHT", SettingsDisplayFrame, "BOTTOMRIGHT", -3, 3);
 SettingsDisplayFrame.tex:SetColorTexture(0, 0, 0, 0.5)
 
-LoreKGUI.SettingsScrollFrame = CreateFrame("ScrollFrame", nil, LoreKGUI.SettingsPanel, "ScrollFrameTemplate");
+LoreKGUI.SettingsScrollFrame = CreateFrame("ScrollFrame", "LoreKSettingsScrollFrame", LoreKGUI.OptionsDisplayFrame, "ScrollFrameTemplate");
 local SettingsScrollFrame = LoreKGUI.SettingsScrollFrame;
-SettingsScrollFrame:SetPoint("TOPLEFT", SettingsDisplayFrame, "TOPLEFT", 2, -5);
-SettingsScrollFrame:SetPoint("BOTTOMRIGHT", SettingsDisplayFrame, "BOTTOMRIGHT", -2, 3);
-moveFrameXY(SettingsScrollFrame.ScrollBar, "TOPLEFT", "TOPRIGHT", 0, -5);
-moveFrameXY(SettingsScrollFrame.ScrollBar, "BOTTOMLEFT", "BOTTOMRIGHT", 0, 3);
+SettingsScrollFrame:SetPoint("TOPLEFT", LoreKGUI.OptionsDisplayFrame, "TOPLEFT", 4, -5);
+SettingsScrollFrame:SetPoint("BOTTOMRIGHT", LoreKGUI.OptionsDisplayFrame, "BOTTOMRIGHT", 0, 3);
 
 LoreKGUI.SettingsScrollChild = CreateFrame("Frame", nil, SettingsScrollFrame);
 local SettingsScrollChild = LoreKGUI.SettingsScrollChild;
-SettingsScrollChild:SetSize(SettingsScrollFrame:GetWidth()-8, 1); -- Height will adjust based on content
+SettingsScrollChild:SetSize(SettingsScrollFrame:GetWidth(), 1); -- Height will adjust based on content
 SettingsScrollFrame:SetScrollChild(SettingsScrollChild);
 SettingsScrollChild:SetPoint("TOP", SettingsScrollFrame, "TOP", 0, 0);
 
+SettingsScrollFrame.ScrollBar:ClearAllPoints();
+SettingsScrollFrame.ScrollBar:SetPoint("TOPLEFT", SettingsScrollFrame, "TOPRIGHT", 5, 0);
+SettingsScrollFrame.ScrollBar:SetPoint("BOTTOMLEFT", SettingsScrollFrame, "BOTTOMRIGHT", 5, 0);
+
 local settingsPanelXPlacer = -27
-local settingsPanelYPlacer = 20
+local settingsPanelYPlacer = 5
 
 SettingsDisplayFrame.hideUnread_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
 SettingsDisplayFrame.hideUnread_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*1);
@@ -2410,15 +2413,15 @@ SettingsDisplayFrame.ParchmentTypes = {
 
 };
 
-SettingsDisplayFrame.ParchmentPreview = CreateFrame("Frame", nil, SettingsScrollChild);
-SettingsDisplayFrame.ParchmentPreview:SetPoint("TOPRIGHT", SettingsScrollChild, "TOPRIGHT", 5, -35);
-SettingsDisplayFrame.ParchmentPreview:SetSize(TextDisplayFrame:GetWidth()-8,511-45);
+SettingsDisplayFrame.ParchmentPreview = CreateFrame("Frame", nil, SettingsDisplayFrame);
+SettingsDisplayFrame.ParchmentPreview:SetPoint("TOPLEFT", SettingsDisplayFrame, "TOPLEFT", 3, -3);
+SettingsDisplayFrame.ParchmentPreview:SetPoint("BOTTOMRIGHT", SettingsDisplayFrame, "BOTTOMRIGHT", -3, 3);
 SettingsDisplayFrame.ParchmentPreview.tex = SettingsDisplayFrame.ParchmentPreview:CreateTexture(nil, "OVERLAY", nil, 1);
 SettingsDisplayFrame.ParchmentPreview.tex:SetAllPoints(true);
 
 SettingsDisplayFrame.TitlePreview = CreateFrame("Frame", nil, SettingsDisplayFrame.ParchmentPreview);
-SettingsDisplayFrame.TitlePreview:SetPoint("TOP", SettingsDisplayFrame.ParchmentPreview, "TOP", 0,36);
-SettingsDisplayFrame.TitlePreview:SetWidth(SettingsDisplayFrame.ParchmentPreview:GetWidth());
+SettingsDisplayFrame.TitlePreview:SetPoint("TOPLEFT", SettingsDisplayFrame.ParchmentPreview, "TOPLEFT", 1, -1);
+SettingsDisplayFrame.TitlePreview:SetPoint("TOPRIGHT", SettingsDisplayFrame.ParchmentPreview, "TOPRIGHT", -1, -1);
 SettingsDisplayFrame.TitlePreview:SetHeight(48);
 SettingsDisplayFrame.TitlePreview.tex = SettingsDisplayFrame.TitlePreview:CreateTexture(nil, "OVERLAY", nil, 2)
 SettingsDisplayFrame.TitlePreview.tex:SetAllPoints(true)
@@ -2478,28 +2481,48 @@ SettingsDisplayFrame.ParchmentDropdown:SetupMenu(function(dropdown, rootDescript
 end)
 SettingsDisplayFrame.ParchmentDropdown:SetEnabled(false);
 
-SettingsDisplayFrame.textHTML = CreateFrame("SimpleHTML", nil, SettingsDisplayFrame.ParchmentPreview);
-SettingsDisplayFrame.textHTML:SetPoint("TOP", SettingsDisplayFrame.ParchmentPreview, "TOP", 5, -10);
-SettingsDisplayFrame.textHTML:SetPoint("BOTTOM", SettingsDisplayFrame.ParchmentPreview, "BOTTOM", -5, 0);
-SettingsDisplayFrame.textHTML:SetWidth(SettingsDisplayFrame.ParchmentPreview:GetWidth()-33);
-
-SettingsDisplayFrame.textHTML:SetFont("h1", ITEM_TEXT_FONTS["default"]["H1"]:GetFont());
-SettingsDisplayFrame.textHTML:SetFont("h2", ITEM_TEXT_FONTS["default"]["H2"]:GetFont());
-SettingsDisplayFrame.textHTML:SetFont("h3", ITEM_TEXT_FONTS["default"]["H3"]:GetFont());
-SettingsDisplayFrame.textHTML:SetFont("p", ITEM_TEXT_FONTS["default"]["P"]:GetFont());
-SettingsDisplayFrame.textHTML:SetJustifyH("p","LEFT");
-SettingsDisplayFrame.textHTML:SetText(LK["SampleText"])
+--SettingsDisplayFrame.textHTML = CreateFrame("SimpleHTML", nil, SettingsDisplayFrame.ParchmentPreview);
+--SettingsDisplayFrame.textHTML:SetPoint("TOPLEFT", SettingsDisplayFrame.ParchmentPreview, "TOPLEFT", 25, -90);
+--SettingsDisplayFrame.textHTML:SetPoint("BOTTOMRIGHT", SettingsDisplayFrame.ParchmentPreview, "BOTTOMRIGHT", -25, 10);
+--
+--SettingsDisplayFrame.textHTML:SetFont("h1", ITEM_TEXT_FONTS["default"]["H1"]:GetFont());
+--SettingsDisplayFrame.textHTML:SetFont("h2", ITEM_TEXT_FONTS["default"]["H2"]:GetFont());
+--SettingsDisplayFrame.textHTML:SetFont("h3", ITEM_TEXT_FONTS["default"]["H3"]:GetFont());
+--SettingsDisplayFrame.textHTML:SetFont("p", ITEM_TEXT_FONTS["default"]["P"]:GetFont());
+--SettingsDisplayFrame.textHTML:SetJustifyH("h1","CENTER");
+--SettingsDisplayFrame.textHTML:SetJustifyH("h2","RIGHT");
+--SettingsDisplayFrame.textHTML:SetText(LK["SampleText"])
 
 SettingsDisplayFrame.textHTMLLarge = CreateFrame("SimpleHTML", nil, SettingsDisplayFrame.ParchmentPreview);
-SettingsDisplayFrame.textHTMLLarge:SetPoint("TOP", SettingsDisplayFrame.ParchmentPreview, "TOP", 5, -160);
-SettingsDisplayFrame.textHTMLLarge:SetPoint("BOTTOM", SettingsDisplayFrame.ParchmentPreview, "BOTTOM", -5, 0);
-SettingsDisplayFrame.textHTMLLarge:SetWidth(SettingsDisplayFrame.ParchmentPreview:GetWidth()-33);
+SettingsDisplayFrame.textHTMLLarge:SetPoint("TOPLEFT", SettingsDisplayFrame.ParchmentPreview, "TOPLEFT", 25, -55);
+SettingsDisplayFrame.textHTMLLarge:SetPoint("BOTTOMRIGHT", SettingsDisplayFrame.ParchmentPreview, "BOTTOMRIGHT", -25, 10);
 
 SettingsDisplayFrame.textHTMLLarge:SetFont("h1", ITEM_TEXT_FONTS["ParchmentLarge"]["H1"]:GetFont());
 SettingsDisplayFrame.textHTMLLarge:SetFont("h2", ITEM_TEXT_FONTS["ParchmentLarge"]["H2"]:GetFont());
 SettingsDisplayFrame.textHTMLLarge:SetFont("h3", ITEM_TEXT_FONTS["ParchmentLarge"]["H3"]:GetFont());
 SettingsDisplayFrame.textHTMLLarge:SetFont("p", ITEM_TEXT_FONTS["ParchmentLarge"]["P"]:GetFont());
-SettingsDisplayFrame.textHTMLLarge:SetJustifyH("p","LEFT");
+SettingsDisplayFrame.textHTMLLarge:SetJustifyH("h1","CENTER");
+SettingsDisplayFrame.textHTMLLarge:SetJustifyH("h2","RIGHT");
+
+local _origSetTextLarge = SettingsDisplayFrame.textHTMLLarge.SetText;
+SettingsDisplayFrame.textHTMLLarge.SetText = function(self, text, ...)
+	self._lastText = text;
+	self._lastTextArgs = { ... };
+	return _origSetTextLarge(self, text, ...);
+end;
+
+SettingsDisplayFrame.ParchmentPreview:SetScript("OnSizeChanged", function(self, width, height)
+	local innerWidth = width - 50;
+	SettingsDisplayFrame.textHTMLLarge:SetWidth(innerWidth);
+	if SettingsDisplayFrame.textHTMLLarge._lastText then
+		_origSetTextLarge(
+			SettingsDisplayFrame.textHTMLLarge,
+			SettingsDisplayFrame.textHTMLLarge._lastText,
+			unpack(SettingsDisplayFrame.textHTMLLarge._lastTextArgs)
+		);
+	end
+end);
+
 SettingsDisplayFrame.textHTMLLarge:SetText(LK["SampleText"])
 
 
@@ -2764,10 +2787,10 @@ function LoreKGUI.SetColors()
 
 	SettingsDisplayFrame.textTitlePreview:SetTextColor(ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["titleText"]));  -- dummy text
 	TextScrollChild.textTitle:SetTextColor(ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["titleText"])); -- actual text
-	SettingsDisplayFrame.textHTML:SetTextColor("h1", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h1"])); -- dummy text
-	SettingsDisplayFrame.textHTML:SetTextColor("h2", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h2"]));
-	SettingsDisplayFrame.textHTML:SetTextColor("h3", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h3"]));
-	SettingsDisplayFrame.textHTML:SetTextColor("p", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["p"]));
+	--SettingsDisplayFrame.textHTML:SetTextColor("h1", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h1"])); -- dummy text
+	--SettingsDisplayFrame.textHTML:SetTextColor("h2", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h2"]));
+	--SettingsDisplayFrame.textHTML:SetTextColor("h3", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h3"]));
+	--SettingsDisplayFrame.textHTML:SetTextColor("p", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["p"]));
 
 	SettingsDisplayFrame.textHTMLLarge:SetTextColor("h1", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h1"])); -- dummy text
 	SettingsDisplayFrame.textHTMLLarge:SetTextColor("h2", ColorMixin.GetRGBA(LoreK_DB["settings"]["colors"]["h2"]));
@@ -2789,7 +2812,7 @@ function LoreKGUI.SetFontSizeP()
 		};
 	end;
 
-	SettingsDisplayFrame.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"] or 13, flags);  -- dummy text
+	--SettingsDisplayFrame.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"] or 13, flags);  -- dummy text
 	SettingsDisplayFrame.textHTMLLarge:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"] or 13, flags); -- dummy text
 	TextScrollChild.textHTML:SetFont("p", fontFile, LoreK_DB["settings"]["fontSizeP"]["height"] or 13, flags);
 end;

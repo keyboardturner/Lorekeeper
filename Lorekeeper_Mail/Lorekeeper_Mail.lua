@@ -153,7 +153,7 @@ TextScrollFrame:SetScrollChild(TextScrollChild);
 MailTextDisplayFrame.TitleBackdrop = CreateFrame("Frame", nil, MailTextDisplayFrame);
 local TitleBackdrop = MailTextDisplayFrame.TitleBackdrop;
 TitleBackdrop:SetPoint("BOTTOM", TextScrollFrame, "TOP", -11.5,3);
-TitleBackdrop:SetWidth(TextScrollFrame:GetWidth()+20);
+TitleBackdrop:SetPoint("BOTTOMRIGHT", TextScrollFrame, "TOPRIGHT", -1.5, 3);
 TitleBackdrop:SetHeight(48);
 TitleBackdrop.tex = TitleBackdrop:CreateTexture()
 TitleBackdrop.tex:SetAllPoints(true)
@@ -170,7 +170,28 @@ TextScrollChild.textTitle:SetJustifyV("MIDDLE");
 TextScrollChild.textHTML = CreateFrame("SimpleHTML", nil, MailTextDisplayFrame.TextScrollChild);
 TextScrollChild.textHTML:SetPoint("TOP", TextScrollChild, "TOP", 0, 0);
 TextScrollChild.textHTML:SetPoint("BOTTOM", TextScrollChild, "BOTTOM", 0, 0);
-TextScrollChild.textHTML:SetWidth(TextScrollChild:GetWidth()-50);
+
+local _origMailSetText = TextScrollChild.textHTML.SetText;
+TextScrollChild.textHTML.SetText = function(self, text, ...)
+	self._lastText = text;
+	self._lastTextArgs = { ... };
+	return _origMailSetText(self, text, ...);
+end;
+
+TextScrollFrame:SetScript("OnSizeChanged", function(self, width, height)
+	local childWidth = width - 10;
+	TextScrollChild:SetWidth(childWidth);
+	if TextScrollChild.textHTML then
+		TextScrollChild.textHTML:SetWidth(childWidth - 20);
+		if TextScrollChild.textHTML._lastText then
+			_origMailSetText(
+				TextScrollChild.textHTML,
+				TextScrollChild.textHTML._lastText,
+				unpack(TextScrollChild.textHTML._lastTextArgs)
+			);
+		end
+	end
+end);
 
 -- Set the font for different HTML tags
 TextScrollChild.textHTML:SetFont("h1", ITEM_TEXT_FONTS["default"]["H1"]:GetFont());

@@ -282,8 +282,8 @@ ItemsTextDisplayFrame.bg:SetAtlas("QuestBG-Parchment")
 
 ItemsTextDisplayFrame.TitleBackdrop = CreateFrame("Frame", nil, ItemsTextDisplayFrame)
 local TitleBackdrop = ItemsTextDisplayFrame.TitleBackdrop
-TitleBackdrop:SetPoint("TOP", ItemsTextDisplayFrame, "TOP", 0, -4)
-TitleBackdrop:SetWidth(ItemsTextDisplayFrame:GetWidth()-7)
+TitleBackdrop:SetPoint("TOPLEFT", ItemsTextDisplayFrame, "TOPLEFT", 4, -4);
+TitleBackdrop:SetPoint("TOPRIGHT", ItemsTextDisplayFrame, "TOPRIGHT", -4, -4);
 TitleBackdrop:SetHeight(48)
 TitleBackdrop.tex = TitleBackdrop:CreateTexture()
 TitleBackdrop.tex:SetAllPoints(true)
