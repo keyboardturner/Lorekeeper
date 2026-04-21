@@ -58,6 +58,8 @@ LK["LocalData"] = {
 
 
 local PLACEHOLDER_VALUE
+-- during the undermine patch, ringing deeps map got moved, so all the map coords are off.
+local Adjuster_RingingDeeps = .0419
 
 local LOCALE = GetLocale()
 
@@ -882,7 +884,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["mapData"] = {
 					[2214] = {
-						0.5437090992927551,
+						0.5437090992927551-Adjuster_RingingDeeps,
 						0.5488147735595703,
 					},
 				},
@@ -950,7 +952,7 @@ LK["LocalData"] = {
 				["material"] = "Stone",
 				["mapData"] = {
 					[2214] = {
-						0.4692204594612122,
+						0.4692204594612122-Adjuster_RingingDeeps,
 						0.3163533806800842,
 					},
 				},
@@ -970,7 +972,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["mapData"] = {
 					[2214] = {
-						0.5020961761474609,
+						0.5020961761474609-Adjuster_RingingDeeps,
 						0.5819257497787476,
 					},
 				},
@@ -1085,7 +1087,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["mapData"] = {
 					[2214] = {
-						0.5492526292800903,
+						0.5492526292800903-Adjuster_RingingDeeps,
 						0.598759651184082,
 					},
 				},
@@ -1147,7 +1149,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["mapData"] = {
 					[2214] = {
-						0.7138373851776123,
+						0.7138373851776123-Adjuster_RingingDeeps,
 						0.4249337911605835,
 					},
 				},
@@ -1277,7 +1279,7 @@ LK["LocalData"] = {
 				["material"] = "Stone",
 				["mapData"] = {
 					[2214] = {
-						0.4793541431427002,
+						0.4793541431427002-Adjuster_RingingDeeps,
 						0.3218160271644592,
 					},
 				},
@@ -1297,7 +1299,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["mapData"] = {
 					[2214] = {
-						0.6491086483001709,
+						0.6491086483001709-Adjuster_RingingDeeps,
 						0.561814546585083,
 					},
 				},
@@ -1323,7 +1325,7 @@ LK["LocalData"] = {
 				["material"] = "Stone",
 				["mapData"] = {
 					[2214] = {
-						0.4895957112312317,
+						0.4895957112312317-Adjuster_RingingDeeps,
 						0.1731525659561157,
 					},
 				},
@@ -1445,7 +1447,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["mapData"] = {
 					[2214] = {
-						0.5388758778572083,
+						0.5388758778572083-Adjuster_RingingDeeps,
 						0.5845661163330078,
 					},
 				},
@@ -1543,7 +1545,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["mapData"] = {
 					[2214] = {
-						0.5143796801567078,
+						0.5143796801567078-Adjuster_RingingDeeps,
 						0.7240347862243652,
 					},
 				},
@@ -1617,7 +1619,7 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["mapData"] = {
 					[2214] = {
-						0.3934671878814697,
+						0.3934671878814697-Adjuster_RingingDeeps,
 						0.1739236116409302,
 					},
 				},
@@ -2816,7 +2818,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.4589266777038574,
+						0.4589266777038574-Adjuster_RingingDeeps,
 						0.2883739471435547,
 					},
 				},
@@ -2834,7 +2836,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.4589266777038574,
+						0.4589266777038574-Adjuster_RingingDeeps,
 						0.2883739471435547,
 					},
 				},
@@ -3194,7 +3196,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.636680006980896,
+						0.636680006980896-Adjuster_RingingDeeps,
 						0.587612509727478,
 					},
 				},
@@ -3212,7 +3214,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.636680006980896,
+						0.636680006980896-Adjuster_RingingDeeps,
 						0.587612509727478,
 					},
 				},
@@ -3405,7 +3407,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.3989840745925903,
+						0.3989840745925903-Adjuster_RingingDeeps,
 						0.209341824054718,
 					},
 				},
@@ -3423,7 +3425,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.3989240527153015,
+						0.3989240527153015-Adjuster_RingingDeeps,
 						0.2098237872123718,
 					},
 				},
@@ -3463,7 +3465,7 @@ LK["LocalData"] = {
 				["material"] = "Silver",
 				["mapData"] = {
 					[2214] = {
-						0.5919100642204285,
+						0.5919100642204285-Adjuster_RingingDeeps,
 						0.9369302988052368,
 					},
 				},
@@ -3483,7 +3485,7 @@ LK["LocalData"] = {
 				["material"] = "Silver",
 				["mapData"] = {
 					[2214] = {
-						0.4432734251022339,
+						0.4432734251022339-Adjuster_RingingDeeps,
 						0.1356471180915833,
 					},
 				},
@@ -3541,7 +3543,7 @@ LK["LocalData"] = {
 				["material"] = "Silver",
 				["mapData"] = {
 					[2214] = {
-						0.4858930706977844,
+						0.4858930706977844-Adjuster_RingingDeeps,
 						0.3174393773078919,
 					},
 				},
@@ -3596,7 +3598,7 @@ LK["LocalData"] = {
 				["material"] = "Bronze",
 				["mapData"] = {
 					[2214] = {
-						0.5506372451782227,
+						0.5506372451782227-Adjuster_RingingDeeps,
 						0.3021596670150757,
 					},
 				},
@@ -3616,7 +3618,7 @@ LK["LocalData"] = {
 				["material"] = "Silver",
 				["mapData"] = {
 					[2214] = {
-						0.6284451484680176,
+						0.6284451484680176-Adjuster_RingingDeeps,
 						0.3635792136192322,
 					},
 				},
@@ -3636,7 +3638,7 @@ LK["LocalData"] = {
 				["material"] = "Bronze",
 				["mapData"] = {
 					[2214] = {
-						0.4934879541397095,
+						0.4934879541397095-Adjuster_RingingDeeps,
 						0.4903172850608826,
 					},
 				},
@@ -3697,7 +3699,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.5109519362449646,
+						0.5109519362449646-Adjuster_RingingDeeps,
 						0.1454302668571472,
 					},
 				},
@@ -3715,7 +3717,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.5107366442680359,
+						0.5107366442680359-Adjuster_RingingDeeps,
 						0.1451387405395508,
 					},
 				},
@@ -3832,7 +3834,7 @@ LK["LocalData"] = {
 				["material"] = "Silver",
 				["mapData"] = {
 					[2214] = {
-						0.6404616832733154,
+						0.6404616832733154-Adjuster_RingingDeeps,
 						0.5573855638504028,
 					},
 				},
@@ -3895,7 +3897,7 @@ LK["LocalData"] = {
 				["material"] = "Bronze",
 				["mapData"] = {
 					[2214] = {
-						0.6543798446655273,
+						0.6543798446655273-Adjuster_RingingDeeps,
 						0.8379828929901123,
 					},
 				},
@@ -3935,7 +3937,7 @@ LK["LocalData"] = {
 				["material"] = "Bronze",
 				["mapData"] = {
 					[2214] = {
-						0.4314517974853516,
+						0.4314517974853516-Adjuster_RingingDeeps,
 						0.4088149666786194,
 					},
 				},
@@ -3955,7 +3957,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.650971531867981,
+						0.650971531867981-Adjuster_RingingDeeps,
 						0.7950448393821716,
 					},
 				},
@@ -3973,7 +3975,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.650770902633667,
+						0.650770902633667-Adjuster_RingingDeeps,
 						0.7954450845718384,
 					},
 				},
@@ -4169,7 +4171,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.4889709949493408,
+						0.4889709949493408-Adjuster_RingingDeeps,
 						0.2591723203659058,
 					},
 				},
@@ -4187,7 +4189,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.489435613155365,
+						0.489435613155365-Adjuster_RingingDeeps,
 						0.2592270374298096,
 					},
 				},
@@ -4207,7 +4209,7 @@ LK["LocalData"] = {
 				["material"] = "Bronze",
 				["mapData"] = {
 					[2214] = {
-						0.4852069020271301,
+						0.4852069020271301-Adjuster_RingingDeeps,
 						0.7066587209701538,
 					},
 				},
@@ -13342,7 +13344,7 @@ LK["LocalData"] = {
 				["material"] = "Bronze",
 				["mapData"] = {
 					[2214] = {
-						0.6278744339942932,
+						0.6278744339942932-Adjuster_RingingDeeps,
 						0.4427830576896668,
 					},
 				},
@@ -18376,7 +18378,7 @@ LK["LocalData"] = {
 				["material"] = "Stone",
 				["mapData"] = {
 					[2214] = {
-						0.5832879543304443,
+						0.5832879543304443-Adjuster_RingingDeeps,
 						0.3218180537223816,
 					},
 				},
@@ -27782,7 +27784,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.7292358875274658,
+						0.7292358875274658-Adjuster_RingingDeeps,
 						0.7316287755966187,
 					},
 				},
@@ -28011,7 +28013,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.6725861430168152,
+						0.6725861430168152-Adjuster_RingingDeeps,
 						0.9808631539344788,
 					},
 				},
@@ -33523,7 +33525,7 @@ LK["LocalData"] = {
 				["material"] = "Parchment",
 				["mapData"] = {
 					[2214] = {
-						0.6728359460830688,
+						0.6728359460830688-Adjuster_RingingDeeps,
 						0.9807050824165344,
 					},
 				},

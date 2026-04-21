@@ -1,3 +1,7 @@
+# 0.4.3a
+
+Adjusted map location data for The Ringing Deeps to shift them to the left (they were gathered before Undermine)
+
 # 0.4.3
 
 Localdata Update 11 - (85 personal entries + 39 Anonymous User 20 entries)
