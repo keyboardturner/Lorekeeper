@@ -2,6 +2,8 @@
 
 12.0.5 toc update
 
+Adjusted frame to be resizable
+
 # 0.4.2
 
 Added play function for Intercession cinematic
