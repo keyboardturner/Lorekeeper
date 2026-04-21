@@ -2,6 +2,8 @@
 
 12.0.5 toc update
 
+Updated Cinematic data
+
 Adjusted frame to be resizable
 
 # 0.4.2
