@@ -150,6 +150,10 @@ This is a paragraph under header 3.
 	LK["Variant"] = "Variant"
 	LK["Saved"] = "Saved"
 	LK["HasMapLocation"] = "Has Map Location"
+	LK["MapPins_ShowCollected"] = "Show Collected Map Pins"
+	LK["MapPins_ShowCollectedTT"] = "Shows greyed-out pins for books you have already collected."
+	LK["MapPins_HideAll"] = "Hide All Map Pins"
+	LK["MapPins_HideAllTT"] = "Hides all Lorekeeper scroll icons from the world map."
 
 return end
 
@@ -272,6 +276,10 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["Variant"] = "Variante"
 	LK["Saved"] = "Guardado"
 	LK["HasMapLocation"] = "Tiene ubicación en el mapa"
+	LK["MapPins_ShowCollected"] = "Mostrar puntos del mapa coleccionados"
+	LK["MapPins_ShowCollectedTT"] = "Muestra puntos atenuados para los libros que ya has recogido."
+	LK["MapPins_HideAll"] = "Ocultar todos los puntos del mapa"
+	LK["MapPins_HideAllTT"] = "Oculta todos los iconos de pergaminos de Lorekeeper del mapa del mundo."
 
 return end
 
@@ -394,6 +402,10 @@ if LOCALE == "deDE" then
 	LK["Variant"] = "Variante"
 	LK["Saved"] = "Gespeichert"
 	LK["HasMapLocation"] = "Hat eine Kartenposition"
+	LK["MapPins_ShowCollected"] = "Gesammelte Kartenmarkierungen anzeigen"
+	LK["MapPins_ShowCollectedTT"] = "Zeigt ausgegraute Markierungen für Bücher, die du bereits gesammelt hast."
+	LK["MapPins_HideAll"] = "Alle Kartenmarkierungen ausblenden"
+	LK["MapPins_HideAllTT"] = "Blendet alle Schriftrollen-Symbole des Hüters der Lehren auf der Weltkarte aus."
 
 return end
 
@@ -516,6 +528,10 @@ if LOCALE == "frFR" then
 	LK["Variant"] = "Variante"
 	LK["Saved"] = "Enregistré"
 	LK["HasMapLocation"] = "Possède un emplacement sur la carte"
+	LK["MapPins_ShowCollected"] = "Afficher les repères déjà collectés"
+	LK["MapPins_ShowCollectedTT"] = "Affiche des repères grisés pour les livres que vous avez déjà collectés."
+	LK["MapPins_HideAll"] = "Masquer tous les repères"
+	LK["MapPins_HideAllTT"] = "Masque toutes les icônes de parchemins du Gardien du savoir sur la carte du monde."
 
 return end
 
@@ -638,6 +654,10 @@ if LOCALE == "itIT" then
 	LK["Variant"] = "Variante"
 	LK["Saved"] = "Salvato"
 	LK["HasMapLocation"] = "Ha una posizione sulla mappa"
+	LK["MapPins_ShowCollected"] = "Mostra segnalini mappa raccolti"
+	LK["MapPins_ShowCollectedTT"] = "Mostra segnalini in grigio per i libri che hai già raccolto."
+	LK["MapPins_HideAll"] = "Nascondi tutti i segnalini mappa"
+	LK["MapPins_HideAllTT"] = "Nasconde tutte le icone delle pergamene del Custode del sapere dalla mappa del mondo."
 
 return end
 
@@ -760,6 +780,10 @@ if LOCALE == "ptBR" then
 	LK["Variant"] = "Variante"
 	LK["Saved"] = "Salvo"
 	LK["HasMapLocation"] = "Possui localização no mapa"
+	LK["MapPins_ShowCollected"] = "Mostrar marcadores coletados"
+	LK["MapPins_ShowCollectedTT"] = "Mostra marcadores acinzentados para livros que você já coletou."
+	LK["MapPins_HideAll"] = "Ocultar todos os marcadores do mapa"
+	LK["MapPins_HideAllTT"] = "Oculta todos os ícones de pergaminho do Guardião do Conhecimento do mapa-múndi."
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -884,6 +908,10 @@ if LOCALE == "ruRU" then
 	LK["Variant"] = "Вариант"
 	LK["Saved"] = "Сохранено"
 	LK["HasMapLocation"] = "Имеет местоположение на карте"
+	LK["MapPins_ShowCollected"] = "Показывать собранные метки карты"
+	LK["MapPins_ShowCollectedTT"] = "Показывает затемнённые метки для уже собранных книг."
+	LK["MapPins_HideAll"] = "Скрыть все метки карты"
+	LK["MapPins_HideAllTT"] = "Скрывает все значки свитков Хранителя знаний на карте мира."
 
 
 return end
@@ -1007,6 +1035,10 @@ if LOCALE == "koKR" then
 	LK["Variant"] = "변형"
 	LK["Saved"] = "저장됨"
 	LK["HasMapLocation"] = "지도 위치 있음"
+	LK["MapPins_ShowCollected"] = "수집한 지도 핀 표시"
+	LK["MapPins_ShowCollectedTT"] = "이미 수집한 책에 대해 회색으로 표시된 핀을 표시합니다."
+	LK["MapPins_HideAll"] = "모든 지도 핀 숨기기"
+	LK["MapPins_HideAllTT"] = "세계 지도에서 모든 로어키퍼 두루마리 아이콘을 숨깁니다."
 
 
 return end
@@ -1130,6 +1162,11 @@ if LOCALE == "zhCN" then
 	LK["Variant"] = "变体"
 	LK["Saved"] = "已保存"
 	LK["HasMapLocation"] = "有地图位置"
+	LK["MapPins_ShowCollected"] = "显示已收集的地图标记"
+	LK["MapPins_ShowCollectedTT"] = "为已收集的书籍显示灰显标记。"
+	LK["MapPins_HideAll"] = "隐藏所有地图标记"
+	LK["MapPins_HideAllTT"] = "在世界地图上隐藏所有博学者卷轴图标。"
+
 
 
 return end
@@ -1253,6 +1290,10 @@ if LOCALE == "zhTW" then
 	LK["Variant"] = "变体"
 	LK["Saved"] = "已儲存"
 	LK["HasMapLocation"] = "有地圖位置"
+	LK["MapPins_ShowCollected"] = "顯示已收集的地圖標記"
+	LK["MapPins_ShowCollectedTT"] = "為已收集的書籍顯示灰色標記。"
+	LK["MapPins_HideAll"] = "隱藏所有地圖標記"
+	LK["MapPins_HideAllTT"] = "在世界地圖上隱藏所有博學者卷軸圖示。"
 
 
 return end

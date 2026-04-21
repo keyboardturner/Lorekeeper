@@ -6,6 +6,7 @@ license-output: LICENSE
 externals:
   Libs/Ace3: https://repos.curseforge.com/wow/ace3/trunk
   Libs/LibDBIcon-1.0: https://repos.curseforge.com/wow/libdbicon-1-0/trunk
+  Libs/HereBeDragons: https://repos.wowace.com/wow/herebedragons
 
 ignore:
   - Libs/*/*.rockspec
