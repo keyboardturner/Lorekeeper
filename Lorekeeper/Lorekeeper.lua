@@ -249,12 +249,14 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					slashRead = false,
 					debugAdvanced = false,
 					collectSound = false,
+					showCollectedPins = false,
+					hideAllPins = false,
 					searchMenu = {
 						showUnobtainable = false,
 						showClassrestricted = true,
 						showHidden = false,
-					showCollected = true,
-					showUnread = true,
+						showCollected = true,
+						showUnread = true,
 						expansion = {
 							classic = true,
 							tbc = true,
@@ -442,6 +444,8 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 					slashRead = false,
 					debugAdvanced = false,
 					collectSound = false,
+					showCollectedPins = false,
+					hideAllPins = false,
 					searchMenu = {
 						showUnobtainable = false,
 						showClassrestricted = true,
@@ -705,7 +709,7 @@ end
 local LoreK_DB = LibStub("LibDataBroker-1.1"):NewDataObject("Lorekeeper", {
 	type = "data source",
 	text = LK["Lorekeeper"],
-	icon = "Interface\\Icons\\inv_misc_book_16",
+	icon = "Interface\\AddOns\\Lorekeeper\\Assets\\Textures\\LorekeeperScroll_BG.png",
 	OnClick = OnMinimapButtonClicked,
 	OnTooltipShow = function(tt)
 		tt:SetText("|cFFFFF569"..LK["Lorekeeper"].."|r")

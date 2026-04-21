@@ -1,11 +1,19 @@
 local _, LK = ...
 
+local HBD = LibStub("HereBeDragons-2.0");
+local HBDPins = LibStub("HereBeDragons-Pins-2.0");
+local LOREKEEPER_MAP_PIN_TEXTURE = "Interface\\AddOns\\Lorekeeper\\Assets\\Textures\\LorekeeperScroll_Closed.png";
+
 -- Using Blizz's globally accessible frame fade function causes taint with the map
 -- So just add their own code in locally
 
 local FrameFaderDriver;
 local fadingFrames;
 local deferredFadingFrames;
+
+-- adding these here so they can be accessed earlier
+local ItemDataProvider;
+local ItemScrollBox;
 
 local defaultTTSSettings = {
 	queuePages = false,
@@ -251,6 +259,113 @@ local filteredItems = {};
 
 local allData = {};
 
+ -- Map Pins
+local mapPinFramePool = {};
+local mapPinFramesActive = {};
+
+local function AcquireMapPin()
+	local pin = table.remove(mapPinFramePool)
+	if not pin then
+		pin = CreateFrame("Frame");
+		pin:EnableMouse(true);
+		pin.tex = pin:CreateTexture(nil, "OVERLAY");
+		pin.tex:SetAllPoints();
+	end
+	pin:Show();
+	tinsert(mapPinFramesActive, pin);
+	return pin;
+end
+
+local function ReleasePins()
+	for _, pin in ipairs(mapPinFramesActive) do
+		pin:Hide();
+		tinsert(mapPinFramePool, pin);
+	end
+	wipe(mapPinFramesActive);
+end
+
+local function RefreshMapPins()
+	HBDPins:RemoveAllWorldMapIcons("Lorekeeper");
+	ReleasePins();
+
+	if not LoreK_DB or not LoreK_DB["settings"] then return end;
+	if LoreK_DB["settings"]["hideAllPins"] then return end;
+	if not allData then return end;
+
+	local showCollected = LoreK_DB["settings"]["showCollectedPins"];
+
+	for itemID, data in pairs(allData) do
+		local base = data["base"];
+		if base then
+			local mapData = base["mapData"];
+			if mapData then
+				local hasRead = base["hasRead"];
+
+				if not hasRead or showCollected then
+					local title = base["title"] or itemID;
+
+					for mapID, coords in pairs(mapData) do
+						local x, y = coords[1], coords[2];
+						if x and y and C_Map.GetMapInfo(mapID) then
+							local pin = AcquireMapPin();
+							pin:SetSize(20, 20);
+							pin.tex:SetTexture(LOREKEEPER_MAP_PIN_TEXTURE);
+
+							if hasRead then
+								pin.tex:SetVertexColor(0.6, 0.6, 0.6, 0.85);
+								pin.tex:SetDesaturated(true);
+							else
+								pin.tex:SetVertexColor(1, 1, 1, 1);
+								pin.tex:SetDesaturated(false);
+							end
+
+							local capturedTitle = title;
+							local capturedRead = hasRead;
+							local capturedItemID = itemID;
+							local capturedMapID = mapID;
+							local capturedX = x;
+							local capturedY = y;
+
+							pin:SetScript("OnEnter", function(self)
+								GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+								GameTooltip:AddLine(capturedTitle, 1, 1, 1);
+								if capturedRead then
+									GameTooltip:AddLine(LK["Collected"], 0, 1, 0);
+								else
+									GameTooltip:AddLine(LK["NotCollected"], 1, 0.65, 0);
+								end
+								GameTooltip:Show();
+							end)
+							pin:SetScript("OnLeave", function()
+								GameTooltip:Hide();
+							end)
+							pin:SetScript("OnMouseDown", function(self, button)
+								if IsControlKeyDown() then
+									WorldMapFrame:Show();
+									WorldMapFrame:SetMapID(capturedMapID);
+									C_Map.SetUserWaypoint(UiMapPoint.CreateFromVector2D(capturedMapID, CreateVector2D(capturedX, capturedY)));
+									C_SuperTrack.SetSuperTrackedUserWaypoint(true);
+									PlaySound(170270);
+								else
+									LK.LoreKGUI.SelectAndShowEntry(capturedItemID);
+								end
+							end)
+
+							HBDPins:AddWorldMapIconMap(
+								"Lorekeeper", pin,
+								mapID, x, y,
+								HBD_PINS_WORLDMAP_SHOW_PARENT
+							);
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
+LK.RefreshMapPins = RefreshMapPins;
+
 local function insertItems(dataSource, searchText)
 	for itemID, itemData in pairs(dataSource) do
 		if dataSource[itemID]["base"] and dataSource[itemID]["base"]["title"] then
@@ -272,7 +387,7 @@ local LoreKGUI = CreateFrame("Frame", "LoreKMainframe", UIParent, "PortraitFrame
 LK["LoreKGUI"] = LoreKGUI
 tinsert(UISpecialFrames, LoreKGUI:GetName());
 LK.LoreKGUI = LoreKGUI;
-LoreKGUI:SetPortraitTextureRaw("Interface\\ICONS\\inv_misc_book_16");
+LoreKGUI:SetPortraitTextureRaw("Interface\\AddOns\\Lorekeeper\\Assets\\Textures\\LorekeeperScroll_BG.png");
 LoreKGUI:SetSize(703, 606);
 LoreKGUI:SetPoint("CENTER", UIParent, "CENTER");
 LoreKGUI:SetClampedToScreen(true);
@@ -1086,8 +1201,74 @@ function LoreKGUI.UpdateTextDisplay(itemID)
 end
 
 --------------------------------------------------------------------------
--- Clean Data
+function LoreKGUI.SelectAndShowEntry(itemID)
+	if not itemID or not allData or not allData[itemID] then return end
 
+	LoreKGUI:Show();
+	Tab_OnClick(LoreKMainframeTab1);
+
+	LoreKGUI.SearchBox:SetText("");
+
+	local elementData = ItemDataProvider:FindByPredicate(function(data) -- made the local var earlier for this
+		return data.id == itemID;
+	end);
+
+	if not elementData then
+		LoreKGUI.UpdateTextDisplay(itemID);
+		return;
+	end
+
+	ItemScrollBox:ScrollToElementData(elementData, ScrollBoxConstants.AlignCenter);
+
+	RunNextFrame(function()
+		local frame = ItemScrollBox:FindFrame(elementData);
+		if frame then
+			LoreKGUI.SelectionBehavior:Select(frame);
+		end
+
+		C_VoiceChat.StopSpeakingText();
+		if TTSButton then -- it will get angery
+			TTSButton.textPlaying = false;
+		end
+		DeleteEntry:SetEnabled(true);
+		TextDisplayFrame.currentItemID = itemID;
+
+		local hasLocal = LK["LocalData"] and LK["LocalData"]["text"] and LK["LocalData"]["text"][itemID];
+		local svData = LoreK_DB["text"] and LoreK_DB["text"][itemID] and LoreK_DB["text"][itemID]["base"];
+		local hasSavedText = svData and svData["text"];
+		local hasCopies = false;
+
+		if allData[itemID] then
+			for k in pairs(allData[itemID]) do
+				if string.find(k, "copy_") then
+					hasCopies = true;
+					break;
+				end
+			end
+		end
+
+		if hasSavedText then
+			TextDisplayFrame.selectedVariant = "saved";
+		else
+			TextDisplayFrame.selectedVariant = "base";
+		end
+
+		if hasCopies or (hasLocal and hasSavedText) then
+			VariantDropdown:Show();
+			VariantDropdown:GenerateMenu();
+		else
+			VariantDropdown:Hide();
+		end
+
+		LoreKGUI.UpdateTextDisplay(itemID);
+		if TRP3Button then -- also will get angery
+			TRP3Button.ToggleTRP3Button();
+		end
+	end);
+end
+
+--------------------------------------------------------------------------
+-- Clean Data
 function LoreKGUI.CleanItemData(itemID)
 	if not itemID then return end;
 
@@ -1856,7 +2037,7 @@ local function ItemInitializer(button, data)
 end
 
 LoreKGUI.ItemScrollBox = CreateFrame("Frame", nil, ItemDisplayFrame, "WowScrollBoxList");
-local ItemScrollBox = LoreKGUI.ItemScrollBox;
+ItemScrollBox = LoreKGUI.ItemScrollBox;
 ItemScrollBox:SetPoint("TOPLEFT", ItemDisplayFrame, "TOPLEFT", 2, -25);
 ItemScrollBox:SetPoint("BOTTOMRIGHT", ItemDisplayFrame, "BOTTOMRIGHT", -2, 3);
 
@@ -1865,7 +2046,7 @@ local ItemScrollBar = ItemScrollBox.ItemScrollBar;
 ItemScrollBar:SetPoint("TOPLEFT", ItemScrollBox, "TOPRIGHT", 7, 20);
 ItemScrollBar:SetPoint("BOTTOMLEFT", ItemScrollBox, "BOTTOMRIGHT", 7, 0);
 
-local ItemDataProvider = CreateDataProvider();
+ItemDataProvider = CreateDataProvider();
 local ItemScrollView = CreateScrollBoxListLinearView();
 
 ScrollUtil.InitScrollBoxListWithScrollBar(ItemScrollBox, ItemScrollBar, ItemScrollView);
@@ -1968,6 +2149,8 @@ function LoreKGUI.PopulateList()
 	LoreKGUI.OnTextChanged(LoreKGUI.SearchBox);
 
 	TextCount.UpdateCount(countCurrent, unread, unobtainables, newTexts);
+
+	RefreshMapPins();
 end
 
 -- Search box
@@ -2683,7 +2866,7 @@ LK.MinimapCheckbox = SettingsDisplayFrame.minimap_Checkbox;
 --------------------------------------------------------------------------
 --Somewhere way below
 SettingsDisplayFrame.debug_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
-SettingsDisplayFrame.debug_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*16);
+SettingsDisplayFrame.debug_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*19);
 SettingsDisplayFrame.debug_Checkbox:SetScript("OnClick", function(self)
 	if self:GetChecked() then
 		LoreK_DB["settings"]["debugAdvanced"] = true;
@@ -2708,6 +2891,68 @@ SettingsDisplayFrame.debug_Checkbox:SetScript("OnEnter", function(self)
 	GameTooltip:Show();
 end);
 SettingsDisplayFrame.debug_Checkbox:SetScript("OnLeave", function(self)
+	GameTooltip:Hide()
+end);
+
+--------------------------------------------------------------------------
+-- Map Pin Settings
+SettingsDisplayFrame.showCollectedPins_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
+SettingsDisplayFrame.showCollectedPins_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*16);
+SettingsDisplayFrame.showCollectedPins_Checkbox:SetScript("OnClick", function(self)
+	if self:GetChecked() then
+		LoreK_DB["settings"]["showCollectedPins"] = true;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON, "SFX");
+	else
+		LoreK_DB["settings"]["showCollectedPins"] = false;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF, "SFX");
+	end
+	RefreshMapPins();
+end);
+SettingsDisplayFrame.showCollectedPins_Checkbox.Text:SetText(LK["MapPins_ShowCollected"] or "Show collected map pins");
+SettingsDisplayFrame.showCollectedPins_Checkbox.Text:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.showCollectedPins_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["MapPins_ShowCollectedTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.showCollectedPins_Checkbox.Text:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+SettingsDisplayFrame.showCollectedPins_Checkbox:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.showCollectedPins_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["MapPins_ShowCollectedTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.showCollectedPins_Checkbox:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+
+SettingsDisplayFrame.hideAllPins_Checkbox = CreateFrame("CheckButton", nil, SettingsScrollChild, "UICheckButtonTemplate");
+SettingsDisplayFrame.hideAllPins_Checkbox:SetPoint("TOPLEFT", SettingsScrollChild, "TOPLEFT", settingsPanelYPlacer, settingsPanelXPlacer*17);
+SettingsDisplayFrame.hideAllPins_Checkbox:SetScript("OnClick", function(self)
+	if self:GetChecked() then
+		LoreK_DB["settings"]["hideAllPins"] = true;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON, "SFX");
+	else
+		LoreK_DB["settings"]["hideAllPins"] = false;
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF, "SFX");
+	end
+	RefreshMapPins();
+end);
+SettingsDisplayFrame.hideAllPins_Checkbox.Text:SetText(LK["MapPins_HideAll"]);
+SettingsDisplayFrame.hideAllPins_Checkbox.Text:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.hideAllPins_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["MapPins_HideAllTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.hideAllPins_Checkbox.Text:SetScript("OnLeave", function(self)
+	GameTooltip:Hide();
+end);
+SettingsDisplayFrame.hideAllPins_Checkbox:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(SettingsDisplayFrame.hideAllPins_Checkbox, "ANCHOR_TOPLEFT");
+	GameTooltip:AddLine(LK["MapPins_HideAllTT"], 1, 1, 1, true);
+	GameTooltip:Show();
+end);
+SettingsDisplayFrame.hideAllPins_Checkbox:SetScript("OnLeave", function(self)
 	GameTooltip:Hide();
 end);
 
@@ -2901,6 +3146,12 @@ function LoreKGUI.Initialize(self, event, arg1)
 				 LoreK_DB["settings"]["searchMenu"].expansion[i] = true
 			 end
 		end
+		if LoreK_DB["settings"]["showCollectedPins"] == nil then
+			LoreK_DB["settings"]["showCollectedPins"] = false;
+		end
+		if LoreK_DB["settings"]["hideAllPins"] == nil then
+			LoreK_DB["settings"]["hideAllPins"] = false;
+		end
 		TTSSettings.QueuePages_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["queuePages"]);
 		TTSSettings.PhoneticReplace_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["phonetics"]);
 		TTSSettings.VolumeSlider.Slider:SetValue(LoreK_DB["settings"]["TTSSettings"]["volume"]);
@@ -2916,6 +3167,8 @@ function LoreKGUI.Initialize(self, event, arg1)
 		SettingsDisplayFrame.disableHolidays_Checkbox:SetChecked(LoreK_DB["settings"]["holidayThemes"]);
 		SettingsDisplayFrame.minimap_Checkbox:SetChecked(not LK.AceAddon.db.profile.minimap.hide);
 		SettingsDisplayFrame.debug_Checkbox:SetChecked(LoreK_DB["settings"]["debugAdvanced"]);
+		SettingsDisplayFrame.showCollectedPins_Checkbox:SetChecked(LoreK_DB["settings"]["showCollectedPins"]);
+		SettingsDisplayFrame.hideAllPins_Checkbox:SetChecked(LoreK_DB["settings"]["hideAllPins"]);
 		
 		LoreKGUI.SetParchmentTexture()
 		LoreKGUI.SetColors()

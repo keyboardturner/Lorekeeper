@@ -2,6 +2,8 @@
 
 Localdata Update 11 - (85 personal entries + 39 Anonymous User 20 entries)
 
+Added map pins for all map-eligible library entries
+
 12.0.5 toc update
 
 Updated Cinematic data
