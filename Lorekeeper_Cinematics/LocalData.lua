@@ -1035,7 +1035,7 @@ LK["LocalData"]["cinematics"] = {
 	},
 	[670] = {
 		["name"] = "legion_73_rtg",
-		["id"] = 679,
+		["id"] = 680,
 		--["link"] = "",
 		["description"] = "Rejection of a Gift",
 		["expansion"] = 6,
@@ -1047,7 +1047,7 @@ LK["LocalData"]["cinematics"] = {
 	},
 	[680] = {
 		["name"] = "legion_73_avt",
-		["id"] = 681,
+		["id"] = 682,
 		--["link"] = "",
 		["description"] = "Reincarnation of Alleria Windrunner",
 		["expansion"] = 6,
@@ -2241,6 +2241,18 @@ LK["LocalData"]["cinematics"] = {
 			["coords"] = 19,
 		},
 	},
+	[1551] = {
+		["name"] = "tww_111_brs",
+		["id"] = 1045,
+		--["link"] = "https://youtu.be/4AgvDK5IczU",
+		["description"] = "Boardroom (Shorter)",
+		["expansion"] = 10,
+		["patch"] = "PLACEHOLDER_VALUE",
+		["thumb"] = {
+			["batch"] = 6,
+			["coords"] = 19,
+		},
+	},
 	[1560] = {
 		["name"] = "tww_111_bro",
 		["id"] = 1029,
@@ -2277,44 +2289,148 @@ LK["LocalData"]["cinematics"] = {
 			["coords"] = 23,
 		},
 	},
-	--[[
-	[PLACEHOLDER_VALUE] = {
+	[1581] = {
 		["name"] = "tww_1127_scd",
 		["id"] = 1052,
 		--["link"] = "",
-		["description"] = "Story Recap 2",
+		["description"] = "Alleria Recap",
 		["expansion"] = 10,
-		["patch"] = "PLACEHOLDER_VALUE",
+		["patch"] = "11.2.7",
 		["thumb"] = {
-			["batch"] = 6,
-			["coords"] = PLACEHOLDER_VALUE,
+			["batch"] = 7,
+			["coords"] = 8,
 		},
 	},
-	--]]
 	[1590] = {
 		["name"] = "tww_1127_unk",
 		["id"] = 1040,
 		--["link"] = "",
 		["description"] = "The Eleventh Hour",
 		["expansion"] = 10,
-		["patch"] = "PLACEHOLDER_VALUE",
+		["patch"] = "11.2.7",
 		["thumb"] = {
 			["batch"] = 6,
 			["coords"] = 24,
 		},
 	},
-
-
-	[1591] = {
+	[1600] = {
+		["name"] = "mid_1200_ssf",
+		["id"] = 1066,
+		["link"] = "https://youtu.be/-2Y4_o4YhPg",
+		["description"] = "Midnight Story So Far",
+		["expansion"] = 11,
+		["patch"] = "12.0.1",
+		["thumb"] = {
+			["batch"] = 6,
+			["coords"] = 26,
+		},
+	},
+	[1601] = {
+		["name"] = "wow_ani_xal",
+		["id"] = 1061,
+		["link"] = "https://youtu.be/rOVDY9Mrw3I",
+		["description"] = "Supremacy",
+		["expansion"] = 11,
+		["patch"] = "12.0.1",
+		["thumb"] = {
+			["batch"] = 7,
+			["coords"] = 4,
+		},
+	},
+	[1602] = {
+		["name"] = "wow_ani_ara",
+		["id"] = nil,
+		["link"] = "https://youtu.be/QKVSzP_sEU8",
+		["description"] = "Son of Two Worlds",
+		["expansion"] = 11,
+		["patch"] = "12.0.1",
+		["thumb"] = {
+			["batch"] = 7,
+			["coords"] = 6,
+		},
+	},
+	[1603] = {
+		["name"] = "wow_ani_lia",
+		["id"] = nil,
+		["link"] = "https://youtu.be/CoJgQA4Uhks",
+		["description"] = "All That is Sacred",
+		["expansion"] = 11,
+		["patch"] = "12.0.1",
+		["thumb"] = {
+			["batch"] = 7,
+			["coords"] = 7,
+		},
+	},
+	[1610] = {
 		["name"] = "wow_cgi_int",
 		["id"] = 1051,
 		["link"] = "https://youtu.be/SiIjThwKLaE",
 		["description"] = "Intercession",
 		["expansion"] = 11,
-		["patch"] = "PLACEHOLDER_VALUE",
+		["patch"] = "12.0.1",
 		["thumb"] = {
-			["batch"] = 100,
-			["coords"] = 22,
+			["batch"] = 6,
+			["coords"] = 27,
+		},
+	},
+	[1620] = {
+		["name"] = "wow_cgi_ara",
+		["id"] = 1062,
+		["link"] = "https://youtu.be/jgC5PqD23ew",
+		["description"] = "Immolation",
+		["expansion"] = 11,
+		["patch"] = "12.0.1",
+		["thumb"] = {
+			["batch"] = 6,
+			["coords"] = 28,
+		},
+	},
+	[1630] = {
+		["name"] = "mid_1200_sun",
+		["id"] = 1048,
+		--["link"] = "",
+		["description"] = "The Sunwell",
+		["expansion"] = 11,
+		["patch"] = "12.0.1",
+		["thumb"] = {
+			["batch"] = 7,
+			["coords"] = 1,
+		},
+	},
+	[1640] = {
+		["name"] = "mid_1200_zul",
+		["id"] = 1047,
+		--["link"] = "",
+		["description"] = "Turalyon's Wrath",
+		["expansion"] = 11,
+		["patch"] = "12.0.1",
+		["thumb"] = {
+			["batch"] = 7,
+			["coords"] = 2,
+		},
+	},
+	[1650] = {
+		["name"] = "mid_1200_vre",
+		["id"] = 1049,
+		--["link"] = "",
+		["description"] = "Voidspire Raid Ending",
+		["expansion"] = 11,
+		["patch"] = "12.0.1",
+		["thumb"] = {
+			["batch"] = 7,
+			["coords"] = 3,
+		},
+	},
+	[1660] = {
+		["name"] = "mid_1200_qrf",
+		["id"] = 1050,
+		--["link"] = "",
+		["description"] = "March on Quel'Danas Raid Finale",
+		["expansion"] = 11,
+		["patch"] = "12.0.1",
+		["thumb"] = {
+			["batch"] = 7,
+			["coords"] = 5,
 		},
 	},
 
