@@ -2432,6 +2432,39 @@ LK["LocalData"] = {
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
 			},
+			["copy_1"] = {
+				["title"] = "[DNT] Green Book of Runes - DO NOT USE",
+				["text"] = {
+					"For many years, the night elves worked tirelessly to rebuild what they could of their ancient homeland. Leaving their broken temples and roads to be overgrown, they constructed their new homes amidst the verdant trees and shadowed hills at Hyjal's base. In time, the dragons that had survived the great Sundering came forth from their secret abodes. ",
+					"Alexstrasza the red, Ysera the green, and Nozdormu the bronze descended upon the druids' tranquil glades and surveyed the fruits of the night elves' labors. Malfurion, who had become an arch-druid of immense power, greeted the mighty dragons and told them about the creation of the new Well of Eternity. ",
+					"The great dragons were alarmed to hear the dark news and speculated that as long as the Well remained, the Legion might one day return and assault the world once again. Malfurion and the three dragons made a pact to keep the Well safe and ensure that the agents of the Burning Legion would never find their way back into the world.",
+					"Alexstrasza, the Lifebinder, placed a single, enchanted acorn within the heart of the Well of Eternity. The acorn, activated by the potent, magical waters, sprung to life as a colossal tree. The mighty tree's roots grew from the Well's waters, and its verdant canopy seemed to scrape the roof of the sky. ",
+					'The immense tree would be an everlasting symbol of the night elves\' bond with nature, and its life-giving energies would extend out to heal the rest of the world over time. The night elves\' gave their World Tree the new name Nordrassil, which meant "crown of the heavens" in their native tongue. ',
+					"Nozdormu, the Timeless, placed an enchantment upon the World Tree to ensure that as long as the colossal tree stood, the night elves would never age or fall prey to sickness or disease. ",
+					"Ysera, the Dreamer, also placed an enchantment upon the World Tree by linking it to her own realm, the ethereal dimension known as the Emerald Dream. The Emerald Dream, a vast, ever-changing spirit world, existed outside the boundaries of the physical world. From the Dream, Ysera regulated the ebb and flow of nature and the evolutionary path of the world itself. ",
+					"The night elf druids, including Malfurion himself, were bound to the Dream through the World Tree. As part of the mystical pact, the druids agreed to sleep for centuries at a time so that their spirits could roam the infinite paths of Ysera's Dreamways. Though the druids were grieved at the prospect of losing so many years of their lives to hibernation, they selflessly agreed to uphold their bargain with Ysera.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[84] = {
+						0.8531426787376404,
+						0.2358438968658447,
+					},
+					[89] = {
+						0.54847252368927,
+						0.2477995753288269,
+					},
+					[303] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
 		},
 		["GameObject-215765"] = {
 			["base"] = {
@@ -8602,6 +8635,15 @@ LK["LocalData"] = {
 				["pageCount"] = 0,
 				["material"] = "Parchment",
 			},
+			["copy_4"] = {
+				["title"] = "Incident Report",
+				["text"] = {
+					"Hours since last workplace accident: 0",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+			},
 		},
 		["GameObject-214160"] = {
 			["base"] = {
@@ -13075,6 +13117,24 @@ LK["LocalData"] = {
 				["isClassSpecific"] = 8, -- mage
 				["expansion"] = 6,
 			},
+			["copy_1"] = {
+				["title"] = "Archive of the Tirisgarde",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Archive of the Tirisgarde</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-mage-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">Penned by Tirisgarde Researcher Edirah.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[735] = {
+						0.604041576385498,
+						0.2795394062995911,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 8, -- mage
+				["expansion"] = 6,
+			},
 		},
 		["Item-144457"] = {
 			["base"] = {
@@ -13255,6 +13315,16 @@ LK["LocalData"] = {
 					"The Talisman of the Eternal Scholar\r\n\r\nThank the Purpose! I had feared that the talisman and all of its history were lost forever. \r\n\r\nRoh-Senara never revealed its power to me. Yet when I hold it, I can feel the weight of my responsibility. It fills me with the strength to carry on.\r\n\r\nSurely, that is power in and of itself.",
 					"Celestial Shadowlands Chart\r\n\r\nI have always been fascinated by maps. A few lines and names scribbled onto parchment, and entire worlds unfurl before the one who reads them.\r\n\r\nSeeing all of the realms at once reminds me of the grandeur of the Purpose... and of my infinitesimal part within it.",
 					"Diviner's Rune Chits\r\n\r\nThis is one of many items within the archive crafted for divination. As I have always been guided by the Purpose, I sometimes ask myself if mortals are frustrated by the ambiguity of their existence.\r\n\r\nAnd sometimes, I wonder if they relish the thrill of possibility.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+			},
+			["copy_3"] = {
+				["title"] = "The Archivists' Codex",
+				["text"] = {
+					"The Archivists' Codex\r\n\r\nHerein lies a catalogue of notable relics held within the archive. I shall endeavor to contextualize their history and significance as the Maw Walker aids me in recovering them.\r\n\r\nMay the Purpose grant me wisdom.\r\n\r\n--Archivist Roh-Suir",
+					"The Lodestaff\r\n\r\nFor eons I witnessed Roh-Senara hold this staff aloft as she maintained the archive. It passed to me before I was ready, and I can only hope that I fulfill the trust that has been placed in me.\r\n\r\nThe path before me is long and arduous. I am eternally grateful that I need not walk it alone.",
 				},
 				["singlePage"] = false,
 				["pageCount"] = 0,
@@ -19179,6 +19249,24 @@ LK["LocalData"] = {
 				["isClassSpecific"] = 6,
 				["expansion"] = 0,
 			},
+			["copy_1"] = {
+				["title"] = "Libram of the Dead",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Libram of the Dead</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-deathknight-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Illanna Dreadmoore, Head Archivist of the Ebon Blade.</p>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[648] = {
+						0.5497169494628906,
+						0.4872500896453857,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 6,
+				["expansion"] = 0,
+			},
 		},
 		["GameObject-192874"] = {
 			["base"] = {
@@ -21139,6 +21227,10 @@ LK["LocalData"] = {
 						0.5053747892379761,
 						0.07250118255615234,
 					},
+					[84] = {
+						0.3885087370872498,
+						0.8392143249511719,
+					},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = 9,
@@ -21191,6 +21283,22 @@ LK["LocalData"] = {
 				["text"] = {
 					"What follows are translations of correspondence between the black dragon Adamanthia and Neltharion, the Aspect of Earth.\r\n\r\nAt the time of this translation, I can confirm that neither I nor any dracthyr I have spoken to or are able to fully remember Adamanthia. We have only fragments. Her origins and identity are mysterious. Yet we feel drawn to her for reasons beyond recollection.\r\n\r\nIt is as if she holds a part of us in her, sustained in more than just memory.\r\n\r\nNow you may peruse her words in this humble volume. May this transcription help spark memories for worthy dracthyr who read it.\r\n\r\n-- Zazulithan\r\nDracthyr Archivist",
 					"Transcription of Receiving Stone: Final Warning\r\n\r\nThis is your final warning, Adamanthia. If you continue in your defiance, you will become an example to all who foolishly entertain such asinine aspirations.\r\n\r\nYour suffering will span millennia. Even death will not release you. Any who look upon you will gaze upon your torment and despair. Cease this folly, or retribution awaits you.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2151] = {
+						0.3545786738395691,
+						0.5870685577392578,
+					},
+				},
+			},
+			["copy_2"] = {
+				["title"] = "Translated Correspondence of Black Dragons",
+				["text"] = {
+					"What follows are translations of correspondence between the black dragon Adamanthia and Neltharion, the Aspect of Earth.\r\n\r\nAt the time of this translation, I can confirm that neither I nor any dracthyr I have spoken to or are able to fully remember Adamanthia. We have only fragments. Her origins and identity are mysterious. Yet we feel drawn to her for reasons beyond recollection.\r\n\r\nIt is as if she holds a part of us in her, sustained in more than just memory.\r\n\r\nNow you may peruse her words in this humble volume. May this transcription help spark memories for worthy dracthyr who read it.\r\n\r\n-- Zazulithan\r\nDracthyr Archivist",
+					"Transcription of Sending Stone: The Prisoner\r\n\r\nLord Neltharion, I bring news. The Reach quaked today with the wrath of Raszageth!\r\n\r\nYet I am happy to report that the seals over her makeshift prison in your vault have held. The enchantments Malygos placed there should remain intact for many ages of this world, even without magical maintenance.\r\n\r\nOur prisoner is still able to exert her influence over the weather on this island. I am worried that she might get a message out, given enough time. \r\n\r\nFor now, however, our only cause for concern should be what would happen if the other Incarnates learned of her presence here. I will once again remind my lackwit servants to destroy my sending stones after their messages have been sent.",
 				},
 				["singlePage"] = false,
 				["pageCount"] = 0,
@@ -21825,18 +21933,6 @@ LK["LocalData"] = {
 				["title"] = "Libram of Ancient Kings",
 				["text"] = {
 					'<HTML><BODY>\r\n<H1 align="center">Libram of Ancient Kings</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-paladin-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Sister Elda, Head Archivist.</p>\r\n</BODY></HTML>',
-					'<HTML><BODY>\r\n<p></p>\r\n<IMG src="Interface\\Pictures\\artifactbook-paladin-ashbringer" align="center"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="145"/>\r\n<H3 align="center">Ashbringer</H3>\r\n<BR/>\r\n<P>\r\nYou now possess one of the most iconic and renowned weapons ever created.\r\n<BR/><BR/>\r\nOnce the bane of the undead (then, for a time, one of the Scourge\'s greatest assets), the Ashbringer has been instrumental in the rise and fall of lords, empires, and kings, living and undead alike. It has stood for both good and evil, and now it rests within your hands. \r\n<BR/><BR/>\r\nWield it well.\r\n</P>\r\n</BODY></HTML>',
-					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part One</H2>\r\n<HR/>\r\n<P>\r\nFew known artifacts or relics are capable of rivaling the Ashbringer\'s legendary pedigree. \r\n<BR/><BR/>\r\nIts origins have been traced to the Second War between orcs and humans. There, on the field of battle, the renowned highlord Alexandros Mograine came into possession of a dark orb. \r\n<BR/><BR/>\r\nThough Alexandros considered the artifact to be a living embodiment of shadow, he also believed that it might one day be forged into a weapon of righteousness. \r\n<BR/><BR/>\r\nAlexandros\'s vision would become a reality, and that weapon would become the Ashbringer.\r\n</P>\r\n</BODY></HTML>',
-					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Two</H2>\r\n<HR/>\r\n<P>\r\nIt is said that deep within the hallowed halls of Ironforge, the Ashbringer was crafted by the dwarf king Magni Bronzebeard, a peerless weaponsmith. \r\n<BR/><BR/>\r\nFor King Magni, it was a dark time; he grieved over the recent loss of his brother Muradin.\r\n<BR/><BR/>\r\nLegend holds that King Magni infused the full weight of his rage and sorrow into the Ashbringer\'s forging, resulting in a weapon of untold vengeance and devastation.\r\n</P>\r\n</BODY></HTML>',
-					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Three</H2>\r\n<HR/>\r\n<P>\r\nSo it is written, that when confronted by undead forces, Highlord Alexandros Mograine dispatched them with ease. The blade in his hand felt like an extension of his own flesh, a beautifully lethal instrument of pure destruction.\r\n<BR/><BR/>\r\nAnd as it carved a swath through his Scourge enemies, this new weapon left naught in the aftermath but charred bone and swirling ash.\r\n<BR/><BR/>\r\nThus was the Ashbringer given its name.\r\n</P>\r\n</BODY></HTML>',
-					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Four</H2>\r\n<HR/>\r\n<P>\r\nIn the hands of Alexandros Mograine, the Ashbringer rained unparalleled fury upon the marauding Scourge armies, decimating the undead in numbers beyond reckoning. \r\n<BR/><BR/>\r\nSo it was that over the course of time, the man and the weapon seemed as one. Ashbringer became a name of legend, attributed not just to the fearsome blade but also to the relentless knight who wielded it.\r\n</P>\r\n</BODY></HTML>',
-					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Five</H2>\r\n<HR/>\r\n<P>\r\nFrom the testimony of Fairbanks, advisor to Highlord Alexandros Mograine, shortly before his execution:\r\n<BR/><BR/>\r\n"It was outside of Stratholme that we were surrounded by undead. Their numbers were unfathomable. Wave after wave washed over us... and yet Alexandros stood tall, unbowed and unbroken, a rock for them to break against.\r\n<BR/><BR/>\r\n"Alexandros\'s end came not from the undead but from his own son-the treacherous one, Renault, who took up the Ashbringer and stabbed his father in the back."\r\n</P>\r\n</BODY></HTML>',
-					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Six</H2>\r\n<HR/>\r\n<P>\r\nA recounting of the battle at Naxxramas by Darion Mograine, as told to Atticus Krohl:\r\n<BR/><BR/>\r\n"Deep within the floating undead citadel of Naxxramas, I discovered what had truly become of my father. Alexandros\'s spirit had been tortured and broken; he had been raised as a death knight to defend the very Scourge that he had once labored to destroy. \r\n<BR/><BR/>\r\n"They had scoured from him all that was good, leaving behind only a bitter, rotten shell. In defense of my own life, I was forced to end his cursed existence, or so I thought. \r\n<BR/><BR/>\r\n"The blade you see, the Ashbringer... it spoke to me in my father\'s voice."\r\n</P>\r\n</BODY></HTML>',
-					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Seven</H2>\r\n<HR/>\r\n<P>\r\nFrom the Liber Monasterium:\r\n<BR/><BR/>\r\n"And so it was that Darion Mograine, driven by the voice of his father, bore the Ashbringer to the Scarlet Monastery, where he learned of his brother Renault\'s treachery.\r\n<BR/><BR/>\r\n"The vengeful phantom of Alexandros Mograine manifested out of the Ashbringer. Renault begged for forgiveness, and he was dealt a vicious sweep of the corrupted blade, separating his head from his shoulders. \r\n<BR/><BR/>\r\n"\'You are forgiven,\' was Alexandros\'s reply."\r\n</P>\r\n</BODY></HTML>',
-					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Eight</H2>\r\n<HR/>\r\n<P>\r\nAn excerpt from The Battle for Light\'s Hope:\r\n<BR/><BR/>\r\n"The Argent Dawn amassed at Light\'s Hope Chapel against the swarming multitudes of Scourge. Battle was joined, and though each and every one of us fought bravely, it seemed there could be no hope of victory.\r\n<BR/><BR/>\r\n"In our darkest hour, in an effort to free his father\'s condemned soul, Darion Mograine plunged the Ashbringer into his own chest. \r\n<BR/><BR/>\r\n"It was then that the souls of the myriad champions buried beneath Light\'s Hope lashed out in a devastating blast of purest Light. In that instant, our enemies were undone."\r\n</P>\r\n</BODY></HTML>',
-					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Nine</H2>\r\n<HR/>\r\n<P>\r\nThere are scores of firsthand accounts of the Second Battle for Light\'s Hope Chapel. They differ in some ways, but on many points, they correspond. What is known is that several years after his sacrifice at the first Battle for Light\'s Hope, Darion Mograine returned... this time as would-be conqueror, a death knight in the Lich King\'s service.\r\n<BR/><BR/>\r\nHe faced off against his onetime ally, a former Knight of the Silver Hand, Tirion Fordring. Ultimately Darion was subdued even as the dreaded Lich King himself, Arthas, appeared on the battlefield. \r\n<BR/><BR/>\r\nIn an apparent act of contrition, Darion threw the Ashbringer to Tirion, who purified it with his touch. Tirion then focused his full efforts on the Lich King, who was forced to retreat after a single mighty blow from the uncorrupted Ashbringer.\r\n</P>\r\n</BODY></HTML>',
-					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Ten</H2>\r\n<HR/>\r\n<P>\r\nIn the aftermath of the Second Battle for Light\'s Hope, the Ashbringer remained in the possession of Tirion Fordring, highlord of the Argent Crusade. In order to draw out the greatest champions of Azeroth, Tirion instituted a contest of strength and battle prowess known as the Argent Tournament.\r\n<BR/><BR/>\r\nIn time, Tirion\'s Argent Crusade successfully breached the main gate of the Lich King\'s stronghold of Icecrown Citadel. As they laid siege to Icecrown\'s defenses, the highlord created a pact with Darion Mograine and his Knights of the Ebon Blade, resulting in the Ashen Verdict-a united order bent on destroying the Lich King.\r\n</P>\r\n</BODY></HTML>',
-					'<HTML><BODY>\r\n<H2 align="center">Ashbringer, Part Eleven</H2>\r\n<HR/>\r\n<P>\r\nThe final assault on Icecrown Citadel now ranks among the most legendary military campaigns in recent memory.\r\n<BR/><BR/>\r\nMarching alongside some of the greatest champions of Azeroth, Tirion Fordring continued his crusade against the Scourge, staging an all-out attack on the Lich King\'s seat of power. \r\n<BR/><BR/>\r\nThere, Tirion once again confronted Arthas, and all fell silent as the clash of steel rang out across the icy wastes. At the culmination of a fevered battle, the Ashbringer shattered Arthas\'s infamous sword, Frostmourne, in a single blow. \r\n<BR/><BR/>\r\nArthas was defeated at last, and the purified Ashbringer took its place among the most celebrated and renowned weapons in all of Azeroth\'s history.\r\n</P>\r\n</BODY></HTML>',
 				},
 				["singlePage"] = false,
 				["pageCount"] = 0,
@@ -22913,14 +23009,16 @@ LK["LocalData"] = {
 					"TRAITOR'S REST\r\n\r\nWeek 2\r\n\r\nWe confirmed Abereth's involvement at Traitor's Rest, but there were also other intriguing developments.\r\n\r\nFound at the site were massive spears of djaradin make and strong nets of tuskarr design. \r\n\r\nWe've also found two names associated with this new-found arsenal: Gharrin--a djaradin of unknown clan--and Umtila, a tuskarr strategist that appears a few times in tuskarr oral histories.\r\n\r\nIt appears after diplomatic talks with the centaur fell through, the tuskarr sought out the djaradin! \r\n\r\nStill, we do not know why they were here and what they were trying to protect!",
 					'TRAITOR\'S REST\r\n\r\nWeek 3\r\n\r\nThe plan seems to be unfolding in front of us!\r\n\r\nGharrin volunteered to "bait" the two-headed monster that Neltharion sent to harangue them. Umtila was seemingly upset at this prospect which leads me personally to believe there was something more to their relationship than a simple alliance.\r\n\r\nThis inference was not well received at camp, but no one could deny there were certain "underpinnings." \r\n\r\nMost importantly however, we have now definite proof of Neltharion\'s involvement from their documents.',
 					"TRAITOR'S REST\r\n\r\nWeek 4\r\n\r\nWhat a triumphant week we have had! Clues we have uncovered point to objects and artifacts being moved from the Azure Archives here and then on to other destinations for safekeeping. \r\n\r\nIt appears that Sindragosa got word that Neltharion planned to steal a tome of some import from the Azure Archives. She did not know which one, but she had her suspicions. She feared Traitor's Rest may be a distraction, but couldn't chance it.\r\n\r\n<The script becomes looping as Eadweard writes the last few sentences of this page.>\r\n\r\nAnd I have found a piece of history most precious to me: a scrap of paper that Sindragosa touched and put her quill to.\r\n\r\nIf I were a lesser man, I would keep it for myself. But, alas, history must be preserved!",
+					'TRAITOR\'S REST\r\n\r\nWeek 5\r\n\r\nIf this dig site were a novel I was reading, I would not be able to put it down!\r\n\r\nGharrin, our "hero" djaradin, was in fact a "turncoat" and in league with Neltharion. He and his men fought Abereth and Umtila\'s forces as Neltharion\'s proto-dragon made its attack.\r\n\r\nIt appears that Gharrin fell early in the battle. And Umtila\'s bone dagger was found near his remains. If what I suspected about them were true, I would not have blamed her for felling the man herself!\r\n\r\nWe do not as yet know what happened to Umtila or Abereth, but we know Neltharion\'s two-headed experiment was not contained. \r\n\r\nIt\'s uncertain so far what finally caused its demise.',
+					"TRAITOR'S REST\r\n\r\nWeek 6\r\n\r\n<This entry is written shakily as if Eadweard could not contain his enthusiasm.>\r\n\r\nWe now know what happened to Umtila and Abereth. As the last two heroes standing, they were able to stall the monstrosity long enough for help to arrive--in the form of Sindragosa herself.\r\n\r\nOnce Sindragosa had confronted Neltharion at the Azure Archives and knew for sure the tome he desired was hidden elsewhere, she came to our heroes' aid in their time of direst need. Indeed, some of the wounds inflicted on this beast could have only been made by a dragon of Sindragosa's size.\r\n\r\nThe name of the tome has been lost to the ages, but for now, the story of Traitor's Rest has been told. \r\n\r\nRest easy, dear Sindragosa, for another chapter of your tale has been told!",
 				},
 				["singlePage"] = false,
 				["pageCount"] = 0,
 				["material"] = "default",
 				["mapData"] = {
 					[2024] = {
-						0.2696922421455383,
-						0.4645494818687439,
+						0.2694592475891113,
+						0.4638641476631165,
 					},
 				},
 				["isObtainable"] = true,
@@ -22943,6 +23041,48 @@ LK["LocalData"] = {
 						0.5122243762016296,
 					},
 				},
+			},
+			["copy_2"] = {
+				["title"] = "The Story of Traitor's Rest",
+				["text"] = {
+					"THE STORY OF TRAITOR'S REST\r\n\r\nA Journal of Discovery\r\n\r\nBy\r\n\r\nArchbishop Emeritus Eadweard Dalyngrigge",
+					"Dedicated to my esteemed colleagues without whom these discoveries would not have been made:\r\n\r\nNirobin, scholar nonpareil\r\nRoska Rocktooth, for whom no rock is too hard or artifact too delicate\r\nZenata, whose foresight is our hindsight\r\n$PLAYER_NAME$, our best and brightest\r\n\r\nand also to the blue fire who lighted the dreams of my youth,\r\n\r\nSindragosa",
+					"TRAITOR'S REST\r\n\r\nWeek 1:\r\n\r\nThe expedition began in earnest this week, and we have already made some startling discoveries about the site.\r\n\r\nThere were many, many dracthyr soldiers here, and we believe they were under the command of Scalecommander Abereth. Nirobin has encountered this name before, and believes him to be a dracthyr at odds with Neltharion's command. \r\n\r\nKnowing that the Blue Dragonflight believed that Neltharion would attack the area soon, Abereth must have made the journey on his own recognizance. The Blue Dragonflight had sent its own army of dragonkin and dragonspawn to the site as well based on what we have unearthed.\r\n\r\nBut why were they here? What were they protecting?",
+					"TRAITOR'S REST\r\n\r\nWeek 2\r\n\r\nWe confirmed Abereth's involvement at Traitor's Rest, but there were also other intriguing developments.\r\n\r\nFound at the site were massive spears of djaradin make and strong nets of tuskarr design. \r\n\r\nWe've also found two names associated with this new-found arsenal: Gharrin--a djaradin of unknown clan--and Umtila, a tuskarr strategist that appears a few times in tuskarr oral histories.\r\n\r\nIt appears after diplomatic talks with the centaur fell through, the tuskarr sought out the djaradin! \r\n\r\nStill, we do not know why they were here and what they were trying to protect!",
+					'TRAITOR\'S REST\r\n\r\nWeek 3\r\n\r\nThe plan seems to be unfolding in front of us!\r\n\r\nGharrin volunteered to "bait" the two-headed monster that Neltharion sent to harangue them. Umtila was seemingly upset at this prospect which leads me personally to believe there was something more to their relationship than a simple alliance.\r\n\r\nThis inference was not well received at camp, but no one could deny there were certain "underpinnings." \r\n\r\nMost importantly however, we have now definite proof of Neltharion\'s involvement from their documents.',
+					"TRAITOR'S REST\r\n\r\nWeek 4\r\n\r\nWhat a triumphant week we have had! Clues we have uncovered point to objects and artifacts being moved from the Azure Archives here and then on to other destinations for safekeeping. \r\n\r\nIt appears that Sindragosa got word that Neltharion planned to steal a tome of some import from the Azure Archives. She did not know which one, but she had her suspicions. She feared Traitor's Rest may be a distraction, but couldn't chance it.\r\n\r\n<The script becomes looping as Eadweard writes the last few sentences of this page.>\r\n\r\nAnd I have found a piece of history most precious to me: a scrap of paper that Sindragosa touched and put her quill to.\r\n\r\nIf I were a lesser man, I would keep it for myself. But, alas, history must be preserved!",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[2024] = {
+						0.2696922421455383,
+						0.4645494818687439,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+			["copy_3"] = {
+				["title"] = "The Story of Traitor's Rest",
+				["text"] = {
+					"THE STORY OF TRAITOR'S REST\r\n\r\nA Journal of Discovery\r\n\r\nBy\r\n\r\nArchbishop Emeritus Eadweard Dalyngrigge",
+					"Dedicated to my esteemed colleagues without whom these discoveries would not have been made:\r\n\r\nNirobin, scholar nonpareil\r\nRoska Rocktooth, for whom no rock is too hard or artifact too delicate\r\nZenata, whose foresight is our hindsight\r\n$PLAYER_NAME$, our best and brightest\r\n\r\nand also to the blue fire who lighted the dreams of my youth,\r\n\r\nSindragosa",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[2024] = {
+						0.2696922421455383,
+						0.4645494818687439,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
 			},
 		},
 		["GameObject-404294"] = {
@@ -25530,6 +25670,24 @@ LK["LocalData"] = {
 			["base"] = {
 				["title"] = "Keys of Thrayir",
 				["text"] = {
+					"As Cyrce called for retreat, she bid me to take Thrayir. Great was his fury and terrible were his injuries, but Cyrce need not fear. I would not fail her.\r\n\r\nThrayir's wrath against our foes had unleashed a storm not seen since our days in the north. \r\n\r\nTo have seen so many Sturmvyn fall must have pushed the Galeorn into such a fury that he had started to unravel. I needed to stabilize his wounds.\r\n\r\nWhile Jardfyr saw to the Vaults defenses and carved new guardians, I turned to Ksvir the Thundered. \r\n\r\nSecond only to the might of Cyrce, Ksvir wielded the blessing of Storms, a rumored gift bestowed by Thorim himself.  \r\n\r\nAnguished yet bound by oath as Cyrce command to lead her retreat, Ksvir lent me his gift. \r\n\r\nTo stabilize Thrayir's wounds, we forged five runekeys to harness the tempest that roiled above.|n\r\nFive keys of turbulent waters, torrential rains, thunderous lightning, cyclonic winds, and whirling waterspouts. \r\n\r\nKsvir would keep one runekey, while the rest were scattered. \r\n\r\nBound by five, we sealed Thrayir's tortured form in stasis. The fury of the Tempest would slowly heal his wounds and only by the wielder of the five keys, would his stasis break.\r\n\r\nMay his wounds mend and may his cries of sorrow drift away.\r\n\r\n\r\n- As carved by Valwen, Apprentice Ward of the Stone Carver.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2375] = {
+						0.7373156547546387,
+						0.6363997459411621,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
+				["title"] = "Keys of Thrayir",
+				["text"] = {
 					"As Cyrce called for retreat, she bid me to take Thrayir. Great was his fury and terrible were his injuries, but Cyrce need not fear. I would not fail her.\r\n\r\nThrayir's wrath against our foes had unleashed a storm not seen since our days in the north. \r\n\r\nTo have seen so many Sturmvyn fall must have pushed the Galeorn into such a fury that he had started to unravel. I needed to stabilize his wounds.\r\n\r\nWhile Jardfyr saw to the Vaults defenses and carved new guardians, I turned to Ksvir the Thundered. Second only to the might of Cyrce, Ksvir wielded the blessing of Storms, a rumored gift bestowed by Thorim himself.  \r\n\r\nAnguished yet bound by oath as Cyrce command to lead her retreat, Ksvir lent me his gift. To stabilize Thrayir's wounds, we forged five runekeys to harness the tempest  that roiled above.Five keys of turbulent waters, torrential rains, thunderous lightning, cyclonic winds, and whirling waterspouts. \r\n\r\nKsvir would keep one runekey, while the rest were scattered. \r\n\r\nBound by five, we sealed Thrayir's tortured form in stasis. The fury of the Tempest would slowly heal his wounds and only by the wielder of the five keys, would his stasis break.\r\n\r\nMay his wounds mend and may his cries of sorrow drift away.\r\n\r\n\r\n- As carved by Valwen, Apprentice Ward of the Stone Carver.",
 				},
 				["singlePage"] = true,
@@ -25796,6 +25954,27 @@ LK["LocalData"] = {
 				["isClassSpecific"] = false,
 				["expansion"] = 10,
 			},
+			["copy_1"] = {
+				["title"] = "Scholars of the Sea: Siren Isle Synopsis",
+				["text"] = {
+					"<The inside cover of the ledger features a delicately drawn map adorned with nautical imagery. Surrounding the map is the depiction of a female figure with an ornate band wrapped around her tail.>\r\n\r\n\r\nSince the age of the First Tide, we Tidesages have chronicled the many islands dotting the open seas.\r\n\r\n\r\nAmong them is the Siren Isle.\r\n\r\n\r\nHow we first found the isle is disputed amongst our scholars.\r\n\r\n\r\nSome records claim the first Tidesages discovered it by chance during our early voyages at sea.\r\n\r\n\r\nOthers claim that legends of an isle with a haunting call were passed down from our ancestors and prompted our Tidesages to search for it.\r\n\r\n\r\nWhatever the truth may be, a dense fog of mystery has long clung to that dreaded place.",
+					'Though the isle has borne many names throughout our chronicles, the first recorded instance of the name "Siren Isle" dates back over two thousand years in the compendium of Sister Galeopa.\r\n\r\n\r\nEarly sea-song\'s attributed the "haunting call" to the alluring song of the sirens that lurked in the shallows around the isle.\r\n\r\n\r\nEarly records also suggest that it was not only our ancestors who heard the siren\'s song but other seafaring races as indicated by nearby shipwreck debris.\r\n\r\n\r\nThe name "Siren Isle" took root in the legend "Cyrce and the Ring." \r\n|n\r\nAlthough the story (and sea shanties it inspired) have evolved over time, the core legend tells of a great Siren who led many to their deaths with her alluring voice and her enchanted ring.',
+					"Although the island's namesake derives from the various legends of Cyrce and the sirens found in its waters, the nature of the sirens and their connection to the isle remains a mystery.\r\n\r\n\r\nIn several separate historical accounts, expedition survivors have reported a strange absence in the siren population on the isle even as the wailing cry persisted on the wind.\r\n\r\n\r\nEven more curiously, during many of these same expeditions, a devastating storm rolled across the island and laid waste to our ships.\r\n\r\n\r\nIt was only by the grace of the Tidemother and the power of our sea priests that what few survivors remained were able to walk away from such a tempest.\r\n\r\n\r\nDid the sirens foresee the arrival of the storm? Did the haunting call, somehow, prelude the tempest?",
+					"The relentless storms of the isle that have long puzzled our Tidesages.\r\n\r\n\r\nThe tales of sirens, wailing screams, and spectral figures have fueled sea-shanties and children's stories alike.\r\n\r\n\r\nThe Siren Isle stands as an enigma of malice, mystery and misfortune for those who brave the open seas.\r\n\r\n\r\nAny seafarer worth their salt knows to steer clear of a siren's song, but the call of the Siren Isle is unlike any other.\r\n\r\n\r\nDue to the volatile nature and history of the island, it has long been counseled that all Kul Tiran vessels steer clear of the Siren Isle.\r\n\r\n\r\nFor those who choose to forgo this advisement, may the Tidemother grant you swift passage.\r\n\r\n\r\nAdditional excerpts from Sister Galeopa's Compendium and other Siren Isle records can be found within the monastery archives.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2369] = {
+						0.3906527161598206,
+						0.5104340314865112,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
 		},
 		["GameObject-499319"] = {
 			["base"] = {
@@ -26045,6 +26224,18 @@ LK["LocalData"] = {
 		},
 		["Item-234973"] = {
 			["base"] = {
+				["title"] = "Pearlshell Scroll Case",
+				["text"] = {
+					"Rise and listen, Darktide!\r\n\r\nThe screams of the Stormcursed echo through the depths once more but we will not be swayed!\r\n\r\nShe has evaded our capture for millennia and forsaken the gifts bestowed upon her for too long!\r\n\r\nHer wretched isle calls out once again and she will not keep us from it!\r\n\r\nNazeshi, Deepsurge, Hatecoil--all have sought her circlet and all have failed.\r\n\r\nBut we will succeed.\r\n\r\nWe will atone for the failures endured upon those shores long ago and claim it!\r\n\r\nAnd with it, we will usher in our queen's return.\r\n\r\nBy the Queen's Glory",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+			["copy_1"] = {
 				["title"] = "Pearlshell Scroll Case",
 				["text"] = {
 					"Rise and listen, Darktide!\r\n\r\nThe screams of the Stormcursed echo through the depths once more but we will not be swayed!\r\n\r\nShe has evaded our capture for millennia and forsaken the gifts bestowed upon her for too long!\r\n\r\nHer wretched isle calls out once again and she will not keep us from it!\r\n\r\nNazeshi, Deepsurge, Hatecoil--allhave sought her circlet and all have failed.\r\n\r\nBut we will succeed.\r\n\r\nWe will atone for the failures endured upon those shores long ago and claim it!\r\n\r\nAnd with it, we will usher in our queen's return.\r\n\r\nBy the Queen's Glory",
@@ -29817,6 +30008,48 @@ LK["LocalData"] = {
 				["title"] = "Tome of Fel Secrets",
 				["text"] = {
 					'<HTML><BODY>\r\n<H1 align="center">Tome of Fel Secrets</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-demonhunter-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Vahu of the Illidari.</p>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<p></p>\r\n<IMG src="Interface\\Pictures\\artifactbook-demonhunter-twinbladesofthedeceiver" align="center"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="170"/>\r\n<H3 align="center">Twinblades of the Deceiver</H3>\r\n<BR/>\r\n<P>\r\nAlas, poor Varedis. We knew him well... but do not mourn him. His death was far too swift and merciful for a traitor who spilled so much Illidari blood. \r\n<BR/><BR/>\r\nThese weapons of his are truly dangerous, infused with the essence of his eredar master, Kil\'jaeden. They will try to make you the Deceiver\'s new puppet. Do not give in to weakness as Varedis did.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Twinblades of the Deceiver, Part One</H2>\r\n<HR/>\r\n<P>\r\nThese weapons were owned by Varedis Felsoul. He was an Illidari, one of the finest demon hunters ever to join our ranks.\r\n<BR/><BR/>\r\nAnd then he betrayed us all. The power in these weapons was Varedis\'s reward for turning on his brothers and sisters and joining the army he had once sworn to defeat. We cannot change what he did. But we can avenge every drop of blood that he spilled on the Legion\'s behalf, and with these warglaives, we can return the favor a thousand times over.\r\n<BR/><BR/>\r\nWith a little luck, these weapons will one day be turned against Varedis\'s master.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Twinblades of the Deceiver, Part Two</H2>\r\n<HR/>\r\n<P>\r\nLet us not forget what Varedis Felsoul accomplished. He was among the first five blood elves sent by the crown prince Kael\'thas Sunstrider to train with Lord Illidan Stormrage as demon hunters. It was a brutal affair. Three of those elves died in training, and a fourth was lost to madness.\r\n<BR/><BR/>\r\nOnly Varedis survived. The hunger to kill demons was strong within him, too strong to let him fall before he had tasted the Legion\'s blood. He sacrificed his eyes with a smile and without even flinching at the pain.\r\n<BR/><BR/>\r\nHe was-he seemed to be-one of the most dedicated souls ever to challenge the Burning Legion.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Twinblades of the Deceiver, Part Three</H2>\r\n<HR/>\r\n<P>\r\nOnce Varedis had earned his place among the Illidari, his training continued. It was a trial by fire. Inexperienced demon hunters did not have the luxury of studying for years in libraries or classrooms before entering combat. Fresh recruits were sent out on dangerous missions, accompanied by experienced mentors.\r\n<BR/><BR/>\r\nVaredis trained with three of Illidan\'s best fighters. Time and time again, his blades joined theirs in spilling demonic blood across the cosmos.\r\n<BR/><BR/>\r\nWithin a year, Varedis had surpassed his mentors and was helping other recruits survive their first contacts with the Legion. He had become truly effective, occasionally accompanying Lord Illidan himself on his most important journeys.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Twinblades of the Deceiver, Part Four</H2>\r\n<HR/>\r\n<P>\r\nVaredis\'s most fateful mission was a solo task. On Outland, Lord Illidan had heard too many reports that the remnants of the Shadow Council were active. Varedis was dispatched to scout for--and steal--any information he could find.\r\n<BR/><BR/>\r\nLittle blood was spilled that day. Varedis snuck into a cave complex inhabited by Shadow Council acolytes without drawing attention to himself. He found something odd, a book that radiated with demonic essence. Inside was priceless information about the nature of demons, their weaknesses, and their habits. This tome, the Book of Fel Names, contained within it tremendous power.\r\n<BR/><BR/>\r\nAnd it was impossible to remove. The Shadow Council had enchanted it in ways that stopped Varedis from taking it from the cave. \r\n<BR/><BR/>Thinking quickly, Varedis simply imbibed as much of the book\'s power as he could. He left it in place, and the Shadow Council had no idea an Illidari had even been there.\r\n<BR/><BR/>\r\nLord Illidan praised him for his achievement. After all, using the demons\' own power against them was the central purpose of a demon hunter. Varedis\'s pride swelled.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Twinblades of the Deceiver, Part Five</H2>\r\n<HR/>\r\n<P>\r\nVaredis enjoyed his heightened power for years, using it to become a stinging thorn in the Burning Legion\'s side. He could sense the movement of demons before he saw it happen; he understood what they were thinking before they acted. \r\n<BR/><BR/>\r\nBut Varedis did not know that he had not stolen the book\'s power. He had simply become linked to it.\r\n<BR/><BR/>\r\nWhen the Burning Legion invaded Outland, chaos erupted. Illidan put his final plans into effect and called upon all Illidari to help him. \r\n<BR/><BR/>\r\nChampions of the Horde and the Alliance stormed through the Dark Portal to stave off the Burning Legion\'s assault. They confronted members of the Shadow Council and stole the Book of Fel Names, breaking the enchantments that had held it in place.\r\n<BR/><BR/>\r\nThis would prove to be Varedis\'s downfall.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Twinblades of the Deceiver, Part Six</H2>\r\n<HR/>\r\n<P>\r\nNeither the Horde nor the Alliance understood Illidan\'s plans. They believed him to be an ally of the Legion. Acting upon this belief, they laid siege to the Black Temple. Many Illidari tried to stand in their way. Varedis was one of them.\r\n<BR/><BR/>\r\nBut he was confronted by powerful enemies who possessed the Book of Fel Names. They began to destroy the book, page by page, and Varedis was stunned to realize that the book\'s destruction was weakening him. His borrowed demonic power faded quickly.\r\n<BR/><BR/>\r\nVaredis died in the Black Temple. His soul, imbued with demonic energy, did not rest easily in oblivion. It was whisked away to the Twisting Nether.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Twinblades of the Deceiver, Part Seven</H2>\r\n<HR/>\r\n<P>\r\nIt is a risk all demon hunters face. By stealing the demons\' power, our souls may return to their domain--and their control--after we fall in battle.\r\n<BR/><BR/>\r\nThis was Varedis Felsoul\'s fate. Kil\'jaeden himself claimed his soul and heaped endless torment upon him.\r\n<BR/><BR/>\r\nVaredis resisted for a time. It was not the pain that broke his spirit. Kil\'jaeden is called the Deceiver for a reason, after all. The eredar lord played upon his shock from that battle in the Black Temple. Champions had been prepared to face Varedis; who had told them about his borrowed power?\r\n<BR/><BR/>It had not been demons, certainly. The Legion would have preferred to have the Book of Fel Names back intact. It had not been the Shadow Council, for the same reason. "It must have been the Illidari," Kil\'jaeden told him. "Only they knew of your power. They betrayed you."\r\n<BR/><BR/>\r\nVaredis would come to believe him.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Twinblades of the Deceiver, Part Eight</H2>\r\n<HR/>\r\n<P>\r\nOnce Kil\'jaeden had poisoned Varedis\'s mind, he began to tempt the fallen Illidari. The demon hunter had only tasted the Legion\'s true power. Should Varedis pledge himself to the Burning Legion, he would receive the full measure.\r\n<BR/><BR/>\r\nVaredis agreed, breaking every one of his oaths and betraying every one of his comrades.\r\n<BR/><BR/>\r\nKil\'jaeden had special plans for him. With the help of other eredar, Kil\'jaeden conducted a dangerous, agonizing ritual, infusing a small part of his soul into Varedis\'s spirit. When the ritual was complete, Varedis was not a demon hunter but a demon, loyal to the Burning Legion and hungry for vengeance.\r\n<BR/><BR/>\r\nVaredis found that his weapons, these warglaives, had also been changed. The ritual had imbued them with another slice of Kil\'jaeden\'s astonishing power.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Twinblades of the Deceiver, Part Nine</H2>\r\n<HR/>\r\n<P>\r\nIn the years after Varedis\'s conversion, he became a terror to all who might oppose the Burning Legion. World after world, city after city, innocent after innocent, he was sent to spill blood.\r\n<BR/><BR/>\r\nOften he worked quietly. Secretly. The Burning Legion did not want any on Azeroth to know his true potential.\r\n<BR/><BR/>\r\nBut the Legion did allow him some satisfaction from time to time. Those few among the Illidari who had escaped after Illidan\'s death had fled to the corners of Outland and Azeroth. Varedis was dispatched to hunt them down, one by one. It was a task he relished. They had betrayed him, in his mind.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Twinblades of the Deceiver, Part Ten</H2>\r\n<HR/>\r\n<P>\r\nFor a long time, we Illidari did not know who was hunting us. It was not until the Legion\'s arrival on the Broken Isles that he finally revealed himself.\r\n<BR/><BR/>\r\nWhen the Vault of the Wardens was raided, a shadow was seen in the sky. Someone swooped down again and again, slaughtering the newly freed Illidari who were trying to escape. That was Varedis Felsoul. He could not resist the opportunity to butcher so many of us.\r\n<BR/><BR/>\r\nHe likely had a tactical reason for doing so. His actions alerted us to his presence. He knew somebody would come for him, one of the strongest among the Illidari, and he believed he could set a trap to kill them.\r\n<BR/><BR/>\r\nPerhaps he regretted that decision in his last moments.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Twinblades of the Deceiver, Part Eleven</H2>\r\n<HR/>\r\n<P>\r\nLet Varedis\'s story be a warning. He was dedicated, he was powerful, he was clever, and he was effective... and yet his will could not survive the thought that he had been betrayed by one of his own. No Illidari is without weakness. No Illidari is immune to temptation.\r\n<BR/><BR/>\r\nThe Burning Legion knows this. Whatever flaw you have, the Legion will test it.\r\n<BR/><BR/>\r\nBut until that day, let them fear us once again. These warglaives hold a measure of Kil\'jaeden\'s power, so he was undoubtedly pleased to know that our kind was dying to their blades.\r\n<BR/><BR/>\r\nHe will not be so pleased to see what we will do with these weapons next.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<p></p>\r\n<IMG src="Interface\\Pictures\\artifactbook-demonhunter-thealdrachiwarblades" align="center"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="180"/>\r\n<H3 align="center">The Aldrachi Warblades</H3>\r\n<BR/>\r\n<P>\r\nThe countless nicks and gouges that mar the Aldrachi Warblades form a map of their violent history. These weapons have vanquished thousands of demons and absorbed their twisted souls. It is said that the warblades even drew the molten blood of the Burning Legion\'s ruler, Sargeras.\r\n<BR/><BR/>\r\nTruly, there is extraordinary power in these otherworldly blades. In your hands, there is no telling what havoc they will wreak on the Legion.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Aldrachi Warblades, Part One</H2>\r\n<HR/>\r\n<P>\r\nThe scattered legends that remain of the ancient aldrachi speak of their unsurpassed skill as warriors. These proud people were bred from birth for combat. Their entire culture revolved around it. Military service was mandatory for all aldrachi, and it began as soon as a child could walk. \r\n<BR/><BR/>\r\nSo it was with Toranaar. After he took his first step, he was cast into the merciless aldrachi war machine. \r\n<BR/><BR/>\r\nHe came from a long line of respected warriors, and his elder brother was the greatest among them. Given Toranaar\'s pedigree, expectations for him were high. He would not disappoint.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Aldrachi Warblades, Part Two</H2>\r\n<HR/>\r\n<P>\r\nToranaar endured years of brutal training, tests of strength meant to cull the weak from the strong. One thought propelled him through the pain and suffering: winning the right to carry warblades.\r\n<BR/><BR/>\r\nMore than titles or wealth, the aldrachi coveted weapons as prized possessions and symbols of status. Warblades eclipsed all other types of arms in prestige. These mighty weapons were fashioned from rare crystals found deep below the earth. The strange minerals had many unique properties, the greatest of which was their ability to absorb the spirits of the dead. Blacksmiths employed closely guarded techniques to enchant these crystals and forge them into instruments of death. \r\n<BR/><BR/>The resultant warblades could consume the souls of their victims. Each devoured spirit imbued the weapon with greater power. The most ancient warblades contained thousands of souls, and they were revered just as much as-if not more than-the fearsome aldrachi warriors who bore them in battle.\r\n<BR/><BR/>\r\nAs the young Toranaar lay in bed every night, his body bruised and broken, he pictured himself carrying warblades of his own. He willed that vision to become a reality.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Aldrachi Warblades, Part Three</H2>\r\n<HR/>\r\n<P>\r\nToward the end of his training, Toranaar had his final and greatest test. The aldrachi military high command chose an elder warrior at random to battle the young initiate in a fight to the death. The day of the duel came, and Toranaar stepped into the ritual fighting pit to face his opponent.\r\n<BR/><BR/>\r\nIt was his older brother. \r\n<BR/><BR/>\r\nToranaar spared his sibling only a passing glance. He fixed his eyes on his opponent\'s gleaming warblades. Toranaar\'s dream was within reach, and nothing would keep him from it. Not even family.\r\n<BR/><BR/>\r\nThe two brothers grappled through the night and into the next day. Both were on the verge of death when Toranaar finally disarmed his kin and took the warblades for himself. Without uttering a word, he buried the weapons in his brother\'s chest, and they drank deep of the fallen warrior\'s soul.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Aldrachi Warblades, Part Four</H2>\r\n<HR/>\r\n<P>\r\nStories of the aldrachi reached the Burning Legion and its ruler, Sargeras. He and his demon army had decimated countless mortal civilizations in their quest to extinguish life from the cosmos. Sargeras was always eager to find mighty new races that he could bend to his will and use as agents of destruction. The aldrachi seemed like the perfect candidates for servitude.\r\n<BR/><BR/>\r\nRather than destroy the aldrachi world outright, Sargeras ordered his forces to invade it. The Legion would wear the warriors thin until they were ripe for demonic conversion. Sargeras knew that his followers would suffer great losses against the enemy, but that did not discourage him. \r\n<BR/><BR/>\r\nWhether it took a year, or ten, or a hundred... Sargeras would make the aldrachi his.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Aldrachi Warblades, Part Five</H2>\r\n<HR/>\r\n<P>\r\nExcerpt from the nathrezim records known as The Codex of the Dead: \r\n<BR/><BR/>\r\n"Curious creatures, the aldrachi. Much more resilient and promising than anticipated.\r\n<BR/><BR/>\r\n"The Legion stormed their little world with overwhelming force, a sea of pit lords and felguard, of shivarra and mo\'arg, ebbing and flowing from horizon to horizon. Still, the aldrachi held the invasion at bay. Hundreds of demons fell just to claim one of their warriors. The aldrachi fought like ravenous beasts, and none with more ferocity than the creature called Toranaar the Indomitable.\r\n<BR/><BR/>\r\n"His warblades howled over the clamor of battle, rending anything that came near. Each demon Toranaar vanquished seemed to fill him with renewed vigor and strength. He was an army unto himself."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Aldrachi Warblades, Part Six</H2>\r\n<HR/>\r\n<P>\r\nWave after wave of demons slammed into the aldrachi lines. Toranaar and other seasoned warriors repelled each attack, but the Legion\'s numbers never diminished. For every demon defeated, another would take its place. Slowly and methodically, the Legion whittled away the aldrachi resistance and pushed them back to the towering stronghold in the heart of their war-torn capital.\r\n<BR/><BR/>\r\nOnly Toranaar and a handful of champions remained. Each of them carried warblades teeming with the souls of thousands of victims they had cut down. In all directions, corpses of aldrachi and demon alike blanketed the earth. It is said that not a bare patch of ground could be seen for leagues.\r\n<BR/><BR/>Toranaar rallied his allies in preparation for another Legion attack, but it never came. To the aldrachi\'s confusion, the demons halted their advance. A monstrous figure then emerged from the Legion\'s ranks.\r\n<BR/><BR/>\r\nIt was Sargeras, and he had come with an offer for Toranaar.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Aldrachi Warblades, Part Seven</H2>\r\n<HR/>\r\n<P>\r\nNo one knows for sure what form Sargeras took to confront Toranaar. Some nathrezim records say that the Legion\'s colossal ruler infused a sliver of his power into an avatar and dispatched it to the aldrachi stronghold. Whatever the truth, it is certain that he called for Toranaar to join the Legion.\r\n<BR/><BR/>\r\nSargeras promised the aldrachi warrior and his allies power beyond anything they had ever dreamt of. They would serve as his personal guards, and they would command tens of thousands of demons in war. Sargeras believed that such an offer would prove irresistible to the battle-loving aldrachi.\r\n<BR/><BR/>\r\nToranaar\'s rejection was emphatic. He vowed to destroy the Legion for all of the aldrachi the demons had killed, or die trying. Either way, he would never bow to Sargeras.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Aldrachi Warblades, Part Eight</H2>\r\n<HR/>\r\n<P>\r\nDemons still whisper of the battle between Toranaar and Sargeras. The gathered Legion host watched with rapt attention as their ruler dueled with the aldrachi warrior. At any moment, Sargeras could have simply annihilated Toranaar, but destruction was not what he wanted.\r\n<BR/><BR/>\r\nSargeras desired to corrupt the aldrachi champion, and he would need to exhaust Toranaar to succeed. For days, the Legion\'s ruler did so. Like a cruel predator toying with prey, Sargeras battered Toranaar with just enough force to wear him down. \r\n<BR/><BR/>Toranaar was a seasoned warrior, and he recognized Sargeras\'s ploy. He knew he could not best the Legion\'s commander in combat, and so he decided on one final act of defiance. Toranaar feigned submission. When Sargeras let his guard down, the aldrachi champion struck. \r\n<BR/><BR/>\r\nHis warblades ripped through Sargeras\'s hide, and fire burst from the wound. Though it was only a minor injury, the other aldrachi howled in triumph. \r\n<BR/><BR/>\r\nIt was the last time such war cries would ever echo through their once-great capital.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Aldrachi Warblades, Part Nine</H2>\r\n<HR/>\r\n<P>\r\nToranaar\'s defiance infuriated Sargeras. In an instant, he ripped the warrior and his fellow aldrachi champions to pieces. So great was Sargeras\'s wrath that nothing was left of their bodies but dust. The Legion\'s ruler then commanded his armies to bathe the aldrachi world in an inferno that would smolder for eternity.\r\n<BR/><BR/>\r\nThough Sargeras had failed to corrupt the aldrachi, all was not lost. He had left the warblades used by Toranaar and his kin intact. If the aldrachi would not serve the Legion, their formidable weapons would.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Aldrachi Warblades, Part Ten</H2>\r\n<HR/>\r\n<P>\r\nSargeras ordered his lieutenant Kil\'jaeden the Deceiver to distribute the warblades of the aldrachi. Over thousands of years, the demon sought out the Legion\'s greatest warriors. Those who met Kil\'jaeden\'s standards received a set of warblades. In demonic hands, these weapons went on to massacre civilizations, exterminate entire races, and consume the souls of a hundred thousand dead.\r\n<BR/><BR/>\r\nIn time, Kil\'jaeden had circulated all of the warblades, save the ones that had belonged to Toranaar. These were the most powerful arms taken from the aldrachi. Kil\'jaeden kept them under close watch, awaiting a champion ruthless enough to wield the fabled weapons that had made Sargeras bleed.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Aldrachi Warblades, Part Eleven</H2>\r\n<HR/>\r\n<P>\r\nAfter years of waiting, Kil\'jaeden found someone worthy of wielding Toranaar\'s warblades. Her name was Caria Felsoul, and she was one of the Illidari\'s most cunning and adept demon hunters.\r\n<BR/><BR/>\r\nCaria had willingly turned on the Illidari and pledged herself to the Legion in exchange for power, and Kil\'jaeden rewarded her. He flooded the demon hunter with dark energy and molded her into his perfect servant. Before unleashing Caria on his enemies, he gifted her the Aldrachi Warblades.\r\n<BR/><BR/>\r\nKil\'jaeden relished this final act, knowing it stood against everything Toranaar had fought for. The aldrachi had used his warblades to uphold the dignity of his people and reject Sargeras\'s offer of power. Wielded by a traitor like Caria, the weapons would become tools of betrayal, murder, and dishonor.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[721] = {
+						0.5871134996414185,
+						0.7683025598526001,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = 12,
+				["expansion"] = 6,
+			},
+			["copy_1"] = {
+				["title"] = "Tome of Fel Secrets",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Tome of Fel Secrets</H1>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<IMG src="Interface\\Pictures\\artifactbook-demonhunter-cover" align="center" width="230" height="230"/>\r\n<IMG src="Interface\\Common\\spacer" align="center" width="1" height="27"/>\r\n<p align="center">As recorded by Vahu of the Illidari.</p>\r\n</BODY></HTML>',
 				},
 				["singlePage"] = true,
 				["pageCount"] = 0,
@@ -30152,6 +30385,2357 @@ LK["LocalData"] = {
 
 
 
+		-- user submission #20
+
+
+		["Item-113999"] = {
+			["base"] = {
+				["title"] = "Decoded Message 001-150",
+				["text"] = {
+					"A single de-weaponized companion unit was fitted with a Stealthman 54z, enabling it to appear harmless and bypass the enemy's significant security systems.  It has identified the enemy's leader with a 73.4% accuracy.  The enemy leader is monstrous in size and calls itself iR-T0.  No further information was obtained.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["GameObject-249013"] = {
+			["base"] = {
+				["title"] = "Saga of the Shield Seeker",
+				["text"] = {
+					"Gorvold Ironbrow was a great warrior. He was one of the few willing to brave the dangers of our lost past. His many victories were fueled by his cunning and collection of powerful artifacts from the older ages.\r\n\r\nBraving the forbidden areas of Storm Peaks, he learned of a powerful shield, wielded by a champion of Tyr. The shield became his obsession as he scoured the continent in search of it.\r\n\r\nAfter venturing to forgotten battlefields in the north, Gorvold learned that the champion went south with Tyr, fleeing the crumbling empire of the titans behind. Gorvold built a mighty ship and began his journey south as well.",
+					"Gorvold braved sea beast and storm alike, following the harrowing trail south. With guile he tracked the barest scraps of a trail across a continent to find a long forgotten battle.\r\n\r\nHere he found stunted vrykul, the castoffs of Ymiron's edict, both worshipping and avoiding the site of a fallen titan keeper and his great foe.\r\n\r\nFrom ruins Gorvold discovered the trail did not end here.  After the great battle, Tyr's champion moved on. So too did Gorvold.",
+					"<the final section is written in a different hand>No one knows where Gorvold went or what he found, only that he returned empty handed, forever maddened by his failure. His only words were of how he failed the test of Yrgrim.\r\n\r\nGorvold threw himself into battle with near berserk rage. His cunning was replaced with reckless abandon, and ultimately fell in battle, taking his secrets with him to the grave.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[117] = {
+						0.56882244348526,
+						0.7876101732254028,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-338854"] = {
+			["base"] = {
+				["title"] = "Kalliope: A History",
+				["text"] = {
+					"The hero Kalliope was one of the most promising aspirants in Bastion. Her selflessness, kindness, and leadership were unparalleled.\r\n\r\nKalliope was still only an aspirant when the Void attacked. During the horrific conflict Kalliope took up the spear of a fallen ascended and stood her ground against overwhelming forces.",
+					"Kalliope's valor that day earned her ascension. While it was Agthia the Paragon of Courage who sacrificed herself that day to save Bastion, Kalliope's valor stood as a beacon for all aspirants. No matter your station, you can still make a difference.",
+					"After Kalliope's ascension, she went on to perform great acts of healing and service. She carried the spear that she took up during the fight against the void. It is said to have great power and worked as the conduit of Kalliope's righteous will.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Marble",
+				["mapData"] = {
+					[1533] = {
+						0.4185512661933899,
+						0.3841347694396973,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["Item-170054"] = {
+			["base"] = {
+				["title"] = "Decrypted Message 001-316",
+				["text"] = {
+					"Unidentified threats have attacked Peacekeeper 014 units at Gift Research Facility: Omicron. Initiate protocol 54.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-170055"] = {
+			["base"] = {
+				["title"] = "Decrypted Message 001-322",
+				["text"] = {
+					"Unidentified threats have attacked Peacekeeper 014 units at Gift Research Facility: Iota. Terminate protocol 54. Initiate protocol 87. Maintain quarantine until further notice.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-192493"] = {
+			["base"] = {
+				["title"] = "First History Scroll",
+				["text"] = {
+					"Long ago, when the North Wind ruled these peaks alone, a powerful taunka chieftain's brother coveted these lands for himself.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[120] = {
+						0.6581658720970154,
+						0.5044298768043518,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["Item-37540"] = {
+			["base"] = {
+				["title"] = "The Diary of High General Abbendis",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<H1 align="center">The Diary of High General Abbendis</H1>\r\n<BR/>\r\n<IMG src="Interface\\FlavorImages\\ScarletCrusadeLogo"/>\r\n</BODY>\r\n</HTML>',
+					'<HTML>\r\n<BODY>\r\n<P>The voice whispered, "Come to me." From the very beginning I knew that it was the Holy Light speaking to me in dreams. At last! After all of my years of prayers and good deeds, the cleansing of the blight of the unliving from the face of Azeroth. After all of the failures and resurrections.</P>\r\n<BR/>\r\n<P>Finally!</P>\r\n</BODY>\r\n</HTML>',
+					'<HTML>\r\n<BODY>\r\n<P>It happened again. "Come to me...", the Light commanded.</P>\r\n<BR/>\r\n<P>I woke up freezing, but it wasn\'t cold in my chambers. I\'m going to redouble my efforts! I\'ll tell the high abbot tomorrow that I want prayers increased. No more half-measures!</P>\r\n<BR/>\r\n<P>The Holy Light has taken notice of our good work. I can feel it!</P>\r\n</BODY>\r\n</HTML>',
+					"<HTML>\r\n<BODY>\r\n<P>This time I was awake! It was very vivid, and yet for over a minute, in the middle of the warm, sunny day, my breath came out misted and chill. One of the priests noticed and dropped to his knees in prayer.</P>\r\n<BR/>\r\n<P>No one else heard the voice, though. At least the witness proves that I'm not going insane. Maybe I should ask Landgren to pray on the matter?</P>\r\n<BR/>\r\n<P>I'll get Jordan and Street to scrutinize their recruiting efforts tomorrow. We've grown bloated with ranks of unbelievers who yearn only to destroy the undead. That's not enough!</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>The commander and the bishop were both receptive. Not that they had any choice. Bishop Street in particular seemed very enthusiastic. He spoke of a revival for the crusade and swore to ferret out the weak of faith within our ranks.</P>\r\n<BR/>\r\n<P>I told him to go easy. I've no intention of destroying the Crusade. However, I do like the sound of forming an elite cadre of the most faithful to do the Light's bidding in Northrend. I fear the man's friendship with Alphonse is slowly twisting him. They both have their uses, though.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>I will leave most of the Crusade here to continue mopping-up operations on the undead in our backyard. I imagine that once they have finished what we began, most will disband and go back to their homes to live in peace.</P>\r\n<BR/>\r\n<P>That somehow seems right. At our finest, we have always been the salt of the earth, rising up to take back our homes from the filth of the Scourge corruption, to return our Lordaeron to its former glory. To a time before the Scourge, before Arthas and regicide... before the Lich King.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>There have been whispers amongst the men about a day soon to come that will change everything for the Scarlet Crusade. Bishop Street has put a name to it, calling it the Crimson Dawn.</P>\r\n<BR/>\r\n<P>I will put some thought to this, though I can feel the truth of it in my bones. I pray that it will bring weal for us rather than woe.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>The Light has spoken again with a great deal of urgency. I came away from the dream with a sense of impatience. I will not disappoint. There must be no more delays. We must soon be underway!</P>\r\n<BR/>\r\n<P>What a great coincidence then - and I had to control myself from showing my relief - this afternoon Captain Shely procured for us a number of new ships for the voyage. Perhaps it was no coincidence at all? The Holy Light expresses its will in ways that we are not meant to understand.</P>\r\n<BR/>\r\n<P>I will take the Sinner's Folly as my flag. I think the name is most fitting.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>Now I know why the Light has been pushing me to be underway. In the dead of night a Scourge necropolis appeared in the sky over us and out poured the minions of hell!</P>\r\n<BR/>\r\n<P>A new breed of death knight leads the assault. Already the casualties we've suffered have been catastrophic. With the Scourge able to strike at us anywhere and at will from above, there seems no way to mount a proper defense.</P>\r\n<BR/>\r\n<P>I fear that our intended expedition to Northrend is over before it has begun.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>I've been informed that Hearthglen and the surrounding area have already begun to assemble a host. High Commander Galvar Pureblood himself intends to lead them to save us. His efforts will be for naught.</P>\r\n<BR/>\r\n<P>I must see to it that my best couriers get through the enemy lines and warn him off. Hearthglen must prepare to dig in and rally the rest of the Crusade.</P>\r\n<BR/>\r\n<P>With any luck they'll get through before nightfall.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>There's been no word from any of my couriers this morning. It's clear that none of them made it through to Hearthglen. The Plaguelands are lost. Pureblood will come with his forces and they'll be annihilated out in the open.</P>\r\n<BR/>\r\n<P>This afternoon I received a vision from the Light. In it, I saw the utter destruction of everything that we've built here. The message was clear - I was being told to take the remainder of the most faithful and abandon the Crusade to their doom.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>Landgren later told me that he'd received the same vision. I cannot comprehend how the Light would tell us to take such a dishonorable action, but it is not my place to question - I am to obey, and obey I shall.</P>\r\n<BR/>\r\n<P>It was with trepidation that I gazed upon New Avalon, I suspect for the last time. Our fate lies in Northrend. I am filled with a sense of ominous foreboding for some reason. The mission ahead should shake away these concerns. I will put them out of my mind.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>Perhaps with luck, High Commander Pureblood will somehow endure and marshal the survivors. I'm a coward - a dog running away with my tail tucked between my legs!</P>\r\n<BR/>\r\n<P>Two months they tell me that this journey is going to take. The other ships aren't built for speed like the Folly. They're carrying most of our forces and equipment, and they're not much more than single sail freighters, but they'll get there safely.</P>\r\n<BR/>\r\n<P>I'm not looking forward to this, but for the Light I will endure the sea sickness. I simply mustn't let the others see.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>I've not written in a while. It's as much as I can do to stand upright and not get sick. The men are beginning to wonder why I keep myself holed up in my cabin most of the time. It wouldn't be good for morale for them to see me this way.</P>\r\n<BR/>\r\n<P>It shouldn't be long now. I pray that it won't be. Six weeks already and every day it seems that the weather gets worse. I can only hope that Northrend itself does not have such horrible weather. I wasn't built for the cold.</P>\r\n<BR/>\r\n<P>The Holy Light has been silent for a very long time.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>We were attacked with no warning whatsoever! Giants in massive oared longships came out of the mist like ghosts! They were silent as the dead.</P>\r\n<BR/>\r\n<P>I lost a ship and all of the men on it. We fought with great courage and skill considering that we have only the most rudimentary naval combat training.</P>\r\n<BR/>\r\n<P>Afterward, the screams of our men who'd been taken captive by the giants echoed across the water. After a while it grew silent again. Bishop Street led the men in prayers.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>I awoke this morning in the middle of making adjustments to my maps. The Light was guiding my hand, showing me exactly where we must go.</P>\r\n<BR/>\r\n<P>We are close!</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>Landfall!</P>\r\n<BR/>\r\n<P>Exiting the rowboat upon the beach, I planted our banner and was overcome by the Holy Light, which spoke through me. Today is the Crimson Dawn - the great day that we've waited for. This is to be the site of New Hearthglen. We are no longer the Scarlet Crusade. We are now the Scarlet Onslaught!</P>\r\n<BR/>\r\n<P>And an onslaught upon Northrend we shall be! The cancer of the Scourge threatens to overflow in the crown of the world and drown the rest of us. The time has come to take the fight directly to the Lich King's doorstep!</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>It's been almost a month now and construction has proceeded apace. I've been too busy to write. My scouts tell me that this land is full of dragons and other strange beasts. We'll keep to ourselves until we're ready.</P>\r\n<BR/>\r\n<P>In the middle of services today, the high abbot proclaimed that a visitor would arrive soon - one that the Light was sending to lead us to victory.</P>\r\n<BR/>\r\n<P>I don't know how I feel about that. Why didn't the Light tell me? Have I not served faithfully? Now I'm to be replaced by some outsider?</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>Admiral Barean Westwind showed up on my doorstep tonight! By all accounts he'd died upon these shores an age ago.</P>\r\n<BR/>\r\n<P>He didn't look old enough and yet I knew that it was him. He claimed that he was the only survivor of his doomed fleet and that he'd survived only through the good graces of the Light.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>We stayed up speaking through the night and into the morning. He assured me that he had no intention of taking my place, but that the Light had instructed him to travel across the Great Dragonblight to serve as my advisor and commander in title only. He claimed that great change was coming to Northrend. The Alliance and the Horde were going to come en masse in response to a great plague that the Lich King was about to unleash upon them.</P>\r\n</BODY>\r\n</HTML>",
+					'<HTML>\r\n<BODY>\r\n<P>The men have taken to the grand admiral with great zeal, especially High Abbot Landgren and Bishop Street. Apparently the Holy Light whispered a new blessing to the admiral in his sleep, which he passed on to Landgren. Some of the men have converted to the priesthood and are now being called "raven priests".</P>\r\n<BR/>\r\n<P>Only Jordan seems unimpressed. I suppose that\'s understandable. He probably feels his position is threatened if mine is.</P>\r\n</BODY>\r\n</HTML>',
+					"<HTML>\r\n<BODY>\r\n<P>Something doesn't seem right. I can't put my finger on it, but I cannot make myself fully trust the admiral. He's done nothing wrong. Quite the contrary! And yet, I have to trust my gut.</P>\r\n<BR/>\r\n<P>I will pray for understanding. The Light delivered the admiral to lead us to victory and it is not my place to question its decisions. I will continue to obey. I am faithful.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>Another couple of months have passed. We've made great strides in the construction of New Hearthglen. The wall is almost complete as is the barracks. Kaleiki's men are miracle workers.</P>\r\n<BR/>\r\n<P>My heart hasn't been into writing. I've been avoiding putting my thoughts here for some reason. The Light hasn't visited me of late, though the admiral assures me that this is nothing to worry about.</P>\r\n</BODY>\r\n</HTML>",
+					"<HTML>\r\n<BODY>\r\n<P>My men report that a small group of Forsaken have broken ground on a camp along the hillside to the north. On the other side of the hill, the Alliance have apparently begun the construction of a much larger base.</P>\r\n<BR/>\r\n<P>The admiral says that we should leave them be. There are other Horde forces gathered to the west that would surely come to their aid if we were to attack. I don't feel good about it, but I see the logic in his reasoning.</P>\r\n</BODY>\r\n</HTML>",
+					'<HTML>\r\n<BODY>\r\n<P>The first phase of construction is done. Admiral Westwind has ordered a group of my men to establish a toehold further to the north. He wouldn\'t go into detail, claiming that he was being "guided" to do so.</P>\r\n<BR/>\r\n<P>We caught four spies from the Forsaken town, Venomspite, this afternoon. I\'m going to have Alphonse torture them for information. If we only caught four, how many more have slipped in amongst us?</P>\r\n<BR/>\r\n<P>Why do I feel as if things are beginning to unravel?</P>\r\n</BODY>\r\n</HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["GameObject-504210"] = {
+			["base"] = {
+				["title"] = "The Green Hills of Stranglethorn",
+				["text"] = {
+					'<HTML>\r\n<BODY>\r\n<BR/>\r\n<BR/>\r\n<H1 align="center">THE GREEN HILLS OF STRANGLETHORN</H1>\r\n<BR/>\r\n<H3 align="center">by Hemet Nesingwary</H3>\r\n</BODY>\r\n</HTML>',
+					"Our first day went as well as one can expect first days to go.  Most of our time was preoccupied with making the necessary arrangements to establish a base camp.  I located an ideal setting by a freshwater river inlet.  Judging by the old, abandoned docks nearby, this site was inhabited sometime ago.  As for the original inhabitants, only time can tell that tale.",
+					"For this expedition I have assembled Ajeck Rouack and Sir S. J Erlgadin, along with my trusted servant, Barnil Stonepot.  I fought alongside Ajeck's father's side in many battles in defense of the Alliance.  Seeing her grown is quite special.  Her father schooled her well in the ways of weaponry.  Her skills with a bow make me wonder if there is elven blood running through those veins.",
+					"Sir S. J. Erlgadin comes from human aristocracy.  His father, Count Erlgadin, was renowned for his generosity.  It was the Count who lobbied for improved working conditions for the Stonemasons' Guild during the restoration of Stormwind after the Second Great War.",
+					"In the years that followed, after Stormwind betrayed the Stonemasons' Guild, Sir Erlgadin grew bitter about the role of the nobles within the Kingdom.  He no longer wished to uphold the position that his father's bloodline had earned for him in the House of Nobles.\r\n\r\nBut I digress.  The purpose of this story is not to act as a political treatise or a biography.  This is the account of my experiences hunting big game in the green hills of Stranglethorn....",
+					"We rose with the sun.  Barnil began to prepare the morning meal. I noticed Ajeck's attention was somewhat distracted.  The day's trek would be long and our hunt would bring us close to danger.  A lack of focus could easily lead to an errant mishap.  Yet Ajeck seemed unable to divert her gaze from Barnil who stood by the edge of the river rinsing out his mess kit.",
+					"Just as I was about to question Ajeck's lack of interest in the day's hunting strategy, she reached for her quiver, drew an arrow and unleashed a shot right towards poor Barnil.  But it was not Barnil that Ajeck was shooting at.  For when Barnil stepped aside, mouth agape, a large river crocilisk floated to the surface with Ajeck's arrow perfectly placed between his two large eyes.",
+					"We set out toward the west, through the thick overgrowth of the tangled jungle.  Moving with slow, deliberate steps we paced through thick foliage in search of prey.  The morning passed in frustrated silence.  Nothing was stirring in the Vale, not even a breeze.  By the afternoon, the expedition had grown restless.  Barnil no longer strode with the cautious steps of a predator tracking prey.  Rather he clumsily clomped along the path often stepping noisily on dried leaves or fallen branches.",
+					"During one such misstep, Erlgadin laid a heavy hand on Barnil's shoulder.  Ajeck and I gave a casual glance, assuming the man was simply giving Barnil a much-needed scolding for his carelessness.  Erlgadin, however, gestured slowly with his head toward a nearby fallen tree.  Gazing back at us were two piercing black eyes just above a mouthful of razor sharp fangs.",
+					"The beast was a male Stranglethorn Tiger.  Before I could cock my rifle, Erlgadin raised his crossbow and fired upon the beast.  The bolt missed its mark and caught the beast heavily in the left flank.  The tiger made a futile attempt to flee but its wound was too grave.  The beast stumbled for a few tragic seconds until Barnil finished the kill with a thrown axe.",
+					"The kill brought about a festive mood amongst the expedition.  Barnil poured mead for all to enjoy.  But our festivities were short-lived.  As we were preparing the corpse for transport back to base camp we were all caught off guard by a horrendous growl.  In all my years I have never heard anything so blood curdling.",
+					"On a rocky precipice above, silhouetted by the setting sun, I could make out the largest cat of prey I have ever laid eyes upon.  I was able to loose one clumsy volley with my rifle, but the cat held his ground.  He growled once again, this time louder than the first, and vanished.\r\n\r\nWe gathered our belongings and headed solemnly back to camp.",
+					"I had promised the expedition that we would spend the next day hunting panthers, as their furs are in high demand throughout Azeroth.  It only makes sense that such demand should exist with all of the able-bodied hunters, trappers and fur-traders off giving their lives so valiantly in the name of the Alliance.",
+					"Ajeck and Sir Erlgadin were anxious to learn how to hunt effectively with a Dwarven Rifle.  I had the two humans leave their primitive range weapons at base camp.  Barnil and I outfitted them with some of Ironforge's finest firearms.",
+					"On this day we ventured to the south, following some fresh panther tracks.  Soon we reached a ravine spanned by a tremendous rope bridge.  I could not help but to think of Brann's descriptive writings of this region when I saw the engineering marvel.  So often it was assumed that the native Trolls were a primitive and uneducated race yet as I gazed upon the master craftsmanship of the bridge I was able to recognize the skill with which the Troll builders overcame the seemingly impossible feat.",
+					"Before long, Ajeck tracked the panther to the southwest.  We walked quietly, guns at the ready, in anticipation of our prey.  A snapping of twigs from a nearby copse of trees drew our attention immediately.  Something was in there.  One stern glance at Barnil was enough to convey my thoughts.  Barnil slowly lowered his rifle.  This kill was not for us; it was for our Human companions.  Countless panthers had lost their lives in front of our smoking barrels.  This kill would be for the Humans.",
+					"Both Ajeck and Sir Erlgadin stood poised, guns leveled at the bristling overgrowth at the base of the swaying trees.  The midday sun beat heavily upon us.  A slow trickle of perspiration trailed down from Elrgadin's temple as he pulled the pin back.  Upon the sound of the click, the thick flora parted and a large black panther -- a beautiful specimen -- darted out onto the plain.",
+					"The Humans trained their sights on the panther as it ran along the edge of the tree line.  The barrels of their guns moved in perfect parallel tandem.  Barnil gave me an urging glance but I shook my head no.  This hunt was for the Humans, not Barnil or me.  Erlgadin fired a booming shot, missing the panther altogether.  Apparently he was unprepared for the violent kickback of the rifle blast.",
+					"His gun tossed back violently in his arms.  The barrel swooped sideways and came up beneath Ajeck's rifle.  Ajeck had chosen that exact moment to pull her trigger.  The rifle, the aim now knocked clumsily toward the tree line, went off with a distinct boom.  A flock of birds screamed out of the canopy, scattering in every direction.  A plume of smoke rose from the tree.  We watched in awe as a tremendous branch fell squarely on the fleeing panther, breaking its back",
+					"As the weeks passed our stockpile of panther and tiger skins grew immense.  I decided it was time for the expedition to shift our focus to a new challenge: Raptors.\r\n\r\nThe Humans, while appreciative of the training Barnil and I offered, decided to refrain from hunting with firearms.  Ajeck was much more comfortable with a finely strung bow and Sir Erlgadin never left camp without his sturdy crossbow.",
+					"We set out at first light, heading south past the Tkashi Ruins.  Barnil voiced concern that we might encounter members of the Bloodscalp Tribe.  I reminded Barnil that the Bloodscalps were more concerned with destroying their tribal enemy, the Skullsplitters.  Needless to say, Barnil was not comforted in the least.  I, however, had a loaded rifle, a satchel full of gunpowder and three deadly hunters with me to ease any concerns of an unfriendly ambush.",
+					"I've stood before a towering Infernal on the battlefield, the army of the Burning Legion advancing from all directions.  An unruly band of Trolls seems as harmless as a jackrabbit in the hills of Dun Morogh.\r\n\r\nWe passed the Tkashi Ruins without event, much to Barnil's relief.  The party proceeded to head westward, toward the Great Sea, skirting the Ruins of Zul'Kunda just to the south.  As we ascended the high sea bluffs we spotted our first Raptor.",
+					"The beast never so much as detected our presence.  In fact, the only greeting he received from the expedition was a bullet between the eyes.\r\n\r\nSir Erlgadin let out a hearty *hurrah* as Ajeck nodded toward me with keen approval.  I sifted through my pack in search of my pipe, hoping to enjoy a celebratory smoke.  Barnil began to scurry up the hillside to retrieve the Raptor's corpse.  I stared at the fallen beast with the satisfaction that accompanies every big kill.",
+					"But I could not bask in the glory of the kill for long.  For when I turned my eyes toward the horizon, several silhouettes appeared cresting the hill, just above poor Barnil.\r\n\r\n*Flee, Barnil!* I shouted.  Ajeck, Sir Erlgadin and myself loosed a volley of bullets, arrows and bolts over Barnil and toward the pursuing raptors.  One of us landed a kill amidst the confusion.",
+					"Our hastily aimed shots were enough to buy Barnil's escape.  Barnil clamored back down the hill and rejoined the party. We scurried off into the jungle; a pack of ferocious Lashtail Raptors stalking our every move.  \r\n\r\nThe hunters were now the hunted.",
+					"I led the party toward the sea, hoping the shoreline would provide refuge from the Raptors.  In our haste we had drifted too far north, to a precariously high elevation.  The mistake was made.  The fault was mine.  We stopped just short of a sheer cliff, the Raptors just a few paces behind.",
+					"I stepped slowly forward, gun raised.  I had led these brave hunters to their death.  I would die defending them.  Lashtail Raptors are particularly fierce, known for their unrelenting blood-thirst.  They far outnumbered us.  But I would be damned if I let them kill me and my comrades without shedding some of their own blood first.",
+					"Ajeck and Sir Erlgadin readied their weapons, flanking me on either side, our backs to the sea.  Barnil let out a defeated sigh and drew his axe.  The Lashtails were almost upon us.  Their steady stride had slowed.  They were stalking their prey now for they knew they had us trapped.",
+					"And then something miraculous happened.  From off to our side we heard the distinct and terrifying roar of the great white tiger.  Despite their numbers, the Raptors turned and scattered in all directions.  We saw but a brief white flash as the tiger darted past us and pounced on one of the Raptors.  No command needed to be given.  All four members of our party knew it was time to run.",
+					"We sprinted all the way back to base camp, never slowing.  Later that night we sat quietly around the campfire, knowing our lives had been saved by a bizarre twist of fate.  Such are the risks of the big game hunter.  We toy with fate by delivering it.  Yet each of us, at some point, will face fate's razor sharp teeth.  This Dwarf is just glad that moment did not come upon the green hills of Stranglethorn.\r\n\r\n--The End--",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2371] = {
+						0.7579400539398193,
+						0.3401762247085571,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-516141"] = {
+			["base"] = {
+				["title"] = "Ripped Note",
+				["text"] = {
+					"Now it seems the picky eater only wants to eat fungus.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2404] = {
+						0.6835564374923706,
+						0.7326673269271851,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-340001"] = {
+			["base"] = {
+				["title"] = "Engineer's Note",
+				["text"] = {
+					"I have completed my masterpiece! By detonating this mine you gain its explosive potential, released slowly over time.\r\n\r\nI have mined the shop to protect it for now, I shall return when I need it.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2404] = {
+						0.5957605242729187,
+						0.3732687830924988,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["Item-25866"] = {
+			["base"] = {
+				["title"] = "Greatmother's List of Herbs",
+				["text"] = {
+					"The Olemba root is a fairly common root found in the Terokkar Forest. Search near the Olemba trees that comprise the bulk of Terokkar's forests for upturned roots.\r\n\r\nThe marshberry only grows in Zangarmarsh. It can only be found at the Ango'rosh Stronghold, located in the northwestern region of the marsh. Beware the ogres that fervently guard the precious berries.\r\n\r\nThe Telaari frond is perhaps the most easily attainable of the herbs on this list. South of Garadar in the Talaari basin, you will find the fronds. They grow near the water.\r\n\r\nThe last herb on the list is unique to the Blade's Edge mountains. You will find Blade's Edge north of Zangarmarsh. Dragonspine grows upon the ends of the jagged rock formations that guard the canyons of Blade's Edge. You will know what I speak of when you first see Blade's Edge. The rock formations look like row upon row of sharp and pointed teeth.\r\n\r\n",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 1,
+			},
+		},
+		["GameObject-270930"] = {
+			["base"] = {
+				["title"] = "Hawthorne's Hoe",
+				["text"] = {
+					'Carved into the wood reads "S. Hawthorne".',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[896] = {
+						0.5551373958587646,
+						0.451854407787323,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-214198"] = {
+			["base"] = {
+				["title"] = "Carved Bronze Mirror",
+				["text"] = {
+					'While the glass itself is long gone, the reverse of this mirror is an elaborately carved bronze disc depicting the Red Crane of Hope. An inscription reads,"To my dearest Lin / My beauty, my dove / This picture of perfection / Your reflection / My love  - Yao".\r\n\r\nThis specimen was donated by the esteemed death knight, $PLAYER_NAME$.',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[390] = {
+						0.8378604650497437,
+						0.3086766600608826,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 4,
+			},
+		},
+		["GameObject-192892"] = {
+			["base"] = {
+				["title"] = "Orcish / Common Dictionary",
+				["text"] = {
+					"BUR - An aggressively passionate mating call.\r\nWhat can I do fer ye? - Beer sold here.\r\nHi - A threatening war cry, especially when accompanied by a wave or bow.\r\nHow are you? - Was your mother really a reptile?\r\nKing's Honor, friend! - I'm starving!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[125] = {
+						0.7158351540565491,
+						0.3229351043701172,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["GameObject-408805"] = {
+			["base"] = {
+				["title"] = "The First Clue",
+				["text"] = {
+					"By the road without a breeze, seek the mound of immorality.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[36] = {
+						0.6027175188064575,
+						0.4775197505950928,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-241031"] = {
+			["base"] = {
+				["title"] = "Dread-Captain's Saber",
+				["text"] = {
+					"An officer's sword stands out among the wreckage. Scanning the nearby bodies, you notice the captain is not among them.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[634] = {
+						0.395667314529419,
+						0.1945673227310181,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-136602"] = {
+			["base"] = {
+				["title"] = "Valeera's Note",
+				["text"] = {
+					"Remember, 'The shadows reveal' is the key.\r\n\r\nLucian Trias - Resident cheese monger at One More Glass\r\n\r\nDesmond Gravesorrow - Uncrowned agent stationed west of the Violet Citadel\r\n\r\nVal'zuun - Informant of unknown origin, last seen in the Underbelly\r\n\r\n-V",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-504201"] = {
+			["base"] = {
+				["title"] = "Caution!",
+				["text"] = {
+					"- Caution! -\r\n\r\nThis area is undergoing environmental remediation due to recent events.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Progenitor",
+				["mapData"] = {
+					[2472] = {
+						0.5045018196105957,
+						0.7105051279067993,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["Item-170059"] = {
+			["base"] = {
+				["title"] = "Decrypted Message 002-001",
+				["text"] = {
+					"01001000 01100101 01100001 01110010 01110100 01101000 01110011 01110100 01101111 01101110 01100101 00100000 01100001 01110100 00100000 01110100 01101000 01100101 00100000 01001100 01101001 01101111 01101110 11100010 10000000 10011001 01110011 00100000 01010000 01110010 01101001 01100100 01100101 00100000 01001001 01101110 01101110 00101110 00100000 01010100 01101111 01101111 00100000 01101101 01100001 01101110 01111001 00100000 01100011 01100001 01110010 01100100 01110011 00100000 01101001 01101110 00100000 01110100 01101000 01100101 00100000 01101000 01100001 01101110 01100100 00101110 00100000 00111000 00101111 00111000 00100000 01100110 01101111 01110010 00100000 00110001 00110010 00101110 00100000 01000011 01101111 01101110 01110011 01110100 01110010 01110101 01100011 01110100 00100000 01100001 01100100 01100100 01101001 01110100 01101001 01101111 01101110 01100001 01101100 00100000 01110000 01111001 01101100 01101111 01101110 01110011 00101110",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-516144"] = {
+			["base"] = {
+				["title"] = "Ripped Note",
+				["text"] = {
+					"Now it seems the picky eater only wants to meat that has been spiced.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2404] = {
+						0.6836073994636536,
+						0.7308951616287231,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-516145"] = {
+			["base"] = {
+				["title"] = "Ripped Note",
+				["text"] = {
+					"In case I forget to mention it, the food should be raw!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2404] = {
+						0.6591238379478455,
+						0.7113603353500366,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-408076"] = {
+			["base"] = {
+				["title"] = "The Second Clue",
+				["text"] = {
+					"The Alliance strives against Kurzen's Bad Medicine.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2112] = {
+						0.8183868527412415,
+						0.4739756584167481,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-249404"] = {
+			["base"] = {
+				["title"] = "Yrgrim's Rest",
+				["text"] = {
+					"Here lies Yrgrim, resolute and patient. Never bowing to the curse of the great enemy, he remains as strong as the vrykul of old.\r\n\r\nHe and his challenge await.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[635] = {
+						0.4636520743370056,
+						0.4896215796470642,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["GameObject-355490"] = {
+			["base"] = {
+				["title"] = "Renathal's Notes",
+				["text"] = {
+					"The Stonewright is untouchable. Not even our own stoneborn forces would dare raise a talon against her. \r\n\r\nWhat is worse is that she is one of the first venthyr, like myself and the Curator. She was not made from a soul, but willed into being by Denathrius himself. \r\n\r\nNo sinstone, no mortal trappings, or past deeds will bend her to our will.  If she is unwilling to provide us her medallion, we stand very little chance of recovering it.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1699] = {
+						0.5446771383285522,
+						0.3890403509140015,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["GameObject-277253"] = {
+			["base"] = {
+				["title"] = "Mary's Book",
+				["text"] = {
+					'It seems to be the journal of Mary Hayes. Most pages are faded, stained, and unintelligible, but one phrase reads clear.\r\n\r\n"We are done with Glenbrook. My sisters and I aim our sights higher."',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[896] = {
+						0.5315322875976562,
+						0.4442001581192017,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 7,
+			},
+		},
+		["GameObject-516146"] = {
+			["base"] = {
+				["title"] = "Ripped Note",
+				["text"] = {
+					"In case I forget to mention it, the food should be cooked!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2404] = {
+						0.6565666198730469,
+						0.7123619318008423,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 10,
+			},
+		},
+		["GameObject-368945"] = {
+			["base"] = {
+				["title"] = "Curator's Addendum",
+				["text"] = {
+					"Renathal,\r\n\r\nYou are confusing the Stonewright with the original Harvester of Wrath. She still exists, but had her power stripped and given to the Stonewright long ago. \r\n\r\nIf memory serves, the Stonewright was the first venthyr forged of a mortal soul to assume the role of a venthyr. She did... horrible things... in life in the name of protecting her people.\r\n\r\nI have not seen the original Harvester of Wrath for a few epochs.\r\n\r\nHowever, as to the location of the Stonewright's sinstone, she secured it after the incident with the Accuser and the Lord Chamberlain. We would have an easier time retrieving something from the Jailer than recovering her sinstone now.\r\n\r\nAsk me these things. I am the specialist after all.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[1699] = {
+						0.5446771383285522,
+						0.3890403509140015,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["Item-113994"] = {
+			["base"] = {
+				["title"] = "Decoded Message 001-003",
+				["text"] = {
+					"Unidentified threats have attacked Peacekeeper 011 units in deepest caves of the Magnetic Chasm.  Initiate protocol 54.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+		["GameObject-192495"] = {
+			["base"] = {
+				["title"] = "Third History Scroll",
+				["text"] = {
+					"Stormhoof ambushed the North Wind in the heart of its domain, and nearly succeeded in his plot. But the North Wind survived Stormhoof's treachery and executed the taunka as punishment for his invasion.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[120] = {
+						0.6745229959487915,
+						0.5056375861167908,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["GameObject-192494"] = {
+			["base"] = {
+				["title"] = "Second History Scroll",
+				["text"] = {
+					"The chieftain's brother, Stormhoof, gathered all his strength and set out to conquer the Storm Peaks from its rightful ruler, the North Wind.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[120] = {
+						0.6683772802352905,
+						0.5019502639770508,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 2,
+			},
+		},
+		["GameObject-249403"] = {
+			["base"] = {
+				["title"] = "Yrgrim's Challenge",
+				["text"] = {
+					"On an island of stone Yrgrim built an arena. He proclaimed to his brethren that he sought a successor strong in will and body, and pure in heart. They would have to pass his trials in order to claim his weapons.\r\n\r\nMany of berserkers and dragonriders answered Yrgrim's challenge, but all met with failure and death. Yrgrim held his trials for years until the challengers stopped coming.\r\n\r\nYrgrim then withdrew into a shrine of his own making. He crafted a door that would judge anyone before it as the first test of their spirit and body. If they had the strength to bear its gaze, they would be allowed in.",
+					"Disappointed but not disheartened, Yrgrim built a shrine to Tyr and entombed himself in it with his weapons, waiting for a time when a true champion will come.\r\n\r\nThe door wards would burn those that tried to open it with cleansing flame. Only those strong of will and pure of heart would be able to hold back the flames.\r\n\r\nFor the one that does, Yrgrim waits inside.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[635] = {
+						0.5209620594978333,
+						0.4992537498474121,
+					},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 6,
+			},
+		},
+		["Item-113998"] = {
+			["base"] = {
+				["title"] = "Decoded Message 001-119",
+				["text"] = {
+					"The virus infecting our units has been identified: a clockwork assembly system hack.  Because it appears to be beneficial in many ways, the robot will accept it readily, until it begins to corrupt their AI by overloading generosity circuits.  There is no known way to nullify the effect without destroying the host.  Do not hesitate.\r\n\r\nYour Leader (0x0001)",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 5,
+			},
+		},
+
+		-- end of user submission #20
+
+		
+		["GameObject-572462"] = {
+			["base"] = {
+				["title"] = "Ebon Banner",
+				["text"] = {
+					"A tattered banner left behind in the ramparts of Icecrown Citadel. The insignia of the Ebon Blade can still be made out, grim and weathered but unbroken.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2541] = {
+						0.398911714553833,
+						0.4989502429962158,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-572466"] = {
+			["base"] = {
+				["title"] = "Pylon Fragment",
+				["text"] = {
+					"A shattered fragment that once belonged to Tortheldrin's vast pylon system, built to contain the mighty demon Immol'thar.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2541] = {
+						0.2516897320747376,
+						0.2305074334144592,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-613818"] = {
+			["base"] = {
+				["title"] = "Tarnished Mural",
+				["text"] = {
+					"It was in the years that followed the rise of the ancient winged beasts that even we dared not hunt that the stone giants scoured our lands.\r\n\r\nWe knew of the poison in their ways and so we hid from their watching eyes. While some saw glory in tales of the stone armies banishing the ancient chaos that had covered the old world, we stayed away.\r\n\r\nWe had no interest in their great halls, or strange rituals. Our people listened to the song that came from within, not to the monotone staccato of their ordered march.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2413] = {
+						0.5571695566177368,
+						0.5402078628540039,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579201"] = {
+			["base"] = {
+				["title"] = "Awe'ohna's Path--Part 1: Questions",
+				["text"] = {
+					"The haranir are not people who fear, but we often tie ourselves to tradition. We came to this land to keep it safe. We will find the source of its light and the reason for its absence, even if tradition must be cast aside.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.719087541103363,
+						0.5890560746192932,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579242"] = {
+			["base"] = {
+				["title"] = "Tending the Lands--Part 1: The Conflict",
+				["text"] = {
+					"Both are necessary for Harandar to thrive, so we must protect both. But they are fundamentally different and cannot stand the other's presence. I fear only Aln'hara's return will bring them real peace.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.6342014074325562,
+						0.4019403457641602,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["Item-254558"] = {
+			["base"] = {
+				["title"] = "Herbalist's Handbook: Eversong Medicinals",
+				["text"] = {
+					"Common Silverleaf:\r\n\r\nThis herb can be found in low-lying bushes in all parts of Eversong Woods. It prefers partial shade and loamy soil, and has a beneficial relationship with the trees it grows beside.\r\n\r\nAs an herb, it is mild in flavor, rich in nutrients, and can be used for pain relief on rashes and burns.\r\n\r\n<A note is scrawled in the margins.>\r\n\r\nLynxes also benefit from the pain relieving properties--however, it will make them crazy, so just be prepared!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-507966"] = {
+			["base"] = {
+				["title"] = "Profane Research",
+				["text"] = {
+					"<Much of this text has been worn away over the years, or made illegible with bloodstains. A bookmarked passage stands out to you.>\r\n\r\nMy Blessed Lord has gifted me with renewed life, and a new citadel from which I have been tasked the honor of overseeing a branch of his army. I, who attempted to betray him... have been rewarded. \r\n\r\nPerhaps I should have focused my studies on the curiosities of necromancy. After all, what use is the Sunwell's power if one has passed beyond the realm of the living? \r\n\r\nI am eternal, now. And I have Arthas to thank for it.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2395] = {
+						0.3604168891906738,
+						0.7251759171485901,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-572447"] = {
+			["base"] = {
+				["title"] = "Scarred Spear",
+				["text"] = {
+					"One of a thousand broken spears littering the Hellfire Ramparts. Whether it belonged to a Horde or Alliance soldier is unclear--time cares little for such distinctions.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2541] = {
+						0.6765123605728149,
+						0.5150490999221802,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-613850"] = {
+			["base"] = {
+				["title"] = "Hawkstrider Husbandry: Unabridged Edition",
+				["text"] = {
+					"...and while they may be mighty and regal, it is important to remember that hawkstriders are, above all else, highly nervous creatures. They must be allowed at least one hour of uninterrupted preening time per day in order to relieve stress. \r\n\r\nIt is recommended to separate hawkstriders during preening time. Do not attempt to help your hawkstrider preen, and do not permit your hawkstrider to preen you. Both can be considered displays of...\r\n\r\n<The book continues like this for several hundred pages.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2395] = {
+						0.5784798264503479,
+						0.5097028017044067,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-613828"] = {
+			["base"] = {
+				["title"] = "Forgotten Mural",
+				["text"] = {
+					"Never forget the ancient myths.\r\n\r\nNever forget the slumbering darkness banished down below.\r\n\r\nNever forget the horrors our ancestors met on the great journey.\r\n\r\nNever forget what brought us to this new home we call Harandar.\r\n\r\nAlways remember that we are united by tradition, standing as one.\r\n\r\nGuided by the song, for the Goddess who one day will return to her cradle.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2413] = {
+						0.6817754507064819,
+						0.2383012175559998,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-553839"] = {
+			["base"] = {
+				["title"] = "Devastation",
+				["text"] = {
+					"Devastation\r\n\r\nWarriors of the sin'dorei are normally known for spear, bow, and sword, but Thaladred the Darkener preferred an axe above all. First used during the Troll Wars, Devastation struck its enemies with such brutality that their swift regeneration, magic, and even calls to their loa would fail them.\r\n\r\nAlthough its origins lay in defense of Quel'Thalas, Thaladred wielded the weapon in service of the traitor Prince Kael'thas in later years. In doing so, he betrayed his people and forever stained the weapon's legacy. Until a day when one is found with the unique temperament to wield it, Devasation bathes in the light of the Sunwell, in the hopes of removing the Darkener's shadow.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2432] = {
+						0.4809263348579407,
+						0.2899782061576843,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-553851"] = {
+			["base"] = {
+				["title"] = "Scourgebane",
+				["text"] = {
+					"Scourgebane\r\n\r\nScourgebane was forged so that Prince Sunstrider would not taint his father's sword with his people's hate. Arcane magic gathered the rage of the sin'dorei along its edge, ripping apart any undead foes with deadly precision.\r\n\r\nWhile Felo'melorn was eventually restored to righteousness, Scourgebane was used by the forces of Kael'thas as he served the Burning Legion--against his own people. It has been placed here in hopes that one day it will serve the sin'dorei as proudly as its more famous counterpart.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2432] = {
+						0.4774526953697205,
+						0.2888438701629639,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-587066"] = {
+			["base"] = {
+				["title"] = "To Sedona",
+				["text"] = {
+					"As I write these words, I look upon the golden spires of Silvermoon clouded by the Void. I will be among the ren'dorei headed into the storm.\r\n\r\nThey say we void elves are best suited for the task. They also say that the danger will be unlike anything we have faced before. I want you to know my feelings on the eve of our mission.\r\n\r\nMy decisions hurt you. You covered for my predilection for the Void, and I repaid you by delving so deep into it that we could not be together without shattering what we had built together in Silvermoon. When I left, I told myself I was doing the right thing for both of us. But the truth is that I only did what was right for me. Ashamed that I had wronged you and afraid of how difficult it would be for us to see one another, I pushed you away.\r\n\r\nI continue to find what I was looking for in the Void. I only wish it had not cost your happiness.\r\n\r\nWhen we return, I hope it will be with brighter skies.\r\n\r\nWith love,\r\nHieron Duskspire",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[2393] = {
+						0.3144868612289429,
+						0.8838162422180176,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-620314"] = {
+			["base"] = {
+				["title"] = "Tablet of Akil'zon",
+				["text"] = {
+					"Conviction! Faith!\r\n\r\nTo follow Akil'zon, you must have both.\r\n\r\nAkil'zon--the golden eagle soars high as the lady of the daytime sky.\r\n\r\nWe call her by many names!\r\n\r\nThe Keen-eyed and Keening\r\n\r\nThe Golden Spear\r\n\r\nThe Sojourner\r\n\r\nThe Mistress of the Eastern Sky\r\n\r\nThe Amani call upon her to bless and raise up the line of royal chieftains, to bless the commitments, bonds, and marriages of their people, to find what is lost, improve our sight, clear the skies and lead the way ahead, and most of all grant us VICTORY!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2437] = {
+						0.5311411023139954,
+						0.8212251663208008,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579182"] = {
+			["base"] = {
+				["title"] = "Ways of the Roots--Part 2: Growing",
+				["text"] = {
+					"Many of the roots, and the Cradle, were here long before the haranir. Many came later. Nordrassil, Shaladrassil, Teldrassil, and others were planted over countless ages by those on the surface, but the roots reached out to Harandar.",
+					"The roots speak their names in the languages of the surface folk who planted them. If the roots reach Harandar, we know Aln'hara blesses them and we welcome them to the great knot of Harandar.",
+					"They are tended and protected, but we cannot protect them from the dangers above. The people of that world do not always protect the trees they have planted. We heal what we can. The branches may burn, but the roots will thrive.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.4146460890769959,
+						0.3412243723869324,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-613887"] = {
+			["base"] = {
+				["title"] = "Unfinished Sheet Music",
+				["text"] = {
+					'<A handwritten sheet of music intended for the lyre, only partially filled in. The thin paper is brittle with age.>\r\n\r\n\r\n"Dawn\'s Caress"\r\n\r\nDedicated to His Grace, Prince Kael\'thas Sunstrider\r\n\r\n\r\nComposer - Lirath Windrunner',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2393] = {
+						0.3811986446380615,
+						0.7702738046646118,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["Item-265818"] = {
+			["base"] = {
+				["title"] = "Ruia's Musings, Part 1",
+				["text"] = {
+					"Har'alnor remains calm. Must keep an eye on the rutaani encampment: they seem more agitated today. Perhaps an outlier, but something to watch.\r\n\r\nPossibly related: the area around the roots have been infused with a new light. Strange. Unwelcome.",
+					"It does not seem to be causing a problem as of yet, but I am suspicious of anything that I cannot verify with my own experiences. Where did this strange light come from? What is it doing? Who sent this?\r\n\r\nIt is my sacred duty as a Rootwarden to solve this problem. There are more frivolous among us who would rest on their laurels.\r\n\r\nAln'hara as my witness, the other elders will understand my wisdom.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-618542"] = {
+			["base"] = {
+				["title"] = "Void Armor",
+				["text"] = {
+					"<This regal domanaar armor sits in a heavy silence. Despite its expert make, an aura of malice warps the breastplate's perfection. It is displayed alongside the following inscription.>\r\n\r\nVaras, whose greatest delight was martial prowess, raised Obscurion Citadel from nothing. He donned the impenetrable Lorica Umbra in battle. It turned away every blade or spell that sought to harm its wearer.\r\n\r\nWhen the Devouring Host demanded he surrender, Varas refused. With his armor, he could not be defeated.\r\n\r\nBut then, Xal'atath came to Varas alone. She whispered words into his ear that are known only between them. After a pause, Varas removed the Lorica Umbra. Then, at Xal'atath's command, he was killed.\r\n\r\nShe is the Void. Think to stand above her, this fate too shall be yours.\r\n\r\n-Lord Terminas\r\n\r\n<The Lorica Umbra has no chance of fitting you.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2405] = {
+						0.6340686082839966,
+						0.7824218273162842,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-620324"] = {
+			["base"] = {
+				["title"] = "Tablet of Nalorakk",
+				["text"] = {
+					"Loyalty! Grit!\r\n\r\nThose that beseech the bear loa Nalorakk must have both!\r\n\r\nNalorakk--when the mountain wakes, shakes off his slumber, his steps, like war drums, portend death without number.\r\n\r\nHe is called by many names:\r\n\r\nThe Dreamer\r\n\r\nThe Mountain\r\n\r\nIronjaw\r\n\r\nStonehide\r\n\r\nThe Unyielding One\r\n\r\nThe Revantusk call upon Nalorakk to increase their strength in battle, but also to protect and fortify their dens. As he endures in battle, he makes strong the walls of our settlements and protects our fields and crops. He is celebrated with the harvest; the food that gives our warriors strength comes from the earth--his domain. But also the harsh winter through which the god slumbers. The hearth, our home, our soldiers, harvest--only are made safe and endure through Nalorakk the loa of WAR!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2437] = {
+						0.3015763759613037,
+						0.8462884426116943,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579239"] = {
+			["base"] = {
+				["title"] = "Seeker's Trail--Part 1: Call of Aln'hara",
+				["text"] = {
+					"Aln'hara is no longer in Harandar, but her song remains. It is ingrained through every inch of the land and every beast within it.",
+					"The haranir were called to this land to keep it safe until she returns, and to renew the song. So we tend this land and wait.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.5371347665786743,
+						0.6695489883422852,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["Item-248207"] = {
+			["base"] = {
+				["title"] = "Hieron's Journal",
+				["text"] = {
+					"<You flip open the book and find a sealed envelope tucked between the pages of Hieron's journal. Seems like he had been using it as a bookmark.>\r\n\r\n6x Backpacks\r\n6x Bedrolls\r\n60x Chalk\r\n6x Flint and Tinder\r\n300 Feet of Rope\r\n6x Grappling Hooks\r\n3x Pickaxes\r\n3x Skinning Knives\r\n50 Pounds of Pemmican\r\n10x Dusk Torches\r\n12x Waterskins\r\n\r\nAvoid sheltering in caves. We don't know enough about the fauna. I advise sheltering on high ground with tall stones to block line of sight of aerial predators.\r\n\r\nDraw on the excess Void of this world when there are no other options. We only have a partial picture on the risks of its use. I have heard enough about Xal'atath to wish to avoid her notice.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579241"] = {
+			["base"] = {
+				["title"] = "Seeker's Trail--Part 3: Unending Mission",
+				["text"] = {
+					"Some feel the call, and hunt for the missing goddess. We have scoured every inch of Harandar, as our traditions allow.",
+					"Some seek the goddess far beyond Harandar. The elders do not approve, but when they hear the call, all they can do is seek. Though it is almost unheard of in the past centuries, legends claim that in ancient time enough haranir left that they could have formed new tribes. We are, after all, hunters. But none have found her, and where could you hide a goddess?",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.5590296387672424,
+						0.6684157848358154,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-553846"] = {
+			["base"] = {
+				["title"] = "Warp Slicer",
+				["text"] = {
+					"Warp Slicer\r\n\r\nThe Warp Slicer was created with the aid of Illidan and the naga to help Prince Kael'thas and the sin'dorei access Outland. The enchanted blade effortlessly sliced through the distance between worlds, revealing a portal between.\r\n\r\nThis task was accomplished not only by the sharpness of the blade, but its speed. When later used against foes, it seemed to strike them down before they even saw it drawn. Yet its deadly accuracy and astonishing power was overshadowed by its use in service of the traitor, Prince Kael'thas.\r\n\r\nIt has since been reclaimed. Perhaps the light of the Sunwell will see it renewed.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2432] = {
+						0.4917706251144409,
+						0.2328617572784424,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-613823"] = {
+			["base"] = {
+				["title"] = "Ancient Runestone",
+				["text"] = {
+					"<This ancient runestone has a carving of several haranir standing on a forested mountain. They look below at another group of haranir following a ball that radiates wave-like energy. The ball is taking them deep underground to a cave filled with many roots.\r\n\r\nThis carving appears to depict a split within the Haranir society, leading to one group staying on the surface, while the other takes the journey to Harandar.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2413] = {
+						0.3336886167526245,
+						0.6083537340164185,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-525293"] = {
+			["base"] = {
+				["title"] = "Amani Missive",
+				["text"] = {
+					"Gather as much lightwood as you are able. The elves will know we are here soon enough. We must arm ourselves before they do. See it done!\r\n\r\n--Zul'jan",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2395] = {
+						0.6210373640060425,
+						0.5026900768280029,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-387739"] = {
+			["base"] = {
+				["title"] = "Forgotten Statue",
+				["text"] = {
+					"Hraxian - We honor his memory.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2151] = {
+						0.2847033739089966,
+						0.5726922154426575,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-633820"] = {
+			["base"] = {
+				["title"] = "Discarded Scroll",
+				["text"] = {
+					'<This dirty scroll seems to have fallen from the building above some time ago.>\r\n\r\nI forgot my diary, of course, so I\'m making due with a scroll Yulna lent me.\r\n\r\nThey woke me up early this morning and... shoved me in a basket. Apparently this basket is my "disguise."\r\n\r\nThe ruling family is coming to Amani\' Zar, and they don\'t want Warlord Zul\'jin to see me. Yulna says that the warlord discovering me would be disastrous. Zul\'jin has no love for gokinye. I have to say I began thinking about how my life has led me to this point, but to be honest being shoved in a basket and threatened by an Amani warlord beats shoveling coal into a steamship engine and getting yelled at by dwarves.\r\n\r\nAmani\'Zar was a lively place. From my vantage point on the pango cart, I could hear merchants selling their wares, smell food from their carts and incense from the shrines.\r\n\r\nYulna discretely picked up the basket I was in, balancing me on her shoulder, and took me to the shrine in Amani\'Zar.',
+					'She set me in the main shrine to Akil\'zon, knelt and lit incense.\r\n\r\n"Do you want to see the warlord?" she whispered.\r\n\r\nI told her I guess I did. And she left me there.\r\n\r\nI watched as troll after troll came in, lighted incense, said their peace, and left.\r\n\r\nAnd then Akil\'zon\'s loa speaker came in, anointed the altar with oil, and made an offering of food and trinkets. The shrine responded to him, glowing with the loa\'s power. He smiled kindly and left.\r\n\r\nAnother man came in--a warrior. He was dressed in a costume making him look like Akil\'zon. The loa speaker anointed him, and he bowed and left.\r\n\r\nAnd then my skin turned cold. It was Zul\'jin. It had to be! The intensity of his eyes. The size of him. There was something about him that exuded power--and anger!\r\n\r\nThe loa speaker bowed to him, rose, and anointed him. Zul\'jin left without a word.',
+					"After they left, Yulna came back for me.\r\n\r\nShe confirmed that I had seen Zul'jin--and his son, Man'ye. I asked her about the costume, and she didn't have a firm answer for me other than it had to do with a great battle that lied ahead. A warrior had been selected from the Witherbark as well--Kurinje the Shadow--and had a similar costume.\r\n\r\nThere was a big battle ahead, she had told him. One that might see their lands returned to them. That was all she knew--all anyone knew.\r\n\r\nZul'jin and his four costumed warriors had left by the time I had been put back on the pango cart.\r\n\r\nI watched as they prepared dinner. Mammoth! It took hours to cook and by the time they were serving dinner, I was starving.\r\n\r\nThey slipped me food. It was tender and\r\n\r\n<The text stops there with a huge ink blot and rip. Something must have interrupted Bin's writing.>",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[2437] = {
+						0.4590507745742798,
+						0.659600019454956,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579180"] = {
+			["base"] = {
+				["title"] = "Ways of the Roots--Part 1: Serving",
+				["text"] = {
+					"Serve the roots, and they will serve you.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.4081199169158936,
+						0.3630927801132202,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579183"] = {
+			["base"] = {
+				["title"] = "Ways of the Roots--Part 3: Pruning",
+				["text"] = {
+					"If you listen to the roots, they will tell you of most threats. But what of threats they do not recognize? If we prune roots they see as healthy, will we be forgiven? Will the roots trust us again?",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.4052943587303162,
+						0.3471319675445557,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-573012"] = {
+			["base"] = {
+				["title"] = "Sky's Hope",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Sky\'s Hope</H1>\r\n<HR/>\r\n<P>\r\nA smooth stone faintly glowing with a pale, golden light. Its surface hums softly, like distant wings in flight, and it feels strangely weightless in hand.\r\n<BR/><BR/>\r\nIt is said this stone fell in place of Awe\'ohna, who gave himself to bring light back to Harandar.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Sky\'s Hope,<BR/>Part One: A Darkened World</H2>\r\n<HR/>\r\n<P>\r\nIn the early days of Harandar, our sky was dark. The goddess was gone, and the land grew weak beneath the shadow.\r\n<BR/><BR/>\r\nWe were still wild then--more hunters than caretakers, but some had begun to walk a different path. Among them was Awe\'ohna, who saw what the darkness was doing to the land.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Sky\'s Hope,<BR/>Part Two: A Hunt for Light</H2>\r\n<HR/>\r\n<P>\r\nAwe\'ohna sought answers. He reached out to the rutaani and the fungarians, asking if the sky had always been this way. They told him it had not, but they could not mend it. Fear kept them silent, for they believed the darkness untouchable.\r\n<BR/><BR/>\r\nBut Awe\'ohna knew what had to be done. The magic of the haranir had been made for hunting, yet this was no hunt for prey. This was a hunt for hope.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Sky\'s Hope,<BR/>Part Three: The Flight</H2>\r\n<HR/>\r\n<P>\r\nMany haranir borrowed the forms of beasts for the hunt. Awe\'ohna chose the shape of a local creature: a small and nimble flier. His goal was nothing less than the Cradle itself--the place where the goddess had once sung.\r\n<BR/><BR/>\r\nHe flew with tiny wings, beating faster than any heart should allow, climbing higher and farther than any had dared. He did not look back. He did not rest. His hunt took him into the sky itself.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Sky\'s Hope,<BR/>Part Four: The Stone and the Light</H2>\r\n<HR/>\r\n<P>\r\nAwe\'ohna never returned. None can say whether he reached the Cradle or what he found there.\r\n<BR/><BR/>\r\nIn his place, a stone fell from the sky. Rutaani and fungarian mystics, in a rare act of unity, blessed the stone and gave it to the haranir. When it was brought home, light returned to Harandar. The plants breathed again. The roots prospered.\r\n<BR/><BR/>\r\nWe call it Sky\'s Hope, for it carries Awe\'ohna\'s sacrifice, his hunt, and his gift to us all.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.5433300137519836,
+						0.5327664017677307,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579203"] = {
+			["base"] = {
+				["title"] = "Awe'ohna's Path--Part 3: The Cradle",
+				["text"] = {
+					"The Hara'ti believe this is where Aln'hara once rested, and where one day she will return. We call this the Cradle.",
+					"The haranir believe it is her song that calls to the roots and guides them here. Once the roots reach the Cradle, and join the Rootways, it strengthens the land. Not every great tree's roots have reached the Cradle, such is the wisdom of Aln'hara. In her absence, the roots must be tended and protected. This is why she called the haranir to this land.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.7344509363174438,
+						0.5743557214736938,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-553852"] = {
+			["base"] = {
+				["title"] = "Cosmic Infuser",
+				["text"] = {
+					"Cosmic Infuser\r\n\r\nWhile many in Quel'Thalas turned to the sun for guidance, some astromancers and nethermancers saw the power of both the stars and the space between. The Cosmic Infuser was a result of the earliest attempts to explore these unfathomable fields of arcane study, harnessing the untapped power of the stars. Healing powers drawn from such darkness were dangerous to evoke, leaving its use reserved for only the most desperate times.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2432] = {
+						0.4508964419364929,
+						0.2360051274299622,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-572467"] = {
+			["base"] = {
+				["title"] = "Weathered Tome",
+				["text"] = {
+					"A collection of Farseer tales, weathered and worn, but rarely used. It seems the Farseers have already memorized the stories within, leaving the book for those less familiar with orcish legends.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2541] = {
+						0.6238996982574463,
+						0.441120445728302,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-555786"] = {
+			["base"] = {
+				["title"] = "Deed to the Umbral Atrium",
+				["text"] = {
+					"By order of Grand Magister Rommath, and ratified by Regent Lord Lor'themar Theron, the sin'dorei hereby bestow ownership of the Umbral Atrium to Magister Umbric and his ren'dorei in good standing with Silvermoon.\r\n\r\nLet none forget the sacrifice and heroism of the ren'dorei in Silvermoon's darkest hour.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2393] = {
+						0.5429144501686096,
+						0.5919045209884644,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579243"] = {
+			["base"] = {
+				["title"] = "Tending the Lands--Part 2: The Plan",
+				["text"] = {
+					"But their dedication to their unknowable patterns is why they hate the fungarians. The very nature of fungarians disrupts things, and this drives the rutaani into a frenzy.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.6102349162101746,
+						0.3899638652801514,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579234"] = {
+			["base"] = {
+				["title"] = "Laments of Wey'nan--Part 2:  Hunting Purpose",
+				["text"] = {
+					"All of the rutaani have been hostile, but these Zaratti push us to our limits. The others fear us, but because of their leader, these rutaani hate us and hunt us at every turn.",
+					"Zarat, the leader of this grove of rutaani, sees us as trespassers and interlopers. If these creatures have hearts, the leader knows how to turn them against us. Can we find peace with them? Should we?",
+					"We were called here for a greater purpose. We could hunt and fight on Hyjal. We must find that purpose here, no matter the cost. These Zaratti cannot stand in our way.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.4157394766807556,
+						0.3582996726036072,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579233"] = {
+			["base"] = {
+				["title"] = "Laments of Wey'nan--Part 1: Finding Hope",
+				["text"] = {
+					"My people came from a violent land with the hope to rise above what we were and find more. But the land had other plans.",
+					"We faced violence at every turn, but there was one enemy that persisted. They hunted us with malice.",
+					"The constant fight drove my people back to our old ways as hunters, and killers.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.4324206113815308,
+						0.3737021088600159,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579130"] = {
+			["base"] = {
+				["title"] = "Words of Obayo--Part 2: The Rift",
+				["text"] = {
+					"And now the rift only manifests pain, sorrow, and madness. Without the song, how can they become more?",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.6144434213638306,
+						0.3502340912818909,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-556265"] = {
+			["base"] = {
+				["title"] = "Cauldron of Echoes",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Cauldron of Echoes</H1>\r\n<HR/>\r\n<P>\r\nThe cauldron appears to be woven from thick, fibrous plant material stitched together with sinew and sealed with a glossy resin. Despite its organic construction, it feels sturdy and ancient, pulsing faintly with warmth. <BR/><BR/>\r\nThe interior glows with a vibrant orange-red pigment that shimmers like liquid fire, casting shifting patterns of light across the cauldron\'s rim. The paint seems almost alive, stirring gently even when untouched.</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Cauldron of Echoes,<BR/>Part One: Searching for Color</H2>\r\n<HR/>\r\n<P>\r\nSai\'alyo was no hunter or forager. She was a creator: a painter who sought to immortalize the soul of her people through pigment and brush.\r\n<BR/><BR/>\r\nBut the colors of Harandar, vibrant though they were, had grown familiar. She needed something new. Something that could capture not just what was seen, but what was felt.\r\n<BR/><BR/>\r\nShe wandered to the edge of the Rift of Aln and searched for inspiration. She found it: an iridescent residue, swirling with forgotten hues. She collected it carefully, blending it into her pigments with trembling hands and wild hope.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Cauldron of Echoes,<BR/>Part Two: The First Strokes</H2>\r\n<HR/>\r\n<P>\r\nWith her cauldron scrubbed clean and ready, Sai\'alyo began to mix the pigments with water, ash, and other rare ingredients. The resulting paint shimmered unnaturally, as though alive even before it touched the stone.\r\n<BR/><BR/>\r\nHer first paintings were abstract shapes, glyphs, and flows of energy. But as she painted, something strange happened: the shapes began to shift when no one was looking. Her symbols danced. Her lines pulsed faintly with light.\r\n<BR/><BR/>\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Cauldron of Echoes,<BR/>Part Three: The Living Paint</H2>\r\n<HR/>\r\n<P>\r\nThe cauldron began to boil without heat. Pigment surged and overflowed, slapping the stone floor in thick, animated globs.\r\n<BR/><BR/>\r\nThe paint had come alive.\r\n<BR/><BR/>\r\nGlobs of paint leapt free of the cauldron. Colors twisted through the air like spirits. Sai\'alyo called for help as she tried to corral the escaping pigment. It resisted. It knew her, but it did not obey.\r\n<BR/><BR/>\r\nOnly with help from others was she able to restore order. The pigment, now aware, would not be contained by will alone.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Cauldron of Echoes,<BR/>Part Four: The Binding</H2>\r\n<HR/>\r\n<P>\r\nSai\'alyo knew she needed to do more than mix pigment. She needed to bind it--to give it purpose, not just power.\r\n<BR/><BR/>\r\nShe etched new glyphs into the rim of the cauldron and used some of the paint to form the outline of her hand upon a nearby stone, whispering incantations into every stroke. As the paint poured back into the cauldron, she watched as it settled, calm once more. The vessel now remembered its duty: to hold the living pigment until called forth.\r\n<BR/><BR/>\r\nThus was born the first of the Zul\'ashar relics--not just a container of paint, but a cradle of memory and will. Through Sai\'alyo\'s work, history would no longer fade, nor would it run wild.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.543787956237793,
+						0.5289672613143921,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-526903"] = {
+			["base"] = {
+				["title"] = "Memorial Plaque",
+				["text"] = {
+					"<Light catches glittering script scrawled across the marble walls. Each of the countless names enchanted on the wall sports a different handwriting, from elegant lettering befitting a Magister's thesis spellbook cover to blocky script belaying a child's lack of learning. Some slanted in anger or looped in sorrow.>\r\n\r\nIn honor of those whose blood was shed to secure the survival of our people.\r\n\r\nThough the Eternal Sun may set on our darkest day.\r\n\r\nIt rises again with the coming of the dawn.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2395] = {
+						0.4797766208648682,
+						0.8818637132644653,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579238"] = {
+			["base"] = {
+				["title"] = "Echoes of Our Past--Part 3: Dangerous Memories",
+				["text"] = {
+					"I have ignored the risks. When I was in the painting of a battle, some dark creature lashed out. I am still fevered from its venom.",
+					"These are no mere visions, and they're more than memories. Ribs are broken, and the venom nearly reached my heart. But the rewards seem worth the price.",
+					"I must share my secrets, and train the next generation to be wiser than I was. Create, learn, and share--but temper and be aware. Each image can bring ruin. Each memory can bring death. And the Alndust is too precious to waste. Only a few will carry this honor, to let others live our past.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.6115401983261108,
+						0.1596715450286865,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["Item-245883"] = {
+			["base"] = {
+				["title"] = "Splattered Scroll",
+				["text"] = {
+					"<The scroll is torn in many places. Dark red splotches obscure some of the words.>\r\n\r\nSu'meera,\r\n\r\nIf you found this, then I have met my end. I hope that I met my fate with piles of my enemies around me, but it's more likely that I tripped and fell from some great height, knowing me. \r\n\r\nI left something behind for you. You have been my most promising student, and I want to ensure that your training does not get interrupted by something as trivial as my physical body no longer being present. \r\n\r\nFind the cave behind the waterfall in Blooming Lattice. Take care, for the rutaani guard it well as it is where they store some of their treasured seeds. I found it first, but they have driven me from it. I know you will find a way.\r\n\r\nMay your roots grow deep as you stretch towards the light. I am proud to have been your mentor.\r\n\r\n- Ja'kul",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-618558"] = {
+			["base"] = {
+				["title"] = "Abandoned Telescope",
+				["text"] = {
+					"<This ren'dorei telescope seems at first like it's pointed in the direction of the distant Voidspire. When you put your eye to the lens, the telescope focuses in on a distant nest of flying beasts slightly to its left.\r\n\r\nThe armature of the stand is dotted in a fine mist of crimson blood and a shred of silver cloth in ren'dorei style. Claw marks mar the ground between your feet. They stretch all the way to the edge of the cliff and then disappear, pointed in the same direction as that nest.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2405] = {
+						0.4046003222465515,
+						0.5865014791488647,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-629502"] = {
+			["base"] = {
+				["title"] = "Lirath's Lullaby",
+				["text"] = {
+					"<A torn page rests here. Instead of a diary or journal, it appears to be a piece of sheet music, unfinished. There's an almost wistful undertone to the tune as you hum it to yourself--it's half an ode to strength, cleverness and battle prowess, while the other half seems a yearning for the same.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2492] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-574929"] = {
+			["base"] = {
+				["title"] = "Crumpled Letter",
+				["text"] = {
+					"The void elf you sent did not complete the task.\r\n\r\nBut I am benevolent. You will have your payment regardless.\r\n\r\nReturn to me. I have additional use for you.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[2393] = {
+						0.541954517364502,
+						0.3381264805793762,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-620323"] = {
+			["base"] = {
+				["title"] = "Tablet of Jan'alai",
+				["text"] = {
+					"Heart! Inner Fire!\r\n\r\nThose who follow Jan'alai have both.\r\n\r\nJan'alai--the dragonhawk that from ash lights the dawn, at birth and at death we hear their song.\r\n\r\nThey are called by many names.\r\n\r\nThe Everlasting Fire\r\n\r\nThe Twisting Flame\r\n\r\nThe Crucible\r\n\r\nThe Searing Truth\r\n\r\nThe Mistress and Master of Magic\r\n\r\nThe Shadowpine call upon Jan'alai to stoke their inner fire, fan the flames of their magic, fuel their desires. Life and death are under their wings, as are the songs her shamans sing. Jan'alai brings us life, ushers us through death and night, tracing the sun on its journey through time. The hatchling, the sage--they are one in the cycle of the dragonhawk loa, Jan'alai, patron of life, death, renewal, magic, and the FIRE in all Amani hearts!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2437] = {
+						0.5513694882392883,
+						0.1763349175453186,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-629499"] = {
+			["base"] = {
+				["title"] = "Records of Sylvanas",
+				["text"] = {
+					"I can scarcely believe you're gone.\r\n\r\nThey asked me to write something for you, to honor the sacrifice you made. I... cannot think of what to say. Not out loud. Not for them, emblazoned upon a larger than life statue for all to see.\r\n\r\nDearest sister, your heart always belonged out there, did it not? How am I supposed to go on without you, Alleria? \r\n\r\nHow am I to lead them, when all I see in their eyes is the grief we all share at losing you?",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2496] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-620326"] = {
+			["base"] = {
+				["title"] = "Tablet of Kulzi",
+				["text"] = {
+					"Patience! A caring heart!\r\n\r\nTo beseech Kulzi, the pangolin loa of medicine, you must have both.\r\n\r\nKulzi judges not the person, the wounds, the sickness, or their reason. He heals all, no matter the season.\r\n\r\nHe is called by many names.\r\n\r\nThe Living Cure\r\n\r\nHealer of Healers\r\n\r\nReverent Doctor\r\n\r\nThe Healing Claw\r\n\r\nAll call on Kulzi to heal their wounds, their sickness, their hearts and heads.\r\n\r\nHe will use his magic or prescribe the cure.\r\n\r\nBut take heed: not all healing is within Kulzi's grasp. Make haste to his shrine if you are ailing. Lest the next loa you beseech be Jan'alai, the loa of life and death.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2437] = {
+						0.3928073644638062,
+						0.4477244019508362,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-629503"] = {
+			["base"] = {
+				["title"] = "Alleria's Diary",
+				["text"] = {
+					"She wants nothing more than to dictate my future for me. Why must I cleave my fate to whatever mother wishes?\r\n\r\nI'm not alone. There are others that feel the same. Quel'Thalas is beautiful, but it is only the smallest part of what's out there. My friends, my confidants... we only wish to fly as free as the arrows from our quivers. \r\n\r\nThe world is so much larger than just these forests. Is that so hard to see? Is it so impossible to believe that anyone would wish to experience more of it?",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2498] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-556449"] = {
+			["base"] = {
+				["title"] = "The Silversun Compact",
+				["text"] = {
+					"We the undersigned agree to the following compact. That in times of great need and world ending threats, past grievances and vengeance can be set aside to allow the greatest minds of might and magic to come together and find solutions to craft war against such threats.\r\n\r\nLet all who follow this compact use this magic and wisdom for the betterment and defense of Azeroth and her citizens.\r\n\r\nIn the face of evil that threatens Azeroth herself, let those practitioners of magic once again work together for a better future.\r\n\r\nIn memory of Theramore, Dalaran, and the Sunwell.\r\n\r\nQuel'falan danas! \r\n\r\n\r\n\r\n\r\n\r\nSigned,\r\n\r\nVereesa Windrunner                                  Aethas Sunreaver\r\n\r\n\r\nWitnessed by $PLAYER_NAME$.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2393] = {
+						0.4112952351570129,
+						0.8875665664672852,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-618554"] = {
+			["base"] = {
+				["title"] = "Ancient Tablet",
+				["text"] = {
+					"<The unfamiliar engravings seem to shift and bend before you. For a moment, it feels as though you can read the letters, though you are certain it is no language you know.>\r\n\r\nwar... all lost...\r\n\r\nour own.... ... .... Our people\r\n\r\nhope.... .. save...\r\n\r\nhunger... ... thirst... ..anguish\r\n\r\nend... ... ...\r\n\r\n<And suddenly you're back. The architects of the language are long gone, but their spirit calls through runes we will never truly decipher. A pain in your head overcomes you.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2405] = {
+						0.5031225681304932,
+						0.8766264319419861,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-620321"] = {
+			["base"] = {
+				["title"] = "Tablet of Halazzi",
+				["text"] = {
+					"Patience! Cleverness!\r\n\r\nThose who follow Halazzi have both.\r\n\r\nHalazzi--the silver lynx that stalks the night, waiting hides from all sight.\r\n\r\nHe is called by many names!\r\n\r\nLong Ear\r\n\r\nThe Silver Shadow\r\n\r\nThe Schemer\r\n\r\nThe Night Hunter\r\n\r\nThe Witherbark call upon Halazzi to hide them from their prey, to help them outwit their enemies, to protect them in the night, and to increase their grace in dance and in combat. He brings the mist and rain keeping plants and animals of the forest fit for the hunt. His ears and eyes like the moon pierce the veil revealing lies, mysteries, motivations and the unseen. Praise the playful lynx loa of games, of the moon, of shadow, of the forest, and the HUNT!",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2437] = {
+						0.3209689259529114,
+						0.3163690567016602,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-618571"] = {
+			["base"] = {
+				["title"] = "Shadowgraft Harness",
+				["text"] = {
+					"<The Shadowgraft hums. It calls to you with the promise of power.\r\n\r\nYou reach a hand out before you can stop yourself. As your skin touches the cold metal, you feel a rush of power.\r\n\r\nThe thrill of battle. The soaring heartbeat of a duel. The off-beat note of a parry.\r\n\r\nThe brutal satisfaction of sinking your blade into your enemy's flesh, that feeling both disgusting and triumphant.\r\n\r\nYour fingers tingle. Your vision is red. You have already grabbed your weapon, turning to fight the next enemy.\r\n\r\nAs you step away from the Shadowgraft, your vision returns to normal. Your breath returns and your heartbeat slows.\r\n\r\nYou know deep in your bones that this metal will make you braver and stronger.\r\n\r\nYou also know that if you are bound by it, you will never be yourself again.>",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Silver",
+				["mapData"] = {
+					[2405] = {
+						0.2784336805343628,
+						0.540382981300354,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["Item-265820"] = {
+			["base"] = {
+				["title"] = "Ruia's Musings, Part 3",
+				["text"] = {
+					"Why must we remain hidden in our caves, when the whole world could be blessed by our prowess and knowledge? We protect her roots while they burn her lands? They need us. We do her a disservice by remaining here!\r\n\r\nThe simpletons have given us all the power I need. With the Lightbloom returned to their lands, they can be pruned to a manageable size. Why should these surface dwellers rule themselves? I am the wise one. I am the strong one. I am Aln'hara's chosen.\r\n\r\nThe others will see. They will understand!\r\n\r\nIn due time...",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-544004"] = {
+			["base"] = {
+				["title"] = "Embossed Tablet",
+				["text"] = {
+					"Cursed Gurubashi bind us\r\nFang of Shadra pry the bars\r\nBlood of Hir'eek mark the way\r\nBy their corpses we be freed",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2579] = {
+						0.3896054625511169,
+						0.2885976433753967,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["Item-238500"] = {
+			["base"] = {
+				["title"] = "Maella's Report",
+				["text"] = {
+					"The rules of nature reign supreme upon this world. Every species we've stumbled upon seems designed to fight and kill. Those that aren't purely carnivores feast instead on flows of Void energy. Perhaps we ren'dorei aren't so unlike them.\r\n\r\nThis is no homeworld of Void from what we can tell. It seems instead a planet, like any other, that exists at the nexus of Void energies throughout the cosmos. I am reminded of Outland. I advise similar survival tactics to those used by our kin who called themselves Sunfury before embracing the Void. We might ask Leona Darkstrider what she learned from Adarus Duskblaze.\r\n\r\nExploring the wastes remains a high priority. Natural resources born of this world are sure to be potent in our fight against Xal'atath.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-553910"] = {
+			["base"] = {
+				["title"] = "Netherstrand Longbow",
+				["text"] = {
+					"Netherstrand Longbow\r\n\r\nThere are some who claim the Netherstrand Longbow was first carried by the Highborne in the War of the Ancients. Others say that it was not forged until Kael'thas journeyed to Outland and saw the expanse of the Twisting Nether with his own eyes.\r\n\r\nWhat is known is that strands of magic drawn from the Twisting Nether itself make the Netherstrand one of the deadliest bows ever used. The longbow was recovered from Outland after the forces of Kael'thas used it against the draenei. Perhaps its damaged legacy can be purified in the light of the Sunwell.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2432] = {
+						0.4731355309486389,
+						0.2875539660453796,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-388470"] = {
+			["base"] = {
+				["title"] = "Translated Journal of Adamanthia",
+				["text"] = {
+					"Reader, below are the words as best we could transcribe and translate of Adamanthia, as recovered from her journal entries in the Forbidden Reach.\r\n\r\nAdamanthia is a name we strain to hear across the gulf of history. Some dracthyr have experienced sparks of dream, memory, or reverie that feature her, but like so many of our memories, the full picture is denied us. \r\n\r\nAs you read her words within this tome, we hope you may have further recollections. It is my hope these words will help other dracthyr by providing some insight as to our origins and those dragons we once served.\r\n\r\n-- Zazulithan\r\nDracthyr Archivist",
+					"Entry: The Creches\r\n\r\nWe sealed the creches today. Malygos asked for volunteers. Three of his zealots and their retinue chose to be entombed with the dracthyr. \r\n\r\nI must hurry with my research. The magic of Malygos is strong, but I still question this course of action.",
+					"Entry: Silence\r\n\r\nWe were warned to tell no one, not even the other Aspects. No one must learn of these dracthyr. No one must know what lies beneath the surface of the Reach. \r\n\r\nIs it shame? Or pride?\r\n\r\nEither way, dragonkind will always remember: this reach is forbidden. Let that be its fitting sobriquet. All who dare trespass upon this terrain are interlopers to our blighted realm... these lands of legacy... this Forbidden Reach.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2151] = {
+						0.3550882935523987,
+						0.5861266851425171,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 9,
+			},
+		},
+		["GameObject-528472"] = {
+			["base"] = {
+				["title"] = "Wey'nan's Ward",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Wey\'nan\'s Ward</H1>\r\n<HR/>\r\n<P>\r\nThe charm features a single fang and a piece of a skull, connected with a tough piece of vine.\r\n<BR/><BR/>\r\nThe whole of the charm is covered with a delicate and shimmering dust that gives it an ethereal glow, which seems to have aided in its preservation through the eons.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Wey\'nan\'s Ward,<BR/>Part One: The Great Calamity</H2>\r\n<HR/>\r\n<P>\r\nAs the haranir settled into their new home of Harandar, they were beset upon by primal creatures attacking without provocation. Wey\'nan, determined to protect his people, led the defense against these relentless beasts.\r\n<BR/><BR/>\r\nIn the midst of the chaos, Wey\'nan discovered that the creatures were not acting on instinct alone. A dark force was guiding their actions, orchestrating the attacks with malevolent intent. This realization set Wey\'nan on a path to uncover the source of this evil and put an end to the threat against his people.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Wey\'nan\'s Ward,<BR/>Part Two: The Hunt</H2>\r\n<HR/>\r\n<P>\r\nDetermined to find the force driving the creatures, Wey\'nan led a stealthy hunt through a cave crawling with strong adversaries. As he and his fellow haranir moved quietly through the shadows, they searched for clues that would reveal the source of the malevolent influence. \r\n<BR/><BR/>\r\nThese clues led Wey\'nan to the discovery of Zarat, a cunning and malevolent rutaani, who was behind the attacks and had killed several of his fellow haranir.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Wey\'nan\'s Ward,<BR/>Part Three: The Battle with Zarat</H2>\r\n<HR/>\r\n<P>\r\nIn a climactic battle, Wey\'nan, driven by the vengeance of his people, engaged Zarat with all his might. However, during the battle, Wey\'nan found himself overwhelmed by rage, tapping into the dangerous berserker tendencies that the haranir feared.\r\n<BR/><BR/>\r\nDespite his fury, Wey\'nan managed to defeat Zarat, but the experience left him deeply ashamed of losing control. The rage that had consumed him was a stark reminder of the primal instincts that threatened to overtake the haranir. Wey\'nan vowed to never let it happen again and sought a way to remember this lesson.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Wey\'nan\'s Ward,<BR/>Part Four: Crafting the Ward</H2>\r\n<HR/>\r\n<P>\r\nTo ensure that the haranir would never forget the importance of balance and the dangers of their berserker past, Wey\'nan decided to craft a charm. He enlisted the help of his fellow haranir to fill containers with magical dust he had found in a strange and eerie place. The dust was delicate and powerful, dissolving quickly in the air, requiring swift and careful handling.\r\n<BR/><BR/>\r\nWith the containers filled, Wey\'nan created the charm known as Wey\'nan\'s Ward. This ward would serve as a symbol of the haranir\'s struggle to maintain control over their primal instincts and a reminder of the consequences of giving in to their rage. The ward became a guiding relic, helping the haranir uphold balance and harmony in their new home.\r\n\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.5432239770889282,
+						0.5289639830589294,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-368400"] = {
+			["base"] = {
+				["title"] = "Torn Page",
+				["text"] = {
+					"<A torn page that has been left behind. Covered in hastily scribbled notes, it has been folded and refolded many times. Most of it is in a language you cannot read, except for one part.>\r\n\r\nWho can be trusted?",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[1961] = {
+						0.56252521276474,
+						0.388937771320343,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 8,
+			},
+		},
+		["GameObject-553848"] = {
+			["base"] = {
+				["title"] = "Staff of Disintegration",
+				["text"] = {
+					"Staff of Disintegration\r\n\r\nSome foes are only stopped when they are erased from existence. Such was Met'imua, an Amani who fought during the Troll Wars. He could regenerate so quickly that no blade, arrow, or spell could fell him. The Staff of Disintegration was crafted to overcharge arcane power, and used to eliminate every trace of Met'imua and his home.\r\n\r\nSo horrific was the carnage that both the staff and its creator were locked away, until it was taken by Grand Astromancer Capernian to Tempest Keep. The staff now rests in the light of the Sunwell, in hopes of cleansing its tragic past.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2432] = {
+						0.4481974840164185,
+						0.241049587726593,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-572999"] = {
+			["base"] = {
+				["title"] = "The Echoless Flame",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">The Echoless Flame</H1>\r\n<HR/>\r\n<P>\r\nAn ancient lantern wrought from woven vine. A mysterious light burns within that gives off no heat. The air around it hums with a strange silence, as if it swallows sound itself.\r\n<BR/><BR/>\r\nIt is said this lantern holds the Echoless Flame: a power once wielded to banish the manifestations from the Rift of Aln.</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Echoless Flame,<BR/>Part One: The Discordant Rift</H2>\r\n<HR/>\r\n<P>\r\nIn the days after we came to Harandar, some dared to approach the Rift of Aln, drawn by the song of our goddess. But the song there was no blessing. It was a discordant howl that drove the haranir to madness.\r\n<BR/><BR/>\r\nFrom that twisted music came manifestations: shapes of her song given cruel and chaotic form. One of these was greater than all the rest: Morta\'ka, a being whose very presence threatened to consume Harandar.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Echoless Flame,<BR/>Part Two: The First of the Shul\'ka</H2>\r\n<HR/>\r\n<P>\r\nWhen no warrior could stand against Morta\'ka, one haranir sought a different path. She became the first of the Shul\'ka: those who walk between life and spirit. Guided by whispers of the rift, she discovered a strange lantern deep within its shadow.\r\n<BR/><BR/>\r\nThis was the Echoless Flame: a power that burned without fire and silenced the song of the manifestations. With it, she walked among them without fear--their forms unraveling in her presence.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Echoless Flame,<BR/>Part Three: The Binding of Morta\'ka</H2>\r\n<HR/>\r\n<P>\r\nBut even the Echoless Flame could not destroy Morta\'ka. The being was too strong, its existence too deeply rooted in the rift\'s discordant song.\r\n<BR/><BR/>\r\nWith no other choice, the first Shul\'ka poured the last of the Echoless Flame\'s power into the lantern. She used it not to destroy, but to bind. Morta\'ka was chained to the Rift of Aln, unable to escape into the world beyond.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Echoless Flame,<BR/>Part Four: The Cost</H2>\r\n<HR/>\r\n<P>\r\nThe binding worked, but it came at great cost. Morta\'ka became immortal, forever anchored to the Rift of Aln, and the power of the Echoless Flame was spent. The lantern has glowed only dimly ever since.\r\n<BR/><BR/>\r\nThough its fire is diminished, the relic endures. It remains as a reminder of the Shul\'ka\'s courage and of the dangers that lurk within the heart of the rift.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.5442821979522705,
+						0.5298242568969727,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-574625"] = {
+			["base"] = {
+				["title"] = "Incriminating Documents",
+				["text"] = {
+					'<A duplicate set of the documents Aradis wanted you to retrieve from Dawnblaze.\r\n\r\nThere are multiple records of fel magic misuse signed by the Silvermoon guard, each one paired with a receipt of payment from the Magisters for "unrelated" reasons. The records show the inquiries into Aradis were canceled shortly after the gold was received each time.\r\n\r\nMixed in between are reports of kidnappings from Murder Row. It looks like no investigation was conducted, but the reported locations are suspiciously close to Aradis\'s study.>',
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["mapData"] = {
+					[2393] = {
+						0.5197985172271729,
+						0.6365975737571716,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579240"] = {
+			["base"] = {
+				["title"] = "Seeker's Trail--Part 2: Seeking Peace",
+				["text"] = {
+					"Our elders and our traditions say that it is our purpose to keep the land. The outside world has its own ways, and they are not our concern. Only Harandar.",
+					"So we wait patiently for Aln'hara's return. We stare up at her Cradle, hoping to one day see it filled.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.55008864402771,
+						0.6622950434684753,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-573010"] = {
+			["base"] = {
+				["title"] = "Russula's Outreach",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Russula\'s Outreach</H1>\r\n<HR/>\r\n<P>\r\nA spear of petrified fungus, its tip hardened to a stone-like edge. A faint bioluminescent sphere sits under the tip, glowing softly in the dark.\r\n<BR/><BR/>\r\nIt is said this weapon once belonged to Russula, who laid it down in the name of peace.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Russula\'s Outreach,<BR/>Part One: Endless War</H2>\r\n<HR/>\r\n<P>\r\nSince the haranir first set foot in Harandar, the fungarians and rutaani had been locked in endless war. Left unchecked, their conflict would consume the land and all who lived within it.\r\n<BR/><BR/>\r\nWe did what hunters know. We culled their tribes to keep the balance. It was harsh and cruel, but it was the way we survived.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Russula\'s Outreach,<BR/>Part Two: A Voice for Peace</H2>\r\n<HR/>\r\n<P>\r\nAmong the fungarians rose one named Russula. He grew large and strong, and his people turned to him to crush their enemies. Yet Russula saw further than they did. He saw what would come next. He saw the haranir poised to strike as soon as the battle began.\r\n<BR/><BR/>\r\nRussula tried to dissuade the fungarians from war, but his words fell on deaf ears. The march to battle could not be stopped.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Russula\'s Outreach,<BR/>Part Three: The Living Shield</H2>\r\n<HR/>\r\n<P>\r\nWhen the fighting began, the rutaani and fungarians fell upon each other with brutal fury. The haranir joined the fray soon after--their weapons ready to end it.\r\n<BR/><BR/>\r\nBut Russula refused to let Harandar be stained with more blood. He hurled himself between the warring tribes, his massive fungal form absorbing blow after blow. He pushed warriors back, forcing them from the field, unharmed but humbled.\r\n<BR/><BR/>\r\nEven the haranir froze, stunned by his defiance. Any who tried to rally their soldiers found Russula blocking their path. At last, he laid down his spear and spoke only three words: "Do not kill."\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Russula\'s Outreach,<BR/>Part Four: A New Way</H2>\r\n<HR/>\r\n<P>\r\nIt was a promise we could not fully keep. But from that day forward, we tried.  \r\n<BR/><BR/>\r\nRussula taught us that balance could be found without slaughter. Now, before war comes, we seek the instigators. We make it known that battle will not be allowed to scar the land.  \r\n<BR/><BR/>\r\nThrough Russula\'s outreach, Harandar learned that peace could be as powerful as the spear.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.5446074604988098,
+						0.530888020992279,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["Item-254557"] = {
+			["base"] = {
+				["title"] = "Index of Ranger Corps Recipes Vol. VII",
+				["text"] = {
+					"Resourceful Ranger's Quiche\r\n\r\nA Farstrider should never fear to find themselves hungry on patrol, for the woods are bountiful to those who know what to look for. To feed your squadron, you will need:\r\n\r\nTwo dozen hawkstrider eggs\r\nOne pound of foraged greens\r\nTwo pounds of foraged mushrooms (be sure they are safe to eat!)\r\nOne ration of Pre-prepared Eversong Puff Pastry\r\nLynx milk, to taste",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579235"] = {
+			["base"] = {
+				["title"] = "Laments of Wey'nan--Part 3: There Must Be More",
+				["text"] = {
+					"Claws, fangs, instict: they are a part of who we are, and we must not give them up. But to grow, we must learn from what we did here: fight for more than survival, learn to control what we are, and do not let it control us. Otherwise we will destroy this land, or any we live in.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.42303466796875,
+						0.3551395535469055,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-516649"] = {
+			["base"] = {
+				["title"] = "Research Log",
+				["text"] = {
+					"<A mud-caked journal sits on the ground. The entries within it appear to be in a research diary format and cut off halfway through. Some pages contain pressed flowers of various species. The name Mirveda Sunpetal is written on the inner cover.>\r\n\r\nDay 1\r\n\r\nI've been instructed to treat this like a diary.\r\n\r\nMagister Dawnsbrook needed a botanist for his next research project, so the university assigned me. My first assignment since passing my apprenticeship! I'm so excited!\r\n\r\nWe'll be experimenting with how magic affects certain foreign plants. The hope is to create a sustainable mana source that can be grown outside of the Sunwell's influence.",
+					"Day 267\r\n\r\nThe Magister brought in some new plants to test. But something feels wrong about them. They're already full of magic--I'm worried what adding more will do to them.\r\n\r\nHe says it might be the breakthrough we need to help support mana balancing in lands beyond Azeroth. At the moment, I'll just have to trust him.",
+					"<The pressed plants near the final entries become stranger. Fewer flowers and more leaves and spores line the pages.>\r\n\r\nDay 281\r\n\r\nOne of the apprentices went missing. I asked the Magister about it. He said they probably just went home. He's been distant lately, busy with a breakthrough. None of us are allowed in his private lab.\r\n\r\nSometimes I wonder if I should leave and let the Blood Knights know.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2395] = {
+						0.5319868326187134,
+						0.7393184900283813,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-573011"] = {
+			["base"] = {
+				["title"] = "Root of the World",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">The Root of the World</H1>\r\n<HR/>\r\n<P>\r\nA gnarled length of root bound with faintly glowing sap. When held, it thrums like a living thing, pulsing in rhythm with the heartbeat of the earth.\r\n<BR/><BR/>\r\nIt is said this relic was forged by Ruilla, sealing her pact with the roots that bind all worlds together.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Root of the World,<BR/>Part One: The Dying Roots</H2>\r\n<HR/>\r\n<P>\r\nOf our sacred duties, none are more overlooked than those of the Rootwardens.\r\n<BR/><BR/>\r\nIn the early days, we were still learning to care for this land. We knew little of the battles raging beyond Harandar, yet their echoes reached us all the same. Wars above burned and poisoned the roots below, leaving them blackened and dying.\r\n<BR/><BR/>\r\nIt was Ruilla the Huntress who first saw this suffering. And she would not stand by as her home withered.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Root of the World,<BR/>Part Two: The Struggle</H2>\r\n<HR/>\r\n<P>\r\nThe magic we carried to Harandar was for hunting. It had no answer for this blight. But Ruilla would not be denied. She reached for the roots and willed them to heal. They resisted her--bending but never breaking.\r\n<BR/><BR/>\r\nThe struggle became more than flesh and strength. Ruilla wrestled with the spirit of the roots themselves. She unlocked a part of herself that touched the beast of the world and found that the roots were alive, aware, and waiting.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Root of the World,<BR/>Part Three: The Rootways</H2>\r\n<HR/>\r\n<P>\r\nWhen the struggle ended, Ruilla did more than mend the wounds. She chased away the poison, healed the burns, and untangled the snarled lifelines of the land.  \r\n<BR/><BR/>\r\nIn gratitude, the roots revealed themselves fully. Ruilla saw the Rootways stretching beneath Azeroth and beyond. She saw the great trees, their strength, and their trials. And she learned that all paths led back to Harandar.\r\n<BR/><BR/>\r\nIf she would guard them, the roots would guide her.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">The Root of the World,<BR/>Part Four: The First Rootwarden</H2>\r\n<HR/>\r\n<P>\r\nRuilla accepted their charge. She became the first Rootwarden, and the first to walk the Rootways.  \r\n<BR/><BR/>\r\nTo seal this pact, the roots surrendered a piece of themselves, as did Ruilla. Together, they forged the Root of the World: a living relic that carries both the roots\' gift and Ruilla\'s vow.\r\n<BR/><BR/>\r\nThrough her, the Rootwardens were born: protectors of the lifeblood that binds all worlds.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.5438474416732788,
+						0.5326991081237793,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-557910"] = {
+			["base"] = {
+				["title"] = "Aln'hara's Bloom",
+				["text"] = {
+					'<HTML><BODY>\r\n<H1 align="center">Aln\'hara\'s Bloom</H1>\r\n<HR/>\r\n<P>\r\nA woven vessel of vine and bark cradles a single radiant flower. Its petals shimmer with a soft, living glow. When held close, a faint hum like distant singing can be heard.\r\n<BR/><BR/>\r\nIt is said this bloom carries an echo of the goddess--a piece of the song that first called the haranir to Harandar.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Aln\'hara\'s Bloom,<BR/>Part One: The Call</H2>\r\n<HR/>\r\n<P>\r\nOur people were drawn to Harandar by a song: a melody that echoed through the wilds, promising sanctuary and purpose. But when we arrived, the singer was gone. The goddess we sought was nowhere to be found.\r\n<BR/><BR/>\r\nEven as we rooted ourselves in this new home, the question lingered: where had she gone? And why had she called us only to vanish?\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Aln\'hara\'s Bloom,<BR/>Part Two: The Seekers</H2>\r\n<HR/>\r\n<P>\r\nIn time, the haranir chose to turn inward--to care for Harandar and shield it from the outside world. Yet some could not rest.\r\n<BR/><BR/>\r\nThese became the seekers, those who devoted themselves to finding her. They scoured the forests, mountains, and rivers for signs. They listened for her song in the wind, in the howl of creatures, and in every heartbeat of this land.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Aln\'hara\'s Bloom,<BR/>Part Three: The Bloom</H2>\r\n<HR/>\r\n<P>\r\nTheir search led to a miracle: a flower unlike any other in Harandar. Its petals glowed with an inner light. When the seekers drew near, they heard the song--faint, yet undeniable.\r\n<BR/><BR/>\r\nIt was not the goddess herself, but a fragment of her. A glimpse of the one they sought. This fragile bloom renewed their hope that she still walked somewhere beyond their sight.\r\n</P>\r\n</BODY></HTML>',
+					'<HTML><BODY>\r\n<H2 align="center">Aln\'hara\'s Bloom,<BR/>Part Four: The Watchers</H2>\r\n<HR/>\r\n<P>\r\nFrom that day forward, the seekers became watchers. Though we seldom leave Harandar, they remain listening for her melody: following faint trails, waiting for a sign.\r\n<BR/><BR/>\r\nWhen the time comes, they will follow her song once more. And when they do, they will be ready to bring our goddess home.\r\n</P>\r\n</BODY></HTML>',
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.544400155544281,
+						0.5316992998123169,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579202"] = {
+			["base"] = {
+				["title"] = "Awe'ohna's Path--Part 2: Answers",
+				["text"] = {
+					"Our traditions forbid entering Aln'hara's Cradle. Even the beasts of this land do not fly there--only the roots. But I cannot let our land die for tradition.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.7353874444961548,
+						0.5819228887557983,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579131"] = {
+			["base"] = {
+				["title"] = "Words of Obayo--Part 3: The Silence",
+				["text"] = {
+					"A few did not fear the silence, and even sought wisdom in it. They approached the flame to seek answers Aln'hara's song could not give them. They were the most prepared to fight the rift's manifestations.",
+					"The goddess left us no gift or trial without a reason, and even in silence there is hope.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.6253036260604858,
+						0.3569894433021545,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-629501"] = {
+			["base"] = {
+				["title"] = "Vereesa's Journal",
+				["text"] = {
+					"<The final page of this journal is splotched and stained as if it were written under the soft patter of rain, the handwriting frantic and rushed.>\r\n\r\nIt was my fault\r\n\r\nLirath I am so, so sorry I should never have listened, I should never have trained you I should never have indulged your wish\r\n\r\nYour music brought me nothing but joy and I let you throw it away and I let you try the impossible and now I will never hear it again\r\n\r\nI will never hear you again\r\n\r\nI will never, ever forgive myself\r\n\r\nEver",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2494] = {
+						0,
+						0,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-553835"] = {
+			["base"] = {
+				["title"] = "Infinity Blades",
+				["text"] = {
+					"Infinity Blades\r\n\r\nThe group known as the Phoenix Blades may be derided today as mere assassins, but they were once held in high regard for saving many lives by eliminating key commanders before a battle. As both reward and mark of station, their cunning leader was gifted the Infinity Blades. These weapons deftly pierced most magical defenses and protected the bearer from arcane attacks.\r\n\r\nIn later years, the Phoenix Blades turned on their king, and the group was disbanded. The Infinity Blades were thought lost until they resurfaced in the siege of Tempest Keep. Recovered from the traitor prince, the blades are now preserved in the light of the Sunwell.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2432] = {
+						0.4790605306625366,
+						0.2867428064346314,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579123"] = {
+			["base"] = {
+				["title"] = "Words of Obayo--Part 1: The Flame",
+				["text"] = {
+					"They believe its silent vigil kept the horrors of the rift at bay. But the flame dimmed and the horrors escaped. Eventually, the flame was moved to preserve it.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.6486188173294067,
+						0.3848813772201538,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-618569"] = {
+			["base"] = {
+				["title"] = "Tattered Page",
+				["text"] = {
+					"Theris, \r\n\r\nI knew you wouldn't understand. Even if I couched my reasoning in platitudes about protecting the family, protecting Silvermoon, you always see right through me, don't you? \r\n\r\nThen, fine. You win. You're right. \r\n\r\nMany ren'dorei chose this path out of a desire to understand that which we must defeat: The Void. They have made a noble sacrifice in order to save their people, even as they are shunned for it. \r\n\r\nBut not me. No, I am honest with myself. I did this for me.",
+					"You always wanted me to find healing in the Light. When a warm glow did not do it, you tried to sear me through, convinced it would burn away the memories. \r\n\r\nI will never forgive you for that. Even I know the Light should not be wielded in such a way. But I was never going to find comfort its thoughtless peace. \r\n\r\nI don't expect you to understand. But still, even after all you've done, you are my brother. If we meet on the battlefield, I will turn so we may fight back to back. \r\n\r\nBut if you try strike me down with your Light, since I am Void creature you so detest, I will not so idly accept your wrath again.\r\n\r\nDo not make me turn my blades on kin.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2405] = {
+						0.6037026643753052,
+						0.4545431137084961,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["Item-265819"] = {
+			["base"] = {
+				["title"] = "Ruia's Musings, Part 2",
+				["text"] = {
+					"Disgusting! Irresponsible! Reprehensible!\r\n\r\nIt would be the surface dwellers who would taint the sanctity of Harandar with their curses.\r\n\r\nTheir light spreads across the land like an infection blooming across our pristine fields, inciting the afflicted rutaani to madness. It must be stopped before it goes any further... and before the other elders hear that it happened on my watch.\r\n\r\nNo matter. A haranir will succeed where others have failed. This is a certainty.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579244"] = {
+			["base"] = {
+				["title"] = "Tending the Lands--Part 3: The Cycle",
+				["text"] = {
+					"Although the fungarians often fear us, they will speak to us. This does not make it easier to learn from them. They answer with little thought and always have questions of their own. So many questions.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.6137673258781433,
+						0.3714184761047363,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-613847"] = {
+			["base"] = {
+				["title"] = "Mirveda's Notes",
+				["text"] = {
+					"<A haphazard collection of notes, diagrams, and letters documenting changes in the Dead Scar. Some writings are several years old, while others are more recent.>\r\n\r\nIt has been two months since my field experiment. The longer I sit with the knowledge that this taint is irreversible, the less I can bear it.\r\n\r\nPerhaps I made a mistake. The magistrix agreed with my research, but perhaps she was also mistaken.\r\n\r\nI have to keep looking.",
+					"<Written on the back of a lengthy research log.>\r\n\r\nToday marks the end of a full year of testing. I have taken so many soil samples, stained more crates than I care to document, and yet I have nothing to show.\r\n\r\nSo many cleansing spells, draughts, runes. But still nothing will grow in that soil. No matter how carefully I tend to the seeds, they wither to ash within hours.\r\n\r\nIt cannot be hopeless. I refuse to let it be hopeless.",
+					"<Scribbled at the bottom of a report dated years later:>\r\n\r\nI am so tired.",
+					"<A map of Quel'Thalas with a few frantically scribbled circles near the top of the Dead Scar.>\r\n\r\nPeacebloom shoots!",
+					"<Several diagrams of the Sunwell, accompanied by pages upon pages of complex magical equations.>\r\n\r\nThe growth started in the very north, but it has begun trickling southward over the past months.\r\n\r\nI found a few patches of grass as far down as the East Sanctum yesterday.\r\n\r\nGRASS!",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2395] = {
+						0.5052937865257263,
+						0.4349405169487,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-613861"] = {
+			["base"] = {
+				["title"] = "Shrine of Dath'Remar",
+				["text"] = {
+					"<The bronze placard shines along its edges, worn down from many years of blood elves coming to pay their respects.>\r\n\r\nHere stands the Shrine of Dath'Remar, a fitting tribute to a noble elf.\r\n\r\nLet all who gaze on this monument remember his sacrifices for our people and his dedication to the cause of our continued survival.\r\n\r\nAll who prosper in Quel'Thalas do so thanks to him.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Bronze",
+				["mapData"] = {
+					[2395] = {
+						0.3763107657432556,
+						0.1379113793373108,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["Item-254559"] = {
+			["base"] = {
+				["title"] = "Songs for the Silver Streams",
+				["text"] = {
+					"<These pages are worn, having been bookmarked over and over again.>\r\n\r\nWildflowers and vines and weeds come up through the stones, and partly cover them--Beyond these I pass,\r\n\r\nFar, far in the forest, before I think where I go,\r\n\r\nSolitary, smelling the earthy smell, stopping now and then in the silence.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "default",
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-613827"] = {
+			["base"] = {
+				["title"] = "Derelict Mural",
+				["text"] = {
+					"We left the surface to follow the call, to seek the song from the depths, the voice we did not yet know.\r\n\r\nThere were concerns about what those who decided to stay on the surface would do in our absence.\r\n\r\nWe knew what lurked in the places of myth. We were venturing into forbidden parts of the ancient world.\r\n\r\nWill it still be our concern if or when their children wake up the dark sleeping beneath them? Is it still our world to save when they engulf it with the flames of their curiosity?\r\n\r\nHope is to believe they listened to the warnings and pass them down to the generations to come.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2413] = {
+						0.724319577217102,
+						0.3819134831428528,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-620327"] = {
+			["base"] = {
+				["title"] = "Tablet of Filo",
+				["text"] = {
+					"Imagination! Child-like Wonder!\r\n\r\nThose protected by Filo must have both.\r\n\r\nBeware those would  harm children lest you stoke the ire of Filo and his brethren! Learn of Filo's dark side and nowhere but DEATH can you hide.\r\n\r\nFilo is called by many names:\r\n\r\nFirst Friend\r\n\r\nUncle Filo\r\n\r\nThe Guardian\r\n\r\n\r\nChildren have no need to worship, no need to call him. All Amani children earn his protection. The youngest child of every village is his speaker. Filo says nothing, but all understand.\r\n\r\nOther loa fear Filo's power. Nothing can kill him, and his rage is insatiable. But he is focused. Placid enough to eat from a child's hand but ruthless enough to kill the most powerful warrior if it suits him.\r\n\r\nFilo protects children beyond death. If a child dies before its mother or father, Filo and his attendants gather and wait with the child until their parents come to guide them.\r\n\r\nTo reach Filo, come to him and play. Only a child or the purest of heart hold him in sway.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Stone",
+				["mapData"] = {
+					[2437] = {
+						0.528965950012207,
+						0.3210595846176148,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-579237"] = {
+			["base"] = {
+				["title"] = "Echoes of Our Past--Part 2: Alndust",
+				["text"] = {
+					"I have found something new. The dust from from the Rift of Aln is nearly as powerful as the rift itself. Do the paintings come to life, or do we enter the paintings? It seems a bit of both.",
+					"The Alndust defies time. I have reached back through artifacts and blood, and found memories of ancestors or places. It touches memories as long as a trace remains. Our time--our history--can be rediscovered.",
+				},
+				["singlePage"] = false,
+				["pageCount"] = 0,
+				["material"] = "ParchmentLarge",
+				["mapData"] = {
+					[2413] = {
+						0.5971701741218567,
+						0.1851428747177124,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
+		["GameObject-572464"] = {
+			["base"] = {
+				["title"] = "Ancient Zandalari Scroll",
+				["text"] = {
+					"A brittle ancient scroll, bearing Emperor Lei Shen's proclamation: the Zandalari are to destroy the mortals outside, overrun Pandaria, and restore the empire's glory.",
+				},
+				["singlePage"] = true,
+				["pageCount"] = 0,
+				["material"] = "Parchment",
+				["mapData"] = {
+					[2541] = {
+						0.261963427066803,
+						0.4291064739227295,
+					},
+				},
+				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 11,
+			},
+		},
 
 
 		--put stuff above here
