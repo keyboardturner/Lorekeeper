@@ -1,3 +1,7 @@
+# 0.4.3b
+
+Prevent saving data in restricted environments such as dungeons/raids due to new Blizzard API restrictions
+
 # 0.4.3a
 
 Adjusted map location data for The Ringing Deeps to shift them to the left (they were gathered before Undermine)
