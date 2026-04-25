@@ -399,7 +399,8 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		end
 	end
 	if event == "ITEM_TEXT_CLOSED" then
-		if not activeContext or not activeContext.guid then
+		--if not activeContext or not activeContext.guid then
+		if not activeContext or not activeContext.guid or issecretvalue(activeContext) or issecretvalue(activeContext.guid) then
 			-- UnitGUID doesn't work here because we're no longer interacting with the object
 			-- otherwise, we could just reset activeContext.guid
 			-- if you're wondering how we have an activeContext but the guid is nil... I couldn't tell you, cosmic radiation or something
