@@ -1,3 +1,9 @@
+# 0.4.4
+
+Redesigned the settings menu to a scrollable list with options search and better color picker buttons
+
+12.0.7 toc update
+
 # 0.4.3b
 
 Prevent saving data in restricted environments such as dungeons/raids due to new Blizzard API restrictions

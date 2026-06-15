@@ -154,6 +154,11 @@ This is a paragraph under header 3.
 	LK["MapPins_ShowCollectedTT"] = "Shows greyed-out pins for books you have already collected."
 	LK["MapPins_HideAll"] = "Hide All Map Pins"
 	LK["MapPins_HideAllTT"] = "Hides all Lorekeeper scroll icons from the world map."
+	LK["LC_OpenColorPicker"] = "Left-Click: Open Color Picker"
+	LK["RC_OpenDropdown"] = "Right-Click: Additional Settings"
+	LK["ColorOptions"] = "Color Options"
+	LK["CopyColor"] = "Copy Color"
+	LK["PasteColor"] = "Paste Color"
 
 return end
 
@@ -280,6 +285,11 @@ if LOCALE == "esES" or LOCALE == "esMX" then
 	LK["MapPins_ShowCollectedTT"] = "Muestra puntos atenuados para los libros que ya has recogido."
 	LK["MapPins_HideAll"] = "Ocultar todos los puntos del mapa"
 	LK["MapPins_HideAllTT"] = "Oculta todos los iconos de pergaminos de Lorekeeper del mapa del mundo."
+	LK["LC_OpenColorPicker"] = "Clic izquierdo: Abrir selector de color"
+	LK["RC_OpenDropdown"] = "Clic derecho: Configuración adicional"
+	LK["ColorOptions"] = "Opciones de color"
+	LK["CopyColor"] = "Copiar color"
+	LK["PasteColor"] = "Pegar color"
 
 return end
 
@@ -406,6 +416,11 @@ if LOCALE == "deDE" then
 	LK["MapPins_ShowCollectedTT"] = "Zeigt ausgegraute Markierungen für Bücher, die du bereits gesammelt hast."
 	LK["MapPins_HideAll"] = "Alle Kartenmarkierungen ausblenden"
 	LK["MapPins_HideAllTT"] = "Blendet alle Schriftrollen-Symbole des Hüters der Lehren auf der Weltkarte aus."
+	LK["LC_OpenColorPicker"] = "Links-Klick: Farbwähler öffnen"
+	LK["RC_OpenDropdown"] = "Rechts-Klick: Zusätzliche Einstellungen"
+	LK["ColorOptions"] = "Farboptionen"
+	LK["CopyColor"] = "Farbe kopieren"
+	LK["PasteColor"] = "Farbe einfügen"
 
 return end
 
@@ -532,6 +547,11 @@ if LOCALE == "frFR" then
 	LK["MapPins_ShowCollectedTT"] = "Affiche des repères grisés pour les livres que vous avez déjà collectés."
 	LK["MapPins_HideAll"] = "Masquer tous les repères"
 	LK["MapPins_HideAllTT"] = "Masque toutes les icônes de parchemins du Gardien du savoir sur la carte du monde."
+	LK["LC_OpenColorPicker"] = "Clic gauche : Ouvrir le sélecteur de couleur"
+	LK["RC_OpenDropdown"] = "Clic droit : Paramètres supplémentaires"
+	LK["ColorOptions"] = "Options de couleur"
+	LK["CopyColor"] = "Copier la couleur"
+	LK["PasteColor"] = "Coller la couleur"
 
 return end
 
@@ -658,6 +678,11 @@ if LOCALE == "itIT" then
 	LK["MapPins_ShowCollectedTT"] = "Mostra segnalini in grigio per i libri che hai già raccolto."
 	LK["MapPins_HideAll"] = "Nascondi tutti i segnalini mappa"
 	LK["MapPins_HideAllTT"] = "Nasconde tutte le icone delle pergamene del Custode del sapere dalla mappa del mondo."
+	LK["LC_OpenColorPicker"] = "Clic sinistro: Apri selettore colore"
+	LK["RC_OpenDropdown"] = "Clic destro: Impostazioni aggiuntive"
+	LK["ColorOptions"] = "Opzioni colore"
+	LK["CopyColor"] = "Copia colore"
+	LK["PasteColor"] = "Incolla colore"
 
 return end
 
@@ -784,6 +809,11 @@ if LOCALE == "ptBR" then
 	LK["MapPins_ShowCollectedTT"] = "Mostra marcadores acinzentados para livros que você já coletou."
 	LK["MapPins_HideAll"] = "Ocultar todos os marcadores do mapa"
 	LK["MapPins_HideAllTT"] = "Oculta todos os ícones de pergaminho do Guardião do Conhecimento do mapa-múndi."
+	LK["LC_OpenColorPicker"] = "Clique esquerdo: Abrir seletor de cores"
+	LK["RC_OpenDropdown"] = "Clique direito: Configurações adicionais"
+	LK["ColorOptions"] = "Opções de cor"
+	LK["CopyColor"] = "Copiar cor"
+	LK["PasteColor"] = "Colar cor"
 
 -- Note that the EU Portuguese WoW client also
 -- uses the Brazilian Portuguese locale code.
@@ -912,6 +942,11 @@ if LOCALE == "ruRU" then
 	LK["MapPins_ShowCollectedTT"] = "Показывает затемнённые метки для уже собранных книг."
 	LK["MapPins_HideAll"] = "Скрыть все метки карты"
 	LK["MapPins_HideAllTT"] = "Скрывает все значки свитков Хранителя знаний на карте мира."
+	LK["LC_OpenColorPicker"] = "ЛКМ: Открыть палитру цветов"
+	LK["RC_OpenDropdown"] = "ПКМ: Дополнительные настройки"
+	LK["ColorOptions"] = "Параметры цвета"
+	LK["CopyColor"] = "Копировать цвет"
+	LK["PasteColor"] = "Вставить цвет"
 
 
 return end
@@ -1039,6 +1074,11 @@ if LOCALE == "koKR" then
 	LK["MapPins_ShowCollectedTT"] = "이미 수집한 책에 대해 회색으로 표시된 핀을 표시합니다."
 	LK["MapPins_HideAll"] = "모든 지도 핀 숨기기"
 	LK["MapPins_HideAllTT"] = "세계 지도에서 모든 로어키퍼 두루마리 아이콘을 숨깁니다."
+	LK["LC_OpenColorPicker"] = "좌클릭: 색상 선택기 열기"
+	LK["RC_OpenDropdown"] = "우클릭: 추가 설정"
+	LK["ColorOptions"] = "색상 옵션"
+	LK["CopyColor"] = "색상 복사"
+	LK["PasteColor"] = "색상 붙여넣기"
 
 
 return end
@@ -1166,6 +1206,11 @@ if LOCALE == "zhCN" then
 	LK["MapPins_ShowCollectedTT"] = "为已收集的书籍显示灰显标记。"
 	LK["MapPins_HideAll"] = "隐藏所有地图标记"
 	LK["MapPins_HideAllTT"] = "在世界地图上隐藏所有博学者卷轴图标。"
+	LK["LC_OpenColorPicker"] = "左键：打开颜色选择器"
+	LK["RC_OpenDropdown"] = "右键：更多设置"
+	LK["ColorOptions"] = "颜色选项"
+	LK["CopyColor"] = "复制颜色"
+	LK["PasteColor"] = "粘贴颜色"
 
 
 
@@ -1294,6 +1339,11 @@ if LOCALE == "zhTW" then
 	LK["MapPins_ShowCollectedTT"] = "為已收集的書籍顯示灰色標記。"
 	LK["MapPins_HideAll"] = "隱藏所有地圖標記"
 	LK["MapPins_HideAllTT"] = "在世界地圖上隱藏所有博學者卷軸圖示。"
+	LK["LC_OpenColorPicker"] = "左鍵：開啟顏色選擇器"
+	LK["RC_OpenDropdown"] = "右鍵：其他設定"
+	LK["ColorOptions"] = "顏色選項"
+	LK["CopyColor"] = "複製顏色"
+	LK["PasteColor"] = "貼上顏色"
 
 
 return end
