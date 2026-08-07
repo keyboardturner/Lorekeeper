@@ -1,4 +1,4 @@
-## Interface: 120005, 120007
+## Interface: 120007, 120100
 ## Title: Lorekeeper
 ## Notes: Collect and store ingame text items in an adaptive library.
 ## Author: Keyboardturner

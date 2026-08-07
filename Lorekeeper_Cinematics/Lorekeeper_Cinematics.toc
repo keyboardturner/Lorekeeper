@@ -1,4 +1,4 @@
-## Interface: 120005, 120007
+## Interface: 120007, 120100
 ## Title: Lorekeeper_Cinematics
 ## Notes: Lorekeeper plugin to browse the ingame cinematics.
 ## Author: Keyboardturner

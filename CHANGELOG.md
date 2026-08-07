@@ -1,3 +1,9 @@
+# 0.4.5
+
+Localdata update
+
+12.1.0 toc update
+
 # 0.4.4
 
 Redesigned the settings menu to a scrollable list with options search and better color picker buttons
