@@ -45047,6 +45047,2345 @@ LK["LocalData"]["questItems"] = {
 		["id"] = 249414,
 		["itemQuality"] = 1
 	},
+	[205797] = {
+		["expansionID"] = 9,
+		["itemName"] = "Filthy Bundle",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133640,
+		["itemDescription"] = '"It\'s gross and petrified shut, but perhaps there\'s something interesting inside."',
+		["id"] = 205797,
+		["itemQuality"] = 1
+	},
+	[80830] = {
+		["expansionID"] = 4,
+		["itemName"] = "Rusty Shipwreck Debris",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134070,
+		["itemDescription"] = '"Not sure how he expects to make bomb\'s with this junk."',
+		["id"] = 80830,
+		["itemQuality"] = 1
+	},
+	[33852] = {
+		["expansionID"] = 0,
+		["itemName"] = "Cooking Pot",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133778,
+		["itemDescription"] = '"Requires the smoldering corpse of an Abyssal Flamebringer."',
+		["id"] = 33852,
+		["itemQuality"] = 1
+	},
+	[193917] = {
+		["expansionID"] = 9,
+		["itemName"] = "Rejuvenating Draught",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 967530,
+		["itemDescription"] = '"A favored concoction of the Red Dragonflight."',
+		["id"] = 193917,
+		["itemQuality"] = 1
+	},
+	[129120] = {
+		["expansionID"] = 0,
+		["itemName"] = "Fjarnskaggl Sample",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 1387615,
+		["itemDescription"] = '"Brambly, coarse, and difficult to handle."',
+		["id"] = 129120,
+		["itemQuality"] = 1
+	},
+	[133939] = {
+		["expansionID"] = 0,
+		["itemName"] = "Luminous Pearl",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 464023,
+		["itemDescription"] = '"Shines with a cold, steady light."',
+		["id"] = 133939,
+		["itemQuality"] = 1
+	},
+	[188169] = {
+		["expansionID"] = 0,
+		["itemName"] = "Bronze Timepiece",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134376,
+		["itemDescription"] = '"Using this will rewind time and reset your position."',
+		["id"] = 188169,
+		["itemQuality"] = 1
+	},
+	[269666] = {
+		["expansionID"] = 11,
+		["itemName"] = "Feather of Jan'alai",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 2103839,
+		["itemDescription"] = '"A small piece of the loa herself. Even a single feather emanates a slight warmth in your hand."',
+		["id"] = 269666,
+		["itemQuality"] = 1
+	},
+	[193918] = {
+		["expansionID"] = 9,
+		["itemName"] = "Jar of Fireflies",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134784,
+		["itemDescription"] = '"Perfect for keeping a frog\'s favorite snack close at hand."',
+		["id"] = 193918,
+		["itemQuality"] = 1
+	},
+	[144032] = {
+		["expansionID"] = 0,
+		["itemName"] = "Party Dynamite",
+		["itemTexture"] = 133715,
+		["isCraftingReagent"] = false,
+		["id"] = 144032,
+		["itemQuality"] = 1
+	},
+	[270562] = {
+		["expansionID"] = 11,
+		["itemName"] = "Tainted Sample",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 136133,
+		["itemDescription"] = '"A strangely tainted bone sample. Lady Darkglen might be interested in this."',
+		["id"] = 270562,
+		["itemQuality"] = 1
+	},
+	[269668] = {
+		["expansionID"] = 11,
+		["itemName"] = "Hungering Oblivium",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7658125,
+		["itemDescription"] = '"An oddity of the Voidstorm. It emanates an eerie malice."',
+		["id"] = 269668,
+		["itemQuality"] = 1
+	},
+	[169391] = {
+		["expansionID"] = 7,
+		["itemName"] = "Bubble-eyed Rolly",
+		["itemTexture"] = 133927,
+		["isCraftingReagent"] = false,
+		["id"] = 169391,
+		["itemQuality"] = 2
+	},
+	[54644] = {
+		["expansionID"] = 0,
+		["itemName"] = "List of Parts",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134329,
+		["itemDescription"] = '"Everything, INCLUDING the kitchen sink!"',
+		["id"] = 54644,
+		["itemQuality"] = 1
+	},
+	[144033] = {
+		["expansionID"] = 0,
+		["itemName"] = "Enormous Crate of Tiny Bombs",
+		["itemTexture"] = 986484,
+		["isCraftingReagent"] = false,
+		["id"] = 144033,
+		["itemQuality"] = 1
+	},
+	[46005] = {
+		["expansionID"] = 2,
+		["itemName"] = "Sealed Vial of Poison",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 236870,
+		["itemDescription"] = '"Not really safe for drinking."',
+		["id"] = 46005,
+		["itemQuality"] = 1
+	},
+	[129888] = {
+		["expansionID"] = 6,
+		["itemName"] = "Undivided Hide",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134354,
+		["itemDescription"] = '"Deftly removed from the creature in one piece."',
+		["id"] = 129888,
+		["itemQuality"] = 1
+	},
+	[23881] = {
+		["expansionID"] = 1,
+		["itemName"] = "Gargolmar's Hand",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 135665,
+		["itemDescription"] = '"Bears the mark of the Shattered Hand."',
+		["id"] = 23881,
+		["itemQuality"] = 1
+	},
+	[43147] = {
+		["expansionID"] = 0,
+		["itemName"] = "Stew Cookpot",
+		["itemTexture"] = 133748,
+		["isCraftingReagent"] = false,
+		["id"] = 43147,
+		["itemQuality"] = 1
+	},
+	[200756] = {
+		["expansionID"] = 0,
+		["itemName"] = "Frozen Steak",
+		["itemTexture"] = 4621603,
+		["isCraftingReagent"] = false,
+		["id"] = 200756,
+		["itemQuality"] = 1
+	},
+	[167669] = {
+		["expansionID"] = 7,
+		["itemName"] = "Suction Tube",
+		["itemTexture"] = 133024,
+		["isCraftingReagent"] = false,
+		["id"] = 167669,
+		["itemQuality"] = 1
+	},
+	[38676] = {
+		["expansionID"] = 0,
+		["itemName"] = "Whisker of Har'koa",
+		["itemTexture"] = 134324,
+		["isCraftingReagent"] = false,
+		["id"] = 38676,
+		["itemQuality"] = 1
+	},
+	[167670] = {
+		["expansionID"] = 7,
+		["itemName"] = "Jarmouthed Goby",
+		["itemTexture"] = 630619,
+		["isCraftingReagent"] = false,
+		["id"] = 167670,
+		["itemQuality"] = 1
+	},
+	[167671] = {
+		["expansionID"] = 7,
+		["itemName"] = "Anodized Sentry Fish",
+		["itemTexture"] = 970819,
+		["isCraftingReagent"] = false,
+		["id"] = 167671,
+		["itemQuality"] = 1
+	},
+	[249687] = {
+		["expansionID"] = 11,
+		["itemName"] = "Poisonous Frog Secretions",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 463860,
+		["itemDescription"] = '"Sticky and acrid-smelling, this potent toxin could easily be smeared on a weapon or inconspicuous surface."',
+		["id"] = 249687,
+		["itemQuality"] = 1
+	},
+	[79269] = {
+		["expansionID"] = 4,
+		["itemName"] = "Marsh Lily",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134210,
+		["itemDescription"] = '"Finding this rare flower is very lucky. It would make a lovely present for Gina Mudclaw."',
+		["id"] = 79269,
+		["itemQuality"] = 3
+	},
+	[33838] = {
+		["expansionID"] = 0,
+		["itemName"] = "Giant Kaliri Wing",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134002,
+		["selected"] = true,
+		["id"] = 33838,
+		["itemQuality"] = 1
+	},
+	[168183] = {
+		["expansionID"] = 7,
+		["itemName"] = "Rare Metal Collector",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134519,
+		["itemDescription"] = '"Looks fancy, definitely stolen."',
+		["id"] = 168183,
+		["itemQuality"] = 1
+	},
+	[43100] = {
+		["expansionID"] = 0,
+		["itemName"] = "Infused Mushroom",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134531,
+		["itemDescription"] = '"This mushroom doesn\'t seem quite right."',
+		["id"] = 43100,
+		["itemQuality"] = 1
+	},
+	[262654] = {
+		["expansionID"] = 11,
+		["itemName"] = "Amani Tablet Rubbing",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134332,
+		["itemDescription"] = '"There are possible clues, but no overt references to Ula\'tek."',
+		["id"] = 262654,
+		["itemQuality"] = 1
+	},
+	[249688] = {
+		["expansionID"] = 11,
+		["itemName"] = "Felo'melorn Replica",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 1118645,
+		["itemDescription"] = '"Surprisingly well made, though a bit small. A fiery enchantment hums along the purposefully-dulled edge."',
+		["id"] = 249688,
+		["itemQuality"] = 1
+	},
+	[43148] = {
+		["expansionID"] = 0,
+		["itemName"] = "Crystalsong Carrot",
+		["itemTexture"] = 134010,
+		["isCraftingReagent"] = false,
+		["id"] = 43148,
+		["itemQuality"] = 1
+	},
+	[81122] = {
+		["expansionID"] = 4,
+		["itemName"] = "Wolf Piranha",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 350650,
+		["itemDescription"] = '"Careful, you might lose a finger on this one."',
+		["id"] = 81122,
+		["itemQuality"] = 1
+	},
+	[68890] = {
+		["expansionID"] = 11,
+		["itemName"] = "Dragon Kite 2-Pack",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133838,
+		["itemDescription"] = "",
+		["id"] = 68890,
+		["itemQuality"] = 1
+	},
+	[275686] = {
+		["expansionID"] = 11,
+		["itemName"] = "Decrypted Intel Sphere",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7137527,
+		["itemDescription"] = '"A flurry of projected images, alien letters, and other information churns within the energy sphere."',
+		["id"] = 275686,
+		["itemQuality"] = 1
+	},
+	[80260] = {
+		["expansionID"] = 4,
+		["itemName"] = "Dojani Eel",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133897,
+		["itemDescription"] = '"Probably best not to hold it for too long."',
+		["id"] = 80260,
+		["itemQuality"] = 1
+	},
+	[275687] = {
+		["expansionID"] = 11,
+		["itemName"] = "Soul Lattice Holoprint",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 6031071,
+		["itemDescription"] = '"Shimmering runes and 3D projections of something called a "Soul Lattice" flickers across the holoprint."',
+		["id"] = 275687,
+		["itemQuality"] = 1
+	},
+	[275689] = {
+		["expansionID"] = 11,
+		["itemName"] = "Glittering Crypt Holoprint",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7310370,
+		["itemDescription"] = '"A flickering 3D overlay of a non-ethereal structure shimmers across the holoprint."',
+		["id"] = 275689,
+		["itemQuality"] = 1
+	},
+	[262659] = {
+		["expansionID"] = 11,
+		["itemName"] = "Vilebranch Hex Fetish",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 443381,
+		["itemDescription"] = '"A small trinket that emanates necromantic power."',
+		["id"] = 262659,
+		["itemQuality"] = 1
+	},
+	[33839] = {
+		["expansionID"] = 1,
+		["itemName"] = "Kaliri Stew",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134020,
+		["itemDescription"] = '"Looks like revenge is on the menu tonight!  Kaliri never tasted so good."',
+		["id"] = 33839,
+		["itemQuality"] = 1
+	},
+	[43101] = {
+		["expansionID"] = 0,
+		["itemName"] = "Meatloaf Pan",
+		["itemTexture"] = 133748,
+		["isCraftingReagent"] = false,
+		["id"] = 43101,
+		["itemQuality"] = 1
+	},
+	[39540] = {
+		["expansionID"] = 2,
+		["itemName"] = "Unblemished Heart of the Guardian",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134564,
+		["itemDescription"] = '"Flawless unlike all of the others."',
+		["id"] = 39540,
+		["itemQuality"] = 1
+	},
+	[271094] = {
+		["expansionID"] = 11,
+		["itemName"] = "Lady Darkglen's Device",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133870,
+		["itemDescription"] = '"A device to analyze magic energy."',
+		["id"] = 271094,
+		["itemQuality"] = 1
+	},
+	[204852] = {
+		["expansionID"] = 8,
+		["itemName"] = "Primalist Scriptures",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4549140,
+		["itemDescription"] = '"Cataloger Daela will probably be interested in this."',
+		["id"] = 204852,
+		["itemQuality"] = 1
+	},
+	[133887] = {
+		["expansionID"] = 0,
+		["itemName"] = "Luminous Pearl",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 464023,
+		["itemDescription"] = '"Shines with a cold, steady light."',
+		["id"] = 133887,
+		["itemQuality"] = 1
+	},
+	[20864] = {
+		["expansionID"] = 0,
+		["itemName"] = "Bone Scarab",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134929,
+		["itemDescription"] = "",
+		["id"] = 20864,
+		["itemQuality"] = 2
+	},
+	[69978] = {
+		["expansionID"] = 0,
+		["isCraftingReagent"] = false,
+		["itemName"] = "Gnomish Bait-o-Matic",
+		["id"] = 69978,
+		["selected"] = true,
+		["itemTexture"] = 358687,
+		["itemQuality"] = 1
+	},
+	[194441] = {
+		["expansionID"] = 9,
+		["itemName"] = "Bottled Water Elemental",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4497564,
+		["itemDescription"] = '"An invaluable tool of dragonspawn tending to lava elementals."',
+		["id"] = 194441,
+		["itemQuality"] = 1
+	},
+	[80262] = {
+		["expansionID"] = 4,
+		["itemName"] = "Beloved Ring",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133345,
+		["itemDescription"] = '"The intials J.H. are inscribed on the inside of the ring."',
+		["id"] = 80262,
+		["itemQuality"] = 1
+	},
+	[72118] = {
+		["expansionID"] = 1,
+		["itemName"] = "The Invader's Claw",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134048,
+		["itemDescription"] = '"Far larger than any claw you\'ve ever seen."',
+		["id"] = 72118,
+		["itemQuality"] = 1
+	},
+	[134399] = {
+		["expansionID"] = 6,
+		["itemName"] = "Huge Highmountain Salmon",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133923,
+		["itemDescription"] = '"Slammin\'!"',
+		["id"] = 134399,
+		["itemQuality"] = 1
+	},
+	[182178] = {
+		["expansionID"] = 8,
+		["itemName"] = "Raptor Soul",
+		["itemTexture"] = 838683,
+		["isCraftingReagent"] = false,
+		["id"] = 182178,
+		["itemQuality"] = 2
+	},
+	[274036] = {
+		["expansionID"] = 11,
+		["itemName"] = "Void Magicule",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7554214,
+		["itemDescription"] = '"As you peer into the orb, you see brief flickers of runic enchantments, forbidden spells, and sealed-away knowledge swirling within, calling out to you."',
+		["id"] = 274036,
+		["itemQuality"] = 4
+	},
+	[134400] = {
+		["expansionID"] = 6,
+		["itemName"] = "Lively Highmountain Salmon",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133923,
+		["itemDescription"] = '"A healthy, muscular fish."',
+		["id"] = 134400,
+		["itemQuality"] = 1
+	},
+	[69979] = {
+		["expansionID"] = 0,
+		["itemName"] = "Bait-o-Matic Blueprints",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134332,
+		["itemDescription"] = '"Catches fish fast, holds them securely, and guts them without the mess!"',
+		["id"] = 69979,
+		["itemQuality"] = 1
+	},
+	[80295] = {
+		["expansionID"] = 4,
+		["itemName"] = "Packet of Green Cabbage Seeds",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133471,
+		["itemDescription"] = '"A paper envelope that rattles when you shake it."',
+		["id"] = 80295,
+		["itemQuality"] = 1
+	},
+	[205366] = {
+		["expansionID"] = 0,
+		["itemName"] = "Dripping Clay Pot",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 629056,
+		["itemDescription"] = '"This sealed pot contains a strange, slippery mud."',
+		["id"] = 205366,
+		["itemQuality"] = 1
+	},
+	[177836] = {
+		["expansionID"] = 8,
+		["itemName"] = "Wingpierce Javelin",
+		["itemTexture"] = 1361323,
+		["isCraftingReagent"] = false,
+		["id"] = 177836,
+		["itemQuality"] = 1
+	},
+	[16968] = {
+		["expansionID"] = 0,
+		["itemName"] = "Sar'theris Striker",
+		["itemTexture"] = 133918,
+		["isCraftingReagent"] = false,
+		["id"] = 16968,
+		["itemQuality"] = 1
+	},
+	[73269] = {
+		["expansionID"] = 0,
+		["itemName"] = "Great Sea Herring",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133890,
+		["itemDescription"] = '"This little fish looks like it would fit perfectly into a crusty sausage roll."',
+		["id"] = 73269,
+		["itemQuality"] = 1
+	},
+	[39541] = {
+		["expansionID"] = 2,
+		["itemName"] = "Gusty Essence of the Warden",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 135860,
+		["itemDescription"] = '"Its winds swirl in a seething vortex."',
+		["id"] = 39541,
+		["itemQuality"] = 1
+	},
+	[203706] = {
+		["expansionID"] = 7,
+		["itemName"] = "Hurricane Scepter",
+		["itemTexture"] = 973201,
+		["isCraftingReagent"] = false,
+		["id"] = 203706,
+		["itemQuality"] = 1
+	},
+	[38551] = {
+		["expansionID"] = 2,
+		["itemName"] = "Drakkari Offerings",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134514,
+		["itemDescription"] = '"These can be used 10 at a time at various Drakkari troll god shrines to gain their blessings."',
+		["id"] = 38551,
+		["itemQuality"] = 1
+	},
+	[203387] = {
+		["expansionID"] = 9,
+		["itemName"] = "Oddly Familiar Training Weapon",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 1064234,
+		["itemDescription"] = '"You\'re pretty sure you discarded this ages ago when trying to make more room in your bags. It was a trusty old friend."',
+		["id"] = 203387,
+		["itemQuality"] = 1
+	},
+	[43214] = {
+		["expansionID"] = 0,
+		["itemName"] = "Kurzel's Blouse Scrap",
+		["itemTexture"] = 237278,
+		["isCraftingReagent"] = false,
+		["id"] = 43214,
+		["itemQuality"] = 1
+	},
+	[69980] = {
+		["expansionID"] = 0,
+		["itemName"] = "Rat Trap",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 461122,
+		["selected"] = true,
+		["id"] = 69980,
+		["itemQuality"] = 1
+	},
+	[274936] = {
+		["expansionID"] = 11,
+		["itemName"] = "Energized Crystal Conductor",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 1033184,
+		["itemDescription"] = '"Arcane-flecked spores seem to be drawn to the rune-marked crystals."',
+		["id"] = 274936,
+		["itemQuality"] = 1
+	},
+	[38695] = {
+		["expansionID"] = 2,
+		["itemName"] = "Arctic Bear God Mojo",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134811,
+		["itemDescription"] = '"The golden glow of this stuff suffuses you with pure power."',
+		["id"] = 38695,
+		["itemQuality"] = 1
+	},
+	[203388] = {
+		["expansionID"] = 9,
+		["itemName"] = "Gunky Insignia",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 442742,
+		["itemDescription"] = '"The symbol has almost completely faded, but maybe the Kirin Tor will find it historically significant."',
+		["id"] = 203388,
+		["itemQuality"] = 1
+	},
+	[271999] = {
+		["expansionID"] = 11,
+		["itemName"] = "Misplaced Ritual Candle",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 6012046,
+		["itemDescription"] = '"A ritual candle looking for a ritual."',
+		["id"] = 271999,
+		["itemQuality"] = 1
+	},
+	[134084] = {
+		["expansionID"] = 6,
+		["itemName"] = "Part of the Infernal Device",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 442739,
+		["itemDescription"] = '"A part of the infernal device that Brann found."',
+		["id"] = 134084,
+		["itemQuality"] = 1
+	},
+	[268807] = {
+		["expansionID"] = 11,
+		["itemName"] = "Torn Twilight Missive",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 1028995,
+		["itemDescription"] = '"The seal of the Twilight Blade has been stamped into the broken wax."',
+		["id"] = 268807,
+		["itemQuality"] = 3
+	},
+	[69981] = {
+		["expansionID"] = 0,
+		["itemName"] = "Ironforge Rations",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237331,
+		["itemDescription"] = '"Contains haggis and beer, the lunch of champions for over 1000 years."',
+		["id"] = 69981,
+		["itemQuality"] = 1
+	},
+	[58864] = {
+		["expansionID"] = 0,
+		["itemName"] = "Precious Locket",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133303,
+		["itemDescription"] = '"A water stained picture can be seen inside the locket."',
+		["id"] = 58864,
+		["itemQuality"] = 1
+	},
+	[268809] = {
+		["expansionID"] = 11,
+		["itemName"] = "Enchanted Naga Scroll",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4549197,
+		["itemDescription"] = '"The shimmering arcane letters rearrange themselves every few seconds, making it very difficult to decipher."',
+		["id"] = 268809,
+		["itemQuality"] = 3
+	},
+	[204093] = {
+		["expansionID"] = 9,
+		["itemName"] = "Lunker Morsel",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237355,
+		["itemDescription"] = '"Tough yet tasty."',
+		["id"] = 204093,
+		["itemQuality"] = 1
+	},
+	[65734] = {
+		["expansionID"] = 3,
+		["itemName"] = "Twilight Documents",
+		["itemTexture"] = 237249,
+		["isCraftingReagent"] = false,
+		["id"] = 65734,
+		["itemQuality"] = 1
+	},
+	[203391] = {
+		["expansionID"] = 9,
+		["itemName"] = "Dented Dwarven Pocketwatch",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134376,
+		["itemDescription"] = '"An engraving on the back bears the name "Professor Lichenrock"."',
+		["id"] = 203391,
+		["itemQuality"] = 1
+	},
+	[43215] = {
+		["expansionID"] = 2,
+		["itemName"] = "Ichor-Stained Cloth",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133675,
+		["itemDescription"] = '"The cloth is drenched in the ichor of a powerful lich."',
+		["id"] = 43215,
+		["itemQuality"] = 1
+	},
+	[193874] = {
+		["expansionID"] = 8,
+		["itemName"] = "Qalashi Plans",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237451,
+		["itemDescription"] = '"Battle plans written in an ancient script."',
+		["id"] = 193874,
+		["itemQuality"] = 1
+	},
+	[277116] = {
+		["expansionID"] = 11,
+		["itemName"] = "Warmonger's Voidplate",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7141548,
+		["itemDescription"] = '"Despite the numerous scratches and dents, this armor is incredibly strong. It hums with dark energy."',
+		["id"] = 277116,
+		["itemQuality"] = 1
+	},
+	[45323] = {
+		["expansionID"] = 2,
+		["isCraftingReagent"] = false,
+		["itemName"] = "Severed Arm",
+		["id"] = 45323,
+		["selected"] = true,
+		["itemTexture"] = 133824,
+		["itemQuality"] = 1
+	},
+	[38696] = {
+		["expansionID"] = 0,
+		["itemName"] = "Tormentor's Incense",
+		["itemTexture"] = 132855,
+		["isCraftingReagent"] = false,
+		["id"] = 38696,
+		["itemQuality"] = 1
+	},
+	[203392] = {
+		["expansionID"] = 9,
+		["itemName"] = "Old Mirror Shard",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 458243,
+		["itemDescription"] = '"It\'s still you, despite everything."',
+		["id"] = 203392,
+		["itemQuality"] = 1
+	},
+	[200646] = {
+		["expansionID"] = 8,
+		["itemName"] = "Gruff Fisher's Net",
+		["itemTexture"] = 2159816,
+		["isCraftingReagent"] = false,
+		["id"] = 200646,
+		["itemQuality"] = 1
+	},
+	[265749] = {
+		["expansionID"] = 11,
+		["itemName"] = "Idol of the Depths",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 2027958,
+		["itemDescription"] = '"Represents the depth of your bond with Pahk, Loa of the Depths."',
+		["id"] = 265749,
+		["itemQuality"] = 1
+	},
+	[202180] = {
+		["expansionID"] = 9,
+		["itemName"] = "Pipsee Cheese Snack",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 1508502,
+		["itemDescription"] = '"This cheese is beyond "aged" by a long shot, but a small worm will love it."',
+		["id"] = 202180,
+		["itemQuality"] = 1
+	},
+	[49667] = {
+		["expansionID"] = 2,
+		["itemName"] = "Waterlogged Recipe",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237448,
+		["itemDescription"] = '"Worth a handful of Dalaran Cooking Tokens from the right person."',
+		["id"] = 49667,
+		["itemQuality"] = 1
+	},
+	[34864] = {
+		["expansionID"] = 1,
+		["itemName"] = "Baby Crocolisk",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 132187,
+		["selected"] = true,
+		["id"] = 34864,
+		["itemQuality"] = 1
+	},
+	[16969] = {
+		["expansionID"] = 0,
+		["itemName"] = "Savage Coast Blue Sailfin",
+		["itemTexture"] = 133894,
+		["isCraftingReagent"] = false,
+		["id"] = 16969,
+		["itemQuality"] = 1
+	},
+	[69984] = {
+		["expansionID"] = 0,
+		["itemName"] = "Bag o' Sheep Innards",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133645,
+		["itemDescription"] = '"Chock full o\' the best parts o\' the sheep: lungs, livers, an\' hearts."',
+		["id"] = 69984,
+		["itemQuality"] = 1
+	},
+	[88604] = {
+		["expansionID"] = 0,
+		["itemName"] = "Nat's Fishing Journal",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133743,
+		["itemDescription"] = '"Smells like fishing bait and booze."',
+		["id"] = 88604,
+		["itemQuality"] = 1
+	},
+	[69985] = {
+		["expansionID"] = 0,
+		["itemName"] = "Sack of Oatmeal",
+		["itemTexture"] = 134058,
+		["isCraftingReagent"] = false,
+		["id"] = 69985,
+		["itemQuality"] = 1
+	},
+	[69027] = {
+		["expansionID"] = 11,
+		["itemName"] = "Cone of Cold",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133987,
+		["itemDescription"] = '"Gourmet ice cream frozen to order by licensed mages."',
+		["id"] = 69027,
+		["itemQuality"] = 1
+	},
+	[33859] = {
+		["expansionID"] = 1,
+		["itemName"] = "Warp Splinter Clipping",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133749,
+		["itemDescription"] = '"Hard to believe that the druids think they can regrow such a massive ancient from such a small twig."',
+		["id"] = 33859,
+		["itemQuality"] = 1
+	},
+	[257756] = {
+		["expansionID"] = 7,
+		["itemName"] = "Handful of Sand",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 5199642,
+		["itemDescription"] = '"A myriad of desert scents drift through your fingers."',
+		["id"] = 257756,
+		["itemQuality"] = 1
+	},
+	[274576] = {
+		["expansionID"] = 11,
+		["itemName"] = "Ritualized Arcana",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4226155,
+		["itemDescription"] = '"This darkened arcane substrate is warm to the touch and smells faintly of char."',
+		["id"] = 274576,
+		["itemQuality"] = 3
+	},
+	[257757] = {
+		["expansionID"] = 11,
+		["itemName"] = "Sack of Fragrant Sands",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4548903,
+		["itemDescription"] = '"Filled with the scents of the sun, the earth, the wind, the ocean, and living things too stubborn to leave."',
+		["id"] = 257757,
+		["itemQuality"] = 1
+	},
+	[143932] = {
+		["expansionID"] = 0,
+		["itemName"] = "Flagon of Doublerum",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 132790,
+		["itemDescription"] = '"For those occasions when regular rum just won\'t do."',
+		["id"] = 143932,
+		["itemQuality"] = 1
+	},
+	[80302] = {
+		["expansionID"] = 0,
+		["itemName"] = "EZ-Gro Green Cabbage Seeds",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 464030,
+		["itemDescription"] = '"These specially treated seeds will sprout and mature more quickly than normal, but produce poor quality vegetables. Useful for teaching new farmers the ropes."',
+		["id"] = 80302,
+		["itemQuality"] = 1
+	},
+	[188134] = {
+		["expansionID"] = 0,
+		["itemName"] = "Bronze Timepiece",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134376,
+		["itemDescription"] = '"Using this will rewind time and reset your position."',
+		["id"] = 188134,
+		["itemQuality"] = 1
+	},
+	[257758] = {
+		["expansionID"] = 11,
+		["itemName"] = "Empty Pouch",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133645,
+		["itemDescription"] = '"Well-worn leather pouch"',
+		["id"] = 257758,
+		["itemQuality"] = 1
+	},
+	[143933] = {
+		["expansionID"] = 0,
+		["itemName"] = "Tankard of Grog",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 461805,
+		["itemDescription"] = '"Smells bad, tastes bad."',
+		["id"] = 143933,
+		["itemQuality"] = 1
+	},
+	[20467] = {
+		["expansionID"] = 0,
+		["itemName"] = "Torn Recipe Page",
+		["itemTexture"] = 134939,
+		["isCraftingReagent"] = false,
+		["id"] = 20467,
+		["itemQuality"] = 1
+	},
+	[58787] = {
+		["expansionID"] = 0,
+		["itemName"] = "Crystal Bass",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 349504,
+		["selected"] = true,
+		["id"] = 58787,
+		["itemQuality"] = 1
+	},
+	[38379] = {
+		["expansionID"] = 0,
+		["itemName"] = "Crushed Basilisk Crystals",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 132779,
+		["itemDescription"] = '"Painstakingly pilfered, patiently polished."',
+		["id"] = 38379,
+		["itemQuality"] = 1
+	},
+	[143934] = {
+		["expansionID"] = 0,
+		["itemName"] = "Keg of Pirate Ale",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 132623,
+		["itemDescription"] = '"Still untapped!"',
+		["id"] = 143934,
+		["itemQuality"] = 1
+	},
+	[80303] = {
+		["expansionID"] = 0,
+		["itemName"] = "Pristine Crane Egg",
+		["itemTexture"] = 132834,
+		["isCraftingReagent"] = false,
+		["id"] = 80303,
+		["itemQuality"] = 1
+	},
+	[58899] = {
+		["expansionID"] = 0,
+		["itemName"] = "Violet Perch",
+		["itemTexture"] = 133907,
+		["isCraftingReagent"] = false,
+		["id"] = 58899,
+		["itemQuality"] = 1
+	},
+	[274582] = {
+		["expansionID"] = 11,
+		["itemName"] = "Primessence of Life",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4630468,
+		["itemDescription"] = '"A swirling vortex of concentrated nature, its power barely contained."',
+		["id"] = 274582,
+		["itemQuality"] = 4
+	},
+	[271644] = {
+		["expansionID"] = 11,
+		["itemName"] = "Ember of Power",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7658130,
+		["itemDescription"] = '"Lady Darkglen might be interested in this."',
+		["id"] = 271644,
+		["itemQuality"] = 1
+	},
+	[275477] = {
+		["expansionID"] = 11,
+		["itemName"] = "Nullframe Holoprint",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 1717021,
+		["itemDescription"] = '"Detailed 3D schematics and building notes on something called "Project Nullframe" flicker across the holoprint."',
+		["id"] = 275477,
+		["itemQuality"] = 1
+	},
+	[257888] = {
+		["expansionID"] = 10,
+		["itemName"] = "Ripe Grapes",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134014,
+		["itemDescription"] = '"An uncommon stew ingredient."',
+		["id"] = 257888,
+		["itemQuality"] = 1
+	},
+	[276372] = {
+		["expansionID"] = 11,
+		["itemName"] = "Lightveil Recall Beacon",
+		["itemTexture"] = 1711324,
+		["isCraftingReagent"] = false,
+		["id"] = 276372,
+		["itemQuality"] = 1
+	},
+	[276373] = {
+		["expansionID"] = 11,
+		["itemName"] = "Lightveil Recall Beacon",
+		["itemTexture"] = 1711324,
+		["isCraftingReagent"] = false,
+		["id"] = 276373,
+		["itemQuality"] = 1
+	},
+	[257889] = {
+		["expansionID"] = 10,
+		["itemName"] = "Ripe Carrot",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134010,
+		["itemDescription"] = '"Crunchy and delicious."',
+		["id"] = 257889,
+		["itemQuality"] = 1
+	},
+	[5051] = {
+		["expansionID"] = 0,
+		["itemName"] = "Dig Rat",
+		["isCraftingReagent"] = true,
+		["itemTexture"] = 134359,
+		["itemDescription"] = "",
+		["id"] = 5051,
+		["itemQuality"] = 1
+	},
+	[72160] = {
+		["expansionID"] = 1,
+		["itemName"] = "Hellfire Supplies",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237345,
+		["itemDescription"] = '"Mostly meat."',
+		["id"] = 72160,
+		["itemQuality"] = 1
+	},
+	[57175] = {
+		["expansionID"] = 0,
+		["itemName"] = "Canal Crab",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 132186,
+		["itemDescription"] = '"Watch your fingers!"',
+		["id"] = 57175,
+		["itemQuality"] = 1
+	},
+	[188139] = {
+		["expansionID"] = 0,
+		["itemName"] = "Bronze Timepiece",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134376,
+		["itemDescription"] = '"Using this will rewind time and reset your position."',
+		["id"] = 188139,
+		["itemQuality"] = 1
+	},
+	[39434] = {
+		["expansionID"] = 0,
+		["itemName"] = "Key of Warlord Zol'Maz",
+		["itemTexture"] = 134235,
+		["isCraftingReagent"] = false,
+		["id"] = 39434,
+		["itemQuality"] = 1
+	},
+	[34867] = {
+		["expansionID"] = 1,
+		["isCraftingReagent"] = false,
+		["itemName"] = "Monstrous Felblood Snapper",
+		["id"] = 34867,
+		["selected"] = true,
+		["itemTexture"] = 133930,
+		["itemQuality"] = 1
+	},
+	[33861] = {
+		["expansionID"] = 1,
+		["itemName"] = "The Scroll of Skyriss",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134471,
+		["itemDescription"] = '"Indeed, the language written upon the scroll is illegible. In fact, it hurts your brain to even look upon it!"',
+		["id"] = 33861,
+		["itemQuality"] = 1
+	},
+	[112626] = {
+		["expansionID"] = 5,
+		["itemName"] = "Blackwater Whiptail Egg",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 970832,
+		["selected"] = true,
+		["id"] = 112626,
+		["itemQuality"] = 1
+	},
+	[80529] = {
+		["expansionID"] = 4,
+		["itemName"] = "Prickly Puffer Spine",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133723,
+		["itemDescription"] = '"It\'s very difficult to hold."',
+		["id"] = 80529,
+		["itemQuality"] = 1
+	},
+	[112627] = {
+		["expansionID"] = 5,
+		["itemName"] = "Abyssal Gulper Eel Egg",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 970832,
+		["selected"] = false,
+		["id"] = 112627,
+		["itemQuality"] = 1
+	},
+	[200854] = {
+		["expansionID"] = 0,
+		["itemName"] = "Cooked Caviar",
+		["itemTexture"] = 970831,
+		["isCraftingReagent"] = false,
+		["id"] = 200854,
+		["itemQuality"] = 1
+	},
+	[265015] = {
+		["expansionID"] = 11,
+		["itemName"] = "Echo of Radiance",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237541,
+		["itemDescription"] = '"A small fragment of Light taken from the Lightblinded Vanguard in The Voidspire on Heroic difficulty."',
+		["id"] = 265015,
+		["itemQuality"] = 4
+	},
+	[80403] = {
+		["expansionID"] = 0,
+		["itemName"] = "Angler's Fishing Spear",
+		["itemTexture"] = 643285,
+		["isCraftingReagent"] = false,
+		["id"] = 80403,
+		["itemQuality"] = 1
+	},
+	[112628] = {
+		["expansionID"] = 5,
+		["itemName"] = "Fire Ammonite Egg",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 970832,
+		["selected"] = false,
+		["id"] = 112628,
+		["itemQuality"] = 1
+	},
+	[204561] = {
+		["expansionID"] = 9,
+		["itemName"] = "Primalist Cache Key",
+		["itemTexture"] = 134241,
+		["isCraftingReagent"] = false,
+		["id"] = 204561,
+		["itemQuality"] = 1
+	},
+	[45328] = {
+		["expansionID"] = 0,
+		["itemName"] = "Bloated Slippery Eel",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133897,
+		["selected"] = true,
+		["id"] = 45328,
+		["itemQuality"] = 1
+	},
+	[23726] = {
+		["expansionID"] = 1,
+		["itemName"] = "Fel Ember",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134399,
+		["itemDescription"] = '"The smoldering ember emits faint purple sparks, but no heat. Its coolness belies the immense power held within."',
+		["id"] = 23726,
+		["itemQuality"] = 1
+	},
+	[192745] = {
+		["expansionID"] = 9,
+		["itemName"] = "The Titanic Comedy",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4549138,
+		["itemDescription"] = '"A satirical tour of the cosmos, from the Emerald Dream to the Shadowlands, led by the titan watcher Dantyr. Neither titans nor aspects are spared the author\'s ire, all having their perceived sins on full display."',
+		["id"] = 192745,
+		["itemQuality"] = 1
+	},
+	[45903] = {
+		["expansionID"] = 2,
+		["itemName"] = "Corroded Jewelry",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 135231,
+		["selected"] = true,
+		["id"] = 45903,
+		["itemQuality"] = 1
+	},
+	[263872] = {
+		["expansionID"] = 11,
+		["itemName"] = "Lucifern",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134203,
+		["itemDescription"] = '"Beautiful to look at, terrible to sniff."',
+		["id"] = 263872,
+		["itemQuality"] = 1
+	},
+	[144073] = {
+		["expansionID"] = 0,
+		["itemName"] = "Ship Mast",
+		["itemTexture"] = 135145,
+		["isCraftingReagent"] = false,
+		["id"] = 144073,
+		["itemQuality"] = 2
+	},
+	[200667] = {
+		["expansionID"] = 8,
+		["itemName"] = "Grim Morsel",
+		["itemTexture"] = 1508488,
+		["isCraftingReagent"] = false,
+		["id"] = 200667,
+		["itemQuality"] = 1
+	},
+	[144074] = {
+		["expansionID"] = 0,
+		["itemName"] = "Mainsail",
+		["itemTexture"] = 236352,
+		["isCraftingReagent"] = false,
+		["id"] = 144074,
+		["itemQuality"] = 2
+	},
+	[169816] = {
+		["expansionID"] = 0,
+		["itemName"] = "Quasi-Faceted Scanner",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 986488,
+		["itemDescription"] = '"Used in the production of lifelike toys!"',
+		["id"] = 169816,
+		["itemQuality"] = 1
+	},
+	[167836] = {
+		["expansionID"] = 7,
+		["itemName"] = "Blueprint: Canned Minnows",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 2915721,
+		["itemDescription"] = '"Carefully preserved, so they can taste awful forever."',
+		["id"] = 167836,
+		["itemQuality"] = 3
+	},
+	[274990] = {
+		["expansionID"] = 11,
+		["itemName"] = "Infantry's Data-Node",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7137509,
+		["itemDescription"] = '"K\'areshi runes dance around the outer chassis of the device."',
+		["id"] = 274990,
+		["itemQuality"] = 1
+	},
+	[58503] = {
+		["expansionID"] = 0,
+		["itemName"] = "Hardened Walleye",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 349503,
+		["selected"] = true,
+		["id"] = 58503,
+		["itemQuality"] = 1
+	},
+	[20876] = {
+		["expansionID"] = 0,
+		["itemName"] = "Idol of Death",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134899,
+		["itemDescription"] = "",
+		["id"] = 20876,
+		["itemQuality"] = 3
+	},
+	[80310] = {
+		["expansionID"] = 4,
+		["itemName"] = "Silver Goby",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237308,
+		["itemDescription"] = '"The fish around here have very strange taste in food."',
+		["id"] = 80310,
+		["itemQuality"] = 1
+	},
+	[144076] = {
+		["expansionID"] = 0,
+		["itemName"] = "Rigging Rope",
+		["itemTexture"] = 1119937,
+		["isCraftingReagent"] = false,
+		["id"] = 144076,
+		["itemQuality"] = 2
+	},
+	[45904] = {
+		["expansionID"] = 2,
+		["itemName"] = "Terrorfish",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237304,
+		["itemDescription"] = '"So good it\'s scary!"',
+		["id"] = 45904,
+		["itemQuality"] = 1
+	},
+	[273844] = {
+		["expansionID"] = 11,
+		["itemName"] = "Shaja's Cleansing Vial",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 136240,
+		["itemDescription"] = '"This looks like plain water and smells a little salty."',
+		["id"] = 273844,
+		["itemQuality"] = 1
+	},
+	[38303] = {
+		["expansionID"] = 0,
+		["itemName"] = "Enduring Mojo",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134754,
+		["itemDescription"] = '"For those extra long days."',
+		["id"] = 38303,
+		["itemQuality"] = 1
+	},
+	[250876] = {
+		["expansionID"] = 11,
+		["itemName"] = "Evergreen Vine",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 959842,
+		["itemDescription"] = '"There might be somewhere to display this in the Arcantina."',
+		["id"] = 250876,
+		["itemQuality"] = 2
+	},
+	[69931] = {
+		["expansionID"] = 0,
+		["itemName"] = "Arctic Char",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133905,
+		["itemDescription"] = '"Only the best cold water fish on Azeroth!"',
+		["id"] = 69931,
+		["itemQuality"] = 1
+	},
+	[205909] = {
+		["expansionID"] = 0,
+		["itemName"] = "Stretched Canvas",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133006,
+		["itemDescription"] = '"A beautiful piece of stretched canvas that could be useful as a drum, or maybe a scent painting."',
+		["id"] = 205909,
+		["itemQuality"] = 1
+	},
+	[19016] = {
+		["expansionID"] = 0,
+		["itemName"] = "Vessel of Rebirth",
+		["itemTexture"] = 132878,
+		["isCraftingReagent"] = false,
+		["id"] = 19016,
+		["itemQuality"] = 5
+	},
+	[43142] = {
+		["expansionID"] = 0,
+		["itemName"] = "Empty Picnic Basket",
+		["itemTexture"] = 237271,
+		["isCraftingReagent"] = false,
+		["id"] = 43142,
+		["itemQuality"] = 1
+	},
+	[276276] = {
+		["expansionID"] = 11,
+		["itemName"] = "Mana Spore",
+		["itemTexture"] = 134052,
+		["isCraftingReagent"] = false,
+		["id"] = 276276,
+		["itemQuality"] = 1
+	},
+	[80599] = {
+		["expansionID"] = 0,
+		["itemName"] = "Goblin Fishing Bomb",
+		["itemTexture"] = 463515,
+		["isCraftingReagent"] = false,
+		["id"] = 80599,
+		["itemQuality"] = 1
+	},
+	[277554] = {
+		["expansionID"] = 11,
+		["itemName"] = "Void Commander's Emblem",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7137537,
+		["itemDescription"] = '"A runed emblem that can be taken from Nexus-Captain Leth\'ir and Imperator Pertinax on Heroic world tier difficulty."',
+		["id"] = 277554,
+		["itemQuality"] = 4
+	},
+	[69932] = {
+		["expansionID"] = 0,
+		["itemName"] = "Young Ironjaw",
+		["itemTexture"] = 133917,
+		["isCraftingReagent"] = false,
+		["id"] = 69932,
+		["itemQuality"] = 1
+	},
+	[275256] = {
+		["expansionID"] = 11,
+		["itemName"] = "Canopy Specimen",
+		["itemTexture"] = 5948149,
+		["isCraftingReagent"] = false,
+		["id"] = 275256,
+		["itemQuality"] = 1
+	},
+	[250879] = {
+		["expansionID"] = 11,
+		["itemName"] = "Heavy Anchor",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 1686581,
+		["itemDescription"] = '"There might be somewhere to display this in the Arcantina."',
+		["id"] = 250879,
+		["itemQuality"] = 2
+	},
+	[74755] = {
+		["expansionID"] = 2,
+		["itemName"] = "King Dred's Tooth",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134298,
+		["itemDescription"] = '"This massive tooth would make a decent weapon by itself."',
+		["id"] = 74755,
+		["itemQuality"] = 1
+	},
+	[45905] = {
+		["expansionID"] = 2,
+		["itemName"] = "Bloodtooth Frenzy",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133913,
+		["selected"] = true,
+		["id"] = 45905,
+		["itemQuality"] = 1
+	},
+	[144075] = {
+		["expansionID"] = 0,
+		["itemName"] = "Waxy Reeds",
+		["itemTexture"] = 134199,
+		["isCraftingReagent"] = false,
+		["id"] = 144075,
+		["itemQuality"] = 2
+	},
+	[168813] = {
+		["expansionID"] = 0,
+		["itemName"] = "Robotic-Memory Recorder",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 892831,
+		["itemDescription"] = '"Scans the memory banks of robotic creatures"',
+		["id"] = 168813,
+		["itemQuality"] = 1
+	},
+	[262791] = {
+		["expansionID"] = 11,
+		["itemName"] = "Malacrass's Notes",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 329513,
+		["itemDescription"] = '"An old collection of scrolls containing notes and incantations from a long-dead Hex Lord."',
+		["id"] = 262791,
+		["itemQuality"] = 1
+	},
+	[192191] = {
+		["expansionID"] = 9,
+		["itemName"] = "Tuskarr Fishing Net",
+		["itemTexture"] = 2159817,
+		["isCraftingReagent"] = false,
+		["id"] = 192191,
+		["itemQuality"] = 1
+	},
+	[250880] = {
+		["expansionID"] = 11,
+		["itemName"] = "Sandy Tapestry",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 348551,
+		["itemDescription"] = '"There might be somewhere to display this in the Arcantina."',
+		["id"] = 250880,
+		["itemQuality"] = 2
+	},
+	[262918] = {
+		["expansionID"] = 9,
+		["itemName"] = "Lost Iridescent Flightstone",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 5172976,
+		["itemDescription"] = '"Lost, but not missing."',
+		["id"] = 262918,
+		["itemQuality"] = 3
+	},
+	[35797] = {
+		["expansionID"] = 0,
+		["itemName"] = "Drakuru's Elixir",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134812,
+		["itemDescription"] = '"Summons the image of Drakuru for a short time."',
+		["id"] = 35797,
+		["itemQuality"] = 1
+	},
+	[134564] = {
+		["expansionID"] = 6,
+		["itemName"] = "Lively Cursed Queenfish",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237324,
+		["itemDescription"] = '"A particularly vibrant queensfish. It hardly even seems cursed."',
+		["id"] = 134564,
+		["itemQuality"] = 1
+	},
+	[38384] = {
+		["expansionID"] = 0,
+		["itemName"] = "Pulverized Gargoyle Teeth",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134382,
+		["itemDescription"] = '"Smells of halitosis."',
+		["id"] = 38384,
+		["itemQuality"] = 1
+	},
+	[271427] = {
+		["expansionID"] = 11,
+		["itemName"] = "Exquisite Treasure",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 5648292,
+		["itemDescription"] = '"A treasure reclaimed from a Ritual Site."',
+		["id"] = 271427,
+		["itemQuality"] = 1
+	},
+	[58856] = {
+		["expansionID"] = 0,
+		["itemName"] = "Royal Monkfish",
+		["itemTexture"] = 348532,
+		["isCraftingReagent"] = false,
+		["id"] = 58856,
+		["itemQuality"] = 1
+	},
+	[276255] = {
+		["expansionID"] = 11,
+		["itemName"] = "Forgotten Memorial Tribute",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 442731,
+		["itemDescription"] = '"A cherished tribute left long ago by the loved ones of those interred within Vilaldoun."',
+		["id"] = 276255,
+		["itemQuality"] = 1
+	},
+	[250881] = {
+		["expansionID"] = 11,
+		["itemName"] = "Dried Roses",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 5426346,
+		["itemDescription"] = '"There might be somewhere to display this in the Arcantina."',
+		["id"] = 250881,
+		["itemQuality"] = 2
+	},
+	[271428] = {
+		["expansionID"] = 11,
+		["itemName"] = "Crystalline Treasure",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 466283,
+		["itemDescription"] = '"A treasure reclaimed from a Ritual Site."',
+		["id"] = 271428,
+		["itemQuality"] = 1
+	},
+	[192755] = {
+		["expansionID"] = 9,
+		["itemName"] = "The Lord of the Wings",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4549139,
+		["itemDescription"] = '"A band of hardened drakonid and plucky whelps come together to destroy an artifact of terrible power that can only be undone in the forges of the mad aspect who created it."',
+		["id"] = 192755,
+		["itemQuality"] = 1
+	},
+	[69982] = {
+		["expansionID"] = 0,
+		["itemName"] = "Dun Morogh Chicken",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 135996,
+		["selected"] = true,
+		["id"] = 69982,
+		["itemQuality"] = 1
+	},
+	[43149] = {
+		["expansionID"] = 2,
+		["itemName"] = "Vegetable Stew",
+		["itemTexture"] = 133778,
+		["isCraftingReagent"] = false,
+		["id"] = 43149,
+		["itemQuality"] = 1
+	},
+	[19807] = {
+		["expansionID"] = 0,
+		["itemName"] = "Speckled Tastyfish",
+		["itemTexture"] = 133907,
+		["isCraftingReagent"] = false,
+		["id"] = 19807,
+		["itemQuality"] = 1
+	},
+	[43143] = {
+		["expansionID"] = 0,
+		["itemName"] = "Wild Mustard",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134182,
+		["selected"] = true,
+		["id"] = 43143,
+		["itemQuality"] = 1
+	},
+	[58867] = {
+		["expansionID"] = 0,
+		["itemName"] = "Snapjaw Gizzard",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134341,
+		["selected"] = true,
+		["id"] = 58867,
+		["itemQuality"] = 1
+	},
+	[250882] = {
+		["expansionID"] = 11,
+		["itemName"] = "Clefthoof Hide",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4559256,
+		["itemDescription"] = '"There might be somewhere to display this in the Arcantina."',
+		["id"] = 250882,
+		["itemQuality"] = 2
+	},
+	[271430] = {
+		["expansionID"] = 11,
+		["itemName"] = "Sculpted Treasure",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4548930,
+		["itemDescription"] = '"A treasure reclaimed from a Ritual Site."',
+		["id"] = 271430,
+		["itemQuality"] = 1
+	},
+	[275135] = {
+		["expansionID"] = 11,
+		["itemName"] = "Firewall Decryption Key",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7137524,
+		["itemDescription"] = '"Red K\'areshi runes rapidly flicker through the small energized node."',
+		["id"] = 275135,
+		["itemQuality"] = 1
+	},
+	[20877] = {
+		["expansionID"] = 0,
+		["itemName"] = "Idol of the Sage",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134907,
+		["itemDescription"] = "",
+		["id"] = 20877,
+		["itemQuality"] = 3
+	},
+	[275391] = {
+		["expansionID"] = 11,
+		["itemName"] = "Lightveil Data Decrypter",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 132431,
+		["itemDescription"] = '"The handheld crystal gleams with Lightforged runes."',
+		["id"] = 275391,
+		["itemQuality"] = 2
+	},
+	[251492] = {
+		["expansionID"] = 11,
+		["itemName"] = "Slightly Magical Crystal Locator",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133870,
+		["itemDescription"] = '"Finds magical crystals. More specifically, slightly magical crystals."',
+		["id"] = 251492,
+		["itemQuality"] = 1
+	},
+	[69057] = {
+		["expansionID"] = 11,
+		["itemName"] = "Foam Sword Rack",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 135323,
+		["itemDescription"] = "",
+		["id"] = 69057,
+		["itemQuality"] = 1
+	},
+	[80314] = {
+		["expansionID"] = 4,
+		["itemName"] = "EZ-Gro Green Cabbage",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134001,
+		["itemDescription"] = '"Your first harvest! They won\'t fetch anything at the market, but their sentimental value is PRICELESS."',
+		["id"] = 80314,
+		["itemQuality"] = 1
+	},
+	[249422] = {
+		["expansionID"] = 11,
+		["itemName"] = "Sunsilk",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4549279,
+		["itemDescription"] = '"Used to create exquisite silk threads, with just a hint of warmth."',
+		["id"] = 249422,
+		["itemQuality"] = 1
+	},
+	[167654] = {
+		["expansionID"] = 7,
+		["itemName"] = "Bottom Feeding Stinkfish",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133932,
+		["itemDescription"] = '"A smelly, unappetizing fish."',
+		["id"] = 167654,
+		["itemQuality"] = 2
+	},
+	[86542] = {
+		["expansionID"] = 4,
+		["itemName"] = "Flying Tiger Gourami",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 632856,
+		["itemDescription"] = '"A fish with wings?  That\'s a new one."',
+		["id"] = 86542,
+		["itemQuality"] = 2
+	},
+	[134567] = {
+		["expansionID"] = 6,
+		["itemName"] = "Lively Mossgill Perch",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 350868,
+		["itemDescription"] = '"It seems happy."',
+		["id"] = 134567,
+		["itemQuality"] = 1
+	},
+	[57246] = {
+		["expansionID"] = 0,
+		["itemName"] = "Confectioners' Sugar",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134059,
+		["selected"] = true,
+		["id"] = 57246,
+		["itemQuality"] = 1
+	},
+	[269612] = {
+		["expansionID"] = 11,
+		["itemName"] = "Pungent Crab Tomalley",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 970833,
+		["itemDescription"] = '"The smorgasbord of organs inside a crab\'s body cavity. Known as a delicacy in some circles, while appreciated from afar--very afar--by others."',
+		["id"] = 269612,
+		["itemQuality"] = 1
+	},
+	[80437] = {
+		["expansionID"] = 4,
+		["itemName"] = "Armored Carp",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133929,
+		["itemDescription"] = '"Thick, heavy scales cover the fish."',
+		["id"] = 80437,
+		["itemQuality"] = 1
+	},
+	[271429] = {
+		["expansionID"] = 11,
+		["itemName"] = "Ethereal Treasure",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 1769010,
+		["itemDescription"] = '"A treasure reclaimed from a Ritual Site."',
+		["id"] = 271429,
+		["itemQuality"] = 1
+	},
+	[58788] = {
+		["expansionID"] = 0,
+		["itemName"] = "Overgrown Earthworm",
+		["itemTexture"] = 236553,
+		["isCraftingReagent"] = false,
+		["id"] = 58788,
+		["itemQuality"] = 1
+	},
+	[167655] = {
+		["expansionID"] = 7,
+		["itemName"] = "Bolted Steelhead",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 970820,
+		["itemDescription"] = '"Was this fish born or built?"',
+		["id"] = 167655,
+		["itemQuality"] = 2
+	},
+	[20878] = {
+		["expansionID"] = 0,
+		["itemName"] = "Idol of Rebirth",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134906,
+		["itemDescription"] = "",
+		["id"] = 20878,
+		["itemQuality"] = 3
+	},
+	[160571] = {
+		["expansionID"] = 7,
+		["itemName"] = "Lucille's Sewing Needle",
+		["itemTexture"] = 135654,
+		["isCraftingReagent"] = false,
+		["id"] = 160571,
+		["itemQuality"] = 1
+	},
+	[46693] = {
+		["expansionID"] = 11,
+		["itemName"] = "Small Paper Zeppelin",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134512,
+		["itemDescription"] = '"Just the right size for a young child."',
+		["id"] = 46693,
+		["itemQuality"] = 1
+	},
+	[23886] = {
+		["expansionID"] = 1,
+		["itemName"] = "Omor's Hoof",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 132368,
+		["itemDescription"] = '"It smells of death and fear."',
+		["id"] = 23886,
+		["itemQuality"] = 1
+	},
+	[112629] = {
+		["expansionID"] = 5,
+		["itemName"] = "Blind Lake Sturgeon Egg",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 970832,
+		["selected"] = false,
+		["id"] = 112629,
+		["itemQuality"] = 1
+	},
+	[33860] = {
+		["expansionID"] = 1,
+		["itemName"] = "Pathaleon's Projector",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133866,
+		["itemDescription"] = '"So this is what he used to appear all over the place!"',
+		["id"] = 33860,
+		["itemQuality"] = 1
+	},
+	[72119] = {
+		["expansionID"] = 1,
+		["itemName"] = "The Slave Master's Eye",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133884,
+		["itemDescription"] = '"It glows a sickly yellow."',
+		["id"] = 72119,
+		["itemQuality"] = 1
+	},
+	[167656] = {
+		["expansionID"] = 7,
+		["itemName"] = "Pond Hopping Springfish",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 970829,
+		["itemDescription"] = '"Quite agile in and out of the water."',
+		["id"] = 167656,
+		["itemQuality"] = 2
+	},
+	[19017] = {
+		["expansionID"] = 0,
+		["itemName"] = "Essence of the Firelord",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 135826,
+		["selected"] = true,
+		["id"] = 19017,
+		["itemQuality"] = 1
+	},
+	[80832] = {
+		["expansionID"] = 4,
+		["itemName"] = "Viseclaw Fisher Eye",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237297,
+		["itemDescription"] = '"It\'s still twitching."',
+		["id"] = 80832,
+		["itemQuality"] = 1
+	},
+	[38339] = {
+		["expansionID"] = 0,
+		["itemName"] = "Withered Batwing",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133719,
+		["itemDescription"] = '"Just add water."',
+		["id"] = 38339,
+		["itemQuality"] = 1
+	},
+	[43128] = {
+		["expansionID"] = 2,
+		["itemName"] = "Jug of Wine",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 132805,
+		["itemDescription"] = '"Nothing better than wine in a gallon jug."',
+		["id"] = 43128,
+		["itemQuality"] = 1
+	},
+	[43144] = {
+		["expansionID"] = 2,
+		["itemName"] = "Mustard Dog Basket",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237268,
+		["itemDescription"] = '"Nothing tastier than a Mustard Dog!"',
+		["id"] = 43144,
+		["itemQuality"] = 1
+	},
+	[39566] = {
+		["expansionID"] = 0,
+		["itemName"] = "Prophet of Akali Convocation",
+		["itemTexture"] = 135980,
+		["isCraftingReagent"] = false,
+		["id"] = 39566,
+		["itemQuality"] = 1
+	},
+	[144079] = {
+		["expansionID"] = 0,
+		["itemName"] = "Glob of Oil",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 252178,
+		["itemDescription"] = "",
+		["id"] = 144079,
+		["itemQuality"] = 0
+	},
+	[167657] = {
+		["expansionID"] = 7,
+		["itemName"] = "Shadowy Cave Eel",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 970813,
+		["itemDescription"] = '"Dislikes direct sunlight."',
+		["id"] = 167657,
+		["itemQuality"] = 2
+	},
+	[204329] = {
+		["expansionID"] = 9,
+		["itemName"] = "Petrified Spider Leg",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 2027952,
+		["itemDescription"] = '"Ew. Ew, ew, ew, ew, ew, ew, ew, ew."',
+		["id"] = 204329,
+		["itemQuality"] = 1
+	},
+	[112631] = {
+		["expansionID"] = 5,
+		["itemName"] = "Fat Sleeper Egg",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 970832,
+		["selected"] = false,
+		["id"] = 112631,
+		["itemQuality"] = 1
+	},
+	[20885] = {
+		["expansionID"] = 0,
+		["itemName"] = "Qiraji Martial Drape",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134883,
+		["itemDescription"] = "",
+		["id"] = 20885,
+		["itemQuality"] = 3
+	},
+	[262752] = {
+		["expansionID"] = 11,
+		["itemName"] = "Vilebranch Scroll",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 1500877,
+		["itemDescription"] = '"A possible clue relating to Malacrass\'s research on Ula\'tek."',
+		["id"] = 262752,
+		["itemQuality"] = 1
+	},
+	[69987] = {
+		["expansionID"] = 0,
+		["itemName"] = "Kaldorei Herring",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133906,
+		["itemDescription"] = '"A highly-prized oily fish native only to the waters around Teldrassil"',
+		["id"] = 69987,
+		["itemQuality"] = 1
+	},
+	[192436] = {
+		["expansionID"] = 9,
+		["itemName"] = "Ruby Spear",
+		["itemTexture"] = 135133,
+		["isCraftingReagent"] = false,
+		["id"] = 192436,
+		["itemQuality"] = 1
+	},
+	[168184] = {
+		["expansionID"] = 7,
+		["itemName"] = "Rare Metal",
+		["itemTexture"] = 134563,
+		["isCraftingReagent"] = false,
+		["id"] = 168184,
+		["itemQuality"] = 3
+	},
+	[167658] = {
+		["expansionID"] = 7,
+		["itemName"] = "Mechanical Blowfish",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 970823,
+		["itemDescription"] = '"This could be dangerous to hold on to!"',
+		["id"] = 167658,
+		["itemQuality"] = 2
+	},
+	[86544] = {
+		["expansionID"] = 4,
+		["itemName"] = "Spinefish Alpha",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 645525,
+		["itemDescription"] = '"Careful of the spines, they look like they could do some damage."',
+		["id"] = 86544,
+		["itemQuality"] = 2
+	},
+	[134571] = {
+		["expansionID"] = 6,
+		["itemName"] = "Huge Stormray",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237310,
+		["itemDescription"] = '"It\'s huge!"',
+		["id"] = 134571,
+		["itemQuality"] = 1
+	},
+	[275520] = {
+		["expansionID"] = 11,
+		["itemName"] = "Technoseer's Communique",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 896469,
+		["itemDescription"] = '"A projected image of a rotating Lightforged Warframe emits from the device."',
+		["id"] = 275520,
+		["itemQuality"] = 3
+	},
+	[272975] = {
+		["expansionID"] = 11,
+		["itemName"] = "Hal'hadar Keeper Keycode",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 6012042,
+		["itemDescription"] = '"Free the caged creatures."',
+		["id"] = 272975,
+		["itemQuality"] = 1
+	},
+	[57197] = {
+		["expansionID"] = 0,
+		["itemName"] = "Juicy Apple",
+		["itemTexture"] = 133975,
+		["isCraftingReagent"] = false,
+		["id"] = 57197,
+		["itemQuality"] = 1
+	},
+	[80600] = {
+		["expansionID"] = 4,
+		["itemName"] = "Stinger",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 135663,
+		["itemDescription"] = '"Careful, it\'s very sharp."',
+		["id"] = 80600,
+		["itemQuality"] = 1
+	},
+	[257886] = {
+		["expansionID"] = 10,
+		["itemName"] = "Ripe Apple",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133975,
+		["itemDescription"] = '"A nice juicy ripe apple."',
+		["id"] = 257886,
+		["itemQuality"] = 1
+	},
+	[167659] = {
+		["expansionID"] = 7,
+		["itemName"] = "Spitting Clownfish",
+		["itemTexture"] = 632356,
+		["isCraftingReagent"] = false,
+		["id"] = 167659,
+		["itemQuality"] = 2
+	},
+	[33837] = {
+		["expansionID"] = 0,
+		["itemName"] = "Cooking Pot",
+		["itemTexture"] = 133778,
+		["isCraftingReagent"] = false,
+		["id"] = 33837,
+		["itemQuality"] = 1
+	},
+	[144077] = {
+		["expansionID"] = 0,
+		["itemName"] = "Submarine Tar",
+		["itemTexture"] = 576309,
+		["isCraftingReagent"] = false,
+		["id"] = 144077,
+		["itemQuality"] = 2
+	},
+	[43099] = {
+		["expansionID"] = 2,
+		["itemName"] = "Infused Mushroom Meatloaf",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 350558,
+		["itemDescription"] = '"Those infused mushrooms add quite a kick."',
+		["id"] = 43099,
+		["itemQuality"] = 1
+	},
+	[192757] = {
+		["expansionID"] = 9,
+		["itemName"] = "Pride and Protodrakes",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4549138,
+		["itemDescription"] = '"The quintessential love story. Set in a time before the aspects, an up-and-coming young protodrake runs afoul of a standoffish elder. Their animosity turns to appreciation and, eventually, love as they come to understand each other."',
+		["id"] = 192757,
+		["itemQuality"] = 1
+	},
+	[274577] = {
+		["expansionID"] = 11,
+		["itemName"] = "Dark-Ley Coalescence",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7137507,
+		["itemDescription"] = '"Motes of shadow and raw arcane swirl around this glittering piece of coalesced ley line energy."',
+		["id"] = 274577,
+		["itemQuality"] = 3
+	},
+	[33835] = {
+		["expansionID"] = 1,
+		["itemName"] = "Shaffar's Wondrous Amulet",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133282,
+		["itemDescription"] = '"This is the source of Nexus-Prince Shaffar\'s magic. Too bad that you can\'t figure out how to use it."',
+		["id"] = 33835,
+		["itemQuality"] = 1
+	},
+	[269934] = {
+		["expansionID"] = 11,
+		["itemName"] = "Mana Spore",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134052,
+		["itemDescription"] = '"Grows atop the highest, grandest mushrooms."',
+		["id"] = 269934,
+		["itemQuality"] = 1
+	},
+	[167660] = {
+		["expansionID"] = 7,
+		["itemName"] = "Sludge-fouled Carp",
+		["itemTexture"] = 133912,
+		["isCraftingReagent"] = false,
+		["id"] = 167660,
+		["itemQuality"] = 2
+	},
+	[86545] = {
+		["expansionID"] = 4,
+		["itemName"] = "Mimic Octopus",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 645491,
+		["itemDescription"] = '"Even in death, this strange creature continues changing color to blend in with its environment."',
+		["id"] = 86545,
+		["itemQuality"] = 2
+	},
+	[192756] = {
+		["expansionID"] = 9,
+		["itemName"] = "The Red and the Black Flights",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 4549136,
+		["itemDescription"] = '"A low-born black drake fails to reconcile his militaristic heritage with his respect for intelligence and wit, eventually falling to despair over unrequited love and the materialism rampant among dragonkind."',
+		["id"] = 192756,
+		["itemQuality"] = 1
+	},
+	[275667] = {
+		["expansionID"] = 11,
+		["itemName"] = "Veilcaster",
+		["itemTexture"] = 7658124,
+		["isCraftingReagent"] = false,
+		["id"] = 275667,
+		["itemQuality"] = 1
+	},
+	[112630] = {
+		["expansionID"] = 5,
+		["itemName"] = "Jawless Skulker Egg",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 970832,
+		["selected"] = false,
+		["id"] = 112630,
+		["itemQuality"] = 1
+	},
+	[251273] = {
+		["expansionID"] = 11,
+		["itemName"] = "Slightly Magical Crystal",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 132779,
+		["itemDescription"] = '"If you focus very closely, you can sense a soft thrum emanating from it."',
+		["id"] = 251273,
+		["itemQuality"] = 1
+	},
+	[33848] = {
+		["expansionID"] = 1,
+		["itemName"] = "Demon Broiled Surprise",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134020,
+		["itemDescription"] = '"Smells delicious!"',
+		["id"] = 33848,
+		["itemQuality"] = 1
+	},
+	[81116] = {
+		["expansionID"] = 4,
+		["itemName"] = "Suncrawler",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237146,
+		["itemDescription"] = '"The fish around here sure have strange taste."',
+		["id"] = 81116,
+		["itemQuality"] = 1
+	},
+	[167661] = {
+		["expansionID"] = 7,
+		["itemName"] = "Energized Lightning Cod",
+		["itemTexture"] = 1387374,
+		["isCraftingReagent"] = false,
+		["id"] = 167661,
+		["itemQuality"] = 2
+	},
+	[274640] = {
+		["expansionID"] = 11,
+		["itemName"] = "Arcfluxion Hydrospore",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7548890,
+		["itemDescription"] = '"A pure, living ley-spore fused with the arcane-rich waters of Naigtal pulses within the containment sphere."',
+		["id"] = 274640,
+		["itemQuality"] = 4
+	},
+	[134574] = {
+		["expansionID"] = 6,
+		["itemName"] = "Huge Runescale Koi",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237316,
+		["itemDescription"] = '"A grumpy old pond koi."',
+		["id"] = 134574,
+		["itemQuality"] = 1
+	},
+	[46004] = {
+		["expansionID"] = 0,
+		["itemName"] = "Sealed Vial of Poison",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 236870,
+		["itemDescription"] = '"Not really safe for drinking."',
+		["id"] = 46004,
+		["itemQuality"] = 1
+	},
+	[144034] = {
+		["expansionID"] = 0,
+		["itemName"] = "Nagrand Cherry-Bomb",
+		["itemTexture"] = 133717,
+		["isCraftingReagent"] = false,
+		["id"] = 144034,
+		["itemQuality"] = 1
+	},
+	[274581] = {
+		["expansionID"] = 11,
+		["itemName"] = "Primessence of Shadow",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7137561,
+		["itemDescription"] = '"A swirling vortex of concentrated Void, its power barely contained."',
+		["id"] = 274581,
+		["itemQuality"] = 4
+	},
+	[69940] = {
+		["expansionID"] = 0,
+		["itemName"] = "Grimnur's Bait",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237412,
+		["itemDescription"] = '"A pile of \'fresh\' fish guts guaranteed to attract crayfish."',
+		["id"] = 69940,
+		["itemQuality"] = 1
+	},
+	[80277] = {
+		["expansionID"] = 4,
+		["itemName"] = "Jagged Abalone Meat",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 237339,
+		["itemDescription"] = '"Seems kind of slimy."',
+		["id"] = 80277,
+		["itemQuality"] = 1
+	},
+	[167662] = {
+		["expansionID"] = 7,
+		["itemName"] = "Solarsprocket Barbel",
+		["itemTexture"] = 133893,
+		["isCraftingReagent"] = false,
+		["id"] = 167662,
+		["itemQuality"] = 2
+	},
+	[276342] = {
+		["expansionID"] = 11,
+		["itemName"] = "Fragmented Soul Lattice",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7137532,
+		["itemDescription"] = '"Although most of it is damaged, the crystalline core in the center frame flickers with a faint energy pulse."',
+		["id"] = 276342,
+		["itemQuality"] = 1
+	},
+	[167790] = {
+		["expansionID"] = 7,
+		["itemName"] = "Paint Vial: Fireball Red",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 413575,
+		["itemDescription"] = '"Allows a Mechanocat to be painted Fireball Red."',
+		["id"] = 167790,
+		["itemQuality"] = 2
+	},
+	[168608] = {
+		["expansionID"] = 7,
+		["itemName"] = "Stolen Oil",
+		["itemTexture"] = 1500929,
+		["isCraftingReagent"] = false,
+		["id"] = 168608,
+		["itemQuality"] = 1
+	},
+	[80831] = {
+		["expansionID"] = 4,
+		["itemName"] = "Snapclaw's Claw",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 133708,
+		["itemDescription"] = '"He won\'t be snapping anymore, that\'s for sure."',
+		["id"] = 80831,
+		["itemQuality"] = 1
+	},
+	[12534] = {
+		["expansionID"] = 0,
+		["itemName"] = "Omokk's Head",
+		["itemTexture"] = 134151,
+		["isCraftingReagent"] = false,
+		["id"] = 12534,
+		["itemQuality"] = 1
+	},
+	[16970] = {
+		["expansionID"] = 0,
+		["itemName"] = "Misty Reed Mahi Mahi",
+		["itemTexture"] = 133907,
+		["isCraftingReagent"] = false,
+		["id"] = 16970,
+		["itemQuality"] = 1
+	},
+	[203389] = {
+		["expansionID"] = 9,
+		["itemName"] = "Shiny Rock",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 348563,
+		["itemDescription"] = '"It\'s shiny, so it must be important, right?!"',
+		["id"] = 203389,
+		["itemQuality"] = 1
+	},
+	[167663] = {
+		["expansionID"] = 7,
+		["itemName"] = "Tasty Steelfin",
+		["itemTexture"] = 133888,
+		["isCraftingReagent"] = false,
+		["id"] = 167663,
+		["itemQuality"] = 2
+	},
+	[208182] = {
+		["expansionID"] = 0,
+		["itemName"] = "Bronze Timepiece",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 134376,
+		["itemDescription"] = '"Using this will rewind time and reset your position."',
+		["id"] = 208182,
+		["itemQuality"] = 1
+	},
+	[274261] = {
+		["expansionID"] = 11,
+		["itemName"] = "Grand Magister's Key-Cipher",
+		["isCraftingReagent"] = false,
+		["itemTexture"] = 7549087,
+		["itemDescription"] = '"The Grand Magister\'s Key-Cipher hums with latent arcane energy."',
+		["id"] = 274261,
+		["itemQuality"] = 4
+	},
+	[45902] = {
+		["expansionID"] = 0,
+		["itemName"] = "Phantom Ghostfish",
+		["itemTexture"] = 237307,
+		["isCraftingReagent"] = false,
+		["id"] = 45902,
+		["itemQuality"] = 1
+	},
 };
 
 end
