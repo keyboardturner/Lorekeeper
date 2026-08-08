@@ -16,6 +16,7 @@ setmetatable(LK, {__index=defaultFunc});
 ------------------------------------------------
 
 	LK["Contributor_1"] = "spookibaby"
+	LK["Contributor_2"] = "Johnnyd2"
 	LK["Contributor_Anonymous"] = "Anonymous Users"
 
 ------------------------------------------------

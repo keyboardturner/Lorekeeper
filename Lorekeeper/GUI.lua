@@ -528,7 +528,7 @@ end
 
 function MeowFrameMixin:ConcatenateNames(texts)
 	local newTexts = ""
-	for i = 1, 1 do -- increase value with more contributors
+	for i = 1, 2 do -- increase value with more contributors
 		if LK["Contributor_"..i] then
 			newTexts = newTexts .. "\n" .. LK["Contributor_"..i]
 		end
