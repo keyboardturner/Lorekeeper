@@ -1,6 +1,6 @@
 # 0.4.5
 
-Localdata update
+Localdata update 12 - (16 personal entries + 52 Johnnyd2 entries + 41 Anonymous User 22 entries)
 
 12.1.0 toc update
 
