@@ -2107,6 +2107,8 @@ function LoreKGUI.sortFunc(a, b)
 	end
 end
 
+local MAX_TEXT_EXPANSION_ID = LK.IsForever and 0 or LE_EXPANSION_LEVEL_CURRENT; -- forever fdoes weird shit
+
 function LoreKGUI.PopulateList()
 	local countMax = 0;
 	local countCurrent = 0;
@@ -2130,21 +2132,25 @@ function LoreKGUI.PopulateList()
 	for id, data in pairs(allData) do
 		data.id = id;
 		tinsert(proxy, data);
-		if data.base.isObtainable then
-			countMax = countMax + 1;
-		end
 
-		if data.base.isObtainable == false then
-			unobtainables = unobtainables + 1;
-		end
-		if data.base.hasRead then
-			countCurrent = countCurrent + 1;
-		end
-		if LK["LocalData"]["text"][id] and not data.base.hasRead then
-			unread = unread + 1;
-		end
-		if data.base.hasRead and not LK["LocalData"]["text"][id] then
-			newTexts = newTexts + 1;
+		local expID = data.base["expansion"]
+		if not expID or expID <= MAX_TEXT_EXPANSION_ID then
+			if data.base.isObtainable then
+				countMax = countMax + 1;
+			end
+
+			if data.base.isObtainable == false then
+				unobtainables = unobtainables + 1;
+			end
+			if data.base.hasRead then
+				countCurrent = countCurrent + 1;
+			end
+			if LK["LocalData"]["text"][id] and not data.base.hasRead then
+				unread = unread + 1;
+			end
+			if data.base.hasRead and not LK["LocalData"]["text"][id] then
+				newTexts = newTexts + 1;
+			end
 		end
 
 		-- Try and clean *all* entries, if this lags a lot, i remove.
@@ -2217,7 +2223,9 @@ function LoreKGUI.OnTextChanged(editBox)
 			-- If expansion is nil (SavedVariables/Custom), we always show it
 			if base["expansion"] then
 				local expID = base["expansion"]
-				if SVSettings.expansion and SVSettings.expansion[expID] == false then
+				if expID > MAX_TEXT_EXPANSION_ID then
+					stateMatch = false
+				elseif SVSettings.expansion and SVSettings.expansion[expID] == false then
 					stateMatch = false
 				end
 			end
@@ -2322,7 +2330,7 @@ local function FilterHandler(owner, rootDescription)
 	
 	if not SVSettings.expansion then SVSettings.expansion = {} end
 
-	for i = 0, LE_EXPANSION_LEVEL_CURRENT do
+	for i = 0, MAX_TEXT_EXPANSION_ID do
 		if SVSettings.expansion[i] == nil then SVSettings.expansion[i] = true end
 
 		local expName = _G["EXPANSION_NAME"..i] or (EXPANSION_FILTER_TEXT .. " " .. i)

@@ -43,5 +43,5 @@
 ## Category-zhCN: 角色扮演
 ## Category-zhTW: 角色扮演
 
-LocalData.lua
+LocalData_Forever.lua
 Lorekeeper_Items.lua

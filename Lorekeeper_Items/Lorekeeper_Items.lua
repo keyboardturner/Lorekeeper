@@ -7,7 +7,7 @@ local LK = Lorekeeper_API.LK
 
 local LoreKGUI = Lorekeeper_API.LK.LoreKGUI
 
-local MAX_EXPANSION_ID = LE_EXPANSION_LEVEL_CURRENT
+local MAX_EXPANSION_ID = LK.IsForever and 0 or LE_EXPANSION_LEVEL_CURRENT
 local MAX_QUALITY_ID = 8
 
 local ItemsFilters = {

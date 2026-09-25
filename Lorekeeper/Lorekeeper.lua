@@ -1,5 +1,8 @@
 local _, LK = ...
 
+local build = select(4, GetBuildInfo());
+local IsForever = build >= 16000 and build < 20000;
+LK.IsForever = IsForever;
 
 local function Print(...)
 	if not ... then
