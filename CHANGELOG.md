@@ -1,3 +1,11 @@
+# 0.4.6
+
+WoW Forever testing - This is an in-development testing version. Some things may throw errors or explode.
+
+Some known issues:
+ - Some data from future expansions and classic variants (SOD) may be present in data that aren't actually in game. Items provided by Lore Item Tooltips will also remain present, as there is no Classic-only filter on those entries
+ - Some data may not be correct due to being pulled from mainline first. The addon should catch any changes in text or map locations
+
 # 0.4.5
 
 Localdata update 12 - (16 personal entries + 52 Johnnyd2 entries + 41 Anonymous User 22 entries)
