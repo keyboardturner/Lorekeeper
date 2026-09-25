@@ -1,0 +1,65 @@
+## Interface: 16000, 16001
+## Title: Lorekeeper
+## Notes: Collect and store ingame text items in an adaptive library.
+## Author: Keyboardturner
+## Version: @project-version@
+## IconTexture: Interface/AddOns/Lorekeeper/Assets/Textures/LorekeeperScroll_BG.png
+## SavedVariables: LoreK_DB
+## AddonCompartmentFunc: Lorekeeper_OnAddonCompartmentClick
+## AddonCompartmentFuncOnEnter: Lorekeeper_OnAddonCompartmentEnter
+## AddonCompartmentFuncOnLeave: Lorekeeper_OnAddonCompartmentLeave
+## X-Curse-Project-ID: 1084783
+## X-WoWI-ID: 26811
+## X-Wago-ID: bGoM8J60
+
+## Title-enUS: Lorekeeper
+## Notes-enUS: Collect and store ingame text items in an adaptive library.
+## Title-frFR: Lorekeeper
+## Notes-frFR: Collectez et stockez des éléments textuels en jeu dans une bibliothèque adaptative.
+## Title-esES: Lorekeeper
+## Notes-esES: Recoge y almacena objetos de texto del juego en una biblioteca adaptable.
+## Title-esMX: Lorekeeper
+## Notes-esMX: Recoge y almacena objetos de texto del juego en una biblioteca adaptable.
+## Title-deDE: Lorekeeper
+## Notes-deDE: Sammle und speichere ingame-Textobjekte in einer adaptiven Bibliothek.
+## Title-itIT: Lorekeeper
+## Notes-itIT: Raccogli e conserva elementi testuali di gioco in una biblioteca adattativa.
+## Title-ptBR: Lorekeeper
+## Notes-ptBR: Colete e armazene itens de texto do jogo em uma biblioteca adaptável.
+## Title-ruRU: Хранитель Знаний (Lorekeeper)
+## Notes-ruRU: Собирать и хранить текстовые предметы в игре в адаптивной библиотеке.
+## Title-koKR: 지식의 수호자 (Lorekeeper)
+## Notes-koKR: 게임 내 텍스트 아이템을 적응형 도서관에 수집하고 저장합니다.
+## Title-zhCN: 知识守护者 (Lorekeeper)
+## Notes-zhCN: 在自适应图书馆中收集和存储游戏内文本项目。
+## Title-zhTW: 知識守護者 (Lorekeeper)
+## Notes-zhTW: 在自適應圖書館中收集和儲存遊戲內文本項目。
+
+## Category-enUS: Roleplay
+## Category-deDE: Rollenspiel
+## Category-esES: Juego de rol
+## Category-esMX: Juego de rol
+## Category-frFR: Jeu de rôle
+## Category-itIT: Gioco di Ruolo
+## Category-koKR: 롤플레잉
+## Category-ptBR: Interpretação de Papel
+## Category-ruRU: Ролевая игра
+## Category-zhCN: 角色扮演
+## Category-zhTW: 角色扮演
+
+
+
+Libs\LibDBIcon-1.0\LibStub\LibStub.lua
+Libs\LibDBIcon-1.0\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\Ace3\AceAddon-3.0\AceAddon-3.0.lua
+Libs\Ace3\AceDB-3.0\AceDB-3.0.lua
+Libs\Ace3\AceConsole-3.0\AceConsole-3.0.lua
+Libs\LibDBIcon-1.0\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Libs\LibDBIcon-1.0\LibDBIcon-1.0\lib.xml
+Libs\HereBeDragons\HereBeDragons-2.0.lua
+Libs\HereBeDragons\HereBeDragons-Pins-2.0.lua
+
+Localization.lua
+LocalData.lua
+Lorekeeper.lua
+GUI.lua
