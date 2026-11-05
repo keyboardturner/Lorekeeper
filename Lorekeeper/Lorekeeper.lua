@@ -1,7 +1,7 @@
 local _, LK = ...
 
 local build = select(4, GetBuildInfo());
-local IsForever = build >= 16000 and build < 20000;
+local IsForever = WOW_PROJECT_ID == WOW_PROJECT_CAMELOT;
 LK.IsForever = IsForever;
 
 local function Print(...)

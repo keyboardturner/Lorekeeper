@@ -1,3 +1,7 @@
+# 0.4.7a
+
+Map pins in Forever will no longer have their mainline-counterpart map locations displayed. As items are found over time, they will get map data instead. Many items or even duplicates of items exist between mainline and forever, and there's no feasible way to verify every single source of these.
+
 # 0.4.7
 
 12.1.5 toc update

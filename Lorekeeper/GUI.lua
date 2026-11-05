@@ -2128,6 +2128,23 @@ function LoreKGUI.PopulateList()
 		end
 	end
 
+	if LK.IsForever then
+		for id, data in pairs(allData) do
+			if data.base then
+				local localBase = LK["LocalData"]["text"][id] and LK["LocalData"]["text"][id]["base"];
+				local svBase = LoreK_DB["text"][id] and LoreK_DB["text"][id]["base"];
+
+				if svBase and svBase.mapData then
+					data.base.mapData = CopyTable(svBase.mapData);
+				elseif localBase and localBase.mapData_Forever then
+					data.base.mapData = CopyTable(localBase.mapData_Forever);
+				else
+					data.base.mapData = nil;
+				end
+			end
+		end
+	end
+
 	local proxy = {};
 	for id, data in pairs(allData) do
 		data.id = id;
