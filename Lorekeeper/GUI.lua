@@ -3348,87 +3348,9 @@ LoreKGUI.Events:RegisterEvent("PLAYER_ENTERING_WORLD");
 
 function LoreKGUI.Initialize(self, event, arg1)
 	if event == "ADDON_LOADED" and arg1 == "Lorekeeper" then
-		if not LoreK_DB["settings"] then
-			LoreK_DB["settings"] = {
-				overrideMaterials = false,
-				hideUnread = true,
-				slashRead = false,
-				debugAdvanced = false,
-				collectSound = false,
-				searchMenu = {
-					showUnobtainable = false,
-					showClassrestricted = true,
-					showHidden = false,
-					showCollected = true,
-					showUnread = true,
-					expansion = {
-						classic = true,
-						tbc = true,
-						wrath = true,
-						cata = true,
-						mop = true,
-						wod = true,
-						legion = true,
-						bfa = true,
-						shadowlands = true,
-						dragonflight = true,
-						warwithin = true,
-						midnight = true,
-						lasttitan = true,
-					},
-				},
-			};
-		end
-		if not LoreK_DB["settings"]["searchMenu"] then
-			LoreK_DB["settings"]["searchMenu"] = {
-				showUnobtainable = false,
-				showClassrestricted = true,
-				showHidden = false,
-				showCollected = true,
-				showUnread = true,
-				expansion = {
-					classic = true,
-					tbc = true,
-					wrath = true,
-					cata = true,
-					mop = true,
-					wod = true,
-					legion = true,
-					bfa = true,
-					shadowlands = true,
-					dragonflight = true,
-					warwithin = true,
-					midnight = true,
-					lasttitan = true,
-				},
-			};
-		end
-		if not LoreK_DB["settings"]["TTSSettings"] then
-			LoreK_DB["settings"]["TTSSettings"] = CopyTable(defaultTTSSettings);
-		end
-		if LoreK_DB["settings"]["TTSSettings"]["phonetics"] == nil then
-			LoreK_DB["settings"]["TTSSettings"]["phonetics"] = true;
-		end
-		if LoreK_DB["settings"]["holidayThemes"] == nil then
-			LoreK_DB["settings"]["holidayThemes"] = true;
-		end
-		if LoreK_DB["settings"]["searchMenu"].onlyMapData == nil then
-			 LoreK_DB["settings"]["searchMenu"].onlyMapData = false
-		end
-		if LoreK_DB["settings"]["searchMenu"].filterClass == nil then
-			 LoreK_DB["settings"]["searchMenu"].filterClass = "ALL"
-		end
-		if not LoreK_DB["settings"]["searchMenu"].expansion then
-			 LoreK_DB["settings"]["searchMenu"].expansion = {}
-			 for i = 0, LE_EXPANSION_LEVEL_CURRENT do
-				 LoreK_DB["settings"]["searchMenu"].expansion[i] = true
-			 end
-		end
-		if LoreK_DB["settings"]["showCollectedPins"] == nil then
-			LoreK_DB["settings"]["showCollectedPins"] = false;
-		end
-		if LoreK_DB["settings"]["hideAllPins"] == nil then
-			LoreK_DB["settings"]["hideAllPins"] = false;
+		if not LoreK_DB then LoreK_DB = {} end
+		if LK.FillDefaults and LK.Defaults then
+			LK.FillDefaults(LoreK_DB, LK.Defaults);
 		end
 		TTSSettings.QueuePages_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["queuePages"]);
 		TTSSettings.PhoneticReplace_Checkbox:SetChecked(LoreK_DB["settings"]["TTSSettings"]["phonetics"]);

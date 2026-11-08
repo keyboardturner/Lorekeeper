@@ -4,6 +4,84 @@ local build = select(4, GetBuildInfo());
 local IsForever = WOW_PROJECT_ID == WOW_PROJECT_CAMELOT;
 LK.IsForever = IsForever;
 
+local Defaults = {
+	settings = {
+		overrideMaterials = false,
+		hideUnread = true,
+		slashRead = false,
+		debugAdvanced = false,
+		collectSound = false,
+		showCollectedPins = false,
+		hideAllPins = false,
+		holidayThemes = true,
+		material = "QuestBG-Parchment",
+		fontSizeP = {
+			height = 13,
+		},
+		TTSSettings = {
+			queuePages = false,
+			volume = 50,
+			speed = 0,
+			phonetics = true,
+			voiceID = 0,
+		},
+		colors = {
+			parchment = { r = 1, g = 1, b = 1, a = 1 },
+			title = { r = 1, g = 1, b = 1, a = 1 },
+			titleText = { r = .85, g = .70, b = .45, a = 1 },
+			h1 = { r = .18, g = .12, b = .05, a = 1 },
+			h2 = { r = .18, g = .12, b = .05, a = 1 },
+			h3 = { r = .18, g = .12, b = .05, a = 1 },
+			p = { r = .18, g = .12, b = .05, a = 1 },
+		},
+		searchMenu = {
+			showUnobtainable = false,
+			showClassrestricted = true,
+			showHidden = false,
+			showCollected = true,
+			showUnread = true,
+			onlyMapData = false,
+			filterClass = "ALL",
+			expansion = {
+				classic = true,
+				tbc = true,
+				wrath = true,
+				cata = true,
+				mop = true,
+				wod = true,
+				legion = true,
+				bfa = true,
+				shadowlands = true,
+				dragonflight = true,
+				warwithin = true,
+				midnight = true,
+				lasttitan = true,
+			},
+		},
+	},
+	text = {},
+};
+
+LK.Defaults = Defaults;
+
+local function FillDefaults(db, defaults)
+	if type(db) ~= "table" then return end
+	for k, v in pairs(defaults) do
+		if type(v) == "table" then
+			if type(db[k]) ~= "table" then
+				db[k] = {};
+			end
+			FillDefaults(db[k], v);
+		else
+			if db[k] == nil then
+				db[k] = v;
+			end
+		end
+	end
+end
+
+LK.FillDefaults = FillDefaults;
+
 local function Print(...)
 	if not ... then
 		if LoreK_DB["settings"]["debugAdvanced"] then
@@ -243,68 +321,10 @@ end
 
 function Lorekeeper.Initialize:Events(event, arg1, arg2)
 	if event == "ADDON_LOADED" and arg1 == "Lorekeeper" then
-
-		if not LoreK_DB then
-			LoreK_DB = {
-				settings = {
-					overrideMaterials = false,
-					hideUnread = true,
-					slashRead = false,
-					debugAdvanced = false,
-					collectSound = false,
-					showCollectedPins = false,
-					hideAllPins = false,
-					searchMenu = {
-						showUnobtainable = false,
-						showClassrestricted = true,
-						showHidden = false,
-						showCollected = true,
-						showUnread = true,
-						expansion = {
-							classic = true,
-							tbc = true,
-							wrath = true,
-							cata = true,
-							mop = true,
-							wod = true,
-							legion = true,
-							bfa = true,
-							shadowlands = true,
-							dragonflight = true,
-							warwithin = true,
-							midnight = true,
-							lasttitan = true,
-						},
-					},
-				},
-				text = {},
-			};
-		end
-
-		if LoreK_DB["settings"] and not LoreK_DB["settings"]["searchMenu"] then
-			LoreK_DB["settings"]["searchMenu"] = {
-				showUnobtainable = false,
-				showClassrestricted = true,
-				showHidden = false,
-				showCollected = true,
-				showUnread = true,
-				expansion = {
-					classic = true,
-					tbc = true,
-					wrath = true,
-					cata = true,
-					mop = true,
-					wod = true,
-					legion = true,
-					bfa = true,
-					shadowlands = true,
-					dragonflight = true,
-					warwithin = true,
-					midnight = true,
-					lasttitan = true,
-				},
-			};
-		end
+    	if not LoreK_DB then
+    		LoreK_DB = {};
+    	end
+    	FillDefaults(LoreK_DB, Defaults);
 
 		Lorekeeper.commands = {
 			[LK["show"]] = function()
@@ -441,40 +461,9 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 		end
 
 		if not LoreK_DB then
-			LoreK_DB = {
-				settings = {
-					overrideMaterials = false,
-					hideUnread = true,
-					slashRead = false,
-					debugAdvanced = false,
-					collectSound = false,
-					showCollectedPins = false,
-					hideAllPins = false,
-					searchMenu = {
-						showUnobtainable = false,
-						showClassrestricted = true,
-						showHidden = false,
-						showUnread = false,
-						expansion = {
-							classic = true,
-							tbc = true,
-							wrath = true,
-							cata = true,
-							mop = true,
-							wod = true,
-							legion = true,
-							bfa = true,
-							shadowlands = true,
-							dragonflight = true,
-							warwithin = true,
-							midnight = true,
-							lasttitan = true,
-						},
-					},
-				},
-				text = {},
-			};
+			LoreK_DB = {};
 		end
+		FillDefaults(LoreK_DB, Defaults);
 
 		if activeContext.doneResetting ~= true then
 			activeContext = nil;
