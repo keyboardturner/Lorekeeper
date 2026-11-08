@@ -26,6 +26,18 @@ LK["LocalData"]["cinematics"] = {
 			["coords"] = 2,
 		},
 	},
+	[11] = {
+		["name"] = "for_160_cm",
+		["id"] = 1098,
+		--["link"] = "",
+		["description"] = "New Horizons",
+		["expansion"] = 0,
+		["patch"] = "1.60.0",
+		["thumb"] = {
+			["batch"] = 7,
+			["coords"] = 9,
+		},
+	},
 	--[[
 
 	[20] = {
