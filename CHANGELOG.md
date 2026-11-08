@@ -1,3 +1,9 @@
+# 0.4.8
+
+Localdata update 13 - (50 personal entries + 10 Anonymous User 23 entries)
+
+Some changes to show all entries immediately upon login instead of upon the first learned entry ever and restructure how SavedVariables are established/deduplicated
+
 # 0.4.7a
 
 Map pins in Forever will no longer have their mainline-counterpart map locations displayed. As items are found over time, they will get map data instead. Many items or even duplicates of items exist between mainline and forever, and there's no feasible way to verify every single source of these.
