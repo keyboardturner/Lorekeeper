@@ -3,6 +3,8 @@ local _, LK = ...
 -- This is typicaly where exported SVs data will go, purged of extranneous other data such as hasRead and so on.
 -- Adding options to switch locale would honestly just be more hassle than it's worth for this project.
 
+-- look for "put stuff above here" or "user submission #" to find where you left off!!!!!!!
+
 -- Data should follow this structure:
 
 --[[
@@ -1799,6 +1801,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
+				["mapData_Forever"] = {
+					[1453] = {0.3653491139411926, 0.7230529189109802},
+				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
@@ -2096,6 +2101,9 @@ LK["LocalData"] = {
 						0.4671338796615601,
 					},
 				},
+				["mapData_Forever"] = {
+					[1453] = {0.7578295469284058, 0.3200684785842896},
+				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
@@ -2206,6 +2214,9 @@ LK["LocalData"] = {
 						0.6798129081726074,
 						0.7352148294448853,
 					},
+				},
+				["mapData_Forever"] = {
+					[1453] = {0.5181618332862854, 0.7465274333953857},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -2518,6 +2529,11 @@ LK["LocalData"] = {
 						0.7462884783744812,
 					},
 				},
+				["mapData_Forever"] = {
+					[1413] = {0.6181468963623047, 0.3939354419708252},
+					[1439] = {0.3656488060951233, 0.4400243163108826},
+					[1453] = {0.5181618332862854, 0.7465274333953857},
+				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
@@ -2592,6 +2608,10 @@ LK["LocalData"] = {
 						0,
 						0,
 					},
+				},
+				["mapData_Forever"] = {
+					[1417] = {0.2262806296348572, 0.2396723628044128},
+					[1453] = {0.7609956860542297, 0.3185096383094788},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -2973,6 +2993,10 @@ LK["LocalData"] = {
 						0.571865975856781,
 						0.4543938636779785,
 					},
+				},
+				["mapData_Forever"] = {
+					[1431] = {0.7233916521072388, 0.4776529669761658},
+					[1453] = {0.7617971897125244, 0.3198745250701904},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -4391,6 +4415,9 @@ LK["LocalData"] = {
 						0.4537755250930786,
 					},
 				},
+				["mapData_Forever"] = {
+					[1453] = {0.7635502815246582, 0.3226246237754822},
+				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
@@ -4508,6 +4535,9 @@ LK["LocalData"] = {
 						0.1606178879737854,
 					},
 				},
+				["mapData_Forever"] = {
+					[1453] = {0.8302983045578003, 0.3621916174888611},
+				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
@@ -4538,6 +4568,9 @@ LK["LocalData"] = {
 						0.8662464618682861,
 						0.3604362607002258,
 					},
+				},
+				["mapData_Forever"] = {
+					[1453] = {0.8403849601745605, 0.3501441478729248},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -4695,6 +4728,10 @@ LK["LocalData"] = {
 						0.6648570895195007,
 						0.4343588948249817,
 					},
+				},
+				["mapData_Forever"] = {
+					[1433] = {0.248975932598114, 0.4457032084465027},
+					[1453] = {0.6959670782089233, 0.4099937677383423},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -4880,6 +4917,9 @@ LK["LocalData"] = {
 						0.5644708275794983,
 						0.3019936084747315,
 					},
+				},
+				["mapData_Forever"] = {
+					[1453] = {0.7627161145210266, 0.2960586547851563},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -5352,6 +5392,9 @@ LK["LocalData"] = {
 						0.474770188331604,
 					},
 				},
+				["mapData_Forever"] = {
+					[1436] = {0.5692121982574463, 0.4744353294372559},
+				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
@@ -5387,6 +5430,9 @@ LK["LocalData"] = {
 						0,
 						0,
 					},
+				},
+				["mapData_Forever"] = {
+					[1453] = {0.8320106863975525, 0.3322238326072693},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -5811,6 +5857,10 @@ LK["LocalData"] = {
 						0.2441827654838562,
 					},
 				},
+				["mapData_Forever"] = {
+					[1417] = {0.2259376645088196, 0.2402965426445007},
+					[1453] = {0.7622209787368774, 0.2909968495368958},
+				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
@@ -6169,6 +6219,9 @@ LK["LocalData"] = {
 						0.2598657011985779,
 					},
 				},
+				["mapData_Forever"] = {
+					[1453] = {0.7528723478317261, 0.2994166016578674},
+				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
@@ -6220,6 +6273,9 @@ LK["LocalData"] = {
 						0,
 					},
 				},
+				["mapData_Forever"] = {
+					[1453] = {0.3852295279502869, 0.625902533531189},
+				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
@@ -6253,6 +6309,9 @@ LK["LocalData"] = {
 						0.7364236116409302,
 						0.4505859613418579,
 					},
+				},
+				["mapData_Forever"] = {
+					[1439] = {0.3657416105270386, 0.4378631711006165},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -6294,6 +6353,9 @@ LK["LocalData"] = {
 						0.5610300898551941,
 						0.5079053640365601,
 					},
+				},
+				["mapData_Forever"] = {
+					[1429] = {0.4379494786262512, 0.6576099395751953},
 				},
 				["isObtainable"] = true,
 				["isClassSpecific"] = false,
@@ -34089,6 +34151,605 @@ LK["LocalData"] = {
 				["singlePage"] = true,
 			},
 		},
+
+		
+		["Item-1283"] = {
+			["base"] = {
+				["title"] = "Verner's Note",
+				["text"] = {"Argus, \r\n\r\nAs you know, I'm up to my neck in repair requests from the Army.  I can't complain about all the work, but it's depleting my supply of iron.\r\n\r\nI don't have enough iron for horseshoes.  I know you always keep a large stock--I'd like to borrow 50 pairs of shoes until I get my next shipment of iron.\r\n\r\nYou have my gratitude,\r\n-Verner"},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-1284"] = {
+			["base"] = {
+				["title"] = "Crate of Horseshoes",
+				["text"] = {'A note is attached to the crate.  It reads:\r\n\r\n"Verner - sorry to hear Redridge is having such trouble.  Here are the shoes you need.  Please pay me 100 silver at your earliest convenience."\r\n\r\n"Or if you like, you can pay me in underbelly scales from black dragon whelps (I hear Dragon Whelps are common in the Redridge Mountains).  Because we\'re friends... 4 scales will be enough.  Thanks --Argus"'},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-1294"] = {
+			["base"] = {
+				["title"] = "The General's Response",
+				["text"] = {'Honorable Magistrate Solomon:\r\n\r\nI mourn alongside with you for the dead.  I shall see to it personally that the King is made aware of the situation and it is my fondest hope that I can bring reinforcements to Lakeshire.  His Majesty has been scarce of late and acts rather oddly.  I share this with you in confidence.\r\n\r\nUntil then,\r\n\r\nGeneral Marcus Jonathan\r\nKingdom of Stormwind'},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-1327"] = {
+			["base"] = {
+				["title"] = "Wiley's Note",
+				["text"] = {"They have a vast underground network built.  Bigger than you know, Stoutmantle.  From Booty Bay right to Stormwind Keep.  You may be a brave Paladin but you are a fool if you think you can shut them down.  They are working on a weapon of mass destruction.  After all, if there's one thing Stonemasons know, it's how to build big.  You didn't think this was about pumpkin farms and vineyards, now did you?  I repaid your favor.  Now leave me be!\r\n\r\n--W", 'Stoutmantle --\r\n\r\nSome nerve sending a total stranger to discuss the Defias gang.  Once you saved my life and now you put it in great peril.\r\n\r\nBut I owe you.  The Defias Brotherhood is larger than you think.  Every mine from Westfall to Elwynn Forest is under their control.  Kobolds and Gnolls have been enlisted to do their dirty work.  They have goblins crafting metal monsters to place in the Westfall fields to prey on the superstitions of the local residents.'},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-1353"] = {
+			["base"] = {
+				["title"] = "Shaw's Report",
+				["text"] = {"However, the nobles of Stormwind ran up a huge debt by expanding the kingdom's military presence through Elwynn and into Stranglethorn. The massive debt crippled the kingdom's economy and stripped VanCleef and his Stonemasons of their promised rewards.  After spending years toiling to rebuild the glorious city, the Stonemasons were left broke, forgotten by the city's corrupt officials.", "Lord Stoutmantle--\r\n\r\nLed by Edwin VanCleef, the Stonemason's Guild was composed of the most skilled builders among men.  The Stonemasons helped to rebuild the broken city of Stormwind that was razed by the orcs during the First War. VanCleef and his tradesmen were peerless builders and their work and artistry was evident in the edifices of the Cathedral of Light and Stormwind Keep itself.", "Having personally known Edwin VanCleef my entire life, I can tell you that facing him as a foe is quite a daunting task.  You see, he was my childhood friend, and I personally trained him in the ways of the shadows thinking that one day he might consider a career alongside me.  If VanCleef is heading up the Defias Brotherhood, may the Light have mercy on our souls.\r\n\r\nMaster Mathias Shaw\r\nStormwind Assassin's Guild"},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-1381"] = {
+			["base"] = {
+				["title"] = "A Mysterious Message",
+				["text"] = {'Blacknails--\r\n\r\nThe Sea awaits us.  We need your supplies from the North.  Strip everything: every railroad pike, every waterbucket.  We need metal.  A shipment is due from BB but long overdue.  Come through for me, Blacknails.  Send your supplies directly to the "barn" this time.  No time to squander.\r\n\r\n--VanCleef'},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-1407"] = {
+			["base"] = {
+				["title"] = "Solomon's Plea to Westfall",
+				["text"] = {"Lord Stoutmantle --\r\n\r\nThe Township of Lakeshire humbly requests the aid of your Militia.  As I write this, we find ourselves under siege from both the Blackrock Orcs and Morganth's Shadowhide Gnolls.  I would not send bidding if our situation was not severe.  We await aid from Stormwind but until such help arrives, I beg of you to lend support.  Once the Kingdom is breeched, all of Humanity is in peril.\r\n\r\nMagistrate Solomon"},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-1408"] = {
+			["base"] = {
+				["title"] = "Stoutmantle's Response to Solomon",
+				["text"] = {"Your Honor--\r\n\r\nAll of Westfall mourns for your loss,  but we are plagued with our own war in Westfall.  The farmers have been run off by thieves and mechanical golems.  Stormwind withdrew its troops, leaving the people defenseless.  I mustered the People's Militia in the wake of Stormwind's abandonment to save what remains of this land.  To take the Militia to Redridge would mean certain doom for Westfall.\r\n\r\nMy regrets,\r\nGryan Stoutmantle"},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-1409"] = {
+			["base"] = {
+				["title"] = "Solomon's Plea to Darkshire",
+				["text"] = {"Lord Ebonlocke--\r\n\r\nThe Township of Lakeshire humbly requests the aid of the Night Watch.  We are under siege from both the Blackrock orcs and Morganth's Shadowhide gnolls.  I would not send bidding if our situation was not severe.  We await aid from Stormwind but until such help arrives, I beg of you to lend support.  Once the kingdom is breached, all of humanity is in peril.\r\n\r\nMagistrate Solomon"},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-2223"] = {
+			["base"] = {
+				["title"] = "The Collector's Schedule",
+				["text"] = {"Remember, my brothers, we were once proud craftsmen.  We'll perform our current duties with the same precision we used in our past trade.\r\n\r\n-EVC", 'A party from Defias headquarters will contact the Collector, after which he will transfer the gathered gold.\r\n\r\nBe sure this process is performed without fail and with utmost discretion.  The Collector is responsible for the transfer of gold, but ultimately it is the responsibility of each member of the Defias Brotherhood to ensure that his role is acted out with attention and discipline.', 'Below is the process and schedule of Defias gold collection from the mines of Elwynn to our headquarters in Westfall.\r\n \r\nCollection Schedule:\r\n\r\nSunday: 12:30pm\r\nWednesday: 12:30pm\r\n\r\nBy each specified day, gold gained from the Elwynn mines will be gathered at the Brackwell pumpkin patch.  The agent in charge of these gatherings, "The Collector," will be known by the engraved ring he possesses.  A ring I gave him.'},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-2832"] = {
+			["base"] = {
+				["title"] = "Verna's Westfall Stew Recipe",
+				["text"] = {'Westfall Stew  \r\n\r\n3 parts Stringy Vulture Meat \r\n3 Goretusk Snouts \r\n3 Murloc Eyes \r\n3 Okra\r\n\r\nMix together and bring to a boil.  Let simmer for at least two hours before serving.'},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-15998"] = {
+			["base"] = {
+				["title"] = "Lewis' Note",
+				["text"] = {"Osric,\r\n\r\nPlease find below the list of armor of which we are in need:  \r\n\r\n10 Mail shirts\r\n20 Helms\r\n30 Armor Patches\r\n15 Mail Boots\r\n\r\nWe are, as always, in your debt.  And should Westfall ever be free of the thieves who threaten it, it would ease the guilt in my heart if I could invite you to my family's home, for a fine meal cooked from the bounty this land was once so well known.\r\n\r\n-Lewis\r\nQuartermaster, Sentinel Hill\r\n\r\n"},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["Item-254871"] = {
+			["base"] = {
+				["title"] = "Bloody Note",
+				["text"] = {"The cult hit us by surprise. Raani never saw it coming and Arvensus took a sword to the gut. For my part, I took a lightning bolt to the chest and blacked out. They never bothered to finish me off... I guess they assumed my wounds would do me in. When it's all said and done, I suspect they might.", "If anyone finds this, please, do your best to stop them. There were only a few left at the tower when I scribbled this note and crawled away.\r\n\r\nAlso, try and get Raani's lucky feather from his body. He liked to tell tall tales about how he plucked it from some kind of firebird and I think he'd want to make sure that it made its way back home.\r\n\r\nIf you are also able to retrieve Arvensus Shadowsong's family signet from his body, please do so. High Elder Shadowsong is his uncle and he would want it to be returned to the family.", "As soon as the fighting stopped, they started moving massive crates of windstones to the top of the tower. The leader, some kind of priest, said something about a ritual.\r\n\r\nI'm writing this note just in case I don't make it back to Shen'dar to warn Aonda, but they are doing something here. Something bad."},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["Item-282418"] = {
+			["base"] = {
+				["title"] = "Humming Recall Crystal",
+				["text"] = {'<As you touch the glowing crystal a draft of wind stirs around you, carrying the faint hint of spoken words.>\r\n\r\nThe Windshapers have been watching you closely, and the time has come for you to take your next steps as a shaman.\r\n\r\nThe wind spirits have vanished from Zephras Isle and the burden falls to us to brave the dangers of the elemental plane and bring them home. There is no more sacred duty, and our survival depends on it.\r\n\r\nSeek me out in Thendal Village, near the town center. I will see to it that you are trained.\r\n\r\n-Windshaper Boro, Shaman Trainer'},
+				["material"] = "Silver",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["Item-282420"] = {
+			["base"] = {
+				["title"] = "Folded Parchment",
+				["text"] = {'Greetings, Raene,\r\n\r\nSince the elemental wind spirits vanished, Zephras has been on a deadly precipice. The birds, the beasts, and even the roots beneath our feet call to us for aid.\r\n\r\nSeek me out on the ground floor of the great tree here in Thendal Village. I will counsel and train you in the druidic arts.\r\n\r\n-Xyton Silverwind, Druid Trainer'},
+				["material"] = "Parchment",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-1726"] = {
+			["base"] = {
+				["title"] = "Missing: Corporal Keeshan",
+				["text"] = {'Missing: Corporal Keeshan\r\n\r\nLast seen during the bloody battle at Stonewatch Keep, Corporal Keeshan was reported to have been dragged away by Blackrock Orcs.\r\n\r\nIt is believed that Corporal Keeshan is being held as a prisoner of war at the Blackrock encampment north of Lakeshire, just west of the pass leading to the Burning Steppes.\r\n\r\nBy mandate of Magistrate Solomon, anyone who aids in the recovery of Corporal Keeshan shall be rewarded by Marshal Marris.'},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData_Forever"] = {
+					[1433] = {0.2157125473022461, 0.4647695422172546},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["GameObject-175724"] = {
+			["base"] = {
+				["title"] = "Sargeras and the Betrayal",
+				["text"] = {"The eredar, an insidious race of devilish sorcerers, used their warlock magics to invade and enslave a number of worlds. The indigenous races of those worlds were mutated by the eredar's malevolent powers and turned into demons themselves.", "Though Sargeras' nearly limitless powers were more than enough to defeat the vile eredar, he was greatly troubled by the creatures' corruption and all-consuming evil. Incapable of fathoming such depravity, the great Titan began to slip into a brooding depression. Despite his growing unease, Sargeras rid the universe of the warlocks by trapping them within a corner of the Twisting Nether.", "While his confusion and misery deepened, Sargeras was forced to contend with another group intent on disrupting the Titans' order: the Nathrezim. This dark race of vampiric demons (also known as dreadlords) conquered a number of populated worlds by possessing their inhabitants and turning them to the shadow. ", 'Once Sargeras saw that his armies were amassed and ready to follow his every command, he launched his raging forces into the vastness of the Great Dark. He referred to his growing army as the Burning Legion. To this date, it is still unclear how many worlds they consumed and burned on their unholy Burning Crusade across the universe.', 'The nefarious, scheming dreadlords turned whole nations against one another by manipulating them into unthinking hatred and mistrust. Sargeras defeated the Nathrezim easily, but their corruption affected him deeply.', "Kil'jaeden the Deceiver was chosen to seek out the darkest races in the universe and recruit them into Sargeras' ranks. The second champion, Archimonde the Defiler, was chosen to lead Sargeras' vast armies into battle against any who might resist the Titan's will. ", "By the time Sargeras' madness had consumed the last vestiges of his valiant spirit, he believed that the Titans themselves were responsible for creation's failure. Deciding, at last, to undo their works throughout the universe, he resolved to form an unstoppable army that would set the physical universe aflame.", "Kil'jaeden's first move was to enslave the vampiric dreadlords under his terrible power. The dreadlords served as his personal agents throughout the universe, and they took pleasure in locating primitive races for their master to corrupt and bring into the fold. First amongst the dreadlords was Tichondrius the Darkener. Tichondrius served Kil'jaeden as the perfect soldier and agreed to bring Sargeras' burning will to all the dark corners of the universe.", "Over time, demonic entities made their way into the Titans' worlds from the Twisting Nether, and the Pantheon elected its greatest warrior, Sargeras, to act as its first line of defense. A noble giant of molten bronze, Sargeras carried out his duties for countless millennia, seeking out and destroying these demons wherever he could find them. Over the eons, Sargeras encountered two powerful demonic races, both of which were bent on gaining power and dominance over the physical universe.", 'His fellow Titans tried to persuade him of his error and calm his raging emotions, but he disregarded their more optimistic beliefs as self-serving delusions. Storming from their ranks forever, Sargeras set out to find his own place in the universe. Although the Pantheon was sorrowful at his departure, the Titans could never have predicted just how far their lost brother would go.', "Even Sargeras' titanic form became distorted from the corruption that plagued his once-noble heart. His eyes, hair, and beard erupted in fire, and his metallic bronze skin split open to reveal an endless furnace of blistering hate.", 'The mighty Archimonde also empowered agents of his own. Calling upon the malefic pit lords and their barbarous leader, Mannoroth the Destructor, Archimonde hoped to establish a fighting elite that would scour creation of all life.', "In his fury, Sargeras shattered the prisons of the eredar and the Nathrezim and set the loathsome demons free. These cunning creatures bowed before the dark Titan's vast rage and offered to serve him in whatever malicious ways they could. From the ranks of the powerful Eredar, Sargeras picked two champions to command his demonic army of destruction. ", "As doubt and despair overwhelmed Sargeras' senses, he lost all faith not only in his mission, but also in the Titans' vision of an ordered universe. Eventually he came to believe that the concept of order itself was folly, and that chaos and depravity were the only absolutes within the dark, lonely universe. "},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["mapData_Forever"] = {
+					[1413] = {0.6189104318618774, 0.3959800004959106},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["GameObject-175735"] = {
+			["base"] = {
+				["title"] = "The Guardians of Tirisfal",
+				["text"] = {'The sinister agents of the Burning Legion, who had been banished when the Well of Eternity collapsed, were lured back into the world by the heedless spellcasting of the magicians of Dalaran. Though these relatively weak demons did not appear in force, they did sew considerable confusion and chaos within the streets of Dalaran. ', "As the generations passed, Guardians defended the masses of humanity from the invisible threat of the Burning Legion throughout the lands of Arathor and Quel'Thalas. Arathor grew and prospered while the use of magic spread throughout the empire. Meanwhile, the Guardians kept careful watch for signs of demonic activity. ", 'These younger magicians began to practice magic for personal gain rather than out of any responsibility towards their fellows. ', "Upon hearing the Magocrats' news of demonic activity in Dalaran, the elves quickly dispatched their mightiest wizards to the human lands. The elven wizards studied the energy currents in Dalaran and made detailed reports of all demonic activity that they beheld. They concluded that although there were only a few demons loose in the world, the Legion itself would remain a dire threat so long as humans continued to wield the forces of magic. ", 'The original hundred magi, who were tutored in the ways of magic by the elves, expanded their powers and studied the mystic disciplines of spell-weaving in much greater detail. These magi, initially chosen for their strong wills and noble spirits, had always practiced their magic with care and responsibility; however, they passed their secrets and powers onto a newer generation that had no concept of the rigors of war or the necessity for self-restraint. ', "With the absence of trolls in the northlands, the elves of Quel'Thalas bent their efforts towards rebuilding their glorious homeland. The victorious armies of Arathor returned home to southlands of Strom. ", 'As the empire grew and expanded into new lands, the young magicians also spread out into the southlands. Wielding their mystical powers, the magicians protected their brethren from the wild creatures of the land and made it possible for new city-states to be constructed in the wilderness. Yet, as their powers grew, the magicians became ever more conceited and isolated from the rest of society.', 'Most of these demonic encounters were isolated events, and the ruling Magocrats did what they could to keep such events hidden from the public. The most powerful magicians were sent to capture the elusive demons, but they often found themselves hopelessly outmatched by the lone agents of the mighty Legion.', "The human society of Arathor grew and prospered, yet Thoradin, fearful that his kingdom would splinter apart if it overextended itself, maintained that Strom was the center of the Arathorian empire. After many peaceful years of growth and commerce, mighty Thoradin died of old age, leaving Arathor's younger generation free to expand the empire beyond the lands of Strom.", 'After a few months the superstitious peasantry began to suspect that their sorcerous rulers were hiding something terrible from them. Rumors of revolution began to sweep through the streets of Dalaran as the paranoid citizenry questioned the motives and practices of the magicians they had once admired. The Magocrats, fearing that the peasants would revolt and that Strom would take action against them, turned to the only group they felt would understand their particular problem: the elves.', "The Council of Silvermoon, which ruled over the elves of Quel'Thalas, entered into a secret pact with the Magocrat lords of Dalaran. The elves told the Magocrats about the history of ancient Kalimdor and of the Burning Legion, a history which still threatened the world. They informed the humans that so long as they used magic, they would need to protect their citizenry from the malicious agents of the Legion. ", "The society held its secret meetings in the shadowed Tirisfal Glades, where the high elves had first settled in Lordaeron. Thus, they named the secret sect the Guardians of Tirisfal. The mortal champions who were chosen to be Guardians were imbued with incredible powers of both elven and human magic. Though there would only ever be one Guardian at a time, they held such vast power that they could single-handedly fight back the Legion's agents wherever they were found in the world. ", 'The second Arathorian city-state of Dalaran was founded in the lands north of Strom. Many fledgling wizards left the restraining confines of Strom behind and traveled to Dalaran, where they hoped to use their new powers with greater freedom. These magicians used their skills to build up the enchanted spires of Dalaran and reveled in the pursuit of their studies. ', "The citizens of Dalaran tolerated the magicians' endeavors and built up a bustling economy under the protection of their magic-using defenders. Yet, as more and more magicians practiced their arts, the fabric of reality around Dalaran began to weaken and tear.", 'The Magocrats proposed the notion of empowering a single mortal champion who would utilize their powers in order to fight a never-ending secret war against the Legion. It was stressed that the majority of mankind could never know about the Guardians or the threat of the Legion for fear that they would riot in fear and paranoia. The elves agreed to the proposal and founded a secret society that would watch over the selection of the Guardian and help to stem the rise of chaos in the world.', 'The Guardian power was so great that only the Council of Tirisfal was allowed to choose potential successors to the mantle of Guardianship. Whenever a Guardian grew too old, or wearied of the secret war against chaos, the Council chose a new champion, and under controlled conditions, formally channeled the Guardian power into its new agent.'},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["mapData_Forever"] = {
+					[1453] = {0.7598997950553894, 0.3212841749191284},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["GameObject-175855"] = {
+			["base"] = {
+				["title"] = "Empires' Fall",
+				["text"] = {"Eventually, the night elves were burned by the arcane fires they had sought to control. Their reckless use of magic had lured the demonic Burning Legion to the world. The demons crushed much of the night elves' civilization. Though there are no records to indicate that the Legion attacked either troll civilization, it is likely that battles took place across the breadth of the continent. ", "The night elves systematically dismantled the troll's defenses and supply chains. The trolls, unable to counter the elves' destructive magics, buckled under the onslaught. The night elves proved to be every bit as cunning and bloodthirsty as the savage trolls -- incurring the latter race's eternal hatred and disdain. The Gurubashi and Amani empires fragmented within only a few short years.", "Aside from their shadowy origins, it is clear that the night elves came to power soon after their discovery of the Well of Eternity. Despite the trolls' attempts to keep them from expanding their territories, the night elves built up a mighty empire that expanded rapidly across primordial Kalimdor. Wielding fierce magics never before imagined by the superstitious trolls, the night elves had little trouble doing what the evil aqir could never do: topple the two greatest empires in the world.", "Thus, great chunks of both the Amani and Gurubashi Empires still exist in the present day lands of Quel'Thalas and Stranglethorn (respectively). The Azj'Aqir kingdoms of Azjol-Nerub and Ahn'Qiraj have also survived in present day Northrend and Tanaris (respectively).   \r\n\r\nBoth troll civilizations recoiled from the vast destruction of the primordial world they had known. The dauntless trolls rebuilt their ravaged cities and set about to reclaim some of their former power.", 'At the end of this terrible conflict -- known as the War of the Ancients -- the Well of Eternity imploded. The resulting shockwave shattered the greater landmass of Kalimdor. The center of the continent was blasted beneath the sea, leaving only a small group of broken, single continents.'},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["mapData_Forever"] = {
+					[1453] = {0.3834213018417358, 0.6265069842338562},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["GameObject-570207"] = {
+			["base"] = {
+				["title"] = "Archmage Khadgar",
+				["text"] = {'Archmage Khadgar of the Kirin Tor\r\n\r\nFormer apprentice of Medivh. Supreme Commander of the Alliance Expedition that marched into the orc homeworld of Draenor. Presumed deceased. \r\n\r\nNever did one so selflessly delve into the dark heart of magic and warfare. We wish you well, bold wanderer. Wherever you are. \r\n\r\n- Antonidas - Archmage of Dalaran'},
+				["material"] = "Parchment",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData_Forever"] = {
+					[1416] = {0.1108731627464294, 0.6342337131500244},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-617704"] = {
+			["base"] = {
+				["title"] = "Bloody Note",
+				["text"] = {"The cult hit us by surprise. Raani never saw it coming and Arvensus took a sword to the gut. For my part, I took a lightning bolt to the chest and blacked out. They never bothered to finish me off... I guess they assumed my wounds would do me in. When it's all said and done, I suspect they might.", "If anyone finds this, please, do your best to stop them. There were only a few left at the tower when I scribbled this note and crawled away.\r\n\r\nAlso, try and get Raani's lucky feather from his body. He liked to tell tall tales about how he plucked it from some kind of firebird and I think he'd want to make sure that it made its way back home.\r\n\r\nIf you are also able to retrieve Arvensus Shadowsong's family signet from his body, please do so. High Elder Shadowsong is his uncle and he would want it to be returned to the family.", "As soon as the fighting stopped, they started moving massive crates of windstones to the top of the tower. The leader, some kind of priest, said something about a ritual.\r\n\r\nI'm writing this note just in case I don't make it back to Shen'dar to warn Aonda, but they are doing something here. Something bad."},
+				["material"] = "Parchment",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["mapData_Forever"] = {
+					[2521] = {0.4238351583480835, 0.6204122304916382},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-658837"] = {
+			["base"] = {
+				["title"] = "The Shal'nan's Abdication",
+				["text"] = {'"Thank you for everything you\'ve sacrificed, everything you\'ve built, and everything you\'ve taught me about how to be a better person. You all represent the unshakable resolve of the shen\'dorei people. We will thrive in this beautiful new world and reach new heights together."', '"I will continue to serve our people here on Zephras, and I will devote much of my time to furthering our relationship with the wind spirits to whom we owe so much. The elemental spirits are wondrous and wise, and we still have so much to learn from one another.\r\n\r\nI am devoted to seeing the shen\'dorei persevere in this beautiful and strange realm--and to seeing that we do so freely, justly, and unshackled by tyranny."', '"With the founding of our new home here in the clouds, we embark on a new age of peace and prosperity for our people.\r\n\r\nYou have all endured so much to make it here. I have watched our people grow into a hardy, self-reliant society, which fills me with a pride I cannot hope to describe in full.\r\n\r\nThe greatest part of that pride, however, is that it has become clear to me that I no longer have any need to act as our singular ruler."', '"Thus, I am abdicating my position as your leader and handing over governance of our Skyborne Isles to a carefully chosen council of provincial elders. After the transition period is over, you will have the opportunity to choose your own leaders, and your voices will determine the direction we take from here on. \r\n\r\nYou have demonstrated the ability to lead yourselves better than any king, queen, prince, or other individual sovereign ever could--and that fills me with profound pride."', '<You touch the small white crystal and you can hear faint sounds on the wind. This is an audio recording of some sort.>\r\n\r\n"An excerpt from the Shal\'nan\'s speech at the groundbreaking ceremony for the Shrine of the Four Winds, Zephras Isle."'},
+				["material"] = "Silver",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["mapData_Forever"] = {
+					[2521] = {0.4507499933242798, 0.4477561712265015},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-658838"] = {
+			["base"] = {
+				["title"] = "The Rebellion In Eldre'Thalas, Part 1",
+				["text"] = {'"In the days immediately following the turmoil at the Well of Eternity, there was much unrest in Eldre\'Thalas. The demonic forces that poured from the Well nearly overwhelmed the beleaguered elvish kingdoms, ravaging the land and killing indiscriminately. If not for the intervention of the demigod Goldrinn and the sacrifice of countless kaldorei heroes, the kingdom of Eldre\'Thalas would surely have been overrun and destroyed."', '"The young Prince Tortheldrin intended to build a network of crystalline foci and use them to siphon and shape a new font of power for our people to draw upon. The point of contention for many was that he intended to use the very power that nearly destroyed our world to accomplish this. He meant to siphon this power from a demon world within the Twisting Nether itself. \r\n\r\nMany rightly feared this could open a new door through which demonic entities might gain once again access to our world."', '<You touch the small white crystal and you can hear faint sounds on the wind. This is an audio recording of some sort.>\r\n\r\n"The Rebellion in Eldre\'Thalas, Part 1"', '"After the climax of the war and the Great Sundering of Kalimdor, the new reality of a world bereft of the sustaining magic on which our people depended quickly became apparent. The ruling house of Eldre\'Thalas--House Tortheldrin--rapidly set plans in motion to ensure stability and continuity of our way of life. However, the methods they intended to employ left many deeply concerned."'},
+				["material"] = "Silver",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["mapData_Forever"] = {
+					[2521] = {0.4980966448783875, 0.5640525221824646},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-696295"] = {
+			["base"] = {
+				["title"] = "Kurdran Wildhammer",
+				["text"] = {"Kurdran Wildhammer\r\n\r\nRenowned Dragon Fighter. Gryphon Master of the Aerie Peak. Commander of the Gryphon Rider Division attached to the Alliance Expedition that marched into the orc homeworld of Draenor. Presumed deceased.\r\n\r\nWe will hear Sky-Ree's calls upon the winds. We will hear your hammer thunder across the mountaintops. Ride hard into the hereafter, brother. The halls of our ancestors await you.\r\n\r\n- Falstad Wildhammer - Lord of Aerie Peak"},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData_Forever"] = {
+					[1453] = {0.7113991975784302, 0.8746201992034912},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-696296"] = {
+			["base"] = {
+				["title"] = "General Turalyon",
+				["text"] = {"General Turalyon\r\n\r\nFormer Lieutenant to Lord Anduin Lothar. Knight of the Silver Hand. High General of the Alliance Expedition that marched into the orc homeworld of Draenor. Presumed deceased.\r\n\r\nEsarus thar no'Darador' - By Blood and Honor We Serve. \r\nYou were the right hand of justice and virtue, old friend. Your name will be honored in our halls always.\r\n\r\n- Lord Uther the Lightbringer - Knight of the Silver Hand"},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData_Forever"] = {
+					[1453] = {0.6903787851333618, 0.8241615295410156},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-696297"] = {
+			["base"] = {
+				["title"] = "Ranger Captain Alleria Windrunner",
+				["text"] = {"Ranger Captain Alleria Windrunner\r\n\r\nRenowned Troll Hunter of Quel'Thalas. Lead Scout and Intelligence Agent for the Alliance Expedition that marched into the orc homeworld of Draenor. Presumed deceased.\r\n\r\nYour heart flew straight as any arrow upon the wind, sister. You were the brightest of our Order. You were the most beloved of our kin. \r\n\r\n- Sylvanas Windrunner - Ranger General of Quel'Thalas"},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData_Forever"] = {
+					[1453] = {0.7049093842506409, 0.8416173458099365},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-696298"] = {
+			["base"] = {
+				["title"] = "Danath Trollbane",
+				["text"] = {'Danath Trollbane\r\n\r\nMilitia Commander of Stromgarde.Tactical Advisor to General Turalyon, Force Commander of the Alliance Expedition that marched into the orc homeworld of Draenor. Presumed deceased.\r\n\r\nWe honor your memory, nephew, and your sacrifice. Since the founding of our glorious empire, the path to valor has always been drenched with the blood of heroes. \r\n\r\n- Thoras Trollbane, Lord of Stromgarde'},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData_Forever"] = {
+					[1453] = {0.7181814312934875, 0.867289662361145},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-696299"] = {
+			["base"] = {
+				["title"] = "Archmage Khadgar of the Kirin Tor",
+				["text"] = {'Archmage Khadgar of the Kirin Tor\r\n\r\nFormer apprentice of Medivh. Supreme Commander of the Alliance Expedition that marched into the orc homeworld of Draenor. Presumed deceased. \r\n\r\nNever did one so selflessly delve into the dark heart of magic and warfare. We wish you well, bold wanderer. Wherever you are. \r\n\r\n- Antonidas - Archmage of Dalaran'},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData_Forever"] = {
+					[1453] = {0.6978616118431091, 0.8491341471672058},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-696392"] = {
+			["base"] = {
+				["title"] = "Archbishop Alonsus Faol",
+				["text"] = {"Archbishop Alonsus Faol\r\n\r\nBenevolent patron of the Church of Light.\r\n\r\nThough he began his good work in Stratholme, Lordaeron, Archbishop Faol was a great friend to the people of Stormwind. In the dark days after the Second War, he helped to reform the Brotherhood of Northshire and raised vast funds to rebuild Stormwind city itself.\r\n\r\nThis Cathedral stands not only as a bastion of the Holy Light, but as a lasting testament to one man's noble spirit and generosity. "},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData_Forever"] = {
+					[1453] = {0.5544083118438721, 0.5574654340744019},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-696503"] = {
+			["base"] = {
+				["title"] = "King Llane I of the House of Wrynn",
+				["text"] = {'King Llane I of the House of Wrynn\r\n\r\nLiege Lord of Stormwind \r\n\r\nDefender of Azeroth'},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData_Forever"] = {
+					[1453] = {0.6927711367607117, 0.2953462600708008},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-696504"] = {
+			["base"] = {
+				["title"] = "Grand Admiral Daelin Proudmoore",
+				["text"] = {'Commander of the Alliance Fleets\r\n\r\nFriend of Stormwind\r\n'},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData_Forever"] = {
+					[1453] = {0.698014497756958, 0.2970863580703735},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-696505"] = {
+			["base"] = {
+				["title"] = "Lady Mara Fordragon",
+				["text"] = {'Lady Mara Fordragon\r\n\r\nHigh Clerist of Stormwind\r\n\r\nPatron of the Refugees who fled to Lordaeron after the First War.\r\n\r\nShe was the bright mother of our future. May she rest in the Light.\r\n'},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData_Forever"] = {
+					[1453] = {0.6921582818031311, 0.3033461570739746},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+
+		-- user submission #23
+
+		
+		["Item-1410"] = {
+			["base"] = {
+				["title"] = "Ebonlocke's Response to Solomon",
+				["text"] = {"Your Honor--\r\n\r\nI regret to inform you that the Night Watch is unable to leave its post in Darkshire at this time.  Perhaps you were unaware that Stormwind no longer provides military support in this region.  The Night Watch has been formed and trained entirely by the people of the forest in order to defend Darkshire in Stormwind's absence.  Without the Watch, the town would fall.  I wish you luck with your plight.\r\n\r\n--Lord Ello Ebonlocke"},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+		},
+		["Item-251522"] = {
+			["base"] = {
+				["title"] = "Blood-Stained Letter",
+				["text"] = {"My dearest Tabitha,\r\n\r\nHow strange it is to foretell my own death. I've written this note as I do not know the hour when fate will claim me and although I know that this is a poor apology for a proper speech, my quill fails in its attempt to convey my pain for departing from you.\r\n\r\nEvery day I wake to the sorrow I failed to protect you from. I am sorry I could not protect our dear boy and I am sorry that my grieving has fallen into a trap from which it cannot escape.\r\n\r\nYou are my love, and my confidante and my life counted for more than it could alone. Every week when I venture into the ruins of our once proud home, I fear it would be my last, and every time I am thankful I have you to return to.\r\n\r\nI pray we are reunited, if even for a moment."},
+				["material"] = "Parchment",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["Item-285356"] = {
+			["base"] = {
+				["title"] = "Advisor Emerson's Instructions",
+				["text"] = {'Your first stop should be Ironforge which can be reached via the technological marvel known as the Deeprun Tram.\r\n\r\nYou can find the entrance to the tram in the Dwarven District here in Stormwind, just to the southwest of the keep. The tram will transport you safely to the heart of Ironforge City.\r\n\r\nOnce you arrive, explore the city and locate High Tinker Mekkatorque and King Magni Bronzebeard in Tinker Town and the Great Forge, respectively. Introduce yourself as an agent of the Skyborne and they will show you their hospitality.', 'Greetings,\r\n\r\nAs a guest of the Alliance, you have been given leave to travel freely throughout Alliance lands. \r\n\r\nThis document will serve as a guide to help you reach the other member cities of our alliance.', "The city of Darnassus can be found across the sea, off the coast of northern Kalimdor. The city itself rests at the top of the great tree, Teldrassil.\r\n\r\nThe safest route for you currently is via the harbor on the west side of Stormwind. Take the ship departing from the southernmost dock to the port of Auberdine.\r\n\r\nUpon arriving, proceed to the north side of the Auberdine docks and take the ship there to Ru'theran Village. This village contains a magical transporter that will take you into the city itself.\r\n\r\nExplore Darnassus and seek out Tyrande Whisperwind, the High Priestess of Elune.", "After you've become acquainted with the other leaders of the alliance, Lord Fordragon has requested that you report back to him here in the keep.\r\n\r\nI wish you good fortune in your journeys, Skyborne."},
+				["material"] = "Parchment",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-659313"] = {
+			["base"] = {
+				["title"] = "Alden Amberhall",
+				["text"] = {'Alden Amberhall\r\nStudent of Antonidas, Archmage of Dalaran\r\nMagical advisor to the 1st Division of the Brotherhood of the Horse\r\n\r\nSurvived the charge lifting the siege on Farholde. Slain by a black dragon on an expedition west. Survived by his daughter, sole survivor of the expedition.\r\n\r\nYou were the best father and teacher a young woman could ask for.\r\n\r\n-Ashe Amberhall'},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData"] = {
+					[2548] = {0.594563364982605, 0.8505560755729675},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-667573"] = {
+			["base"] = {
+				["title"] = "Knights of the Brotherhood",
+				["text"] = {'Here we honor the fallen\r\nBrave souls who paid the ultimate price\r\nThey gave their lives for our freedom\r\nWe stand in their shadows, forever grateful\r\nTheir sacrifice endures, their memory lives'},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData"] = {
+					[2548] = {0.6358226537704468, 0.8329676389694214},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-667574"] = {
+			["base"] = {
+				["title"] = "Fern Crimsonleaf",
+				["text"] = {'Fern Crimsonleaf\r\nLead Intelligence Agent for the 2nd Division of the Brotherhood of the Horse\r\nFormer pupil of Ravenholdt\r\n\r\nInfiltrated and assassinated Horde leadership camped outside Farholde prior to the charge that broke the siege. The corpses of the fallen orcs and her dagger the only clues to her success. Whereabouts unknown. Presumed dead.\r\n\r\nA silent blade in the dark can be worth ten on the battlefield.'},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData"] = {
+					[2548] = {0.6145596504211426, 0.8516400456428528},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-668544"] = {
+			["base"] = {
+				["title"] = "A Wartorn Land and The Brotherhood",
+				["text"] = {"The Horde, to their credit, rallied quickly. The Brotherhood may have had the upper hand but the Horde still had them outnumbered. It was a costly battle on both sides, but without strong leadership the Horde forces were routed and fled back to their stronghold in the Krol'dok. The siege was broken.", "During the First War, as the Horde expanded their territory out from the Dark Portal, they came upon the prosperous settlement of Sunnyglade. The Horde descended upon the town and overwhelmed its defenses, destroying everything save the town's mage tower. Those that did not die in the battle were rounded up and led away to a life of slavery. Only a handful of families were able to escape to the northeast. They were fortunate enough to find a lake secluded by the mountains. It was there that they made the uneasy settlement of Windstead, ever fearful that the Horde would one day find them.", "The Twilight's Hammer grew restless in their mound and started to venture out. Skirmishes with the Brotherhood became more frequent. This put Farholde on edge and it sent word to Windstead that in the event of a major battle they would be unable to protect them. The warning was shrugged off due to years of seclusion about their quiet lake. After another skirmish, this one much closer to Windstead, it was clear the Horde looked to expand their influence over the area. Farholde knew the next attack would come soon.", "The Brotherhood's detachment was forced to retreat in short order. They withdrew to the south eventually stumbling upon the fledgling towns of Farholde and Meadowsbrook which helped to bolster their forces and secure a foothold in the region. Reports that Cho'Gall had arrived to lick his wounds after witnessing the fall of Gul'dan were but a whisper. The Horde kept mostly to itself for a time. This allowed the people of Farholde to expand with only small skirmishes over the years. Ever wary of the threats in the region, the people of Farholde maintained an alert posture.", "During that night the stealthy assassin Fern Crimsonleaf crept out of the keep and made her way into the Horde leadership's camp. She slit their throats ensuring the chaos that now spread throughout the Horde ranks. Seeing the enemy so disjointed emboldened the rest of the Brotherhood's forces. They charged with zeal that belied their weariness. Battle was joined all throughout the fields before Farholde's walls.", 'After a decisive victory the Horde withdrew to the North. The following morning the scouts from Farholde led by Demar Brant and Sir Howard rushed to survey the carnage of the once again smoldering ruins. Amongst the embers and smoke Roderick clung to life, losing an arm in the defeat. They knew what was to come. Demar Brant then ordered ditches and additional fortifications to be constructed and all were to shelter within the walls until further notice.', "The Horde, emboldened by easy victories, sent a much larger force south to finish off the humans of the region. The forces clashed on the field just beyond the gates of Farholde. The Brotherhood's forces used tactical retreats behind layered defensive positions to make the Horde forces pay dearly for any advancement. Finally, the Brotherhood was forced back behind their gate and the portcullis dropped sealing them inside and thus began the Siege of Farholde.", "Under Demar's command, Sir Howard the Stout together with his second Lady Isolde Brightlance, guidon-bearer of the 2nd Division and Brienne Stormhart the stable master would lead the charge and ready themselves for the coming battle. They were accompanied by the mage Alden Amberhall. With word of the counter attack spreading through the keep Roderick the Unbroken was not going to be left out. He strapped a shield where his arm used to be and made for the front line.", 'Upon hearing of the sacking of Sunnyglade and the capture of its people, a detachment of knights were sent on a daring rescue. The mission was successful, but the victors found their return route cut off by the Horde. On their own without any other choice the knights and the rescued survivors of Sunnyglade decided to dig in. They initially founded Meadowsbrook and later fortified a coastal island using its natural defenses to their advantage, founding the town of Farholde.', 'Rosalind Ashwood made the ride herself to warn the village of the impending attack. This time the villagers were moved to act, reluctantly. Several families left to travel down the coast, away from the possible coming attack. Other stubborn families refused to leave their precious valuables behind. They loaded wagons and took the road leading south to the northernmost Farholde watchtower. Rosalind, dutybound, led them with all haste.', 'Vigilant days and uneasy nights passed and bled together. The Horde leadership was content to starve the Brotherhood out, though this made the grunts restless. Sir Howard had expressed the desire to make a counter assault to break the siege. At first his daring plan fell on deaf ears but as the days crept by more and more felt he was right. After bringing a small band of likeminded warriors to his side they set about solidifying their plan of attack.', "Sir Howard and his retinue suffered heavy casualties. Lady Brightlance held the line with her commander and even in death she refused to let her banner fall. Of those that led the initial charge, only the mage Alden Amberhall survived the battle that day. Fern's whereabouts remain unknown.", "Her suspicions were proven correct. Just as they made it to the northern watchtower the Horde attacked the beleaguered villagers. Not a single soul survived that brutal assault. The Horde pushed south to the Ruins of Sunnyglade, occupied by a small force from the Brotherhood. Horde forces poured into the ruins and the Brotherhood's forces were hard pressed. They fell back to a bridge to funnel the much larger force. Roderick the Unbroken held the line while sending a scout to inform Farholde of the attack.", 'While the Brotherhood was focused on the fighting at the front gate, a contingent of the Horde snuck around and attacked from the water. The defenders were able to thwart this attack but not before the Horde had sabotaged any seaworthy vessels moored there. Without the use of the sea to escape or get word out the amount of time they could hold out was drastically cut down. Rations were spread thin due to the many families that took refuge within the walls. Morale was already low and dropped fast due to the recent losses throughout the region.', 'At dawn, as the sun rose over the walls, the gates of Farholde opened and out charged Sir Howard and his retinue. The front line of orc grunts saw nothing but the mounted silhouettes of the bravest, heard nothing but the thunder of hooves and cries of battle before they would be swept away in the sudden blinding assault. The Horde had been lulled into lethargy. The rank and file fell into disarray awaiting battle orders that never came.', "During the Second War, as the Alliance pushed the Horde back toward the Dark Portal, a band of Twilight's Hammer ogres and several orcs of the Stormreaver clan made their way East, fleeing whatever horrors they managed to escape in the Tomb of Sargeras. With the Alliance on high alert these movements did not go unnoticed. A detachment of the Brotherhood of the Horse was sent to destroy this wayward Horde force. As the battle was joined the already established ogre mound in the region bolstered the ranks of the Horde."},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["mapData"] = {
+					[2548] = {0.6209926605224609, 0.8570191860198975},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-696295"] = {
+			["base"] = {
+				["title"] = "Kurdran Wildhammer",
+				["text"] = {"Kurdran Wildhammer\r\n\r\nRenowned Dragon Fighter. Gryphon Master of the Aerie Peak. Commander of the Gryphon Rider Division attached to the Alliance Expedition that marched into the orc homeworld of Draenor. Presumed deceased.\r\n\r\nWe will hear Sky-Ree's calls upon the winds. We will hear your hammer thunder across the mountaintops. Ride hard into the hereafter, brother. The halls of our ancestors await you.\r\n\r\n- Falstad Wildhammer - Lord of Aerie Peak"},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData"] = {
+					[1453] = {0.7138431072235107, 0.8746244311332703},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+		["GameObject-696376"] = {
+			["base"] = {
+				["title"] = "Alliance Military Ranks",
+				["text"] = {'<HTML>\r\n<BODY>\r\n<H1 align="center">ALLIANCE MILITARY RANKS</H1><BR/>\r\n<P align="center">OFFICERS</P><BR/>\r\n<P align="center">Grand Marshal</P>\r\n<P align="center">Field Marshal</P>\r\n<P align="center">Marshal</P>\r\n<P align="center">Commander</P>\r\n<P align="center">Lieutenant Commander</P>\r\n<P align="center">Knight-Champion</P>\r\n<P align="center">Knight-Captain</P>\r\n<P align="center">Knight-Lieutenant</P>\r\n<P align="center">Knight</P><BR/>\r\n<P align="center">ENLISTED</P><BR/>\r\n<P align="center">Sergeant Major</P>\r\n<P align="center">Master Sergeant</P>\r\n<P align="center">Sergeant</P>\r\n<P align="center">Corporal</P>\r\n<P align="center">Private</P>\r\n</BODY>\r\n</HTML>'},
+				["material"] = "Bronze",
+				["pageCount"] = 0,
+				["singlePage"] = true,
+				["mapData"] = {
+					[1453] = {0.7602864503860474, 0.6597223281860352},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+				["forever"] = true,
+			},
+		},
+
+		-- end of user submission #23
+
 
 		--put stuff above here
 	},
