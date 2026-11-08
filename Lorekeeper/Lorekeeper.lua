@@ -148,6 +148,7 @@ end
 
 local ignoredKeys = {
 	mapData = true,
+	mapData_Forever = true,
 	material = true,
 	hasRead = true,
 	isFavorite = true,
@@ -157,6 +158,7 @@ local ignoredKeys = {
 	isHidden = true,
 	expansion = true,
 	source = true,
+	forever = true,
 };
 
 -- Helper function to check if a key is in the ignored list
@@ -605,7 +607,7 @@ function Lorekeeper.Initialize:Events(event, arg1, arg2)
 							end
 						end
 					end
-					if LoreK_DB["text"][key]["base"] and LK["LocalData"]["text"][itemID] then
+					if LoreK_DB["text"][key]["base"] and LK["LocalData"]["text"][key] and LK["LocalData"]["text"][key]["base"] then
 						if LK.tCompareDeez(LoreK_DB["text"][key]["base"], LK["LocalData"]["text"][key]["base"]) then -- entry exists, but it's a copy of the LocalData, local data probably got updated, so clean SV bloat but preserve hasRead/isFavorite/mapData
 							LoreK_DB["text"][key]["base"]["text"] = nil;
 							LoreK_DB["text"][key]["base"]["title"] = nil;
