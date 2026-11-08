@@ -326,6 +326,63 @@ end)
 ItemsTextDisplayFrame.AddTextButton:Disable()
 ItemsTextDisplayFrame.AddTextButton:Hide()
 
+ItemsTextDisplayFrame.LibraryButton = CreateFrame("Button", nil, ItemsTextDisplayFrame, "SharedButtonTemplate");
+local LibraryButton = ItemsTextDisplayFrame.LibraryButton;
+LibraryButton:SetPoint("BOTTOM", ItemsTextDisplayFrame, "BOTTOM", 0, 10);
+LibraryButton:SetSize(140, 25);
+LibraryButton:SetText(LK["Library"]);
+LibraryButton:Hide();
+
+local function EntryHasText(entry)
+	if type(entry) ~= "table" then return false; end
+	for variantKey, variant in pairs(entry) do
+		if (variantKey == "base" or (type(variantKey) == "string" and variantKey:find("^copy_"))) and type(variant) == "table" and type(variant.text) == "table" and next(variant.text) then
+			return true;
+		end
+	end
+	return false;
+end
+
+local function GetLibraryEntryKey(itemID)
+	if not itemID then return; end
+	local key = "Item-" .. itemID;
+
+	local localText = LK["LocalData"] and LK["LocalData"]["text"];
+	if localText and EntryHasText(localText[key]) then
+		return key;
+	end
+
+	local svText = LoreK_DB and LoreK_DB["text"];
+	if svText and EntryHasText(svText[key]) then
+		return key;
+	end
+end
+
+local function LayoutBottomButtons()
+	local edit = ItemsTextDisplayFrame.AddTextButton;
+	edit:ClearAllPoints();
+	LibraryButton:ClearAllPoints();
+	if edit:IsShown() and LibraryButton:IsShown() then
+		edit:SetPoint("BOTTOMRIGHT", ItemsTextDisplayFrame, "BOTTOM", -3, 10);
+		LibraryButton:SetPoint("BOTTOMLEFT", ItemsTextDisplayFrame, "BOTTOM", 3, 10);
+	else
+		edit:SetPoint("BOTTOM", ItemsTextDisplayFrame, "BOTTOM", 0, 10);
+		LibraryButton:SetPoint("BOTTOM", ItemsTextDisplayFrame, "BOTTOM", 0, 10);
+	end
+end
+
+local function UpdateLibraryButton(itemID)
+	LibraryButton.libraryKey = GetLibraryEntryKey(itemID);
+	LibraryButton:SetShown(LibraryButton.libraryKey ~= nil);
+	LayoutBottomButtons();
+end
+
+LibraryButton:SetScript("OnClick", function(self)
+	if self.libraryKey then
+		LoreKGUI.SelectAndShowEntry(self.libraryKey);
+	end
+end);
+
 ItemsTextDisplayFrame.Type_ID = ItemsTextDisplayFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
 ItemsTextDisplayFrame.Type_ID:SetPoint("BOTTOMRIGHT", LoreKMainframe, "BOTTOMRIGHT", -15, 5)
 
@@ -400,6 +457,8 @@ function LoreKGUI.RefreshItemsText(itemID)
 	else
 		ItemsTextDisplayFrame.AddTextButton:Hide()
 	end
+
+	UpdateLibraryButton(itemID);
 
 	if LoreK_DB.settings.debugAdvanced and itemID then
 		ItemsTextDisplayFrame.Type_ID:SetText("itemID-"..itemID)
