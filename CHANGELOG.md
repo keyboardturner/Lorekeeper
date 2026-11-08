@@ -1,3 +1,9 @@
+[Full Changelog & Previous Releases](https://github.com/keyboardturner/Lorekeeper/releases)
+
+# 0.4.8a
+
+Some data fixes/cleanup, added Forever filter option and removed unobtainable filtering from Forever client
+
 # 0.4.8
 
 Localdata update 13 - (50 personal entries + 10 Anonymous User 23 entries)
