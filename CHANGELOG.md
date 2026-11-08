@@ -4,6 +4,10 @@
 
 Some data fixes/cleanup, added Forever filter option and removed unobtainable filtering from Forever client
 
+Added a button to Items tab when readable content from the Library tab is available
+
+Updated cinematic tab to include an entry for Forever
+
 # 0.4.8
 
 Localdata update 13 - (50 personal entries + 10 Anonymous User 23 entries)
