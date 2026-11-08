@@ -2389,6 +2389,19 @@ LK["LocalData"] = {
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
 			},
+			["copy_1"] = {
+				["title"] = "The Guardians of Tirisfal",
+				["text"] = {'The sinister agents of the Burning Legion, who had been banished when the Well of Eternity collapsed, were lured back into the world by the heedless spellcasting of the magicians of Dalaran. Though these relatively weak demons did not appear in force, they did sew considerable confusion and chaos within the streets of Dalaran. ', "As the generations passed, Guardians defended the masses of humanity from the invisible threat of the Burning Legion throughout the lands of Arathor and Quel'Thalas. Arathor grew and prospered while the use of magic spread throughout the empire. Meanwhile, the Guardians kept careful watch for signs of demonic activity. ", 'These younger magicians began to practice magic for personal gain rather than out of any responsibility towards their fellows. ', "Upon hearing the Magocrats' news of demonic activity in Dalaran, the elves quickly dispatched their mightiest wizards to the human lands. The elven wizards studied the energy currents in Dalaran and made detailed reports of all demonic activity that they beheld. They concluded that although there were only a few demons loose in the world, the Legion itself would remain a dire threat so long as humans continued to wield the forces of magic. ", 'The original hundred magi, who were tutored in the ways of magic by the elves, expanded their powers and studied the mystic disciplines of spell-weaving in much greater detail. These magi, initially chosen for their strong wills and noble spirits, had always practiced their magic with care and responsibility; however, they passed their secrets and powers onto a newer generation that had no concept of the rigors of war or the necessity for self-restraint. ', "With the absence of trolls in the northlands, the elves of Quel'Thalas bent their efforts towards rebuilding their glorious homeland. The victorious armies of Arathor returned home to southlands of Strom. ", 'As the empire grew and expanded into new lands, the young magicians also spread out into the southlands. Wielding their mystical powers, the magicians protected their brethren from the wild creatures of the land and made it possible for new city-states to be constructed in the wilderness. Yet, as their powers grew, the magicians became ever more conceited and isolated from the rest of society.', 'Most of these demonic encounters were isolated events, and the ruling Magocrats did what they could to keep such events hidden from the public. The most powerful magicians were sent to capture the elusive demons, but they often found themselves hopelessly outmatched by the lone agents of the mighty Legion.', "The human society of Arathor grew and prospered, yet Thoradin, fearful that his kingdom would splinter apart if it overextended itself, maintained that Strom was the center of the Arathorian empire. After many peaceful years of growth and commerce, mighty Thoradin died of old age, leaving Arathor's younger generation free to expand the empire beyond the lands of Strom.", 'After a few months the superstitious peasantry began to suspect that their sorcerous rulers were hiding something terrible from them. Rumors of revolution began to sweep through the streets of Dalaran as the paranoid citizenry questioned the motives and practices of the magicians they had once admired. The Magocrats, fearing that the peasants would revolt and that Strom would take action against them, turned to the only group they felt would understand their particular problem: the elves.', "The Council of Silvermoon, which ruled over the elves of Quel'Thalas, entered into a secret pact with the Magocrat lords of Dalaran. The elves told the Magocrats about the history of ancient Kalimdor and of the Burning Legion, a history which still threatened the world. They informed the humans that so long as they used magic, they would need to protect their citizenry from the malicious agents of the Legion. ", "The society held its secret meetings in the shadowed Tirisfal Glades, where the high elves had first settled in Lordaeron. Thus, they named the secret sect the Guardians of Tirisfal. The mortal champions who were chosen to be Guardians were imbued with incredible powers of both elven and human magic. Though there would only ever be one Guardian at a time, they held such vast power that they could single-handedly fight back the Legion's agents wherever they were found in the world. ", 'The second Arathorian city-state of Dalaran was founded in the lands north of Strom. Many fledgling wizards left the restraining confines of Strom behind and traveled to Dalaran, where they hoped to use their new powers with greater freedom. These magicians used their skills to build up the enchanted spires of Dalaran and reveled in the pursuit of their studies. ', "The citizens of Dalaran tolerated the magicians' endeavors and built up a bustling economy under the protection of their magic-using defenders. Yet, as more and more magicians practiced their arts, the fabric of reality around Dalaran began to weaken and tear.", 'The Magocrats proposed the notion of empowering a single mortal champion who would utilize their powers in order to fight a never-ending secret war against the Legion. It was stressed that the majority of mankind could never know about the Guardians or the threat of the Legion for fear that they would riot in fear and paranoia. The elves agreed to the proposal and founded a secret society that would watch over the selection of the Guardian and help to stem the rise of chaos in the world.', 'The Guardian power was so great that only the Council of Tirisfal was allowed to choose potential successors to the mantle of Guardianship. Whenever a Guardian grew too old, or wearied of the secret war against chaos, the Council chose a new champion, and under controlled conditions, formally channeled the Guardian power into its new agent.'},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["mapData_Forever"] = {
+					[1453] = {0.7598997950553894, 0.3212841749191284},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
 		},
 		["Item-145292"] = {
 			["base"] = {
@@ -5526,6 +5539,19 @@ LK["LocalData"] = {
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
 			},
+			["copy_1"] = {
+				["title"] = "Empires' Fall",
+				["text"] = {"Eventually, the night elves were burned by the arcane fires they had sought to control. Their reckless use of magic had lured the demonic Burning Legion to the world. The demons crushed much of the night elves' civilization. Though there are no records to indicate that the Legion attacked either troll civilization, it is likely that battles took place across the breadth of the continent. ", "The night elves systematically dismantled the troll's defenses and supply chains. The trolls, unable to counter the elves' destructive magics, buckled under the onslaught. The night elves proved to be every bit as cunning and bloodthirsty as the savage trolls -- incurring the latter race's eternal hatred and disdain. The Gurubashi and Amani empires fragmented within only a few short years.", "Aside from their shadowy origins, it is clear that the night elves came to power soon after their discovery of the Well of Eternity. Despite the trolls' attempts to keep them from expanding their territories, the night elves built up a mighty empire that expanded rapidly across primordial Kalimdor. Wielding fierce magics never before imagined by the superstitious trolls, the night elves had little trouble doing what the evil aqir could never do: topple the two greatest empires in the world.", "Thus, great chunks of both the Amani and Gurubashi Empires still exist in the present day lands of Quel'Thalas and Stranglethorn (respectively). The Azj'Aqir kingdoms of Azjol-Nerub and Ahn'Qiraj have also survived in present day Northrend and Tanaris (respectively).   \r\n\r\nBoth troll civilizations recoiled from the vast destruction of the primordial world they had known. The dauntless trolls rebuilt their ravaged cities and set about to reclaim some of their former power.", 'At the end of this terrible conflict -- known as the War of the Ancients -- the Well of Eternity imploded. The resulting shockwave shattered the greater landmass of Kalimdor. The center of the continent was blasted beneath the sea, leaving only a small group of broken, single continents.'},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["mapData_Forever"] = {
+					[1453] = {0.3834213018417358, 0.6265069842338562},
+				},
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
 		},
 		["GameObject-210485"] = {
 			["base"] = {
@@ -6033,6 +6059,19 @@ LK["LocalData"] = {
 					},
 				},
 				["isObtainable"] = true,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
+			["copy_1"] = {
+				["title"] = "Sargeras and the Betrayal",
+				["text"] = {"The eredar, an insidious race of devilish sorcerers, used their warlock magics to invade and enslave a number of worlds. The indigenous races of those worlds were mutated by the eredar's malevolent powers and turned into demons themselves.", "Though Sargeras' nearly limitless powers were more than enough to defeat the vile eredar, he was greatly troubled by the creatures' corruption and all-consuming evil. Incapable of fathoming such depravity, the great Titan began to slip into a brooding depression. Despite his growing unease, Sargeras rid the universe of the warlocks by trapping them within a corner of the Twisting Nether.", "While his confusion and misery deepened, Sargeras was forced to contend with another group intent on disrupting the Titans' order: the Nathrezim. This dark race of vampiric demons (also known as dreadlords) conquered a number of populated worlds by possessing their inhabitants and turning them to the shadow. ", 'Once Sargeras saw that his armies were amassed and ready to follow his every command, he launched his raging forces into the vastness of the Great Dark. He referred to his growing army as the Burning Legion. To this date, it is still unclear how many worlds they consumed and burned on their unholy Burning Crusade across the universe.', 'The nefarious, scheming dreadlords turned whole nations against one another by manipulating them into unthinking hatred and mistrust. Sargeras defeated the Nathrezim easily, but their corruption affected him deeply.', "Kil'jaeden the Deceiver was chosen to seek out the darkest races in the universe and recruit them into Sargeras' ranks. The second champion, Archimonde the Defiler, was chosen to lead Sargeras' vast armies into battle against any who might resist the Titan's will. ", "By the time Sargeras' madness had consumed the last vestiges of his valiant spirit, he believed that the Titans themselves were responsible for creation's failure. Deciding, at last, to undo their works throughout the universe, he resolved to form an unstoppable army that would set the physical universe aflame.", "Kil'jaeden's first move was to enslave the vampiric dreadlords under his terrible power. The dreadlords served as his personal agents throughout the universe, and they took pleasure in locating primitive races for their master to corrupt and bring into the fold. First amongst the dreadlords was Tichondrius the Darkener. Tichondrius served Kil'jaeden as the perfect soldier and agreed to bring Sargeras' burning will to all the dark corners of the universe.", "Over time, demonic entities made their way into the Titans' worlds from the Twisting Nether, and the Pantheon elected its greatest warrior, Sargeras, to act as its first line of defense. A noble giant of molten bronze, Sargeras carried out his duties for countless millennia, seeking out and destroying these demons wherever he could find them. Over the eons, Sargeras encountered two powerful demonic races, both of which were bent on gaining power and dominance over the physical universe.", 'His fellow Titans tried to persuade him of his error and calm his raging emotions, but he disregarded their more optimistic beliefs as self-serving delusions. Storming from their ranks forever, Sargeras set out to find his own place in the universe. Although the Pantheon was sorrowful at his departure, the Titans could never have predicted just how far their lost brother would go.', "Even Sargeras' titanic form became distorted from the corruption that plagued his once-noble heart. His eyes, hair, and beard erupted in fire, and his metallic bronze skin split open to reveal an endless furnace of blistering hate.", 'The mighty Archimonde also empowered agents of his own. Calling upon the malefic pit lords and their barbarous leader, Mannoroth the Destructor, Archimonde hoped to establish a fighting elite that would scour creation of all life.', "In his fury, Sargeras shattered the prisons of the eredar and the Nathrezim and set the loathsome demons free. These cunning creatures bowed before the dark Titan's vast rage and offered to serve him in whatever malicious ways they could. From the ranks of the powerful Eredar, Sargeras picked two champions to command his demonic army of destruction. ", "As doubt and despair overwhelmed Sargeras' senses, he lost all faith not only in his mission, but also in the Titans' vision of an ordered universe. Eventually he came to believe that the concept of order itself was folly, and that chaos and depravity were the only absolutes within the dark, lonely universe. "},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["mapData_Forever"] = {
+					[1413] = {0.6189104318618774, 0.3959800004959106},
+				},
+				["isObtainable"] = false,
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
 			},
@@ -20227,6 +20266,19 @@ LK["LocalData"] = {
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
 			},
+			["copy_1"] = {
+				["title"] = "The Collector's Schedule",
+				["text"] = {
+					"Remember, my brothers, we were once proud craftsmen.  We'll perform our current duties with the same precision we used in our past trade.\r\n\r\n-EVC",
+					'A party from Defias headquarters will contact the Collector, after which he will transfer the gathered gold.\r\n\r\nBe sure this process is performed without fail and with utmost discretion.  The Collector is responsible for the transfer of gold, but ultimately it is the responsibility of each member of the Defias Brotherhood to ensure that his role is acted out with attention and discipline.',
+					'Below is the process and schedule of Defias gold collection from the mines of Elwynn to our headquarters in Westfall.\r\n \r\nCollection Schedule:\r\n\r\nSunday: 12:30pm\r\nWednesday: 12:30pm\r\n\r\nBy each specified day, gold gained from the Elwynn mines will be gathered at the Brackwell pumpkin patch.  The agent in charge of these gatherings, "The Collector," will be known by the engraved ring he possesses.  A ring I gave him.'},
+				["material"] = "default",
+				["pageCount"] = 0,
+				["singlePage"] = false,
+				["isObtainable"] = false,
+				["isClassSpecific"] = false,
+				["expansion"] = 0,
+			},
 		},
 		["Item-1361"] = {
 			["base"] = {
@@ -34261,18 +34313,6 @@ LK["LocalData"] = {
 				["expansion"] = 0,
 			},
 		},
-		["Item-2223"] = {
-			["base"] = {
-				["title"] = "The Collector's Schedule",
-				["text"] = {"Remember, my brothers, we were once proud craftsmen.  We'll perform our current duties with the same precision we used in our past trade.\r\n\r\n-EVC", 'A party from Defias headquarters will contact the Collector, after which he will transfer the gathered gold.\r\n\r\nBe sure this process is performed without fail and with utmost discretion.  The Collector is responsible for the transfer of gold, but ultimately it is the responsibility of each member of the Defias Brotherhood to ensure that his role is acted out with attention and discipline.', 'Below is the process and schedule of Defias gold collection from the mines of Elwynn to our headquarters in Westfall.\r\n \r\nCollection Schedule:\r\n\r\nSunday: 12:30pm\r\nWednesday: 12:30pm\r\n\r\nBy each specified day, gold gained from the Elwynn mines will be gathered at the Brackwell pumpkin patch.  The agent in charge of these gatherings, "The Collector," will be known by the engraved ring he possesses.  A ring I gave him.'},
-				["material"] = "default",
-				["pageCount"] = 0,
-				["singlePage"] = false,
-				["isObtainable"] = false,
-				["isClassSpecific"] = false,
-				["expansion"] = 0,
-			},
-		},
 		["Item-2832"] = {
 			["base"] = {
 				["title"] = "Verna's Westfall Stew Recipe",
@@ -34295,7 +34335,6 @@ LK["LocalData"] = {
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
 				["expansion"] = 0,
-				["forever"] = true,
 			},
 		},
 		["Item-254871"] = {
@@ -34346,51 +34385,6 @@ LK["LocalData"] = {
 				["singlePage"] = true,
 				["mapData_Forever"] = {
 					[1433] = {0.2157125473022461, 0.4647695422172546},
-				},
-				["isObtainable"] = false,
-				["isClassSpecific"] = false,
-				["expansion"] = 0,
-			},
-		},
-		["GameObject-175724"] = {
-			["base"] = {
-				["title"] = "Sargeras and the Betrayal",
-				["text"] = {"The eredar, an insidious race of devilish sorcerers, used their warlock magics to invade and enslave a number of worlds. The indigenous races of those worlds were mutated by the eredar's malevolent powers and turned into demons themselves.", "Though Sargeras' nearly limitless powers were more than enough to defeat the vile eredar, he was greatly troubled by the creatures' corruption and all-consuming evil. Incapable of fathoming such depravity, the great Titan began to slip into a brooding depression. Despite his growing unease, Sargeras rid the universe of the warlocks by trapping them within a corner of the Twisting Nether.", "While his confusion and misery deepened, Sargeras was forced to contend with another group intent on disrupting the Titans' order: the Nathrezim. This dark race of vampiric demons (also known as dreadlords) conquered a number of populated worlds by possessing their inhabitants and turning them to the shadow. ", 'Once Sargeras saw that his armies were amassed and ready to follow his every command, he launched his raging forces into the vastness of the Great Dark. He referred to his growing army as the Burning Legion. To this date, it is still unclear how many worlds they consumed and burned on their unholy Burning Crusade across the universe.', 'The nefarious, scheming dreadlords turned whole nations against one another by manipulating them into unthinking hatred and mistrust. Sargeras defeated the Nathrezim easily, but their corruption affected him deeply.', "Kil'jaeden the Deceiver was chosen to seek out the darkest races in the universe and recruit them into Sargeras' ranks. The second champion, Archimonde the Defiler, was chosen to lead Sargeras' vast armies into battle against any who might resist the Titan's will. ", "By the time Sargeras' madness had consumed the last vestiges of his valiant spirit, he believed that the Titans themselves were responsible for creation's failure. Deciding, at last, to undo their works throughout the universe, he resolved to form an unstoppable army that would set the physical universe aflame.", "Kil'jaeden's first move was to enslave the vampiric dreadlords under his terrible power. The dreadlords served as his personal agents throughout the universe, and they took pleasure in locating primitive races for their master to corrupt and bring into the fold. First amongst the dreadlords was Tichondrius the Darkener. Tichondrius served Kil'jaeden as the perfect soldier and agreed to bring Sargeras' burning will to all the dark corners of the universe.", "Over time, demonic entities made their way into the Titans' worlds from the Twisting Nether, and the Pantheon elected its greatest warrior, Sargeras, to act as its first line of defense. A noble giant of molten bronze, Sargeras carried out his duties for countless millennia, seeking out and destroying these demons wherever he could find them. Over the eons, Sargeras encountered two powerful demonic races, both of which were bent on gaining power and dominance over the physical universe.", 'His fellow Titans tried to persuade him of his error and calm his raging emotions, but he disregarded their more optimistic beliefs as self-serving delusions. Storming from their ranks forever, Sargeras set out to find his own place in the universe. Although the Pantheon was sorrowful at his departure, the Titans could never have predicted just how far their lost brother would go.', "Even Sargeras' titanic form became distorted from the corruption that plagued his once-noble heart. His eyes, hair, and beard erupted in fire, and his metallic bronze skin split open to reveal an endless furnace of blistering hate.", 'The mighty Archimonde also empowered agents of his own. Calling upon the malefic pit lords and their barbarous leader, Mannoroth the Destructor, Archimonde hoped to establish a fighting elite that would scour creation of all life.', "In his fury, Sargeras shattered the prisons of the eredar and the Nathrezim and set the loathsome demons free. These cunning creatures bowed before the dark Titan's vast rage and offered to serve him in whatever malicious ways they could. From the ranks of the powerful Eredar, Sargeras picked two champions to command his demonic army of destruction. ", "As doubt and despair overwhelmed Sargeras' senses, he lost all faith not only in his mission, but also in the Titans' vision of an ordered universe. Eventually he came to believe that the concept of order itself was folly, and that chaos and depravity were the only absolutes within the dark, lonely universe. "},
-				["material"] = "default",
-				["pageCount"] = 0,
-				["singlePage"] = false,
-				["mapData_Forever"] = {
-					[1413] = {0.6189104318618774, 0.3959800004959106},
-				},
-				["isObtainable"] = false,
-				["isClassSpecific"] = false,
-				["expansion"] = 0,
-			},
-		},
-		["GameObject-175735"] = {
-			["base"] = {
-				["title"] = "The Guardians of Tirisfal",
-				["text"] = {'The sinister agents of the Burning Legion, who had been banished when the Well of Eternity collapsed, were lured back into the world by the heedless spellcasting of the magicians of Dalaran. Though these relatively weak demons did not appear in force, they did sew considerable confusion and chaos within the streets of Dalaran. ', "As the generations passed, Guardians defended the masses of humanity from the invisible threat of the Burning Legion throughout the lands of Arathor and Quel'Thalas. Arathor grew and prospered while the use of magic spread throughout the empire. Meanwhile, the Guardians kept careful watch for signs of demonic activity. ", 'These younger magicians began to practice magic for personal gain rather than out of any responsibility towards their fellows. ', "Upon hearing the Magocrats' news of demonic activity in Dalaran, the elves quickly dispatched their mightiest wizards to the human lands. The elven wizards studied the energy currents in Dalaran and made detailed reports of all demonic activity that they beheld. They concluded that although there were only a few demons loose in the world, the Legion itself would remain a dire threat so long as humans continued to wield the forces of magic. ", 'The original hundred magi, who were tutored in the ways of magic by the elves, expanded their powers and studied the mystic disciplines of spell-weaving in much greater detail. These magi, initially chosen for their strong wills and noble spirits, had always practiced their magic with care and responsibility; however, they passed their secrets and powers onto a newer generation that had no concept of the rigors of war or the necessity for self-restraint. ', "With the absence of trolls in the northlands, the elves of Quel'Thalas bent their efforts towards rebuilding their glorious homeland. The victorious armies of Arathor returned home to southlands of Strom. ", 'As the empire grew and expanded into new lands, the young magicians also spread out into the southlands. Wielding their mystical powers, the magicians protected their brethren from the wild creatures of the land and made it possible for new city-states to be constructed in the wilderness. Yet, as their powers grew, the magicians became ever more conceited and isolated from the rest of society.', 'Most of these demonic encounters were isolated events, and the ruling Magocrats did what they could to keep such events hidden from the public. The most powerful magicians were sent to capture the elusive demons, but they often found themselves hopelessly outmatched by the lone agents of the mighty Legion.', "The human society of Arathor grew and prospered, yet Thoradin, fearful that his kingdom would splinter apart if it overextended itself, maintained that Strom was the center of the Arathorian empire. After many peaceful years of growth and commerce, mighty Thoradin died of old age, leaving Arathor's younger generation free to expand the empire beyond the lands of Strom.", 'After a few months the superstitious peasantry began to suspect that their sorcerous rulers were hiding something terrible from them. Rumors of revolution began to sweep through the streets of Dalaran as the paranoid citizenry questioned the motives and practices of the magicians they had once admired. The Magocrats, fearing that the peasants would revolt and that Strom would take action against them, turned to the only group they felt would understand their particular problem: the elves.', "The Council of Silvermoon, which ruled over the elves of Quel'Thalas, entered into a secret pact with the Magocrat lords of Dalaran. The elves told the Magocrats about the history of ancient Kalimdor and of the Burning Legion, a history which still threatened the world. They informed the humans that so long as they used magic, they would need to protect their citizenry from the malicious agents of the Legion. ", "The society held its secret meetings in the shadowed Tirisfal Glades, where the high elves had first settled in Lordaeron. Thus, they named the secret sect the Guardians of Tirisfal. The mortal champions who were chosen to be Guardians were imbued with incredible powers of both elven and human magic. Though there would only ever be one Guardian at a time, they held such vast power that they could single-handedly fight back the Legion's agents wherever they were found in the world. ", 'The second Arathorian city-state of Dalaran was founded in the lands north of Strom. Many fledgling wizards left the restraining confines of Strom behind and traveled to Dalaran, where they hoped to use their new powers with greater freedom. These magicians used their skills to build up the enchanted spires of Dalaran and reveled in the pursuit of their studies. ', "The citizens of Dalaran tolerated the magicians' endeavors and built up a bustling economy under the protection of their magic-using defenders. Yet, as more and more magicians practiced their arts, the fabric of reality around Dalaran began to weaken and tear.", 'The Magocrats proposed the notion of empowering a single mortal champion who would utilize their powers in order to fight a never-ending secret war against the Legion. It was stressed that the majority of mankind could never know about the Guardians or the threat of the Legion for fear that they would riot in fear and paranoia. The elves agreed to the proposal and founded a secret society that would watch over the selection of the Guardian and help to stem the rise of chaos in the world.', 'The Guardian power was so great that only the Council of Tirisfal was allowed to choose potential successors to the mantle of Guardianship. Whenever a Guardian grew too old, or wearied of the secret war against chaos, the Council chose a new champion, and under controlled conditions, formally channeled the Guardian power into its new agent.'},
-				["material"] = "default",
-				["pageCount"] = 0,
-				["singlePage"] = false,
-				["mapData_Forever"] = {
-					[1453] = {0.7598997950553894, 0.3212841749191284},
-				},
-				["isObtainable"] = false,
-				["isClassSpecific"] = false,
-				["expansion"] = 0,
-			},
-		},
-		["GameObject-175855"] = {
-			["base"] = {
-				["title"] = "Empires' Fall",
-				["text"] = {"Eventually, the night elves were burned by the arcane fires they had sought to control. Their reckless use of magic had lured the demonic Burning Legion to the world. The demons crushed much of the night elves' civilization. Though there are no records to indicate that the Legion attacked either troll civilization, it is likely that battles took place across the breadth of the continent. ", "The night elves systematically dismantled the troll's defenses and supply chains. The trolls, unable to counter the elves' destructive magics, buckled under the onslaught. The night elves proved to be every bit as cunning and bloodthirsty as the savage trolls -- incurring the latter race's eternal hatred and disdain. The Gurubashi and Amani empires fragmented within only a few short years.", "Aside from their shadowy origins, it is clear that the night elves came to power soon after their discovery of the Well of Eternity. Despite the trolls' attempts to keep them from expanding their territories, the night elves built up a mighty empire that expanded rapidly across primordial Kalimdor. Wielding fierce magics never before imagined by the superstitious trolls, the night elves had little trouble doing what the evil aqir could never do: topple the two greatest empires in the world.", "Thus, great chunks of both the Amani and Gurubashi Empires still exist in the present day lands of Quel'Thalas and Stranglethorn (respectively). The Azj'Aqir kingdoms of Azjol-Nerub and Ahn'Qiraj have also survived in present day Northrend and Tanaris (respectively).   \r\n\r\nBoth troll civilizations recoiled from the vast destruction of the primordial world they had known. The dauntless trolls rebuilt their ravaged cities and set about to reclaim some of their former power.", 'At the end of this terrible conflict -- known as the War of the Ancients -- the Well of Eternity imploded. The resulting shockwave shattered the greater landmass of Kalimdor. The center of the continent was blasted beneath the sea, leaving only a small group of broken, single continents.'},
-				["material"] = "default",
-				["pageCount"] = 0,
-				["singlePage"] = false,
-				["mapData_Forever"] = {
-					[1453] = {0.3834213018417358, 0.6265069842338562},
 				},
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
@@ -34658,7 +34652,7 @@ LK["LocalData"] = {
 				["material"] = "Bronze",
 				["pageCount"] = 0,
 				["singlePage"] = true,
-				["mapData"] = {
+				["mapData_Forever"] = {
 					[2548] = {0.594563364982605, 0.8505560755729675},
 				},
 				["isObtainable"] = false,
@@ -34674,7 +34668,7 @@ LK["LocalData"] = {
 				["material"] = "Bronze",
 				["pageCount"] = 0,
 				["singlePage"] = true,
-				["mapData"] = {
+				["mapData_Forever"] = {
 					[2548] = {0.6358226537704468, 0.8329676389694214},
 				},
 				["isObtainable"] = false,
@@ -34690,7 +34684,7 @@ LK["LocalData"] = {
 				["material"] = "Bronze",
 				["pageCount"] = 0,
 				["singlePage"] = true,
-				["mapData"] = {
+				["mapData_Forever"] = {
 					[2548] = {0.6145596504211426, 0.8516400456428528},
 				},
 				["isObtainable"] = false,
@@ -34706,24 +34700,8 @@ LK["LocalData"] = {
 				["material"] = "default",
 				["pageCount"] = 0,
 				["singlePage"] = false,
-				["mapData"] = {
+				["mapData_Forever"] = {
 					[2548] = {0.6209926605224609, 0.8570191860198975},
-				},
-				["isObtainable"] = false,
-				["isClassSpecific"] = false,
-				["expansion"] = 0,
-				["forever"] = true,
-			},
-		},
-		["GameObject-696295"] = {
-			["base"] = {
-				["title"] = "Kurdran Wildhammer",
-				["text"] = {"Kurdran Wildhammer\r\n\r\nRenowned Dragon Fighter. Gryphon Master of the Aerie Peak. Commander of the Gryphon Rider Division attached to the Alliance Expedition that marched into the orc homeworld of Draenor. Presumed deceased.\r\n\r\nWe will hear Sky-Ree's calls upon the winds. We will hear your hammer thunder across the mountaintops. Ride hard into the hereafter, brother. The halls of our ancestors await you.\r\n\r\n- Falstad Wildhammer - Lord of Aerie Peak"},
-				["material"] = "Bronze",
-				["pageCount"] = 0,
-				["singlePage"] = true,
-				["mapData"] = {
-					[1453] = {0.7138431072235107, 0.8746244311332703},
 				},
 				["isObtainable"] = false,
 				["isClassSpecific"] = false,
@@ -34738,7 +34716,7 @@ LK["LocalData"] = {
 				["material"] = "Bronze",
 				["pageCount"] = 0,
 				["singlePage"] = true,
-				["mapData"] = {
+				["mapData_Forever"] = {
 					[1453] = {0.7602864503860474, 0.6597223281860352},
 				},
 				["isObtainable"] = false,

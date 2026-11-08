@@ -41,6 +41,7 @@ local Defaults = {
 			showCollected = true,
 			showUnread = true,
 			onlyMapData = false,
+			onlyForever = false,
 			filterClass = "ALL",
 			expansion = {
 				classic = true,

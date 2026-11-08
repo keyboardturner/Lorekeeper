@@ -2141,6 +2141,8 @@ function LoreKGUI.PopulateList()
 				else
 					data.base.mapData = nil;
 				end
+
+				data.base.isObtainable = true;
 			end
 		end
 	end
@@ -2252,6 +2254,11 @@ function LoreKGUI.OnTextChanged(editBox)
 				stateMatch = false
 			end
 
+			-- Forever Flag Filter
+			if SVSettings.onlyForever and not base["forever"] then
+				stateMatch = false
+			end
+
 			if stateMatch then
 				match = true
 			end
@@ -2300,10 +2307,12 @@ local function FilterHandler(owner, rootDescription)
 		LoreKGUI.PopulateList();
 	end);
 
-	rootDescription:CreateCheckbox(LK["Unobtainable"], function() return SVSettings.showUnobtainable; end, function()
-		SVSettings.showUnobtainable = not SVSettings.showUnobtainable;
-		LoreKGUI.PopulateList();
-	end);
+	if not LK.IsForever then
+		rootDescription:CreateCheckbox(LK["Unobtainable"], function() return SVSettings.showUnobtainable; end, function()
+			SVSettings.showUnobtainable = not SVSettings.showUnobtainable;
+			LoreKGUI.PopulateList();
+		end);
+	end
 
 	rootDescription:CreateCheckbox(LK["ClassRestricted"], function() return SVSettings.showClassrestricted; end, function()
 		SVSettings.showClassrestricted = not SVSettings.showClassrestricted;
@@ -2316,6 +2325,13 @@ local function FilterHandler(owner, rootDescription)
 		SVSettings.onlyMapData = not SVSettings.onlyMapData;
 		LoreKGUI.PopulateList();
 	end);
+
+	if LK.IsForever then
+		rootDescription:CreateCheckbox(EXPANSION_NAME_FOREVER0, function() return SVSettings.onlyForever; end, function()
+			SVSettings.onlyForever = not SVSettings.onlyForever;
+			LoreKGUI.PopulateList();
+		end);
+	end
 
 	rootDescription:CreateDivider();
 
